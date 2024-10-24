@@ -1,0 +1,33 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_anschlus_drake"
+		texturefile = "gfx/event_pictures/report_event_anchlus_dreyka.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_svo_preparing_begin"
+		texturefile = "gfx/event_pictures/dreyk_ready.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_svo_started"
+		texturefile = "gfx/event_pictures/news_svo_start.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_svo_nehvatka"
+		texturefile = "gfx/event_pictures/nehvatka_beopripasov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_svo_start"
+		texturefile = "gfx/event_pictures/news_svo_start.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_svo_for_chb"
+		texturefile = "gfx/event_pictures/dreyk_country_event.dds"
+	}
+	
+}

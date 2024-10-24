@@ -1,0 +1,113 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "CHB"
+		default = yes
+		"CHB"={
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"PYA"={
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = hypetiktok
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"SVI"={
+			history = "LAT_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"DRE"={
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = hypecratia
+			ideas = {
+				DRE_treaty_of_triannon_aat
+			}
+			focuses = {
+				
+			}
+		}
+		"HAM"={
+			history = "LAT_GATHERING_STORM_DESC"
+			ideology = hypecratia
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"BTK"={
+			history = "LAT_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"GON"={
+			history = "LAT_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		
+		"MPK"={
+			minor = yes
+			history = "LAT_GATHERING_STORM_DESC"
+			ideology = hypetiktok
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"LAG"={
+			minor = yes
+			history = "LAT_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"CVD" = {
+			minor = yes
+			history = "LAT_GATHERING_STORM_DESC"
+			ideology = hypecratia
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

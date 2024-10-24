@@ -1,0 +1,10 @@
+opinion_modifiers = {
+	
+	chb_finding_friends = {
+		value = 25
+	}
+	
+	first_venezia_award = {
+		value = 10
+	}
+}

@@ -1,0 +1,79 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = DRE_start_SDO
+        }
+        localization_key = "sp_event_sdo_start"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = DRE_mazokgrad_fall
+        }
+        localization_key = "sp_event_mazokgrad_fall"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = DRE_dayraid_fall
+        }
+        localization_key = "sp_event_dayraid_fall"
+    }
+	
+}
+
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = DRE_start_SDO
+        }
+        localization_key = "sp_event_sdo_start_remark"
+    }
+	
+    text = { 
+        trigger = {
+            has_global_flag = DRE_mazokgrad_fall
+        }
+        localization_key = "sp_event_mazokgrad_fall_remark"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = DRE_dayraid_fall
+        }
+        localization_key = "sp_event_dayraid_fall_remark"
+    }
+	
+}
+
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    
+    text = {
+        trigger = {
+            has_global_flag = DRE_start_SDO
+        }
+        localization_key = "sp_event_sdo_start_quote"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = DRE_mazokgrad_fall
+        }
+        localization_key = "sp_event_mazokgrad_fall_quote"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = DRE_dayraid_fall
+        }
+        localization_key = "sp_event_dayraid_fall_quote"
+    }
+}
