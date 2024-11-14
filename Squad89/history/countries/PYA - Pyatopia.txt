@@ -5,6 +5,11 @@ set_naval_oob = "SWE_1936_naval"
 
 set_research_slots = 5
 
+add_ideas = {
+	dva_disa
+	sp_crisis
+}
+
 recruit_character = universal_hype_pya
 
 set_autonomy = {
@@ -93,7 +98,7 @@ create_country_leader = {
 	expire = "2000.1.1"
 	ideology = hypetiktok
 	traits = {
-		#
+		luzifer_stilya
 	}
 }
 

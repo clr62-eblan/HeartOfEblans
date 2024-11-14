@@ -29,9 +29,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Лагода"
+	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "drake_hype.dds"
+	picture = "kru.dds"
 	expire = "2000.1.1"
 	ideology = hypetiktok
 	traits = {
@@ -40,39 +40,42 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Лагода"
+	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "drake_fascism.dds"
+	picture = "kru.dds"
 	expire = "2000.1.1"
 	ideology = rexism
 	traits = {
 		#
 	}
+}
 	
 create_country_leader = {
-	name = "Лагода"
+	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "drake_neutrality.dds"
+	picture = "kru.dds"
 	expire = "2000.1.1"
 	ideology = moderatism
 	traits = {
 		#
 	}
+}
 	
 create_country_leader = {
-	name = "Лагода"
+	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "drake_democratic.dds"
+	picture = "kru.dds"
 	expire = "2000.1.1"
 	ideology = liberalism
 	traits = {
 		#
 	}
+}
 	
 create_country_leader = {
-	name = "Лагода"
+	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "drake_communism.dds"
+	picture = "kru.dds"
 	expire = "2000.1.1"
 	ideology = leninism
 	traits = {

@@ -11,6 +11,31 @@ spriteTypes = {
     }  
 	
     spriteType = {
+        name = "GFX_idea_dva_disa"
+        texturefile = "gfx/interface/ideas/dva_disa.dds"
+    }  
+	
+    spriteType = {
+        name = "GFX_idea_borets_s_pafosom"
+        texturefile = "gfx/interface/ideas/against_pafos.dds"
+    }  
+	
+    spriteType = {
+        name = "GFX_idea_svinland_ru"
+        texturefile = "gfx/interface/ideas/svinland_ru.dds"
+    }  
+	
+    spriteType = {
+        name = "GFX_idea_sp_crisis"
+        texturefile = "gfx/interface/ideas/sp_crisis.dds"
+    }  
+	
+    spriteType = {
+        name = "GFX_idea_bad_government"
+        texturefile = "gfx/interface/ideas/bad_government.dds"
+    }  
+	
+    spriteType = {
         name = "unknown_char_small"
         texturefile = "gfx/interface/ideas/unknown_character_small.dds"
     }  

@@ -7,6 +7,7 @@ set_research_slots = 4
 
 add_ideas = {
 	SVI_buster_oposite
+	svinland_ru
 }
 
 # Starting tech

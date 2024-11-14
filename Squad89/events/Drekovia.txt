@@ -18,6 +18,7 @@ country_event = {
 			transfer_state = 43
 			transfer_state = 155
 			transfer_state = 154
+			transfer_state = 974
 		}
 	}
 
@@ -80,6 +81,7 @@ country_event = {
 			transfer_state = 43
 			transfer_state = 155
 			transfer_state = 154
+			transfer_state = 974
 		}
 
 		CHB = {

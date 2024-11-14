@@ -105,7 +105,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = POL_april_constitution
 
 			modifier = {
 				political_advisor_cost_factor = 0.25

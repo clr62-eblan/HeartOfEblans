@@ -6,6 +6,16 @@ spriteTypes = {
 	name = "GFX_goal_chb_politika"
 	texturefile = "gfx/interface/goals/chbflag.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_dre_svo_btk_ukaz"
+	texturefile = "gfx/interface/goals/drake_ukaz_svo_btk.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_dre_svo_btk_production"
+	texturefile = "gfx/interface/goals/drake_war_production_svo_btk.dds"			
+	}
 
 	SpriteType = {
 	name = "GFX_goal_hypecratia_effort"

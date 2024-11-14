@@ -179,3 +179,31 @@ drekovia_integrations_cat = {
 	}
 	
 }
+
+drekovia_sdo_cat = { 
+
+	blitzkrieg_stopped = {
+		activation = {
+			DRE = { in_war_with = CHB }
+		}
+	
+		icon = GFX_decision_generic_tank
+		
+		days_mission_timeout = 90
+		fire_only_once = no
+		is_good = no
+		
+		available = {
+			NOT = { country_exists = CHB }
+		}
+		
+		timeout_effect = {
+			add_ideas = sp_crisis
+		}
+		
+		complete_effect = {
+			add_ideas = dva_disa
+		}
+		
+	}
+}

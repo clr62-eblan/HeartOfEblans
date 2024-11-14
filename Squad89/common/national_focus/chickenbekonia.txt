@@ -2696,30 +2696,30 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-	focus = {
-		id = chb_fascism_drake_anschlus
-		icon = GFX_goal_drake_war
-		cost = 10
-		prerequisite = { focus = chb_istambul_expansion focus = chb_gvin_expansion}
-		x = 0
-		y = 4
-		relative_position_id = chb_terriatorial_expansion
+	#focus = {
+	#	id = chb_fascism_drake_anschlus
+	#	icon = GFX_goal_drake_war
+	#	cost = 10
+	#	prerequisite = { focus = chb_istambul_expansion focus = chb_gvin_expansion}
+	#	x = 0
+	#	y = 4
+	#	relative_position_id = chb_terriatorial_expansion
 
-		completion_reward = {
-			DRE = { country_event = { hours = 1 id = chicken.13 } }
-		}
+	#	completion_reward = {
+	#		DRE = { country_event = { hours = 1 id = chicken.13 } }
+	#	}
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
+	#	search_filters = { FOCUS_FILTER_RESEARCH }
+	#}
 
 	focus = {
 		id = chb_national_front
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		cost = 10
-		prerequisite = { focus = chb_fascism_drake_anschlus}
+		prerequisite = { focus = chb_istambul_expansion focus = chb_gvin_expansion}
 		x = 0
-		y = 1
-		relative_position_id = chb_fascism_drake_anschlus
+		y = 4
+		relative_position_id = chb_terriatorial_expansion
 
 		completion_reward = {
 			add_ideas = CHB_national_front
@@ -3693,22 +3693,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-	focus = {
-		id = chb_hype_drake_treacherously_betray
-		icon = GFX_goal_drake_war
-		cost = 10
-		prerequisite = { focus = chb_hype_drake_prblm }
-		mutually_exclusive = { focus = chb_hype_drake_allies }
-		x = -2
-		y = 1
-		relative_position_id = chb_hype_drake_prblm
-
-		completion_reward = {
-			DRE = { country_event = { hours = 1 id = chicken.13 } }
-		}
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
+	#focus = {
+	#	id = chb_hype_drake_treacherously_betray
+	#	icon = GFX_goal_drake_war
+	#	cost = 10
+	#	prerequisite = { focus = chb_hype_drake_prblm }
+	#	mutually_exclusive = { focus = chb_hype_drake_allies }
+	#	x = -2
+	#	y = 1
+	#	relative_position_id = chb_hype_drake_prblm
+#
+	#	completion_reward = {
+	#		DRE = { country_event = { hours = 1 id = chicken.13 } }
+	#	}
+#
+	#	search_filters = { FOCUS_FILTER_RESEARCH }
+	#}
 
 	focus = {
 		id = chb_hype_zolo_crash

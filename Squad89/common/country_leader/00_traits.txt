@@ -36,6 +36,17 @@ leader_traits = {
 		}
 	}
 	
+	luzifer_stilya = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	
 	hypecratia_booster = {
 		random = no
 		sprite = 13

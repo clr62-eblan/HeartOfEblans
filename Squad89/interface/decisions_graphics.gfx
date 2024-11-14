@@ -15,4 +15,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/category_image_template.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_category_sdo"
+		texturefile = "gfx/interface/decisions/decision_sdo.dds"
+	}
+	
 }

@@ -20,7 +20,8 @@ bookmarks = {
 			history = "YUG_GATHERING_STORM_DESC"
 			ideology = hypetiktok
 			ideas = {
-				
+				dva_disa
+				sp_crisis
 			}
 			focuses = {
 				
@@ -30,6 +31,8 @@ bookmarks = {
 			history = "LAT_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
+				svinland_ru
+				SVI_buster_oposite
 			}
 			focuses = {
 			}
@@ -39,6 +42,7 @@ bookmarks = {
 			ideology = hypecratia
 			ideas = {
 				DRE_treaty_of_triannon_aat
+				defeted_at_wwone
 			}
 			focuses = {
 				
@@ -56,6 +60,7 @@ bookmarks = {
 			history = "LAT_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
+				bad_government
 			}
 			focuses = {
 			}
@@ -65,6 +70,8 @@ bookmarks = {
 			history = "LAT_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				GON_kotel_shabanova
+				GON_legends_of_stintler
 			}
 			focuses = {
 			}
@@ -99,6 +106,29 @@ bookmarks = {
 			minor = yes
 			history = "LAT_GATHERING_STORM_DESC"
 			ideology = hypecratia
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"ARA" = {
+			minor = yes
+			history = "LAT_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				defeted_at_wwone
+				ARA_national_catastrophe
+				ARA_dicator_constitution
+			}
+			focuses = {
+			}
+		}
+		
+		"HES" = {
+			minor = yes
+			history = "LAT_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas = {
 			}
 			focuses = {

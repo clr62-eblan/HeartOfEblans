@@ -13,6 +13,68 @@ ideas = {
                 hypecratia_drift = 0.01
 			}
 		}
+		
+
+        borets_s_pafosom = {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_borets_s_pafosom
+
+			modifier = {
+				political_power_gain = -0.15
+				party_popularity_stability_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+		
+        svinland_ru = {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_svinland_ru
+
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				surrender_limit = 0.05
+			}
+		}
+		
+        sp_crisis = {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_sp_crisis
+
+			modifier = {
+				production_speed_buildings_factor = -0.03
+				war_support_factor = -0.05
+				local_resources_factor = -0.05
+			}
+		}
+		
+        bad_government = {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_bad_government
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		
+		dva_disa = {
+			removal_cost = -1
+
+			picture = GFX_idea_dva_disa
+
+			modifier = {
+				political_power_gain = 0.025
+				drift_defence_factor = 0.25
+			}
+		}
 
         YUG_detiyvlasti = {
 			

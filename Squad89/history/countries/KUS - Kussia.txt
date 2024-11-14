@@ -2,7 +2,7 @@ capital = 246
 
 set_research_slots = 3
 
-
+set_oob = KUS_1936
 
 # Starting tech
 set_technology = {

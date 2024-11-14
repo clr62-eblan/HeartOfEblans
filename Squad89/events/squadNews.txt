@@ -77,3 +77,43 @@ news_event = {
 		}
 	}
 }
+
+#Hesus small intervention
+news_event = {
+	id = squad_news.5
+	title = squad_news.5.t
+	desc = squad_news.5.d
+	picture = GFX_news_event_generic_usa_treaty
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.64.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#Hesus neutrality
+news_event = {
+	id = squad_news.6
+	title = squad_news.6.t
+	desc = squad_news.6.d
+	picture = GFX_news_event_generic_usa_treaty
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.64.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}

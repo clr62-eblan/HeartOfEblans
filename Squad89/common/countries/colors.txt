@@ -4,6 +4,10 @@ SVI = {
 	color = rgb { 255 140 251 }
 	color_ui = rgb { 255 140 251 }
 }
+GCM = {
+	color = rgb { 65 83 87 }
+	color_ui = rgb { 65 83 87 }
+}
 DIK = {
 	color = rgb { 85 128 73 }
 	color_ui = rgb { 85 128 73 }
@@ -125,8 +129,12 @@ MPK = {
 	color_ui = rgb { 255 248 222 }
 }
 HES = {
-	color = rgb { 42 61 20 }
-	color_ui = rgb { 42 61 20 }
+	color = rgb { 108 168 39 }
+	color_ui = rgb { 108 168 39 }
+}
+DKK = {
+	color = rgb { 179 62 20 }
+	color_ui = rgb { 179 62 20 }
 }
 BTK = {
 	color = rgb { 255 139 31 }
