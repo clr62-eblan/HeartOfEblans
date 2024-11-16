@@ -158,9 +158,9 @@ form_CHB_EBLAN_cat = {
 			
 			#FLA
 			184 = { add_core_of = ROOT }
-			341 = { add_core_of = ROOT 
-			797 = { add_core_of = ROOT 
-			347 = { add_core_of = ROOT 
+			341 = { add_core_of = ROOT }
+			797 = { add_core_of = ROOT }
+			347 = { add_core_of = ROOT }
 			49 = { add_core_of = ROOT }
 			340 = { add_core_of = ROOT }
 			343 = { add_core_of = ROOT }

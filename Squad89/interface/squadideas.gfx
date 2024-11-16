@@ -6,7 +6,7 @@ spriteTypes = {
     }  
 	
     spriteType = {
-        name = "vitaliy_jr_small"
+        name = "GFX_vitaliy_jr_small"
         texturefile = "gfx/interface/ideas/vitaliy_jr_small.dds"
     }  
 	
@@ -36,7 +36,7 @@ spriteTypes = {
     }  
 	
     spriteType = {
-        name = "unknown_char_small"
+        name = "GFX_unknown_char_small"
         texturefile = "gfx/interface/ideas/unknown_character_small.dds"
     }  
 	

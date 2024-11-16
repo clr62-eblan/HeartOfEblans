@@ -46,7 +46,7 @@ if = {
 	}
 }
 
-recruit_character = univeral_advisor_89
+#New Text
 
 set_politics = {
 	ruling_party = neutrality

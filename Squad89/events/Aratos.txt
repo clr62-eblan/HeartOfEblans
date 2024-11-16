@@ -3,7 +3,7 @@ add_namespace = aratos
 #Aratos Allies
 #SVI
 country_event = {
-	id = aratos.svi
+	id = aratos.1
 	title = aratos.svi.t
 	desc = aratos.svi.d
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -28,12 +28,13 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			ARA = { country_event = { id = aratos.svi.otkaz days = 1 }
+			ARA = { country_event = { id = aratos.2 days = 1 }
 		}
+	}
 	}
 }
 country_event = {
-	id = aratos.svi.otkaz
+	id = aratos.2
 	title = aratos.svi.otkaz.t
 	desc = aratos.svi.otkaz.d
 	picture = GFX_report_event_communist_leader
@@ -54,7 +55,7 @@ country_event = {
 
 #GON
 country_event = {
-	id = aratos.gon
+	id = aratos.3
 	title = aratos.gon.t
 	desc = aratos.gon.d
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -79,12 +80,13 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			ARA = { country_event = { id = aratos.gon.otkaz days = 1 }
+			ARA = { country_event = { id = aratos.4 days = 1 }
 		}
+	}
 	}
 }
 country_event = {
-	id = aratos.gon.otkaz
+	id = aratos.4
 	title = aratos.gon.otkaz.t
 	desc = aratos.gon.otkaz.d
 	picture = GFX_report_event_communist_leader

@@ -8,7 +8,7 @@ state={
 	state_category = megalopolis
 
 	history={
-		owner = HES
+		owner = HSU
 		buildings = {
 			infrastructure = 4 #was: 8
 			arms_factory = 2
@@ -21,7 +21,7 @@ state={
 			}
 
 		}
-		add_core_of = HES
+		add_core_of = HSU
 		victory_points = {
 			3878 30.0 
 		}

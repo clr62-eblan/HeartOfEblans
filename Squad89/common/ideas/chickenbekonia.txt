@@ -2,6 +2,24 @@ ideas = {
 
 	country = {
 	
+		CHB_appease_democrats = {
+			picture = prc_low_popular_support3
+
+			allowed = {
+				original_tag = CHB
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.01
+				fascism_drift = -0.01
+			}
+		}
+	
 		YUG_bezmoderov = {
 			
 			picture = bezmoderov
@@ -42,7 +60,7 @@ ideas = {
 		}
 		
 		CHB_national_front = {
-			picture =
+			picture = ast_naval_auxiliary_patrol
 			
 			allowed = {
 				original_tag = CHB

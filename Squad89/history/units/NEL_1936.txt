@@ -1,6 +1,5 @@
 division_template = {
 	name = "Рейская Пехота"		# Same for "Active" and "Reserve" Infantry Divisions
-	division_names_group = NEL_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -17,7 +16,6 @@ division_template = {
 
 division_template = {
 	name = "Рейские Дубиноносцы"					# Mountain Division
-	division_names_group = NEL_MNT_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -28,7 +26,6 @@ division_template = {
 
 division_template = {
 	name = "Рейские Коняки"				# Cavalry Brigade -- precursor to Fast Divisions. Fast Divisions add 2nd regiment of 2x L tank, 2x mot 
-	division_names_group = NEL_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }

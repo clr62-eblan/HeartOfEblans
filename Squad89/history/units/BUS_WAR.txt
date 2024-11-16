@@ -1,6 +1,5 @@
 division_template = {
 	name = "Ебаные Бустерградовцы"		# Same for "Active" and "Reserve" Infantry Divisions
-	division_names_group = KRU_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }

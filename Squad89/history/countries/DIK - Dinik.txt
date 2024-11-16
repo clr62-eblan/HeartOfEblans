@@ -54,7 +54,7 @@ if = {
 	}
 }
 
-recruit_character = univeral_advisor_89
+#New Text
 
 if = {
 	limit = {
@@ -78,7 +78,7 @@ set_politics = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "sveta_2.dds"
+	picture = "e.dds"
 	expire = "2000.1.1"
 	ideology = stalinism
 	traits = {
@@ -89,7 +89,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "sveta.dds"
+	picture = "e.dds"
 	expire = "2000.1.1"
 	ideology = hypetiktok
 	traits = {
@@ -100,7 +100,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "sveta_2.dds"
+	picture = "e.dds"
 	expire = "2000.1.1"
 	ideology = gen_nazism
 	traits = {
@@ -111,7 +111,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "sveta.dds"
+	picture = "e.dds"
 	expire = "2000.1.1"
 	ideology = liberalism
 	traits = {
@@ -122,7 +122,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "sveta.dds"
+	picture = "e.dds"
 	expire = "2000.1.1"
 	ideology = despotism
 	traits = {

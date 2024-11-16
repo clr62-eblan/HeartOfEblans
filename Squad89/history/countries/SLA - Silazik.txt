@@ -2,7 +2,6 @@ capital = 850
 
 set_research_slots = 2
 
-recruit_character = universal_hype_sla
 oob = "SLA_1936"
 
 add_ideas = {
@@ -58,7 +57,7 @@ if = {
 	}
 }
 
-recruit_character = univeral_advisor_89
+#New Text
 
 if = {
 	limit = {
@@ -95,7 +94,7 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Silazikk.dds"
 	expire = "2000.1.1"
-	ideology = stanilism
+	ideology = stalinism
 	traits = {
 		#
 	}

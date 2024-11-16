@@ -1,6 +1,6 @@
 division_template = {
 	name = "Аратосова Пехота"		# Same for "Active" and "Reserve" Infantry Divisions
-	division_names_group = ARA_INF_01
+	division_names_group = "Аратос"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -19,7 +19,7 @@ division_template = {
 
 division_template = {
 	name = "Аратосовы вояки"					# Mountain Division
-	division_names_group = ARA_MNT_01
+	division_names_group = "Аратос МНТ"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -30,7 +30,7 @@ division_template = {
 
 division_template = {
 	name = "Аратосовы Кони"				# Cavalry Brigade -- precursor to Fast Divisions. Fast Divisions add 2nd regiment of 2x L tank, 2x mot 
-	division_names_group = ARA_CAV_01
+	division_names_group = "Аратос КАВ"
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }

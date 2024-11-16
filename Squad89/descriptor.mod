@@ -6,5 +6,5 @@ tags={
 	"Sound"
 	"Ideologies"
 }
-name="SquadMod"
+name="Squad"
 supported_version="1.13.6"

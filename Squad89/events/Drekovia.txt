@@ -190,12 +190,6 @@ country_event = {
 		}
 		
 	}
-}
-
-country_event = {
-	id = drek.5.otkaz
-	title = drek.5.otkaz
-	desc = drek.5.otkaz.d
 
 }
 
@@ -404,129 +398,129 @@ country_event = {
 	}
 }
 
-#Vapers for hungary
-country_event = {
-	id = drek.12
-	title = drek.12.t
-	desc = drek.12.d
-	picture = GFX_report_event_chinese_soldiers_fighting
-
-	is_triggered_only = yes
-
-	option = {
-		name = greece.2.a #yes
-		ai_chance = {
-			factor = 60
-		}
-		
-		if = {
-		limit = {
-			39 = {
-			is_owned_by = DRE
-			} 
-		}
-
-		39 = {
-			transfer_state_to = CHB
-		}
-
-		}
-
-		if = {
-		limit = {
-			160 = {
-			is_owned_by = DRE
-			} 
-		}
-
-		160 = {
-			transfer_state_to = CHB
-		}
-
-		}
-
-		if = {
-		limit = {
-			850 = {
-			is_owned_by = DRE
-			} 
-		}
-
-		850 = {
-			transfer_state_to = CHB
-		}
-
-		}
-
-		if = {
-		limit = {
-			159 = {
-			is_owned_by = DRE
-			} 
-		}
-
-		159 = {
-			transfer_state_to = CHB
-		}
-
-		}
-
-		if = {
-		limit = {
-			43 = {
-			is_owned_by = CHB
-			} 
-		}
-
-		43 = {
-			transfer_state_to = DRE
-		}
-
-		}
-
-		if = {
-		limit = {
-			154 = {
-			is_owned_by = CHB
-			} 
-		}
-
-		154 = {
-			transfer_state_to = DRE
-		}
-
-		}
-
-		if = {
-		limit = {
-			155 = {
-			is_owned_by = CHB
-			} 
-		}
-
-		155 = {
-			transfer_state_to = DRE
-		}
-
-		}
-	}
-
-	option = {
-		name =  germany.999.b #no
-		ai_chance = {
-			factor = 40
-		}
-		
-		88 = {
-			transfer_state_to = DRE
-		}
-
-		784 = {
-			transfer_state_to = SVI
-		}
-
-		96 = {
-			transfer_state_to = SVI
-		}
-	}
-}
+##Vapers for hungary
+#country_event = {
+#	id = drek.12
+#	title = drek.12.t
+#	desc = drek.12.d
+#	picture = GFX_report_event_chinese_soldiers_fighting
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = greece.2.a #yes
+#		ai_chance = {
+#			factor = 60
+#		}
+#		
+#		if = {
+#		limit = {
+#			39 = {
+#			is_owned_by = DRE
+#			} 
+#		}
+#
+#		39 = {
+#			transfer_state_to = CHB
+#		}
+#
+#		}
+#
+#		if = {
+#		limit = {
+#			160 = {
+#			is_owned_by = DRE
+#			} 
+#		}
+#
+#		160 = {
+#			transfer_state_to = CHB
+#		}
+#
+#		}
+#
+#		if = {
+#		limit = {
+#			850 = {
+#			is_owned_by = DRE
+#			} 
+#		}
+#
+#		850 = {
+#			transfer_state_to = CHB
+#		}
+#
+#		}
+#
+#		if = {
+#		limit = {
+#			159 = {
+#			is_owned_by = DRE
+#			} 
+#		}
+#
+#		159 = {
+#			transfer_state_to = CHB
+#		}
+#
+#		}
+#
+#		if = {
+#		limit = {
+#			43 = {
+#			is_owned_by = CHB
+#			} 
+#		}
+#
+#		43 = {
+#			transfer_state_to = DRE
+#		}
+#
+#		}
+#
+#		if = {
+#		limit = {
+#			154 = {
+#			is_owned_by = CHB
+#			} 
+#		}
+#
+#		154 = {
+#			transfer_state_to = DRE
+#		}
+#
+#		}
+#
+#		if = {
+#		limit = {
+#			155 = {
+#			is_owned_by = CHB
+#			} 
+#		}
+#
+#		155 = {
+#			transfer_state_to = DRE
+#		}
+#
+#		}
+#	}
+#
+#	option = {
+#		name =  germany.999.b #no
+#		ai_chance = {
+#			factor = 40
+#		}
+#		
+#		88 = {
+#			transfer_state_to = DRE
+#		}
+#
+#		784 = {
+#			transfer_state_to = SVI
+#		}
+#
+#		96 = {
+#			transfer_state_to = SVI
+#		}
+#	}
+#}

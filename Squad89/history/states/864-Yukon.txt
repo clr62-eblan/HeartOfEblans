@@ -5,8 +5,8 @@ state={
 		3606 7869 7891 
 	}
 	history = {
-		owner = HES
-		add_core_of = HES
+		owner = HSU
+		add_core_of = HSU
 	}
 	manpower=10
 	state_category = wasteland

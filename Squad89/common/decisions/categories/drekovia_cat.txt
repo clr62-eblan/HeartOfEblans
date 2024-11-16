@@ -22,7 +22,7 @@ drekovia_integrations_cat = {
 	}
 
 	visible = {
-		has_completed_focus = DRE_own_way
+	#	has_completed_focus = DRE_own_way
 	}
 }
 

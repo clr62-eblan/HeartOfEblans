@@ -1,4 +1,4 @@
-capital = 76
+capital = 84
 
 set_research_slots = 2
 
@@ -46,7 +46,7 @@ if = {
 	}
 }
 
-recruit_character = univeral_advisor_89
+#New Text
 
 if = {
 	limit = {
@@ -68,8 +68,8 @@ set_politics = {
 
 create_country_leader = {
 	name = "Александр Гвинский"
+	picture = "gvi.dds"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Tatyrsha.dds"
 	expire = "2000.1.1"
 	ideology = stalinism
 	traits = {
@@ -79,8 +79,8 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Алехандровиц Йогвиннес"
+	picture = "gvi.dds"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "AntonFonSkirlovich.dds"
 	expire = "2000.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -90,8 +90,8 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Александр Гвин"
+	picture = "gvi.dds"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Laki.dds"
 	expire = "2000.1.1"
 	ideology = despotism
 	traits = {
@@ -101,8 +101,8 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Александр Гвин"
+	picture = "gvi.dds"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Toha.dds"
 	expire = "2000.1.1"
 	ideology = liberalism
 	traits = {

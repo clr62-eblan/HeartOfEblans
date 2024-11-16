@@ -24,7 +24,6 @@ set_politics = {
 add_ideas = {
 	disarmed_nation
 	DRE_treaty_of_triannon_aat
-	people_support_low
 	defeted_at_wwone
 }
 

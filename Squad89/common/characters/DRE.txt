@@ -3,8 +3,8 @@ characters = {
 		name = "Виталий Джуниор"
 		portraits={
 			civilian={
-				large=vitaliy_jr_small
-				small=vitaliy_jr_small
+				large=GFX_vitaliy_jr_small
+				small=GFX_vitaliy_jr_small
 			}
 		}
 		
@@ -25,4 +25,4 @@ characters = {
 			}
 		}
 	}
-	}
+}

@@ -1,6 +1,5 @@
 division_template = {
 	name = "Солярные Завоеватели"		# Same for "Active" and "Reserve" Infantry Divisions
-	division_names_group = SVE_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -17,7 +16,6 @@ division_template = {
 
 division_template = {
 	name = "Солярные Скалолазы"					# Mountain Division
-	division_names_group = SVE_MNT_01
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }

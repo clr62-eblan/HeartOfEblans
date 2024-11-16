@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = HAM
+		owner = GVI
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1

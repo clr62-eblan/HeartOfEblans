@@ -11,8 +11,8 @@ state = {
 	
 	history = {
 
-		owner = DRE
-		add_core_of = DRE
+		owner = KRU
+		add_core_of = KRU
 
 		victory_points = {
 			557 1

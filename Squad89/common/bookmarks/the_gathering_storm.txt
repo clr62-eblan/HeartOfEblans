@@ -18,7 +18,7 @@ bookmarks = {
 		}
 		"PYA"={
 			history = "YUG_GATHERING_STORM_DESC"
-			ideology = hypetiktok
+			ideology = hypecratia
 			ideas = {
 				dva_disa
 				sp_crisis
@@ -85,7 +85,7 @@ bookmarks = {
 		"MPK"={
 			minor = yes
 			history = "LAT_GATHERING_STORM_DESC"
-			ideology = hypetiktok
+			ideology = hypecratia
 			ideas = {
 			}
 			focuses = {

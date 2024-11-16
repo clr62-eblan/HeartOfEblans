@@ -28,4 +28,9 @@ spriteTypes = {
 		name = "GFX_sp_event_dayraid_fall"
 		textureFile = "/gfx/sp_events/Super_Event_dayraid_fall.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_bruh"
+		textureFile = "/gfx/sp_events/Super_Event_dayraid_fall.dds"
+	}
 }

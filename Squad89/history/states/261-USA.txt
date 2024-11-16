@@ -9,14 +9,14 @@ state={
 	state_category = metropolis
 
 	history={
-		owner = HES
+		owner = HSU
 		buildings = {
 			infrastructure = 4 #was: 7
 			arms_factory = 1
 			industrial_complex = 6
 
 		}
-		add_core_of = HES
+		add_core_of = HSU
 		victory_points = {
 			6855 5 
 		}

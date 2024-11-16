@@ -3,8 +3,8 @@ characters = {
 		name = "Слабоумный-Хайпократ"
 		portraits={
 			civilian={
-				large=unknown_char_small
-				small=unknown_char_small
+				large=GFX_unknown_char_small
+				small=GFX_unknown_char_small
 			}
 		}
 		

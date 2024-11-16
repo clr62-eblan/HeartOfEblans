@@ -63,7 +63,6 @@ if = {
 	}
 }
 
-recruit_character = univeral_advisor_89
 
 if = {
 	limit = {
