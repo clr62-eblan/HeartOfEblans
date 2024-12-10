@@ -12,6 +12,7 @@ state = {
 	}
 
 	history= {
+		add_core_of = SCO
 		owner = SVE
 		victory_points = {
 			6062 1 #Skye/Stornoway
@@ -33,7 +34,6 @@ state = {
 			}
 		}
 		add_core_of = SVE
-		add_core_of = ARA
 	}
 
 	provinces = { 

@@ -17,10 +17,6 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-
-		1938.9.30 = {
-			owner = DKK
-		}
 	}
 
 	local_supplies=0.0 

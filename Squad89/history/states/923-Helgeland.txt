@@ -13,12 +13,8 @@ state = {
 	history = {
 		owner = PYA
 		add_core_of = PYA
-		if = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			#add_core_of = SMI
-		}
+		add_core_of = SMI
+		
 		victory_points = {
 			3048 1
 		}

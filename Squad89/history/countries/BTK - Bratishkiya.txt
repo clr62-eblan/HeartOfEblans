@@ -7,6 +7,7 @@ set_research_slots = 5
 
 add_ideas = {
 	bad_government
+	slay_2023_king
 }
 
 # Starting tech

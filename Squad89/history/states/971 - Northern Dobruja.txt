@@ -11,6 +11,7 @@ state = {
 
 		owner = HAM
 		add_core_of = HAM
+		add_claim_by = BUL
 
 		victory_points = { 
 			657 3 

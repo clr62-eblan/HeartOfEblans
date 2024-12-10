@@ -5,12 +5,12 @@ state={
 	impassable = yes
 
 	history={
-		#owner = DIP
+		owner = AST
 		buildings = {
 			infrastructure = 1
 
 		}
-		#add_core_of = DIP
+		add_core_of = AST
 
 	}
 

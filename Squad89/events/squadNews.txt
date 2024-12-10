@@ -117,3 +117,22 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = squad_news.7
+	title = squad_news.7.t
+	desc = squad_news.7.d
+	picture = GFX_news_event_slay
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}

@@ -8,6 +8,7 @@ set_research_slots = 5
 add_ideas = {
 	dva_disa
 	sp_crisis
+	slay_2023_mem_goda
 }
 
 recruit_character = universal_hype_pya

@@ -1231,3 +1231,7 @@ CHB = {
 	color = rgb { 167 7 39 }
 	color_ui = rgb { 167 7 39 }
 }
+PBU = {
+	color = rgb { 84 111 148 }
+	color_ui = rgb { 84 111 148 }
+}
