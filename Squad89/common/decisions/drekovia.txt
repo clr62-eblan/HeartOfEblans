@@ -174,11 +174,11 @@ drekovia_sdo_cat = {
 		}
 		
 		timeout_effect = {
-			add_ideas = sp_crisis
+			add_ideas = DRE_blizkrieg_zabuksoval
 		}
 		
 		complete_effect = {
-			add_ideas = dva_disa
+			add_ideas = DRE_real_blitzkrieg
 		}
 		
 	}

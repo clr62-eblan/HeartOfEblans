@@ -6,5 +6,6 @@ tags={
 	"Sound"
 	"Ideologies"
 }
+replace_path="gfx/loadingscreens"
 name="Squad"
 supported_version="1.13.6"

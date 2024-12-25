@@ -36,7 +36,7 @@ create_country_leader = {
 	expire = "2000.1.1"
 	ideology = stalinism
 	traits = {
-		#
+		polkovnik
 	}
 }
 
@@ -47,7 +47,7 @@ create_country_leader = {
 	expire = "2000.1.1"
 	ideology = fascism_ideology
 	traits = {
-		#
+		polkovnik
 	}
 }
 
@@ -58,7 +58,7 @@ create_country_leader = {
 	expire = "2000.1.1"
 	ideology = despotism
 	traits = {
-		#
+		polkovnik
 	}
 }
 
@@ -69,7 +69,7 @@ create_country_leader = {
 	expire = "2000.1.1"
 	ideology = liberalism
 	traits = {
-		#
+		polkovnik
 	}
 }
 
@@ -80,7 +80,7 @@ create_country_leader = {
 	expire = "2000.1.1"
 	ideology = hypetiktok
 	traits = {
-		#
+		polkovnik
 	}
 }
 

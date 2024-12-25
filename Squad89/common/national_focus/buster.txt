@@ -16,7 +16,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 0
-		cost = 50
+		cost = 100
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {

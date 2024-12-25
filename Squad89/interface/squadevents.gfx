@@ -35,4 +35,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/dreyk_country_event.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_acf_gon"
+		texturefile = "gfx/event_pictures/report_event_acf_gon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_stint_palace"
+		texturefile = "gfx/event_pictures/news_palace.dds"
+	}
+	
 }

@@ -28,11 +28,7 @@ state = {
 			9665 3
 		}
 
-		1938.3.12 = {
-			owner = BTK
-			controller = GER
-			add_core_of = BTK
-		}
+		set_demilitarized_zone = yes
 	}
 
 	provinces = {

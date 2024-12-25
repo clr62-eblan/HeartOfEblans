@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = KUS
 
 		victory_points = {
 			3134 5 
@@ -29,8 +29,7 @@ state={
 			}
 		}
 
-		add_core_of = SOV
-		add_core_of = SMI
+		add_core_of = KUS
 		
 	}
 

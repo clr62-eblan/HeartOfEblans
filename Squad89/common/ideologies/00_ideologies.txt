@@ -138,6 +138,10 @@ ideologies = {
 			hypetiktok = {
 				color = { 117 255 232 }
 			}
+			
+			hypeclown = {
+				color = { 184 24 69 }
+			}
 		}
 
 		dynamic_faction_names = {

@@ -12,7 +12,6 @@ state = {
 
 		owner = BTK
 		add_core_of = BTK
-		add_core_of = DRE
 
 		victory_points = {
 			692 20 # Munich

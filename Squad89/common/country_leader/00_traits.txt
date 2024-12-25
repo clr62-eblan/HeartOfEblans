@@ -42,6 +42,16 @@
 ###Todo remove commented advisor experience gains
 
 leader_traits = {
+
+	polkovnik = {
+		random = no
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	slaboumie = {
 		random = no

@@ -38,6 +38,101 @@ ideas = {
 			}
 		}
 		
+		GON_stint_palace_1 = {
+			picture = stint_palace
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				supply_factor = -0.05
+				justify_war_goal_time = -0.15
+				political_power_gain = -0.15
+			}
+		}
+		
+		GON_stint_palace_2 = {
+			picture = stint_palace
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				justify_war_goal_time = -0.05
+				political_power_gain = -0.09
+			}
+		}
+		
+		GON_stint_palace_3 = {
+			picture = stint_palace
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+			}
+		}
+		
+		GON_stint_palace_4 = {
+			picture = stint_palace
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				justify_war_goal_time = 0.05
+				political_power_gain = 0.15
+				army_attack_factor = 0.05
+			}
+		}
+		
+		GON_acf = {
+			picture = GON_acf
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = -0.15
+				political_power_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		
 		GON_legends_of_stintler = {
 						
 			picture = saf_history_of_segregation_2

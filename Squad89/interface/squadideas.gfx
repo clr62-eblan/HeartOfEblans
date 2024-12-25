@@ -26,6 +26,16 @@ spriteTypes = {
     }  
 	
     spriteType = {
+        name = "GFX_idea_stint_palace"
+        texturefile = "gfx/interface/ideas/stintler_palace.dds"
+    }
+	
+    spriteType = {
+        name = "GFX_idea_GON_acf"
+        texturefile = "gfx/interface/ideas/acf_gon.dds"
+    }
+	
+    spriteType = {
         name = "GFX_idea_slay_2024_award"
         texturefile = "gfx/interface/ideas/slay_2024_award.dds"
     }  

@@ -12,8 +12,6 @@ state = {
 	history = {
 
 		owner = CHB
-		add_core_of = CHB
-		add_core_of = DRE
 
 		victory_points = {
 			6720 10 # Györ

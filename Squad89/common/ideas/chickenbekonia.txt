@@ -39,6 +39,27 @@ ideas = {
 			}
 			
 		}
+		CHB_hungary_problem = {
+			
+			picture = HUN_promoted_hungarianism
+
+			allowed = {
+				original_tag = CHB
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_weekly = -0.01
+				resistance_activity = 0.5
+				non_core_manpower = -0.2
+			}
+			
+		}
 		CHB_NationalTerra = {
 			
 			picture = chb_nat_ter

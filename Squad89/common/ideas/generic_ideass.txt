@@ -5,12 +5,16 @@ ideas = {
         hypecratia_ethos = {
 		
 			removal_cost = -1
+			
+			available = {
+				NOT = { ruling_party = hypecratia }
+			}
 
 			picture = GFX_idea_hypecratia_ethos
 
 			modifier = {
 				democratic_drift = -0.005
-                hypecratia_drift = 0.01
+                hypecratia_drift = 0.02
 			}
 		}
 		

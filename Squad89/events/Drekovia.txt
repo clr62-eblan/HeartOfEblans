@@ -13,12 +13,18 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
+		
+		CHB = {
+			remove_ideas = CHB_hungary_problem
+		}
+		
 			
 		DRE = {
 			transfer_state = 43
 			transfer_state = 155
 			transfer_state = 154
 			transfer_state = 974
+			transfer_state = 973
 		}
 	}
 
