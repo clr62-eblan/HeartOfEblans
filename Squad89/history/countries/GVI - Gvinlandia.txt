@@ -2,6 +2,8 @@ capital = 46
 
 set_research_slots = 2
 
+oob = "GVI_1936"
+
 
 
 # Starting tech

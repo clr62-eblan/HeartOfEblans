@@ -18,6 +18,16 @@ ideas = {
 			}
 		}
 		
+		demografic_problems = {
+			removal_cost = -1
+
+			picture = generic_army_problems
+
+			modifier = {
+				conscription_factor = -0.06
+			}
+		}
+		
 
         borets_s_pafosom = {
 		

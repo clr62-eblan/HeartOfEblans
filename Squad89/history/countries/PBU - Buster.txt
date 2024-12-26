@@ -1,5 +1,7 @@
 capital = 907
 
+oob = "PBU_1936"
+
 
 set_research_slots = 3
 

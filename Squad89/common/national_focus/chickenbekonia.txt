@@ -1774,9 +1774,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 103 }
 				103 = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 2
+						instant_build = yes
 					}
 				}
 			}
@@ -1784,9 +1785,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 108 }
 				108 = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -1794,9 +1796,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 185 }
 				185 = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -1804,15 +1807,12 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 47 }
 				47 = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 2
+						instant_build = yes
 					}
 				}
-			}
-
-			hidden_effect = {
-				people_support_development_improvement = yes
 			}
 			
 		}
@@ -1833,9 +1833,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 109 }
 				109 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -1843,9 +1844,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 107 }
 				107 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 2
+						instant_build = yes
 					}
 				}
 			}
@@ -1853,9 +1855,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 105 }
 				105 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -1863,15 +1866,12 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 106 }
 				106 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 2
+						instant_build = yes
 					}
 				}
-			}
-
-			hidden_effect = {
-				people_support_development_improvement = yes
 			}
 		}
 	}
@@ -1889,13 +1889,15 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 104 }
 				104 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 2
+						instant_build = yes
 					}
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -1903,13 +1905,15 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 804 }
 				804 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -1917,13 +1921,15 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 802 }
 				802 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -1931,13 +1937,15 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 934 }
 				934 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -1945,13 +1953,15 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 44 }
 				44 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -1959,13 +1969,15 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 731 }
 				731 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -2666,178 +2678,184 @@ focus_tree = {
 		available = {
 			has_government = fascism
 		}
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = chb_improve_national_spirit
 
 		completion_reward = {
 			random_owned_controlled_state = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 
 
 				random_owned_controlled_state = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 
 				random_owned_controlled_state = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 
 				random_owned_controlled_state = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 
 			random_owned_controlled_state = {
-				set_building_level = {
-					type = arms_factory
-					level = 1
-				}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 			}
 
 
 			random_owned_controlled_state = {
-				set_building_level = {
-					type = arms_factory
-					level = 1
-				}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 			}
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-	focus = {
-		id = chb_full_war_industrial_2
-		icon = GFX_focus_generic_industry_2
-		cost = 10
-		prerequisite = { focus = chb_full_war_industrial_1}
-		x = 0
-		y = 1
-		relative_position_id = chb_full_war_industrial_1
-
-		completion_reward = {
-				random_owned_controlled_state = {
-					set_building_level = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-
-
-				random_owned_controlled_state = {
-					set_building_level = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-
-				random_owned_controlled_state = {
-					set_building_level = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-
-				random_owned_controlled_state = {
-					set_building_level = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-
-			random_owned_controlled_state = {
-				set_building_level = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-
-
-			random_owned_controlled_state = {
-				set_building_level = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-
-			hidden_effect = {
-				people_support_development_degradation = yes
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = chb_full_war_industrial_3
-		icon = GFX_focus_generic_industry_3
-		cost = 10
-		prerequisite = { focus = chb_full_war_industrial_2}
-		x = 0
-		y = 1
-		relative_position_id = chb_full_war_industrial_2
-
-		completion_reward = {
-				random_owned_controlled_state = {
-					set_building_level = {
-						type = arms_factory
-						level = 1
-					}
-				}
-
-
-				random_owned_controlled_state = {
-					set_building_level = {
-						type = arms_factory
-						level = 1
-					}
-				}
-
-				random_owned_controlled_state = {
-					set_building_level = {
-						type = arms_factory
-						level = 1
-					}
-				}
-
-				random_owned_controlled_state = {
-					set_building_level = {
-						type = arms_factory
-						level = 1
-					}
-				}
-
-			random_owned_controlled_state = {
-				set_building_level = {
-					type = arms_factory
-					level = 1
-				}
-			}
-
-
-			random_owned_controlled_state = {
-				set_building_level = {
-					type = arms_factory
-					level = 1
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
+	#focus = {
+	#	id = chb_full_war_industrial_2
+	#	icon = GFX_focus_generic_industry_2
+	#	cost = 10
+	#	prerequisite = { focus = chb_full_war_industrial_1}
+	#	x = 0
+	#	y = 1
+	#	relative_position_id = chb_full_war_industrial_1
+#
+	#	completion_reward = {
+	#			random_owned_controlled_state = {
+	#				set_building_level = {
+	#					type = industrial_complex
+	#					level = 1
+	#				}
+	#			}
+#
+#
+	#			random_owned_controlled_state = {
+	#				set_building_level = {
+	#					type = industrial_complex
+	#					level = 1
+	#				}
+	#			}
+#
+	#			random_owned_controlled_state = {
+	#				set_building_level = {
+	#					type = industrial_complex
+	#					level = 1
+	#				}
+	#			}
+#
+	#			random_owned_controlled_state = {
+	#				set_building_level = {
+	#					type = industrial_complex
+	#					level = 1
+	#				}
+	#			}
+#
+	#		random_owned_controlled_state = {
+	#			set_building_level = {
+	#				type = industrial_complex
+	#				level = 1
+	#			}
+	#		}
+#
+#
+	#		random_owned_controlled_state = {
+	#			set_building_level = {
+	#				type = industrial_complex
+	#				level = 1
+	#			}
+	#		}
+#
+	#		hidden_effect = {
+	#			people_support_development_degradation = yes
+	#		}
+	#	}
+#
+	#	search_filters = { FOCUS_FILTER_RESEARCH }
+	#}
+#
+	#focus = {
+	#	id = chb_full_war_industrial_3
+	#	icon = GFX_focus_generic_industry_3
+	#	cost = 10
+	#	prerequisite = { focus = chb_full_war_industrial_2}
+	#	x = 0
+	#	y = 1
+	#	relative_position_id = chb_full_war_industrial_2
+#
+	#	completion_reward = {
+	#			random_owned_controlled_state = {
+	#				set_building_level = {
+	#					type = arms_factory
+	#					level = 1
+	#				}
+	#			}
+#
+#
+	#			random_owned_controlled_state = {
+	#				set_building_level = {
+	#					type = arms_factory
+	#					level = 1
+	#				}
+	#			}
+#
+	#			random_owned_controlled_state = {
+	#				set_building_level = {
+	#					type = arms_factory
+	#					level = 1
+	#				}
+	#			}
+#
+	#			random_owned_controlled_state = {
+	#				set_building_level = {
+	#					type = arms_factory
+	#					level = 1
+	#				}
+	#			}
+#
+	#		random_owned_controlled_state = {
+	#			set_building_level = {
+	#				type = arms_factory
+	#				level = 1
+	#			}
+	#		}
+#
+#
+	#		random_owned_controlled_state = {
+	#			set_building_level = {
+	#				type = arms_factory
+	#				level = 1
+	#			}
+	#		}
+	#	}
+#
+	#	search_filters = { FOCUS_FILTER_RESEARCH }
+	#}
 
 	focus = {
 		id = chb_orientation_on_BTK
@@ -3346,24 +3364,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-	focus = {
-		id = chb_hype_drake_prblm
-		icon = GFX_goal_chb_drake
-		cost = 10
-		prerequisite = { focus = chb_hype_schools focus = chb_hype_young_army focus = chb_hype_expand_national_hype_production }
-		x = -1
-		y = 2
-		relative_position_id = chb_hype_defend_drake
+	#focus = {
+	#	id = chb_hype_drake_prblm
+	#	icon = GFX_goal_chb_drake
+	#	cost = 10
+	#	prerequisite = { focus = chb_hype_schools focus = chb_hype_young_army focus = chb_hype_expand_national_hype_production }
+	#	x = -1
+	#	y = 2
+	#	relative_position_id = chb_hype_defend_drake
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
+	#	search_filters = { FOCUS_FILTER_RESEARCH }
+	#}
 
 	focus = {
 		id = chb_hype_zolo_prblm
 		icon = GFX_goal_zolo_focus
 		cost = 10
 		prerequisite = { focus = chb_hype_schools focus = chb_hype_young_army focus = chb_hype_expand_national_hype_production }
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = chb_hype_defend_drake
 

@@ -4,9 +4,11 @@ oob = "SPR_1936"
 
 set_research_slots = 4
 
-add_ideas = closed_economy
-add_ideas = GON_kotel_shabanova
-add_ideas = GON_legends_of_stintler
+add_ideas = { 
+	closed_economy
+	GON_kotel_shabanova
+	GON_legends_of_stintler
+}
 
 recruit_character = universal_hype_gon
 

@@ -141,18 +141,18 @@ country_event = {
 		name = gonduras.5.a #pofig
 		add_ideas = GON_acf
 		hidden_effect = {
-			add_to_variable = { pofig_na_opozitsiyu = 1 }
+			#add_to_variable = { pofig_na_opozitsiyu = 1 }
 		}
 	}
 	
-	option = {
-		name = gonduras.5.b #sleshka za alekseem
-		
-		add_ideas = GON_acf
-		
-		hidden_effect = {
-			add_to_variable = { aleksey_eblanov = 1 }
-		}
-	}
+	#option = {
+	#	name = gonduras.5.b #sleshka za alekseem
+	#	
+	#	add_ideas = GON_acf
+	#	
+	#	hidden_effect = {
+	#		add_to_variable = { aleksey_eblanov = 1 }
+	#	}
+	#}
 }
 
