@@ -2,12 +2,16 @@ music_station = "events_music_bruh"
 
 music = {
 song = "SDO_POCHALOS"
-chance = { factor = 1 }}
+chance = { factor = 0 }}
 
 music = {
 song = "mazokgrad_fall"
-chance = { factor = 1 }}
+chance = { factor = 0 }}
 
 music = {
 song = "dayraid_fall"
-chance = { factor = 1 }}
+chance = { factor = 0 }}
+
+music = {
+song = "stintler_palace"
+chance = { factor = 0 }}

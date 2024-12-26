@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = SVIch_focus
 	
 	country = {
@@ -2134,7 +2134,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = ARA_establish_the_atomics_energy_board
 				bonus = 5
 				uses = 2
 				category = nuclear
@@ -2289,7 +2288,7 @@ focus_tree = {
 	focus = {
 		id = SVI_hype_bustergrad
 		icon = GFX_goal_svi_destroy_bustergrad
-		prerequisite = { focus = SVI_hype_hypercore_marionete focus = SVI_hype_hypercore_rise }
+		prerequisite = { focus = SVI_hype_hypercore_rise }
 		x = 0
 		y = 2
 		relative_position_id = SVI_hype_5
@@ -2477,7 +2476,7 @@ focus_tree = {
 
 	focus = {
 		id = SVI_hype_march_at_razdva
-		icon = GFX_focus_ARG_march_to_la_casa_rosada
+		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SVI_hype_militarize_scandinavia_hypecrats }
 		x = 0
 		y = 1
@@ -2899,42 +2898,42 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SVI_hype_hypercore_marionete
-		icon = GFX_goal_hypecratia_effort
-		prerequisite = { focus = SVI_hype_5 }
-		mutually_exclusive = { focus = SVI_hype_hypercore_rise }
-		x = -1
-		y = 1
-		relative_position_id = SVI_hype_5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			add_stability = 0.03
-			add_war_support -0.1
-			release_puppet_on_controlled = HYP
-		}
-	}
+	#focus = {
+	#	id = SVI_hype_hypercore_marionete
+	#	icon = GFX_goal_hypecratia_effort
+	#	prerequisite = { focus = SVI_hype_5 }
+	#	mutually_exclusive = { focus = SVI_hype_hypercore_rise }
+	#	x = -1
+	#	y = 1
+	#	relative_position_id = SVI_hype_5
+#
+	#	cost = 10
+#
+	#	ai_will_do = {
+	#		factor = 90
+	#	}
+#
+	#	bypass = {
+#
+	#	}
+#
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = yes
+	#	search_filters = { FOCUS_FILTER_POLITICAL }
+#
+	#	completion_reward = {
+	#		add_stability = 0.03
+	#		add_war_support -0.1
+	#		release_puppet_on_controlled = HYP
+	#	}
+	#}
 
 	focus = {
 		id = SVI_hype_hypercore_rise
 		icon = GFX_goal_hypecratia_effort
 		prerequisite = { focus = SVI_hype_5}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SVI_hype_5
 		mutually_exclusive = { focus = SVI_hype_hypercore_marionete }

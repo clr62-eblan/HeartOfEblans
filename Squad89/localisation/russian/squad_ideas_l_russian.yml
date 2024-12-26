@@ -54,7 +54,7 @@
  sp_crisis: "Кризис на СП5"
  bad_government: "Слабое правительство"
  ARA_SZS: "Силы Защиты Суверенитета (СЗС)"
- ARA_dictator_constitution: "Конституция Диктатора"
+ ARA_dicator_constitution: "Конституция Диктатора"
  ARA_national_catastrophe: "Национальная катастрофа"
  ARA_rebuild_the_nation: "Перестройка Нации"
  ARA_national_revitalization: "Национальное возрождение"
@@ -84,4 +84,5 @@
  DRE_blizkrieg_zabuksoval: "Блицкриг забуксовал"
  DRE_real_blitzkrieg: "Настоящий Блицкриг"
  demografic_problems: "Демографические проблемы"
+ democracy_ban: "Демократия под запретом"
  

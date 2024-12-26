@@ -142,6 +142,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
             add_political_power = 50
+			add_ideas = GON_europe_defense_council
 		}
 	}
 
@@ -182,7 +183,7 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_chi_army_reform
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 7
@@ -475,7 +476,6 @@ focus_tree = {
 		id = GON_international
         relative_position_id = GON_expand_industry
         prerequisite = { focus = GON_expand_industry }
-        mutually_exclusive = { focus = GON_fascism_government focus = GON_hypecrat}
 		available = {
 
 		}
@@ -509,7 +509,6 @@ focus_tree = {
 		id = GON_fascism_government
         relative_position_id = GON_anti_capitalist
         prerequisite = { focus = GON_anti_capitalist } 
-        mutually_exclusive = { focus = GON_international focus = GON_hypecrat}
 		available = {
 
 		}
@@ -884,6 +883,7 @@ focus_tree = {
 		id = GON_internet_in_gondurasia
         relative_position_id = GON_kill_monarchy
         prerequisite = { focus = GON_kill_monarchy }
+		mutually_exclusive = { focus = GON_expand_industry focus = GON_anti_capitalist }
 		available = {
 
 		}
@@ -911,7 +911,6 @@ focus_tree = {
 		id = GON_hypecrat
         relative_position_id = GON_internet_in_gondurasia
         prerequisite = { focus = GON_internet_in_gondurasia }
-        mutually_exclusive = { focus = GON_fascism_government focus = GON_international }
 		available = {
 
 		}

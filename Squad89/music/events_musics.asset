@@ -12,3 +12,8 @@ music = {
 	name = "dayraid_fall"
 	file = "dayraid_fall.ogg"
 }
+
+music = {
+	name = "stintler_palace"
+	file = "stintler_palace.ogg"
+}

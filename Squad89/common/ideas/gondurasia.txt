@@ -16,6 +16,21 @@ ideas = {
 				enemy_army_speed_factor = -0.1
 			}
 		}
+		
+		GON_europe_defense_council = {
+			picture = SOV_scientist_defect
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				army_attack_against_major_factor = 0.15
+				surrender_limit = 0.15
+				planning_speed = 0.3
+			}
+		}
 
 		GON_international_idea = {
 						

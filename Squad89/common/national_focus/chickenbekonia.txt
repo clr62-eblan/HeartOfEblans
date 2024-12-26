@@ -2408,7 +2408,11 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = chb_terriatorial_expansion}
 		completion_reward = {
-			add_ideas = democracy_banned
+			add_ideas = democracy_ban
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
 		}
 		#mutually_exclusive = { focus = chb_svinland_union }
 		x = 1
@@ -3092,6 +3096,7 @@ focus_tree = {
 			#	scope = CHB
 			#	days = 140
 			#}
+			add_ideas = democracy_ban
 
 			add_popularity = {
 				ideology = democratic

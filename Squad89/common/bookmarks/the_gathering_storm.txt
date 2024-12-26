@@ -7,28 +7,29 @@ bookmarks = {
 		default_country = "CHB"
 		default = yes
 		"CHB"={
-			history = "YUG_GATHERING_STORM_DESC"
+			history = ""
 			ideology = fascism
 			ideas = {
-				
+				CHB_hungary_problem
 			}
 			focuses = {
 				
 			}
 		}
-		"PYA"={
-			history = "YUG_GATHERING_STORM_DESC"
+		"ARA"={
+			history = ""
 			ideology = hypecratia
 			ideas = {
-				dva_disa
-				sp_crisis
+				defeted_at_wwone
+				ARA_national_catastrophe
+				ARA_dicator_constitution
 			}
 			focuses = {
 				
 			}
 		}
 		"SVI"={
-			history = "LAT_GATHERING_STORM_DESC"
+			history = ""
 			ideology = democratic
 			ideas = {
 				svinland_ru
@@ -38,7 +39,7 @@ bookmarks = {
 			}
 		}
 		"DRE"={
-			history = "YUG_GATHERING_STORM_DESC"
+			history = ""
 			ideology = hypecratia
 			ideas = {
 				DRE_treaty_of_triannon_aat
@@ -49,7 +50,7 @@ bookmarks = {
 			}
 		}
 		"HAM"={
-			history = "LAT_GATHERING_STORM_DESC"
+			history = ""
 			ideology = hypecratia
 			ideas = {
 			}
@@ -57,21 +58,24 @@ bookmarks = {
 			}
 		}
 		"BTK"={
-			history = "LAT_GATHERING_STORM_DESC"
+			history = ""
 			ideology = fascism
 			ideas = {
 				bad_government
+				slay_2023_king
+				demografic_problems
 			}
 			focuses = {
 			}
 		}
 		
 		"GON"={
-			history = "LAT_GATHERING_STORM_DESC"
+			history = ""
 			ideology = neutrality
 			ideas = {
 				GON_kotel_shabanova
 				GON_legends_of_stintler
+				demografic_problems
 			}
 			focuses = {
 			}
@@ -79,12 +83,12 @@ bookmarks = {
 
 
 		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = ""
 		}
 		
 		"MPK"={
 			minor = yes
-			history = "LAT_GATHERING_STORM_DESC"
+			history = ""
 			ideology = hypecratia
 			ideas = {
 			}
@@ -94,7 +98,7 @@ bookmarks = {
 		
 		"LAG"={
 			minor = yes
-			history = "LAT_GATHERING_STORM_DESC"
+			history = ""
 			ideology = neutrality
 			ideas = {
 			}
@@ -104,7 +108,7 @@ bookmarks = {
 		
 		"CVD" = {
 			minor = yes
-			history = "LAT_GATHERING_STORM_DESC"
+			history = ""
 			ideology = hypecratia
 			ideas = {
 			}
@@ -112,22 +116,21 @@ bookmarks = {
 			}
 		}
 		
-		"ARA" = {
+		"PYA" = {
 			minor = yes
-			history = "LAT_GATHERING_STORM_DESC"
+			history = ""
 			ideology = fascism
 			ideas = {
-				defeted_at_wwone
-				ARA_national_catastrophe
-				ARA_dicator_constitution
+				dva_disa
+				sp_crisis
 			}
 			focuses = {
 			}
 		}
 		
-		"HES" = {
+		"HSU" = {
 			minor = yes
-			history = "LAT_GATHERING_STORM_DESC"
+			history = ""
 			ideology = democratic
 			ideas = {
 			}
