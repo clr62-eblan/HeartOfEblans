@@ -1,4 +1,5 @@
 version="89.0"
+picture = "thumbnail.png"
 tags={
 	"Alternative History"
 	"Events"
