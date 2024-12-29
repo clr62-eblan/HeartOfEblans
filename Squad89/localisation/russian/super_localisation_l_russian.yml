@@ -10,3 +10,11 @@
   sp_event_dayraid_fall:0 "Падения Дайрейда"
   sp_event_dayraid_fall_remark:0 "Близится конец СДО?"
   sp_event_dayraid_fall_quote:0 "Ничто не сможет спасти Дрейковию. \n- Mzlff"
+  
+  sp_event_blitzkrieg_zabuksoval:0 "Блицкриг забуксовал"
+  sp_event_blitzkrieg_zabuksoval_remark:0 "Что-то пошло не так..."
+  sp_event_blitzkrieg_zabuksoval_quote:0 "Дамы и господа, вы должны быть уверены в том\n что великая Чикен-Бекония никогда не падёт! \n- Mzlff"
+  
+  sp_event_lagoda_raspil:0 "Распил Лагоды"
+  sp_event_lagoda_raspil_remark:0 "Ой ой"
+  sp_event_lagoda_raspil_quote:0 "Это моё! \n- Школьник Drake"

@@ -30,6 +30,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_sp_event_blitzkrieg_zabuksoval"
+		textureFile = "/gfx/sp_events/Super_Event_blitzkrieg_zabuksoval.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_lagoda_raspil"
+		textureFile = "/gfx/sp_events/Super_Event_lagoda_raspil.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_bruh"
 		textureFile = "/gfx/sp_events/Super_Event_dayraid_fall.dds"
 	}

@@ -8,9 +8,14 @@ add_ideas = {
 	closed_economy
 	GON_kotel_shabanova
 	GON_legends_of_stintler
+	demografic_problems
 }
 
 recruit_character = universal_hype_gon
+recruit_character = neketondi
+recruit_character = afsygga
+recruit_character = cherepaxa_o5
+
 
 # Starting tech
 set_technology = {

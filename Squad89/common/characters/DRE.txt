@@ -25,4 +25,82 @@ characters = {
 			}
 		}
 	}
+	
+    amnyam ={ 
+        name = "Ам Ням"
+        portraits= {
+            army = {
+                large = "GFX_dre_amnam_large"
+				small = "GFX_dre_anman_small"
+            }
+        }
+        field_marshal = {
+			traits = { hill_fighter trait_engineer skilled_staffer }
+            skill = 3
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 2
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = amnyam
+           ledger = army
+           allowed = { original_tag = DRE } # Optional, doesn't change anything.
+           traits = { army_chief_maneuver_2 }
+       }
+    }
+	
+    sorrell ={ 
+        name = "1SORRELL1"
+        portraits= {
+            army = {
+                large = "GFX_dre_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = {  trait_mountaineer }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = high_command
+           idea_token = sorrell
+           ledger = army
+           allowed = { original_tag = DRE } # Optional, doesn't change anything.
+           traits = { army_commando_1 }
+       }
+    }
+	
+    alenakuz ={ 
+        name = "alenakus03"
+        portraits= {
+            army = {
+                large = "GFX_dre_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { fortress_buster }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 1
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = alenakuz
+           ledger = army
+           allowed = { original_tag = DRE } # Optional, doesn't change anything.
+           traits = { army_regrouping_2 }
+       }
+    }
 }

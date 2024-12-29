@@ -1,0 +1,337 @@
+focus_tree = {
+	id = gondurassia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = GON_call_to_reform
+		mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_join_comintern
+		x = 3
+		y = 0
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = GON_the_clean_election
+		mutually_exclusive = { focus = GON_stintler_way focus = GON_call_to_reform }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_CHL_mobilize_the_veteran_legionaries
+		x = 8
+		y = 0
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = GON_neutrality_manifest
+		prerequisite = { focus = GON_the_clean_election }
+		relative_position_id = GON_the_clean_election
+		mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = -2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = GON_memory_of_democratic
+		prerequisite = { focus = GON_the_clean_election }
+		relative_position_id = GON_the_clean_election
+		mutually_exclusive = { focus = GON_neutrality_manifest }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_democratic_europe
+		x = 2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = GON_promote_urbanisation
+		prerequisite = { focus = GON_memory_of_democratic }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_industry_2
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+		}
+	}
+
+	focus = {
+		id = GON_anticorruption_politics
+		prerequisite = { focus = GON_memory_of_democratic }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ARG_anti_corruption_policies
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+		}
+	}
+
+	focus = {
+		id = GON_regulated_salaries
+		prerequisite = { focus = GON_promote_urbanisation }
+		relative_position_id = GON_promote_urbanisation
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_DEN_limited_regulations
+		x = 2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GON_fond_of_national_blagosostoyanie
+		prerequisite = { focus = GON_regulated_salaries }
+		relative_position_id = GON_regulated_salaries
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GER_plenipotentiary_of_the_four_year_plan
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GON_improve_education
+		prerequisite = { focus = GON_anticorruption_politics }
+		relative_position_id = GON_anticorruption_politics
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = -2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GON_university_reform
+		prerequisite = { focus = GON_improve_education }
+		relative_position_id = GON_improve_education
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GON_destroy_opposition
+		prerequisite = { focus = GON_promote_urbanisation }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_support_the_left_right
+		x = 1
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GON_real_democratic
+		prerequisite = { focus = GON_anticorruption_politics }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_support_democracy
+		x = -1
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GON_gondurassia_for_all
+		prerequisite = { focus = GON_real_democratic focus = GON_destroy_opposition }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_gondurassia_for_all
+		x = 0
+		y = 3
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = GON_stintler_way
+		mutually_exclusive = { focus = GON_the_clean_election focus = GON_call_to_reform }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_stintler
+		x = 13
+		y = 0
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 100
+		}
+	}
+
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+}

@@ -68,6 +68,56 @@ spriteTypes = {
     spriteType = {
         name = "GFX_unknown_char_small"
         texturefile = "gfx/interface/ideas/unknown_character_small.dds"
+    }     
+
+	spriteType = {
+        name = "GFX_dre_anman_small"
+        texturefile = "gfx/interface/ideas/dre_annam_small.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_moder_small"
+        texturefile = "gfx/interface/ideas/moder_small.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_svi_zrya_small"
+        texturefile = "gfx/interface/ideas/svi_zrya.dds"
+    }  
+	
+    spriteType = {
+        name = "GFX_gon_person_large"
+        texturefile = "gfx/leaders/GON/person_gon.dds"
+    }          
+	
+	spriteType = {
+        name = "GFX_svi_zrya_large"
+        texturefile = "gfx/leaders/SVI/svi_zrya.dds"
+    }      
+	
+	spriteType = {
+        name = "GFX_chb_person_large"
+        texturefile = "gfx/leaders/CHB/person_chb.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_svi_person_large"
+        texturefile = "gfx/leaders/SVI/person_svi.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_dre_person_large"
+        texturefile = "gfx/leaders/DRE/person_dre.dds"
+    }  		
+	
+	spriteType = {
+        name = "GFX_dre_amnam_large"
+        texturefile = "gfx/leaders/DRE/dre_amnam.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_ara_person_large"
+        texturefile = "gfx/leaders/ARA/person_ara.dds"
     }  
 	
     spriteType = {

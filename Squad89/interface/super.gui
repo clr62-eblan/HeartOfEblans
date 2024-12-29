@@ -33,6 +33,18 @@ guiTypes = {
 			position = {x = 0 y = 0}
 		}
 		
+		iconType = {
+			name = "Super_Event_Image_blitzkrieg_zabuksoval"
+			spriteType = "GFX_sp_event_blitzkrieg_zabuksoval"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_Image_lagoda_raspil"
+			spriteType = "GFX_sp_event_lagoda_raspil"
+			position = {x = 0 y = 0}
+		}
+		
 		
 		###############
 		###INTERFACE###

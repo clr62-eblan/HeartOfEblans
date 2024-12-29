@@ -14,6 +14,9 @@ set_technology = {
 }
 
 recruit_character = universal_hype_dre
+recruit_character = sorrell
+recruit_character = alenakuz
+recruit_character = amnyam
 
 set_politics = {
 	ruling_party = hypecratia

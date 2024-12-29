@@ -14,6 +14,11 @@ music = {
 }
 
 music = {
-	name = "stintler_palace"
-	file = "stintler_palace.ogg"
+	name = "blitzkrieg_zabuksoval"
+	file = "blitzkrieg_zabuksoval.ogg"
+}
+
+music = {
+	name = "lagoda_raspil"
+	file = "lagoda_raspil.ogg"
 }

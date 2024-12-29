@@ -167,8 +167,24 @@ country_event = {
 					target = PYA
 					type = annex_everything
 				}
-				remove_from_faction = PYA
 			}
+		}
+	}
+}
+
+country_event = {
+	id = svin.6
+	title = svin.6.t
+	desc = svin.6.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = drek.12.a #no
+		ai_chance = {
+			factor = 60
 		}
 	}
 }

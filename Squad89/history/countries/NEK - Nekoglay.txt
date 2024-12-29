@@ -1,6 +1,6 @@
 capital = 3
 
-oob = "SWI_1936"
+oob = "NEK_1936"
 set_stability = 0.32
 set_war_support = 0.12
 

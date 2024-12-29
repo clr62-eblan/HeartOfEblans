@@ -1247,3 +1247,7 @@ PAS = {
 	color = rgb { 78 175 217 }
 	color_ui = rgb { 78 175 217 }
 }
+DER = {
+	color = rgb { 148 83 83 }
+	color_ui = rgb { 148 83 83 }
+}

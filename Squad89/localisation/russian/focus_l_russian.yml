@@ -2551,6 +2551,12 @@
  DRE_secret_rearmament: "Секретное перевооружение"
  DRE_bled_agreement: "Долбоёбское соглашение"
  DRE_svo_btk_2: "Указ о незаконном усилении ВС 89 Рейха"
+ DRE_industrial_effort: "Развитие промышленности"
+ DRE_construction_effort: "Народные фабрики 1"
+ DRE_construction_effort_2: "Народные фабрики 2"
+ DRE_production_effort: "Военная промышленность 1"
+ DRE_production_effort_2: "Военная промышленность 2"
+ DRE_production_effort_3: "Военная промышленность 3"
  
  
  
@@ -2734,6 +2740,9 @@
  SVI_salograd_border: "Оборона Салограда"
  SVI_kussia_line: "Защититься от Каши"
  SVI_industrial: "Производство Свинленда"
+ SVI_atomic_program: "Исследовать «Мирные изотопы»"
+ ARA_joker_trap: "Ловушка Джокера"
+ ARA_joker_trap_desc: "Это ловушка джокера! Данный фокус стоит использовать в том случае, когда вы хотите выйти сухим из воды и просто напросто выйти из всех войн в которых вы в учавствуйте."
  favor_svins_1: "Военная промышленность 1"
  favor_svins_2: "Военная промышленность 2"
  favor_svins_3: "Военная промышленность 3"
@@ -2860,7 +2869,7 @@
  ARA_abolish_the_constitution: "Отменить конституцию Диктатора"
  ARA_fatherland_front: "Национальный фронт"
  ARA_form_popular_block: "Сформировать народный блок"
- ARA_abolish_dictator: "Запретить Тирана"
+ ARA_abolish_dictator: "Вотум недоверия тирану"
  ARA_reinforce_tsar: "Царь во главе!"
  ARA_national_revitalization: "Национальное спасение"
  ARA_people_republic: "Народная республика"

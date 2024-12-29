@@ -12,6 +12,8 @@ state={
 
 	history={
 		owner = CHB
+		
+		add_core_of = HNR
 		buildings = {
 			infrastructure = 3
 			arms_factory = 4

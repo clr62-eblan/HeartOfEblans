@@ -48,15 +48,15 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = drek.2.a #terpim
-		ai_chance = {
-			
-		}
-		
-		add_war_support = -0.1
-		add_stability = 0.1
-	}
+	#option = {
+	#	name = drek.2.a #terpim
+	#	ai_chance = {
+	#		
+	#	}
+	#	
+	#	
+	#	add_stability = 0.1
+	#}
 
 	option = {
 		name = drek.2.b #voyna!
@@ -64,7 +64,7 @@ country_event = {
 			
 		}
 		
-		DRE = { add_timed_idea = { idea = DRE_war_preparation days = 365} }
+		add_war_support = 0.1
 	}
 }
 
@@ -88,6 +88,7 @@ country_event = {
 			transfer_state = 155
 			transfer_state = 154
 			transfer_state = 974
+			transfer_state = 973
 		}
 
 		CHB = {
@@ -95,6 +96,7 @@ country_event = {
 			transfer_state = 850
 			transfer_state = 160
 			transfer_state = 159
+			remove_ideas = CHB_hungary_problem
 		}
 	}
 
@@ -121,7 +123,7 @@ country_event = {
 	option = {
 		name = drek.3.a #yes
 		ai_chance = {
-			factor = 75
+			factor = 90
 		}
 		
 		DRE = {
@@ -136,7 +138,7 @@ country_event = {
 	option = {
 		name = drek.3.b #no
 		ai_chance = {
-			factor = 15
+			factor = 10
 		}
 		
 		DRE = {
@@ -262,36 +264,6 @@ country_event = {
 	picture = GFX_report_event_german_polish_border
 	
 	is_triggered_only = yes
-	
-	option = {
-		name = news.301.b #yes
-		ai_chance = {
-			factor = 20
-		}
-
-		160 = {
-			transfer_state_to = DRE
-		}
-
-		850 = {
-			transfer_state_to = DRE
-		}
-
-		159 = {
-			transfer_state_to = ZOL
-		}
-	}
-
-	option = {
-		name = germany.200.b #no
-
-		ai_chance = {
-			factor = 10
-		}
-
-		DRE = { country_event = { id = drek.7 days = 3 } }
-		
-	}
 
 	option = {
 		name = drek.10.c #allfordrake
@@ -303,15 +275,15 @@ country_event = {
 		DRE = { annex_country = { target = SLA } }
 		
 	}
-
+	
 	option = {
-		name = drek.10.e #allfordrake
+		name = germany.200.b #no
 
 		ai_chance = {
 			factor = 10
 		}
 
-		ZOL = { annex_country = { target = SLA } }
+		DRE = { country_event = { id = drek.7 days = 3 } }
 		
 	}
 }
@@ -400,6 +372,23 @@ country_event = {
 		create_wargoal = {
 			target = LAG
 			type = annex_everything
+		}
+	}
+}
+
+
+country_event = {
+	id = drek.13
+	title = drek.13.t
+	desc = drek.13.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = drek.13.a #yes
+		ai_chance = {
+			factor = 100
 		}
 	}
 }

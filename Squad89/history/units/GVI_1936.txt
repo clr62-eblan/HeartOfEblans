@@ -82,5 +82,37 @@ units = {
 		start_equipment_factor = 0.7
 	}
 	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3694
+		division_template = "Войска Гвина"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9619
+		division_template = "Войска Гвина"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 11636
+		division_template = "Войска Гвина"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
 	
 }

@@ -39,6 +39,10 @@ set_technology = {
 }
 
 recruit_character = universal_hype_ara
+recruit_character = luckyAbob
+recruit_character = luckyAbobNavy
+recruit_character = jevolya
+recruit_character = polino
 
 if = {
 	limit = {

@@ -48,6 +48,38 @@ focus_tree = {
 		}
 	}
 
+	#focus = {
+	#	id = DRE_stability_problems
+	#	icon = GFX_focus_generic_workers
+	#	relative_position_id = DRE_politics
+	#	prerequisite = { focus = DRE_politics }
+	#	x = 0
+	#	y = 2
+#
+	#	cost = 10
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	available = {
+	#		has_stability < 0.2
+	#	}
+#
+	#	bypass = {
+#
+	#	}
+#
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+#
+	#	search_filters = { FOCUS_FILTER_POLITICAL }
+	#	completion_reward = {
+	#		
+	#	}
+	#}
+
 	focus = {
 		id = DRE_undemilitarisation_of_west_austria
 		icon = GFX_goal_generic_military_sphere
@@ -102,7 +134,7 @@ focus_tree = {
 		relative_position_id = DRE_undemilitarisation_of_west_austria
 		prerequisite = { focus = DRE_undemilitarisation_of_west_austria }
 		mutually_exclusive = { focus = DRE_friendship_with_chickenbekon }
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 10
@@ -137,7 +169,7 @@ focus_tree = {
 		icon = GFX_goal_drake_expansion
 		relative_position_id = DRE_undemilitarisation_of_west_austria
 		prerequisite = { focus = DRE_anschluss }
-		x = 2
+		x = 1
 		y = 2
 
 		cost = 10
@@ -538,6 +570,16 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+
+			country_event = { id = drek.13 hours = 3 }
+
+			SVI = {
+				country_event = {
+				id = svin.6
+				hours = 6
+				}
+			}
+
 			LAG = {
 				country_event = { id = drek.10 days = 3}
 			}
@@ -644,6 +686,8 @@ focus_tree = {
 				target = NEK
 				type = annex_everything
 			}
+
+			add_ideas = DRE_operation_sprengungberge
 		}
 	}
 
@@ -653,7 +697,7 @@ focus_tree = {
 		relative_position_id = DRE_politics
 		mutually_exclusive = { focus = DRE_undemilitarisation_of_west_austria }
 		prerequisite = { focus = DRE_politics }
-		x = 5
+		x = 6
 		y = 1
 
 		cost = 10
@@ -922,6 +966,15 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			country_event = { id = drek.13 hours = 3 }
+
+			SVI = {
+				country_event = {
+				id = svin.6
+				hours = 6
+				}
+			}
+
 			LAG = {
 				country_event = { id = drek.10 days = 3}
 			}
@@ -933,7 +986,7 @@ focus_tree = {
 		icon = GFX_focus_generic_workers
 		relative_position_id = DRE_razdel_lagodi
 		prerequisite = { focus = DRE_razdel_lagodi }
-		x = 4
+		x = 3
 		y = 1
 
 		cost = 10
@@ -1115,7 +1168,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1151,7 +1204,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1210,7 +1263,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1247,7 +1300,7 @@ focus_tree = {
 		x = 3
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1285,7 +1338,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1321,7 +1374,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1404,7 +1457,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1465,7 +1518,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1507,7 +1560,7 @@ focus_tree = {
 		x = -3
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1653,27 +1706,27 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					create_unit = { 
-						division = "name = \"1. Дивизия ХНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						division = "name = \"1. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
 						owner = HNR
 					}
 					create_unit = { 
-						division = "name = \"2. Дивизия ХНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						division = "name = \"2. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
 						owner = HNR
 					}
 					create_unit = { 
-						division = "name = \"3. Дивизия ХНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						division = "name = \"3. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
 						owner = HNR
 					}
 					create_unit = { 
-						division = "name = \"4. Дивизия ХНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						division = "name = \"4. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
 						owner = HNR
 					}
 					create_unit = { 
-						division = "name = \"5. Дивизия ХНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						division = "name = \"5. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
 						owner = HNR
 					}
 					create_unit = { 
-						division = "name = \"6. Дивизия ХНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						division = "name = \"6. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
 						owner = HNR
 					}
 			}
@@ -1689,7 +1742,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1727,7 +1780,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1765,7 +1818,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1802,7 +1855,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1864,7 +1917,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1918,7 +1971,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -1956,10 +2009,10 @@ focus_tree = {
 		icon = GFX_goal_dre_svo
 		relative_position_id = DRE_svo_chb_3_6
 		prerequisite = { focus = DRE_svo_chb_3_6 focus = DRE_svo_chb_3_5 focus = DRE_svo_chb_4_4 }
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 
-		cost = 4
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -2284,7 +2337,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-
+			add_ideas = DRE_domestic_arms_industry
 		}
 	}
 
@@ -2391,7 +2444,7 @@ focus_tree = {
 	focus = {
 		id = DRE_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 24
+		x = 27
 		y = 0
 
 		cost = 10
@@ -3736,82 +3789,82 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = DRE_a_new_flagship
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = DRE_capital_ships }
-		x = 0
-		y = 1
-		relative_position_id = DRE_capital_ships
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 0
-		}
-		
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		
-		available = {
-			has_tech = basic_ship_hull_heavy
-			any_state = {
-				is_coastal = yes
-				is_controlled_by = ROOT
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			create_equipment_variant = {
-				name = "Viribus Unitis Class"
-				type = ship_hull_heavy_2
-				parent_version = 0
-				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
-				modules = {
-					fixed_ship_battery_slot = ship_heavy_battery_1
-					fixed_ship_anti_air_slot = ship_anti_air_2
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-					fixed_ship_radar_slot = empty
-					fixed_ship_engine_slot = heavy_ship_engine_1
-					fixed_ship_secondaries_slot = dp_ship_secondaries_1
-					fixed_ship_armor_slot = ship_armor_bb_1
-					front_1_custom_slot = ship_heavy_battery_1
-					mid_1_custom_slot = ship_anti_air_2
-					mid_2_custom_slot = dp_ship_secondaries_1
-					rear_1_custom_slot = ship_heavy_battery_1
-				}
-				upgrades = {
-					ship_reliability_upgrade = 2
-					ship_engine_upgrade = 2
-					ship_armor_upgrade = 3
-					ship_gun_upgrade = 3
-				}
-			}
-
-			#Line Production
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_heavy_2
-					creator = "DRE"
-					version_name = "Viribus Unitis Class"
-				}
-				name = "Viribus Unitis"
-				requested_factories = 2
-				progress = 0.75
-				amount = 1
-			}
-		}
-	}
+	#focus = {
+	#	id = DRE_a_new_flagship
+	#	icon = GFX_goal_generic_navy_battleship
+	#	prerequisite = { focus = DRE_capital_ships }
+	#	x = 0
+	#	y = 1
+	#	relative_position_id = DRE_capital_ships
+#
+	#	cost = 10
+#
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	
+	#	allow_branch = {
+	#		has_dlc = "Man the Guns"
+	#	}
+	#	
+	#	available = {
+	#		has_tech = basic_ship_hull_heavy
+	#		any_state = {
+	#			is_coastal = yes
+	#			is_controlled_by = ROOT
+	#		}
+	#	}
+#
+	#	bypass = {
+#
+	#	}
+#
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+#
+	#	search_filters = { FOCUS_FILTER_RESEARCH }
+	#	completion_reward = {
+	#		create_equipment_variant = {
+	#			name = "Viribus Unitis Class"
+	#			type = ship_hull_heavy_2
+	#			parent_version = 0
+	#			allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+	#			modules = {
+	#				fixed_ship_battery_slot = ship_heavy_battery_1
+	#				fixed_ship_anti_air_slot = ship_anti_air_2
+	#				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+	#				fixed_ship_radar_slot = empty
+	#				fixed_ship_engine_slot = heavy_ship_engine_1
+	#				fixed_ship_secondaries_slot = dp_ship_secondaries_1
+	#				fixed_ship_armor_slot = ship_armor_bb_1
+	#				front_1_custom_slot = ship_heavy_battery_1
+	#				mid_1_custom_slot = ship_anti_air_2
+	#				mid_2_custom_slot = dp_ship_secondaries_1
+	#				rear_1_custom_slot = ship_heavy_battery_1
+	#			}
+	#			upgrades = {
+	#				ship_reliability_upgrade = 2
+	#				ship_engine_upgrade = 2
+	#				ship_armor_upgrade = 3
+	#				ship_gun_upgrade = 3
+	#			}
+	#		}
+#
+	#		#Line Production
+	#		add_equipment_production = {
+	#			equipment = {
+	#				type = ship_hull_heavy_2
+	#				creator = "DRE"
+	#				version_name = "Viribus Unitis Class"
+	#			}
+	#			name = "Viribus Unitis"
+	#			requested_factories = 2
+	#			progress = 0.75
+	#			amount = 1
+	#		}
+	#	}
+	#}
 
 	focus = {
 		id = DRE_reform
@@ -4071,6 +4124,421 @@ focus_tree = {
 				category = cv_tech
 			}
 
+		}
+	}
+
+
+	focus = {
+		id = DRE_industrial_effort
+		icon = GFX_goal_generic_production
+		x = 19
+		y = 0
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+				OR = { 
+					# we dont want chinese minors to go crazy on slots early since they get eaten
+					tag = GXC 
+					tag = YUN
+					tag = SHX
+					tag = XSM
+					tag = BEL
+					tag = LUX
+					tag = HOL
+					tag = DEN
+
+					# we also dont want tiny nations to go crazy with slots right away
+					num_of_controlled_states < 2
+				}				
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = DRE_industrial_effort }
+		x = -1
+		y = 1
+		relative_position_id = DRE_industrial_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = DRE_industrial_effort }
+		x = 1
+		y = 1
+		relative_position_id = DRE_industrial_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = DRE_construction_effort }
+		x = 0
+		y = 1
+		relative_position_id = DRE_construction_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = DRE_production_effort }
+		x = 0
+		y = 1
+		relative_position_id = DRE_production_effort
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = DRE_production_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = DRE_production_effort_2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 }

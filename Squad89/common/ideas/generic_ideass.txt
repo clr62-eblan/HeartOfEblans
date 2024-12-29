@@ -28,6 +28,29 @@ ideas = {
 			}
 		}
 		
+		hametova_politics = {
+		
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy
+		
+			modifier = {
+				join_faction_tension = 0.85
+			}
+		}
+		
+		communism_supporting = {
+		
+			removal_cost = -1
+
+			picture = ast_abandon_the_westminster_system_communism
+		
+			modifier = {
+				fascism_drift = -0.03
+				democratic_drift = -0.03
+			}
+		}
+		
 
         borets_s_pafosom = {
 		

@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = SVIch_focus
 	
 	country = {
@@ -210,7 +210,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = SVI_industrial_idea
+			add_ideas = CZE_industrial_legacy_idea
 		}
 	}
 
@@ -276,7 +276,7 @@
 		y = 1
 		relative_position_id = favor_svins_1
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 80
@@ -427,7 +427,7 @@
 		y = 1
 		relative_position_id = SVI_balanced_1
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 80
@@ -557,7 +557,7 @@
 		y = 1
 		relative_position_id = SVI_arms_export_1
 
-		cost = 7
+		cost = 10
 
 		available = {
 
@@ -665,7 +665,7 @@
 		x = 0
 		y = 1
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -763,7 +763,6 @@
 		id = SVI_chamber_of_deputies
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = SVI_establish_the_rahvuskogu }
-		prerequisite = { focus = SVI_ismaaliit }
 		x = 0
 		y = 1
 		relative_position_id = SVI_establish_the_rahvuskogu
@@ -958,13 +957,6 @@
 				limit = { has_idea = democratic_influence }
 				remove_ideas = democratic_influence
 			}
-
-			if = {
-				limit = { has_idea = democratic_opposition }
-				remove_ideas = democratic_opposition
-			}
-
-			remove_ideas = democratic_opposition
 		}
 	}
 
@@ -983,7 +975,7 @@
 		}
 
 		available = {
-			democratic < 0.1
+			neutrality > 0.4
 		}
 
 		bypass = {
@@ -1004,7 +996,6 @@
 				ruling_party = neutrality
     			elections_allowed = no
 			}
-			remove_ideas = democratic_opposition
 		}
 	}
 
@@ -1369,8 +1360,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			fascism_drift = -0.03
-			democratic_drift = -0.03
+			add_ideas = communism_supporting
 		}
 	}
 
@@ -1461,7 +1451,7 @@
 
 	focus = {
 		id = SVI_rabota_v_polyah
-		icon = GFX_focus_ARG_capitalize_the_beef_industry
+		icon = GFX_focus_generic_farmland
 		prerequisite = {focus = SVI_red_army focus = SVI_communism_advisers}
 		x = -1
 		y = 2
@@ -1474,12 +1464,10 @@
 		}
 
 		bypass = {
-			has_idea = deterrence
 			has_idea = SOV_support_of_the_peasants_idea
 		}
 
 		completion_reward = {
-			add_ideas = deterrence
 			add_ideas = SOV_support_of_the_peasants_idea
 		}
 	}
@@ -1962,7 +1950,7 @@
 		y = 2
 		relative_position_id = SVI_holy_wars
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 90
@@ -2087,7 +2075,7 @@
 		y = 1
 		relative_position_id = SVI_northern_expansion
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 90
@@ -2115,7 +2103,7 @@
 		y = 1
 		relative_position_id = SVI_razvitie_arov
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 90
@@ -2137,20 +2125,6 @@
 				bonus = 5
 				uses = 2
 				category = nuclear
-			}
-			random_state = {
-				add_building_construction = {
-					type = nuclear_reactor
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				add_building_construction = {
-					type = nuclear_reactor
-					level = 1
-					instant_build = yes
-				}
 			}
 			random_state = {
 				add_building_construction = {
@@ -3073,10 +3047,10 @@
 	focus = {
 		id = SVI_wars_for_communism
 		icon = GFX_focus_generic_combined_arms
-		prerequisite = {focus = SVI_destroy_busters}
+		prerequisite = {focus = SVI_communisate__west}
 		x = 0
 		y = 1
-		relative_position_id = SVI_destroy_busters
+		relative_position_id = SVI_communisate__west
 
 		cost = 10
 
@@ -3091,21 +3065,42 @@
 		}
 
 		bypass = {
-			has_idea = deterrence
-			has_idea = SOV_support_of_the_peasants_idea
+			has_idea = SVI_expansion_wars_preparing
 		}
 
 		completion_reward = {
-			add_ideas = deterrence
-			add_ideas = SOV_support_of_the_peasants_idea
+			add_ideas = SVI_expansion_wars_preparing
 		}
 	}
 
 	focus = {
 		id = SVI_communisate__west
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = {focus = SVI_wars_for_communism}
+		prerequisite = {focus = SVI_destroy_busters}
 		x = 0
+		y = 1
+		relative_position_id = SVI_destroy_busters
+
+		cost = 10
+
+		available = {
+			has_government = communism
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				target = KUS
+				type = topple_government
+			}
+		}
+	}
+
+	focus = {
+		id = SVI_soviet_attack
+		icon = GFX_focus_attack_soviet
+		prerequisite = {focus = SVI_wars_for_communism}
+		mutually_exclusive = {focus = SVI_soviet_pact}
+		x = -1
 		y = 1
 		relative_position_id = SVI_wars_for_communism
 
@@ -3116,48 +3111,24 @@
 		}
 
 		bypass = {
-			has_idea = SVI_expansion_wars_preparing
 		}
 
 		completion_reward = {
-			add_ideas = SVI_expansion_wars_preparing
-		}
-	}
-
-	focus = {
-		id = SVI_soviet_attack
-		icon = GFX_focus_attack_soviet
-		prerequisite = {focus = SVI_communisate__west}
-		mutually_exclusive = {focus = SVI_soviet_pact}
-		x = -1
-		y = 1
-		relative_position_id = SVI_communisate__west
-
-		cost = 10
-
-		available = {
-			has_government = communism
-		}
-
-		bypass = {
-			has_idea = deterrence
-			has_idea = SOV_support_of_the_peasants_idea
-		}
-
-		completion_reward = {
-			add_ideas = deterrence
-			add_ideas = SOV_support_of_the_peasants_idea
+			create_wargoal = {
+				target = RAB
+				type = topple_government
+			}
 		}
 	}
 
 	focus = {
 		id = SVI_soviet_pact
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		prerequisite = {focus = SVI_communisate__west}
+		prerequisite = {focus = SVI_wars_for_communism}
 		mutually_exclusive = {focus = SVI_soviet_attack}
 		x = 1
 		y = 1
-		relative_position_id = SVI_communisate__west
+		relative_position_id = SVI_wars_for_communism
 
 		cost = 10
 
@@ -3166,13 +3137,26 @@
 		}
 
 		bypass = {
-			has_idea = deterrence
-			has_idea = SOV_support_of_the_peasants_idea
 		}
 
 		completion_reward = {
-			add_ideas = deterrence
-			add_ideas = SOV_support_of_the_peasants_idea
+			diplomatic_relation = {
+    			country = RAB
+    			relation = non_aggression_pact
+    			active = yes
+			}
+
+			RAB = {
+				add_opinion_modifier = {
+					target = SVI
+					modifier = svinland_comm_friend
+				}
+			}
+
+			add_opinion_modifier = {
+				target = RAB
+				modifier = svinland_comm_friend
+			}
 		}
 	}
 

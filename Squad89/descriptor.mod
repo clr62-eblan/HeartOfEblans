@@ -1,5 +1,5 @@
 version="89.0"
-picture = "thumbnail.png"
+picture="thumbnail.png"
 tags={
 	"Alternative History"
 	"Events"
@@ -8,5 +8,6 @@ tags={
 	"Ideologies"
 }
 replace_path="gfx/loadingscreens"
-name="Squad"
-supported_version="1.13.6"
+name="Hearts of Eblans mod"
+supported_version="1.15.3"
+remote_file_id="3392330604"

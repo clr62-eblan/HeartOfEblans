@@ -10,13 +10,12 @@ set_autonomy = {
 	autonomous_state = autonomy_colony
 }
 
-create_faction = HAM_aliance
-add_to_faction = HAM
-add_to_faction = CVD
-
 give_guarantee = DRE
 
-add_ideas = HAM_hypecratia_militia
+add_ideas = { 
+	HAM_hypecratia_militia
+	hametova_politics 
+}
 
 # Starting tech
 set_technology = {

@@ -44,6 +44,40 @@ ideas = {
 				production_speed_arms_factory_factor = -0.5
 			}
 		}
+		
+		DRE_domestic_arms_industry = {
+			picture = NORDIC_industry_communist
+			allowed = {
+				original_tag = DRE
+				always = no
+			}
+			available = {
+				has_war = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.08
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		DRE_operation_sprengungberge = {
+			picture = gre_schachtplan3
+			allowed = {
+				original_tag = DRE
+				always = no
+			}
+			available = {
+				has_war = no
+			}
+
+			targeted_modifier = {
+				tag = NEK    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
 		DRE_treaty_of_triannon_aat = {
 			name = DRE_treaty_of_triannon
 			picture = generic_constitutional_guarantees

@@ -1981,20 +1981,6 @@ focus_tree = {
 					}
 				}
 			}
-
-			if = {
-				limit = { controls_state = 186 }
-				186 = {
-					set_building_level = {
-						type = industrial_complex
-						level = 1
-					}
-					set_building_level = {
-						type = arms_factory
-						level = 1
-					}
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2110,10 +2096,6 @@ focus_tree = {
     			country = RAB
     			relation = non_aggression_pact
     			active = yes
-			}
-
-			hidden_effect = {
-				people_support_development_degradation = yes
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2408,10 +2390,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = chb_terriatorial_expansion}
 		completion_reward = {
-			add_ideas = democracy_ban
 			add_popularity = {
 				ideology = democratic
-				popularity = -0.2
+				popularity = -0.25
 			}
 		}
 		#mutually_exclusive = { focus = chb_svinland_union }
@@ -3174,9 +3155,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 44 }
 				44 = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3184,9 +3166,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 802 }
 				802 = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3194,9 +3177,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 803 }
 				803 = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3204,9 +3188,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 804 }
 				804 = {
-					set_building_level = {
+					add_building_construction = {
 						type = arms_factory
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3214,9 +3199,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 105 }
 				105 = {
-					set_building_level = {
+					add_building_construction = {
 						type = dockyard
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3224,9 +3210,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 934 }
 				934 = {
-					set_building_level = {
+					add_building_construction = {
 						type = dockyard
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3234,9 +3221,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 163 }
 				163 = {
-					set_building_level = {
+					add_building_construction = {
 						type = dockyard
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3262,9 +3250,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 44 }
 				44 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3272,9 +3261,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 802 }
 				802 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3282,9 +3272,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 803 }
 				803 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3292,9 +3283,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 804 }
 				804 = {
-					set_building_level = {
+					add_building_construction = {
 						type = industrial_complex
 						level = 1
+						instant_build = yes
 					}
 				}
 			}
@@ -3403,7 +3395,7 @@ focus_tree = {
 	focus = {
 		id = chb_hype_zolo_put
 		icon = GFX_focus_generic_adriatic_sea_focus
-		cost = 7
+		cost = 10
 		prerequisite = { focus = chb_hype_zolo_prblm }
 		available = {
 			SLA = { is_in_faction = no }
@@ -3437,18 +3429,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-	focus = {
-		id = chb_hype_drake_allies
-		icon = GFX_goal_continuous_increase_nu
-		cost = 10
-		prerequisite = { focus = chb_hype_drake_prblm }
-		mutually_exclusive = { focus = chb_hype_drake_treacherously_betray}
-		x = 0
-		y = 1
-		relative_position_id = chb_hype_drake_prblm
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
+#focus = {
+#	id = chb_hype_drake_allies
+#	icon = GFX_goal_continuous_increase_nu
+#	cost = 10
+#	prerequisite = { focus = chb_hype_drake_prblm }
+#	mutually_exclusive = { focus = chb_hype_drake_treacherously_betray}
+#	x = 0
+#	y = 1
+#	relative_position_id = chb_hype_drake_prblm
+#
+#	search_filters = { FOCUS_FILTER_RESEARCH }
+#}
 
 	#focus = {
 	#	id = chb_hype_drake_treacherously_betray

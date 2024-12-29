@@ -13,5 +13,9 @@ song = "dayraid_fall"
 chance = { factor = 0 }}
 
 music = {
-song = "stintler_palace"
+song = "blitzkrieg_zabuksoval"
+chance = { factor = 0 }}
+
+music = {
+song = "lagoda_raspil"
 chance = { factor = 0 }}

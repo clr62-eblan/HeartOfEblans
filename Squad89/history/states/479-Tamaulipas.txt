@@ -12,8 +12,8 @@ state = {
 	
 	history = {
 
-		#owner = MEX
-		#add_core_of = MEX
+		owner = DER
+		add_core_of = DER
 		add_core_of = RIG
 
 		buildings = {
