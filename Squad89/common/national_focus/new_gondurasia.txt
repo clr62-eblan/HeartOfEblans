@@ -21,7 +21,7 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_generic_join_comintern
-		x = 3
+		x = 1
 		y = 0
 
 		cost = 10
@@ -63,7 +63,49 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_hol_the_foundations_of_defense
-		x = -2
+		x = -3
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = GON_dipins_economics
+		prerequisite = { focus = GON_neutrality_manifest }
+		relative_position_id = GON_neutrality_manifest
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_dipins_economics
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = GON_stintrel_cabinet
+		prerequisite = { focus = GON_dipins_economics }
+		relative_position_id = GON_dipins_economics
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_stintrel
+		x = 0
 		y = 1
 
 		cost = 10
@@ -85,7 +127,7 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_generic_democratic_europe
-		x = 2
+		x = 3
 		y = 1
 
 		cost = 10
@@ -301,7 +343,7 @@ focus_tree = {
 		bypass = {
 		}
 
-		icon = GFX_goal_GON_gondurassia_for_all
+		icon = GFX_focus_generic_free_iberia
 		x = 0
 		y = 3
 
@@ -322,7 +364,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_GON_stintler
-		x = 13
+		x = 15
 		y = 0
 
 		cost = 10

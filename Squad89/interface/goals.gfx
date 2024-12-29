@@ -26,6 +26,16 @@ spriteTypes = {
 	name = "GFX_goal_GON_gondurassia_for_all"
 	texturefile = "gfx/interface/goals/focus_GON_gondurassia_for_all.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_GON_dipins_economics"
+	texturefile = "gfx/interface/goals/focus_GON_dipins_economics.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_GON_stintrel"
+	texturefile = "gfx/interface/goals/focus_GON_stintrel.dds"			
+	}
 
 	SpriteType = {
 	name = "GFX_goal_hypecratia_effort"
