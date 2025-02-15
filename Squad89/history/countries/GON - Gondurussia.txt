@@ -9,12 +9,15 @@ add_ideas = {
 	GON_kotel_shabanova
 	GON_legends_of_stintler
 	demografic_problems
+	GON_political_corruption
+	GON_infamous_decade
 }
 
 recruit_character = universal_hype_gon
 recruit_character = neketondi
 recruit_character = afsygga
 recruit_character = cherepaxa_o5
+recruit_character = maksim_iosif_shabanov
 
 
 # Starting tech
@@ -92,17 +95,6 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Максим Стинтлерьев"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "stint_comm.dds"
-	expire = "2000.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "Стинтлер"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stintler.dds"
@@ -125,9 +117,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Макс Стинт"
+	name = "Абсолютно точно не Стинтлер"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "stint_neutrality.dds"
+	picture = "stint_democratic.dds"
 	expire = "2000.1.1"
 	ideology = liberalism
 	traits = {

@@ -4,6 +4,21 @@ spriteTypes = {
         name = "GFX_idea_bezmoderov"
         texturefile = "gfx/interface/ideas/bezmoderov.dds"
     }  
+
+    spriteType = {
+        name = "GFX_idea_great_zolo"
+        texturefile = "gfx/interface/ideas/great_zolo.dds"
+    }  
+
+    spriteType = {
+        name = "GFX_idea_tabletki_ot_uma"
+        texturefile = "gfx/interface/ideas/tabletki_ot_uma.dds"
+    }     
+	
+	spriteType = {
+        name = "GFX_idea_drake_crisis"
+        texturefile = "gfx/interface/ideas/drake_dictatorship_crisis.dds"
+    }  
 	
     spriteType = {
         name = "GFX_vitaliy_jr_small"
@@ -18,6 +33,31 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_slay_2024"
         texturefile = "gfx/interface/ideas/slay_2024.dds"
+    }      
+	
+	spriteType = {
+        name = "GFX_idea_ARA_gos_apparat"
+        texturefile = "gfx/interface/ideas/ARA_gos_apparat.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_rebuild_gos_apparat"
+        texturefile = "gfx/interface/ideas/ARA_rebuild_gos_apparat.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_hype_ministers"
+        texturefile = "gfx/interface/ideas/ARA_hype_ministers.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_people_digitalization"
+        texturefile = "gfx/interface/ideas/people_digitalization.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_internet_cables"
+        texturefile = "gfx/interface/ideas/internet_cables.dds"
     }  
 	
     spriteType = {
@@ -83,6 +123,36 @@ spriteTypes = {
 	spriteType = {
         name = "GFX_svi_zrya_small"
         texturefile = "gfx/interface/ideas/svi_zrya.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_gon_shabanov_com_small"
+        texturefile = "gfx/interface/ideas/gon_shabanov_com.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_idea_GON_state_atheism"
+        texturefile = "gfx/interface/ideas/idea_GON_state_atheism.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_beer_problem"
+        texturefile = "gfx/interface/ideas/beer_problem.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_idea_GON_state_unions"
+        texturefile = "gfx/interface/ideas/idea_GON_state_unions.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_idea_GON_preparing_for_war"
+        texturefile = "gfx/interface/ideas/idea_GON_preparing_for_war.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_idea_GON_liberation_theology"
+        texturefile = "gfx/interface/ideas/idea_GON_liberation_theology.dds"
     }  
 	
     spriteType = {

@@ -31,8 +31,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = equipment_effort
-		icon = GFX_goal_generic_small_arms
+		id = CHB_change_weaponry
+		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = army_effort }
 		x = -1
 		y = 1
@@ -55,7 +55,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = motorization_effort
+		id = CHB_new_vechicles
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = army_effort }
 		bypass = { has_tech = motorised_infantry }
@@ -78,9 +78,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = doctrine_effort
+		id = CHB_land_doctrine
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = army_effort }
+		prerequisite = { focus = CHB_change_weaponry focus = CHB_new_vechicles }
 		x = 0
 		y = 2
 		relative_position_id = army_effort
@@ -103,11 +103,11 @@ focus_tree = {
 
 	focus = {
 		id = equipment_effort_2
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = equipment_effort }
-		x = 0
-		y = 2
-		relative_position_id = equipment_effort
+		icon = GFX_focus_generic_anti_tank_guns
+		prerequisite = { focus = CHB_change_weaponry }
+		x = -1
+		y = 1
+		relative_position_id = CHB_change_weaponry
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -127,11 +127,11 @@ focus_tree = {
 
 	focus = {
 		id = mechanization_effort
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = motorization_effort }
-		x = 0
-		y = 2
-		relative_position_id = motorization_effort
+		icon = GFX_focus_generic_heavy_tank
+		prerequisite = { focus = CHB_new_vechicles }
+		x = 1
+		y = 1
+		relative_position_id = CHB_new_vechicles
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -149,72 +149,24 @@ focus_tree = {
 	}
 
 	focus = {
-		id = doctrine_effort_2
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = doctrine_effort }
-		x = 0
-		y = 2
-		relative_position_id = doctrine_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = equipment_effort_3
-		icon = GFX_goal_generic_army_artillery2
+		id = army_education_rework
+		icon = GFX_SOV_military_engineering_university_ccp_2d_sov_compatibility
+		prerequisite = { focus = CHB_land_doctrine }
 		prerequisite = { focus = equipment_effort_2 }
-		x = 0
-		y = 2
-		relative_position_id = equipment_effort_2
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = armor_effort
-		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = mechanization_effort }
 		x = 0
-		y = 2
-		relative_position_id = mechanization_effort
+		y = 1
+		relative_position_id = CHB_land_doctrine
 		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
+			if = {
+				limit = { has_war = no }
+				news_event = { id = squad_news.9 days = 1 }
 			}
 		}
 	}
@@ -222,12 +174,10 @@ focus_tree = {
 	focus = {
 		id = special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = equipment_effort_3 }
-		prerequisite = { focus = doctrine_effort_2 }
-		prerequisite = { focus = armor_effort }
-		x = 1
+		prerequisite = { focus = army_education_rework }
+		x = 0
 		y = 1
-		relative_position_id = equipment_effort_3
+		relative_position_id = army_education_rework
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -478,7 +428,6 @@ focus_tree = {
 		id = CAS_effort
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = aviation_effort_2 }
-		prerequisite = { focus = motorization_effort }
 		x = -1
 		y = 1
 		relative_position_id = aviation_effort_2

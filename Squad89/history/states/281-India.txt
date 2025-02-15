@@ -2,15 +2,22 @@
 state={
 	id=281
 	name="STATE_281"
-	manpower=79300
+	manpower=2027294
 	
 	state_category = enclave
+	
+	resources={
+		rubber=10 # was: 116
+		oil=4
+		steel=6
+		aluminium=11
+	}
 
 	history={
-		owner = ZUS
-		add_core_of = MLD
+		owner = DOR
+		add_core_of = DOR
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			4967 = {
 				naval_base = 1
 			}

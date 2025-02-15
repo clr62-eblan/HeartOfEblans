@@ -104,3 +104,55 @@ country_event = {
 		}
 	}
 }
+
+#president_meetings
+country_event = {
+	id = aratos.5
+	title = aratos.5.t
+	desc = aratos.5.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.23.a #ok
+		ai_chance = {
+			factor = 55
+		}
+		
+		hidden_effect = {
+			add_stability = -0.05
+			add_war_support = 0.05
+			add_power_balance_value = {
+				id = president_parlament_balance
+				value = -0.07
+			}
+		}
+	}
+}
+
+country_event = {
+	id = aratos.6
+	title = aratos.6.t
+	desc = aratos.6.d
+	picture = GFX_report_event_ITA_democratic_parlament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.23.a #ok
+		ai_chance = {
+			factor = 55
+		}
+		
+		hidden_effect = {
+			add_stability = -0.025
+			
+			add_war_support = -0.05
+			add_power_balance_value = {
+				id = president_parlament_balance
+				value = 0.08
+			}
+		}
+	}
+}

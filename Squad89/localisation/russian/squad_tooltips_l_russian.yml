@@ -1,4 +1,6 @@
-l_russian:
+﻿l_russian:
   people_support_development_improvement: "§7Наша Национальная Поддержка Увеличится.§!"
   people_support_development_degradation: "§OНаша Национальная Поддержка Ослабнет.§!"
+  GON_start_palace_build_effect: "§7Станут доступны решения о постройке дворца§!"
+  GON_invite_maskim_iosif_shabanov_effect: "Максим Иосиф Шабанов станет доступен в разделе политических советников"
   HOE_YOUTUBE: "Канал разработчика мода"

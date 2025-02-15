@@ -26,6 +26,51 @@ characters = {
 		}
 	}
 	
+	maksim_iosif_shabanov = {
+		name = "Максим Иосиф Стинтлерьев"
+		
+		portraits = {
+			civilian = {
+				large = GFX_portrait_maksim_stintlerev
+			}
+			army = {
+				small="GFX_gon_shabanov_com_small"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1965.1.1.1"
+			id = -1
+			traits = {
+				
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = maksim_iosif_shabanov
+			allowed = {
+				original_tag = GON 
+			}	
+			visible = {
+				has_country_flag = GON_shaban_invite
+			}
+			available = {
+				has_country_flag = GON_shaban_invite
+				
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = maksim_iosif_shabanov
+					}
+				}
+			}
+			traits  = {
+				revolutionary_author
+			}	
+			cost = 100
+		}
+	}	
+	
 	afsygga ={ 
         name = "aFsyGGA"
         portraits= {
@@ -50,6 +95,26 @@ characters = {
            ledger = army
            allowed = { original_tag = GON } # Optional, doesn't change anything.
            traits = { army_chief_morale_2 }
+       }
+    }
+	
+	stint ={ 
+        name = "Стинт"
+        portraits= {
+            army = {
+                large = "GFX_portrait_stint"
+				small = "GFX_moder_small"
+            }
+        }
+        field_marshal = {
+			traits = { scavenger ambusher }
+            skill = 4
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 2
+            legacy_id = -1
+			visible = { has_country_flag = GON_stint_cabinet }
        }
     }
 

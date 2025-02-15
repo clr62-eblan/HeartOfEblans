@@ -142,6 +142,10 @@ ideologies = {
 			hypeclown = {
 				color = { 184 24 69 }
 			}
+			
+			hype_cuterock = {
+				color = { 248 189 255 }
+			}
 		}
 
 		dynamic_faction_names = {

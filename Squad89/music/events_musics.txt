@@ -19,3 +19,11 @@ chance = { factor = 0 }}
 music = {
 song = "lagoda_raspil"
 chance = { factor = 0 }}
+
+music = {
+song = "stintler_returns"
+chance = { factor = 0 }}
+
+music = {
+song = "army_bpl"
+chance = { factor = 0 }}

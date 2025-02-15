@@ -10,7 +10,7 @@ ideas = {
 				NOT = { ruling_party = hypecratia }
 			}
 
-			picture = GFX_idea_hypecratia_ethos
+			picture = hypecratia_ethos
 
 			modifier = {
 				democratic_drift = -0.005
@@ -56,7 +56,7 @@ ideas = {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_borets_s_pafosom
+			picture = borets_s_pafosom
 
 			modifier = {
 				political_power_gain = -0.15
@@ -69,7 +69,7 @@ ideas = {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_svinland_ru
+			picture = svinland_ru
 
 			modifier = {
 				production_speed_buildings_factor = 0.03
@@ -81,7 +81,7 @@ ideas = {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_sp_crisis
+			picture = sp_crisis
 
 			modifier = {
 				production_speed_buildings_factor = -0.03
@@ -94,7 +94,7 @@ ideas = {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_bad_government
+			picture = bad_government
 
 			modifier = {
 				stability_factor = -0.05
@@ -105,7 +105,7 @@ ideas = {
 		dva_disa = {
 			removal_cost = -1
 
-			picture = GFX_idea_dva_disa
+			picture = dva_disa
 
 			modifier = {
 				political_power_gain = 0.025

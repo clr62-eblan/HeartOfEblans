@@ -7,15 +7,10 @@
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 
 focus_tree = {
-	id = aratos_focus
+	id = old_aratos_focus
 	
 	country = {
 		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = ARA
-		}
 	}
 	default = no
 	
@@ -2517,7 +2512,7 @@ focus_tree = {
 	}
 
     focus = {
-		id = ARA_setup_monarchy
+		id = ARA_setup_monarchy_1
 		icon = GFX_focus_generic_monarchy_2
 		relative_position_id = ARA_power_to_the_tsar
 		mutually_exclusive = { focus = ARA_save_the_fascism_way }
@@ -2627,7 +2622,7 @@ focus_tree = {
 	}
 
     focus = {
-		id = ARA_freedom_of_press
+		id = ARA_freedom_of_press1
 		icon = GFX_focus_generic_treaty
 		relative_position_id = ARA_restore_constitution
 		prerequisite = { focus = ARA_restore_constitution}
@@ -3034,7 +3029,7 @@ focus_tree = {
 	}
 
     focus = {
-		id = ARA_fatherland_front
+		id = ARA_fatherland_front_1
 		icon = GFX_goal_aratos_of
         relative_position_id = ARA_front_against_fascism
         prerequisite = { focus = ARA_front_against_fascism }

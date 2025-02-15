@@ -155,3 +155,27 @@ news_event = {
 		}
 	}
 }
+
+#chb education rework
+news_event = {
+	id = squad_news.9
+	title = squad_news.9.t
+	desc = squad_news.9.d
+	picture = GFX_report_event_chb_education
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		
+		hidden_effect = {
+		
+		}
+	}
+	
+	immediate = {
+		play_song = "army_bpl"
+	}
+}

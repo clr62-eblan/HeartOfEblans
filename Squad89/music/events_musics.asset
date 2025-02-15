@@ -22,3 +22,13 @@ music = {
 	name = "lagoda_raspil"
 	file = "lagoda_raspil.ogg"
 }
+
+music = {
+	name = "stintler_returns"
+	file = "stintler_returns.ogg"
+}
+
+music = {
+	name = "army_bpl"
+	file = "army_education_rework.ogg"
+}

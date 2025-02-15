@@ -51,6 +51,13 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
+	}	
+	
+	defender_of_traditional_values = {
+		random = no
+		political_power_factor = 0.05
+		monthly_population = 0.035
+		democratic_drift = -0.05
 	}
 	
 	slaboumie = {

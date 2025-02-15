@@ -13,19 +13,42 @@ bookmarks = {
 				CHB_hungary_problem
 			}
 			focuses = {
-				
+				chb_communism_effort
+				chb_iam_chickenbekon
+				chb_hype_spirit
 			}
 		}
+		
+		"GON"={
+			history = ""
+			ideology = neutrality
+			ideas = {
+				GON_kotel_shabanova
+				GON_legends_of_stintler
+				demografic_problems
+				GON_political_corruption
+				GON_infamous_decade
+			}
+			focuses = {
+				GON_viva_la_revolution
+				GON_stintler_way
+				GON_memory_of_democratic
+			}
+		}
+
 		"ARA"={
 			history = ""
 			ideology = hypecratia
 			ideas = {
 				defeted_at_wwone
-				ARA_national_catastrophe
-				ARA_dicator_constitution
+				ARA_gos_apparat_idea
+				ARA_massive_opposition
+				ARA_slabie_zakoni
 			}
 			focuses = {
-				
+				ARA_total_control_of_people_minds
+				ARA_parlament_fight
+				GFX_goal_ARA_hype_ratings
 			}
 		}
 		"SVI"={
@@ -36,6 +59,9 @@ bookmarks = {
 				SVI_buster_oposite
 			}
 			focuses = {
+				SVI_hype_entente
+				SVI_reich
+				SVI_destroy_busters
 			}
 		}
 		"DRE"={
@@ -46,7 +72,9 @@ bookmarks = {
 				defeted_at_wwone
 			}
 			focuses = {
-				
+				DRE_own_way
+				DRE_svo_chb_start
+				DRE_svergnut_dreyka
 			}
 		}
 		"HAM"={
@@ -63,18 +91,6 @@ bookmarks = {
 			ideas = {
 				bad_government
 				slay_2023_king
-				demografic_problems
-			}
-			focuses = {
-			}
-		}
-		
-		"GON"={
-			history = ""
-			ideology = neutrality
-			ideas = {
-				GON_kotel_shabanova
-				GON_legends_of_stintler
 				demografic_problems
 			}
 			focuses = {

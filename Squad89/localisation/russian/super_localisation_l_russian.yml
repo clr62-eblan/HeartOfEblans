@@ -17,4 +17,8 @@
   
   sp_event_lagoda_raspil:0 "Распил Лагоды"
   sp_event_lagoda_raspil_remark:0 "Ой ой"
-  sp_event_lagoda_raspil_quote:0 "Это моё! \n- Школьник Drake"
+  sp_event_lagoda_raspil_quote:0 "Это моё! \n- Школьник Drake"  
+  
+  sp_event_stintler_returns:0 "Возвращение Стинтлера"
+  sp_event_stintler_returns_remark:0 "Слава великой Гондунации"
+  sp_event_stintler_returns_quote:0 "Хихихиха \n- Великий Дуче-Фюрер Стинтлер"

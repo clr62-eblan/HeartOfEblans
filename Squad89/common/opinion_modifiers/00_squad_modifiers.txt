@@ -10,5 +10,9 @@ opinion_modifiers = {
 	
 	first_venezia_award = {
 		value = 10
+	}	
+	
+	gon_reach_out = {
+		value = 15
 	}
 }

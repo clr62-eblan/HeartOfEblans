@@ -13,18 +13,39 @@ form_DRE_EMPIRE_cat = {
 	
 		available = {
 			is_subject = no
-			# Chicken-Bekonia
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_chb		
+				# Chicken-Bekonia
 				controls_state = 155
 				controls_state = 43
 				controls_state = 154
 				controls_state = 973
 				controls_state = 974
+			}
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_89		
+
 				
-			# Reich
+				# Reich
 				controls_state = 52
 				controls_state = 53
 
-			#Drekovia
+			}
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_krug			
+				
+
+				#Kruglistan
+				controls_state = 69
+				controls_state = 9
+				controls_state = 75
+				controls_state = 74
+				controls_state = 972
+			}
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_dre		
+
+				#Drekovia
 				controls_state = 848
 				controls_state = 153
 				controls_state = 152
@@ -36,14 +57,9 @@ form_DRE_EMPIRE_cat = {
 				controls_state = 73
 				controls_state = 975
 				controls_state = 976
+				controls_state = 88
 				
-
-			#Kruglistan
-				controls_state = 69
-				controls_state = 9
-				controls_state = 75
-				controls_state = 74
-				controls_state = 972
+			}
 		}
 		
 		highlight_states = {
@@ -202,7 +218,12 @@ drekovia_sdo_cat = {
 
 	blitzkrieg_stopped = {
 		activation = {
-			DRE = { has_war_with = CHB }
+			AND = {
+				DRE = { has_war_with = CHB }
+				DRE = { NOT = { has_country_flag = DRE_blitzkrieg_stopped } }
+				CHB = { is_subject = no }
+				DRE = { is_subject = no }
+			}
 		}
 	
 		icon = GFX_decision_generic_tank
@@ -212,12 +233,16 @@ drekovia_sdo_cat = {
 		is_good = no
 		
 		available = {
+			OR = {
 			NOT = { country_exists = CHB }
+			DRE = { NOT = { has_war_with = CHB } }
+			}
 		}
 		
 		timeout_effect = {
 			add_ideas = DRE_blizkrieg_zabuksoval
 			set_global_flag = DRE_blitzkrieg_zabuksoval
+			set_country_flag = DRE_blitzkrieg_stopped
 			set_global_flag = Super_Event_Visible
 			play_song = "blitzkrieg_zabuksoval"
 		}
@@ -227,4 +252,35 @@ drekovia_sdo_cat = {
 		}
 		
 	}
+	
+	drake_crisis = {
+		activation = {
+			DRE = { has_country_flag = DRE_blitzkrieg_stopped }
+		}
+	
+		icon = GFX_decision_generic_tank
+		
+		days_mission_timeout = 145
+		fire_only_once = yes
+		is_good = no
+		
+		available = {
+			OR = {
+			NOT = { country_exists = CHB }
+			DRE = { NOT = { has_war_with = CHB } }
+			}
+		}
+		
+		timeout_effect = {
+			hidden_effect = {
+				add_timed_idea = { days = 200 idea = DRE_developed_drake_dictatorship_crisis }
+				set_country_flag = DRE_am_nam_march
+			}
+		}
+		
+		complete_effect = {
+		
+		}
+	}
+	
 }

@@ -361,3 +361,44 @@ country_event = {
 		}
 	}
 }
+
+#Zolo dolg
+country_event = {
+	id = chicken.14
+	title = chicken.14.t
+	desc = chicken.14.d
+	
+	picture = GFX_report_event_spr_franco_generals
+	
+	is_triggered_only = yes
+	
+	#ne otdavat
+	option = {
+		name = chicken.14.a
+		
+		ZOL = {
+			set_country_flag = dolg_wargoal
+			
+			create_wargoal = {
+				type = independence_wargoal
+				target = CHB
+			}
+		}
+	}
+	
+	#otdat
+	option = {
+		name = chicken.14.b
+		
+		CHB = { add_ideas = mazeloff_dolg }
+		
+		hidden_effect = {
+			ZOL = {
+				swap_ideas = {
+					add_idea = ego_slaboumnoe_velichie_2
+					remove_idea = ego_slaboumnoe_velichie_1
+				}
+			}
+		}
+	}
+}

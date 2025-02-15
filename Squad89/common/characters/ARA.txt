@@ -130,4 +130,45 @@ characters = {
            traits = { army_concealment_2 }
         }
     }
+	
+	aratoss_fuhrer = {
+		name = "Аратосс-Гауптштурмфюрер"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aratoss_fuhrer
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+	}
+
+	hypecratia_president = {
+		name = "Президент Аратоссик"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aratoss_fuhrer
+			}
+		}
+		country_leader = {
+			ideology = hypetiktok
+			traits = {
+				#
+			}
+			id=1
+		}
+	}
+
+	hypecratia_parlament = {
+		name = "Хайпократический парламент"
+		allowed = { has_country_flag = ARA_impeachment }
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aratoss_parlament
+			}
+		}
+	}
 }

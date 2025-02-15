@@ -43,6 +43,12 @@ guiTypes = {
 			name = "Super_Event_Image_lagoda_raspil"
 			spriteType = "GFX_sp_event_lagoda_raspil"
 			position = {x = 0 y = 0}
+		}		
+		
+		iconType = {
+			name = "Super_Event_Image_stintler_returns"
+			spriteType = "GFX_sp_event_stintler_returns"
+			position = {x = 0 y = 0}
 		}
 		
 		

@@ -29,6 +29,23 @@ ideas = {
 				stability_factor = 0.1
 			}
 		}
+		
+		DRE_developed_drake_dictatorship_crisis = {
+			picture = drake_crisis
+			allowed = {
+				original_tag = DRE
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.15
+				political_advisor_cost_factor = 1
+				command_power_gain_mult = -0.3
+				political_power_factor = -0.6
+				drift_defence_factor = -0.3
+				stability_factor = -0.15
+			}
+		}
 
 		DRE_treaty_of_triannon = {
 			allowed = {

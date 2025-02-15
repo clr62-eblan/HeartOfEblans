@@ -13,5 +13,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_hypeclown"
 		texturefile = "gfx/interface/ideologies/ideology_hypeclown.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ideology_hype_cuterock"
+		texturefile = "gfx/interface/ideologies/ideology_hype_cuterock.dds"
 	}
 }
