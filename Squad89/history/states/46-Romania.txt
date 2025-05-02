@@ -11,7 +11,6 @@ state = {
 	history = {
 
 		owner = GVI
-		add_core_of = HAM
 		add_core_of = GVI
 
 		victory_points = { 

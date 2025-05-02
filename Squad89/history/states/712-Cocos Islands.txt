@@ -6,7 +6,7 @@ state={
 	
 	history=
 	{
-		owner = ZUS
+		owner = ARA
 		buildings = {
 			infrastructure = 2
 			13002 = {

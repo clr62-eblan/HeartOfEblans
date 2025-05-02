@@ -24,5 +24,23 @@ characters = {
 				}
 			}
 		}
+	}	
+	
+	universal_sea = {
+		name = universal_sea_advisor
+		portraits={
+			civilian={
+				large=GFX_unknown_char_small
+				small=GFX_unknown_char_small
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = universal_sea_advisor
+            ledger = navy
+            allowed = { always = yes } # Optional, doesn't change anything.
+            traits = { navy_screen_1 navy_chief_maneuver_1 }
+		}
 	}
 }

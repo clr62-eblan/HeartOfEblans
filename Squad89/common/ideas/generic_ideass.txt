@@ -97,8 +97,8 @@ ideas = {
 			picture = bad_government
 
 			modifier = {
-				stability_factor = -0.05
-				war_support_factor = -0.05
+				stability_factor = -0.1
+				war_support_factor = -0.1
 			}
 		}
 		
@@ -215,6 +215,35 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.15
 				research_speed_factor = -0.1
+			}
+		}
+
+		sea_advisor = {
+			allowed = {
+				always = no
+			}
+			picture = generic_navy_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_navy = 0.2
+			}
+		}
+
+		defeted_at_wwone_2 = {
+			allowed = {
+				always = no
+			}
+			picture = great_depression
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				research_speed_factor = -0.05
 			}
 		}
 		

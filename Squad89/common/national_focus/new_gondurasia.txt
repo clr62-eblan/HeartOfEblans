@@ -54,6 +54,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			add_ideas = sea_advisor
 			custom_effect_tooltip = GON_invite_maskim_iosif_shabanov_effect
 			set_country_flag = GON_shaban_invite
 		}
@@ -392,7 +393,8 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			41 = {
+			random_owned_controlled_state = {
+				prioritize = { 41 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -401,7 +403,8 @@ focus_tree = {
 				}
 			}
 
-			165 = {
+			random_owned_controlled_state = {
+				prioritize = { 165 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -496,6 +499,7 @@ focus_tree = {
 			add_manpower = 50000
 
 			add_political_power = 100
+			remove_ideas = GON_infamous_decade_2
 		}
 	}
 
@@ -607,6 +611,8 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			custom_effect_tooltip = in_development
+			remove_ideas = GON_infamous_decade_2
 		}
 	}
 
@@ -628,22 +634,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			every_country = {
-				limit = {
-					capital_scope = {
-						is_on_continent = europe
-					}
-					NOT = {
-					has_government = communism
-					}
-				}
-				GON = {
-					create_wargoal = {
-						type = annex_everything
-						target = PREV
-					} 
-				}
-			}
+			add_ideas = GON_lliberate_continent
 		}
 	}
 
@@ -665,7 +656,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
             add_political_power = 100
-			add_ideas = GON_infamous_decade_3_idea
+			add_ideas = GON_infamous_decade_3
 		}
 	}
 
@@ -687,7 +678,16 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-            
+			add_ideas = sea_advisor
+            add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
 		}
 	}
 
@@ -965,6 +965,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
             add_political_power = 100
+			add_ideas = sea_advisor
 			swap_ideas = {
 				remove_idea = GON_infamous_decade
 				add_idea = GON_infamous_decade_2
@@ -1034,7 +1035,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 10
+		cost = 12
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
             add_ideas = GON_anti_dipins_sentiment
@@ -1283,7 +1284,7 @@ focus_tree = {
 		x = 1
 		y = 2
 
-		cost = 10
+		cost = 13
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
             set_politics = {
@@ -1291,6 +1292,7 @@ focus_tree = {
 				elections_allowed = no
 			}
 			remove_ideas = GON_legends_of_stintler
+			remove_ideas = GON_infamous_decade_2
 		}
 	}
 
@@ -1312,7 +1314,67 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-            
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = GON_rapid_militarization
 		}
 	}
 
@@ -1334,7 +1396,10 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-            
+			swap_ideas = {
+            remove_idea = GON_groving_nationalist_movement_2
+			add_idea = GON_military_government
+			}
 		}
 	}
 
@@ -1378,7 +1443,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 11
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {	
 			IF = {
@@ -1561,7 +1626,7 @@ focus_tree = {
 		completion_reward = {
             create_wargoal = {
 					type = annex_everything
-					target = DIP
+					target = DPS
 			}
 		}
 	}
@@ -1584,6 +1649,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			custom_effect_tooltip = in_development_dont_use
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -1641,7 +1707,6 @@ focus_tree = {
 		id = GON_maintain_the_quo
 		prerequisite = { focus = GON_stintrel_cabinet }
 		relative_position_id = GON_stintrel_cabinet
-		mutually_exclusive = { focus = GON_consolidating_power }
 		available = {
 		}
 
@@ -1657,6 +1722,7 @@ focus_tree = {
 		completion_reward = {
             add_political_power = 50
 			add_stability = 0.1
+			remove_ideas = GON_infamous_decade_2
 		}
 	}
 
@@ -1725,7 +1791,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-            
+            custom_effect_tooltip = in_development
 		}
 	}
 
@@ -1738,7 +1804,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_GON_palace_dream
-		x = 27
+		x = 26
 		y = 0
 
 		cost = 10
@@ -1793,7 +1859,7 @@ focus_tree = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = GON_civil_works
 		icon = GFX_goal_generic_construction
 		x = 32
@@ -1855,10 +1921,7 @@ focus = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = GON_national_defense_industry_AF1
-				}
+			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1866,10 +1929,7 @@ focus = {
 					instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					has_state_flag = GON_national_defense_industry_AF2
-				}
+			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1918,9 +1978,9 @@ focus = {
 	}
 
 	focus = {
-		id = GON_agrarian_reform
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = GON_civil_works focus = GON_national_defense_industry }
+		id = GON_danubian_transport_network
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GON_national_defense_industry focus = GON_civil_works }
 		x = 1
 		y = 1
 		relative_position_id = GON_civil_works
@@ -1943,63 +2003,22 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = ROM_agrarian_reform
-		}
-	}
-
-	focus = {
-		id = GON_danubian_transport_network
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GON_agrarian_reform }
-		x = 1
-		y = 2
-		relative_position_id = GON_civil_works
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = GON_danubian_transport_network_Inf
-				}
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					has_state_flag = GON_danubian_transport_network_Inf_2
-				}
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					has_state_flag = GON_danubian_transport_network_Inf_3
-				}
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2063,7 +2082,7 @@ focus = {
 		prerequisite = { focus = GON_danubian_transport_network }
 		#mutually_exclusive = { focus = GON_invite_foreign_motor_companies }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = GON_civil_works
 
 		cost = 10
@@ -2085,10 +2104,7 @@ focus = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = GON_malaxa_IC
-				}
+			capital_scope = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -2100,7 +2116,7 @@ focus = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 79 }
+				prioritize = { 41 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV } 
 					free_building_slots = {
@@ -2180,26 +2196,23 @@ focus = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = GON_hunedoara_steel_works_IC
-				}
-				add_extra_state_shared_building_slots = 2
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 2
 				}
 			}
 		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 84 }
+				prioritize = { 118 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV } 
 					free_building_slots = {
@@ -2214,7 +2227,6 @@ focus = {
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = GON_hunedoara_steel_works_IC
 				add_resource = {
 					type = steel
 					amount = 12
@@ -2250,14 +2262,11 @@ focus = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = GON_invest_in_the_iar_AF1
-				}
-				add_extra_state_shared_building_slots = 3
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2265,7 +2274,7 @@ focus = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 81 }
+				prioritize = { 41 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
@@ -2280,23 +2289,6 @@ focus = {
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = GON_invest_in_the_iar_AF1
-			}
-
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = GON_iar_organization
-				mio:GON_iar_organization = {
-					complete_mio_trait = generic_mio_trait_heavily_armed_aircraft
-					add_mio_funds = 2500
-				}
-			}
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = GON_iar
 			}
 		}
 	}
@@ -2330,10 +2322,11 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			165 = {
+			random_owned_controlled_state = {
+				prioritize = { 165 }
 				add_resource = {
 					type = oil
-					amount = 24
+					amount = 4
 				}
 			}
 		}
@@ -2354,7 +2347,7 @@ focus = {
 		}
 
 		available = {
-			num_of_factories > 50
+			num_of_factories > 35
 		}
 
 		bypass = {
@@ -2370,6 +2363,6 @@ focus = {
 		}
 	}
 
-	continuous_focus_position = { x = 50 y = 2500 }
+	continuous_focus_position = { x = 50 y = 2000 }
 	
 }

@@ -3,6 +3,10 @@ SVI = {
 	color = rgb { 255 140 251 }
 	color_ui = rgb { 255 140 251 }
 }
+AMN = {
+	color = rgb { 194 255 61 }
+	color_ui = rgb { 194 255 61 }
+}
 GCM = {
 	color = rgb { 65 83 87 }
 	color_ui = rgb { 65 83 87 }
@@ -91,7 +95,7 @@ DRE = {
 	color = rgb { 255 182 122 }
 	color_ui = rgb { 255 182 122 }
 }
-DIP = {
+DPS = {
 	color = rgb { 27 11 79 }
 	color_ui = rgb { 27 11 79 }
 }

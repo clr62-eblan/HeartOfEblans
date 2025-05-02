@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		add_core_of = ARA
+		add_core_of = SVE
 		owner = SVE
 		victory_points = {
 			3273 15
@@ -30,7 +30,7 @@ state={
 			}
 
 		}
-		add_core_of = SVE
+		add_core_of = ARA
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5

@@ -16,19 +16,89 @@ spriteTypes = {
     }     
 	
 	spriteType = {
+        name = "GFX_idea_dre_mrbeast"
+        texturefile = "gfx/interface/ideas/dre_mrbeast.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_dre_trump"
+        texturefile = "gfx/interface/ideas/dre_trump.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_baron_bills"
+        texturefile = "gfx/interface/ideas/baron_money.dds"
+    }     
+	
+	spriteType = {
         name = "GFX_idea_drake_crisis"
         texturefile = "gfx/interface/ideas/drake_dictatorship_crisis.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_soplya_coin"
+        texturefile = "gfx/interface/ideas/soplya_coin.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_DRE_act"
+        texturefile = "gfx/interface/ideas/DRE_act.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_democratic_gos_apparat"
+        texturefile = "gfx/interface/ideas/ARA_democratic_gos_apparat.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_DRE_burger_deal"
+        texturefile = "gfx/interface/ideas/burger_deal.dds"
+    }	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_collectivist_gos_apparat"
+        texturefile = "gfx/interface/ideas/ARA_collectivist_gos_apparat.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_hamster_economics"
+        texturefile = "gfx/interface/ideas/DRE_hamster_economics.dds"
     }  
 	
     spriteType = {
         name = "GFX_vitaliy_jr_small"
         texturefile = "gfx/interface/ideas/vitaliy_jr_small.dds"
+    }      
+	
+	spriteType = {
+        name = "GFX_pushkin_small"
+        texturefile = "gfx/interface/ideas/pushkin_small.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_total_control"
+        texturefile = "gfx/interface/ideas/total_mind_control.dds"
+    } 	
+		
+	spriteType = {
+        name = "GFX_idea_internet_warfare"
+        texturefile = "gfx/interface/ideas/internet_warfare.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_where_is_president"
+        texturefile = "gfx/interface/ideas/where_is_president.dds"
     }  
 	
     spriteType = {
         name = "GFX_idea_slay_2023"
         texturefile = "gfx/interface/ideas/slay_2023.dds"
     }  
+
+    spriteType = {
+        name = "GFX_stalin_small"
+        texturefile = "gfx/interface/ideas/stalin_small.dds"
+    } 
 	
     spriteType = {
         name = "GFX_idea_slay_2024"

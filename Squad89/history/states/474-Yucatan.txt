@@ -9,7 +9,7 @@ state = {
 
 		owner = DER
 		add_core_of = DER
-		#add_core_of = YUC
+		add_core_of = YUC
 
 		buildings = {
 			infrastructure = 2

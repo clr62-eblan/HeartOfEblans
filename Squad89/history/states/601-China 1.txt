@@ -7,8 +7,8 @@ state={
 
 	history={
 		#owner = CHI
-		#add_core_of = CHI
-		#add_core_of = TIB
+		add_core_of = CHI
+		add_core_of = TIB
 		add_core_of = VAH
 		buildings = {
 			infrastructure = 1

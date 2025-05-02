@@ -23,29 +23,29 @@ state={
 			infrastructure = 4
 			industrial_complex = 3
 			549 = {
-				bunker = 4
+				bunker = 10
 
 			}
 			678 = {
-				bunker = 4
+				bunker = 10
 
 			}
 			3629 = {
-				bunker = 4
+				bunker = 10
 
 			}
 			6529 = {
-				bunker = 4
+				bunker = 10
 			}
 			9503 = {
-				bunker = 4
+				bunker = 10
 			}
 			9559 = {
-				bunker = 4
+				bunker = 10
 
 			}
 			11502 = {
-				bunker = 4
+				bunker = 10
 
 			}
 			anti_air_building = 5

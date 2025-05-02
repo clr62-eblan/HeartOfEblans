@@ -21,9 +21,140 @@ spriteTypes = {
 	name = "GFX_goal_ARA_politics"
 	texturefile = "gfx/interface/goals/ara_politics.dds"			
 	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_economics"
+	texturefile = "gfx/interface/goals/drake_economics.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_mrbeast"
+	texturefile = "gfx/interface/goals/focus_DRE_mrbeast.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_burger"
+	texturefile = "gfx/interface/goals/focus_DRE_burger.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_baron_deal"
+	texturefile = "gfx/interface/goals/focus_DRE_baron_deal.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_baron_otstavka"
+	texturefile = "gfx/interface/goals/focus_DRE_baron_otstavka.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_rally_the_opposition"
+	texturefile = "gfx/interface/goals/focus_DRE_rally_the_opposition.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_anschluss"
+	texturefile = "gfx/interface/goals/focus_DRE_anschluss.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_african_expansion"
+	texturefile = "gfx/interface/goals/focus_DRE_african_expansion.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_zolo_economy"
+	texturefile = "gfx/interface/goals/focus_DRE_zolo_economy.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_kruglistan_question"
+	texturefile = "gfx/interface/goals/focus_DRE_kruglistan_question.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_sorell_tactics"
+	texturefile = "gfx/interface/goals/focus_DRE_sorell_tactics.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_amnam_concerns"
+	texturefile = "gfx/interface/goals/focus_DRE_anman_concerns.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_nek_gold"
+	texturefile = "gfx/interface/goals/focus_DRE_nek_gold.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_hungary_problem"
+	texturefile = "gfx/interface/goals/focus_DRE_hungary_problem.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_baron_peregovory"
+	texturefile = "gfx/interface/goals/focus_DRE_baron_peregovory_start.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_rostov_ultimatum"
+	texturefile = "gfx/interface/goals/focus_DRE_rostov_ultimatum.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_lagoda_deal"
+	texturefile = "gfx/interface/goals/focus_DRE_lagoda_deal.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_baron_buy"
+	texturefile = "gfx/interface/goals/focus_DRE_baron_buy.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_own_way"
+	texturefile = "gfx/interface/goals/focus_DRE_own_way.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_money_for_baron"
+	texturefile = "gfx/interface/goals/focus_DRE_money_for_baron.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_rostov_delegation"
+	texturefile = "gfx/interface/goals/focus_DRE_rostov_delegation.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_money_print"
+	texturefile = "gfx/interface/goals/focus_DRE_money_print.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_extra_money_for_baron"
+	texturefile = "gfx/interface/goals/focus_DRE_extra_money_for_baron.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_negotiation"
+	texturefile = "gfx/interface/goals/focus_DRE_baron_negotiation.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_trump"
+	texturefile = "gfx/interface/goals/focus_DRE_trump.dds"			
+	}	
+	
 	SpriteType = {
 	name = "GFX_goal_ARA_nationalize_bank"
 	texturefile = "gfx/interface/goals/focus_ARA_nationalize_banks.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DRE_rostov_deal"
+	texturefile = "gfx/interface/goals/drake_rostov_annexation.dds"			
 	}
 	
 	SpriteType = {
@@ -544,6 +675,11 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_chb_communism"
 	texturefile = "gfx/interface/goals/focus_chb_communism.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_dre_edinstvo"
+	texturefile = "gfx/interface/goals/drake_edinstvo.dds"			
 	}	
 	
 	SpriteType = {

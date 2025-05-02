@@ -76,6 +76,10 @@ focus_tree = {
 		offset = {
 		}
 		cost = 10
+		
+		ai_will_do = {
+			factor = 50
+		}
 
 		bypass = {
 		}
@@ -110,6 +114,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = neuch
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = ego_slaboumnoe_velichie_1
+					add_idea = ego_slaboumnoe_velichie_2
+				}
+			}
 		}
 	}
 
@@ -132,7 +142,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_ideas = neuch
+			set_country_flag = ZOL_pushkin
 		}
 	}
 
@@ -155,7 +165,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_ideas = neuch
+			set_country_flag = ZOL_stalin
 		}
 	}
 
@@ -209,57 +219,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = ZOL_atom_bomb
-		icon = GFX_focus_generic_nuclear_development
-		relative_position_id = ZOL_comm_equals_to_fas
-		prerequisite = { focus = ZOL_comm_equals_to_fas }
-		x = 0
-		y = 1
-		offset = {
-		}
-		cost = 7
-
-		bypass = {
-		}
-
-		available = {
-		}
-
-
-		completion_reward = {
-			add_tech_bonus = {
-					name = ZOL_arma_maravillosa_bonus
-					bonus = 1
-					uses = 2
-					category = nuclear
-			}
-		}
-	}
-
-	focus = {
-		id = ZOL_atom_bomb
-		icon = GFX_focus_generic_nuclear_development
-		relative_position_id = ZOL_comm_equals_to_fas
-		prerequisite = { focus = ZOL_comm_equals_to_fas }
-		x = 0
-		y = 1
-		offset = {
-		}
-		cost = 7
-
-		bypass = {
-		}
-
-		available = {
-		}
-
-
-		completion_reward = {
 			add_tech_bonus = {
 					name = ZOL_arma_maravillosa_bonus
 					bonus = 1
@@ -288,19 +247,11 @@ focus_tree = {
 
 
 		completion_reward = {
-			every_country = {
-				limit = {
-					capital_scope = {
-						is_on_continent = europe
-					}
-					has_government = democratic
-				}
-				ZOL = {
-					create_wargoal = {
-						type = annex_everything
-						target = PREV
-					} 
-				}
+			ZOL = {
+				create_wargoal = {
+					type = annex_everything
+					target = DPS
+				} 
 			}
 		}
 	}
@@ -325,6 +276,12 @@ focus_tree = {
 
 		completion_reward = {
 			CHB = { country_event = { id = chicken.14 days = 1 } }
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = ego_slaboumnoe_velichie_2
+					add_idea = ego_slaboumnoe_velichie_3
+				}
+			}
 		}
 	}
 
@@ -339,6 +296,11 @@ focus_tree = {
 		y = 1
 		offset = {
 		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+
 		cost = 10
 
 		bypass = {
@@ -349,8 +311,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_political_power = 100
-			add_ideas = tabletki_ot_uma
 		}
 	}
 
@@ -373,8 +333,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_political_power = 100
-			add_ideas = tabletki_ot_uma
 		}
 	}
 

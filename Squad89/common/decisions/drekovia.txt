@@ -223,7 +223,14 @@ drekovia_sdo_cat = {
 				DRE = { NOT = { has_country_flag = DRE_blitzkrieg_stopped } }
 				CHB = { is_subject = no }
 				DRE = { is_subject = no }
+				DRE = { has_country_flag = SDO_started_chb }
+				DRE = { NOT = { has_country_flag = SDO_peace } }
 			}
+		}
+		
+		visible = {
+			DRE = { has_country_flag = SDO_started_chb }
+			DRE = { NOT = { has_country_flag = SDO_peace } }
 		}
 	
 		icon = GFX_decision_generic_tank
@@ -234,8 +241,8 @@ drekovia_sdo_cat = {
 		
 		available = {
 			OR = {
-			NOT = { country_exists = CHB }
-			DRE = { NOT = { has_war_with = CHB } }
+				NOT = { country_exists = CHB }
+				DRE = { NOT = { has_war_with = CHB } }
 			}
 		}
 		
@@ -268,13 +275,43 @@ drekovia_sdo_cat = {
 			OR = {
 			NOT = { country_exists = CHB }
 			DRE = { NOT = { has_war_with = CHB } }
+			DRE = { has_country_flag = SDO_peace }
 			}
 		}
 		
 		timeout_effect = {
 			hidden_effect = {
-				add_timed_idea = { days = 200 idea = DRE_developed_drake_dictatorship_crisis }
+				add_timed_idea = { days = 2000 idea = DRE_developed_drake_dictatorship_crisis }
 				set_country_flag = DRE_am_nam_march
+				retire_character = amnyam
+				if = {
+					limit = { DRE = { controls_state = 975 } }
+					release_on_controlled = AMN
+					news_event = { id = squad_news.10 hours = 2 }
+					AMN = {
+						load_oob = "AMN_MARCH"
+						declare_war_on = {
+						target = DRE
+						type = annex_everything
+					}
+					delete_units = {
+						division_template = "Дреффен-АМ"
+						disband = no
+					}
+				}
+				}
+				if = {
+					limit = {
+						DRE = {
+							controls_state = 69
+							controls_state = 9
+							controls_state = 75
+							controls_state = 74
+							controls_state = 972
+						}
+					}
+					country_event = { id = drek.14 days = 42 }
+				}
 			}
 		}
 		
@@ -283,4 +320,219 @@ drekovia_sdo_cat = {
 		}
 	}
 	
+}
+
+drekovia_rostov_cat = {
+	DRE_increase_doverie = {
+
+		icon = hol_draw_up_staff_plans
+
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 218
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		available = {
+			NOT = { has_country_flag = talking_with_rostov }
+		}
+
+		visible = {
+		}
+
+		cancel_trigger = {
+			has_completed_focus = DRE_peregovory_start
+		}
+
+		fire_only_once = no
+		cost = 25
+
+		days_remove = 25
+		complete_effect = {
+			set_country_flag = talking_with_rostov
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					custom_effect_tooltip = Rostov_small_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 5 }	
+					}
+				}
+				35 = {
+					custom_effect_tooltip = Rostov_mid_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 10 }	
+					}
+				}
+				15 = {
+					custom_effect_tooltip = Rostov_big_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 20 }	
+					}
+				}
+			}
+		clr_country_flag = talking_with_rostov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
+	DRE_invest_to_rostov = {
+
+		icon = hol_attract_foreign_investors
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 218
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		available = {
+			NOT = { has_country_flag = talking_with_rostov }
+		}
+
+		visible = {
+		}
+
+		cancel_trigger = {
+			has_completed_focus = DRE_peregovory_start
+		}
+
+		fire_only_once = no
+		cost = 30
+		
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		custom_cost_text = decision_cost_civ_factory_3
+
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = talking_with_rostov
+		}
+		
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				add_fuel = -350
+				command_power = -10
+			}
+		
+			random_list = {
+				35 = {
+					custom_effect_tooltip = Rostov_small_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 10 }	
+					}
+				}
+				40 = {
+					custom_effect_tooltip = Rostov_mid_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 15 }	
+					}
+				}
+				25 = {
+					custom_effect_tooltip = Rostov_big_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 20 }	
+					}
+				}
+			}
+		clr_country_flag = talking_with_rostov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
+	DRE_militarize_rostov = {
+
+		icon = ger_military_buildup
+
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 218
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		available = {
+			NOT = { has_country_flag = talking_with_rostov }
+		}
+
+		visible = {
+		}
+
+		cancel_trigger = {
+			has_completed_focus = DRE_peregovory_start
+		}
+
+		fire_only_once = no
+		cost = 45
+		
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_equipment = {
+				infantry_equipment > 149
+			}
+		}
+		custom_cost_text = baron_militarize_cost
+
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = talking_with_rostov
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				army_experience = -10
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 150
+					target = ROS
+				}
+			}
+		
+			random_list = {
+				35 = {
+					custom_effect_tooltip = Rostov_small_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 10 }	
+					}
+				}
+				40 = {
+					custom_effect_tooltip = Rostov_mid_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 15 }	
+					}
+				}
+				25 = {
+					custom_effect_tooltip = Rostov_big_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 20 }	
+					}
+				}
+			}
+		clr_country_flag = talking_with_rostov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
 }

@@ -10,9 +10,8 @@ state = {
 
 	history = {
 
-		owner = DIP
-		add_core_of = DIP
-
+		owner = ZUS
+		add_core_of = ZUS
 
 		victory_points = {
 			988 2 # Coquilhatville

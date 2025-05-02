@@ -11,7 +11,7 @@ state = {
 
 	history = {
 		
-		owner = DIP
+		owner = DPS
 		add_core_of = CRC
 
 		victory_points = {

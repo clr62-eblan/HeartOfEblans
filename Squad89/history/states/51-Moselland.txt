@@ -12,8 +12,6 @@ state = {
 
 		owner = BTK
 		add_core_of = BTK
-		add_core_of = RHI
-		add_core_of = PRE
 
 		victory_points = {
 			6469 10 # Essen
@@ -36,6 +34,13 @@ state = {
 			arms_factory = 3
 			industrial_complex = 4 #WAS 2
 			air_base = 3
+		}
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 6
+				radar_station = 1
+			}
 		}
 	}
 

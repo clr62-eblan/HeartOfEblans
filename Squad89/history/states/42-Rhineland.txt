@@ -13,8 +13,6 @@ state = {
 
 		owner = BTK
 		add_core_of = BTK
-		add_core_of = RHI
-		add_core_of = PRE
 
 		victory_points = { 
 			11435 1 # Bitburg
@@ -35,6 +33,13 @@ state = {
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
+		}
+
+		1939.1.1 = {
+			buildings = {
+				radar_station = 1
+				synthetic_refinery = 3
+			}
 		}
 	}
 

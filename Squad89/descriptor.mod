@@ -1,4 +1,4 @@
-version="89.0"
+version="89.1"
 picture="thumbnail.png"
 tags={
 	"Alternative History"
@@ -8,6 +8,6 @@ tags={
 	"Ideologies"
 }
 replace_path="gfx/loadingscreens"
-name="Hearts of Eblans mod"
-supported_version="1.15.3"
+name="Hearts of Eblans 1.1.1"
+supported_version="1.16.4"
 remote_file_id="3392330604"

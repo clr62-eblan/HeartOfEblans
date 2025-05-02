@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = DIP
-		add_core_of = DIP
+		owner = DPS
+		add_core_of = DPS
 
 		victory_points = { 
 			516 30 

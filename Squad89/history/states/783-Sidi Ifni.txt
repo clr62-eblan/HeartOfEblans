@@ -11,8 +11,8 @@ state={
 			12857 1
 		}
 
-		owner = GON
-		add_core_of = MOR
+		owner = PBU
+		add_core_of = PBU
 		buildings = {
 			infrastructure = 1
 			12857 = {

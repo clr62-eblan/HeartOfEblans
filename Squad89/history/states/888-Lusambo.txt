@@ -6,8 +6,7 @@ state = {
 
 	history = {
 
-		owner = DIP
-
+		owner = ZUS
 
 		victory_points = {
 			2024 1 # Bakwanga
@@ -17,7 +16,7 @@ state = {
 			infrastructure = 1
 		}
 
-		add_core_of = DIP
+		add_core_of = ZUS
 
 	}
 

@@ -8,8 +8,8 @@ state=
 	
 	history=
 	{
-		owner = GON
-		add_core_of = EQG
+		owner = ZUS
+		add_core_of = ZUS
 		victory_points = {
 			1903 1 
 		}

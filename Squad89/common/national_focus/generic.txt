@@ -1789,17 +1789,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 1
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_government = neutrality
-					}
-					has_idea = neutrality_idea
-				}
-			}
+			factor = 4
 		}
 
 		completion_reward = {
@@ -1838,7 +1828,7 @@ focus_tree = {
 			#	days = 720
 			#}
 
-			add_war_support = 0.25
+			add_war_support = 0.1
 		}
 	}
 
@@ -1971,6 +1961,7 @@ focus_tree = {
 			set_rule = {
 				can_create_factions = yes
 			}
+			remove_ideas = hypecratia_ethos
 		}
 	}
 
@@ -2005,7 +1996,7 @@ focus_tree = {
 			#	days = 720
 			#}
 
-			add_stability = 0.2
+			add_stability = 0.12
 		}
 	}
 

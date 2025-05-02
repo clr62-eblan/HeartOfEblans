@@ -21,7 +21,7 @@ state={
 
 		}
 		add_core_of = CHB
-		add_claim_by = FLA
+		add_core_of = FLA
 	}
 
 	provinces={

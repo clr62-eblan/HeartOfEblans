@@ -14,7 +14,6 @@ state = {
 
 		owner = BAT
 		add_core_of = BAT
-		add_core_of = BAT
 
 		buildings = {
 			infrastructure = 1

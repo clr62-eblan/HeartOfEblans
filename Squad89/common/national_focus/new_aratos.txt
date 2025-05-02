@@ -188,7 +188,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            add_ideas = ARA_hype_ministers
+            add_timed_idea = { idea = ARA_hype_ministers days = 755 }
             add_political_power = 50
 		}
 	}
@@ -215,6 +215,11 @@ focus_tree = {
                 elections_allowed = no
 			}
 			remove_ideas = ARA_hype_chuma
+			remove_ideas = ARA_massive_opposition
+			swap_ideas = {
+				remove_idea = ARA_gos_apparat_idea
+				add_idea = ARA_rebuilding_gos_apparat_idea
+			}
 		}
 	}
 
@@ -233,7 +238,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -271,7 +276,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			add_ideas = ARA_internet_army
 		}
 	}
 
@@ -290,7 +295,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -330,7 +335,52 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			ARA = {
+				division_template = { 
+				name = "ARA_tt_division"
+				division_names_group = ARA_tt_01
+				is_locked = no
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
 
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+				}
+				random_owned_controlled_state = {
+					create_unit = { 
+						division = "name = \"1. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+					create_unit = { 
+						division = "name = \"2. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+					create_unit = { 
+						division = "name = \"3. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+					create_unit = { 
+						division = "name = \"4. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+					create_unit = { 
+						division = "name = \"5. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+				}
+			}
 		}
 	}
 
@@ -349,7 +399,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -368,7 +418,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -389,6 +439,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
 			set_power_balance = { id = president_parlament_balance }
+			add_stability = -0.05
+			add_war_support = -0.05
+			country_event = { id = aratos.7 days = 1}
 		}
 	}
 
@@ -408,11 +461,11 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			add_ideas = ARA_president_focus_1
 			add_popularity = {
                 ideology = democratic
                 popularity = -0.05
             }
+			add_ideas = ARA_president_focus_1
 		}
 	}
 
@@ -433,6 +486,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
 			add_ideas = ARA_parlament_focus_1
+			swap_ideas = {
+				remove_idea = ARA_rebuilding_gos_apparat_idea
+				add_idea = ARA_democratic_gos_apparat_idea
+			}
 			add_popularity = {
                 ideology = democratic
                 popularity = 0.05
@@ -455,10 +512,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ARA_parlament_focus_1
-				add_idea = ARA_parlament_focus_2
-			}
+			#swap_ideas = {
+			#	remove_idea = ARA_parlament_focus_1
+			#	add_idea = ARA_parlament_focus_2
+			#}
 
 			country_event = { id = aratos.6 days = 1 }
 
@@ -503,7 +560,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -523,7 +580,11 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			news_event = { id = squad_news.11 hours = 3 }
+			swap_ideas = {
+				add_idea = ARA_parlament_focus_2
+				remove_idea = ARA_parlament_focus_1
+			}
 		}
 	}
 
@@ -536,13 +597,13 @@ focus_tree = {
 		icon = GFX_goal_ARA_emergency_convocation
 		x = 1
 		y = 1
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -555,13 +616,13 @@ focus_tree = {
 		icon = GFX_goal_ARA_anti_president_constitution
 		x = 0
 		y = 2
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -602,7 +663,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -621,7 +682,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -635,13 +696,13 @@ focus_tree = {
 		icon = GFX_goal_ARA_full_isolation
 		x = 0
 		y = 2
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			add_ideas = ARA_where_is_president
 		}
 	}
 
@@ -655,13 +716,27 @@ focus_tree = {
 		icon = GFX_goal_ARA_impeachment
 		x = 1
 		y = 3
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
+
+		bypass = {
+			AND = {
+			has_country_leader = {
+				character = hypecratia_parlament
+				ruling_only = yes
+			}
+			has_cosmetic_tag = ARA_HDR
+			}
+		}
+
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
 			retire_character = hypecratia_president
+			remove_ideas = ARA_where_is_president
+			remove_ideas = ARA_president_isolation
+			set_cosmetic_tag = ARA_HDR
 			add_country_leader_role = {
         		character = hypecratia_parlament  # Must be recruited
         		promote_leader = yes  # Makes the character be promoted to leader of the party
@@ -670,7 +745,9 @@ focus_tree = {
             		traits = {  }
         		}
     		}
-			set_cosmetic_tag = ARA_HDR
+			remove_power_balance = {
+    			id = president_parlament_balance
+			}
 		}
 	}
 
@@ -709,6 +786,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
 			add_ideas = ARA_pro_government_media
+			if = {
+				limit = { has_idea = ARA_freedom_of_press}
+				remove_ideas = ARA_freedom_of_press
+			}
 		}
 	}
 
@@ -741,7 +822,7 @@ focus_tree = {
 		icon = GFX_goal_ARA_emergency_powers
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -763,9 +844,12 @@ focus_tree = {
 		icon = GFX_goal_ARA_change_constitution
 		x = -2
 		y = 1
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
@@ -786,6 +870,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
 			swap_ideas = {
@@ -804,9 +891,12 @@ focus_tree = {
 		icon = GFX_goal_ARA_hype_totalitarism
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
@@ -823,9 +913,12 @@ focus_tree = {
 		icon = GFX_goal_ARA_dissolve_parlament
 		x = 2
 		y = 1
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
@@ -842,9 +935,12 @@ focus_tree = {
 		icon = GFX_goal_ARA_arrest_officials
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
@@ -861,13 +957,16 @@ focus_tree = {
 		icon = GFX_goal_ARA_prepare_for_a_putch
 		x = 0
 		y = 1
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			country_event = { id = aratos.8 hours = 1}
 		}
 	}
 
@@ -880,13 +979,19 @@ focus_tree = {
 		icon = GFX_goal_ARA_militiraze_president_supporters
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			swap_ideas = {
+				add_idea = ARA_putch_divisions_idea
+				remove_idea = ARA_president_batalions_idea
+			}
 		}
 	}
 
@@ -905,7 +1010,22 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			remove_ideas = ARA_shadow_weapons_idea
+			start_civil_war = {
+				ideology = hypecratia
+				size = 0.34
+				capital = 126
+				states = { 126 127 123 338 125 135 }
+				keep_unit_leaders = {
+					1235
+				}
+				set_cosmetic_tag = ARA_HDR
+			}
+			remove_power_balance = {
+				id = president_parlament_balance
+			}
+			remove_ideas = { ARA_jailed_officials }
+			add_timed_idea = { idea = ARA_never_defeat days = 100 }
 		}
 	}
 
@@ -954,7 +1074,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            add_ideas = ARA_soviet_ministers_idea
 		}
 	}
 
@@ -974,7 +1094,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            custom_effect_tooltip = in_development
 		}
 	}
 
@@ -994,7 +1114,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            add_timed_idea = { idea = ARA_people_against_fascism days = 700 }
 		}
 	}
 
@@ -1014,7 +1134,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            add_ideas = ARA_liquidate_corporations_idea
 		}
 	}
 
@@ -1034,14 +1154,14 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            add_timed_idea = { idea = ARA_fuck_burshui days = 300}
 		}
 	}
 
 	focus = {
 		id = ARA_zagovor_protiv_dictator
 		available = {				
-			
+			communism > 0.4
 		} 
         relative_position_id = ARA_liquidate_corporations
         prerequisite = { focus = ARA_fuck_burshui }
@@ -1055,7 +1175,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            set_politics = {
+				ruling_party = communism
+                elections_allowed = no
+			}
 		}
 	}
 
@@ -1075,7 +1198,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            swap_ideas = {
+				remove_idea = ARA_gos_apparat_idea
+				add_idea= ARA_collectivist_gos_apparat_idea
+			}
 		}
 	}
 
@@ -1095,7 +1221,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            add_ideas = new_economic_policy
 		}
 	}
 
@@ -1116,7 +1242,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            set_cosmetic_tag = ARA_OF
 		}
 	}
 
@@ -1136,7 +1262,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            add_ideas = ARA_pro_government_media
 		}
 	}
 
@@ -1156,7 +1282,12 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+			add_political_power = 40
+			add_stability = -0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.07
+			}
 		}
 	}
 
@@ -1176,7 +1307,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            custom_effect_tooltip = in_development
 		}
 	}
 
@@ -1196,7 +1327,8 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+			remove_ideas = ARA_massive_opposition
+            add_ideas = ARA_arrested_opposition
 		}
 	}
 
@@ -1217,7 +1349,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            
+            remove_ideas = ARA_collectivist_gos_apparat_idea
 		}
 	}
 
@@ -1258,7 +1390,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			add_timed_idea = { idea = ARA_renovation_project days = 150 }
 		}
 	}
 	focus = {
@@ -1296,7 +1428,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-
+			add_timed_idea = { idea = ARA_returned_money days = 100 }
 		}
 	}
 
@@ -1613,7 +1745,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-           
+           custom_effect_tooltip = in_development
 		}
 	}
 
@@ -1677,7 +1809,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-           
+           	add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
 		}
 	}
 
@@ -1762,7 +1897,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-           
+            swap_ideas = {
+			remove_idea = ARA_only_government_media
+			add_idea = ARA_total_mind_control
+		   }
 		}
 	}
 

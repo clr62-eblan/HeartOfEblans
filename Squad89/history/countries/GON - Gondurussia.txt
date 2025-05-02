@@ -6,6 +6,7 @@ set_research_slots = 4
 
 add_ideas = { 
 	closed_economy
+	isolation
 	GON_kotel_shabanova
 	GON_legends_of_stintler
 	demografic_problems
@@ -18,6 +19,7 @@ recruit_character = neketondi
 recruit_character = afsygga
 recruit_character = cherepaxa_o5
 recruit_character = maksim_iosif_shabanov
+recruit_character = universal_sea
 
 
 # Starting tech

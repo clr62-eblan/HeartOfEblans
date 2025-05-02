@@ -4,9 +4,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -33,7 +33,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { akvadiskoteka = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -52,9 +52,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -81,7 +81,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { coctail = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -100,9 +100,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -129,7 +129,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { kino = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -148,9 +148,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -177,7 +177,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { pool = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -196,9 +196,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -225,7 +225,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { spa_top = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -244,9 +244,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -273,7 +273,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { spa_bottom = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -292,9 +292,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -321,7 +321,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { vine_pogreb = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -340,9 +340,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -369,7 +369,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { indoor = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -388,9 +388,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -417,7 +417,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { eggs = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -436,9 +436,9 @@ dvorets_building_cat_1 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -465,7 +465,7 @@ dvorets_building_cat_1 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { dirt = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -484,9 +484,9 @@ dvorets_building_cat_1 = {
 	#	icon = GFX_decision_SOV_place_hq
 	#	#picture = GFX_decision_cat_picture_form_greater_greece
 	#	
-	#	fire_only_once = true
+	#	fire_only_once = yes
 	#	cost = 50
-	#	#days_remove = 50
+	#	days_remove = 35
 	#
 	#	allowed = {
 	#		original_tag = GON
@@ -514,7 +514,7 @@ dvorets_building_cat_1 = {
 	#		set_variable = { is_all_palace_decisions_blocked = 0 }
 	#		add_to_variable = { palace_ready_state = 10 }
 	#		set_variable = { vinnie_zavodi = 1 }
-	#		improve_stint_palace_idea = true
+	#		improve_stint_palace_idea = yes
 	#		add_to_variable = { anti_palace_oposition = 1 }
 	#		check_acf = yes
 	#	}
@@ -532,9 +532,9 @@ dvorets_building_cat_1 = {
 	#	icon = GFX_decision_SOV_place_hq
 	#	#picture = GFX_decision_cat_picture_form_greater_greece
 	#	
-	#	fire_only_once = true
+	#	fire_only_once = yes
 	#	cost = 50
-	#	#days_remove = 50
+	#	days_remove = 35
 	#
 	#	allowed = {
 	#		original_tag = GON
@@ -562,7 +562,7 @@ dvorets_building_cat_1 = {
 	#	set_variable = { is_all_palace_decisions_blocked = 0 }
 	#		add_to_variable = { palace_ready_state = 12.5 }
 	#		set_variable = { zoloto_i_barhat = 1 }
-	#		improve_stint_palace_idea = true
+	#		improve_stint_palace_idea = yes
 	#		add_to_variable = { anti_palace_oposition = 1 }
 	#		check_acf = yes
 	#	}
@@ -580,9 +580,9 @@ dvorets_building_cat_1 = {
 	#	icon = GFX_decision_SOV_place_hq
 	#	#picture = GFX_decision_cat_picture_form_greater_greece
 	#	
-	#	fire_only_once = true
+	#	fire_only_once = yes
 	#	cost = 50
-	#	#days_remove = 50
+	#	days_remove = 35
 	#
 	#	allowed = {
 	#		original_tag = GON
@@ -610,7 +610,7 @@ dvorets_building_cat_1 = {
 	#		set_variable = { is_all_palace_decisions_blocked = 0 }
 	#		add_to_variable = { palace_ready_state = 12.5 }
 	#		set_variable = { zerkov = 1 }
-	#		improve_stint_palace_idea = true
+	#		improve_stint_palace_idea = yes
 	#		add_to_variable = { anti_palace_oposition = 1 }
 	#		check_acf = yes
 	#	}
@@ -628,8 +628,8 @@ dvorets_building_cat_1 = {
 	#	icon = GFX_decision_SOV_place_hq
 	#	#picture = GFX_decision_cat_picture_form_greater_greece
 	#	
-	#	fire_only_once = true
-	#	#days_remove = 50
+	#	fire_only_once = yes
+	#	days_remove = 35
 	#	
 	#	custom_cost_trigger = {
 	#		has_manpower > 1500
@@ -662,7 +662,7 @@ dvorets_building_cat_1 = {
 	#		set_variable = { is_all_palace_decisions_blocked = 0 }
 	#		add_to_variable = { palace_ready_state = 12.5 }
 	#		set_variable = { ohrana = 1 }
-	#		improve_stint_palace_idea = true
+	#		improve_stint_palace_idea = yes
 	#		man_power = -1500
 	#		add_to_variable = { anti_palace_oposition = 1 }
 	#		check_acf = yes
@@ -681,9 +681,9 @@ dvorets_building_cat_1 = {
 	#	icon = GFX_decision_SOV_place_hq
 	#	#picture = GFX_decision_cat_picture_form_greater_greece
 	#	
-	#	fire_only_once = true
+	#	fire_only_once = yes
 	#	cost = 100
-	#	#days_remove = 50
+	#	days_remove = 35
 	#
 	#	allowed = {
 	#		original_tag = GON
@@ -711,7 +711,7 @@ dvorets_building_cat_1 = {
 	#		set_variable = { is_all_palace_decisions_blocked = 0 }
 	#		add_to_variable = { palace_ready_state = 12.5 }
 	#		set_variable = { kpp = 1 }
-	#		improve_stint_palace_idea = true
+	#		improve_stint_palace_idea = yes
 	#		add_to_variable = { anti_palace_oposition = 1 }
 	#		check_acf = yes
 	#	}
@@ -729,9 +729,9 @@ dvorets_building_cat_1 = {
 	#	icon = GFX_decision_SOV_place_hq
 	#	#picture = GFX_decision_cat_picture_form_greater_greece
 	#	
-	#	fire_only_once = true
+	#	fire_only_once = yes
 	#	cost = 55
-	#	#days_remove = 50
+	#	days_remove = 35
 	#
 	#	allowed = {
 	#		original_tag = GON
@@ -759,7 +759,7 @@ dvorets_building_cat_1 = {
 	#		set_variable = { is_all_palace_decisions_blocked = 0 }
 	#		add_to_variable = { palace_ready_state = 12.5 }
 	#		set_variable = { naa = 1 }
-	#		improve_stint_palace_idea = true
+	#		improve_stint_palace_idea = yes
 	#		add_to_variable = { anti_palace_oposition = 1 }
 	#		check_acf = yes
 	#	}
@@ -777,7 +777,7 @@ dvorets_building_cat_1 = {
 	#	icon = GFX_decision_SOV_place_hq
 	#	#picture = GFX_decision_cat_picture_form_greater_greece
 	#	
-	#	fire_only_once = true
+	#	fire_only_once = yes
 	#	cost = 100
 	#	#days_remove = 65
 	#
@@ -807,7 +807,7 @@ dvorets_building_cat_1 = {
 	#		set_variable = { is_all_palace_decisions_blocked = 0 }
 	#		add_to_variable = { palace_ready_state = 12.5 }
 	#		set_variable = { horomy = 1 }
-	#		improve_stint_palace_idea = true
+	#		improve_stint_palace_idea = yes
 	#		add_to_variable = { anti_palace_oposition = 1 }
 	#		check_acf = yes
 	#	}
@@ -825,9 +825,9 @@ dvorets_building_cat_1 = {
 	#	icon = GFX_decision_SOV_place_hq
 	#	#picture = GFX_decision_cat_picture_form_greater_greece
 	#	
-	#	fire_only_once = true
+	#	fire_only_once = yes
 	#	cost = 50
-	#	#days_remove = 50
+	#	days_remove = 35
 	#
 	#	allowed = {
 	#		original_tag = GON
@@ -855,7 +855,7 @@ dvorets_building_cat_1 = {
 	#		set_variable = { is_all_palace_decisions_blocked = 0 }
 	#		add_to_variable = { palace_ready_state = 12.5 }
 	#		set_variable = { games = 1 }
-	#		improve_stint_palace_idea = true
+	#		improve_stint_palace_idea = yes
 	#		add_to_variable = { anti_palace_oposition = 1 }
 	#		check_acf = yes
 	#	}
@@ -897,9 +897,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -926,7 +926,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { sport = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -945,9 +945,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -974,7 +974,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { games = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -993,9 +993,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -1022,7 +1022,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { casino = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -1041,9 +1041,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -1070,7 +1070,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { theatre = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -1089,9 +1089,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -1118,7 +1118,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { obed = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -1137,9 +1137,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -1166,7 +1166,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { read = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -1185,9 +1185,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -1214,7 +1214,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { peregovornaya = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -1233,9 +1233,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -1262,7 +1262,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { grim = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -1281,9 +1281,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -1310,7 +1310,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { kalyan = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes
@@ -1329,9 +1329,9 @@ dvorets_building_cat_2 = {
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		#days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -1358,7 +1358,7 @@ dvorets_building_cat_2 = {
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
 			add_to_variable = { palace_ready_state = 10 }
-			improve_stint_palace_idea = true
+			improve_stint_palace_idea = yes
 			set_variable = { bilyard = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
 			check_acf = yes

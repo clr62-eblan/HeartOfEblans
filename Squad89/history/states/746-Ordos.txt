@@ -11,7 +11,7 @@ state={
 	{
 		owner = VAH
 		add_core_of = VAH
-		#add_core_of = CHI
+		add_core_of = CHI
 		add_core_of = VAH
 		add_core_of = VAH
 		

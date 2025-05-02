@@ -13,8 +13,8 @@ state = {
 
 		owner = CVD
 		add_core_of = CVD
-		add_core_of = UKR
-		add_core_of = CRI
+		add_core_of = HAM
+		add_core_of = CVD
 
 		victory_points = {
 			721 1 # Kherson

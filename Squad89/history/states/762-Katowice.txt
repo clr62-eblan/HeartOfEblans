@@ -13,8 +13,8 @@ state = {
 
 	history = {
 		
-		owner = BTK
-		add_core_of = BTK
+		owner = LAG
+		add_core_of = LAG
 		add_core_of = SIL
 		add_claim_by = PRE
 

@@ -158,17 +158,23 @@ characters = {
 			traits = {
 				#
 			}
-			id=1
+			id=1234
 		}
 	}
 
 	hypecratia_parlament = {
 		name = "Хайпократический парламент"
-		allowed = { has_country_flag = ARA_impeachment }
 		portraits = {
 			civilian = {
 				large = GFX_portrait_aratoss_parlament
 			}
+		}
+		country_leader = {
+			ideology = hypetiktok
+			traits = {
+				#
+			}
+			id=1235
 		}
 	}
 }

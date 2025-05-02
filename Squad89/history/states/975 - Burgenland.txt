@@ -12,6 +12,7 @@ state = {
 
 		owner = DRE
 		add_core_of = DRE
+		add_core_of = AMN
 
 		victory_points = {
 			3700 1 
@@ -20,12 +21,6 @@ state = {
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-		}
-		
-		1938.3.12 = {
-			owner = BTK
-			controller = GER
-			add_core_of = BTK
 		}
 
 	}

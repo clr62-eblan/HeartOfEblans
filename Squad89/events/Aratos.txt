@@ -156,3 +156,45 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = aratos.7
+	title = aratos.7.t
+	desc = aratos.7.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.23.a #ok
+		ai_chance = {
+			factor = 55
+		}
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = {
+	id = aratos.8
+	title = aratos.8.t
+	desc = aratos.8.d
+	picture = GFX_report_event_generic_military_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aratos.8.a #ok
+		ai_chance = {
+			factor = 55
+		}
+		
+		add_ideas = ARA_shadow_weapons_idea
+		
+		hidden_effect = {
+			
+		}
+	}
+}

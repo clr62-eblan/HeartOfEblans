@@ -3101,6 +3101,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = chb_hype_spirit
 		completion_reward = {
+			add_war_support = 0.05
 			if = {
 				limit = { controls_state = 44 }
 				44 = {
@@ -3196,6 +3197,7 @@ focus_tree = {
 		relative_position_id = chb_hype_spirit
 
 		completion_reward = {
+			add_stability = 0.05
 			if = {
 				limit = { controls_state = 44 }
 				44 = {
@@ -3239,6 +3241,7 @@ focus_tree = {
 					}
 				}
 			}
+			
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -3323,29 +3326,10 @@ focus_tree = {
 	#}
 
 	focus = {
-		id = chb_hype_zolo_prblm
-		icon = GFX_goal_zolo_focus
-		cost = 10
-		prerequisite = { focus = chb_hype_schools focus = chb_hype_young_army focus = chb_hype_expand_national_hype_production }
-		x = 0
-		y = 2
-		relative_position_id = chb_hype_defend_drake
-
-		completion_reward = {
-			add_command_power = 25
-			army_experience = 20
-			add_political_power = 100
-			add_manpower = 5000
-		}
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
 		id = chb_hype_zolo_put
 		icon = GFX_focus_generic_adriatic_sea_focus
 		cost = 10
-		prerequisite = { focus = chb_hype_zolo_prblm }
+		prerequisite = { focus = chb_hype_schools focus = chb_hype_young_army focus = chb_hype_expand_national_hype_production }
 		available = {
 			SLA = { is_in_faction = no }
 			SLA = { exists = yes }
@@ -3372,8 +3356,8 @@ focus_tree = {
 			add_ideas = paramilitarism_focus
 		}
 		x = 0
-		y = 1
-		relative_position_id = chb_hype_zolo_prblm
+		y = 2
+		relative_position_id = chb_hype_defend_drake
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}

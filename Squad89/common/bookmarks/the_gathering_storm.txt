@@ -48,7 +48,7 @@ bookmarks = {
 			focuses = {
 				ARA_total_control_of_people_minds
 				ARA_parlament_fight
-				GFX_goal_ARA_hype_ratings
+				ARA_increse_hype_party_ratings
 			}
 		}
 		"SVI"={
@@ -70,6 +70,7 @@ bookmarks = {
 			ideas = {
 				DRE_treaty_of_triannon_aat
 				defeted_at_wwone
+				DRE_viplati_reparatiy
 			}
 			focuses = {
 				DRE_own_way

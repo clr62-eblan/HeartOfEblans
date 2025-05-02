@@ -22,11 +22,7 @@ state={
 			air_base = 5
 		}
 		add_core_of = KRU
-
-		1939.3.14 = {
-			owner = BTK
-			controller = GER
-		}
+		add_core_of = DRE
 	}
 
 	provinces={

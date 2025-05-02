@@ -4,6 +4,14 @@ state={
 	name="STATE_218"
 	manpower = 1501076
 	
+	resources = {
+		steel = 6
+		oil = 12 
+		aluminium = 14
+		chromium = 9
+		rubber = 5		
+	}
+	
 	state_category = city
 
 	history={
@@ -13,7 +21,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
-			arms_factory = 1
+			arms_factory = 2
 			industrial_complex = 1
 			air_base = 3
 			9417 ={
@@ -21,11 +29,6 @@ state={
 			}
 		}
 		add_core_of = ROS
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-			}
-		}
 	}
 
 	provinces={

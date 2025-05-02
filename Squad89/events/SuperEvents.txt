@@ -43,6 +43,7 @@ country_event = {
 		}
 		DRE = {
 			has_country_flag = SDO_started_chb
+			controls_province = 9599
 		}
 	}
 
@@ -68,12 +69,17 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
+		AND = {
 		DRE = {
 		    has_war_with = CHB
 			NOT = {
 				controls_province = 11666
 			}
 			has_country_flag = SDO_started_chb
+		}
+		CHB = {
+			controls_province = 11666
+		}
 		}
 	}
 
@@ -100,6 +106,7 @@ country_event = {
 	
 	trigger = {
 		AND = {
+		AND = {
 			DRE = {
 				has_war_with = LAG
 			}
@@ -115,6 +122,7 @@ country_event = {
 			SVI = {
 				is_subject = no
 			}
+		}
 		}
 	}
 

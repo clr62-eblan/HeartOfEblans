@@ -27,3 +27,19 @@ chance = { factor = 0 }}
 music = {
 song = "army_bpl"
 chance = { factor = 0 }}
+
+music = {
+song = "mem_goda"
+chance = { factor = 0 }}
+
+music = {
+song = "amnam_march"
+chance = { factor = 0 }}
+
+music = {
+song = "tv_appeal"
+chance = { factor = 0 }}
+
+music = {
+song = "hamster_criminal"
+chance = { factor = 0 }}

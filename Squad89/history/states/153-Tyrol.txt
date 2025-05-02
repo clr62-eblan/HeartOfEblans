@@ -13,8 +13,12 @@ state={
 			air_base = 3
 		}
 		add_core_of = DRE
-		
 		set_demilitarized_zone = yes
+		1938.3.12 = {
+			owner = BTK
+			controller = GER
+			add_core_of = BTK
+		}
 	}
 	provinces={
 		668 671 673 3675 6673 9633 9636 11618 11634 
