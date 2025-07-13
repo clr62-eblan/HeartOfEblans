@@ -1,0 +1,38 @@
+state={
+	id=21
+	name="STATE_21"
+	resources={
+		aluminium=60.000
+	}
+	provinces={
+		3762 11834 11875 
+	}
+	history={
+		owner = ZOL
+		victory_points = {
+			11834 10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			arms_factory = 1
+			fuel_silo = 1
+			air_base = 10
+			11834 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = ZOL
+		1939.1.1 = {
+			buildings = {
+				dockyard = 2
+			}
+		}
+	}
+	manpower=1670310
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

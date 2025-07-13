@@ -1,0 +1,33 @@
+PYA_Joper_economic = {
+	icon = 
+	
+	priority = 70
+	
+	visible_when_empty = no
+	
+	allowes = {
+		has_completed_focus = PYA_fugobot4
+		}
+	visible = {
+		original_tag = PYA
+		has_completed_focus = PYA_fugobot4
+	}
+}
+PYA_Great_popka = {
+
+	icon = category_generic_formable_nations
+	
+	picture = GFX_PYA_Great_popka
+	
+	priority = 100
+	
+	visible_when_empty = yes
+	
+	
+	allowes = {
+		original_tag = PYA
+		}
+	visible = {
+		original_tag = PYA
+	}
+}

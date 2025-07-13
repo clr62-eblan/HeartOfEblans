@@ -1,0 +1,29 @@
+state={
+	id=23
+	name="STATE_23"
+	resources={
+		steel=12.000
+	}
+	provinces={
+		595 629 655 6657 9597 11582 
+	}
+	state_category = town
+	history={
+		owner = MOY
+		victory_points = {
+			6657 5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			6657 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MOY
+	}
+	manpower=1603100
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,27 @@
+state={
+	id=3
+	name="STATE_3"
+	provinces={
+		663 9620 9638 11590 11604 11623 
+	}
+	history = { 
+
+		owner = NEK
+		add_core_of = NEK
+
+		victory_points = {
+			11604 1 #Karlsruhe
+		}
+
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			air_base = 1
+		}
+
+	}
+	manpower=1216838
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+state={
+	id=1010
+	name="STATE_1010"
+	resources={
+		oil=3.000
+	}
+	provinces={
+		12413 
+	}
+	history = {
+
+		owner = DKK
+		add_core_of = DKK
+
+		victory_points = {
+			12413 1 # Samawah
+		}
+
+		buildings = {
+			#infrastructure = 1
+		}
+		
+	}
+	manpower=479801
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

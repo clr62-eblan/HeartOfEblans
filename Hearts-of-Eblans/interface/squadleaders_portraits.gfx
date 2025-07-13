@@ -1,0 +1,81 @@
+SpriteTypes = {
+
+	SpriteType = {
+		name = "GFX_portrait_bigpig"
+		texturefile = "gfx/leaders/SVI/big_pig.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_laki"
+		texturefile = "gfx/leaders/SVI/Laki.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_BTK"
+		texturefile = "gfx/leaders/BTK/bratishkin_fascism.dds"
+	}	
+	SpriteType = {
+		name = "GFX_portrait_svin_tsar"
+		texturefile = "gfx/leaders/SVI/antonio_i.dds"
+	}
+	SpriteType = {
+		name = "GFX_BTK_89"
+		texturefile = "gfx/leaders/BTK/BTK_hype.dds" 
+	}
+	SpriteType = {
+		name = "GFX_DRE_Colonel"
+		texturefile = "gfx/leaders/DRE/drake.dds" 
+	}
+	spriteType = {
+		name = "GFX_dichlorid_oganeson_portrait"
+		texturefile = "gfx/leaders/PYA/PYA_dichlorid_oganeson.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mc_maks"
+		texturefile = "gfx/leaders/PYA/PYA_mc_maks_fascism.dds"
+	}
+	spriteType = {
+		name = "GFX_mc_maks"
+		texturefile = "gfx/leaders/PYA/PYA_mc_maks_fascism.dds"
+	}
+	spriteType = {
+		name = "GFX_dichlorid_oganeson_advisor"
+		texturefile = "gfx/leaders/PYA/PYA_dichlorid_oganeson_small.dds"
+	}
+	spriteType = {
+		name = "GFX_mc_maks_small"
+		texturefile = "gfx/leaders/PYA/PYA_mc_maks_small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GON_aFsQQ_small"
+		texturefile = "gfx/interface/ideas/idea_GON_aFsQQ_small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GON_ModBoty_small"
+		texturefile = "gfx/interface/ideas/idea_GON_ModBoty_small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GON_WizeBot_small"
+		texturefile = "gfx/interface/ideas/idea_GON_WizeBot_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_maksim_stintlerev"
+		texturefile = "gfx/leaders/GON/stint_comm.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_stint"
+		texturefile = "gfx/leaders/GON/stint_neutrality.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_aratoss_fuhrer"
+		texturefile = "gfx/leaders/ARA/Aratoss.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_aratoss_parlament"
+		texturefile = "gfx/leaders/ARA/ara_parlament.dds"
+	}
+	
+}

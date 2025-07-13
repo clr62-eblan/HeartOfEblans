@@ -1,0 +1,21 @@
+state={
+	id=260
+	name="STATE_260"
+	provinces={
+		 510 3469 3527 3567 6477  6553  9448  9552 11396 11412 11475 11540 413
+	}
+	history={
+		owner = ZUS
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ZUS
+		victory_points = {
+			9448 1
+		}
+	}
+	manpower=2567983
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=9.000
+}

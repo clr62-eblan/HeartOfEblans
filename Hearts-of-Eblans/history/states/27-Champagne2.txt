@@ -1,0 +1,25 @@
+state={
+	id=27
+	name="STATE_27"
+	resources={
+		aluminium=11.000
+	}
+	provinces={
+		648 667 680 817 3652 3669 3681 9625 9644 11628 
+	}
+	manpower=1370800
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+	history={
+		victory_points = {
+			11628 5
+		}
+		owner = MOY
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MOY
+	}
+}

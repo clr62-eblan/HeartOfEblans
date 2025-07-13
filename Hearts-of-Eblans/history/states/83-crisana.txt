@@ -1,0 +1,28 @@
+state={
+	id=83
+	name="STATE_83"
+	manpower = 632900
+	
+	state_category = town
+
+	history={
+		owner = CHB
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			6682 1 
+		}
+		add_core_of = CHB
+		set_demilitarized_zone = yes
+		add_claim_by = CHB
+	}
+	provinces={
+		696 713 746 3696 3709 6682 6697 9640 9687 
+	}
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

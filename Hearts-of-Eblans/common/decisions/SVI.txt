@@ -1,0 +1,331 @@
+parliament_gui_decision_category = {
+	low_popularity_increase = {
+	
+		icon = GFX_decision_CHL_grant_full_rights_to_the_mapuche
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		cost = 50
+		days_remove = 30
+	
+		allowed = {
+			original_tag = SVI
+		}
+	
+		available = {
+			check_variable = { deputatov_za < 105 }
+		}
+		
+	
+		visible = {
+			original_tag = SVI
+		}
+		
+		complete_effect = {
+			
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = "low_parliament_popularity_increase"
+			hidden_effect = {
+			low_parliament_popularity_increase = yes
+			}
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}	
+	low_popularity_decrease = {
+	
+		icon = GFX_decision_generic_speech
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		cost = 50
+		days_remove = 30
+	
+		allowed = {
+			original_tag = SVI
+		}
+	
+		available = {
+			check_variable = { deputatov_za < 105 }
+		}
+		
+	
+		visible = {
+			original_tag = SVI
+		}
+		
+		complete_effect = {
+			
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = "low_parliament_popularity_decrease"
+			hidden_effect = {
+			low_parliament_popularity_decrease = yes
+			}
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+}	
+
+SVI_uncertain_future_cat = {
+	SVI_growing_public_dissent_mission = {
+
+		priority = 1
+
+		icon = GFX_decision_revolt
+
+		#allowed = { always = no }
+
+		visible = {
+			hidden_trigger = { AND = { NOT = { has_country_flag = SVI_decay_stopped } NOT = { has_country_flag = SVI_decay_second_stage}} }
+		}
+
+		available = {
+			hidden_trigger = { has_country_flag = SVI_decay_stopped }
+		}
+
+		days_mission_timeout = 251
+
+		fire_only_once = yes
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		timeout_effect = {
+			country_event = { id = svin.15 }
+			set_country_flag = SVI_collapse_started
+		}
+	}
+}
+
+SVI_imminent_collapse_cat = {
+	SVI_collapse_mission = {
+
+		priority = 50
+
+		icon = GFX_decision_revolt
+
+		#allowed = { always = no }
+
+		activation = {
+			hidden_trigger = { has_country_flag = SVI_collapse_started }
+		}
+
+		visible = {
+			hidden_trigger = { has_country_flag = SVI_collapse_started }
+		}
+
+		available = {
+			hidden_trigger = { has_country_flag = SVI_collapse_stoped }
+		}
+		
+
+		days_mission_timeout = 250
+
+		fire_only_once = yes
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		timeout_effect = {
+			country_event = { id = svin.32 days = 2 }
+		}
+	}
+
+	SVI_Prepare_a_plan_of_agreement = {
+	
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		cost = 50
+		days_remove = 25
+	
+		allowed = {
+			original_tag = SVI
+		}
+		
+	
+		visible = {
+			original_tag = SVI
+			NOT = { has_country_flag = SVI_plan_prepared }
+			has_country_flag = SVI_collapse_started
+		}
+		
+		complete_effect = {
+			
+		}
+
+		fire_only_once = yes
+	
+		remove_effect = {
+			country_event = { id = svin.22 }
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}	
+
+	SVI_withdraw_troops_from_cities = {
+	
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		cost = 50
+		days_remove = 25
+	
+		allowed = {
+			original_tag = SVI
+		}
+		
+	
+		visible = {
+			original_tag = SVI
+			has_country_flag = SVI_plan_prepared 
+		}
+		
+		complete_effect = {
+			
+		}
+
+		fire_only_once = yes
+	
+		remove_effect = {
+			country_event = { id = svin.23 }
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	SVI_allow_free_media = {
+	
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		cost = 50
+		days_remove = 25
+	
+		allowed = {
+			original_tag = SVI
+		}
+		
+	
+		visible = {
+			original_tag = SVI
+			has_country_flag = SVI_plan_prepared 
+		}
+		
+		complete_effect = {
+			
+		}
+
+		fire_only_once = yes
+	
+		remove_effect = {
+			country_event = { id = svin.24 }
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	SVI_national_referendum = {
+	
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		cost = 100
+		days_remove = 25
+	
+		allowed = {
+			original_tag = SVI
+		}
+
+		available = {
+			AND = {
+			has_country_flag = SVI_troops_withdrawed 
+			has_country_flag = SVI_freed_media 
+			}
+		}
+		
+	
+		visible = {
+			original_tag = SVI
+			has_country_flag = SVI_plan_prepared 
+		}
+		
+		complete_effect = {
+			
+		}
+
+		fire_only_once = yes
+	
+		remove_effect = {
+			country_event = { id = svin.25 }
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	SVI_autonomy_process = {
+	
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		days_remove = 35
+	
+		allowed = {
+			original_tag = SVI
+			has_country_flag = SVI_refendum 
+		}
+
+		activation = {
+			has_country_flag = SVI_refendum
+		}
+		
+	
+		visible = {
+			original_tag = SVI
+			has_country_flag = SVI_refendum 
+		}
+		
+		days_mission_timeout = 35
+	
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+	
+		
+		is_good = yes
+
+		timeout_effect = {
+			country_event = { id = svin.26 }
+		}
+	}
+}

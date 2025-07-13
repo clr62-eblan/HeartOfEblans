@@ -1,0 +1,57 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			SVI = {
+				# You can put this in the country's history file alternatively too.
+				parliament_gui_initial = yes
+			}
+			set_variable = { SVI_new_dumas_project = 0 }
+		}
+	}
+	on_daily = {
+		effect = {
+			reload_parliament_gui = yes
+		}
+	}
+	
+	
+	on_monthly_SVI = {
+		effect = {
+			if = {
+				limit = { check_variable = { SVI_new_dumas_project < 2 } }
+				add_to_variable = { SVI_new_dumas_project = 1 }
+				log = "1 Added"
+			}
+			else_if = {
+				limit = { check_variable = { SVI_new_dumas_project = 2 } }
+				log = "Else if!"
+				set_variable = { SVI_new_dumas_project = 0 }
+				SVI = {
+					if = {
+						limit = { NOT = { has_country_flag = SVI_destroyed_duma } }
+						random_list = {
+							25 = {
+								country_event = { id = svin.7}
+							}				
+							25 = {
+								country_event = { id = svin.8}
+							}				
+							25 = {
+								country_event = { id = svin.9}
+							}				
+							25 = {
+								country_event = { id = svin.10}
+							}				
+							25 = {
+								country_event = { id = svin.11}
+							}					
+							25 = {
+								country_event = { id = svin.12}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

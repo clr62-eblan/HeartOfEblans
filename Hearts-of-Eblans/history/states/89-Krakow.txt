@@ -1,0 +1,27 @@
+state={
+	id=89
+	name="STATE_89"
+	provinces={
+		3743 9425 11411 11550 
+	}
+	history={
+		victory_points = {
+			11411 1
+		}
+		#victory_points = {
+		#	572 5
+		#}
+		buildings = {
+			infrastructure = 3
+
+		}
+		owner = HAM
+		add_core_of = HAM
+
+	}
+	state_category=rural
+	manpower=2180300
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

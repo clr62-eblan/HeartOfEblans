@@ -1,0 +1,32 @@
+state={
+	id=137
+	name="STATE_137"
+	provinces={
+		705 3722 6704 6724 9677 9718 11649 
+	}
+	history={
+		owner = CVD
+		victory_points = {
+			705 5
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+			9417 ={
+				naval_base = 5
+			}
+		}
+		add_core_of = HAM
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
+		}
+	}
+	manpower=1061607
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=10.000
+}

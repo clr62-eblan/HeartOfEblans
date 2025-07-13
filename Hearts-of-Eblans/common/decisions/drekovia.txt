@@ -1,0 +1,633 @@
+form_DRE_EMPIRE_cat = {
+	form_DRE_EMPIRE = {
+	
+		icon = generic_form_nation
+		
+		fire_only_once = yes
+		cost = 0
+	
+		allowed = {
+			original_tag = DRE
+		}
+	
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_chb		
+				# Chicken-Bekonia
+				controls_state = 155
+				controls_state = 43
+				controls_state = 154
+				controls_state = 973
+				controls_state = 974
+				controls_state = 83
+			}
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_89		
+
+				
+				# Reich
+				controls_state = 52
+				controls_state = 53
+
+			}
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_krug			
+				
+
+				#Kruglistan
+				controls_state = 69
+				controls_state = 9
+				controls_state = 75
+				controls_state = 74
+				controls_state = 972
+			}
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_dre		
+
+				#Drekovia
+				controls_state = 848
+				controls_state = 153
+				controls_state = 152
+				controls_state = 4
+				controls_state = 70
+				controls_state = 664
+				controls_state = 72
+				controls_state = 71
+				controls_state = 73
+				controls_state = 975
+				controls_state = 976
+				controls_state = 88
+				
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 155
+				state = 43
+				state = 154
+				state = 973
+				state = 974
+				state = 83
+				
+				state = 52
+				state = 53
+
+				state = 848
+				state = 153
+				state = 152
+				state = 4
+				state = 70
+				state = 664
+				state = 72
+				state = 71
+				state = 73
+				state = 975
+				state = 976
+				state = 88
+				
+
+				state = 69
+				state = 9
+				state = 75
+				state = 74
+				state = 972
+				state = 1023
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+		visible = {
+			has_completed_focus=DRE_remilitatize_west	
+		}
+	
+		complete_effect = {
+			set_cosmetic_tag = DRE_EMPIRE
+			
+			custom_override_tooltip= {
+				tooltip = DRE_empire_nat_tt
+				155= { add_core_of = ROOT }
+				43= { add_core_of = ROOT }
+				154= { add_core_of = ROOT }
+				973= { add_core_of = ROOT }
+				974= { add_core_of = ROOT }
+				
+				52= { add_core_of = ROOT }
+				53= { add_core_of = ROOT }
+
+				848= { add_core_of = ROOT }
+				153= { add_core_of = ROOT }
+				152= { add_core_of = ROOT }
+				4= { add_core_of = ROOT }
+				70= { add_core_of = ROOT }
+				664= { add_core_of = ROOT }
+				72= { add_core_of = ROOT }
+				71= { add_core_of = ROOT }
+				73= { add_core_of = ROOT }
+				975= { add_core_of = ROOT }
+				976= { add_core_of = ROOT }
+				88= { add_core_of = ROOT }
+				1023= { add_core_of = ROOT }
+				
+
+				69= { add_core_of = ROOT }
+				9= { add_core_of = ROOT }
+				75= { add_core_of = ROOT }
+				74= { add_core_of = ROOT }
+				972= { add_core_of = ROOT }
+				83= { add_core_of = ROOT }
+			}
+			
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	expand_DRE_EMPIR_SLA = {
+		icon = generic_form_nation
+		
+		fire_only_once = yes
+		cost = 0
+	
+		allowed = {
+			original_tag = DRE
+		}
+		visible = {
+			has_cosmetic_tag = DRE_EMPIRE
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_sla		
+
+				#Silazhik
+				controls_state = 160
+				controls_state = 159
+				controls_state = 39
+				controls_state = 850
+				controls_state = 846
+				controls_state = 151
+				
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 160
+				state = 159
+				state = 39
+				state = 850
+				state = 846
+				state = 151
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+	
+		complete_effect = {
+			
+			custom_override_tooltip= {
+				tooltip = DRE_empire_nat_SLA_tt
+				# Chicken-Bekonia
+				160 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				850 = { add_core_of = ROOT }
+				846 = { add_core_of = ROOT }
+				151 = { add_core_of = ROOT }
+			
+			}
+			
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	expand_DRE_EMPIR_CHB = {
+		icon = generic_form_nation
+		
+		fire_only_once = yes
+		cost = 0
+	
+		allowed = {
+			original_tag = DRE
+		}
+		visible = {
+			has_cosmetic_tag = DRE_EMPIRE
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = dre_control_terr_sla		
+
+				#Silazhik
+				controls_state = 102
+				controls_state = 853
+				controls_state = 852
+				controls_state = 736
+				
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 102
+				state = 852
+				state = 853
+				state = 736
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+	
+		complete_effect = {
+			
+			custom_override_tooltip= {
+				tooltip = DRE_empire_nat_CHB_tt
+				# Chicken-Bekonia
+				102 = { add_core_of = ROOT }
+				852 = { add_core_of = ROOT }
+				853 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+			
+			}
+			
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+drekovia_integrations_cat = {
+	integrate_lagoda = {
+		icon = GFX_decision_eng_blackshirt_speech
+		
+		fire_only_once = yes
+		cost = 50
+		
+		available = {
+			controls_state = 88
+			controls_state = 72
+			controls_state = 1023
+		}
+		visible = {
+			controls_state = 88
+			controls_state = 72
+			controls_state = 1023
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 88
+				state = 72
+				state = 1023
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		complete_effect = {
+			88 = { add_core_of = ROOT }
+			72 = { add_core_of = ROOT }
+			1023 = { add_core_of = ROOT }
+		}
+		
+	}
+	
+}
+
+drekovia_sdo_cat = { 
+
+	blitzkrieg_stopped = {
+		activation = {
+			AND = {
+				DRE = { has_war_with = CHB }
+				DRE = { NOT = { has_country_flag = DRE_blitzkrieg_stopped } }
+				CHB = { is_subject = no }
+				DRE = { is_subject = no }
+				DRE = { has_country_flag = SDO_started_chb }
+				DRE = { NOT = { has_country_flag = SDO_peace } }
+			}
+		}
+		visible = {
+			DRE = { has_country_flag = SDO_started_chb }
+			DRE = { NOT = { has_country_flag = SDO_peace } }
+		}
+	
+		icon = GFX_decision_generic_tank
+		
+		days_mission_timeout = 90
+		fire_only_once = yes
+		is_good = no
+		
+		available = {
+			controls_province = 11586
+		}
+		
+		timeout_effect = {
+			add_ideas = DRE_blizkrieg_zabuksoval
+			set_global_flag = DRE_blitzkrieg_zabuksoval
+			set_country_flag = DRE_blitzkrieg_stopped
+			set_global_flag = Super_Event_Visible
+			play_song = "blitzkrieg_zabuksoval"
+		}
+		
+		complete_effect = {
+			add_ideas = DRE_real_blitzkrieg
+		}
+		
+	}
+	drake_crisis = {
+		activation = {
+			DRE = { has_country_flag = DRE_blitzkrieg_stopped }
+		}
+	
+		icon = GFX_decision_generic_tank
+		
+		days_mission_timeout = 145
+		fire_only_once = yes
+		is_good = no
+		
+		available = {
+			OR = {
+			NOT = { country_exists = CHB }
+			DRE = { NOT = { has_war_with = CHB } }
+			DRE = { has_country_flag = SDO_peace }
+			}
+		}
+		
+		timeout_effect = {
+			hidden_effect = {
+				add_timed_idea = { days = 2000 idea = DRE_developed_drake_dictatorship_crisis }
+				set_country_flag = DRE_am_nam_march
+				retire_character = amnyam
+				if = {
+					limit = { DRE = { controls_state = 975 } }
+					release_on_controlled = AMN
+					news_event = { id = squad_news.10 hours = 2 }
+					AMN = {
+						load_oob = "AMN_MARCH"
+						declare_war_on = {
+						target = DRE
+						type = annex_everything
+					}
+					delete_units = {
+						division_template = "Дреффен-АМ"
+						disband = no
+					}
+				}
+				}
+				if = {
+					limit = {
+						DRE = {
+							controls_state = 69
+							controls_state = 9
+							controls_state = 75
+							controls_state = 74
+							controls_state = 972
+						}
+					}
+					country_event = { id = drek.14 days = 42 }
+				}
+			}
+		}
+		
+		complete_effect = {
+		
+		}
+	}
+}
+drekovia_rostov_cat = {
+	DRE_increase_doverie = {
+
+		icon = hol_draw_up_staff_plans
+
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1034
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		available = {
+			NOT = { has_country_flag = talking_with_rostov }
+		}
+
+		visible = {
+		}
+
+		cancel_trigger = {
+			has_completed_focus = DRE_peregovory_start
+		}
+
+		fire_only_once = no
+		cost = 25
+
+		days_remove = 25
+		complete_effect = {
+			set_country_flag = talking_with_rostov
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					custom_effect_tooltip = Rostov_small_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 5 }	
+					}
+				}
+				35 = {
+					custom_effect_tooltip = Rostov_mid_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 10 }	
+					}
+				}
+				15 = {
+					custom_effect_tooltip = Rostov_big_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 20 }	
+					}
+				}
+			}
+		clr_country_flag = talking_with_rostov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
+	DRE_invest_to_rostov = {
+
+		icon = hol_attract_foreign_investors
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1034
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		available = {
+			NOT = { has_country_flag = talking_with_rostov }
+		}
+
+		visible = {
+		}
+
+		cancel_trigger = {
+			has_completed_focus = DRE_peregovory_start
+		}
+
+		fire_only_once = no
+		cost = 30
+		
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		custom_cost_text = decision_cost_civ_factory_3
+
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = talking_with_rostov
+		}
+		
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				add_fuel = -350
+				command_power = -10
+			}
+		
+			random_list = {
+				35 = {
+					custom_effect_tooltip = Rostov_small_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 10 }	
+					}
+				}
+				40 = {
+					custom_effect_tooltip = Rostov_mid_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 15 }	
+					}
+				}
+				25 = {
+					custom_effect_tooltip = Rostov_big_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 20 }	
+					}
+				}
+			}
+		clr_country_flag = talking_with_rostov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
+	DRE_militarize_rostov = {
+
+		icon = ger_military_buildup
+
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1034
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		available = {
+			NOT = { has_country_flag = talking_with_rostov }
+		}
+
+		visible = {
+		}
+
+		cancel_trigger = {
+			has_completed_focus = DRE_peregovory_start
+		}
+
+		fire_only_once = no
+		cost = 45
+		
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_equipment = {
+				infantry_equipment > 149
+			}
+		}
+		custom_cost_text = baron_militarize_cost
+
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = talking_with_rostov
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				army_experience = -10
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 150
+					target = ROS
+				}
+			}
+		
+			random_list = {
+				35 = {
+					custom_effect_tooltip = Rostov_small_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 10 }	
+					}
+				}
+				40 = {
+					custom_effect_tooltip = Rostov_mid_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 15 }	
+					}
+				}
+				25 = {
+					custom_effect_tooltip = Rostov_big_increase
+					hidden_effect = {
+						add_to_variable = { rostovskie_svyazi = 20 }	
+					}
+				}
+			}
+		clr_country_flag = talking_with_rostov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+}

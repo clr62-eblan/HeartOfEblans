@@ -1,0 +1,1331 @@
+ideas = {
+
+	country = {
+        svinland_ru = {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_svinland_ru
+
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				surrender_limit = 0.05
+			}
+		}
+		
+		SVI_buster_oposite = {
+			allowed = {
+				country_exists = BUS
+			}
+			picture = svi_bustergrad_oposite
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				training_time_factor = 0.1
+				army_attack_factor = -0.15
+				army_defence_factor = -0.1
+			}
+		}
+
+		SVI_wartime_laws = {
+			allowed = {
+				always = no
+			}
+			picture = generic_war_preparation
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.04
+				training_time_factor = -0.1
+				line_change_production_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		SVI_people_is_army = {
+			allowed = {
+				always = no
+			}
+			picture = generic_reserve_divisions
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+				breakthrough_factor = 0.04
+				dig_in_speed_factor = 0.03
+			}
+		}
+
+		SVI_pacific_army = {
+			allowed = {
+				always = no
+			}
+			picture = ARG_military_government
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				training_time_factor = -0.15
+				army_attack_factor = -0.10
+				army_defence_factor = -0.05
+				enemy_declare_war_tension = 0.2
+				enemy_justify_war_goal_time = 0.5
+				guarantee_cost = -0.15
+			}
+		}
+
+		SVI_diplomatic_country = {
+			allowed = {
+				always = no
+			}
+			picture = YUG_federal_defense_council
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.05
+				opinion_gain_monthly_factor = 0.5
+				annex_cost_factor = 0.7
+			}
+		}
+        		SVI_detskiy_trud = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			picture = SPR_masters_of_our_own_fate
+			
+			modifier = {
+				stability_factor = -0.025
+				consumer_goods_factor = -0.025
+				local_resources_factor = 0.125
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
+			}
+		}
+		
+		SVI_skufs_in_army = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			picture = prc_low_popular_support3
+			
+			modifier = {
+				army_speed_factor = -0.1
+				training_time_factor = 0.1
+				army_defence_factor = 0.15
+				army_strength_factor = 0.2
+			}
+		}
+		
+		SVI_maliy_voen_budget = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			picture = generic_neglected_military
+			
+			modifier = {
+				army_speed_factor = -0.125
+				army_attack_factor = -0.125
+				army_defence_factor = -0.125
+			}
+		}
+		
+		SVI_soviet_industrialisation = {
+		
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_improved_industries
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.5 
+				industry_repair_factor = 0.3
+				army_speed_factor = 0.35
+			}
+		}
+		
+		SVI_expansion_wars_preparing = {
+			allowed = {
+				always = no
+			}
+			
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.5
+				training_time_factor = -0.15
+				war_support_weekly = 0.01
+			}
+		}
+		
+		SVI_devalvazia_arov = {
+		
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_economic_crisis
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				army_speed_factor = -0.03
+				army_defence_factor = -0.02
+			}
+		}
+		
+		SVI_razvitie_arov = {
+		
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_economic_increase
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_speed_factor = 0.03
+				army_defence_factor = 0.02
+			}
+		}
+		
+		SVI_neutrality_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = hol_aloof_neutrality
+			
+			removal_cost = -1
+			
+			modifier = {
+				 communism_drift = -0.01
+				 neutrality_drift = 0.02
+			}
+		}
+		
+		SVI_army_of_liberty = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_war_preparation
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_weekly = 0.05
+				justify_war_goal_time = -0.2
+				training_time_factor = -0.2
+				army_attack_factor = 0.15
+			}
+		}
+
+		SVI_local_government_reform_idea_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_local_self_management
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.02
+                resistance_activity = -0.15
+                production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		SVI_local_government_reform_idea_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_local_self_management
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.03
+                resistance_activity = -0.15
+                production_speed_infrastructure_factor = 0.12
+                consumer_goods_factor = -0.03
+			}
+		}
+
+    	SVI_employment_program_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_exploit_mines
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.02
+                production_speed_infrastructure_factor = 0.15
+                production_speed_industrial_complex_factor = 0.15
+                fascism_drift = -0.01
+			}
+		}
+        
+    	SVI_peoples_duma_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = RAJ_independence_movement
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.03
+                army_org_factor = 0.05
+			}
+		}
+
+    	SVI_peoples_duma_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = RAJ_independence_movement
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+                army_org_factor = 0.05
+                democratic_drift = 0.02
+			}
+		}
+
+	    SVI_peoples_duma_weak = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_democracy_banned
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.02
+                army_org_factor = -0.02
+                democratic_drift = -0.02
+				fascism_drift = 0.01
+			}
+		}
+
+	    SVI_constitutional_revision = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_constitutional_guarantees
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.02
+                democratic_drift = -0.01
+				army_speed_factor = -0.02
+			}
+		}
+		
+	    SVI_loyality_program_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_political_support
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.15
+				political_power_gain = -0.05
+				stability_factor = 0.07
+				war_support_factor = -0.01
+				justify_war_goal_time = -0.05
+				lend_lease_tension = -0.3
+			}
+		}
+
+	    SVI_reformed_officers = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_license_production
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.02
+				consumer_goods_factor = -0.03
+				justify_war_goal_time = -0.1
+				surrender_limit = 0.05
+			}
+		}
+
+	    SVI_steel_fist_plan_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+				resistance_activity = -0.05
+				resistance_target = -0.1
+				required_garrison_factor = -0.1
+			}
+		}
+
+	    SVI_power_that_cannot_be_broken_idea_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				breakthrough_factor = 0.05
+				generate_wargoal_tension = -0.3
+			}
+		}
+
+	    SVI_power_that_cannot_be_broken_idea_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.14
+				army_core_defence_factor = 0.14
+				breakthrough_factor = 0.08
+				dig_in_speed_factor = 0.06
+				equipment_capture_factor = 0.03
+				generate_wargoal_tension = -0.7
+			}
+		}
+
+	    SVI_reformed_bureaucracy = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_monarchist_uprising
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				fuel_gain_factor = 0.03
+			}
+		}
+
+	    SVI_new_order_movement_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_fascism_drift_2
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = -0.1
+				fascism_drift = 0.05
+				army_morale_factor = 0.03
+			}
+		}
+
+	    SVI_svinugend_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_army_war_college
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.015
+				war_support_factor = 0.03
+				war_stability_factor = 0.02
+			}
+		}
+
+	    SVI_svinugend_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_army_war_college
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.03
+				war_support_factor = 0.05
+				war_stability_factor = 0.04
+				drift_defence_factor = 0.15
+				army_speed_factor = 0.03
+			}
+		}
+
+	    SVI_military_determination = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_infantry_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				war_support_factor = 0.1
+				political_power_gain = 0.05
+				conscription_factor = 0.01
+			}
+		}
+
+	    SVI_opposition_camps = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_purge
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				democratic_drift = -0.03
+				war_support_factor = 0.02
+				drift_defence_factor = 0.35
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+	    SVI_world_is_not_for_the_weak_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = AFG_adopt_nufus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.02
+				war_support_factor = 0.02
+				training_time_factor = -0.1
+				justify_war_goal_time = -0.2
+				annex_cost_factor = -0.12
+			}
+		}
+
+	    SVI_new_citizenship_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = SVI_citizenship
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				fascism_drift = 0.02
+				drift_defence_factor = 0.5
+				army_morale_factor = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+
+	    SVI_day_of_rage_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = AFG_from_the_ashes
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.02
+				war_support_factor = -0.02
+				democratic_drift = -0.02
+			}
+		}
+
+	    SVI_state_of_communism_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.02
+				communism_drift = 0.04
+			}
+		}
+
+	    SVI_education_com_reform_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_army_war_college
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				agency_upgrade_time = -0.1
+				intel_network_gain_factor = 0.1
+				communism_drift = 0.02
+			}
+		}
+
+	    SVI_communism_propaganda_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_radar
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.02
+				communism_drift = 0.02
+			}
+		}
+
+	    SVI_act_of_equality_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_constitutional_guarantees
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.02
+				mobilization_speed = 0.05
+				conscription_factor = 0.03
+				production_speed_buildings_factor = 0.05
+				stability_factor = -0.05
+				communism_drift = 0.02
+			}
+		}
+
+	    SVI_workers_union_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_constitutional_guarantees
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.04
+				army_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+				communism_drift = 0.02
+			}
+		}
+
+	    SVI_red_army_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_communist_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.05
+				army_org_factor = 0.03
+				training_time_factor = -0.07
+				unit_infantry_design_cost_factor = -0.1
+			}
+		}
+
+	    SVI_collectivisation_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_agrarian_reform
+			
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.07
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+	
+	    SVI_state_insurance_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = soviet_german_friendship
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = 0.03
+				industry_repair_factor = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		
+	    SVI_international_aid_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.07
+				send_volunteer_factor = 0.35
+				send_volunteers_tension = -0.35
+				justify_war_goal_time = -0.15
+			}
+		}
+
+	    SVI_immortal_idea_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = ger_the_great_red_menace
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				communism_drift = 0.05
+			}
+		}
+
+	    SVI_svintogon_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = svintogon
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_planning_factor = 0.1
+			}
+		}
+
+	    SVI_svintogon_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = svintogon
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_planning_factor = 0.15
+				training_time_factor = -0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+	    SVI_svintogon_3_supply = {
+			allowed = {
+				always = no
+			}
+			
+			picture = svintogon
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_planning_factor = 0.15
+				training_time_factor = -0.05
+				army_defence_factor = 0.05
+				supply_factor = 0.03
+				supply_consumption_factor = -0.05
+			}
+		}
+
+	    SVI_svintogon_3_winter = {
+			allowed = {
+				always = no
+			}
+			
+			picture = svintogon
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_planning_factor = 0.15
+				training_time_factor = -0.05
+				army_defence_factor = 0.05
+				winter_attrition_factor = -0.05
+				acclimatization_cold_climate_gain_factor = 0.05
+			}
+		}
+
+	    SVI_svintogon_3_winter_supply = {
+			allowed = {
+				always = no
+			}
+			
+			picture = svintogon
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_planning_factor = 0.15
+				training_time_factor = -0.05
+				army_defence_factor = 0.05
+				supply_factor = 0.03
+				supply_consumption_factor = -0.05
+				winter_attrition_factor = -0.05
+				acclimatization_cold_climate_gain_factor = 0.05
+			}
+		}
+
+
+	    SVI_last_pillar = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_women_in_the_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.07
+				stability_factor = -0.02
+				conscription_factor = 0.02
+				neutrality_drift = 0.03
+			}
+		}
+
+	    SVI_commanders_council = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_fortify_the_borders
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.02
+				army_defence_factor = 0.02
+				army_attack_factor = 0.03
+				army_org_factor = 0.03
+				army_leader_cost_factor = -0.2
+				military_leader_cost_factor = -0.2
+				field_officer_promotion_penalty = -0.1
+				grant_medal_cost_factor = -0.15
+				generate_wargoal_tension = -0.5
+				neutrality_drift = 0.02
+			}
+		}
+
+	    SVI_military_government_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_aircraft_support
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.04
+				army_defence_factor = 0.07
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				army_leader_cost_factor = -0.3
+				military_leader_cost_factor = -0.3
+				field_officer_promotion_penalty = -0.2
+				grant_medal_cost_factor = -0.5
+				generate_wargoal_tension = -1
+				neutrality_drift = 0.05
+			}
+		}
+
+
+    	SVI_democracy_export_idea_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+                democratic_drift = 0.01
+                guarantee_cost = -0.2
+                guarantee_tension = -0.5
+                opinion_gain_monthly_factor = 0.1
+			}
+		}
+
+    	SVI_democracy_export_idea_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+                democratic_drift = 0.03
+                guarantee_cost = -0.24
+                guarantee_tension = -0.6
+                opinion_gain_monthly_factor = 0.15
+                production_speed_industrial_complex_factor = 0.05 
+			}
+		}
+
+    	SVI_shadow_of_gosperevorot_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = BEL_the_kings_surrender
+			
+			removal_cost = -1
+			
+			modifier = {
+                stability_factor = -0.2
+                war_support_factor = -0.35
+                justify_war_goal_time = 0.25
+                army_morale_factor = -0.1
+                equipment_capture_factor = -0.03
+                fuel_gain_factor = -0.15
+                resistance_activity = 0.5
+                army_attack_factor = -0.25
+                army_defence_factor = -0.2
+                army_strength_factor = -0.15
+			}
+		}
+
+        SVI_shadow_of_gosperevorot_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = BEL_the_kings_surrender
+			
+			removal_cost = -1
+			
+			modifier = {
+                stability_factor = -0.15
+                war_support_factor = -0.3
+                justify_war_goal_time = 0.2
+                army_morale_factor = -0.06
+                equipment_capture_factor = -0.02
+                fuel_gain_factor = -0.1
+                resistance_activity = 0.3
+                army_attack_factor = -0.2
+                army_defence_factor = -0.15
+                army_strength_factor = -0.1
+			}
+		}
+
+        SVI_shadow_of_gosperevorot_3 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = BEL_the_kings_surrender
+			
+			removal_cost = -1
+			
+			modifier = {
+                stability_factor = -0.1
+                war_support_factor = -0.15
+                justify_war_goal_time = 0.1
+                army_morale_factor = -0.04
+                fuel_gain_factor = -0.05
+                resistance_activity = 0.12
+                army_attack_factor = -0.1
+                army_defence_factor = -0.07
+                army_strength_factor = -0.05
+			}
+		}
+
+    	SVI_unity_of_people_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = SVI_unity
+			
+			removal_cost = -1
+			
+			modifier = {
+                stability_factor = 0.15
+                war_support_factor = 0.02
+                dig_in_speed_factor = 0.1
+                max_planning_factor = 0.15
+			}
+		}
+
+    	SVI_temporary_order_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+                stability_factor = 0.1
+                war_support_factor = 0.05
+                army_morale_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+    	SVI_centralized_economy_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_improved_industries
+			
+			removal_cost = -1
+			
+			modifier = {
+                industrial_capacity_factory = 0.1
+				supply_node_range = 0.05
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+
+    	SVI_peace_and_diplomacy_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_cost = -0.5
+			    political_power_factor = 0.1
+			    war_stability_factor = -0.15
+			    embargo_cost_factor = -0.5
+			    local_resources = 0.1
+			}
+		}
+
+    	SVI_ethical_bureaucracy_idea_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = BRA_dasp
+			
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = 0.05
+			    production_speed_buildings_factor = 0.05
+                industry_repair_factor = 0.1
+                resistance_activity = -0.1
+                operation_risk = -0.1
+                operation_cost = -0.15
+			}
+		}
+
+    	SVI_ethical_bureaucracy_idea_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = BRA_dasp
+			
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = 0.1
+			    production_speed_buildings_factor = 0.1
+                industry_repair_factor = 0.2
+                resistance_activity = -0.14
+                operation_risk = -0.2
+                operation_cost = -0.2
+                enemy_justify_war_goal_time = -0.1
+                lend_lease_tension = -0.1
+			}
+		}
+
+    	SVI_preparing_for_the_celebrations_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = BRA_dasp
+			
+			removal_cost = -1
+			
+			modifier = {
+			    neutrality_drift = 0.02
+			}
+		}
+
+    	SVI_reformed_education_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = BRA_dasp
+			
+			removal_cost = -1
+			
+			modifier = {
+			    research_speed_factor = 0.1
+                political_power_cost = -0.05
+                democratic_acceptance = 30
+                land_doctrine_cost_factor = -0.02
+			}
+		}
+
+    	SVI_reformed_education_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = BRA_dasp
+			
+			removal_cost = -1
+			
+			modifier = {
+			    research_speed_factor = 0.14
+                political_power_cost = -0.08
+                democratic_acceptance = 30
+                land_doctrine_cost_factor = -0.022
+                democratic_drift = 0.03
+                stability_factor = 0.025
+                army_defence_factor = 0.02
+			}
+		}
+
+    	SVI_nevipolnennie_usloviya_dumi = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_matignon_agreements
+			
+			removal_cost = -1
+			
+			modifier = {
+			    research_speed_factor = -0.1
+				civilian_factory_use = 2
+                political_power_cost = 0.15
+				stability_weekly = -0.007
+			}
+		}
+
+    	SVI_act_of_stabilisation = {
+			allowed = {
+				always = no
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.1
+				political_power_factor = -0.1
+				war_stability_factor = 0.1
+				war_support_factor = 0.04
+				neutrality_drift = 0.03
+			}
+		}
+
+    	SVI_limited_rearmament = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_neglected_military
+			
+			removal_cost = -1
+			
+			modifier = {
+			    production_speed_arms_factory_factor = -0.5 
+				war_support_factor = -0.1
+				stability_factor = 0.1
+				consumer_goods_factor = 0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.05
+				army_speed_factor = -0.1
+			}
+		}
+
+    	SVI_release_of_political_prisoners = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_prisoner
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				democratic_drift = 0.02
+				fascism_drift = -0.03
+				communism_drift = -0.02
+				stability_factor = -0.02
+			}
+		}
+	
+    	SVI_diplomacy_clampdown = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_deal_with_the_devil
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				guarantee_tension = 0.5
+				join_faction_tension = 0.5
+				lend_lease_tension = 0.5
+				annex_cost_factor = 0.4
+				puppet_cost_factor = 0.6
+			}
+		}
+
+    	SVI_equipment_quality_improvement = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_acquire_tanks
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_start_efficiency_factor = -0.2
+				supply_factor = 0.05
+				research_speed_factor = -0.1
+			}
+		}
+
+    	SVI_improve_working_conditions = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_start_efficiency_factor = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.05
+				research_speed_factor = 0.1
+				communism_drift = 0.01
+			}
+		}
+
+    	SVI_bustergrad_compensation = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_devalue_currency
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_factor = 0.02
+				war_stability_factor = 0.04
+			}
+		}
+    }
+
+}

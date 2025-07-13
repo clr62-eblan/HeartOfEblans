@@ -1,0 +1,928 @@
+add_namespace = btk
+#КОнтент для других стран
+country_event = {
+	id = btk.21
+	title = btk.0.t
+	desc = btk.0.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		
+		hidden_effect = {
+			BTK = {
+				declare_war_on = {
+					target = JHF
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = btk.0.b
+		
+		hidden_effect = {
+			BTK = {
+				annex_country = {
+					target = JHF
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = btk.22
+	title = btk.0.t
+	desc = btk.0.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		
+		hidden_effect = {
+			BTK = {
+				declare_war_on = {
+					target = GNS
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = btk.0.b
+		
+		hidden_effect = {
+			BTK = {
+				annex_country = {
+					target = GNS
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = btk.23
+	title = btk.0.t
+	desc = btk.0.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		
+		hidden_effect = {
+			BTK = {
+				declare_war_on = {
+					target = GCH
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = btk.0.b
+		
+		hidden_effect = {
+			BTK = {
+				annex_country = {
+					target = GCH
+					transfer_troops = yes
+				}
+			}
+			BTK = {
+				declare_war_on = {
+					target = GNS
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = btk.0.c
+		
+		hidden_effect = {
+			BTK = {
+				transfer_state = 50
+				transfer_state = 978
+			}
+		}
+	}
+}
+country_event = {
+	id = btk.24
+	title = btk.0.t
+	desc = btk.0.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		
+		hidden_effect = {
+			BTK = {
+				declare_war_on = {
+					target = SHD
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = btk.0.b
+		
+		hidden_effect = {
+			BTK = {
+				annex_country = {
+					target = SHD
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = btk.25
+	title = btk.0.t
+	desc = btk.0.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		
+		hidden_effect = {
+			BTK = {
+				declare_war_on = {
+					target = ST9
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = btk.0.b
+		
+		hidden_effect = {
+			BTK = {
+				annex_country = {
+					target = ST9
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = btk.26
+	title = btk.0.t
+	desc = btk.0.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		
+		hidden_effect = {
+			BTK = {
+				transfer_state = 909
+				add_state_core = 909
+				diplomatic_relation = {
+					country = DER
+					relation = guarantee
+					active = yes
+				}
+			}
+			DER = {
+				remove_state_core = 909
+
+			}
+		}
+	}
+}
+
+#Внутренний конфликт
+country_event = {
+	id = btk.4
+	title = btk.4.t
+	desc = btk.4.d
+	picture = GFX_report_event_picture_BTK_1
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.4.a
+		trigger = { 
+			communism > 0.44
+		}
+		hidden_effect = {
+			remove_ideas = BTK_parlament
+			mark_focus_tree_layout_dirty = yes
+			retire_ideology_leader = neutrality
+			retire_ideology_leader = fascism
+			retire_ideology_leader = democratic
+			set_political_party = {
+				ideology = democratic
+				popularity = 15
+			}
+			set_political_party = {
+				ideology = communism
+				popularity = 65
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 20
+			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 0
+			}
+			set_political_party = {
+				ideology = hypecratia
+				popularity = 0
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			set_country_leader_ideology = marxism
+			retire_ideology_leader = communism
+			promote_character = {
+				character = BTK_Bratishkin
+				ideology = marxism
+			}
+			add_country_leader_role = {
+				character = BTK_Bratishkin
+				promote_leader = yes
+				country_leader = {
+					ideology = marxism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = BTK_comm_new_long
+				name = BTK_comm_new
+			}
+			retire_ideology_leader = democratic
+			create_country_leader = {
+				name = BTK_sovet_moderov
+				desc = ""
+				picture = "GFX_portrait_BTK"
+				expire = "1965.1.1"
+				ideology = socialism
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "ВсеСквадская Коммунистическая Партия (Модеры)"
+				name = "ВКП(М)"
+			}
+		}
+	}
+	option = {
+		name = btk.4.b
+		trigger = { 
+			democratic > 0.44
+		}
+		hidden_effect = {
+			remove_ideas = BTK_parlament
+			mark_focus_tree_layout_dirty = yes
+			retire_ideology_leader = neutrality
+			retire_ideology_leader = fascism
+			retire_ideology_leader = communism
+			set_political_party = {
+				ideology = democratic
+				popularity = 75
+			}
+			set_political_party = {
+				ideology = communism
+				popularity = 15
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 10
+			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 0
+			}
+			set_political_party = {
+				ideology = hypecratia
+				popularity = 0
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_country_leader_ideology = liberalism
+			retire_ideology_leader = democratic
+			promote_character = {
+				character = BTK_Bratishkin
+				ideology = liberalism
+			}
+			add_country_leader_role = {
+				character = BTK_Bratishkin
+				promote_leader = yes
+				country_leader = {
+					ideology = liberalism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = BTK_dem_new_long
+				name = BTK_dem_new
+			}
+		}
+	}
+	option = {
+		name = btk.4.c
+		trigger = { 
+			neutrality > 0.44
+		}
+		
+		hidden_effect = {
+			remove_ideas = BTK_parlament
+			mark_focus_tree_layout_dirty = yes
+			retire_ideology_leader = democratic
+			retire_ideology_leader = fascism
+			retire_ideology_leader = communism
+			set_political_party = {
+				ideology = democratic
+				popularity = 15
+			}
+			set_political_party = {
+				ideology = communism
+				popularity = 0
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 55
+			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 25
+			}
+			set_political_party = {
+				ideology = hypecratia
+				popularity = 5
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_country_leader_ideology = despotism
+			retire_ideology_leader = neutrality
+			promote_character = {
+				character = BTK_Bratishkin
+				ideology = despotism
+			}
+			add_country_leader_role = {
+				character = BTK_Bratishkin
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = BTK_neu_new_long
+				name = BTK_neu_new
+			}
+			retire_ideology_leader = democratic
+			create_country_leader = {
+				name = BTK_sovet_moderov
+				desc = ""
+				picture = "GFX_portrait_BTK"
+				expire = "1965.1.1"
+				ideology = conservatism
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Партия поддержки Конституционной монархии"
+				name = "Оппозиция"
+			}
+		}
+			
+	}
+	option = {
+		name = btk.4.e
+		trigger = { 
+			fascism > 0.44
+		}
+		hidden_effect = {
+			remove_ideas = BTK_parlament
+			mark_focus_tree_layout_dirty = yes
+			retire_ideology_leader = democratic
+			retire_ideology_leader = neutrality
+			retire_ideology_leader = communism
+			set_political_party = {
+				ideology = democratic
+				popularity = 0
+			}
+			set_political_party = {
+				ideology = communism
+				popularity = 0
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 0
+			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 75
+			}
+			set_political_party = {
+				ideology = hypecratia
+				popularity = 25
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			set_country_leader_ideology = fascism_ideology
+			retire_ideology_leader = fascism
+			promote_character = {
+				character = BTK_Bratishkin
+				ideology = fascism_ideology
+			}
+			add_country_leader_role = {
+				character = BTK_Bratishkin
+				promote_leader = yes
+				country_leader = {
+					ideology = fascism_ideology
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = BTK_fas_new_long
+				name = BTK_fas_new
+			}
+		}
+			
+	}
+	option = {
+		name = btk.4.h
+		trigger = { 
+			hypecratia > 0.9
+		}
+		hidden_effect = {
+			remove_ideas = BTK_parlament
+			mark_focus_tree_layout_dirty = yes
+			set_political_party = {
+				ideology = hypecratia
+				popularity = 25
+			}
+			set_politics = {
+				ruling_party = hypecratia
+				elections_allowed = no
+			}
+			set_country_leader_ideology = twitcherizm
+			retire_ideology_leader = hypecratia
+			promote_character = {
+				character = BTK_Bratishkin
+				ideology = twitcherizm
+			}
+			add_country_leader_role = {
+				character = BTK_Bratishkin
+				promote_leader = yes
+				country_leader = {
+					ideology = twitcherizm
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		}
+			
+	}
+}
+country_event = {
+	id = btk.5
+	title = btk.1.t
+	desc = btk.1.d
+	picture = GFX_report_event_picture_BTK_5
+	fire_only_once = yes
+	major = no
+	trigger = {
+		focus_progress = {
+			focus = BTK_nach_89
+			progress > 0.2
+		}
+	}
+	option = {
+		name = btk.1.a
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.b
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.c
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.e
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.12
+			}
+		}
+	}
+}
+country_event = {
+	id = btk.6
+	title = btk.1.t
+	desc = btk.1.d
+	picture = GFX_report_event_picture_BTK_5
+	fire_only_once = yes
+	major = no
+	trigger = {
+		focus_progress = {
+			focus = BTK_nach_89
+			progress > 0.5
+		}
+	}
+	option = {
+		name = btk.1.a
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.b
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.c
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.e
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.12
+			}
+		}
+	}
+}
+country_event = {
+	id = btk.7
+	title = btk.1.t
+	desc = btk.1.d
+	picture = GFX_report_event_picture_BTK_5
+	fire_only_once = yes
+	major = no
+	trigger = {
+		focus_progress = {
+			focus = BTK_nach_89
+			progress > 0.7
+		}
+	}
+	option = {
+		name = btk.1.a
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.b
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.c
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.e
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.12
+			}
+		}
+	}
+}
+country_event = {
+	id = btk.8
+	title = btk.1.t
+	desc = btk.1.d
+	picture = GFX_report_event_picture_BTK_5
+	fire_only_once = yes
+	major = no
+	trigger = {
+		focus_progress = {
+			focus = BTK_nach_89
+			progress > 0.9
+		}
+	}
+	option = {
+		name = btk.1.a
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.b
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.c
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.12
+			}
+		}
+	}
+	option = {
+		name = btk.1.e
+		
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.12
+			}
+		}
+	}
+}
+#Поясняющие ивенты
+country_event = {
+	id = btk.9
+	title = btk.9.t
+	desc = btk.9.d
+	picture = GFX_report_event_picture_BTK_3
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.9.a
+		custom_effect_tooltip = BTK_89_nach_tt
+	}
+}
+country_event = {
+	id = btk.14
+	title = btk.14.t
+	desc = btk.14.d
+	picture = GFX_report_event_picture_BTK_3
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.14.a
+		custom_effect_tooltip = BTK_nach_army
+	}
+}
+#тестовый только для теста
+country_event = {
+	id = btk.11
+	title = btk.9.t
+	desc = btk.9.d
+	picture = GFX_report_event_picture_BTK_3
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		add_ideas = BTK_emiss
+	}
+	option = {
+		name = btk.0.b
+		remove_ideas = BTK_emiss
+	}
+}
+#Решение о тактике борьбы
+country_event = {
+	id = btk.10
+	title = btk.10.t
+	desc = btk.10.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.10.a
+		hidden_effect = {
+			add_ideas = {
+				BTK_naval
+				BTK_air
+			}
+			swap_ideas = {
+				remove_idea = BTK_debarmy_3	
+				add_idea = BTK_army
+			}
+			complete_national_focus = BTK_antihesus
+		}
+	}
+	option = {
+		name = btk.10.b
+		hidden_effect = {
+			complete_national_focus = BTK_anti_clown
+			add_ideas = {
+				BTK_naval
+				BTK_air
+			}
+			swap_ideas = {
+				remove_idea = BTK_debarmy_3	
+				add_idea = BTK_army
+			}
+		}
+	}
+	option = {
+		name = btk.10.c
+		hidden_effect = {
+			complete_national_focus = BTK_morale_preserve
+			add_ideas = {
+				BTK_naval
+				BTK_air
+			}
+			swap_ideas = {
+				remove_idea = BTK_debarmy_3	
+				add_idea = BTK_army
+			}
+		}
+	}
+	option = {
+		name = btk.10.e
+		hidden_effect = {
+			complete_national_focus = BTK_anti_evelone
+			add_ideas = {
+				BTK_naval
+				BTK_air
+			}
+			swap_ideas = {
+				remove_idea = BTK_debarmy_3	
+				add_idea = BTK_army
+			}
+		}
+	}
+}
+#Выбор Экономического развития
+country_event = {
+	id = btk.12
+	title = btk.12.t
+	desc = btk.12.d
+	picture = GFX_report_event_picture_BTK_1
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.12.a
+		complete_national_focus = BTK_start_economic_repair
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = BTK_dead_economy
+				add_idea = BTK_econrep_1
+			}
+		}
+		
+	}
+	option = {
+		name = btk.12.b
+		complete_national_focus = BTK_make_military_economy
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = BTK_dead_economy
+				add_idea = BTK_econrep_mil
+			}
+		}
+		
+	}
+	option = {
+		name = btk.12.c
+		complete_national_focus = BTK_new_tacticks
+		hidden_effect = {
+			add_political_power = 150
+			add_stability = 0.15
+		}
+		
+	}
+}
+country_event = {
+	id = btk.13
+	title = btk.13.t
+	desc = btk.13.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.13.a
+		random_owned_controlled_state = {
+			create_unit = { 
+				division = "name = \"1. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"2. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"3. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"5. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+characters = {
+	universal_hype_btk = {
+		name = "Модер-Хайпократ"
+		portraits={
+			civilian={
+				small=GFX_unknown_char_small
+			}
+		}
+		advisor = {
+			allowed = { has_completed_focus = BTK_upgrade_twitch }
+			slot = political_advisor
+			idea_token = universal_hype_btk
+			traits = { hypecratia_booster }
+			cost = 100
+			do_effect = {
+				NOT = {
+					has_government = hypecratia # You can only select it if your current ideology isn't your new one
+				}
+			}
+		}
+		
+	}
+	BTK_Bratishkin = {
+		name=BTK_Bratishkin
+		portraits={
+			civilian = {
+				large="GFX_portrait_BTK"
+			}
+		}
+		country_leader = {
+            ideology = conservatism
+            traits = { # 
+			}
+            desc = BTK_socialist  
+        }
+	}
+	kulina_advisor = {
+		name = "Алина 'Kulina666'"
+		portraits = {
+			civilian = {
+				small = GFX_mc_maks_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BTK_alina
+			allowed = {
+				tag=BTK
+			}
+			traits = {
+				mc_chuma
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
+	

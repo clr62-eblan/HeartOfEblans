@@ -1,0 +1,236 @@
+characters = {
+	universal_hype_gon = {
+		name = "Великий Гондурасский Хайпократ"
+		portraits={
+			civilian={
+				large=GFX_unknown_char_small
+				small=GFX_unknown_char_small
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = universal_hype_gon
+			allowed = {
+				always = yes
+			}	
+			traits  = {
+				hypecratia_booster
+			}	
+			cost = 100
+			do_effect = {
+				NOT = {
+					has_government = hypecratia # You can only select it if your current ideology isn't your new one
+				}
+			}
+		}
+	}
+	
+	WizeBot = {
+		name = WizeBot
+		portraits = {
+				army = {
+					small = GFX_portrait_GON_WizeBot_small
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = WizeBot
+			allowed = {
+				always = yes
+			}	
+			traits  = {
+				WizeBot
+			}	
+			cost = 150
+		}
+	}
+	
+	ModBoty = {
+		name = ModBoty
+		portraits = {
+				army = {
+					small = GFX_portrait_GON_ModBoty_small
+				}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = ModBoty
+			allowed = {
+				always = yes
+			}	
+			traits  = {
+				ModBoty
+			}	
+			cost = 150
+		}
+	}
+	
+	aFsQQ = {
+		name = aFsQQ
+		portraits = {
+				army = {
+					small = GFX_portrait_GON_aFsQQ_small
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = aFsQQ
+			allowed = {
+				always = yes
+			}	
+			traits = {
+				PYA_aristocrat
+			}	
+			cost = 150
+		}
+	}
+	maksim_iosif_shabanov = {
+		name = "Максим Иосиф Стинтлерьев"
+		
+		portraits = {
+			civilian = {
+				large = GFX_portrait_maksim_stintlerev
+			}
+			army = {
+				small="GFX_gon_shabanov_com_small"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1965.1.1.1"
+			id = -1
+			traits = {
+				
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = maksim_iosif_shabanov
+			allowed = {
+				original_tag = GON 
+			}	
+			visible = {
+				has_country_flag = GON_shaban_invite
+			}
+			available = {
+				has_country_flag = GON_shaban_invite
+				
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = maksim_iosif_shabanov
+					}
+				}
+			}
+			traits  = {
+				revolutionary_author
+			}	
+			cost = 100
+		}
+	}	
+	
+	afsygga ={ 
+        name = "aFsyGGA"
+        portraits= {
+            army = {
+                large = "GFX_gon_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        field_marshal = {
+			traits = { panzer_expert skirmisher }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 1
+            legacy_id = -1
+			visible = { original_tag = GON }
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = afsygga
+           ledger = army
+           allowed = { original_tag = GON } # Optional, doesn't change anything.
+           traits = { army_chief_morale_2 }
+       }
+    }
+	
+	stint ={ 
+        name = "Стинт"
+        portraits= {
+            army = {
+                large = "GFX_portrait_stint"
+				small = "GFX_moder_small"
+            }
+        }
+        field_marshal = {
+			traits = { scavenger ambusher }
+            skill = 4
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 2
+            legacy_id = -1
+			visible = { has_country_flag = GON_stint_cabinet }
+       }
+    }
+
+    neketondi ={ 
+        name = "NeketOndi"
+        portraits= {
+            army = {
+                large = "GFX_gon_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { urban_assault_specialist }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 3
+            legacy_id = -1
+			visible = { original_tag = GON }
+       }
+	   advisor = {
+           slot = high_command
+           idea_token = neketondi
+           ledger = army
+           allowed = { original_tag = GON } # Optional, doesn't change anything.
+           traits = { army_entrenchment_2 }
+       }
+    }
+	
+	cherepaxa_o5 ={ 
+        name = "cherepaxa_o5"
+        portraits= {
+            army = {
+                large = "GFX_gon_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { expert_improviser }
+            skill = 3
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
+            legacy_id = -1
+			visible = { original_tag = GON }
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = cherepaxa_o5
+           ledger = army
+           allowed = { original_tag = GON } # Optional, doesn't change anything.
+           traits = { army_regrouping_2 }
+       }
+    }
+}

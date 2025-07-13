@@ -1,0 +1,234 @@
+focus_tree = {
+	id = dor_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DOR
+		}
+	}
+	default = no
+	
+	focus = {
+		id = dor_guiding_principles
+		icon = GFX_goal_DOR_guiding_principles
+		x = 11
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_national_defense_fund
+		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
+		relative_position_id = dor_guiding_principles
+		prerequisite = { focus = dor_guiding_principles }
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_people_industrialisation
+		icon = GFX_goal_DOR_industrialisation
+		relative_position_id = dor_guiding_principles
+		prerequisite = { focus = dor_guiding_principles }
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_the_promise_of_stability
+		icon = GFX_goal_DOR_stability
+		relative_position_id = dor_guiding_principles
+		prerequisite = { focus = dor_people_industrialisation }
+		prerequisite = { focus = dor_national_defense_fund }
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_dora_power_consolidation
+		icon = GFX_goal_DOR_dora_power
+		relative_position_id = dor_the_promise_of_stability
+		prerequisite = { focus = dor_the_promise_of_stability }
+		mutually_exclusive = { focus = dor_cuterock_rebirth }
+		x = -4
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_cuterock_rebirth
+		icon = GFX_goal_DOR_cuterock_rebirth
+		relative_position_id = dor_the_promise_of_stability
+		prerequisite = { focus = dor_the_promise_of_stability }
+		mutually_exclusive = { focus = dor_dora_power_consolidation }
+		x = 4
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = DOR_cuterock_rebirth
+		}
+		
+	}
+
+	focus = {
+		id = dor_pink_hair
+		icon = GFX_goal_DOR_return_pink_hair
+		relative_position_id = dor_cuterock_rebirth
+		prerequisite = { focus = dor_cuterock_rebirth }
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_return_old_jokes
+		icon = GFX_goal_DOR_toilet
+		relative_position_id = dor_cuterock_rebirth
+		prerequisite = { focus = dor_pink_hair }
+		x = 1
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_beer_opening
+		icon = GFX_goal_DOR_beer
+		relative_position_id = dor_cuterock_rebirth
+		prerequisite = { focus = dor_pink_hair }
+		x = -1
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_fan_army
+		icon = GFX_goal_DOR_fanarmy
+		relative_position_id = dor_beer_opening
+		prerequisite = { focus = dor_beer_opening }
+		prerequisite = { focus = dor_return_old_jokes }
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_luntik_mobilisation
+		icon = GFX_goal_DOR_beer
+		relative_position_id = dor_beer_opening
+		prerequisite = { focus = dor_beer_opening }
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_enlist_the_help_of_familiars
+		icon = GFX_goal_DOR_friends
+		relative_position_id = dor_return_old_jokes
+		prerequisite = { focus = dor_return_old_jokes }
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+		
+	}
+
+	focus = {
+		id = dor_wtf
+		icon = GFX_goal_DOR_wtf
+		relative_position_id = dor_cuterock_rebirth
+		prerequisite = { focus = dor_cuterock_rebirth }
+		x = 3
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			retire_character = dora_cuterock
+			add_country_leader_role = {
+    			character = dora_zolo
+    			promote_leader = yes
+    			country_leader = {
+        			ideology = generic_cute_rock
+    			}
+			}
+			set_politics = {
+    			ruling_party = cute_rock
+    			elections_allowed = no
+			}
+		}
+		
+	}
+}

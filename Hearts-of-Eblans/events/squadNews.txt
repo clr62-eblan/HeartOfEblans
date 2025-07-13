@@ -1,0 +1,301 @@
+add_namespace = squad_news
+
+news_event = {
+	id = squad_news.1
+	title = squad_news.1.t
+	desc = squad_news.1.d
+	picture = GFX_news_event_partition_of_india
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.2
+	title = squad_news.2.t
+	desc = squad_news.2.d
+	picture = GFX_news_event_polish_army
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = excellent
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#KRUGLISTAN ANSCHLUS
+news_event = {
+	id = squad_news.3
+	title = squad_news.3.t
+	desc = squad_news.3.d
+	picture = GFX_news_event_008
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.19.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#Ремилитаризация Западной Австрии
+news_event = {
+	id = squad_news.4
+	title = squad_news.4.t
+	desc = squad_news.4.d
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.64.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#Hesus small intervention
+news_event = {
+	id = squad_news.5
+	title = squad_news.5.t
+	desc = squad_news.5.d
+	picture = GFX_news_event_generic_usa_treaty
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.64.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#Hesus neutrality
+news_event = {
+	id = squad_news.6
+	title = squad_news.6.t
+	desc = squad_news.6.d
+	picture = GFX_news_event_generic_usa_treaty
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.64.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.7
+	title = squad_news.7.t
+	desc = squad_news.7.d
+	picture = GFX_news_event_slay
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		
+		hidden_effect = {
+		
+		}
+	}
+	
+	immediate = {
+		hidden_effect = { 
+			play_song = "mem_goda"
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.8
+	title = squad_news.8.t
+	desc = squad_news.8.d
+	picture = GFX_report_event_stint_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#chb education rework
+news_event = {
+	id = squad_news.9
+	title = squad_news.9.t
+	desc = squad_news.9.d
+	picture = GFX_report_event_chb_education
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		
+		hidden_effect = {
+		
+		}
+	}
+	
+	immediate = {
+		hidden_effect = { 
+			play_song = "army_bpl"
+		}
+	}
+}
+
+#ara tv appeal
+news_event = {
+	id = squad_news.11
+	title = squad_news.11.t
+	desc = squad_news.11.d
+	picture = GFX_report_event_tv_appeal
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = squad_news.11.a
+		
+		hidden_effect = {
+		
+		}
+	}
+	
+	immediate = {
+		hidden_effect = { 
+			play_song = "tv_appeal"
+		}
+	}
+}
+
+#am nam march
+news_event = {
+	id = squad_news.10
+	title = squad_news.10.t
+	desc = squad_news.10.d
+	picture = GFX_report_event_am_nam_march
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		
+		hidden_effect = {
+		
+		}
+	}
+	
+	immediate = {
+		hidden_effect = { 
+			play_song = "amnam_march"
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.12
+	title = squad_news.12.t
+	desc = squad_news.12.d
+	picture = GFX_report_event_svo_start
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.7.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.13
+	title = squad_news.13.t
+	desc = squad_news.13.d
+	picture = GFX_report_event_hamster_economy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+		 play_song = "hamster_criminal"
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.14
+	title = squad_news.14.t
+	desc = squad_news.14.d
+	picture = GFX_news_event_t2x2_amsterdam
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = squad_news.14.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+		 play_song = "amsterdam_castle"
+		}
+	}
+}
