@@ -6,6 +6,11 @@ state={
 	
 	state_category = enclave
 
+	resources={
+		chromium=10 # was: 20
+		steel = 12
+	}
+
 	history={
 		owner = DOR
 		add_core_of = DOR

@@ -13,9 +13,7 @@ state = {
 	history = {
 
 		owner = CHB
-		add_claim_by = CHB
 		add_core_of = CHB
-		set_demilitarized_zone = yes
 
 		victory_points = {
 			11610 5 

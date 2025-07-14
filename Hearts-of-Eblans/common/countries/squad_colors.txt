@@ -196,8 +196,8 @@ JHF = {
 	color_ui = rgb { 89 65 169 }
 }
 DOR = {
-	color = rgb { 255 73 158 }
-	color_ui = rgb { 255 73 158 }
+	color = rgb { 237 90 195 }
+	color_ui = rgb { 237 90 195 }
 }
 AMN = {
 	color = rgb { 194 255 61 }

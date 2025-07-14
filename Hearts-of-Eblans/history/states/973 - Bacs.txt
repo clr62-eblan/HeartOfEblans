@@ -9,8 +9,6 @@ state = {
 
 		owner = CHB
 		add_core_of = CHB
-		set_demilitarized_zone = yes
-		add_claim_by = CHB
 
 		buildings = {
 			infrastructure = 2
