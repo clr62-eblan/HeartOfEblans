@@ -1,4 +1,4 @@
-version="1.5"
+version="1.2.1"
 tags={
 	"Alternative History"
 	"Events"
@@ -6,7 +6,7 @@ tags={
 	"Gameplay"
 	"Ideologies"
 }
-name="hoe-tn89"
+name="hoe"
 picture="thumbnail.png"
 replace_path="gfx/loadingscreens"
 supported_version="1.16.*"
