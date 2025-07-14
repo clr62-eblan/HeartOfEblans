@@ -4,7 +4,7 @@ state={
 	provinces={
 		11715 
 	}
-	manpower=6546542
+	manpower=654654
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
@@ -18,6 +18,6 @@ state={
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = CVD
+		add_core_of = HAM
 	}
 }
