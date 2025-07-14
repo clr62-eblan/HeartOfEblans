@@ -147,12 +147,10 @@ ideologies = {
 			
 			hypeclown = {
 				color = { 184 24 69 }
-			}
-			42ideology = {
-				color = { 240 186 10 }
-			}
-			twitcherizm={
-				color = { 106 44 112 }
+			}			
+			
+			hype_cuterock = {
+				color = { 248 189 255 }
 			}
 		}
 

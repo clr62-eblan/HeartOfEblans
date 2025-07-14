@@ -36,13 +36,7 @@ scripted_gui = {
 			Super_Event_Image_lagoda_raspil_visible = {
 				has_global_flag = DRE_lagoda_raspil
 			}
-		}
-		
-		triggers = {
-			Super_Event_Image_the_great_war_visible = {
-				has_global_flag = PYA_the_great_war
-			}
-		}		
+		}	
 		triggers = {
 			Super_Event_Image_Squade_visible = {
 				has_global_flag = BTK_top_squad
@@ -52,13 +46,7 @@ scripted_gui = {
 			Super_Event_Image_stintler_returns_visible = {
 				has_global_flag = GON_stintler_returns
 			}
-		}		
-		triggers = {
-			Super_Event_Image_HSU_war_visible = {
-				has_global_flag = HSU_war
-			}
-		}
-		
+		}				
 		
 		############
 		###BUTTON###
@@ -104,12 +92,6 @@ scripted_gui = {
 				}
 				if = {
 					limit = {
-						has_global_flag = PYA_the_great_war
-					}
-					clr_global_flag = PYA_the_great_war
-				}
-				if = {
-					limit = {
 						has_global_flag = GON_stintler_returns
 					}
 					clr_global_flag = GON_stintler_returns
@@ -120,12 +102,6 @@ scripted_gui = {
 					}
 					clr_global_flag = BTK_top_squad
 				}		
-				if = {
-					limit = {
-						has_global_flag = HSU_war
-					}
-					clr_global_flag = HSU_war
-				}
 			}
 		}
 	}

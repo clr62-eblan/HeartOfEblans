@@ -11,15 +11,14 @@ state = {
 	}
 
 	history = {
-		owner = ZUS
+		owner = DER
+		add_core_of = DER
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {
 			3672 5 
 		}
-		add_core_of = STY
-		add_core_of = CIN
 	}
 
 	provinces = {

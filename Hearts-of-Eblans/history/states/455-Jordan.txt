@@ -18,9 +18,6 @@ state = {
 		victory_points = {
 			7151 2 # Amman
 		}
-		victory_points = {
-			11976 1 # Ma'an
-		}
 
 	}
 

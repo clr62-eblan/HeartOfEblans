@@ -10,9 +10,6 @@ state={
 	local_supplies=0.000
 	history={
 		owner = HAM
-		victory_points = {
-			11715 10 
-		}
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2

@@ -6,7 +6,8 @@ state={
 	}
 
 	history={
-		owner = ZUS
+		owner = DER
+		add_core_of = DER
 		victory_points = {
 			7661 10 
 		}
@@ -19,8 +20,6 @@ state={
 			fuel_silo = 1
 			air_base = 1
 		}
-		add_core_of = STY
-		add_core_of = AZR
 
 	}
 

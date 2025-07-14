@@ -39,7 +39,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Адмирал-Генерал Эвелон"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "evelone_mil.dds"
+	picture = "evelone.dds"
 	expire = "2000.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -50,9 +50,31 @@ create_country_leader = {
 create_country_leader = {
 	name = "Эвелон"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "evelone_civ.dds"
+	picture = "evelone.dds"
 	expire = "2000.1.1"
 	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Эвелон"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "evelone.dds"
+	expire = "2000.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Эвелон"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "evelone.dds"
+	expire = "2000.1.1"
+	ideology = stalinism
 	traits = {
 		#
 	}

@@ -6,10 +6,8 @@ state = {
 	
 	history = {
 
-		owner = BTK
-		add_core_of = BTK
-		add_core_of = SHL
-		add_core_of = PRE
+		owner = MPK
+		add_core_of = MPK
 
 		victory_points = {
 			6389 10 # Kiel
