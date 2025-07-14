@@ -6743,6 +6743,115 @@ focus = {
 	}
 
 	focus = {
+		id = DRE_Convergence_with_lagoda
+		icon = GFX_focus_generic_treaty
+		relative_position_id = DRE_return_old_doctrine
+		prerequisite = { focus = DRE_return_old_doctrine }
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			give_military_access = LAG
+			add_relation_modifier = {
+				target = LAG
+				modifier = drake_lagoda
+			}
+			LAG = {
+				give_military_access = DRE
+				add_relation_modifier = {
+					target = DRE
+					modifier = drake_lagoda
+				}
+			}
+			diplomatic_relation = {
+				country = LAG
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		available = {
+			LAG = {
+				exists = yes
+				has_capitulated = no
+				is_subject = no
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_civilian_economic_pact
+		icon = GFX_focus_generic_treaty
+		relative_position_id = DRE_Convergence_with_lagoda
+		prerequisite = { focus = DRE_Convergence_with_lagoda }
+		x = 1
+		y = 1
+		cost = 10
+		mutually_exclusive = {focus = DRE_military_economic_pact}
+
+		completion_reward = {
+			add_timed_idea = {
+    		idea = DRE_civilian_economic_boost
+    		days = 140
+			}
+		}
+		available = {
+			LAG = {
+				exists = yes
+				has_capitulated = no
+				is_subject = no
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_military_economic_pact
+		icon = GFX_focus_generic_treaty
+		relative_position_id = DRE_Convergence_with_lagoda
+		prerequisite = { focus = DRE_Convergence_with_lagoda }
+		x = -1
+		y = 1
+		cost = 10
+		mutually_exclusive = {focus = DRE_civilian_economic_pact}
+
+		completion_reward = {
+			add_timed_idea = {
+    		idea = DRE_military_economic_boost
+    		days = 120
+			}
+		}
+		available = {
+			LAG = {
+				exists = yes
+				has_capitulated = no
+				is_subject = no
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_alliance_lagoda
+		icon = GFX_focus_generic_treaty
+		relative_position_id = DRE_Convergence_with_lagoda
+		prerequisite = { focus = DRE_military_economic_pact AND }
+		prerequisite = { focus = DRE_civilian_economic_pact }
+		x = 0
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			
+		}
+		available = {
+			LAG = {
+				exists = yes
+				has_capitulated = no
+				is_subject = no
+			}
+		}
+	}
+
+	focus = {
 		id = DRE_form_parlament
 		icon = GFX_focus_generic_democratic_europe
 		mutually_exclusive = { focus = DRE_return_vitaliy_empire }

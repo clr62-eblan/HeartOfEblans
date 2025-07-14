@@ -937,5 +937,35 @@ ideas = {
 				stability_weekly = -0.01
 			}
 		}
+
+		DRE_civilian_economic_boost = {
+			picture = generic_economic_increase
+			allowed = {
+				original_tag = DRE
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				war_support_factor = -0.05
+				stability_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.1
+				repair_speed_industrial_complex_factor = 0.3
+		}
+
+		DRE_military_economic_boost {
+			picture = generic_economic_increase
+			allowed = {
+				original_tag = DRE
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
 	}
 }

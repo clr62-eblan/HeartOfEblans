@@ -36,14 +36,6 @@ state = {
 
 		}
 		add_core_of = CHB
-		add_claim_by = ITA
-		1939.4.12 = {
-			owner = ZOL
-			controller = ITA
-			remove_claim_by = ITA
-
-		}
-
 	}
 
 	provinces = {

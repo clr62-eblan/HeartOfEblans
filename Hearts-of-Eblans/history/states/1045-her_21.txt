@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = MOY
 	}
-	manpower=0
+	manpower=300234
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

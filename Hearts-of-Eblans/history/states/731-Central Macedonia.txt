@@ -19,8 +19,6 @@ state={
 
 		}
 		add_core_of = CHB
-		add_claim_by = BUL
-
 	}
 
 	provinces={
