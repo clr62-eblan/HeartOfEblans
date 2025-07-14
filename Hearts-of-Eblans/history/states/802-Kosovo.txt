@@ -18,9 +18,6 @@ state = {
 
 		}
 		add_core_of = CHB
-		add_core_of = KOS
-		add_core_of = SER
-
 	}
 
 	provinces = {
