@@ -15,8 +15,6 @@ state = {
 		
 		owner = BTK
 		add_core_of = BTK
-		add_core_of = SIL
-		add_claim_by = PRE
 
 		victory_points = {
 			6464 5 # Katovice

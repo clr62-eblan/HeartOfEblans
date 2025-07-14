@@ -27,25 +27,6 @@ state = {
 		}
 
 		add_core_of = DRE
-		add_core_of = SLO
-
-		# This should isntead be reclaimable through Hungarian focuses with ww
-		IF = {
-			limit = {
-				NOT = {
-					has_dlc = "Gotterdammerung"
-				}
-			}
-			add_claim_by = HUN
-		}
-		
-
-		1939.3.14 = {
-			owner = CHB
-			controller = HUN
-			remove_claim_by = HUN
-			add_core_of = CHB
-		}
 	}
 	
 	provinces = {

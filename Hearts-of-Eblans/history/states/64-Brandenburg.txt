@@ -11,8 +11,6 @@ state = {
 		owner = BTK
 		add_core_of = BTK
 
-		
-
 		victory_points = {
 			3522 5 # Magdeburg
 		}

@@ -518,7 +518,7 @@ guiTypes = {
 			quadTextureSprite ="discord"
 			#clicksound = click_default
 			pdx_tooltip = "HOE_YOUTUBE"
-			web_link = "https://t.me/TN89_hoi4"
+			web_link = "https://www.youtube.com/@Latix6205"
 			scale = 0.9
 		}
 	}
