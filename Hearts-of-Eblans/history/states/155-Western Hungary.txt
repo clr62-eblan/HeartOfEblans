@@ -13,8 +13,6 @@ state = {
 
 		owner = CHB
 		add_core_of = CHB
-		add_claim_by = CHB
-		set_demilitarized_zone = yes
 
 		victory_points = {
 			6720 10 # Györ

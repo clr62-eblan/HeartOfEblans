@@ -62,7 +62,7 @@ static const float MUD_TILING 					= 0.07;
 static const float MUD_NORMAL_CUTOFF 			= 10.982;
 static const float MUD_STRENGHTEN 				= 1.0;
 
-static const float 	SNOW_OPACITY_MIN			= 0.95f;
+static const float 	SNOW_OPACITY_MIN			= 0.8f;
 static const float 	SNOW_OPACITY_MAX			= 0.2f;
 static const float 	SNOW_CAM_MIN 				= 50.0f;
 static const float 	SNOW_CAM_MAX 				= 300.0f;
@@ -203,8 +203,8 @@ static const float GB_OPACITY_FAR = 1.0f;  // Transparency when camera is far
 static const float BORDER_NIGHT_DESATURATION_MAX = 0.2f; // how much border colors can get desaturated at night. 1.0f is full grey
 static const float BORDER_FOW_REMOVAL_FACTOR = 1.0f; // How much of the FOW that is removed from the borders. 1.0f is no FOW
 static const float BORDER_LIGHT_REMOVAL_FACTOR = 0.5f; // How much of the light calculations that are removed from the borders. 1.0f is no light 
-static const float GB_STRENGTH_CH1 = 0.8; // Opacity of bottom layer 
-static const float GB_STRENGTH_CH2 = 0.8; // Opacity of top layer
+static const float GB_STRENGTH_CH1 = 0.9; // Opacity of bottom layer 
+static const float GB_STRENGTH_CH2 = 0.6; // Opacity of top layer
 static const float GB_FIRST_LAYER_PRIORITY = 0.4; // Priority for first/second layer when both are active at the same pixel
 static const float BORDER_MAP_TILE = 18000.0f;
 

@@ -513,12 +513,22 @@ guiTypes = {
 			}
 		}
 		ButtonType = {
-			name = "tg_button"
-			position = { x=100 y=0 }
-			quadTextureSprite ="discord"
+			name = "youtube_button"
+			position = { x=75 y=0 }
+			quadTextureSprite ="youtube"
 			#clicksound = click_default
 			pdx_tooltip = "HOE_YOUTUBE"
 			web_link = "https://www.youtube.com/@Latix6205"
+			scale = 0.9
+		}		
+		
+		ButtonType = {
+			name = "tg_button"
+			position = { x=125 y=0 }
+			quadTextureSprite ="discord"
+			#clicksound = click_default
+			pdx_tooltip = "HOE_GIT"
+			web_link = "https://github.com/clr62-eblan/HeartOfEblans"
 			scale = 0.9
 		}
 	}
