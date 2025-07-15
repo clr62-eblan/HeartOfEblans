@@ -5,11 +5,11 @@ state={
 		3566 6428 6587 
 	}
 	history={
-		owner = ZUS
+		owner = RAB
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = HAM
+		add_core_of = RAB
 		victory_points = {
 			6428 1
 		}

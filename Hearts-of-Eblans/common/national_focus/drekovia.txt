@@ -5538,7 +5538,9 @@ focus = {
 		}
 
 		available = {
-
+			SLA = {
+				has_war = no
+			}
 		}
 
 		bypass = {
@@ -6425,7 +6427,9 @@ focus = {
 		}
 
 		available = {
-
+			SIL = {
+				has_war = no
+			}
 		}
 
 		bypass = {
