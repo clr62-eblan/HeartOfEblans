@@ -11,7 +11,7 @@ focus_tree = {
 	}
 	default = no
 
-    continuous_focus_position = { x = 100 y = 2650 }
+    continuous_focus_position = { x = 200 y = 1700 }
 	
 	focus = {
 		id = ARA_critical_gos_apparat_state
@@ -19,7 +19,7 @@ focus_tree = {
 			
 		} 
 		icon = GFX_goal_ARA_politics
-		x = 6
+		x = 17
 		y = 0
 		cost = 10
 		ai_will_do = {
