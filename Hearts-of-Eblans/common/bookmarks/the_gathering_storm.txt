@@ -4,8 +4,58 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "BTK"
+		default_country = "CHB"
 		default = yes
+		CHB={
+			history = ""
+			ideology = fascism
+			ideas = {
+				CHB_hungary_problem
+			}
+			focuses = {
+				#
+			}
+		}
+		SVI={
+			history = ""
+			ideology = democratic
+			ideas = {
+				SVI_peoples_duma_1
+				SVI_shadow_of_gosperevorot_1
+				SVI_buster_oposite
+				svinland_ru
+			}
+			focuses = {
+			}
+		}
+		DRE={
+			history = ""
+			ideology = hypecratia
+			ideas = {
+				DRE_treaty_of_triannon_aat
+				defeted_at_wwone
+				DRE_viplati_reparatiy
+			}
+			focuses = {
+				DRE_own_way
+				DRE_svo_chb_start
+				DRE_svergnut_dreyka
+			}
+		}
+		GON={
+			history = ""
+			ideology = neutrality
+			ideas = {
+				GON_kotel_shabanova
+				GON_legends_of_stintler
+				demografic_problems
+			}
+			focuses = {
+				GON_scrit_vse_uliki
+				GON_kill_monarchy
+				GON_great_gondurasia_freedom
+			}
+		}
 		ARA={
 			history = ""
 			ideology = hypecratia
@@ -20,42 +70,8 @@ bookmarks = {
 				ARA_people_republic
 			}
 		}
-		SVI={
-			history = ""
-			ideology = democratic
-			ideas = {
-				svinland_ru
-				SVI_buster_oposite
-			}
-			focuses = {
-				SVI_destroy_busters
-				SVI_hype_hypercore_rise
-				SVI_razvitie_arov
-			}
-		}
-		DRE={
-			history = ""
-			ideology = hypecratia
-			ideas = {
-				DRE_treaty_of_triannon_aat
-				defeted_at_wwone
-			}
-			focuses = {
-				DRE_own_way
-				DRE_svo_chb_start
-				DRE_svergnut_dreyka
-			}
-		}
-		CHB={
-			history = ""
-			ideology = fascism
-			ideas = {
-				CHB_hungary_problem
-			}
-			focuses = {
-				#
-			}
-		}
+
+
 		HAM={
 			history = ""
 			ideology = hypecratia
@@ -76,21 +92,6 @@ bookmarks = {
 				BTK_restart_89_squad
 				BTK_dead_economy
 				BTK_loyal_narezka
-			}
-		}
-		
-		GON={
-			history = ""
-			ideology = neutrality
-			ideas = {
-				GON_kotel_shabanova
-				GON_legends_of_stintler
-				demografic_problems
-			}
-			focuses = {
-				GON_scrit_vse_uliki
-				GON_kill_monarchy
-				GON_great_gondurasia_freedom
 			}
 		}
 
