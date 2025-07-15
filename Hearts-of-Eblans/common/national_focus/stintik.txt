@@ -26,6 +26,7 @@ focus_tree = {
 		id = GON_2
 		icon = GFX_focus_BRA_cafe_com_leite_politics
 		prerequisite = { focus = GON_1 }
+        mutually_exclusive = {focus = GON_3}
 		cost = 10
 		x = -4
 		y = 1
@@ -33,9 +34,43 @@ focus_tree = {
 	}
 
     focus = {
+		id = GON_21
+		icon = GFX_focus_BRA_cafe_com_leite_politics
+		prerequisite = { focus = GON_2 }
+		cost = 10
+
+		x = -2
+		y = 1
+		relative_position_id = GON_2
+	}
+
+    focus = {
+		id = GON_22
+		icon = GFX_focus_BRA_cafe_com_leite_politics
+		prerequisite = { focus = GON_21 }
+		cost = 10
+
+		x = -2
+		y = 1
+		relative_position_id = GON_21
+	}
+
+    focus = {
+		id = GON_23
+		icon = GFX_focus_BRA_cafe_com_leite_politics
+		prerequisite = { focus = GON_21 }
+		cost = 10
+
+		x = 2
+		y = 1
+		relative_position_id = GON_21
+	}
+
+    focus = {
 		id = GON_3
 		icon = GFX_focus_BRA_cafe_com_leite_politics
 		prerequisite = { focus = GON_1 }
+        mutually_exclusive = {focus = GON_2}
 		cost = 10
 		x = 4
 		y = 1
