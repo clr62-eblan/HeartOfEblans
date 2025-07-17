@@ -299,3 +299,27 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = squad_news.15
+	title = squad_news.15.t
+	desc = squad_news.15.d
+	picture = GFX_news_event_deepins_nelya
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.15.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+		 play_song = "deepins_nelya"
+		}
+	}
+}
+

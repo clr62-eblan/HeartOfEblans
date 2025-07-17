@@ -104,3 +104,97 @@ country_event = {
 		}
 	}
 }
+
+#president_meetings
+country_event = {
+	id = aratos.5
+	title = aratos.5.t
+	desc = aratos.5.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.23.a #ok
+		ai_chance = {
+			factor = 55
+		}
+		
+		hidden_effect = {
+			add_stability = -0.05
+			add_war_support = 0.05
+			add_power_balance_value = {
+				id = president_parlament_balance
+				value = -0.07
+			}
+		}
+	}
+}
+
+country_event = {
+	id = aratos.6
+	title = aratos.6.t
+	desc = aratos.6.d
+	picture = GFX_report_event_ITA_democratic_parlament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.23.a #ok
+		ai_chance = {
+			factor = 55
+		}
+		
+		hidden_effect = {
+			add_stability = -0.025
+			
+			add_war_support = -0.05
+			add_power_balance_value = {
+				id = president_parlament_balance
+				value = 0.08
+			}
+		}
+	}
+}
+
+country_event = {
+	id = aratos.7
+	title = aratos.7.t
+	desc = aratos.7.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.23.a #ok
+		ai_chance = {
+			factor = 55
+		}
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = {
+	id = aratos.8
+	title = aratos.8.t
+	desc = aratos.8.d
+	picture = GFX_report_event_generic_military_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aratos.8.a #ok
+		ai_chance = {
+			factor = 55
+		}
+		
+		add_ideas = ARA_shadow_weapons_idea
+		
+		hidden_effect = {
+			
+		}
+	}
+}

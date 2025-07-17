@@ -29,6 +29,12 @@ spriteTypes = {
 		name = "GFX_news_event_t2x2_amsterdam"
 		texturefile = "gfx/event_pictures/t2x2_amsterdam.dds"
 	}	
+
+	spriteType = {
+		name = "GFX_news_event_deepins_nelya"
+		texturefile = "gfx/event_pictures/deepins_nelya.dds"
+	}	
+
 	spriteType = {
 		name = "GFX_report_event_toha_coronation"
 		texturefile = "gfx/event_pictures/report_event_toha_coronation.dds"

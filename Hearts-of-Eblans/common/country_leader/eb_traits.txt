@@ -50,6 +50,12 @@ leader_traits = {
 		resistance_growth = -0.02
 	}
 
+	tiktok_favorite = {
+		stability_factor = 0.02
+		army_morale_factor = 0.05
+		consumer_goods_factor = -0.04
+	}
+
 	DRE_supreme_leader = {
 		war_support_factor = 0.05
 		stability_factor = 0.05

@@ -49,11 +49,10 @@ bookmarks = {
 				GON_kotel_shabanova
 				GON_legends_of_stintler
 				demografic_problems
+				GON_economics_recession
+				GON_political_corruption
 			}
 			focuses = {
-				GON_scrit_vse_uliki
-				GON_kill_monarchy
-				GON_great_gondurasia_freedom
 			}
 		}
 		ARA={

@@ -24,4 +24,12 @@ opinion_modifiers = {
 		value = -20      # Provides +20 diplomatic opinion that decays by 0.5 per month
         decay = 0.5
 	}
+
+	GON_trade_agreements_opinion = {
+		value = 10
+	}
+
+	GON_ham_trade_partner = {
+		value = 25
+	}
 }
