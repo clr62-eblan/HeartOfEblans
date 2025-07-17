@@ -7,7 +7,7 @@ focus_tree = {
 			tag = GON
 		}
 	}
-	continuous_focus_position = { x = 2700 y = 1480 }
+	continuous_focus_position = { x = 750 y = 1600 }
 	
 	default = no
 
@@ -15,7 +15,7 @@ focus_tree = {
 	
 	focus = {
 		id = GON_parliament_restoration
-		icon = GFX_focus_generic_political_pressure
+		icon = GFX_goal_GON_reign_of_tsar
 		cost = 10
 		completion_reward = {
 			add_political_power = 150
@@ -31,11 +31,11 @@ focus_tree = {
 		id = GON_hype_path
 		icon = GFX_goal_hypecratia_effort
 		prerequisite = { focus = GON_parliament_restoration }
-		mutually_exclusive = { focus = GON_economic_path focus = GON_fascist_path }
+		mutually_exclusive = { focus = GON_fascist_path }
 		cost = 10
 		completion_reward = {
 			add_political_power = 100
-			add_popularity = { ideology = communism popularity = 0.1 }
+			add_popularity = { ideology = hypecratia popularity = 0.1 }
 		}
 		x = -9
 		y = 1
@@ -44,10 +44,11 @@ focus_tree = {
 
 	focus = {
 		id = GON_internet_punishers
-		icon = GFX_goal_hypecratia_effort
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = GON_hype_path }
 		cost = 10
 		completion_reward = {
+			add_ideas = GON_internet_punishers_idea
 		}
 		x = -1
 		y = 1
@@ -56,10 +57,14 @@ focus_tree = {
 
 	focus = {
 		id = GON_reward_internet_heroes
-		icon = GFX_goal_hypecratia_effort
+		icon = GFX_focus_RAJ_military_into_the_workforce
 		prerequisite = { focus = GON_internet_punishers }
 		cost = 10
 		completion_reward = {
+			swap_ideas = {
+				add_idea = GON_internet_punishers_idea_2
+				remove_idea = GON_internet_punishers_idea
+			}
 		}
 		x = -1
 		y = 1
@@ -68,10 +73,11 @@ focus_tree = {
 
 	focus = {
 		id = GON_domestic_services
-		icon = GFX_goal_hypecratia_effort
+		icon = GFX_goal_ARA_people_digitalization
 		prerequisite = { focus = GON_hype_path }
 		cost = 10
 		completion_reward = {
+			add_ideas = GON_domestic_services_idea
 		}
 		x = 1
 		y = 1
@@ -80,10 +86,11 @@ focus_tree = {
 
 	focus = {
 		id = GON_right_messenger
-		icon = GFX_goal_hypecratia_effort
+		icon = GFX_goal_GON_right_messenger
 		prerequisite = { focus = GON_domestic_services }
 		cost = 10
 		completion_reward = {
+			add_ideas = GON_right_messenger_idea
 		}
 		x = 1
 		y = 1
@@ -92,10 +99,178 @@ focus_tree = {
 
 	focus = {
 		id = GON_step_forward
-		icon = GFX_goal_hypecratia_effort
+		icon = GFX_goal_GON_step_forward
 		prerequisite = { focus = GON_hype_path }
 		cost = 10
+		available = {
+			hypecratia > 0.34
+		}
+
 		completion_reward = {
+			set_politics = {
+			    ruling_party = hypecratia
+			    elections_allowed = no
+			}
+
+			start_civil_war = {
+				ideology = neutrality
+				keep_all_characters = yes
+				size = 0.38
+				capital = 118
+				states = { 118 173 169 179 789 168 }
+				hidden_effect = {
+					if = {
+						limit = {
+							NOT = { has_template = "Народное ополчение" }
+						}
+						division_template = {
+							name = "Народное ополчение"
+							priority = 2
+							division_names_group = GON_mili
+							template_counter = 101
+							is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+							regiments = {
+								militia = { x = 0 y = 0 }
+								militia = { x = 0 y = 1 }
+								militia = { x = 0 y = 2 }
+
+							}
+							support = {
+							
+							}
+						}
+					}
+					179 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+					789 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+					168 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+					169 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+				}
+			}
+			
+			GON = {
+				hidden_effect = {
+				add_ideas = GON_political_corruption
+				add_ideas = GON_economics_recession
+				set_country_flag = GON_civwar
+				if = {
+				limit = {
+					NOT = { has_template = "Народное ополчение" }
+				}
+					division_template = {
+						name = "Народное ополчение"
+						priority = 2
+						division_names_group = GON_mili
+						template_counter = 101
+						is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+						regiments = {
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 0 y = 2 }
+
+						}
+						support = {
+
+						}
+					}
+				}
+				if = {
+					limit = {
+						170 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					170 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						175 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					175 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						793 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					793 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						795 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					795 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+				}
+			}
+			}
 		}
 		x = 0
 		y = 2
@@ -104,10 +279,32 @@ focus_tree = {
 
 	focus = {
 		id = GON_new_elite
-		icon = GFX_goal_hypecratia_effort
+		icon = GFX_focus_RAJ_appoint_a_c_suite
 		prerequisite = { focus = GON_step_forward }
 		cost = 10
+
+		available = {
+			has_war = no
+		}
+
 		completion_reward = {
+			add_political_power = 150
+			add_ideas = GON_digital_elite
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = 1
 		y = 1
@@ -116,22 +313,67 @@ focus_tree = {
 
 	focus = {
 		id = GON_improve_digital_propaganda
-		icon = GFX_goal_hypecratia_effort
+		icon = GFX_goal_ARA_internet_cable
 		prerequisite = { focus = GON_step_forward }
 		cost = 10
+
+		available = {
+			has_war = no
+		}
+
 		completion_reward = {
+			add_political_power = 100
+			add_ideas = GON_hypecratisation_people
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		x = -1
 		y = 1
 		relative_position_id = GON_step_forward
 	}
 
+
 	focus = {
-		id = GON_digital_power
-		icon = GFX_goal_hypecratia_effort
-		prerequisite = { focus = GON_new_elite focus = GON_improve_digital_propaganda }
+		id = GON_transparent_government_work
+		icon = GFX_focus_NOR_continue_nygaardsvold_government
+		prerequisite = { focus = GON_improve_digital_propaganda }
 		cost = 10
 		completion_reward = {
+			remove_ideas = GON_political_corruption
+		}
+		x = -2
+		y = 2
+		relative_position_id = GON_step_forward
+	}
+
+	focus = {
+		id = GON_meme_politics
+		icon = GFX_goal_GON_absolute_meme
+		prerequisite = { focus = GON_step_forward }
+		cost = 10
+
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			add_political_power = 200
+			add_ideas = GON_meme_politics_culture
+			add_popularity = { ideology = hypecratia popularity = 0.15 }
+			add_stability = 0.1
 		}
 		x = 0
 		y = 2
@@ -139,39 +381,76 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GON_transparent_government_work
-		icon = GFX_goal_hypecratia_effort
-		prerequisite = { focus = GON_digital_power }
-		cost = 10
-		completion_reward = {
-		}
-		x = -2
-		y = 1
-		relative_position_id = GON_digital_power
-	}
-
-	focus = {
-		id = GON_meme_politics
-		icon = GFX_goal_hypecratia_effort
-		prerequisite = { focus = GON_digital_power }
-		cost = 10
-		completion_reward = {
-		}
-		x = 0
-		y = 1
-		relative_position_id = GON_digital_power
-	}
-
-	focus = {
 		id = GON_new_strategies
-		icon = GFX_goal_hypecratia_effort
-		prerequisite = { focus = GON_digital_power }
+		icon = GFX_focus_SWE_bicycle
+		prerequisite = { focus = GON_new_elite }
 		cost = 10
 		completion_reward = {
+			IF = {
+				limit = {
+					NOT = {
+						has_tech = bicycle_infantry
+					}
+				}
+				set_technology = { bicycle_infantry = 1 popup = no }
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			if = {
+				limit = {
+					NOT = { has_template = "Велики" }
+				}
+				division_template = {
+					name = "Велики"
+					priority = 2
+					division_names_group = GON_BYC
+					template_counter = 101
+					is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+					regiments = {
+						bicycle_battalion = { x = 0 y = 0 }
+						bicycle_battalion = { x = 0 y = 1 }
+						bicycle_battalion = { x = 0 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					41= {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				41 = {
+					hidden_effect = {
+						create_unit = {
+							division = "division_template =\"Велики\" start_experience_factor = 0.4 start_equipment_factor = 1"
+							owner = ROOT
+							count = 2
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					792= {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				792 = {
+					hidden_effect = {
+						create_unit = {
+							division = "division_template =\"Велики\" start_experience_factor = 0.4 start_equipment_factor = 1"
+							owner = ROOT
+							count = 2
+						}
+					}
+				}
+			}
 		}
 		x = 2
-		y = 1
-		relative_position_id = GON_digital_power
+		y = 2
+		relative_position_id = GON_step_forward
 	}
 
 	focus = {
@@ -182,6 +461,7 @@ focus_tree = {
 		prerequisite = { focus = GON_new_strategies }
 		cost = 10
 		completion_reward = {
+			add_ideas = GON_expand_trand_heart_idea
 		}
 		x = 0
 		y = 1
@@ -193,7 +473,15 @@ focus_tree = {
 		icon = GFX_focus_GON_nelya_support
 		prerequisite = { focus = GON_expand_trand_heart }
 		cost = 10
+		available = {
+			has_army_manpower = { size > 99999 }
+		}
+
+
 		completion_reward = {
+			NEL = {
+				country_event = { id = gonduras.10 days = 3 }
+			}
 		}
 		x = 0
 		y = 1
@@ -202,10 +490,13 @@ focus_tree = {
 
 	focus = {
 		id = GON_shelter_likers
-		icon = GFX_focus_GON_nelya_support
+		icon = GFX_goal_GON_shelter_likers
 		prerequisite = { focus = GON_expand_trand_heart }
 		cost = 10
 		completion_reward = {
+			custom_effect_tooltip = shelter_likers_appear
+			set_country_flag = sheltered_likers
+			country_event = { id = gonduras.15 days = 1 }
 		}
 		x = -3
 		y = 1
@@ -214,14 +505,145 @@ focus_tree = {
 
 	focus = {
 		id = GON_prepare_ddos_attacks
-		icon = GFX_focus_GON_nelya_support
+		icon = GFX_goal_GON_prepare_ddos
 		prerequisite = { focus = GON_expand_trand_heart }
 		cost = 10
 		completion_reward = {
+			add_timed_idea = {
+				days = 400
+				idea = GON_ddos_prepared
+			}
 		}
 		x = 3
 		y = 1
 		relative_position_id = GON_expand_trand_heart
+	}
+
+	focus = {
+		id = GON_return_nelya_to_her_native_harbor
+		icon = GFX_focus_GON_annex_NEL
+		prerequisite = { focus = GON_shelter_likers }
+		prerequisite = {focus = GON_nelya_secure}
+		prerequisite = { focus = GON_prepare_ddos_attacks }
+		available = {
+			has_army_manpower = { size > 159999 }
+		}
+		cost = 10
+		completion_reward = {
+			NEL = {
+				country_event = { id = gonduras.1 days = 2 }
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = GON_nelya_secure
+	}
+
+	focus = {
+		id = GON_madrid_parade
+		icon = GFX_focus_ARG_march_to_la_casa_rosada
+		prerequisite = { focus = GON_return_nelya_to_her_native_harbor }
+		cost = 10
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GON_return_nelya_to_her_native_harbor
+	}
+
+	focus = {
+		id = GON_purchase_from_our_friend
+		icon = GFX_focus_generic_purchase_mechanized_equipment
+		prerequisite = { focus = GON_madrid_parade }
+		cost = 10
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = GON_ham_equipment_supply
+			HAM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = GON_ham_trade_partner
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = GON_madrid_parade
+	}
+
+	focus = {
+		id = GON_expand_military_industry
+		icon = GFX_focus_AFG_scavenging
+		prerequisite = { focus = GON_madrid_parade }
+		cost = 10
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = GON_military_industry_expansion
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = GON_madrid_parade
+	}
+
+	focus = {
+		id = GON_destroy_women_bastion
+		icon = GFX_goal_GON_destroy_women
+		prerequisite = { focus = GON_expand_military_industry focus = GON_purchase_from_our_friend }
+		cost = 10
+		available = {
+			has_army_manpower = { size > 199999 }
+		}
+		completion_reward = {
+			MOY = { country_event = { id = gonduras.12 days = 1 } }
+		}
+		x = -1
+		y = 1
+		relative_position_id = GON_expand_military_industry
 	}
 
 	# ===== ЭКОНОМИЧЕСКАЯ ВЕТКА (ЦЕНТРАЛЬНАЯ) =====
@@ -230,14 +652,16 @@ focus_tree = {
 		id = GON_economic_path
 		icon = GFX_focus_GER_integrated_economies
 		prerequisite = { focus = GON_parliament_restoration }
-		mutually_exclusive = { focus = GON_communist_path focus = GON_fascist_path }
 		cost = 10
 		completion_reward = {
 			add_political_power = 100
-			add_ideas = GON_economic_stability
+			swap_ideas = {
+				add_idea = GON_economics_stagnation
+				remove_idea = GON_economics_recession
+			}
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GON_parliament_restoration
 	}
 
@@ -246,9 +670,33 @@ focus_tree = {
 		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = GON_economic_path }
 		cost = 10
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip=GON_needcivwar
+				has_country_flag = GON_civwar
+			}
+			has_war = no
+		}
+
 		completion_reward = {
-			add_ideas = GON_industrial_growth
-			add_political_power = 50
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = 0
 		y = 1
@@ -261,8 +709,46 @@ focus_tree = {
 		prerequisite = { focus = GON_industrial_development }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_agricultural_modernization
-			add_political_power = 50
+			if = {
+				limit = {
+					170 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				170 = { add_extra_state_shared_building_slots = 1 }
+			}
+			if = {
+				limit = {
+					41 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				41 = { add_extra_state_shared_building_slots = 1 }
+			}
+			if = {
+				limit = {
+					175 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				175 = { add_extra_state_shared_building_slots = 1 }
+			}
+			if = {
+				limit = {
+					789 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				789 = { add_extra_state_shared_building_slots = 1 }
+			}
+			if = {
+				limit = {
+					173 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				173 = { add_extra_state_shared_building_slots = 1 }
+			}
 		}
 		x = 0
 		y = 3
@@ -275,8 +761,23 @@ focus_tree = {
 		prerequisite = { focus = GON_agricultural_reform }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_trade_network
-			add_political_power = 50
+			add_political_power = 60
+			add_stability = 0.01
+			add_timed_idea = {
+				idea = GON_trade_agreements_idea
+				days = 365
+			}
+			every_country = {
+				limit = {
+					is_major = yes
+					NOT = { tag = ROOT }
+					has_war_with = ROOT
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = GON_trade_agreements_opinion
+				}
+			}
 		}
 		x = 0
 		y = 1
@@ -289,8 +790,35 @@ focus_tree = {
 		prerequisite = { focus = GON_trade_agreements }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_modern_infrastructure
 			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = 0
 		y = 1
@@ -303,9 +831,26 @@ focus_tree = {
 		prerequisite = { focus = GON_industrial_development }
 		mutually_exclusive = { focus = GON_automotive_industry }
 		cost = 10
+
+		available = {
+			168 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+
 		completion_reward = {
-			add_ideas = GON_steel_industry_boost
-			add_political_power = 50
+			168 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+			}
 		}
 		x = -2
 		y = 1
@@ -317,9 +862,35 @@ focus_tree = {
 		icon = GFX_focus_generic_resource_extraction
 		prerequisite = { focus = GON_steel_production }
 		cost = 10
+
+		available = {
+			179 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+
 		completion_reward = {
-			add_ideas = GON_civilian_automotive_production
-			add_political_power = 50
+			IF = {
+				limit = {
+					NOT = {
+						has_tech = fuel_silos
+						has_tech = synth_oil_experiments
+					}
+				}
+
+				set_technology = { fuel_silos = 1 }
+				set_technology = { synth_oil_experiments = 1 }
+				
+			}
+
+			179 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}	
+			}
 		}
 		x = 0
 		y = 2
@@ -333,8 +904,89 @@ focus_tree = {
 		mutually_exclusive = { focus = GON_steel_production }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_automotive_production
-			add_political_power = 50
+			if = {
+				limit = {
+					has_war = yes
+				}
+				if = {
+					limit = {
+						41 = {
+							is_fully_controlled_by = ROOT
+							free_building_slots = {
+								building = arms_factory
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					41 = { #Hannover
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = arms_factory
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+				else = {
+					random_owned_state = {
+						limit = {
+							is_controlled_by = ROOT
+							free_building_slots = {
+								building = arms_factory
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = arms_factory
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			else_if = { #if at peace
+				if = {
+					limit = {
+						41 = {
+							is_fully_controlled_by = ROOT
+							free_building_slots = {
+								building = arms_factory
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					41 = { #Hannover
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				else = {
+					random_owned_state = {
+						limit = {
+							is_controlled_by = ROOT
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
 		x = 2
 		y = 1
@@ -347,12 +999,58 @@ focus_tree = {
 		prerequisite = { focus = GON_infrastructure_development }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_chemical_production
-			add_political_power = 50
+			add_political_power = 70
+			add_tech_bonus = {
+				name = GON_chemical_industry_bonus
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = cat_industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = GON_chemical_industry_idea
 		}
 		x = 0
 		y = 1
 		relative_position_id = GON_infrastructure_development
+	}
+
+	focus = {
+		id = GON_fond_of_national_blagosostoyanie
+		prerequisite = { focus = GON_chemical_industry }
+		relative_position_id = GON_chemical_industry
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GER_factories_for_resources
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_social_welfare_fund_ns
+
+			41 = {
+				add_extra_state_shared_building_slots = 3
+			}
+		}
 	}
 
 	focus = {
@@ -361,8 +1059,23 @@ focus_tree = {
 		prerequisite = { focus = GON_agricultural_reform }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_food_industry
 			add_political_power = 50
+			add_stability = 0.02
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = GON_food_production_idea
 		}
 		x = -3
 		y = 2
@@ -375,8 +1088,23 @@ focus_tree = {
 		prerequisite = { focus = GON_agricultural_reform }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_livestock_production
 			add_political_power = 50
+			add_stability = 0.01
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = civilian_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = civilian_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = GON_livestock_industry_idea
 		}
 		x = 3
 		y = 2
@@ -386,12 +1114,28 @@ focus_tree = {
 	focus = {
 		id = GON_prioritize_economy_growth
 		icon = GFX_focus_generic_currency_reforms
-		prerequisite = { focus = GON_trade_agreements }
+		prerequisite = { focus = GON_infrastructure_development }
 		mutually_exclusive = { focus = GON_three_year_plan }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_export_network
-			add_political_power = 50
+			add_ideas = civilian_economy
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = -2
 		y = 3
@@ -401,12 +1145,14 @@ focus_tree = {
 	focus = {
 		id = GON_three_year_plan
 		icon = GFX_focus_SOV_merge_plants
-		prerequisite = { focus = GON_trade_agreements }
+		prerequisite = { focus = GON_infrastructure_development }
 		mutually_exclusive = { focus = GON_prioritize_economy_growth }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_import_network
-			add_political_power = 50
+			swap_ideas = {
+				add_idea = GON_three_year_plan
+				remove_idea = GON_economics_stagnation
+			}
 		}
 		x = 2
 		y = 3
@@ -416,11 +1162,13 @@ focus_tree = {
 	focus = {
 		id = GON_abolish_price_controls
 		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GON_infrastructure_development }
+		prerequisite = { focus = GON_prioritize_economy_growth }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_railway_system
-			add_political_power = 50
+			swap_ideas = {
+				add_idea = GON_economics_stagnation_1
+				remove_idea = GON_economics_stagnation
+			}
 		}
 		x = -2
 		y = 4
@@ -430,11 +1178,14 @@ focus_tree = {
 	focus = {
 		id = GON_academy_of_science
 		icon = GFX_focus_research2
-		prerequisite = { focus = GON_infrastructure_development }
+		prerequisite = { focus = GON_three_year_plan }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_highway_system
-			add_political_power = 50
+			add_research_slot = 1
+			swap_ideas = {
+				add_idea = GON_three_year_plan_1
+				remove_idea = GON_three_year_plan
+			}
 		}
 		x = 2
 		y = 4
@@ -447,8 +1198,25 @@ focus_tree = {
 		prerequisite = { focus = GON_steel_production }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_heavy_steel_production
-			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = {
+					has_resources_amount = {
+						resource = steel
+						amount > 0
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = -2
 		y = 1
@@ -460,9 +1228,47 @@ focus_tree = {
 		icon = GFX_focus_GER_wirtschaftswunder
 		prerequisite = { focus = GON_automotive_industry }
 		cost = 10
+		available = {
+			AND = {
+				792 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				176 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				793 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+
 		completion_reward = {
-			add_ideas = GON_civilian_automotive_production
-			add_political_power = 50
+			792 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			176 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			793 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		x = 0
 		y = 2
@@ -475,8 +1281,15 @@ focus_tree = {
 		prerequisite = { focus = GON_automotive_industry }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_military_automotive_production
-			add_political_power = 50
+			add_tech_bonus = {
+				name = GER_panzergrenadier
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+
+			add_ideas = GON_armscar_baf
 		}
 		x = 2
 		y = 1
@@ -488,8 +1301,12 @@ focus_tree = {
 		prerequisite = { focus = GON_food_production }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_grain_industry
-			add_political_power = 50
+			add_political_power = 40
+			add_stability = 0.01
+			add_timed_idea = {
+				idea = GON_hop_industry_idea
+				days = 730
+			}
 		}
 		x = -1
 		y = 1
@@ -502,8 +1319,10 @@ focus_tree = {
 		prerequisite = { focus = GON_abolish_price_controls }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_vegetable_industry
-			add_political_power = 50
+			add_timed_idea = {
+				days = 1000
+				idea = GON_invest_in_gondurmetprom_idea
+			}
 		}
 		x = -1
 		y = 1
@@ -515,9 +1334,44 @@ focus_tree = {
 		icon = GFX_focus_PER_invite_oil_nations
 		prerequisite = { focus = GON_academy_of_science }
 		cost = 10
+
+		available = {
+			112 = {
+				is_owned_and_controlled_by = GON
+			}
+			171 = {
+				is_owned_and_controlled_by = GON
+			}
+			118 = {
+				is_owned_and_controlled_by = GON
+			}
+		}
+
 		completion_reward = {
-			add_ideas = GON_cattle_industry
-			add_political_power = 50
+			112 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+			171 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+			118 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = 1
 		y = 1
@@ -530,8 +1384,9 @@ focus_tree = {
 		prerequisite = { focus = GON_livestock_industry }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_poultry_industry
-			add_political_power = 50
+			add_political_power = 30
+			add_stability = 0.02
+			add_ideas = GON_national_cousine_idea
 		}
 		x = 1
 		y = 1
@@ -544,8 +1399,7 @@ focus_tree = {
 		prerequisite = { focus = GON_prioritize_economy_growth }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_global_trade_system
-			add_political_power = 50
+			add_ideas = GON_lower_taxes_idea
 		}
 		x = -2
 		y = 1
@@ -558,8 +1412,7 @@ focus_tree = {
 		prerequisite = { focus = GON_three_year_plan }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_regional_trade_system
-			add_political_power = 50
+			add_ideas = GON_national_specialist
 		}
 		x = 2
 		y = 1
@@ -572,8 +1425,44 @@ focus_tree = {
 		prerequisite = { focus = GON_abolish_price_controls }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_modern_railway_system
-			add_political_power = 50
+			swap_ideas = {
+				add_idea = GON_economics_stagnation_2
+				remove_idea = GON_economics_stagnation_1
+			}
+
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		x = -2
 		y = 2
@@ -586,8 +1475,10 @@ focus_tree = {
 		prerequisite = { focus = GON_academy_of_science }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_modern_highway_system
-			add_political_power = 50
+			swap_ideas = {
+				add_idea = GON_three_year_plan_2
+				remove_idea = GON_three_year_plan_1
+			}
 		}
 		x = 2
 		y = 2
@@ -600,8 +1491,24 @@ focus_tree = {
 		prerequisite = { focus = GON_industrial_expansion focus = GON_develop_rubber_industry }
 		cost = 10
 		completion_reward = {
-			add_ideas = GON_economic_superpower_status
-			add_political_power = 100
+			if = {
+				limit = {
+					has_idea = GON_three_year_plan_2
+				}
+				swap_ideas = {
+					remove_idea = GON_three_year_plan_2
+					add_idea = GON_economics_boom
+				}
+			}
+			if = {
+				limit = {
+					has_idea = GON_economics_stagnation_2
+				}
+				swap_ideas = {
+					remove_idea = GON_economics_stagnation_2
+					add_idea = GON_economics_boom
+				}
+			}
 		}
 		x = 4
 		y = 1
@@ -612,16 +1519,667 @@ focus_tree = {
 	
 	focus = {
 		id = GON_fascist_path
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_goal_GON_stintler
 		prerequisite = { focus = GON_parliament_restoration }
-		mutually_exclusive = { focus = GON_communist_path focus = GON_economic_path }
+		mutually_exclusive = { focus = GON_hype_path }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
-			add_popularity = { ideology = fascism popularity = 0.1 }
+			
 		}
-		x = 8
+		x = 9
 		y = 1
 		relative_position_id = GON_parliament_restoration
+	}
+
+	focus = {
+		id = GON_crackdown_on_corruption
+		prerequisite = { focus = GON_fascist_path }
+		relative_position_id = GON_fascist_path
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ARG_crackdown_on_corruption
+		x = -2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = GON_political_corruption
+				add_idea = GON_crackdown_on_corruption_idea
+			}
+		}
+	}
+
+	focus = {
+		id = GON_cut_ties_with_dippins
+		prerequisite = { focus = GON_fascist_path }
+		relative_position_id = GON_fascist_path
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_cut_ties_with_dipins
+		x = 0
+		y = 2
+
+		cost = 12
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_ideas = GON_anti_dipins_sentiment
+		}
+	}
+
+	focus = {
+		id = GON_support_radical_nationalism
+		prerequisite = { focus = GON_cut_ties_with_dippins }
+		relative_position_id = GON_cut_ties_with_dippins
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+			fascism > 0.34
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            set_politics = {
+			    ruling_party = fascism
+			    elections_allowed = no
+			}
+
+			start_civil_war = {
+				ideology = neutrality
+				keep_all_characters = yes
+				size = 0.38
+				capital = 118
+				states = { 118 173 169 179 789 168 }
+				hidden_effect = {
+					if = {
+						limit = {
+							NOT = { has_template = "Народное ополчение" }
+						}
+						division_template = {
+							name = "Народное ополчение"
+							priority = 2
+							division_names_group = GON_mili
+							template_counter = 101
+							is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+							regiments = {
+								militia = { x = 0 y = 0 }
+								militia = { x = 0 y = 1 }
+								militia = { x = 0 y = 2 }
+
+							}
+							support = {
+							
+							}
+						}
+					}
+					179 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = THIS
+								count = 2
+							}
+						}
+					}
+					789 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = THIS
+								count = 2
+							}
+						}
+					}
+					168 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = THIS
+								count = 2
+							}
+						}
+					}
+					169 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = THIS
+								count = 2
+							}
+						}
+					}
+				}
+			}
+		
+			GON = {
+				hidden_effect = {
+				add_ideas = GON_political_corruption
+				add_ideas = GON_economics_recession
+				set_country_flag = GON_civwar
+				if = {
+				limit = {
+					NOT = { has_template = "Народное ополчение" }
+				}
+					division_template = {
+						name = "Народное ополчение"
+						priority = 2
+						division_names_group = GON_mili
+						template_counter = 101
+						is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+						regiments = {
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 0 y = 2 }
+
+						}
+						support = {
+
+						}
+					}
+				}
+				if = {
+					limit = {
+						170 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					170 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						175 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					175 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						793 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					793 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						795 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					795 = {
+						hidden_effect = {
+							create_unit = {
+								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+				}
+			}
+			}
+		}
+	}
+
+	focus = {
+		id = GON_chb_diplomacy
+		prerequisite = { focus = GON_support_radical_nationalism }
+		relative_position_id = GON_support_radical_nationalism
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_major_alliance
+		x = 2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+		}
+	}
+
+	focus = {
+		id = GON_fascist_researchers
+		prerequisite = { focus = GON_chb_diplomacy }
+		relative_position_id = GON_chb_diplomacy
+		#mutually_exclusive = { focus = GON_revive_the_colonial_plan }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ARG_fascist_researchers
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GON_establishing_foothold
+		prerequisite = { focus = GON_support_radical_nationalism }
+		relative_position_id = GON_support_radical_nationalism
+		available = {
+			has_army_manpower = { size > 139999 }
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			NEL = {
+				country_event = { id = gonduras.1 days = 2 }
+			}
+		}
+	}
+
+	focus = {
+		id = GON_gondunation
+		prerequisite = { focus = GON_btk_investments focus = GON_chb_diplomacy }
+		prerequisite = { focus = GON_establishing_foothold }
+		relative_position_id = GON_support_radical_nationalism
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GON_great_gondurasia
+		x = 0
+		y = 2
+
+		cost = 13
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			remove_ideas = GON_legends_of_stintler
+			remove_ideas = GON_infamous_decade_2
+		}
+	}
+
+	focus = {
+		id = GON_rapid_militarization
+		prerequisite = { focus = GON_gondunation }
+		relative_position_id = GON_gondunation
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_military_mission
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = GON_rapid_militarization
+		}
+	}
+
+	focus = {
+		id = GON_gonduras_nationalism
+		prerequisite = { focus = GON_gondunation }
+		relative_position_id = GON_gondunation
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_fascist_propaganda
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			swap_ideas = {
+            remove_idea = GON_groving_nationalist_movement_2
+			add_idea = GON_military_government
+			}
+		}
+	}
+
+	focus = {
+		id = GON_btk_investments
+		prerequisite = { focus = GON_support_radical_nationalism }
+		relative_position_id = GON_support_radical_nationalism
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_major_alliance
+		x = -2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}	
+            }
+
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}	
+            }
+		}
+	}
+
+	focus = {
+		id = GON_war_division
+		prerequisite = { focus = GON_rapid_militarization focus = GON_gonduras_nationalism }
+		relative_position_id = GON_gondunation
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_SWI_issue_war_bonds
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_timed_idea = {
+				idea = GON_war_division_idea
+				days = 365
+			}	
+		}
+	}
+
+	focus = {
+		id = GON_gondunation_first
+		prerequisite = { focus = GON_war_division }
+		relative_position_id = GON_war_division
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GON_preparing
+		x = 0
+		y = 1
+
+		cost = 11
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {	
+			IF = {
+				limit = {
+					is_in_faction = yes
+				}
+				leave_faction = yes 
+			}
+
+			add_political_power = 50
+			add_war_support = 0.05
+
+			add_ideas = GON_gondunation_first_idea
+
+			create_faction = GON_nationalist_faction	
+
+			hidden_effect = {
+				set_rule = { can_send_volunteers = yes }
+				set_rule = { can_create_factions = yes }
+				set_rule = { can_join_factions = no }
+			}
+		}
+	}
+
+	focus = {
+		id = GON_dominate_europe
+		prerequisite = { focus = GON_gondunation_first }
+		relative_position_id = GON_gondunation_first
+		mutually_exclusive = { focus = GON_no_extra_military_spending }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_printing_press
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_timed_idea = { idea = GON_total_war days = 350 }
+		}
+	}
+
+	focus = {
+		id = GON_no_extra_military_spending
+		prerequisite = { focus = GON_gondunation_first }
+		relative_position_id = GON_gondunation_first
+		mutually_exclusive = { focus = GON_dominate_europe }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GER_integrated_economies
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_timed_idea = { idea = GON_limited_war_money days = 350 }
+		}
+	}
+
+	focus = {
+		id = GON_morphi_ultimatum
+		prerequisite = { focus = GON_dominate_europe focus = GON_no_extra_military_spending }
+		relative_position_id = GON_dominate_europe
+		mutually_exclusive = { focus = GON_conquer_morphi }
+		available = {
+			has_army_manpower = { size > 449999 }
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_destroy_women
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            MOY = { country_event = { id = gonduras.12 days = 1 } }
+		}
+	}
+
+	focus = {
+		id = GON_corporatism
+		prerequisite = { focus = GON_btk_investments }
+		relative_position_id = GON_btk_investments
+		#mutually_exclusive = { focus = GON_revive_the_colonial_plan }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ICE_state_corporatism
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 50
+			add_popularity = {
+				ideology = fascism 
+				popularity = 0.1
+			}
+			41 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 }

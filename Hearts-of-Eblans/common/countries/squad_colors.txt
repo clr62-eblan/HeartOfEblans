@@ -7,6 +7,10 @@ GCM = {
 	color = rgb { 65 83 87 }
 	color_ui = rgb { 65 83 87 }
 }
+MST = {
+	color = rgb { 227 200 138 }
+	color_ui = rgb { 227 200 138 }
+}
 DIK = {
 	color = rgb { 85 128 73 }
 	color_ui = rgb { 85 128 73 }

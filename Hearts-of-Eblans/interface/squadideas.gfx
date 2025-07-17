@@ -190,6 +190,21 @@ spriteTypes = {
 		name = "GFX_idea_low_taxes"
 		texturefile = "gfx/interface/ideas/low_taxes.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_GON_domestic_services"
+		texturefile = "gfx/interface/ideas/GON_domestic_services.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GON_right_messenger"
+		texturefile = "gfx/interface/ideas/GON_right_messenger.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GON_ddos"
+		texturefile = "gfx/interface/ideas/GON_ddos.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_high_taxes"

@@ -46,6 +46,67 @@ characters = {
 			cost = 150
 		}
 	}
+
+	MilanaStar = {
+		name = MilanaStar
+		portraits = {
+			army = {
+				small = GFX_portrait_GON_milana_star_small
+				large = GFX_portrait_GON_milana_star
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = MilanaStar
+			allowed = {
+				has_country_flag = sheltered_likers
+				NOT = { has_completed_focus = has_country_flag = star_country }
+			}	
+			traits  = {
+				tiktok_favorite
+			}	
+			cost = 65
+		}
+
+        corps_commander = {
+			traits = { war_hero media_personality }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 2
+            legacy_id = -1
+			visible = { 
+				original_tag = GON
+				has_country_flag = sheltered_likers
+				NOT = { has_completed_focus = has_country_flag = star_country }
+			}
+       }
+	}
+
+	MilanaNecrasova = {
+		name = MilanaNecrasova
+		portraits = {
+			army = {
+				small = GFX_portrait_GON_necrasova_small
+				large = GFX_portrait_GON_milana_star
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = MilanaNecrasova
+			allowed = {
+				has_country_flag = sheltered_likers
+				NOT = { has_completed_focus = has_country_flag = necrasova_country }
+			}	
+			traits  = {
+				the_young_magnate
+			}	
+			cost = 120
+		}
+	}
 	
 	ModBoty = {
 		name = ModBoty

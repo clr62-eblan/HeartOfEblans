@@ -3,6 +3,21 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_portrait_bigpig"
 		texturefile = "gfx/leaders/SVI/big_pig.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_GON_milana_star"
+		texturefile = "gfx/leaders/GON/star.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_GON_milana_star_small"
+		texturefile = "gfx/interface/ideas/milana_star.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_GON_necrasova_small"
+		texturefile = "gfx/interface/ideas/milana_necrasova.dds"
 	}
 	
 	SpriteType = {

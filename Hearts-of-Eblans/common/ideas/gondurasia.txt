@@ -107,6 +107,402 @@ ideas = {
 				fascism_drift = 0.03
 			}
 		}
+
+		GON_digital_elite = {
+			icon = generic_volunteer_army
+			modifier = {
+				research_bonus = {
+					electronics = 0.03
+					computing = 0.03
+				}
+				research_speed_factor = 0.05
+			}
+		}
+
+		GON_digital_propaganda_network = {
+			icon = generic_positive_trade_relations
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.02
+				research_bonus = {
+					electronics = 0.05
+				}
+			}
+		}
+
+		GON_meme_politics_culture = {
+			icon = generic_positive_trade_relations
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				research_bonus = {
+					electronics = 0.05
+				}
+			}
+		}
+
+		GON_ham_equipment_supply = {
+			icon = generic_purchase_mechanized_equipment
+			modifier = {
+				equipment_bonus = {
+					mechanized_equipment = 0.1
+					armor = 0.05
+				}
+				research_bonus = {
+					cat_mechanized_equipment = 0.05
+				}
+			}
+		}
+
+		GON_military_industry_expansion = {
+			icon = generic_military_industry
+			modifier = {
+				industrial_capacity_factor = 0.05
+				equipment_bonus = {
+					infantry_equipment = 0.1
+					artillery = 0.05
+				}
+				research_bonus = {
+					cat_industry = 0.05
+				}
+			}
+		}
+
+		GON_economics_recession = {
+			picture = generic_economic_crisis
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.6
+			}
+		}
+
+		GON_economics_stagnation = {
+			picture = generic_democratic_opposition
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.07
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.5
+			}
+		}
+
+		GON_three_year_plan = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.45
+			}
+		}
+
+		GON_three_year_plan_1 = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.02
+				war_support_factor = -0.07
+				industrial_capacity_factory = -0.08
+				consumer_goods_factor = 0.3
+			}
+		}
+
+		GON_economics_stagnation_1 = {
+			picture = generic_devalue_currency
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.3
+			}
+		}
+
+		GON_invest_in_gondurmetprom_idea = {
+			picture = generic_foreign_capital
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				production_oil_factor = 0.07
+				local_resources = 0.04
+			}
+		}
+
+		GON_ddos_prepared = {
+			picture = GON_ddos
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				army_attack_factor = 0.07
+				army_speed_factor = 0.035
+				army_defence_factor = 0.02
+			}
+		}
+
+		GON_expand_trand_heart_idea = {
+			picture = generic_foreign_capital
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				max_training = -0.14
+				experience_gain_army_factor = 0.02
+				training_time_factor = -0.07
+				assign_navy_leader_cp_cost = -0.04
+			}
+		}
+
+		GON_food_production_idea = {
+			icon = generic_agrarian_reform
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.02
+				weekly_manpower = 100
+			}
+		}
+
+		GON_hop_industry_idea = {
+			icon = generic_central_management
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			modifier = {
+				trade_opinion_factor = 0.10
+				consumer_goods_factor = -0.01
+			}
+		}
+
+		GON_national_cousine_idea = {
+			icon = SWE_hungershield
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			modifier = {
+				weekly_manpower = 50
+				war_support = 0.01
+			}
+		}
+
+		GON_trade_agreements_idea = {
+			icon = can_wartime_prices_and_trade_board
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			modifier = {
+				trade_opinion_factor = 0.15
+				embargo_cost_factor = -0.5
+			}
+		}
+
+		GON_lower_taxes_idea = {
+			icon = low_taxes
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.01
+				production_speed_buildings_factor = 0.02
+			}
+		}
+
+		GON_chemical_industry_idea = {
+			icon = generic_flexible_foreign_policy2
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.02
+				synthetic_refinery_throughput_factor = 0.10
+			}
+		}
+
+		GON_livestock_industry_idea = {
+			icon = ARG_argentine_beef
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				monthly_population = 0.001
+			}
+		}
+
+		GON_economics_stagnation_2 = {
+			picture = generic_devalue_currency
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.01
+				war_support_factor = -0.03
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		GON_internet_punishers_idea = {
+			picture = generic_intel_bonus
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.02
+				army_speed_factor = 0.03
+			}
+		}
+
+		GON_internet_punishers_idea_2 = {
+			picture = generic_intel_bonus
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.04
+				army_speed_factor = 0.04
+				army_attack_factor = 0.3
+				grant_medal_cost_factor = -0.15
+			}
+		}
+
+		GON_domestic_services_idea = {
+			picture = GON_domestic_services
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.01
+				stability_factor = 0.015
+				hypecratia_drift = 0.015
+			}
+		}
+
+		GON_right_messenger_idea = {
+			picture = GON_right_messenger
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.01
+				war_support_factor = 0.01
+				research_speed_factor = 0.02
+			}
+		}
+
+		GON_national_specialist = {
+			picture = generic_exploit_mines
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+
+			}
+		}
+
+		GON_economics_boom = {
+			picture = generic_economic_increase
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = 0.02
+				industrial_capacity_factory = 0.03
+				production_speed_buildings_factor = 0.05
+				conscription_factor = 0.01
+			}
+		}
+
+		GON_armscar_baf = {
+			picture = ITA_bandits_war
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				mechanized_attack_factor = 0.3
+				motorized_attack_factor = 0.3
+				motorized_speed_factor = 0.5
+				mechanized_speed_factor = 0.5
+			}
+		}
 		
 		GON_anti_corruption_politics = {
 		
@@ -1057,11 +1453,9 @@ ideas = {
 				neutrality_drift = -0.02
 			}
 		}
-		
 
-		
-		GON_Legalais = {
-			picture = GON_Legalais
+		GON_hypecratisation_people = {
+			picture = generic_morale_bonus
 
 			allowed = {
 				original_tag = GON
@@ -1071,42 +1465,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.1
-			}
-		}
-		GON_gamer = {
-			picture = GON_gamer
-
-			allowed = {
-				original_tag = GON
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				political_power_factor = -0.05
-				war_support_factor = 0.05
-				consumer_goods_factor = 0.1
-			}
-		}
-		stint_divided = {
-			picture = stint_divided
-
-			allowed = {
-				original_tag = GON
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = -0.25
-				political_power_gain = -0.3
-				war_support_factor = -0.2
-				training_time_army_factor = -0.9
-				political_power_factor = -0.1
+				non_core_manpower = 0.03
+				hypecratia_drift = 0.01
 			}
 		}
 	}

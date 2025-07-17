@@ -12,19 +12,12 @@ country_event = {
 	option = {
 		name = chicken.7.a #yes
 		ai_chance = {
-			base = 7
+			base = 0.1
 			modifier = {
-				factor = 0.1
-				FROM = {
-					has_war = yes
-				}
-			}
-			modifier = { #more likely if Uruguay likes Argentina
-				factor = 10
-				NEL = {
-					has_opinion = {
-						target = GON
-						value > 29 
+				modifier = {
+					factor = 11
+					FROM = {
+						has_war = yes
 					}
 				}
 			}
@@ -36,6 +29,14 @@ country_event = {
 					target = NEL
 					transfer_troops = yes
 				}
+			}
+			if = {
+				limit = {
+					DPN = {
+						exists = yes
+					}
+				}
+				news_event = { id = squad_news.15 days = 5 }
 			}
 		}
 	}
@@ -359,6 +360,233 @@ country_event = {
 		
 		hidden_effect = {
 		
+		}
+	}
+}
+
+
+#secure nelya
+country_event = {
+	id = gonduras.10
+	title = gonduras.10.t
+	desc = gonduras.10.d
+	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
+	
+	is_triggered_only = yes
+	
+	#Oki
+	option = {
+		name = gonduras.10.a
+		
+		172 = {
+			transfer_state_to = GON
+		}
+		166 = {
+			transfer_state_to = GON
+		}
+		794 = {
+			transfer_state_to = GON
+		}
+		177 = {
+			transfer_state_to = GON
+		}
+
+		GON = {
+			give_guarantee = NEL
+			give_military_access = NEL
+		}
+
+		ai_chance = {
+			base = 12
+		}
+	}
+
+	#No
+	option = {
+		name = gonduras.10.b
+		
+		hidden_effect = {
+			GON = {
+				country_event = { id = gonduras.11 }
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = gonduras.11
+	title = gonduras.11.t
+	desc = gonduras.11.d
+	picture = GFX_report_event_SOV_mongolia_fortify_border
+	is_triggered_only = yes
+
+	option = {
+		name = gonduras.11.a
+		
+		create_wargoal = {
+		    type = annex_everything
+		    target = NEL
+		}
+	}
+}
+
+#MORPHI ANNEX
+country_event = {
+	id = gonduras.12
+	title = gonduras.12.t
+	desc = gonduras.12.d
+	picture = GFX_report_event_GER_bombers
+	is_triggered_only = yes
+
+	#NO
+	option = {
+		name = gonduras.12.a
+		
+		GON = {
+			country_event = { id = gonduras.13 days = 2 }
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	#YES
+	option = {
+		name = gonduras.12.b
+		
+		GON = {
+			annex_country = {
+				target = MOY
+				transfer_troops = no
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {
+	id = gonduras.13
+	title = gonduras.13.t
+	desc = gonduras.13.d
+	picture = GFX_report_event_FIN_camouflaged_white_death
+	is_triggered_only = yes
+
+	option = {
+		name = gonduras.13.a
+		
+		create_wargoal = {
+		    type = annex_everything
+		    target = MOY
+		}
+	}
+}
+
+#Deepins
+country_event = {
+	id = gonduras.14
+	title = gonduras.14.t
+	desc = gonduras.14.d
+	picture = GFX_report_event_ENG_middle_eastern_conflict_2
+	is_triggered_only = yes
+
+	#MOBILIZE
+	option = {
+		name = gonduras.14.a
+		
+		GON = {
+			country_event = { id = gonduras.16 }
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	#PUSTYAKI
+	option = {
+		name = gonduras.14.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+
+
+#Shelter likers
+country_event = {
+	id = gonduras.15
+	title = gonduras.15.t
+	desc = gonduras.15.d
+	picture = GFX_report_event_COG_force_publique_marching_to_war
+	is_triggered_only = yes
+
+	#Oki
+	option = {
+		name = gonduras.15.a
+		
+		
+
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+#Deepins info
+country_event = {
+	id = gonduras.16
+	title = gonduras.16.t
+	desc = gonduras.16.d
+	picture = GFX_report_event_ENG_middle_eastern_conflict
+	is_triggered_only = yes
+
+	#No stop
+	option = {
+		name = gonduras.16.a
+		
+		DPN = {
+			declare_war_on = {
+                target = GON
+                type = annex_everything
+            }
+			give_guarantee = MOY
+			add_ai_strategy = {
+			   type = alliance
+			   id = MOY
+			   value = 500
+			}
+		}
+		MOY = {
+			add_ai_strategy = {
+			   type = alliance
+			   id = DPN
+			   value = 500
+			}
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	#Stop
+	option = {
+		name = gonduras.16.b
+		
+		
+
+		ai_chance = {
+			base = 50
 		}
 	}
 }

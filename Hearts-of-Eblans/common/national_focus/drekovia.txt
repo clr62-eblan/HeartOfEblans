@@ -6077,6 +6077,21 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			hidden_effect = { #offset from fascist reasons on 00_on_actions
+				add_ai_strategy = {
+				   type = alliance
+				   id = LAG
+				   value = 1000
+				}
+				LAG = {
+					add_ai_strategy = {
+					   type = alliance
+					   id = DRE
+					   value = 1000
+					}
+				}
+			}
+
 			add_timed_idea = { idea = DRE_reviving_monarchism days = 450 }
 			remove_ideas = DRE_extraordinary_act
 			add_popularity = {
@@ -6785,7 +6800,7 @@ focus = {
 
 	focus = {
 		id = DRE_civilian_economic_pact
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_industry_3
 		relative_position_id = DRE_Convergence_with_lagoda
 		prerequisite = { focus = DRE_Convergence_with_lagoda }
 		x = 1
@@ -6810,7 +6825,7 @@ focus = {
 
 	focus = {
 		id = DRE_military_economic_pact
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_naval_invasion_tank
 		relative_position_id = DRE_Convergence_with_lagoda
 		prerequisite = { focus = DRE_Convergence_with_lagoda }
 		x = -1
@@ -6835,9 +6850,9 @@ focus = {
 
 	focus = {
 		id = DRE_alliance_lagoda
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		relative_position_id = DRE_Convergence_with_lagoda
-		prerequisite = { focus = DRE_military_economic_pact AND }
+		prerequisite = { focus = DRE_military_economic_pact }
 		prerequisite = { focus = DRE_civilian_economic_pact }
 		x = 0
 		y = 2
@@ -6854,6 +6869,8 @@ focus = {
 			}
 		}
 	}
+
+
 
 	focus = {
 		id = DRE_form_parlament
