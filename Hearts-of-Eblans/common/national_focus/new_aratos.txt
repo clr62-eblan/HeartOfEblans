@@ -238,7 +238,8 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			custom_effect_tooltip = in_development
+			female_random_scientist_chance = 0.15
+			experience_gain_army = 0.1
 		}
 	}
 
@@ -295,7 +296,11 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			custom_effect_tooltip = in_development
+			add_stability = 0.05
+			add_popularity = {
+    			ideology = hypecratia
+    			popularity = 0.05
+			}
 		}
 	}
 
@@ -399,7 +404,14 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			custom_effect_tooltip = in_development
+			add_popularity = {
+    			ideology = hypecratia
+    			popularity = 0.1
+			}
+			add_popularity = {
+    			ideology = fascism
+    			popularity = -0.1
+			}
 		}
 	}
 
@@ -418,7 +430,8 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			custom_effect_tooltip = in_development
+			trade_cost_for_target_factor = 0.3
+			extra_trade_to_overlord_factor = 0.2
 		}
 	}
 
@@ -1094,7 +1107,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            custom_effect_tooltip = in_development
+            add_stability = 0.15
 		}
 	}
 
@@ -1307,7 +1320,8 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            custom_effect_tooltip = in_development
+            drift_defence_factor = 0.1
+			add_stability = -0.05
 		}
 	}
 
@@ -1745,7 +1759,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-           custom_effect_tooltip = in_development
+           add_war_support = 0.15
+		   experience_gain_army = 0.25
+		   experience_gain_navy = 0.25
+		   experience_gain_air = 0.25
 		}
 	}
 
