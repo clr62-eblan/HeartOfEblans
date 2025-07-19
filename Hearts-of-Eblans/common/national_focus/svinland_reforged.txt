@@ -3415,7 +3415,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		cost = 5
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SVI_war_department
 		prerequisite = { focus = SVI_war_department }
 
@@ -3591,6 +3591,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SVI_war_department
 		prerequisite = { focus = SVI_war_department }
+		mutually_exclusive = { focus = SVI_east_expansion }
 
 		available = {
 			custom_trigger_tooltip = { tooltip = need_parliament_support_80
@@ -3609,7 +3610,7 @@ focus_tree = {
 	focus = {
 		id = SVI_razdva_war
 		icon = GFX_focus_generic_invade_finland
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = SVI_northern_expansion_2
@@ -3635,7 +3636,7 @@ focus_tree = {
 	focus = {
 		id = SVI_pyatorka_war
 		icon = GFX_focus_generic_invade_sweden
-		cost = 5
+		cost = 10
 		x = -2
 		y = 1
 		relative_position_id = SVI_northern_expansion_2
@@ -3666,6 +3667,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SVI_war_department
 		prerequisite = { focus = SVI_war_department }
+		mutually_exclusive = { focus = SVI_nothern_expansion_2 }
 
 		available = {
 			custom_trigger_tooltip = { tooltip = need_parliament_support_80
@@ -3684,7 +3686,7 @@ focus_tree = {
 	focus = {
 		id = SVI_mibross_expansion
 		icon = GFX_SOV_eastern_expansion_ccp_2d_sov_compatibility
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = SVI_east_expansion
@@ -3700,14 +3702,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			create_wargoal = {
+    			type = annex_everything
+    			target = RAB
+			}
 		}
 	}
 
 	focus = {
 		id = SVI_kussia_expansion
 		icon = GFX_SOV_eastern_expansion_ccp_2d_sov_compatibility
-		cost = 5
+		cost = 10
 		x = 2
 		y = 1
 		relative_position_id = SVI_east_expansion
