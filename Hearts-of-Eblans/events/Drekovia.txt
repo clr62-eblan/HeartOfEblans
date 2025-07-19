@@ -362,16 +362,24 @@ country_event = {
 			transfer_state_to = DRE
 		}
 
-		190 = {
+		189 = {
 			transfer_state_to = SVI
 		}
 
-		809 = {
+		815 = {
 			transfer_state_to = SVI
 		}
 
-		1049 = {
-			transfer_state_to = HAM
+		11 = {
+			transfer_state_to = SVI
+		}
+
+		814 = {
+			transfer_state_to = SVI
+		}
+
+		784 = {
+			transfer_state_to = SVI
 		}
 		1047 = {
 			transfer_state_to = HAM
@@ -511,7 +519,6 @@ country_event = {
 		109 = { transfer_state_to = DRE }
 		45 = { transfer_state_to = DRE }
 		163 = { transfer_state_to = DRE }
-		83 = { transfer_state_to = DRE }
 		
 		clr_country_flag = SDO_started_chb
 		}
@@ -570,8 +577,6 @@ country_event = {
 		804 = { transfer_state_to = DRE }
 		107 = { transfer_state_to = DRE }
 		764 = { transfer_state_to = DRE }
-		83 = { transfer_state_to = DRE }
-		82 = { transfer_state_to = DRE }
 		1027 = { transfer_state_to = DRE }
 		1026 = { transfer_state_to = DRE }
 		clr_country_flag = SDO_started_chb
@@ -638,8 +643,6 @@ country_event = {
 		970 = { transfer_state_to = DRE }
 		934 = { transfer_state_to = DRE }
 		106 = { transfer_state_to = DRE }
-		83 = { transfer_state_to = DRE }
-		82 = { transfer_state_to = DRE }
 		1027 = { transfer_state_to = DRE }
 		1026 = { transfer_state_to = DRE }
 		clr_country_flag = SDO_started_chb

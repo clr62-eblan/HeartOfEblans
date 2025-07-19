@@ -144,7 +144,7 @@ focus_tree = {
 						hidden_effect = {
 							create_unit = {
 								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
-								owner = ROOT
+								owner = PREV
 								count = 2
 							}
 						}
@@ -153,7 +153,7 @@ focus_tree = {
 						hidden_effect = {
 							create_unit = {
 								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
-								owner = ROOT
+								owner = PREV
 								count = 2
 							}
 						}
@@ -162,7 +162,7 @@ focus_tree = {
 						hidden_effect = {
 							create_unit = {
 								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
-								owner = ROOT
+								owner = PREV
 								count = 2
 							}
 						}
@@ -171,7 +171,7 @@ focus_tree = {
 						hidden_effect = {
 							create_unit = {
 								division = "division_template =\"Народное ополчение\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
-								owner = ROOT
+								owner = PREV
 								count = 2
 							}
 						}
@@ -474,7 +474,7 @@ focus_tree = {
 		prerequisite = { focus = GON_expand_trand_heart }
 		cost = 10
 		available = {
-			has_army_manpower = { size > 99999 }
+			has_army_manpower = { size > 149999 }
 		}
 
 
@@ -526,7 +526,7 @@ focus_tree = {
 		prerequisite = {focus = GON_nelya_secure}
 		prerequisite = { focus = GON_prepare_ddos_attacks }
 		available = {
-			has_army_manpower = { size > 159999 }
+			has_army_manpower = { size > 199999 }
 		}
 		cost = 10
 		completion_reward = {
@@ -636,7 +636,7 @@ focus_tree = {
 		prerequisite = { focus = GON_expand_military_industry focus = GON_purchase_from_our_friend }
 		cost = 10
 		available = {
-			has_army_manpower = { size > 199999 }
+			has_army_manpower = { size > 229999 }
 		}
 		completion_reward = {
 			MOY = { country_event = { id = gonduras.12 days = 1 } }

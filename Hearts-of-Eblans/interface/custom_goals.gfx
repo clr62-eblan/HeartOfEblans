@@ -594,6 +594,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_CHB_fascism_path"
+	texturefile = "gfx/interface/goals/focus_CHB_fascism_path.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_GON_destroy_women"
 	texturefile = "gfx/interface/goals/focus_GON_destroy_women.dds"			
 	}
@@ -627,11 +632,21 @@ spriteTypes = {
 	name = "GFX_goal_hypecratia_effort"
 	texturefile = "gfx/interface/goals/focus_chb_countryofhype.dds"			
 	}	
+
+	SpriteType = {
+	name = "GFX_goal_CHB_social_media"
+	texturefile = "gfx/interface/goals/focus_CHB_social_media.dds"			
+	}
 	
 	SpriteType = {
 	name = "GFX_goal_ARA_people_digitalization"
 	texturefile = "gfx/interface/goals/focus_ARA_people_digitalization.dds"			
 	}	
+
+	SpriteType = {
+	name = "GFX_goal_CHB_hyper_army"
+	texturefile = "gfx/interface/goals/focus_CHB_hyper_army.dds"			
+	}
 
 	SpriteType = {
 	name = "GFX_goal_GON_shelter_likers"
@@ -661,6 +676,11 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_generic_internet_world"
 	texturefile = "gfx/interface/goals/focus_generic_internet_world.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_generic_internet_mobilisation"
+	texturefile = "gfx/interface/goals/focus_generic_internet_mobilisation.dds"			
 	}
 	
 	SpriteType = {
@@ -706,6 +726,11 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_hypecratia_celebration"
 	texturefile = "gfx/interface/goals/focus_chb_hype1.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_CHB_likee_account"
+	texturefile = "gfx/interface/goals/focus_CHB_likee_account.dds"			
 	}
 	
 	SpriteType = {
@@ -1102,6 +1127,46 @@ spriteTypes = {
 	name = "GFX_goal_chb_communism"
 	texturefile = "gfx/interface/goals/focus_chb_communism.dds"			
 	}	
+
+	SpriteType = {
+	name = "GFX_goal_CHB_zavertin"
+	texturefile = "gfx/interface/goals/focus_chb_communism1.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_generic_friend_gvin"
+	texturefile = "gfx/interface/goals/focus_generic_friend_gvin.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_goal_generic_friend_lomakia"
+	texturefile = "gfx/interface/goals/focus_generic_friend_lomakia.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_CHB_hype_army"
+	texturefile = "gfx/interface/goals/focus_CHB_hype_army.dds"			
+	}		
+
+	SpriteType = {
+	name = "GFX_goal_generic_friend_flack"
+	texturefile = "gfx/interface/goals/focus_generic_friend_flack.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_CHB_hametova_destroy"
+	texturefile = "gfx/interface/goals/focus_CHB_hametova_destroy.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_CHB_arrest_cat"
+	texturefile = "gfx/interface/goals/focus_CHB_arrest_cat.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_CHB_tiktok_prop"
+	texturefile = "gfx/interface/goals/focus_CHB_tiktok_prop.dds"			
+	}
 	
 	SpriteType = {
 	name = "GFX_goal_dre_edinstvo"
