@@ -7,7 +7,7 @@ focus_tree = {
 			tag = CHB
 		}
 	}
-    continuous_focus_position = { x = 50 y = 3000 }
+    continuous_focus_position = { x = 50 y = 1600 }
 	default = no
 	focus = {
 		id = chb_policits_effort
@@ -257,11 +257,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 50
-			add_popularity = {
-    			ideology = fascism
-    			popularity = 0.1
-			}
-			add_stability = 0.05
+
 		}
 		x = -1
 		y = 1
@@ -278,6 +274,11 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 100
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.1
+			}
+			add_stability = 0.05
 		}
 		x = 0
 		y = 1
@@ -292,7 +293,7 @@ focus_tree = {
 		prerequisite = { focus = chb_fascism_path }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = CHB_at_the_helm
 		}
 		x = 0
 		y = 1
@@ -307,7 +308,10 @@ focus_tree = {
 		prerequisite = { focus = chb_fascism_party_at_the_helm }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = {
+				idea = CHB_massive_rearmament_idea
+				days = 500
+			}
 		}
 		x = -2
 		y = 1
@@ -337,7 +341,25 @@ focus_tree = {
 		prerequisite = { focus = chb_fascism_party_at_the_helm }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_doctrine_cost_reduction = {
+				name = GER_the_prussian_legacy
+				cost_reduction = 0.3
+				uses = 2
+				category = cat_superior_firepower
+			}
+
+			add_tech_bonus = {
+				name = GER_artillery_bombardment
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = GER_artillery_bombardment
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 		x = 2
 		y = 1
@@ -353,7 +375,7 @@ focus_tree = {
         prerequisite = { focus = chb_firepower }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = ARA_arrested_opposition
 		}
 		x = 0
 		y = 1
@@ -368,7 +390,7 @@ focus_tree = {
 		prerequisite = { focus = chb_destroy_opposition }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = CHB_red_threat_idea
 		}
 		x = -1
 		y = 1
@@ -382,8 +404,17 @@ focus_tree = {
 		icon = GFX_goal_CHB_arrest_cat
 		prerequisite = { focus = chb_red_threat }
 		cost = 10
+
+		available = {
+			communism < 0.06
+		}
+
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+    			ideology = communism
+    			popularity = -1
+			}
+			add_stability = -0.05
 		}
 		x = 0
 		y = 1
@@ -398,7 +429,7 @@ focus_tree = {
 		prerequisite = { focus = chb_destroy_opposition }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = CHB_influence_of_trends_idea
 		}
 		x = 1
 		y = 1
@@ -412,8 +443,17 @@ focus_tree = {
 		icon = GFX_focus_SWE_radiotjanst
 		prerequisite = { focus = chb_influence_of_trends }
 		cost = 10
+
+		available = {
+			hypecratia < 0.1
+		}
+
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+    			ideology = hypecratia
+    			popularity = -1
+			}
+			add_stability = 0.02
 		}
 		x = 0
 		y = 1
@@ -445,6 +485,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 100
+			add_war_support = 0.05
 		}
 		x = 2
 		y = 1
@@ -459,7 +500,7 @@ focus_tree = {
 		prerequisite = { focus = chb_balkan_frontier }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			LOM = { country_event = { id = chicken.25 days = 3 } }
 		}
 		x = -1
 		y = 1
@@ -474,7 +515,7 @@ focus_tree = {
 		prerequisite = { focus = chb_lomaupolis_ultimatum }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			LOM = { country_event = { id = chicken.26 days = 3 } }
 		}
 		x = 0
 		y = 1
@@ -489,7 +530,18 @@ focus_tree = {
 		prerequisite = { focus = chb_balkan_frontier }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			82 = {
+				add_core_of = CHB
+			}
+			83 = {
+				add_core_of = CHB
+			}
+			76 = {
+				add_core_of = CHB
+			}
+			84 = {
+				add_core_of = CHB
+			}
 		}
 		x = 1
 		y = 1
@@ -504,7 +556,10 @@ focus_tree = {
 		prerequisite = { focus = chb_restore_east_claims }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			create_wargoal = {
+				type = annex_everything
+				target = GVI
+			}
 		}
 		x = 0
 		y = 1
@@ -519,7 +574,10 @@ focus_tree = {
 		prerequisite = { focus = chb_finish_off_gvin focus = chb_demand_lomakia_integration }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			create_wargoal = {
+				type = annex_everything
+				target = FLA
+			}
 		}
 		x = -1
 		y = 1
@@ -549,11 +607,29 @@ focus_tree = {
 		prerequisite = { focus = chb_demand_cyprus focus = chb_military_exercises }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			create_wargoal = {
+				type = annex_everything
+				target = HAM
+			}
 		}
 		x = -2
 		y = 1
 		relative_position_id = chb_demand_cyprus
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_ya_chickenbeconez
+		icon = GFX_goal_chb_ya_bekon
+		prerequisite = { focus = chb_clear_the_world_from_hypecratia }
+		cost = 10
+		completion_reward = {
+			add_ideas = iam_chicken_bekon
+		}
+		x = 0
+		y = 1
+		relative_position_id = chb_clear_the_world_from_hypecratia
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -568,6 +644,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 100
+			add_stability = 0.05
 		}
 		x = -2
 		y = 1
@@ -582,7 +659,7 @@ focus_tree = {
 		prerequisite = { focus = chb_secure_neighbours }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			GVI = { country_event ={ id = chicken.22 days = 3 } }
 		}
 		x = -1
 		y = 1
@@ -597,7 +674,7 @@ focus_tree = {
 		prerequisite = { focus = chb_secure_neighbours }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			LOM = { country_event ={ id = chicken.23 days = 3 } }
 		}
 		x = 1
 		y = 1
@@ -612,7 +689,7 @@ focus_tree = {
 		prerequisite = { focus = chb_safeguard_lomakia focus = chb_safeguard_gvin }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			FLA = { country_event ={ id = chicken.24 days = 3 } }
 		}
 		x = -1
 		y = 1
@@ -653,7 +730,7 @@ focus_tree = {
 
 	focus = {
 		id = chb_military_exercises
-		icon = GFX_focus_BRA_reach_out_to_military_dem
+		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = chb_build_northern_line focus = chb_offer_military_support }
 		cost = 10
 		completion_reward = {
@@ -688,7 +765,7 @@ focus_tree = {
 		prerequisite = { focus = chb_communism_path }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = chicken_collective
 		}
 		x = 0
 		y = 1
@@ -702,7 +779,11 @@ focus_tree = {
 		prerequisite = { focus = chb_underground_agitation }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = {
+				idea = chb_workers_strikes_idea
+				days = 150
+			}
+			add_stability = -0.05
 		}
 		x = -1
 		y = 1
@@ -716,7 +797,11 @@ focus_tree = {
 		prerequisite = { focus = chb_underground_agitation }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+    			ideology = communism
+    			popularity = 0.1
+			}
+			add_stability = 0.03
 		}
 		x = 1
 		y = 1
@@ -730,8 +815,25 @@ focus_tree = {
 		icon = GFX_focus_GER_proletarian_solidarity
 		prerequisite = { focus = chb_leftwing_politicians focus = chb_workers_strikes }
 		cost = 10
+
+		available = {
+			communism > 0.33
+		}
+
+
 		completion_reward = {
-			add_political_power = 100
+			set_politics = {
+			    ruling_party = communism
+			    elections_allowed = no
+			}
+
+			start_civil_war = {
+				ideology = fascism
+				keep_all_characters = yes
+				size = 0.41
+				capital = 1027
+				states = { 1027 107 764 108 45 803 802 }
+			}
 		}
 		x = 0
 		y = 2
@@ -746,7 +848,7 @@ focus_tree = {
 		prerequisite = { focus = chb_proletariat_dawn }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = chb_world_revolution_idea
 		}
 		x = 2
 		y = 1
@@ -761,7 +863,7 @@ focus_tree = {
 		prerequisite = { focus = chb_world_revolution }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			custom_effect_tooltip = in_development
 		}
 		x = 0
 		y = 1
@@ -776,7 +878,12 @@ focus_tree = {
 		prerequisite = { focus = chb_proletariat_dawn }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = YUG_kotikyvlasti
+			add_popularity = {
+    			ideology = communism
+    			popularity = 0.05
+			}
+			add_stability = 0.03
 		}
 		x = -1
 		y = 1
@@ -791,7 +898,12 @@ focus_tree = {
 		prerequisite = { focus = chb_socialism_building }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+    			ideology = fascism
+    			popularity = -0.08
+			}
+			add_stability = -0.02
+			add_war_support = 0.03
 		}
 		x = -1
 		y = 1
@@ -806,7 +918,59 @@ focus_tree = {
 		prerequisite = { focus = chb_clean_old_apparat }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			add_stability = -0.05
+			add_war_support = 0.03
 		}
 		x = 0
 		y = 1
@@ -821,7 +985,7 @@ focus_tree = {
 		prerequisite = { focus = chb_socialism_building }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = chb_com_with_a_human_face_idea
 		}
 		x = 1
 		y = 1
@@ -836,7 +1000,7 @@ focus_tree = {
 		prerequisite = { focus = chb_com_with_a_human_face }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = chb_rfca
 		}
 		x = 0
 		y = 2
@@ -845,243 +1009,542 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-    focus = {
-		id = chb_rearmament_plan
-		icon = GFX_focus_secret_rearmament
+
+	################################
+	######REARMAMENT FOCUSES########
+	################################
+
+	focus = {
+		id = chb_economic_vector_of_the_nation
+		icon = GFX_focus_generic_economic_recovery
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+  			add_political_power = 25
+  			add_country_leader_trait = {
+  			  trait = economic_cautious
+  			  remove = no
+  			}
 		}
-		x = 14
+		x = 16
 		y = 0
 		relative_position_id = chb_policits_effort
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-    focus = {
-		id = chb_mazokgrad_development
-		icon = GFX_goal_generic_construction
-        prerequisite = { focus = chb_rearmament_plan }
+	focus = {
+		id = chb_structural_assessment_of_production
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = chb_economic_vector_of_the_nation }
+		mutually_exclusive = { focus = chb_industry_renisance }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+  			add_political_power = 50
+  			add_timed_idea = { idea = CHB_production_audit days = 720 }
 		}
-		x = -2
+		x = -3
 		y = 1
-		relative_position_id = chb_rearmament_plan
+		relative_position_id = chb_economic_vector_of_the_nation
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-    focus = {
-		id = chb_national_railways
-		icon = GFX_focus_generic_railroad
-        prerequisite = { focus = chb_mazokgrad_development }
+	focus = {
+		id = chb_simplification_of_bureaucracy
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = chb_structural_assessment_of_production }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+  			add_stability = 0.03
+  			add_political_power = 25
+		}
+		x = 1
+		y = 1
+		relative_position_id = chb_structural_assessment_of_production
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_creation_of_longterm_military_fund
+		icon = GFX_focus_SWI_issue_war_bonds
+		prerequisite = { focus = chb_simplification_of_bureaucracy }
+		cost = 10
+		completion_reward = {
+			add_ideas = CHB_war_fund
 		}
 		x = 0
 		y = 1
-		relative_position_id = chb_mazokgrad_development
+		relative_position_id = chb_simplification_of_bureaucracy
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-    focus = {
-		id = chb_national_defence_fund
-		icon = GFX_goal_generic_defence
-        prerequisite = { focus = chb_national_railways }
+	focus = {
+		id = chb_development_of_civil_infrastructure
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = chb_structural_assessment_of_production }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
-		}
-		x = 0
-		y = 2
-		relative_position_id = chb_national_railways
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_mazokgrad_science
-		icon = GFX_focus_research2
-        prerequisite = { focus = chb_rearmament_plan }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = 0
-		y = 1
-		relative_position_id = chb_rearmament_plan
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_hungar_inf
-		icon = GFX_focus_HUN_wherever_the_cross_points
-        prerequisite = { focus = chb_rearmament_plan }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = 2
-		y = 1
-		relative_position_id = chb_rearmament_plan
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_new_chicken_industry
-		icon = GFX_focus_generic_industry_3
-        prerequisite = { focus = chb_hungar_inf }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = 2
-		y = 1
-		relative_position_id = chb_hungar_inf
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_expand_bosnian_industry
-		icon = GFX_focus_generic_military_industry
-        prerequisite = { focus = chb_new_chicken_industry }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = 0
-		y = 1
-		relative_position_id = chb_new_chicken_industry
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_modernize_hungar_industry
-		icon = GFX_goal_generic_build_tank
-        prerequisite = { focus = chb_expand_bosnian_industry }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = 0
-		y = 1
-		relative_position_id = chb_expand_bosnian_industry
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_expand_albanian_resources
-		icon = GFX_focus_generic_resource_extraction
-        prerequisite = { focus = chb_hungar_inf }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = 2
-		y = 0
-		relative_position_id = chb_new_chicken_industry
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_expand_mazokgrad_university
-		icon = GFX_goal_generic_scientific_exchange
-        prerequisite = { focus = chb_hungar_inf }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = 4
-		y = 0
-		relative_position_id = chb_new_chicken_industry
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_national_education
-		icon = GFX_focus_SWE_education_reform
-        prerequisite = { focus = chb_expand_mazokgrad_university }
-        mutually_exclusive = { focus = chb_abolish_segregated_seating }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = -2
-		y = 1
-		relative_position_id = chb_expand_mazokgrad_university
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_abolish_segregated_seating
-		icon = GFX_goal_support_democracy
-        prerequisite = { focus = chb_expand_mazokgrad_university }
-        mutually_exclusive = { focus = chb_national_education }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = 0
-		y = 1
-		relative_position_id = chb_expand_mazokgrad_university
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_atomic_institute
-		icon = GFX_focus_generic_nuclear_development
-        prerequisite = { focus = chb_abolish_segregated_seating focus = chb_national_education }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = -1
 		y = 1
-		relative_position_id = chb_abolish_segregated_seating
+		relative_position_id = chb_structural_assessment_of_production
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-    focus = {
-		id = chb_southern_investments
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-        prerequisite = { focus = chb_hungar_inf }
+	focus = {
+		id = chb_modernization_of_logistics
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		prerequisite = { focus = chb_development_of_civil_infrastructure }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = CHB_logistics_initiative
 		}
 		x = 0
 		y = 1
-		relative_position_id = chb_hungar_inf
+		relative_position_id = chb_development_of_civil_infrastructure
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-    focus = {
-		id = chb_modernize_old_factories
-		icon = GFX_goal_generic_construct_civ_factory
-        prerequisite = { focus = chb_southern_investments }
+	focus = {
+		id = chb_longterm_contracting_relationships
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = chb_modernization_of_logistics focus = chb_creation_of_longterm_military_fund }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = CHB_defense_contract_stability
+		}
+		x = 1
+		y = 1
+		relative_position_id = chb_modernization_of_logistics
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_investments_in_technological_base
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = chb_longterm_contracting_relationships }
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHB_research_subsidies
+				days = 1500
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = chb_longterm_contracting_relationships
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_military_dev_through_private_sector
+		icon = GFX_focus_GER_integrated_economies
+		prerequisite = { focus = chb_longterm_contracting_relationships }
+		cost = 10
+		completion_reward = {
+			add_ideas = CHB_real_private_industry
+
+
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = chb_longterm_contracting_relationships
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_limited_industry_expansion
+		icon = GFX_focus_generic_modernize_industry
+		prerequisite = { focus = chb_military_dev_through_private_sector focus = chb_investments_in_technological_base }
+		cost = 10
+		completion_reward = {
+			if = {
+				random_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				random_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = chb_military_dev_through_private_sector
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_transition_to_mobilization_economy
+		icon = GFX_focus_generic_limited_social_mobilization
+		prerequisite = { focus = chb_limited_industry_expansion }
+		cost = 10
+		completion_reward = {
+			add_ideas = CHB_rational_mobilization
+		}
+		x = -1
+		y = 1
+		relative_position_id = chb_limited_industry_expansion
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_preparedness_for_protracted_war
+		icon = GFX_focus_generic_total_war
+		prerequisite = { focus = chb_transition_to_mobilization_economy }
+		prerequisite = { focus = chb_industry_coordination }
+		cost = 10
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CHB_rational_mobilization
+				add_idea = CHB_sustainable_defense_economy
+			}
+			add_stability = 0.05
+		}
+		x = 1
+		y = 1
+		relative_position_id = chb_transition_to_mobilization_economy
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_industry_coordination
+		icon = GFX_focus_generic_industrialists
+		prerequisite = { focus = chb_limited_industry_expansion }
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHB_civ_mil_coordination
+				days = 1000
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = chb_limited_industry_expansion
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+
+	focus = {
+		id = chb_industry_renisance
+		icon = GFX_focus_AUS_disregard_the_treaties
+		prerequisite = { focus = chb_economic_vector_of_the_nation }
+		mutually_exclusive = { focus = chb_structural_assessment_of_production}
+		cost = 10
+		completion_reward = {
+			if = {
+				random_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_timed_idea = {
+				idea = CHB_industrial_renaissance
+				days = 1230
+			}
+		}
+		x = 3
+		y = 1
+		relative_position_id = chb_economic_vector_of_the_nation
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_new_military_investments_plan
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
+		prerequisite = { focus = chb_industry_renisance }
+		cost = 10
+		completion_reward = {
+			if = {
+				random_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			add_ideas = CHB_private_mil_complex
+			add_stability = 0.05
+
+		}
+		x = 1
+		y = 1
+		relative_position_id = chb_industry_renisance
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_nationalisation_of_military_contracts
+		icon = GFX_focus_GER_customs_union
+		prerequisite = { focus = chb_industry_renisance }
+		cost = 10
+		completion_reward = {
+  			add_political_power = 50
+			add_ideas = CHB_centralized_defense_sector
+  			add_stability = -0.03
+		}
+		x = -1
+		y = 1
+		relative_position_id = chb_industry_renisance
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_extraplanned_mobilisation
+		icon = GFX_focus_GER_customs_union
+		prerequisite = { focus = chb_nationalisation_of_military_contracts focus = chb_new_military_investments_plan }
+		cost = 10
+		completion_reward = {
+			add_ideas = CHB_mobilization_economy
+		}
+		x = 1
+		y = 1
+		relative_position_id = chb_nationalisation_of_military_contracts
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_infrastructure_of_future
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = chb_extraplanned_mobilisation }
+		cost = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = CHB_supply_upgrade
+		}
+		x = -1
+		y = 1
+		relative_position_id = chb_extraplanned_mobilisation
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_accelerated_cycle_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = chb_extraplanned_mobilisation }
+		cost = 10
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_timed_idea = {
+				idea = CHB_fast_cycle_factories
+				days = 1000
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = chb_extraplanned_mobilisation
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_food_autarky
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = chb_infrastructure_of_future focus = chb_accelerated_cycle_factories }
+		cost = 10
+		completion_reward = {
+			add_ideas = CHB_food_autarky_idea
 		}
 		x = 0
 		y = 2
-		relative_position_id = chb_southern_investments
+		relative_position_id = chb_extraplanned_mobilisation
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_military_industrial_academy
+		icon = GFX_focus_generic_university_2
+		prerequisite = { focus = chb_food_autarky }
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHB_mil_undistry_academy
+				days = 1650
+			}
+		}
+		x = -1
+		y = 2
+		relative_position_id = chb_food_autarky
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_credit_issue_for_tanks
+		icon = GFX_focus_generic_tank_assembly
+		prerequisite = { focus = chb_food_autarky }
+		cost = 10
+		completion_reward = {
+			add_ideas = CHB_inflationary_defense_credit
+			country_event = { id = chicken.20 days = 120 }
+		}
+		x = 1
+		y = 2
+		relative_position_id = chb_food_autarky
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = chb_military_economy_of_the_full_cycle
+		icon = GFX_focus_SOV_merge_plants
+		prerequisite = { focus = chb_credit_issue_for_tanks focus = chb_military_industrial_academy }
+		cost = 10
+		completion_reward = {
+			add_ideas = tot_economic_mobilisation
+			country_event = { id = chicken.21 days = 10 }
+		}
+		x = -1
+		y = 1
+		relative_position_id = chb_credit_issue_for_tanks
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}

@@ -546,3 +546,242 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = chicken.20
+	title = chicken.20.t
+	desc = chicken.20.d
+	picture = GFX_report_event_tur_industry
+	
+	is_triggered_only = yes
+	
+	#CONTINUE
+	option = {
+		name = chicken.20.a
+		
+		swap_ideas = {
+			remove_idea = CHB_inflationary_defense_credit
+			add_idea = CHB_inflationary_defense_credit_4
+		}
+		add_stability = -0.1
+		add_political_power = -300
+	}	
+	
+	#STOP IT
+	option = {
+		name = chicken.20.b
+		remove_ideas = CHB_inflationary_defense_credit
+		add_stability = -0.07
+		add_political_power = -150
+		
+	}
+}
+
+country_event = {
+	id = chicken.21
+	title = chicken.21.t
+	desc = chicken.21.d
+	picture = GFX_report_event_tur_industry
+	
+	is_triggered_only = yes
+	
+	#CONTINUE
+	option = {
+		name = chicken.21.a
+		add_ideas = CHB_collapsing_home_front
+		add_stability = -0.05
+		add_political_power = -200
+	}	
+	
+	#STOP IT
+	option = {
+		name = chicken.21.b
+		add_ideas = civilian_economy
+	}
+}
+
+#saveguard gvin
+country_event = {
+	id = chicken.22
+	title = chicken.22.t
+	desc = chicken.22.d
+	picture = GFX_report_event_NOR_storting
+	
+	is_triggered_only = yes
+	
+	#Okey
+	option = {
+		name = chicken.22.a
+		CHB = {
+			puppet = {
+    			target = GVI
+    			end_wars = no
+			}
+		}
+	}	
+	
+	#No
+	option = {
+		name = chicken.22.b
+		CHB = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = GVI
+			}
+		}
+	}
+}
+
+#saveguard lomaka
+country_event = {
+	id = chicken.23
+	title = chicken.22.t
+	desc = chicken.23.d
+	picture = GFX_report_event_NOR_storting
+	
+	is_triggered_only = yes
+	
+	#Okey
+	option = {
+		name = chicken.22.a
+		CHB = {
+			puppet = {
+    			target = LOM
+    			end_wars = no
+			}
+		}
+	}	
+	
+	#No
+	option = {
+		name = chicken.22.b
+		CHB = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = LOM
+			}
+		}
+	}
+}
+
+#guaranties for stambul
+country_event = {
+	id = chicken.24
+	title = chicken.22.t
+	desc = chicken.24.d
+	picture = GFX_report_event_NOR_storting
+	
+	is_triggered_only = yes
+	
+	#Okey
+	option = {
+		name = chicken.24.a
+		797 = {
+			transfer_state_to = CHB
+		}
+		CHB = {
+			give_guarantee = FLA
+		}
+	}	
+	
+	#No
+	option = {
+		name = chicken.24.b
+		CHB = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = FLA
+			}
+		}
+	}
+}
+
+#demand lomaupolis ultimatum
+country_event = {
+	id = chicken.25
+	title = chicken.22.t
+	desc = chicken.25.d
+	picture = GFX_report_event_NOR_storting
+	
+	is_triggered_only = yes
+	
+	#Okey
+	option = {
+		name = chicken.25.a
+		184 = {
+			transfer_state_to = CHB
+		}
+	}	
+	
+	#No
+	option = {
+		name = chicken.24.b
+		CHB = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = LOM
+			}
+		}
+	}
+}
+
+#demand lomaka integration
+country_event = {
+	id = chicken.26
+	title = chicken.26.t
+	desc = chicken.26.d
+	picture = GFX_report_event_NOR_storting
+	
+	is_triggered_only = yes
+	
+	#Okey
+	option = {
+		name = chicken.26.a
+		CHB = {
+			annex_country = {
+			    target = LOM
+			    transfer_troops = no
+			}
+		}
+	}	
+	
+	#No
+	option = {
+		name = chicken.24.b
+		CHB = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = LOM
+			}
+		}
+	}
+}
+
+#demand cyprus
+country_event = {
+	id = chicken.27
+	title = chicken.26.t
+	desc = chicken.27.d
+	picture = GFX_report_event_NOR_storting
+	
+	is_triggered_only = yes
+	
+	#Okey
+	option = {
+		name = chicken.27.a
+		183 = {
+			transfer_state_to = CHB
+		}
+	}	
+	
+	#No
+	option = {
+		name = chicken.24.b
+		CHB = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = DKK
+			}
+		}
+	}
+}
