@@ -236,10 +236,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {FOCUS_FILTER_RESEARCH}	
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
 		completion_reward = {
-			female_random_scientist_chance = 0.15
-			experience_gain_army = 0.1
+			add_ideas = ARA_new_things
 		}
 	}
 
@@ -430,8 +430,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			trade_cost_for_target_factor = 0.3
-			extra_trade_to_overlord_factor = 0.2
+			add_ideas = ARA_new_laws
 		}
 	}
 
@@ -1759,10 +1758,9 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-           add_war_support = 0.15
-		   experience_gain_army = 0.25
-		   experience_gain_navy = 0.25
-		   experience_gain_air = 0.25
+        	add_war_support = 0.15
+
+			add_ideas = ARA_no_one_exept_aratoss
 		}
 	}
 

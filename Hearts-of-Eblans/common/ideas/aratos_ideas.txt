@@ -345,6 +345,18 @@ ideas = {
 				drift_defence_factor = 0.25
 			}
 		}		
+
+		ARA_no_one_exept_aratoss = {
+			removal_cost = -1
+
+			picture = por_monarchist_uprising
+
+			modifier = {
+				experience_gain_army = 0.12
+		   		experience_gain_navy = 0.1
+		   		experience_gain_air = 0.1
+			}
+		}	
 		
 		ARA_where_is_president = {
 			removal_cost = -1
@@ -548,6 +560,28 @@ ideas = {
 				resistance_decay = -0.7
 				resistance_growth = 0.03
 				power_balance_weekly = -0.005
+			}
+		}
+
+		ARA_new_things = {
+			removal_cost = -1
+
+			picture = CZE_zbrojovka_brno
+
+			modifier = {
+				female_random_scientist_chance = 0.15
+				experience_gain_army = 0.1
+			}
+		}
+
+		ARA_new_laws = {
+			removal_cost = -1
+
+			picture = CHL_asmar
+
+			modifier = {
+				trade_cost_for_target_factor = 0.3
+				extra_trade_to_overlord_factor = 0.2
 			}
 		}
 		

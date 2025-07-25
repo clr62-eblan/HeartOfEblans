@@ -11,406 +11,14 @@ focus_tree = {
 	
 	default = no
 	focus = {
-		id = PYA_Polit1
-		icon = GFX_goal_unknown
-		cost = 0
-		mutually_exclusive = {
-			focus = PYA_Polit2
-		}
-		x = 10
-		y = 0
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 5
-			}
-
-			set_politics = {
-				ruling_party = fascism
-    			elections_allowed = no
-			}
-			remove_ideas = sp_crisis
-		}
-
-	}
-	focus = {
 		id = PYA_Polit2
 		icon = GFX_goal_unknown
 		cost = 0
 		mutually_exclusive = {
 			focus = PYA_Polit1
 		}
-		x = 32
+		x = 16
 		y = 0
-
-	}
-	focus = {
-		id = PYA_fugabot1
-		icon = GFX_focus_PYA_fugatv1
-		cost = 0
-		prerequisite = {
-			focus = PYA_Polit1
-		}
-		mutually_exclusive = {
-			focus = PYA_regent1
-		}
-		x = 6
-		y = 1
-		
-		completion_reward = {
-			add_ideas = fugaboti
-		}
-
-	}
-	focus = {
-		id = PYA_fugobot2
-		icon = GFX_focus_PYA_fugatv2
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugabot1
-		}
-		x = 6
-		y = 2
-
-	}
-	focus = {
-		id = PYA_fugobot4
-		icon = GFX_focus_PYA_fugatv4
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot2
-		}
-		x = 4
-		y = 3
-		
-		completion_reward = {
-			add_ideas = joper_economic
-			}
-
-	}
-	focus = {
-		id = PYA_fugobot3
-		icon = GFX_focus_PYA_fugatv3
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot2
-		}
-		x = 6
-		y = 3
-
-	}
-	focus = {
-		id = PYA_fugobot5
-		icon = GFX_focus_PYA_fugatv5
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot3
-		}
-		x = 6
-		y = 4
-
-	}
-	focus = {
-		id = PYA_fugobot6
-		icon = GFX_focus_PYA_fugaboss2
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot4
-		}
-		x = 4
-		y = 4
-
-	}
-	focus = {
-		id = PYA_fugobot8
-		icon = GFX_focus_PYA_fugaboss4
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot6
-		}
-		prerequisite = {
-			focus = PYA_fugobot5
-		}
-		x = 6
-		y = 5
-
-	}
-	focus = {
-		id = PYA_fugobot7
-		icon = GFX_focus_PYA_fugatv7
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot3
-		}
-		x = 8
-		y = 4
-
-	}
-	focus = {
-		id = PYA_fugobot9
-		icon = GFX_focus_PYA_fugaboss
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot7
-		}
-		x = 8
-		y = 5
-
-	}
-	focus = {
-		id = PYA_fugobot10
-		icon = GFX_focus_PYA_fugatv6
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot9
-		}
-		prerequisite = {
-			focus = PYA_fugobot8
-		}
-		x = 7
-		y = 6
-
-	}
-	focus = {
-		id = PYA_fugobot12
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot10
-		}
-		x = 3
-		y = 7
-
-	}
-	focus = {
-		id = PYA_fugobot11
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot10
-		}
-		x = 7
-		y = 7
-
-	}
-	focus = {
-		id = PYA_fugobot14
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot11
-		}
-		x = 9
-		y = 8
-
-	}
-	focus = {
-		id = PYA_fugabot17
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot11
-		}
-		x = 5
-		y = 8
-
-	}
-	focus = {
-		id = PYA_fugabot15
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot14
-		}
-		x = 9
-		y = 9
-
-	}
-	focus = {
-		id = PYA_regent1
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_Polit1
-		}
-		mutually_exclusive = {
-			focus = PYA_fugabot1
-		}
-		x = 14
-		y = 1
-
-	}
-	focus = {
-		id = PYA_regent3
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent1
-		}
-		x = 12
-		y = 2
-
-	}
-	focus = {
-		id = PYA_regent2
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent1
-		}
-		x = 14
-		y = 2
-
-	}
-	focus = {
-		id = PYA_regent6
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent3
-		}
-		prerequisite = {
-			focus = PYA_regent2
-		}
-		x = 12
-		y = 3
-
-	}
-	focus = {
-		id = PYA_regent4
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent2
-		}
-		prerequisite = {
-			focus = PYA_regent3
-		}
-		x = 14
-		y = 3
-
-	}
-	focus = {
-		id = PYA_regent10
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent6
-		}
-		prerequisite = {
-			focus = PYA_regent4
-		}
-		x = 12
-		y = 4
-
-	}
-	focus = {
-		id = PYA_regent9
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent4
-		}
-		prerequisite = {
-			focus = PYA_regent6
-		}
-		x = 14
-		y = 4
-
-	}
-	focus = {
-		id = PYA_regent11
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent10
-		}
-		prerequisite = {
-			focus = PYA_regent9
-		}
-		x = 12
-		y = 5
-
-	}
-	focus = {
-		id = PYA_regent5
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent2
-		}
-		x = 16
-		y = 3
-
-	}
-	focus = {
-		id = PYA_regent7
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent5
-		}
-		x = 16
-		y = 4
-
-	}
-	focus = {
-		id = PYA_regent8
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent7
-		}
-		x = 16
-		y = 5
-
-	}
-	focus = {
-		id = PYA_regent12
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent8
-		}
-		prerequisite = {
-			focus = PYA_regent11
-		}
-		x = 14
-		y = 6
-
-	}
-	focus = {
-		id = PYA_regent13
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent12
-		}
-		x = 14
-		y = 7
-
-	}
-	focus = {
-		id = PYA_regent15
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent13
-		}
-		x = 16
-		y = 8
-
-	}
-	focus = {
-		id = PYA_regent16
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent13
-		}
-		x = 12
-		y = 8
 
 	}
 	focus = {
@@ -423,7 +31,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_boss1
 		}
-		x = 26
+		x = 10
 		y = 1
 
 	}
@@ -434,7 +42,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goiboss1
 		}
-		x = 26
+		x = 10
 		y = 2
 
 	}
@@ -445,7 +53,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goiboss2
 		}
-		x = 24
+		x = 8
 		y = 3
 
 	}
@@ -456,7 +64,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goiboss2
 		}
-		x = 26
+		x = 10
 		y = 3
 
 	}
@@ -467,7 +75,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goiboss5
 		}
-		x = 24
+		x = 8
 		y = 4
 
 	}
@@ -478,7 +86,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goiboss2
 		}
-		x = 28
+		x = 12
 		y = 3
 
 	}
@@ -492,7 +100,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goiboss4
 		}
-		x = 27
+		x = 12
 		y = 4
 
 	}
@@ -506,7 +114,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goiboss7
 		}
-		x = 26
+		x = 10
 		y = 5
 
 	}
@@ -520,9 +128,20 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_goibos18
 		}
-		x = 23
+		x = 8
 		y = 6
 
+	}
+	focus = {
+		id = PYA_goibos10
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = PYA_goiboss9
+		}
+		mutually_exclusive = { focus = PYA_goibos12 }
+		x = 8
+		y = 7
 	}
 	focus = {
 		id = PYA_goibos12
@@ -531,7 +150,8 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goiboss9
 		}
-		x = 21
+				mutually_exclusive = { focus = PYA_goibos10 }
+		x = 6
 		y = 7
 
 	}
@@ -542,9 +162,19 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goiboss9
 		}
-		x = 25
+		x = 10
 		y = 7
 
+	}
+	focus = {
+		id = PYA_goibos13
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = PYA_goiboss9
+		}
+		x = 10
+		y = 8
 	}
 	focus = {
 		id = PYA_goibos18
@@ -556,7 +186,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_goiboss9
 		}
-		x = 31
+		x = 14
 		y = 6
 
 	}
@@ -567,7 +197,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos18
 		}
-		x = 29
+		x = 13
 		y = 7
 
 	}
@@ -578,7 +208,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos18
 		}
-		x = 31
+		x = 15
 		y = 7
 
 	}
@@ -589,7 +219,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos18
 		}
-		x = 33
+		x = 17
 		y = 7
 
 	}
@@ -606,7 +236,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos20
 		}
-		x = 32
+		x = 16
 		y = 8
 
 	}
@@ -617,7 +247,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos22
 		}
-		x = 31
+		x = 15
 		y = 9
 
 	}
@@ -628,7 +258,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos22
 		}
-		x = 33
+		x = 17
 		y = 9
 
 	}
@@ -642,7 +272,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos24
 		}
-		x = 32
+		x = 16
 		y = 10
 
 	}
@@ -656,7 +286,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_goiboss1
 		}
-		x = 38
+		x = 22
 		y = 1
 
 	}
@@ -667,7 +297,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss1
 		}
-		x = 35
+		x = 19
 		y = 2
 
 	}
@@ -678,7 +308,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss3
 		}
-		x = 35
+		x = 19
 		y = 3
 
 	}
@@ -692,7 +322,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_boss7
 		}
-		x = 37
+		x = 21
 		y = 2
 
 	}
@@ -703,7 +333,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss2
 		}
-		x = 37
+		x = 21
 		y = 3
 
 	}
@@ -717,7 +347,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss5
 		}
-		x = 36
+		x = 20
 		y = 4
 
 	}
@@ -731,7 +361,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_boss2
 		}
-		x = 39
+		x = 23
 		y = 2
 
 	}
@@ -742,185 +372,11 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss7
 		}
-		x = 39
+		x = 23
 		y = 3
 
 	}
-	focus = {
-		id = PYA_fugobot13
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot11
-		}
-		x = 7
-		y = 8
-
-	}
-	focus = {
-		id = PYA_fugabot16
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot13
-		}
-		x = 7
-		y = 9
-
-	}
-	focus = {
-		id = PYA_fugabot18
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugabot17
-		}
-		x = 5
-		y = 9
-
-	}
-	focus = {
-		id = PYA_fugabot19
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugobot12
-		}
-		x = 3
-		y = 9
-
-	}
-	focus = {
-		id = PYA_fugabot20
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugabot19
-		}
-		x = 4
-		y = 10
-
-	}
-	focus = {
-		id = PYA_fugabot21
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugabot16
-		}
-		prerequisite = {
-			focus = PYA_fugabot15
-		}
-		prerequisite = {
-			focus = PYA_fugabot18
-		}
-		x = 8
-		y = 10
-
-	}
-	focus = {
-		id = PYA_fugabot22
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_fugabot21
-		}
-		prerequisite = {
-			focus = PYA_fugabot20
-		}
-		x = 6
-		y = 11
-
-	}
-	focus = {
-		id = PYA_regent14
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent13
-		}
-		x = 14
-		y = 8
-
-	}
-	focus = {
-		id = PYA_regent17
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent14
-		}
-		prerequisite = {
-			focus = PYA_regent15
-		}
-		x = 15
-		y = 9
-
-	}
-	focus = {
-		id = PYA_regent18
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent14
-		}
-		prerequisite = {
-			focus = PYA_regent16
-		}
-		x = 13
-		y = 9
-
-	}
-	focus = {
-		id = PYA_regent19
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent17
-		}
-		prerequisite = {
-			focus = PYA_regent18
-		}
-		prerequisite = {
-			focus = PYA_regent14
-		}
-		x = 14
-		y = 10
-
-	}
-	focus = {
-		id = PYA_regent20
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_regent19
-		}
-		x = 14
-		y = 11
-
-	}
-	focus = {
-		id = PYA_goibos10
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_goiboss9
-		}
-		x = 23
-		y = 7
-
-	}
-	focus = {
-		id = PYA_goibos13
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_goibos11
-		}
-		x = 25
-		y = 8
-
-	}
+	
 	focus = {
 		id = PYA_goibos14
 		icon = GFX_goal_unknown
@@ -931,7 +387,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos12
 		}
-		x = 22
+		x = 7
 		y = 8
 
 	}
@@ -942,7 +398,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos13
 		}
-		x = 25
+		x = 10
 		y = 9
 
 	}
@@ -956,7 +412,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos13
 		}
-		x = 23
+		x = 8
 		y = 9
 
 	}
@@ -970,7 +426,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos16
 		}
-		x = 24
+		x = 9
 		y = 10
 
 	}
@@ -981,7 +437,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_goibos25
 		}
-		x = 32
+		x = 16
 		y = 11
 
 	}
@@ -992,7 +448,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss1
 		}
-		x = 41
+		x = 25
 		y = 2
 
 	}
@@ -1003,7 +459,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss8
 		}
-		x = 41
+		x = 25
 		y = 3
 
 	}
@@ -1017,7 +473,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss9
 		}
-		x = 40
+		x = 24
 		y = 4
 
 	}
@@ -1029,7 +485,7 @@ focus_tree = {
 			focus = PYA_boss6
 			focus = PYA_boss111
 		}
-		x = 38
+		x = 22
 		y = 5
 
 	}
@@ -1040,7 +496,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss12
 		}
-		x = 36
+		x = 20
 		y = 6
 
 	}
@@ -1051,7 +507,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss12
 		}
-		x = 38
+		x = 22
 		y = 6
 
 	}
@@ -1062,7 +518,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss12
 		}
-		x = 40
+		x = 24
 		y = 6
 
 	}
@@ -1076,7 +532,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss14
 		}
-		x = 40
+		x = 24
 		y = 7
 
 	}
@@ -1087,7 +543,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss16
 		}
-		x = 40
+		x = 24
 		y = 8
 
 	}
@@ -1098,7 +554,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss14
 		}
-		x = 38
+		x = 22
 		y = 7
 
 	}
@@ -1109,7 +565,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss13
 		}
-		x = 36
+		x = 20
 		y = 7
 
 	}
@@ -1123,7 +579,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss19
 		}
-		x = 37
+		x = 21
 		y = 8
 
 	}
@@ -1137,7 +593,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_boss20
 		}
-		x = 39
+		x = 23
 		y = 9
 
 	}
