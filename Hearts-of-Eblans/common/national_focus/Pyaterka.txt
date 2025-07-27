@@ -11,47 +11,51 @@ focus_tree = {
 	
 	default = no
 	focus = {
-		id = PYA_Polit2
+		id = PYA_begin_new_prime
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 6
 		mutually_exclusive = {
 			focus = PYA_Polit1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 0.1
 		}
 		x = 16
 		y = 0
 
 	}
 	focus = {
-		id = PYA_goiboss1
+		id = PYA_return_old_vibes
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_Polit2
+			focus = PYA_begin_new_prime
 		}
 		mutually_exclusive = {
-			focus = PYA_boss1
+			focus = PYA_new_hype_wave
 		}
 		x = 10
 		y = 1
 
 	}
 	focus = {
-		id = PYA_goiboss2
+		id = PYA_return_orange_curtains
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss1
+			focus = PYA_return_old_vibes
 		}
 		x = 10
 		y = 2
 
 	}
 	focus = {
-		id = PYA_goiboss5
+		id = PYA_FBI_parade
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss2
+			focus = PYA_return_orange_curtains
 		}
 		x = 8
 		y = 3
@@ -60,9 +64,9 @@ focus_tree = {
 	focus = {
 		id = PYA_goiboss4
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss2
+			focus = PYA_return_orange_curtains
 		}
 		x = 10
 		y = 3
@@ -71,9 +75,9 @@ focus_tree = {
 	focus = {
 		id = PYA_goiboss7
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss5
+			focus = PYA_FBI_parade
 		}
 		x = 8
 		y = 4
@@ -82,9 +86,9 @@ focus_tree = {
 	focus = {
 		id = PYA_goiboss3
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss2
+			focus = PYA_return_orange_curtains
 		}
 		x = 12
 		y = 3
@@ -93,21 +97,21 @@ focus_tree = {
 	focus = {
 		id = PYA_goiboss6
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PYA_goiboss3
 		}
 		prerequisite = {
 			focus = PYA_goiboss4
 		}
-		x = 12
+		x = 11
 		y = 4
 
 	}
 	focus = {
-		id = PYA_goiboss8
+		id = PYA_full_return_to_sp
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PYA_goiboss6
 		}
@@ -119,482 +123,457 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PYA_goiboss9
+		id = PYA_communist_server
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss8
+			focus = PYA_full_return_to_sp
 		}
 		mutually_exclusive = {
-			focus = PYA_goibos18
+			focus = PYA_democratic_server
 		}
 		x = 8
 		y = 6
 
 	}
 	focus = {
-		id = PYA_goibos10
+		id = PYA_distribute_resources
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss9
+			focus = PYA_communist_server
 		}
-		mutually_exclusive = { focus = PYA_goibos12 }
+		mutually_exclusive = { focus = PYA_distribute_armor }
 		x = 8
 		y = 7
+		#плюсы к строительству и чуть минус ресы
 	}
 	focus = {
-		id = PYA_goibos12
+		id = PYA_distribute_armor
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss9
+			focus = PYA_communist_server
 		}
-				mutually_exclusive = { focus = PYA_goibos10 }
+				mutually_exclusive = { focus = PYA_distribute_resources }
 		x = 6
 		y = 7
-
+		#плюс к обороне дивизий и всякие баффы
 	}
 	focus = {
-		id = PYA_goibos11
+		id = PYA_protect_builders
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss9
+			focus = PYA_communist_server
 		}
 		x = 10
 		y = 7
 
 	}
 	focus = {
-		id = PYA_goibos13
+		id = PYA_protect_farmers
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss9
+			focus = PYA_protect_builders
 		}
 		x = 10
 		y = 8
+		#стабильность и плюсы к промке
 	}
 	focus = {
-		id = PYA_goibos18
+		id = PYA_democratic_server
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss8
+			focus = PYA_full_return_to_sp
 		}
 		mutually_exclusive = {
-			focus = PYA_goiboss9
+			focus = PYA_communist_server
 		}
-		x = 14
+		x = 15
 		y = 6
 
 	}
 	focus = {
-		id = PYA_goibos20
+		id = PYA_hunting_on_cheaters
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goibos18
+			focus = PYA_democratic_server
 		}
 		x = 13
-		y = 7
-
-	}
-	focus = {
-		id = PYA_goibos19
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_goibos18
-		}
-		x = 15
-		y = 7
-
-	}
-	focus = {
-		id = PYA_goibos21
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_goibos18
-		}
-		x = 17
-		y = 7
-
-	}
-	focus = {
-		id = PYA_goibos22
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_goibos21
-		}
-		prerequisite = {
-			focus = PYA_goibos19
-		}
-		prerequisite = {
-			focus = PYA_goibos20
-		}
-		x = 16
 		y = 8
 
 	}
 	focus = {
-		id = PYA_goibos24
+		id = PYA_introduce_general_elections
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goibos22
+			focus = PYA_democratic_server
+		}
+		x = 15
+		y = 7.5
+
+	}
+	focus = {
+		id = PYA_currency_development
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_democratic_server
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = PYA_otso_secret_laboratory
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_currency_development
+		}
+		prerequisite = {
+			focus = PYA_introduce_general_elections
+		}
+		prerequisite = {
+			focus = PYA_hunting_on_cheaters
 		}
 		x = 15
 		y = 9
+		#ячейка для исследований и плюс к изучению
+	}
+	focus = {
+		id = PYA_union_with_dipins
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_otso_secret_laboratory
+		}
+		mutually_exclusive = { focus = PYA_union_with_razdva }
+		x = 14
+		y = 10
 
 	}
 	focus = {
-		id = PYA_goibos23
+		id = PYA_union_with_razdva
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goibos22
+			focus = PYA_otso_secret_laboratory
 		}
-		x = 17
-		y = 9
-
-	}
-	focus = {
-		id = PYA_goibos25
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_goibos23
-		}
-		prerequisite = {
-			focus = PYA_goibos24
-		}
+		mutually_exclusive = { focus = PYA_union_with_dipins }
 		x = 16
 		y = 10
 
 	}
 	focus = {
-		id = PYA_boss1
+		id = PYA_protect_democracy
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_Polit2
+			focus = PYA_union_with_dipins
+			focus = PYA_union_with_razdva
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = PYA_new_hype_wave
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_begin_new_prime
 		}
 		mutually_exclusive = {
-			focus = PYA_goiboss1
+			focus = PYA_return_old_vibes
 		}
 		x = 22
 		y = 1
 
 	}
 	focus = {
-		id = PYA_boss3
+		id = PYA_make_time_for_hype
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_boss1
-		}
-		x = 19
-		y = 2
-
-	}
-	focus = {
-		id = PYA_boss5
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss3
-		}
-		x = 19
-		y = 3
-
-	}
-	focus = {
-		id = PYA_boss2
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss1
+			focus = PYA_new_hype_wave
 		}
 		mutually_exclusive = {
-			focus = PYA_boss7
+			focus = PYA_make_time_for_minecraft
 		}
-		x = 21
+		x = 19
 		y = 2
-
+		#полит советники яйцефонк и мелшер
 	}
 	focus = {
-		id = PYA_boss4
+		id = PYA_new_music
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_boss2
+			focus = PYA_make_time_for_hype
 		}
-		x = 21
+		completion_reward = {
+
+		}
+		x = 19
 		y = 3
 
 	}
 	focus = {
-		id = PYA_boss6
+		id = PYA_internet_hype_force
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_boss4
+			focus = PYA_new_hype_wave
 		}
+		mutually_exclusive = {
+			focus = PYA_local_dictator_force
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+			add_popularity = {
+                ideology = hypecratia
+                popularity = 0.15
+            }
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = PYA_become_a_meme
+		icon = GFX_goal_unknown
+		cost = 10
 		prerequisite = {
-			focus = PYA_boss5
+			focus = PYA_internet_hype_force
+		}
+		x = 21
+		y = 4
+		#идея настоящий мем
+	}
+	focus = {
+		id = PYA_42_force
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_new_music
 		}
 		x = 20
-		y = 4
-
+		y = 5
+		#прикольный 42 ивент
 	}
 	focus = {
-		id = PYA_boss7
+		id = PYA_local_dictator_force
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_boss1
+			focus = PYA_new_hype_wave
 		}
 		mutually_exclusive = {
-			focus = PYA_boss2
-		}
-		x = 23
-		y = 2
-
-	}
-	focus = {
-		id = PYA_boss9
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss7
+			focus = PYA_internet_hype_force
 		}
 		x = 23
 		y = 3
+		completion_reward = {
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.2
+            }
+			add_stability = 0.1
+			add_command_power = 25
+		}
+	}
+	focus = {
+		id = PYA_the_main_fascist
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_local_dictator_force
+		}
+		x = 23
+		y = 4
+		#можно добавить еку фашиста-милитариста
+	}
+	
+	focus = {
+		id = PYA_extend_nether_hyperloop
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_distribute_resources
+			focus = PYA_distribute_armor
+		}
+		x = 7
+		y = 8
+		#железные дороги и инфраструктура
+	}
+	focus = {
+		id = PYA_build_giant_iron_farm
+		icon = GFX_goal_unknown
+		cost = 15
+		prerequisite = {
+			focus = PYA_protect_farmers
+		}
+		x = 10
+		y = 9
+		#плюсы к стали и фабрикам
+	}
+	focus = {
+		id = PYA_spread_red_mold
+		icon = GFX_goal_unknown
+		cost = 15
+		prerequisite = {
+			focus = PYA_extend_nether_hyperloop
+		}
+		x = 8
+		y = 9
+		#цель войны на восточную сканинавию и идея +коммунизма у мистера пятерки
+	}
+	focus = {
+		id = PYA_communist_schizophrenia
+		icon = GFX_goal_unknown
+		cost = 25
+		prerequisite = {
+			focus = PYA_build_giant_iron_farm
+		}
+		prerequisite = {
+			focus = PYA_spread_red_mold
+		}
+		x = 9
+		y = 10
+		#ультиматум тохе плюсы к комунизму и так далее
+	}
+	focus = {
+		id = PYA_make_time_for_minecraft
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_new_hype_wave
+		}
+		mutually_exclusive = {
+			focus = PYA_make_time_for_hype
+		}
+		x = 25
+		y = 2
+		#полит советники ханов както
+	}
+	focus = {
+		id = PYA_visit_the_servers
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_make_time_for_minecraft
+		}
+		x = 25
+		y = 3
+		#уберется кризис на сп5
+	}
+	focus = {
+		id = PYA_farm_development_sp
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_visit_the_servers
+		}
+		x = 24
+		y = 5
+		#плюсы к производству и ресурсам чуть чуть
+	}
+	focus = {
+		id = PYA_create_freakland
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_42_force
+			focus = PYA_farm_development_sp
+		}
+		x = 22
+		y = 6
+		#суперивент
+	}
+	focus = {
+		id = PYA_hype_expansion
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_create_freakland
+		}
+		x = 20
+		y = 7
+		#цель войны на восточную скандинавию и кашу
+	}
+	focus = {
+		id = PYA_sponsor_fugabots
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_create_freakland
+		}
+		x = 22
+		y = 7
+		#
+	}
+	focus = {
+		id = PYA_destroy_cloaka_mol
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = PYA_create_freakland
+		}
+		x = 24
+		y = 7
 
 	}
 	
 	focus = {
-		id = PYA_goibos14
+		id = PYA_new_youtube_content
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goibos10
+			focus = PYA_build_water_hyperloops
 		}
-		prerequisite = {
-			focus = PYA_goibos12
-		}
-		x = 7
-		y = 8
-
-	}
-	focus = {
-		id = PYA_goibos15
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_goibos13
-		}
-		x = 10
+		mutually_exclusive = { focus = PYA_continue_tiktok_hype }
+		x = 24
 		y = 9
 
 	}
 	focus = {
-		id = PYA_goibos16
+		id = PYA_build_water_hyperloops
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_goibos14
+			focus = PYA_sponsor_fugabots
 		}
+		x = 22
+		y = 8
+		#инфраструктура и скорость дивизий
+	}
+	focus = {
+		id = PYA_continue_tiktok_hype
+		icon = GFX_goal_unknown
+		cost = 10
 		prerequisite = {
-			focus = PYA_goibos13
+			focus = PYA_build_water_hyperloops
 		}
-		x = 8
+		mutually_exclusive = { focus = PYA_new_youtube_content }
+		x = 20
 		y = 9
 
 	}
 	focus = {
-		id = PYA_goibos17
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_goibos15
-		}
-		prerequisite = {
-			focus = PYA_goibos16
-		}
-		x = 9
-		y = 10
-
-	}
-	focus = {
-		id = PYA_goibos26
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_goibos25
-		}
-		x = 16
-		y = 11
-
-	}
-	focus = {
-		id = PYA_boss8
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss1
-		}
-		x = 25
-		y = 2
-
-	}
-	focus = {
-		id = PYA_boss10
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss8
-		}
-		x = 25
-		y = 3
-
-	}
-	focus = {
-		id = PYA_boss111
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss10
-		}
-		prerequisite = {
-			focus = PYA_boss9
-		}
-		x = 24
-		y = 4
-
-	}
-	focus = {
-		id = PYA_boss12
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss6
-			focus = PYA_boss111
-		}
-		x = 22
-		y = 5
-
-	}
-	focus = {
-		id = PYA_boss13
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss12
-		}
-		x = 20
-		y = 6
-
-	}
-	focus = {
-		id = PYA_boss14
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss12
-		}
-		x = 22
-		y = 6
-
-	}
-	focus = {
-		id = PYA_boss15
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss12
-		}
-		x = 24
-		y = 6
-
-	}
-	focus = {
-		id = PYA_boss16
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss15
-		}
-		prerequisite = {
-			focus = PYA_boss14
-		}
-		x = 24
-		y = 7
-
-	}
-	focus = {
-		id = PYA_boss17
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss16
-		}
-		x = 24
-		y = 8
-
-	}
-	focus = {
-		id = PYA_boss18
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss14
-		}
-		x = 22
-		y = 7
-
-	}
-	focus = {
-		id = PYA_boss19
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss13
-		}
-		x = 20
-		y = 7
-
-	}
-	focus = {
-		id = PYA_boss20
-		icon = GFX_goal_unknown
-		cost = 0
-		prerequisite = {
-			focus = PYA_boss18
-		}
-		prerequisite = {
-			focus = PYA_boss19
-		}
-		x = 21
-		y = 8
-
-	}
-	focus = {
-		id = PYA_boss21
+		id = PYA_create_42_empire
 		icon = GFX_PYA_boss21
-		cost = 0
+		cost = 10
 		prerequisite = {
-			focus = PYA_boss17
+			focus = PYA_new_youtube_content
+			focus = PYA_continue_tiktok_hype
 		}
-		prerequisite = {
-			focus = PYA_boss20
-		}
-		x = 23
-		y = 9
+		x = 22
+		y = 10
 
 	}
 }
