@@ -40,7 +40,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PYA_return_orange_curtains
+		id = PYA_hang_orange_curtains
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -51,72 +51,72 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PYA_FBI_parade
+		id = PYA_joper_economic_plan
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = PYA_return_orange_curtains
+			focus = PYA_hang_orange_curtains
 		}
 		x = 8
 		y = 3
-
+		#возвращает легенд по типу брисона
 	}
 	focus = {
-		id = PYA_goiboss4
+		id = PYA_upgrade_navy
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = PYA_return_orange_curtains
+			focus = PYA_hang_orange_curtains
 		}
 		x = 10
 		y = 3
 
 	}
 	focus = {
-		id = PYA_goiboss7
+		id = PYA_FBI_parade
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = PYA_FBI_parade
+			focus = PYA_joper_economic_plan
 		}
 		x = 8
 		y = 4
-
+		#поддержка войны +командный ресурс
 	}
 	focus = {
-		id = PYA_goiboss3
+		id = PYA_elytras_for_troops
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = PYA_return_orange_curtains
+			focus = PYA_hang_orange_curtains
 		}
 		x = 12
 		y = 3
 
 	}
 	focus = {
-		id = PYA_goiboss6
+		id = PYA_start_pirate_invasions
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss3
+			focus = PYA_elytras_for_troops
 		}
 		prerequisite = {
-			focus = PYA_goiboss4
+			focus = PYA_upgrade_navy
 		}
 		x = 11
 		y = 4
-
+		#пиратские нашествия будут мешать соседям и в том числе аратосу
 	}
 	focus = {
 		id = PYA_full_return_to_sp
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = PYA_goiboss6
+			focus = PYA_start_pirate_invasions
 		}
 		prerequisite = {
-			focus = PYA_goiboss7
+			focus = PYA_FBI_parade
 		}
 		x = 10
 		y = 5
@@ -169,10 +169,10 @@ focus_tree = {
 		}
 		x = 10
 		y = 7
-
+		#плюсы к строитльству фабрик
 	}
 	focus = {
-		id = PYA_protect_farmers
+		id = PYA_remove_villagers_restrictions
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -180,7 +180,7 @@ focus_tree = {
 		}
 		x = 10
 		y = 8
-		#стабильность и плюсы к промке
+		#минус стабильность и плюсы к промке
 	}
 	focus = {
 		id = PYA_democratic_server
@@ -416,7 +416,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 15
 		prerequisite = {
-			focus = PYA_protect_farmers
+			focus = PYA_remove_villagers_restrictions
 		}
 		x = 10
 		y = 9
