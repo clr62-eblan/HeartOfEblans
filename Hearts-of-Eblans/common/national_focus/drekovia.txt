@@ -1133,9 +1133,9 @@ focus_tree = {
 		id = DRE_preparing_for_the_inevitable
 		icon = GFX_goal_dre_zakon
 		relative_position_id = DRE_subjugate_zolo_economics
-		prerequisite = { focus = DRE_morphi_subordination_order focus = DRE_restore_african_estates}
+		prerequisite = { focus = DRE_subjugate_zolo_economics }
 		x = 0
-		y = 2
+		y = 1
 
 		cost = 10
 
@@ -5891,71 +5891,71 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = DRE_restore_african_estates
-		icon = GFX_goal_DRE_african_expansion
-		relative_position_id = DRE_subjugate_zolo_economics
-		prerequisite = { focus = DRE_subjugate_zolo_economics }
-		x = -1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			ZUS = {
-				country_event = { id = drek.31 days = 2 }
-			}
-		}
-	}
-
-	focus = {
-		id = DRE_morphi_subordination_order
-		icon = GFX_focus_generic_subjugation
-		relative_position_id = DRE_subjugate_zolo_economics
-		prerequisite = { focus = DRE_subjugate_zolo_economics }
-		x = 1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			MOY = { country_event = { id = drek.24 days = 2 } }
-		}
-	}
+	#focus = {
+	#	id = DRE_restore_african_estates
+	#	icon = GFX_goal_DRE_african_expansion
+	#	relative_position_id = DRE_subjugate_zolo_economics
+	#	prerequisite = { focus = DRE_subjugate_zolo_economics }
+	#	x = -1
+	#	y = 1
+#
+	#	cost = 10
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	available = {
+#
+	#	}
+#
+	#	bypass = {
+#
+	#	}
+#
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+#
+	#	search_filters = { FOCUS_FILTER_POLITICAL }
+	#	completion_reward = {
+	#		ZUS = {
+	#			country_event = { id = drek.31 days = 2 }
+	#		}
+	#	}
+	#}
+#
+	#focus = {
+	#	id = DRE_morphi_subordination_order
+	#	icon = GFX_focus_generic_subjugation
+	#	relative_position_id = DRE_subjugate_zolo_economics
+	#	prerequisite = { focus = DRE_subjugate_zolo_economics }
+	#	x = 1
+	#	y = 1
+#
+	#	cost = 10
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	available = {
+#
+	#	}
+#
+	#	bypass = {
+#
+	#	}
+#
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+#
+	#	search_filters = { FOCUS_FILTER_POLITICAL }
+	#	completion_reward = {
+	#		MOY = { country_event = { id = drek.24 days = 2 } }
+	#	}
+	#}
 
 	focus = {
 		id = DRE_rally_the_opposition
@@ -6835,8 +6835,8 @@ focus = {
 
 		completion_reward = {
 			add_timed_idea = {
-    		idea = DRE_military_economic_boost
-    		days = 120
+    			idea = DRE_military_economic_boost
+    			days = 120
 			}
 		}
 		available = {
@@ -7105,7 +7105,7 @@ focus = {
 
 	focus = {
 		id = DRE_shoot_vips
-		icon = GFX_focus_GER_absorb_the_abwehr
+		icon = GFX_focus_generic_national_security
 		relative_position_id = DRE_army_of_liberators
 		prerequisite = { focus = DRE_mobilize_sturmers focus = DRE_arms_factories}
 		x = 0

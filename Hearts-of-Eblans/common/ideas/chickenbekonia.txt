@@ -82,6 +82,26 @@ ideas = {
 			
 		}
 
+		CHB_internet_mobilisation_idea = {
+			
+			picture = internet_warfare
+
+			allowed = {
+				original_tag = CHB
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.03
+				training_time_factor = -0.05
+			}
+			
+		}
+
 		CHB_red_threat_idea = {
 			
 			picture = generic_communism_banned
@@ -97,6 +117,49 @@ ideas = {
 			
 			modifier = {
 				communism_drift = -0.02
+			}
+			
+		}
+
+		CHB_tech_breakthrough_idea = {
+			
+			picture = generic_pp_unity_bonus
+
+
+			allowed = {
+				original_tag = CHB
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				research_bonus = 0.08
+				scientist_breakthrough_bonus_factor = 0.05
+			}
+			
+		}
+
+		CHB_digital_war_idea = {
+			
+			picture = generic_rocket_bonus
+
+
+			allowed = {
+				original_tag = CHB
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.05
+				experience_gain_navy_factor = 0.05
+				experience_gain_air_factor = 0.05
 			}
 			
 		}
@@ -781,6 +844,101 @@ ideas = {
 				annex_cost_factor = 0.03
 			}
 		}
+
+		chb_meme_revive_idea = {
+		
+			allowed = {
+				always = no
+			}
+		
+			removal_cost = -1
+
+			picture = CHB_meme_revive
+
+			modifier = {
+				hypecratia_drift = 0.05
+				war_support_factor = 0.03
+				stability_factor = 0.02
+			}
+		}
+
+		chb_digital_revolution_idea = {
+		
+			allowed = {
+				always = no
+			}
+		
+			removal_cost = -1
+
+			picture = jap_supremacy_of_technology
+
+			modifier = {
+				research_bonus = {
+					electronics = 0.05
+				}
+				research_speed_factor = 0.03
+			}
+		}
+
+		chb_develop_social_media_idea = {
+		
+			allowed = {
+				always = no
+			}
+		
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+
+			modifier = {
+				research_bonus = {
+					electronics = 0.05
+				}
+				hypecratia_drift = 0.02
+				opinion_gain_monthly_same_ideology_factor = 0.35
+				opinion_gain_monthly_factor = 0.2
+				send_volunteers_tension = -0.15
+				send_volunteer_factor =  0.3
+			}
+		}
+
+		chb_antidrake_hype_idea = {
+		
+			allowed = {
+				always = no
+			}
+		
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+			    tag = DRE    # this can also take a variable that stores a scope
+			    attack_bonus_against = 0.05
+			    defense_bonus_against = 0.05
+				generate_wargoal_tension_against = -0.05
+				trade_cost_for_target_factor = 0.3
+			}
+		}
+
+		chb_digital_defense_idea = {
+		
+			allowed = {
+				always = no
+			}
+		
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				conscription = 0.003
+				bunker_max_level_terrain_limit = 1
+				coastal_bunker_max_level_terrain_limit = 1
+			}
+		}
+		
 		
 		
 		

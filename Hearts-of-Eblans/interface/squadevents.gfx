@@ -39,10 +39,20 @@ spriteTypes = {
 		name = "GFX_report_event_toha_coronation"
 		texturefile = "gfx/event_pictures/report_event_toha_coronation.dds"
 	}
+
+	spriteType = {
+		name = "GFX_report_event_milana_star"
+		texturefile = "gfx/event_pictures/milana_star.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_news_event_slay"
 		texturefile = "gfx/event_pictures/news_slay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_welcome_eblan"
+		texturefile = "gfx/event_pictures/welcome_eblan.dds"
 	}
 	
 	spriteType = {

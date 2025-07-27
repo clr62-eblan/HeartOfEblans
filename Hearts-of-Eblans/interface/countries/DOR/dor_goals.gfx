@@ -1,0 +1,58 @@
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_goal_DOR_guiding_principles"
+	texturefile = "gfx/interface/goals/focus_DOR_guide_principles.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_industrialisation"
+	texturefile = "gfx/interface/goals/focus_DOR_industrialisation.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_stability"
+	texturefile = "gfx/interface/goals/focus_DOR_stability.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_dora_power"
+	texturefile = "gfx/interface/goals/focus_DOR_dora_power.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_cuterock_rebirth"
+	texturefile = "gfx/interface/goals/focus_DOR_cuterock_rebirth_2.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_beer"
+	texturefile = "gfx/interface/goals/focus_DOR_beer.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_toilet"
+	texturefile = "gfx/interface/goals/focus_DOR_doras_toilet.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_return_pink_hair"
+	texturefile = "gfx/interface/goals/focus_DOR_return_pink_hair.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_wtf"
+	texturefile = "gfx/interface/goals/focus_DOR_wtf.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_fanarmy"
+	texturefile = "gfx/interface/goals/focus_DOR_fanarmy.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_DOR_friends"
+	texturefile = "gfx/interface/goals/focus_DOR_dora_friends.dds"			
+	}
+
+}

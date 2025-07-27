@@ -109,7 +109,7 @@ ideas = {
 		}
 
 		GON_digital_elite = {
-			icon = generic_volunteer_army
+			icon = RAJ_military_into_the_workforce
 			modifier = {
 				research_bonus = {
 					electronics = 0.03
@@ -120,7 +120,7 @@ ideas = {
 		}
 
 		GON_digital_propaganda_network = {
-			icon = generic_positive_trade_relations
+			icon = can_wartime_prices_and_trade_board
 			modifier = {
 				war_support_factor = 0.1
 				stability_factor = 0.02
@@ -131,7 +131,7 @@ ideas = {
 		}
 
 		GON_meme_politics_culture = {
-			icon = generic_positive_trade_relations
+			icon = MEX_politicised_army
 			modifier = {
 				stability_factor = 0.1
 				war_support_factor = 0.05
@@ -142,7 +142,7 @@ ideas = {
 		}
 
 		GON_ham_equipment_supply = {
-			icon = generic_purchase_mechanized_equipment
+			icon = generic_supply_line
 			modifier = {
 				equipment_bonus = {
 					mechanized_equipment = 0.1
@@ -155,7 +155,7 @@ ideas = {
 		}
 
 		GON_military_industry_expansion = {
-			icon = generic_military_industry
+			icon = SOV_third_five_year_plan_military
 			modifier = {
 				industrial_capacity_factor = 0.05
 				equipment_bonus = {
@@ -185,7 +185,7 @@ ideas = {
 		}
 
 		GON_economics_stagnation = {
-			picture = generic_democratic_opposition
+			picture = generic_devalue_currency
 			
 			allowed = {
 				original_tag = GON
@@ -227,8 +227,24 @@ ideas = {
 			modifier = {
 				stability_factor = -0.02
 				war_support_factor = -0.07
-				industrial_capacity_factory = -0.08
+				industrial_capacity_factory = -0.04
 				consumer_goods_factor = 0.3
+			}
+		}
+
+		GON_three_year_plan_2 = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = GON
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.01
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.03
+				consumer_goods_factor = 0.2
 			}
 		}
 
@@ -278,7 +294,7 @@ ideas = {
 		}
 
 		GON_expand_trand_heart_idea = {
-			picture = generic_foreign_capital
+			picture = export_focus
 			
 			allowed = {
 				original_tag = GON

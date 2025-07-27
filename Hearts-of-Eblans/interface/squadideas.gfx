@@ -529,7 +529,10 @@ spriteTypes = {
     }  
 	
 	
-	
+	spriteType = {
+        name = "GFX_idea_CHB_meme_revive"
+        texturefile = "gfx/interface/ideas/meme_revive.dds"
+    } 
 	
 
 	spriteType = {

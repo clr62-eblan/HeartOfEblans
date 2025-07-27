@@ -85,7 +85,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Стинт"
+	name = "Максильо Шабани де Стинто"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stint.dds"
 	expire = "2000.1.1"

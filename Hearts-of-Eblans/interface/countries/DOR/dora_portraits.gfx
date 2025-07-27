@@ -1,0 +1,17 @@
+SpriteTypes = {
+
+	SpriteType = {
+		name = "GFX_portrait_dora_zolo"
+		texturefile = "gfx/leaders/DOR/DOR_zolo.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_dora_cuterock"
+		texturefile = "gfx/leaders/DOR/DOR_cuterock.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_dora_dorism"
+		texturefile = "gfx/leaders/DOR/DOR_dorism.dds"
+	}	
+}

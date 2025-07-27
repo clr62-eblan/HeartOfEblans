@@ -590,3 +590,49 @@ country_event = {
 		}
 	}
 }
+
+
+#Milana STAR country
+country_event = {
+	id = gonduras.17
+	title = gonduras.17.t
+	desc = gonduras.17.d
+	picture = GFX_report_event_milana_star
+	is_triggered_only = yes
+
+	#MOBILIZE
+	option = {
+		name = gonduras.17.a
+		
+		release_on_controlled = MST
+		clr_country_flag = sheltered_likers
+		MST = {
+			add_ai_strategy = {
+			   type = alliance
+			   id = GON
+			   value = 100
+			}
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	#PUSTYAKI
+	option = {
+		name = gonduras.17.b
+		clr_country_flag = sheltered_likers
+		custom_effect_tooltip = MST_rise
+		hidden_effect = {
+			release_on_controlled = MST
+			MST = {
+				load_oob = "MST_war"
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+

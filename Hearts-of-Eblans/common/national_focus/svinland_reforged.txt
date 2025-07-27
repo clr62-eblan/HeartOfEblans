@@ -3029,7 +3029,7 @@ focus_tree = {
 
 	focus = {
 		id = SVI_equality_act
-		icon = GFX_ARA_communist
+		icon = GFX_focus_generic_communist
 		cost = 5
 		x = -1
 		y = 2
@@ -3414,8 +3414,8 @@ focus_tree = {
 		id = SVI_practice_defense_scenarios
 		icon = GFX_goal_generic_position_armies
 		cost = 5
-		x = 0
-		y = 2
+		x = -2
+		y = 3
 		relative_position_id = SVI_war_department
 		prerequisite = { focus = SVI_war_department }
 
@@ -3732,6 +3732,47 @@ focus_tree = {
     			type = annex_everything
     			target = KUS
 			}
+		}
+	}
+
+	focus = {
+		id = SVI_cheaters_stike
+		icon = GFX_goal_generic_political_pressure
+		cost = 5
+		x = 2
+		y = 3
+		relative_position_id = SVI_war_department
+		prerequisite = { focus = SVI_war_department }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SVI_vigilium_1
+		icon = GFX_goal_SVI_vigilium
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = SVI_cheaters_stike
+		prerequisite = { focus = SVI_cheaters_stike }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SVI_vigilium_2
+		icon = GFX_goal_SVI_vigilium2
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = SVI_vigilium_1
+		prerequisite = { focus = SVI_vigilium_1 }
+
+		completion_reward = {
+
 		}
 	}
 }

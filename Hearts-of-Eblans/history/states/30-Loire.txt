@@ -15,7 +15,7 @@ state={
 			air_base = 10
 		}
 		add_core_of = DPN
-		add_claim_by = MOY
+		add_core_of = MST
 	}
 	manpower=1388400
 	buildings_max_level_factor=1.000

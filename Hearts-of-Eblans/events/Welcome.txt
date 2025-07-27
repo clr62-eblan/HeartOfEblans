@@ -19,3 +19,41 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = welcome.2
+	title = welcome.2.t
+	desc = welcome.2.d
+	picture = GFX_report_event_welcome_dre
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = welcome.1.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+country_event = {
+	id = welcome.3
+	title = welcome.3.t
+	desc = welcome.3.d
+	picture = GFX_report_event_welcome_eblan
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = welcome.1.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}

@@ -1,4 +1,15 @@
 on_actions = {
+	on_startup = {
+        effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { id = welcome.3 }
+			}
+        }
+    }
+
 	on_daily = {
 		effect = {
 			if = {
@@ -17,6 +28,30 @@ on_actions = {
 					set_country_flag = deepins_nelya
 				}
 			} 
+
+			if = {
+				limit = {
+					GON = {
+						NOT = { has_country_flag = milanaStar_country }
+					}
+					14 = {
+						is_owned_and_controlled_by = GON
+					}
+					15 = {
+						is_owned_and_controlled_by = GON
+					}
+					30 = {
+						is_owned_and_controlled_by = GON
+					}
+					1018 = {
+						is_owned_and_controlled_by = GON
+					}
+				}
+				GON = {
+					country_event = { id = gonduras.17 days = 2 }
+					set_country_flag = milanaStar_country
+				}
+			}
 		}
 	}
 	

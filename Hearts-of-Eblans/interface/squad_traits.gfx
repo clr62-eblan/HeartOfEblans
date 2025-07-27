@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_trait_stint_moder"
+		texturefile = "gfx/interface/traits/trait_stint_moder.dds"
+	}	
+
+}

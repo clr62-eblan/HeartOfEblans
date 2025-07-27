@@ -1,0 +1,43 @@
+characters = {
+	
+	dora_dorism = {
+		name = "Дора Шиханова"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_dora_dorism
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {
+				#
+			}
+			id=1233
+		}
+	}
+
+	dora_cuterock = {
+		name = "Дора-дура"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_dora_cuterock
+			}
+		}
+		country_leader = {
+			ideology = hype_cuterock
+			traits = {
+				#
+			}
+			id=1234
+		}
+	}
+
+	dora_zolo = {
+		name = "Доразоло 2004"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_dora_zolo
+			}
+		}
+	}
+}

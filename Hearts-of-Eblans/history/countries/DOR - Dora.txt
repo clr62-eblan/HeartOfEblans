@@ -5,6 +5,8 @@ oob = "DOR_1936"
 set_research_slots = 3
 
 add_ideas = beer_problem_idea
+recruit_character = dora_dorism
+recruit_character = dora_cuterock
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -172,29 +174,7 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "DOR.dds"
 	expire = "2000.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Даша Шиханова"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "DOR.dds"
-	expire = "2000.1.1"
 	ideology = liberalism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Дора"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "DOR.dds"
-	expire = "2000.1.1"
-	ideology = hype_cuterock
 	traits = {
 		
 	}
@@ -204,8 +184,8 @@ set_popularities = {
 	democratic = 0
 	fascism = 0
 	communism = 0
-	neutrality = 0
-	hypecratia = 100
+	neutrality = 64
+	hypecratia = 36
 }
 
 

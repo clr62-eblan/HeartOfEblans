@@ -16,7 +16,15 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/drake_war_production_svo_btk.dds"			
 	}
 
-	
+	SpriteType = {
+	name = "GFX_goal_SVI_vigilium"
+	texturefile = "gfx/interface/goals/focus_SVI_vigilium.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SVI_vigilium2"
+	texturefile = "gfx/interface/goals/focus_SVI_vigilium2.dds"			
+	}
 
 	SpriteType = {
 	name = "GFX_goal_continuous_air_production"

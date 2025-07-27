@@ -952,6 +952,7 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.1
 				repair_speed_industrial_complex_factor = 0.3
+			}
 		}
 
 		DRE_military_economic_boost {

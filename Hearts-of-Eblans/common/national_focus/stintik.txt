@@ -540,21 +540,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GON_madrid_parade
-		icon = GFX_focus_ARG_march_to_la_casa_rosada
-		prerequisite = { focus = GON_return_nelya_to_her_native_harbor }
-		cost = 10
-		completion_reward = {
-		}
-		x = 0
-		y = 1
-		relative_position_id = GON_return_nelya_to_her_native_harbor
-	}
-
-	focus = {
 		id = GON_purchase_from_our_friend
 		icon = GFX_focus_generic_purchase_mechanized_equipment
-		prerequisite = { focus = GON_madrid_parade }
+		prerequisite = { focus = GON_return_nelya_to_her_native_harbor }
 		cost = 10
 		completion_reward = {
 			add_political_power = 100
@@ -583,13 +571,13 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		relative_position_id = GON_madrid_parade
+		relative_position_id = GON_return_nelya_to_her_native_harbor
 	}
 
 	focus = {
 		id = GON_expand_military_industry
 		icon = GFX_focus_AFG_scavenging
-		prerequisite = { focus = GON_madrid_parade }
+		prerequisite = { focus = GON_return_nelya_to_her_native_harbor }
 		cost = 10
 		completion_reward = {
 			add_political_power = 150
@@ -627,7 +615,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		relative_position_id = GON_madrid_parade
+		relative_position_id = GON_return_nelya_to_her_native_harbor
 	}
 
 	focus = {
@@ -1532,31 +1520,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GON_crackdown_on_corruption
-		prerequisite = { focus = GON_fascist_path }
-		relative_position_id = GON_fascist_path
-		#mutually_exclusive = { focus = GON_memory_of_democratic }
-		available = {
-		}
-
-		bypass = {
-		}
-
-		icon = GFX_focus_ARG_crackdown_on_corruption
-		x = -2
-		y = 1
-
-		cost = 10
-		search_filters = {FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-            swap_ideas = {
-				remove_idea = GON_political_corruption
-				add_idea = GON_crackdown_on_corruption_idea
-			}
-		}
-	}
-
-	focus = {
 		id = GON_cut_ties_with_dippins
 		prerequisite = { focus = GON_fascist_path }
 		relative_position_id = GON_fascist_path
@@ -1569,7 +1532,7 @@ focus_tree = {
 
 		icon = GFX_goal_GON_cut_ties_with_dipins
 		x = 0
-		y = 2
+		y = 1
 
 		cost = 12
 		search_filters = {FOCUS_FILTER_MANPOWER}

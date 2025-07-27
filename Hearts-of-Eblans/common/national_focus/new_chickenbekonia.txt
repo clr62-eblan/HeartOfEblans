@@ -32,6 +32,11 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 100
+			add_popularity = {
+    			ideology = hypecratia
+    			popularity = 0.1
+			}
+			add_stability = 0.03
 		}
 		x = 7
 		y = 1
@@ -46,7 +51,7 @@ focus_tree = {
 		prerequisite = { focus = chb_hypecratia_path }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = chb_meme_revive_idea
 		}
 		x = 0
 		y = 1
@@ -60,8 +65,22 @@ focus_tree = {
 		icon = GFX_goal_chb_tiktok
 		prerequisite = { focus = chb_revive_memes }
 		cost = 10
+
+		available = {
+			hypecratia > 0.34
+		}
+
 		completion_reward = {
-			add_political_power = 100
+			set_politics = {
+			    ruling_party = hypecratia
+			    elections_allowed = no
+			}
+			hidden_effect = {
+			add_popularity = {
+    			ideology = hypecratia
+    			popularity = 0.15
+			}
+			}
 		}
 		x = 0
 		y = 1
@@ -76,7 +95,7 @@ focus_tree = {
 		prerequisite = { focus = chb_support_second_tiktok_advent }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = chb_digital_revolution_idea
 		}
 		x = -1
 		y = 1
@@ -91,7 +110,7 @@ focus_tree = {
 		prerequisite = { focus = chb_digital_revolution }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = ARA_internet_army
 		}
 		x = -1
 		y = 1
@@ -106,7 +125,7 @@ focus_tree = {
 		prerequisite = { focus = chb_support_second_tiktok_advent }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = chb_develop_social_media_idea
 		}
 		x = 1
 		y = 1
@@ -122,6 +141,9 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 100
+			add_ideas = GON_meme_politics_culture
+			add_popularity = { ideology = hypecratia popularity = 0.05 }
+			add_stability = 0.04
 		}
 		x = 1
 		y = 1
@@ -136,7 +158,7 @@ focus_tree = {
 		prerequisite = { focus = chb_develop_social_media }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = ARA_pro_government_media
 		}
 		x = 1
 		y = 1
@@ -151,7 +173,18 @@ focus_tree = {
 		prerequisite = { focus = chb_meme_of_war }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ai_strategy = {
+			   type = alliance
+			   id = HAM
+			   value = 500
+			}
+			HAM = {
+				add_ai_strategy = {
+				   type = alliance
+				   id = CHB
+				   value = 350
+				}
+			}
 		}
 		x = 1
 		y = 1
@@ -166,7 +199,8 @@ focus_tree = {
 		prerequisite = { focus = chb_meme_of_war }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = chb_antidrake_hype_idea
+			add_war_support = 0.03
 		}
 		x = -1
 		y = 1
@@ -181,7 +215,7 @@ focus_tree = {
 		prerequisite = { focus = chb_antidrake_hype }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = chb_digital_defense_idea
 		}
 		x = 0
 		y = 1
@@ -196,26 +230,14 @@ focus_tree = {
 		prerequisite = { focus = chb_digital_defense focus = chb_official_like_account }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = {
+				idea = CHB_internet_mobilisation_idea
+				days = 1340
+			}
 		}
 		x = 1
 		y = 2
 		relative_position_id = chb_antidrake_hype
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-    focus = {
-		id = chb_hype_culture
-		icon = GFX_goal_hypecratia_celebration
-		prerequisite = { focus = chb_internet_mobilisation }
-		cost = 10
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = -1
-		y = 1
-		relative_position_id = chb_internet_mobilisation
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -226,9 +248,9 @@ focus_tree = {
 		prerequisite = { focus = chb_internet_mobilisation }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = CHB_tech_breakthrough_idea
 		}
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = chb_internet_mobilisation
 
@@ -238,14 +260,14 @@ focus_tree = {
     focus = {
 		id = chb_digital_war
 		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = chb_tech_breakthrough }
+		prerequisite = { focus = chb_internet_mobilisation }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = CHB_digital_war_idea
 		}
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = chb_tech_breakthrough
+		relative_position_id = chb_internet_mobilisation
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -253,11 +275,13 @@ focus_tree = {
     focus = {
 		id = chb_balkan_trand_setter
 		icon = GFX_focus_generic_balkan_diplomacy
-		prerequisite = { focus = chb_digital_war focus = chb_hype_culture }
+		prerequisite = { focus = chb_digital_war focus = chb_tech_breakthrough }
 		cost = 10
 		completion_reward = {
-			add_political_power = 50
-
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = CHB_BALKAN_TRANDSETTER
 		}
 		x = -1
 		y = 1
@@ -464,11 +488,13 @@ focus_tree = {
 
 	focus = {
 		id = chb_minestry_of_truth
-		icon = GFX_focus_GER_reich_ministry_of_public_enlightenment
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = chb_block_foreign_platforms focus = chb_resign_zavertin }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			set_rule = {
+				can_create_factions = yes
+			}
 		}
 		x = -1
 		y = 2
@@ -592,7 +618,7 @@ focus_tree = {
 		prerequisite = { focus = chb_return_istambul }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			DKK = { country_event = { id = chicken.27 days = 2 } }
 		}
 		x = 0
 		y = 2
@@ -825,6 +851,10 @@ focus_tree = {
 			set_politics = {
 			    ruling_party = communism
 			    elections_allowed = no
+			}
+
+			set_rule = {
+				can_create_factions = yes
 			}
 
 			start_civil_war = {
