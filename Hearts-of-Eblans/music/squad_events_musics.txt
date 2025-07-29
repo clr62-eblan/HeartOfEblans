@@ -21,7 +21,7 @@ song = "lagoda_raspil"
 chance = { factor = 0 }}
 
 music = {
-song = "top_squad"
+song = "squad_return"
 chance = { factor = 0 }}
 
 music = {
@@ -58,4 +58,8 @@ chance = { factor = 0 }}
 
 music = {
 song = "deepins_nelya"
+chance = { factor = 0 }}
+
+music = {
+song = "stariybog"
 chance = { factor = 0 }}

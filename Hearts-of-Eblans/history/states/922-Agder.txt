@@ -15,6 +15,7 @@ state = {
 		
 		owner = PYA
 		add_core_of = PYA
+		add_core_of = SBG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

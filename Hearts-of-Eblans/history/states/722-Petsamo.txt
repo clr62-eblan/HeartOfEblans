@@ -19,7 +19,6 @@ state={
 			}
 		}
 		add_core_of = RAZ
-		add_core_of = SMI
 
 	}
 	

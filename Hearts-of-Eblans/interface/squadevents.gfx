@@ -18,6 +18,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_svo_started"
 		texturefile = "gfx/event_pictures/news_svo_start.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_stariybog"
+		texturefile = "gfx/event_pictures/pya_stariybog.dds"
 	}
 	
 	spriteType = {

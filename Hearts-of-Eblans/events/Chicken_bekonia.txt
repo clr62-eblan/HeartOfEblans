@@ -785,3 +785,29 @@ country_event = {
 		}
 	}
 }
+
+#Economic vector
+country_event = {
+	id = chicken.28
+	title = chicken.28.t
+	desc = chicken.28.d
+	picture = GFX_report_event_NOR_storting
+	
+	is_triggered_only = yes
+	
+	#Real
+	option = {
+		name = chicken.27.a
+		CHB = {
+			complete_national_focus = chb_structural_assessment_of_production
+		}
+	}	
+	
+	#Fake
+	option = {
+		name = chicken.27.b
+		CHB = {
+			complete_national_focus = chb_industry_renisance
+		}
+	}
+}

@@ -34,6 +34,10 @@ focus_tree = {
 				}
 				
 				add_ideas = PBU_slay_2024
+
+				PYA = {
+					country_event = { id = pyatorka.1 days = 2 random_days = 5 }
+				}
 			}
 		}
 		

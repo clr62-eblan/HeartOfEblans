@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = TND
-		add_core_of = TND
+		owner = DPN
+		add_core_of = DPN
 		add_core_of = BTK
 
 		buildings = {
