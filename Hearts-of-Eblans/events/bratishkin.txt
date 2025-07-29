@@ -234,9 +234,6 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = BTK_parlament
 			mark_focus_tree_layout_dirty = yes
-			retire_ideology_leader = neutrality
-			retire_ideology_leader = fascism
-			retire_ideology_leader = democratic
 			set_political_party = {
 				ideology = democratic
 				popularity = 15
@@ -261,39 +258,6 @@ country_event = {
 				ruling_party = communism
 				elections_allowed = no
 			}
-			set_country_leader_ideology = marxism
-			retire_ideology_leader = communism
-			promote_character = {
-				character = BTK_Bratishkin
-				ideology = marxism
-			}
-			add_country_leader_role = {
-				character = BTK_Bratishkin
-				promote_leader = yes
-				country_leader = {
-					ideology = marxism
-					expire = "1965.1.1.1"
-					traits = {  }
-				}
-			}
-			set_party_name = {
-				ideology = communism
-				long_name = BTK_comm_new_long
-				name = BTK_comm_new
-			}
-			retire_ideology_leader = democratic
-			create_country_leader = {
-				name = BTK_sovet_moderov
-				desc = ""
-				picture = "GFX_portrait_BTK"
-				expire = "1965.1.1"
-				ideology = socialism
-			}
-			set_party_name = {
-				ideology = democratic
-				long_name = "ВсеСквадская Коммунистическая Партия (Модеры)"
-				name = "ВКП(М)"
-			}
 		}
 	}
 	option = {
@@ -304,9 +268,6 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = BTK_parlament
 			mark_focus_tree_layout_dirty = yes
-			retire_ideology_leader = neutrality
-			retire_ideology_leader = fascism
-			retire_ideology_leader = communism
 			set_political_party = {
 				ideology = democratic
 				popularity = 75
@@ -331,21 +292,6 @@ country_event = {
 				ruling_party = democratic
 				elections_allowed = no
 			}
-			set_country_leader_ideology = liberalism
-			retire_ideology_leader = democratic
-			promote_character = {
-				character = BTK_Bratishkin
-				ideology = liberalism
-			}
-			add_country_leader_role = {
-				character = BTK_Bratishkin
-				promote_leader = yes
-				country_leader = {
-					ideology = liberalism
-					expire = "1965.1.1.1"
-					traits = {  }
-				}
-			}
 			set_party_name = {
 				ideology = democratic
 				long_name = BTK_dem_new_long
@@ -362,9 +308,6 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = BTK_parlament
 			mark_focus_tree_layout_dirty = yes
-			retire_ideology_leader = democratic
-			retire_ideology_leader = fascism
-			retire_ideology_leader = communism
 			set_political_party = {
 				ideology = democratic
 				popularity = 15
@@ -389,33 +332,10 @@ country_event = {
 				ruling_party = neutrality
 				elections_allowed = no
 			}
-			set_country_leader_ideology = despotism
-			retire_ideology_leader = neutrality
-			promote_character = {
-				character = BTK_Bratishkin
-				ideology = despotism
-			}
-			add_country_leader_role = {
-				character = BTK_Bratishkin
-				promote_leader = yes
-				country_leader = {
-					ideology = despotism
-					expire = "1965.1.1.1"
-					traits = {  }
-				}
-			}
 			set_party_name = {
 				ideology = neutrality
 				long_name = BTK_neu_new_long
 				name = BTK_neu_new
-			}
-			retire_ideology_leader = democratic
-			create_country_leader = {
-				name = BTK_sovet_moderov
-				desc = ""
-				picture = "GFX_portrait_BTK"
-				expire = "1965.1.1"
-				ideology = conservatism
 			}
 			set_party_name = {
 				ideology = democratic
@@ -433,9 +353,6 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = BTK_parlament
 			mark_focus_tree_layout_dirty = yes
-			retire_ideology_leader = democratic
-			retire_ideology_leader = neutrality
-			retire_ideology_leader = communism
 			set_political_party = {
 				ideology = democratic
 				popularity = 0
@@ -459,21 +376,6 @@ country_event = {
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
-			}
-			set_country_leader_ideology = fascism_ideology
-			retire_ideology_leader = fascism
-			promote_character = {
-				character = BTK_Bratishkin
-				ideology = fascism_ideology
-			}
-			add_country_leader_role = {
-				character = BTK_Bratishkin
-				promote_leader = yes
-				country_leader = {
-					ideology = fascism_ideology
-					expire = "1965.1.1.1"
-					traits = {  }
-				}
 			}
 			set_party_name = {
 				ideology = fascism
@@ -499,23 +401,7 @@ country_event = {
 				ruling_party = hypecratia
 				elections_allowed = no
 			}
-			set_country_leader_ideology = twitcherizm
-			retire_ideology_leader = hypecratia
-			promote_character = {
-				character = BTK_Bratishkin
-				ideology = twitcherizm
-			}
-			add_country_leader_role = {
-				character = BTK_Bratishkin
-				promote_leader = yes
-				country_leader = {
-					ideology = twitcherizm
-					expire = "1965.1.1.1"
-					traits = {  }
-				}
-			}
 		}
-			
 	}
 }
 country_event = {
@@ -860,34 +746,9 @@ country_event = {
 	
 	is_triggered_only = yes
 	option = {
-		name = btk.12.a
-		complete_national_focus = BTK_start_economic_repair
-		hidden_effect = {
-			swap_ideas = {
-				remove_idea = BTK_dead_economy
-				add_idea = BTK_econrep_1
-			}
-		}
-		
-	}
-	option = {
-		name = btk.12.b
-		complete_national_focus = BTK_make_military_economy
-		hidden_effect = {
-			swap_ideas = {
-				remove_idea = BTK_dead_economy
-				add_idea = BTK_econrep_mil
-			}
-		}
-		
-	}
-	option = {
 		name = btk.12.c
-		complete_national_focus = BTK_new_tacticks
-		hidden_effect = {
-			add_political_power = 150
-			add_stability = 0.15
-		}
+		add_political_power = 150
+		add_stability = 0.05
 		
 	}
 }

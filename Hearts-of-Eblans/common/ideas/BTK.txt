@@ -6,11 +6,12 @@ ideas = {
 			picture = BTK_parl
 
 			modifier = {
-				democratic_drift = 0.05
-				neutrality_drift = 0.05
-				hypecratia_drift = 0.05
-				stability_weekly = 0.015
-				war_support_weekly = -0.015
+				democratic_drift = 0.01
+				neutrality_drift = 0.01
+				hypecratia_drift = 0.01
+				communism_drift = 0.01
+				stability_weekly = 0.01
+				war_support_weekly = -0.005
 			}
 			cancel = {
 				has_completed_focus = BTK_nach_89
@@ -317,8 +318,9 @@ ideas = {
 			picture = BTK_newtax
 
 			modifier = {
-				political_power_gain = 0.15
-				production_factory_efficiency_gain_factor =0.15
+				political_power_gain = 0.05
+				production_factory_efficiency_gain_factor =0.05
+				consumer_goods_factor = 0.04
 			}
 		}
 		BTK_newinit = {
@@ -327,10 +329,10 @@ ideas = {
 			picture = BTK_newinit
 
 			modifier = {
-				line_change_production_efficiency_factor = 0.15
-				production_factory_efficiency_gain_factor =0.15
-				production_factory_start_efficiency_factor = 0.25
-				production_factory_max_efficiency_factor = 0.5
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor =0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.07
 			}
 		}
 		BTK_newmio = {
@@ -339,7 +341,7 @@ ideas = {
 			picture = BTK_freenzy
 
 			modifier = {
-				political_power_gain = 0.15
+				political_power_gain = 0.1
 			}
 		}
 		BTK_newmio_1 = {
@@ -348,9 +350,9 @@ ideas = {
 			picture = BTK_newmio
 
 			modifier = {
-				military_industrial_organization_research_bonus = 0.25
-				political_power_gain = 0.15
-				stability_factor = 0.15
+				military_industrial_organization_research_bonus = 0.05
+				political_power_gain = 0.05
+				stability_factor = 0.1
 			}
 		}
 		BTK_trudprop = {
@@ -359,11 +361,11 @@ ideas = {
 			picture = BTK_trudprop
 
 			modifier = {
-				production_factory_efficiency_gain_factor =0.15
-				production_factory_start_efficiency_factor = 0.25
-				production_factory_max_efficiency_factor = 0.5
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
+				production_factory_efficiency_gain_factor =0.03
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
 			}
 		}
 		BTK_great_economy = {
@@ -389,9 +391,9 @@ ideas = {
 			picture = BTK_newsocial
 
 			modifier = {
-				stability_factor = 0.15
-				production_speed_buildings_factor = 0.15
-				line_change_production_efficiency_factor = 0.15
+				stability_factor = 0.03
+				production_speed_buildings_factor = 0.04
+				line_change_production_efficiency_factor = 0.05
 				
 			}
 		}

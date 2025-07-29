@@ -23,8 +23,8 @@ music = {
 	file = "SquadMusic/lagoda_raspil.ogg"
 }
 music = {
-	name = "top_squad"
-	file = "SquadMusic/the_great_war.ogg"
+	name = "squad_return"
+	file = "SquadMusic/squad_return.ogg"
 }
 music = {
 	name = "stintler_returns"
@@ -69,4 +69,9 @@ music = {
 music = {
 	name = "deepins_nelya"
 	file = "SquadMusic/deepins_nelya.ogg"
+}
+
+music = {
+	name = "stariybog"
+	file = "SquadMusic/stariybog.ogg"
 }

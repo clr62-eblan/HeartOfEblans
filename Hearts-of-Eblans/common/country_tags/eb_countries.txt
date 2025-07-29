@@ -40,6 +40,7 @@ GRA = "countries/Graf.txt"
 PAS = "countries/PastiChata.txt"
 DER = "countries/Derzko.txt"
 MST = "countries/MilanaStar.txt"
+SBG = "countries/StariyBog.txt"
 
 EVL = "countries/Evelone.txt"
 SHD = "countries/Shadowkek.txt"

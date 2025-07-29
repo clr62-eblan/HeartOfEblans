@@ -27,6 +27,66 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_PYA_prime"
+	texturefile = "gfx/interface/goals/focus_PYA_prime.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_hype"
+	texturefile = "gfx/interface/goals/focus_PYA_hype.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_hypetime"
+	texturefile = "gfx/interface/goals/focus_PYA_hypetime.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_visitservers"
+	texturefile = "gfx/interface/goals/focus_PYA_visitservers.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_invest_fugabots"
+	texturefile = "gfx/interface/goals/focus_PYA_invest_fugabots.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_hyperloops"
+	texturefile = "gfx/interface/goals/focus_PYA_hyperloops.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_mainfas"
+	texturefile = "gfx/interface/goals/focus_PYA_mainfas.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_farms"
+	texturefile = "gfx/interface/goals/focus_PYA_farms.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_laboratory"
+	texturefile = "gfx/interface/goals/focus_PYA_laboratory.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_music"
+	texturefile = "gfx/interface/goals/focus_PYA_music.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_old"
+	texturefile = "gfx/interface/goals/focus_PYA_old.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_minecraft"
+	texturefile = "gfx/interface/goals/focus_PYA_minecraft.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_continuous_air_production"
 	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			
 	}	

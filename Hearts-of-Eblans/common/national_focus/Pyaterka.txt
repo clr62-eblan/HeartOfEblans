@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = PYA_begin_new_prime
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_prime
 		cost = 6
 		mutually_exclusive = {
 			focus = PYA_Polit1
@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_return_old_vibes
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_old
 		cost = 10
 		prerequisite = {
 			focus = PYA_begin_new_prime
@@ -124,7 +124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_communist_server
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 10
 		prerequisite = {
 			focus = PYA_full_return_to_sp
@@ -184,7 +184,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_democratic_server
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_democratic_europe
 		cost = 10
 		prerequisite = {
 			focus = PYA_full_return_to_sp
@@ -231,7 +231,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_otso_secret_laboratory
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_laboratory
 		cost = 10
 		prerequisite = {
 			focus = PYA_currency_development
@@ -284,7 +284,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_new_hype_wave
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_hype
 		cost = 10
 		prerequisite = {
 			focus = PYA_begin_new_prime
@@ -298,7 +298,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_make_time_for_hype
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_hypetime
 		cost = 10
 		prerequisite = {
 			focus = PYA_new_hype_wave
@@ -312,7 +312,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_new_music
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_music
 		cost = 10
 		prerequisite = {
 			focus = PYA_make_time_for_hype
@@ -389,7 +389,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_the_main_fascist
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_mainfas
 		cost = 10
 		prerequisite = {
 			focus = PYA_local_dictator_force
@@ -449,7 +449,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_make_time_for_minecraft
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_minecraft
 		cost = 10
 		prerequisite = {
 			focus = PYA_new_hype_wave
@@ -463,7 +463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_visit_the_servers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_visitservers
 		cost = 10
 		prerequisite = {
 			focus = PYA_make_time_for_minecraft
@@ -474,7 +474,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_farm_development_sp
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_farms
 		cost = 10
 		prerequisite = {
 			focus = PYA_visit_the_servers
@@ -508,7 +508,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_sponsor_fugabots
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_invest_fugabots
 		cost = 10
 		prerequisite = {
 			focus = PYA_create_freakland
@@ -543,7 +543,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_build_water_hyperloops
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_hyperloops
 		cost = 10
 		prerequisite = {
 			focus = PYA_sponsor_fugabots

@@ -16,19 +16,17 @@ form_BTK_89_cat = {
 			custom_trigger_tooltip = {
 				tooltip = btk_control_terr_89	
 				# Bratishkin
-				controls_state = 64
-				controls_state = 59
-				controls_state = 56
+				controls_state = 60
 				controls_state = 61
 				controls_state = 62
 				controls_state = 63
 				controls_state = 68
+				controls_state = 64
+				controls_state = 1021
+				controls_state = 65
 				controls_state = 66
 				controls_state = 67
 				controls_state = 762
-				controls_state = 58
-				controls_state = 1021
-				controls_state = 909
 			}
 			custom_trigger_tooltip = {
 				tooltip = btk_control_terr_shd	
@@ -50,22 +48,25 @@ form_BTK_89_cat = {
 				
 
 				# Devochki
+				controls_state = 57
+				controls_state = 59
+				controls_state = 1022
+				controls_state = 56
+				controls_state = 42
 				controls_state = 51
 				controls_state = 55
-				controls_state = 42
-				controls_state = 57
-				controls_state = 50
+				controls_state = 28
 				controls_state = 978
-				#controls_state = 845
-				#controls_state = 3
 			}
 			custom_trigger_tooltip = {
 				tooltip = btk_control_terr_jojo
 
 				#jojohf
 				controls_state = 54
-				controls_state = 60
-				controls_state = 65
+				controls_state = 1020
+				controls_state = 53
+				controls_state = 52
+				controls_state = 50
 				
 				
 			}
@@ -73,18 +74,18 @@ form_BTK_89_cat = {
 		
 		highlight_states = {
 			highlight_state_targets = {
-				state = 64
-				state = 59
-				state = 56
+				state = 60
 				state = 61
 				state = 62
 				state = 63
 				state = 68
+				state = 64
+				state = 1021
+				state = 65
 				state = 66
 				state = 67
-				state = 58
 				state = 762
-
+				
 				state = 86
 				state = 87
 				state = 807
@@ -93,23 +94,22 @@ form_BTK_89_cat = {
 				state = 98
 				state = 763
 				state = 188
-				state = 1021
-				state = 909
-
+				
+				state = 57
+				state = 59
+				state = 1022
+				state = 56
+				state = 42
 				state = 51
 				state = 55
-				state = 42
-				state = 57
-				state = 50
+				state = 28
 				state = 978
-				#state = 845
-				#state = 3
-
+				
 				state = 54
-				state = 60
-				state = 65
 				state = 1020
-				state = 1022
+				state = 53
+				state = 52
+				state = 50
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -144,16 +144,6 @@ form_BTK_89_cat = {
 				ideology = democratic
 				portrait = GFX_BTK_89
 			}
-			# Chicken-Bekonia
-			#155 = { add_core_of = ROOT }
-			#43 = { add_core_of = ROOT }
-			#154 = { add_core_of = ROOT }
-			#973 = { add_core_of = ROOT }
-			#974 = { add_core_of = ROOT }
-			
-			# Reich
-			#52 = { add_core_of = ROOT }
-			#53 = { add_core_of = ROOT }
 		}
 	
 		ai_will_do = {

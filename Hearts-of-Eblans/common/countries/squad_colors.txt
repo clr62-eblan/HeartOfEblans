@@ -11,6 +11,10 @@ MST = {
 	color = rgb { 227 200 138 }
 	color_ui = rgb { 227 200 138 }
 }
+SBG = {
+	color = rgb { 171 171 171 }
+	color_ui = rgb { 171 171 171 }
+}
 DIK = {
 	color = rgb { 85 128 73 }
 	color_ui = rgb { 85 128 73 }

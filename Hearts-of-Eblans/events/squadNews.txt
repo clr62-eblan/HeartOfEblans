@@ -323,3 +323,26 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = squad_news.16
+	title = squad_news.16.t
+	desc = squad_news.16.d
+	picture = GFX_report_event_stariybog
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.16.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+		 play_song = "stariybog"
+		}
+	}
+}
+

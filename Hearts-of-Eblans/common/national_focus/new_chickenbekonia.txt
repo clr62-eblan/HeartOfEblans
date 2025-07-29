@@ -1050,10 +1050,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
   			add_political_power = 25
-  			add_country_leader_trait = {
-  			  trait = economic_cautious
-  			  remove = no
-  			}
+  			country_event = { id = chicken.28 }
 		}
 		x = 16
 		y = 0
@@ -1068,6 +1065,11 @@ focus_tree = {
 		prerequisite = { focus = chb_economic_vector_of_the_nation }
 		mutually_exclusive = { focus = chb_industry_renisance }
 		cost = 10
+
+		available = {
+			always = no
+		}
+
 		completion_reward = {
   			add_political_power = 50
   			add_timed_idea = { idea = CHB_production_audit days = 720 }
@@ -1334,6 +1336,10 @@ focus_tree = {
 		prerequisite = { focus = chb_economic_vector_of_the_nation }
 		mutually_exclusive = { focus = chb_structural_assessment_of_production}
 		cost = 10
+		available = {
+			always = no
+		}
+
 		completion_reward = {
 			if = {
 				random_owned_state = {
@@ -1554,7 +1560,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_ideas = CHB_inflationary_defense_credit
-			country_event = { id = chicken.20 days = 120 }
+			#
 		}
 		x = 1
 		y = 2
@@ -1570,7 +1576,8 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
-			country_event = { id = chicken.21 days = 10 }
+			#country_event = { id = chicken.21 days = 10 }
+			country_event = { id = chicken.20 days = 60 random_days = 40 }
 		}
 		x = -1
 		y = 1

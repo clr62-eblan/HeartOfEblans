@@ -7,6 +7,7 @@ state = {
 	history = {
 		owner = PYA
 		add_core_of = PYA
+		add_core_of = SBG
 		victory_points = {
 			6151 1
 		}
