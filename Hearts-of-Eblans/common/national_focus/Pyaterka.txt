@@ -37,7 +37,7 @@ focus_tree = {
 		}
 		x = 10
 		y = 1
-
+		#минус к хайпу и новость
 	}
 	focus = {
 		id = PYA_hang_orange_curtains
@@ -48,7 +48,7 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
-
+		#drift_defence_factor и weekly_convoys_war_support
 	}
 	focus = {
 		id = PYA_joper_economic_plan
@@ -59,7 +59,7 @@ focus_tree = {
 		}
 		x = 8
 		y = 3
-		#возвращает легенд по типу брисона
+		#экономика жоска
 	}
 	focus = {
 		id = PYA_upgrade_navy
@@ -70,7 +70,7 @@ focus_tree = {
 		}
 		x = 10
 		y = 3
-
+		#опыт к вмф и чото еще с кораблями
 	}
 	focus = {
 		id = PYA_FBI_parade
@@ -92,7 +92,7 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
-
+		#плюсы к авиации и опыту авиации
 	}
 	focus = {
 		id = PYA_start_pirate_invasions
@@ -120,7 +120,7 @@ focus_tree = {
 		}
 		x = 10
 		y = 5
-
+		#брисон и пизда советнiкi или генералы
 	}
 	focus = {
 		id = PYA_communist_server
@@ -134,7 +134,7 @@ focus_tree = {
 		}
 		x = 8
 		y = 6
-
+		#легкая граждангочка
 	}
 	focus = {
 		id = PYA_distribute_resources
@@ -194,7 +194,7 @@ focus_tree = {
 		}
 		x = 15
 		y = 6
-
+		#идея на плюс к демократии
 	}
 	focus = {
 		id = PYA_hunting_on_cheaters
@@ -205,7 +205,7 @@ focus_tree = {
 		}
 		x = 13
 		y = 8
-
+		#жоский плюс к стабильности
 	}
 	focus = {
 		id = PYA_introduce_general_elections
@@ -216,7 +216,7 @@ focus_tree = {
 		}
 		x = 15
 		y = 7.5
-
+		#демократия станет правящей партией и плюс к демократии
 	}
 	focus = {
 		id = PYA_currency_development
@@ -227,7 +227,7 @@ focus_tree = {
 		}
 		x = 17
 		y = 8
-
+		#идея с плюсами к эффективности производства
 	}
 	focus = {
 		id = PYA_otso_secret_laboratory
@@ -280,7 +280,7 @@ focus_tree = {
 		}
 		x = 15
 		y = 11
-
+		#цели войны на фашистские страны смена власти
 	}
 	focus = {
 		id = PYA_new_hype_wave
@@ -294,7 +294,7 @@ focus_tree = {
 		}
 		x = 22
 		y = 1
-
+		#плюс к хайпу и новость всем
 	}
 	focus = {
 		id = PYA_make_time_for_hype
@@ -322,7 +322,7 @@ focus_tree = {
 		}
 		x = 19
 		y = 3
-
+		#новая идея дающая скорость
 	}
 	focus = {
 		id = PYA_internet_hype_force
@@ -493,7 +493,7 @@ focus_tree = {
 		}
 		x = 22
 		y = 6
-		#суперивент
+		#временная идея хайп фрикленда и новость
 	}
 	focus = {
 		id = PYA_hype_expansion
@@ -515,7 +515,7 @@ focus_tree = {
 		}
 		x = 22
 		y = 7
-		#
+		#ивенты к нескольким странам за нашествие фугаботов и дебафы
 	}
 	focus = {
 		id = PYA_destroy_cloaka_mol
@@ -526,7 +526,7 @@ focus_tree = {
 		}
 		x = 24
 		y = 7
-
+		#цель на клоаку
 	}
 	
 	focus = {
@@ -539,7 +539,7 @@ focus_tree = {
 		mutually_exclusive = { focus = PYA_continue_tiktok_hype }
 		x = 24
 		y = 9
-
+		#+1 ячейка для исследований
 	}
 	focus = {
 		id = PYA_build_water_hyperloops
@@ -553,7 +553,7 @@ focus_tree = {
 		#инфраструктура и скорость дивизий
 	}
 	focus = {
-		id = PYA_continue_tiktok_hype
+		id = PYA_continue_twitch_streams
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -562,7 +562,7 @@ focus_tree = {
 		mutually_exclusive = { focus = PYA_new_youtube_content }
 		x = 20
 		y = 9
-
+		#скорость к изучению
 	}
 	focus = {
 		id = PYA_create_42_empire
@@ -570,10 +570,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = PYA_new_youtube_content
-			focus = PYA_continue_tiktok_hype
+			focus = PYA_continue_twitch_streams
 		}
 		x = 22
 		y = 10
-
+		#нужны определенные земли для формирования страны и изменится цвет страны
 	}
 }
