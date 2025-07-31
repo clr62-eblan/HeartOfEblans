@@ -1649,7 +1649,9 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
 			#country_event = { id = chicken.21 days = 10 }
+			hidden_effect = {
 			country_event = { id = chicken.20 days = 60 random_days = 40 }
+			}
 		}
 		x = -1
 		y = 1
