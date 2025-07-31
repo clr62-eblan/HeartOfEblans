@@ -1,6 +1,6 @@
-capital = 246
+capital = 219
 
-set_research_slots = 3
+set_research_slots = 2
 
 set_oob = KUS_1936
 
@@ -13,6 +13,11 @@ set_technology = {
 
 
 	early_fighter = 1
+}
+
+add_ideas = {
+	demografic_problems
+	cantattack
 }
 if = {
 	limit = {

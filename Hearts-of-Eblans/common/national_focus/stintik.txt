@@ -113,6 +113,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_ideas = GON_internet_punishers_idea
+			set_country_flag = internet_pun1
 		}
 		x = -1
 		y = 1
@@ -129,6 +130,8 @@ focus_tree = {
 				add_idea = GON_internet_punishers_idea_2
 				remove_idea = GON_internet_punishers_idea
 			}
+			clr_country_flag = internet_pun1
+			set_country_flag = internet_pun2
 		}
 		x = -1
 		y = 1
@@ -142,6 +145,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_ideas = GON_domestic_services_idea
+			set_country_flag = dom_serv
 		}
 		x = 1
 		y = 1
@@ -155,6 +159,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_ideas = GON_right_messenger_idea
+			set_country_flag = right_mes
 		}
 		x = 1
 		y = 1
@@ -248,6 +253,37 @@ focus_tree = {
 				add_ideas = GON_political_corruption
 				add_ideas = GON_economics_recession
 				set_country_flag = GON_civwar
+				if = {
+					limit = {
+						has_country_flag = internet_pun1
+					}
+					add_ideas = GON_internet_punishers_idea
+				}
+
+				if = {
+					limit = {
+						has_country_flag = internet_pun2
+					}
+
+					add_ideas = GON_internet_punishers_idea_2
+				}
+
+				if = {
+					limit = {
+						has_country_flag = dom_serv
+					}
+
+					add_ideas = GON_domestic_services_idea
+				}
+
+				if = {
+					limit = {
+						has_country_flag = right_mes
+					}
+
+					add_ideas = GON_right_messenger_idea
+				}
+
 				if = {
 				limit = {
 					NOT = { has_template = "Народное ополчение" }

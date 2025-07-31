@@ -127,6 +127,33 @@ characters = {
 		}
 	}
 
+	PYA_oster = { 
+		name = OsterMine
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_oster_small
+			}
+		}
+		
+		advisor = {
+			cost = 100
+			slot = army_chief
+			idea_token = ostera
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				army_chief_organizational_3
+			}
+			allowed = {
+				original_tag = PYA
+			}
+			visible = { original_tag = PYA }
+		}
+	}
+
+
 	PYA_eka = { 
 		name = Eka
 		portraits = {

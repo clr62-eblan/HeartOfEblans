@@ -25,6 +25,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.06
+				mobilization_speed = -0.05
 			}
 		}
 		
@@ -36,6 +37,18 @@ ideas = {
 		
 			modifier = {
 				join_faction_tension = 0.85
+			}
+		}
+
+		cantattack = {
+		
+			removal_cost = -1
+
+			picture = generic_purge
+		
+			modifier = {
+				army_attack_factor = -0.1
+				army_attack_speed_factor = -0.05
 			}
 		}
 		
@@ -109,7 +122,8 @@ ideas = {
 			picture = generic_aircraft_support
 
 			modifier = {
-				experience_gain_air = 0.01
+				experience_gain_air = 0.1
+				experience_gain_army = 0.05
 			}
 		}
 		

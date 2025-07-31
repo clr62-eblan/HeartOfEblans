@@ -24,6 +24,11 @@ SpriteTypes = {
 		name = "GFX_portrait_PYA_yaica_small"
 		texturefile = "gfx/interface/ideas/portrait_PYA_yaica.dds"
 	}	
+
+	SpriteType = {
+		name = "GFX_portrait_PYA_oster_small"
+		texturefile = "gfx/interface/ideas/portrait_PYA_oster.dds"
+	}	
 	
 	SpriteType = {
 		name = "GFX_portrait_PYA_melsher_small"

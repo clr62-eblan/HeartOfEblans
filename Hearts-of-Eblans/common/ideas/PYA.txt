@@ -267,7 +267,7 @@ ideas = {
 			picture = upgraded_navy
 
 			modifier = {
-				experience_gain_navy = 0.02
+				experience_gain_navy = 0.15
 				naval_coordination 0.05
 				naval_detection = 0.03
 				naval_morale_factor = 0.05
@@ -282,7 +282,7 @@ ideas = {
 			picture = elytras
 
 			modifier = {
-				experience_gain_air = 0.02
+				experience_gain_air = 0.15
 				air_agility_factor = 0.05
 				air_intercept_efficiency = 0.05
 				air_superiority_efficiency = 0.05

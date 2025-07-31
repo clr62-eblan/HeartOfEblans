@@ -19,6 +19,7 @@ recruit_character = PYA_melsher
 recruit_character = PYA_cacto
 recruit_character = PYA_hanov
 recruit_character = PYA_eka
+recruit_character = PYA_oster
 
 set_autonomy = {
 	target = MPK

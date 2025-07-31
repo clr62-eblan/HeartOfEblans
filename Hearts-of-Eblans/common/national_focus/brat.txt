@@ -234,6 +234,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_old_conflickt
 		}
+		available = {
+			has_war = no
+		}
 		relative_position_id = BTK_old_conflickt
 		completion_reward = {
 			GNS = { country_event = btk.22 days = 2 }
@@ -922,6 +925,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_old_conflickt
 		}
+		available = {
+			has_war = no
+		}
 		completion_reward = {
 			SHD = { country_event = btk.24 days = 2 }
 		}
@@ -935,6 +941,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = BTK_old_conflickt
+		}
+		available = {
+			has_war = no
 		}
 		relative_position_id = BTK_old_conflickt
 		completion_reward = {
@@ -951,6 +960,9 @@ focus_tree = {
 		relative_position_id = BTK_gensyxa
 		prerequisite = {
 			focus = BTK_gensyxa
+		}
+		available = {
+			has_war = no
 		}
 		x = 0
 		y = 1
