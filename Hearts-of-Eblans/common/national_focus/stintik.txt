@@ -172,7 +172,7 @@ focus_tree = {
 		prerequisite = { focus = GON_hype_path }
 		cost = 10
 		available = {
-			hypecratia > 0.34
+			hypecratia > 0.23
 		}
 
 		completion_reward = {
