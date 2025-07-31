@@ -6771,16 +6771,21 @@ focus = {
 
 		completion_reward = {
 			give_military_access = LAG
-			add_relation_modifier = {
-				target = LAG
-				modifier = drake_lagoda
+			hidden_effect = {
+				add_relation_modifier = {
+					target = LAG
+					modifier = drake_lagoda
+				}
+				LAG = {
+					add_relation_modifier = {
+					target = DRE
+					modifier = drake_lagoda
+					}
+				}
 			}
 			LAG = {
 				give_military_access = DRE
-				add_relation_modifier = {
-					target = DRE
-					modifier = drake_lagoda
-				}
+
 			}
 			diplomatic_relation = {
 				country = LAG
@@ -6837,28 +6842,6 @@ focus = {
     			idea = DRE_military_economic_boost
     			days = 120
 			}
-		}
-		available = {
-			LAG = {
-				exists = yes
-				has_capitulated = no
-				is_subject = no
-			}
-		}
-	}
-
-	focus = {
-		id = DRE_alliance_lagoda
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		relative_position_id = DRE_Convergence_with_lagoda
-		prerequisite = { focus = DRE_military_economic_pact }
-		prerequisite = { focus = DRE_civilian_economic_pact }
-		x = 0
-		y = 2
-		cost = 10
-
-		completion_reward = {
-			
 		}
 		available = {
 			LAG = {

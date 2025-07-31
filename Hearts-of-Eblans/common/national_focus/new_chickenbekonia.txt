@@ -730,7 +730,10 @@ focus_tree = {
 		prerequisite = { focus = chb_guaranties_for_stambul }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
+			add_command_power = 40
 		}
 		x = 1
 		y = 1
@@ -829,7 +832,7 @@ focus_tree = {
 		prerequisite = { focus = chb_build_northern_line focus = chb_offer_military_support }
 		cost = 10
 		completion_reward = {
-			add_political_power = 100
+			custom_effect_tooltip = in_development
 		}
 		x = 0
 		y = 3

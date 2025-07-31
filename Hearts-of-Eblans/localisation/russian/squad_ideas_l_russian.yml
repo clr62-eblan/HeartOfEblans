@@ -43,6 +43,8 @@
  SVI_vigilium_2_idea: "Античит Vigilium"
  borets_s_pafosom: "«Пресекатель» пафоса на SLAY 2023"
  dva_disa: "Два дисса на лпешку"
+ CHB_mazloyoun_idea: "Мазлоюнг"
+
  DRE_treaty_of_triannon: "Ебланский договор"
  SVI_buster_oposite: "Бустерградовская оппозиция"
  SVI_pacific_army: "Армия пацифистов"
@@ -138,7 +140,7 @@
  CHB_internet_mobilisation_idea: "Мобилизация в интернете"
  CHB_tech_breakthrough_idea: "Технологический прорыв"
  CHB_digital_war_idea: "Цифровая война"
-
+ chb_digital_defense_idea: "Цифровая оборона"
  ARA_gos_apparat_idea: "Уничтоженный Гос. аппарат"
  ARA_new_type_gos_apparat_idea: "Гос. аппарат нового типа"
  ARA_destroyed_legislation: "Уничтоженная легитимность"
