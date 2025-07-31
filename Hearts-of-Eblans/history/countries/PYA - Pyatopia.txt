@@ -9,6 +9,7 @@ add_ideas = {
 	dva_disa
 	sp_crisis
 	slay_2023_mem_goda
+	aircrafts
 }
 
 recruit_character = universal_hype_PYA

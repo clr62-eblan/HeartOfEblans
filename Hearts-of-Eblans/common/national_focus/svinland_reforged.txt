@@ -3737,10 +3737,9 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
-		id = SVI_cheaters_stike
-		icon = GFX_goal_generic_political_pressure
+		id = SVI_vigilium_1
+		icon = GFX_goal_SVI_vigilium
 		cost = 5
 		x = 2
 		y = 3
@@ -3748,21 +3747,7 @@ focus_tree = {
 		prerequisite = { focus = SVI_war_department }
 
 		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = SVI_vigilium_1
-		icon = GFX_goal_SVI_vigilium
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = SVI_cheaters_stike
-		prerequisite = { focus = SVI_cheaters_stike }
-
-		completion_reward = {
-
+			add_ideas = SVI_vigilium_1_idea
 		}
 	}
 	focus = {
@@ -3775,7 +3760,11 @@ focus_tree = {
 		prerequisite = { focus = SVI_vigilium_1 }
 
 		completion_reward = {
-
+			swap_ideas = {
+				add_idea = SVI_vigilium_2_idea
+				remove_idea = SVI_vigilium_1_idea
+			}
+			news_event = { id = squad_news.20 days = 2 }
 		}
 	}
 }

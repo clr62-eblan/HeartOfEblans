@@ -47,6 +47,37 @@ ideas = {
 			}
 		}
 
+		SVI_vigilium_1_idea = {
+			allowed = {
+				always = no
+			}
+			picture = vigilium
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.03
+				army_morale_factor = 0.05
+			}
+		}
+
+		SVI_vigilium_2_idea = {
+			allowed = {
+				always = no
+			}
+			picture = vigilium
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.05
+				army_morale_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
 		SVI_people_is_army = {
 			allowed = {
 				always = no

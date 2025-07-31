@@ -9,6 +9,7 @@ add_ideas = {
 	svinland_ru
 	SVI_peoples_duma_1
 	SVI_shadow_of_gosperevorot_1
+	aircrafts
 }
 
 # Starting tech

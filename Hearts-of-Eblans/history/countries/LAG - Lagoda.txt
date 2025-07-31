@@ -21,6 +21,10 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	aircrafts
+}
+
 recruit_character = universal_hype_lag
 
 set_popularities = {

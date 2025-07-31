@@ -11,7 +11,9 @@ set_research_slots = 4
 add_ideas = { defeted_at_wwone 
 	ARA_gos_apparat_idea 
 	ARA_massive_opposition 
-	ARA_slabie_zakoni }
+	ARA_slabie_zakoni 
+	aircrafts
+}
 
 # Starting tech
 set_technology = {

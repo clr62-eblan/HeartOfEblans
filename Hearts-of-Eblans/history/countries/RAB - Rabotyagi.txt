@@ -1,7 +1,6 @@
 capital = 217
 
-oob = "SOV_1936"
-set_naval_oob = "SOV_1936_naval"
+oob = "RAB_1936"
 set_research_slots = 5
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
@@ -9,6 +8,10 @@ set_fuel_ratio = 0.8
 recruit_character = universal_hype_rab
 
 army_experience = 100
+
+add_ideas = {
+	aircrafts
+}
 
 # Starting tech
 set_technology = {

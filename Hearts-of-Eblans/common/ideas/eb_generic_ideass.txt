@@ -81,12 +81,35 @@ ideas = {
         bad_government = {
 		
 			removal_cost = -1
-
 			picture = GFX_idea_bad_government
 
 			modifier = {
 				stability_factor = -0.05
 				war_support_factor = -0.05
+			}
+		}
+
+        zusuli = {
+		
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				enemy_justify_war_goal_time = 100
+				join_faction_tension = 100
+				justify_war_goal_time = 100
+			}
+		}
+
+        aircrafts = {
+		
+			removal_cost = -1
+
+			picture = generic_aircraft_support
+
+			modifier = {
+				experience_gain_air = 0.01
 			}
 		}
 		

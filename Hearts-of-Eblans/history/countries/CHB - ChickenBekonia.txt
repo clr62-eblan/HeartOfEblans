@@ -8,7 +8,10 @@ set_fuel_ratio = 0.5
 set_stability = 0.34
 set_war_support = 0.21
 
-add_ideas = CHB_hungary_problem
+add_ideas = { 
+	CHB_hungary_problem
+	aircrafts
+}
 
 # Starting tech
 set_technology = {

@@ -30,6 +30,7 @@ add_ideas = {
 	DRE_treaty_of_triannon_aat
 	defeted_at_wwone
 	DRE_viplati_reparatiy
+	aircrafts
 }
 
 set_popularities = {

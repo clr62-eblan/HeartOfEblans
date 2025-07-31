@@ -9,6 +9,7 @@ set_war_support = 0.13
 
 add_ideas = {
 	defeted_at_wwone
+	aircrafts
 }
 
 set_technology = {

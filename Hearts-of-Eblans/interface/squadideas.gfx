@@ -30,6 +30,12 @@ spriteTypes = {
         name = "GFX_idea_GON_acf"
         texturefile = "gfx/interface/ideas/acf_gon.dds"
     }    
+
+	
+    spriteType = {
+        name = "GFX_idea_vigilium"
+        texturefile = "gfx/interface/ideas/vigilium.dds"
+    }  
 	
 	spriteType = {
         name = "GFX_idea_BEL_the_kings_surrender"

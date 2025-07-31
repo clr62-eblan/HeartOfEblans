@@ -20,7 +20,10 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-add_ideas = PBU_slay_2023
+add_ideas = {
+	aircrafts
+	PBU_slay_2023
+}
 
 
 

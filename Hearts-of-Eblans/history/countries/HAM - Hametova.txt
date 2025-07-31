@@ -15,6 +15,7 @@ give_guarantee = DRE
 add_ideas = { 
 	HAM_hypecratia_militia
 	hametova_politics 
+	aircrafts
 }
 
 # Starting tech

@@ -12,6 +12,7 @@ add_ideas = {
 	demografic_problems
 	GON_political_corruption
 	GON_economics_recession
+	aircrafts
 }
 
 recruit_character = universal_hype_gon

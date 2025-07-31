@@ -46,6 +46,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_event_anticheat"
+		texturefile = "gfx/event_pictures/anticheat.dds"
+	}
+
+	spriteType = {
 		name = "GFX_report_event_pirates"
 		texturefile = "gfx/event_pictures/pirates.dds"
 	}
