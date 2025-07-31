@@ -37,6 +37,86 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_PYA_save_builders"
+	texturefile = "gfx/interface/goals/focus_PYA_save_builders.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_demo"
+	texturefile = "gfx/interface/goals/focus_PYA_demo.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_return"
+	texturefile = "gfx/interface/goals/focus_PYA_return.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_elytra"
+	texturefile = "gfx/interface/goals/focus_PYA_elytra.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_communism"
+	texturefile = "gfx/interface/goals/focus_PYA_communism.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_democracy"
+	texturefile = "gfx/interface/goals/focus_PYA_democracy.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_twitch"
+	texturefile = "gfx/interface/goals/focus_PYA_twitch.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_PYA_navy"
+	texturefile = "gfx/interface/goals/focus_PYA_navy.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_youtube"
+	texturefile = "gfx/interface/goals/focus_PYA_youtube.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_big42"
+	texturefile = "gfx/interface/goals/focus_PYA_big42.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_currency"
+	texturefile = "gfx/interface/goals/focus_PYA_currency.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_elections"
+	texturefile = "gfx/interface/goals/focus_PYA_elections.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_bans"
+	texturefile = "gfx/interface/goals/focus_PYA_bans.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_free_blocks"
+	texturefile = "gfx/interface/goals/focus_PYA_free_blocks.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_free_armor"
+	texturefile = "gfx/interface/goals/focus_PYA_free_armor.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_joper"
+	texturefile = "gfx/interface/goals/focus_PYA_joper.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_PYA_hypetime"
 	texturefile = "gfx/interface/goals/focus_PYA_hypetime.dds"			
 	}
@@ -47,8 +127,63 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_PYA_mememan"
+	texturefile = "gfx/interface/goals/focus_PYA_mememan.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_42"
+	texturefile = "gfx/interface/goals/focus_PYA_42.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_freakland"
+	texturefile = "gfx/interface/goals/focus_PYA_freakland.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_PYA_invest_fugabots"
 	texturefile = "gfx/interface/goals/focus_PYA_invest_fugabots.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_fbr"
+	texturefile = "gfx/interface/goals/focus_PYA_fbr.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_orange"
+	texturefile = "gfx/interface/goals/focus_PYA_orange.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_nether_hl"
+	texturefile = "gfx/interface/goals/focus_PYA_nether_hl.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_ironfarm"
+	texturefile = "gfx/interface/goals/focus_PYA_ironfarm.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_redmold"
+	texturefile = "gfx/interface/goals/focus_PYA_redmold.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_com"
+	texturefile = "gfx/interface/goals/focus_PYA_com.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_pirate"
+	texturefile = "gfx/interface/goals/focus_PYA_pirate.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PYA_vilagers"
+	texturefile = "gfx/interface/goals/focus_PYA_vilagers.dds"			
 	}
 
 	SpriteType = {

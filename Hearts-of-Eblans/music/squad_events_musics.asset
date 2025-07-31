@@ -37,6 +37,11 @@ music = {
 }
 
 music = {
+	name = "freakland"
+	file = "SquadMusic/freakland.ogg"
+}
+
+music = {
 	name = "mem_goda"
 	file = "SquadMusic/mem_of_the_year.ogg"
 }

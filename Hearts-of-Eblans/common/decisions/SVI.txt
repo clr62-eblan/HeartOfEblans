@@ -32,9 +32,6 @@ parliament_gui_decision_category = {
 	
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				factor = 0
-			}
 		}
 	}	
 	low_popularity_decrease = {
@@ -69,10 +66,7 @@ parliament_gui_decision_category = {
 		}
 	
 		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-			}
+			factor = 0
 		}
 	}
 }	
@@ -141,6 +135,7 @@ SVI_imminent_collapse_cat = {
 
 		timeout_effect = {
 			country_event = { id = svin.32 days = 2 }
+			set_country_flag = SVI_collapsed
 		}
 	}
 
@@ -160,6 +155,7 @@ SVI_imminent_collapse_cat = {
 			original_tag = SVI
 			NOT = { has_country_flag = SVI_plan_prepared }
 			has_country_flag = SVI_collapse_started
+			NOT = { has_country_flag = SVI_collapsed }
 		}
 		
 		complete_effect = {
@@ -173,10 +169,7 @@ SVI_imminent_collapse_cat = {
 		}
 	
 		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-			}
+			factor = 500
 		}
 	}	
 
@@ -208,10 +201,7 @@ SVI_imminent_collapse_cat = {
 		}
 	
 		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-			}
+			factor = 400
 		}
 	}
 
@@ -243,10 +233,7 @@ SVI_imminent_collapse_cat = {
 		}
 	
 		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-			}
+			factor = 500
 		}
 	}
 
@@ -285,10 +272,7 @@ SVI_imminent_collapse_cat = {
 		}
 	
 		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-			}
+			factor = 1000
 		}
 	}
 

@@ -23,7 +23,116 @@ country_event = {
 					type = annex_everything
 				}
 			}
+			
+			110 = {
+				add_core_of = PYA
+			}
+			920 = {
+				add_core_of = PYA
+			}
+			143 = {
+				add_core_of = PYA
+			}
+			142 = {
+				add_core_of = PYA
+			}
+			921 = {
+				add_core_of = PYA
+			}
+			922 = {
+				add_core_of = PYA
+			}
+
+			SBG = {
+				load_oob = "SBG_1936"
+			}
+
 			news_event = { id = squad_news.16 days = 3 }
+		}
+	}
+}
+
+country_event = {	
+	
+	id = pyatorka.2
+	title = pyatorka.2.t
+	desc = pyatorka.2.d
+	picture = GFX_report_event_fugabots
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pyatorka.2.a #yes
+		ai_chance = {
+			factor = 10
+		}
+			
+		add_stability = -0.03
+		add_war_support = -0.03	
+		add_timed_idea = {
+			idea = PYA_fugabots_attack
+			days = 250
+		}
+	}
+}
+
+country_event = {	
+	
+	id = pyatorka.4
+	title = pyatorka.4.t
+	desc = pyatorka.4.d
+	picture = GFX_report_event_pirates
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pyatorka.4.a #yes
+		ai_chance = {
+			factor = 10
+		}
+			
+		add_stability = -0.03
+		add_war_support = -0.03	
+		add_timed_idea = {
+			idea = PYA_pirate_attacks
+			days = 300
+		}
+	}
+}
+
+#Toha ultimatum
+country_event = {	
+	
+	id = pyatorka.3
+	title = pyatorka.3.t
+	desc = pyatorka.3.d
+	picture = GFX_report_event_fugabots
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pyatorka.3.a #yes
+		ai_chance = {
+			factor = 10
+		}
+		PYA = {
+			puppet = {
+    			target = SVI
+    			end_wars = no
+			}
+		}
+	}
+
+	option = {
+		name = pyatorka.3.b #no
+		ai_chance = {
+			factor = 10
+		}
+		PYA = {
+			create_wargoal = {
+				target = SVI
+				type = puppet_wargoal_focus
+			}
 		}
 	}
 }

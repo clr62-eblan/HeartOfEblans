@@ -25,27 +25,6 @@ characters = {
 			}
 		}
 	}
-	
-	WizeBot = {
-		name = WizeBot
-		portraits = {
-				army = {
-					small = GFX_portrait_GON_WizeBot_small
-			}
-		}
-		
-		advisor = {
-			slot = political_advisor
-			idea_token = WizeBot
-			allowed = {
-				always = yes
-			}	
-			traits  = {
-				WizeBot
-			}	
-			cost = 150
-		}
-	}
 
 	MilanaStar = {
 		name = MilanaStar
@@ -107,50 +86,8 @@ characters = {
 			cost = 120
 		}
 	}
-	
-	ModBoty = {
-		name = ModBoty
-		portraits = {
-				army = {
-					small = GFX_portrait_GON_ModBoty_small
-				}
-		}
-		
-		advisor = {
-			slot = political_advisor
-			idea_token = ModBoty
-			allowed = {
-				always = yes
-			}	
-			traits  = {
-				ModBoty
-			}	
-			cost = 150
-		}
-	}
-	
-	aFsQQ = {
-		name = aFsQQ
-		portraits = {
-				army = {
-					small = GFX_portrait_GON_aFsQQ_small
-			}
-		}
-		
-		advisor = {
-			slot = political_advisor
-			idea_token = aFsQQ
-			allowed = {
-				always = yes
-			}	
-			traits = {
-				PYA_aristocrat
-			}	
-			cost = 150
-		}
-	}
 	maksim_iosif_shabanov = {
-		name = "Максим Иосиф Стинтлерьев"
+		name = "Максим Иосиф Шабанов"
 		
 		portraits = {
 			civilian = {
@@ -218,26 +155,6 @@ characters = {
            ledger = army
            allowed = { original_tag = GON } # Optional, doesn't change anything.
            traits = { army_chief_morale_2 }
-       }
-    }
-	
-	stint ={ 
-        name = "Стинт"
-        portraits= {
-            army = {
-                large = "GFX_portrait_stint"
-				small = "GFX_moder_small"
-            }
-        }
-        field_marshal = {
-			traits = { scavenger ambusher }
-            skill = 4
-            attack_skill = 2
-            defense_skill = 1
-            planning_skill = 3
-            logistics_skill = 2
-            legacy_id = -1
-			visible = { has_country_flag = GON_stint_cabinet }
        }
     }
 

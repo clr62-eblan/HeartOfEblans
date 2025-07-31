@@ -19,7 +19,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.1
-			add_political_power = 0.1
+			add_political_power = 100
 		}
 		x = 16
 		y = 0
@@ -35,16 +35,27 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_new_hype_wave
 		}
+		completion_reward = {
+			news_event = { id = squad_news.19 days = 3 }
+
+			add_popularity = {
+                ideology = hypecratia
+                popularity = -0.1
+            }
+		}
 		x = 10
 		y = 1
 		#минус к хайпу и новость
 	}
 	focus = {
 		id = PYA_hang_orange_curtains
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_orange
 		cost = 10
 		prerequisite = {
 			focus = PYA_return_old_vibes
+		}
+		completion_reward = {
+			add_ideas = PYA_orange_curtains
 		}
 		x = 10
 		y = 2
@@ -52,10 +63,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_joper_economic_plan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_joper
 		cost = 10
 		prerequisite = {
 			focus = PYA_hang_orange_curtains
+		}
+		completion_reward = {
+			add_ideas = PYA_joper_economy
 		}
 		x = 8
 		y = 3
@@ -63,10 +77,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_upgrade_navy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_navy
 		cost = 10
 		prerequisite = {
 			focus = PYA_hang_orange_curtains
+		}
+		completion_reward = {
+			add_ideas = PYA_upgraded_navy
 		}
 		x = 10
 		y = 3
@@ -74,10 +91,15 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_FBI_parade
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_fbr
 		cost = 10
 		prerequisite = {
 			focus = PYA_joper_economic_plan
+		}
+		completion_reward = {
+			add_command_power = 65
+			add_war_support = 0.1
+			add_stability = 0.05
 		}
 		x = 8
 		y = 4
@@ -85,10 +107,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_elytras_for_troops
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_elytra
 		cost = 10
 		prerequisite = {
 			focus = PYA_hang_orange_curtains
+		}
+		completion_reward = {
+			add_ideas = PYA_elytras
 		}
 		x = 12
 		y = 3
@@ -96,7 +121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_start_pirate_invasions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_pirate
 		cost = 10
 		prerequisite = {
 			focus = PYA_elytras_for_troops
@@ -104,13 +129,30 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_upgrade_navy
 		}
+		completion_reward = {
+			SVI = {
+				country_event = { id = pyatorka.4 days = 2 }
+			}
+
+			ARA = {
+				country_event = { id = pyatorka.4 days = 2 }
+			}
+
+			RAZ = {
+				country_event = { id = pyatorka.4 days = 2 }
+			}
+
+			BTK = {
+				country_event = { id = pyatorka.4 days = 2 }
+			}
+		}
 		x = 11
 		y = 4
 		#пиратские нашествия будут мешать соседям и в том числе аратосу
 	}
 	focus = {
 		id = PYA_full_return_to_sp
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_return
 		cost = 10
 		prerequisite = {
 			focus = PYA_start_pirate_invasions
@@ -118,19 +160,35 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_FBI_parade
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = sp_crisis
+				add_idea = PYA_sp_dawn_idea
+			}
+		}
 		x = 10
 		y = 5
 		#брисон и пизда советнiкi или генералы
 	}
 	focus = {
 		id = PYA_communist_server
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_PYA_communism
 		cost = 10
 		prerequisite = {
 			focus = PYA_full_return_to_sp
 		}
 		mutually_exclusive = {
 			focus = PYA_democratic_server
+		}
+		completion_reward ={
+			add_popularity = {
+                ideology = communism
+                popularity = 0.2
+            }
+			set_politics = {
+    			ruling_party = communism
+    			elections_allowed = no
+			}
 		}
 		x = 8
 		y = 6
@@ -138,34 +196,43 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_distribute_resources
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_free_blocks
 		cost = 10
 		prerequisite = {
 			focus = PYA_communist_server
 		}
 		mutually_exclusive = { focus = PYA_distribute_armor }
+		completion_reward = {
+			add_ideas = PYA_distributed_resources
+		}
 		x = 8
 		y = 7
 		#плюсы к строительству и чуть минус ресы
 	}
 	focus = {
 		id = PYA_distribute_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_free_armor
 		cost = 10
 		prerequisite = {
 			focus = PYA_communist_server
 		}
-				mutually_exclusive = { focus = PYA_distribute_resources }
+		mutually_exclusive = { focus = PYA_distribute_resources }
+		completion_reward = {
+			add_ideas = PYA_distributed_armor
+		}
 		x = 6
 		y = 7
 		#плюс к обороне дивизий и всякие баффы
 	}
 	focus = {
 		id = PYA_protect_builders
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_save_builders
 		cost = 10
 		prerequisite = {
 			focus = PYA_communist_server
+		}
+		completion_reward = {
+			add_ideas = PYA_protect_builders_idea
 		}
 		x = 10
 		y = 7
@@ -173,10 +240,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_remove_villagers_restrictions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_vilagers
 		cost = 10
 		prerequisite = {
 			focus = PYA_protect_builders
+		}
+		completion_reward = {
+			add_ideas = PYA_villagers_restrictions_idea
 		}
 		x = 10
 		y = 8
@@ -184,7 +254,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_democratic_server
-		icon = GFX_focus_generic_democratic_europe
+		icon = GFX_goal_PYA_democracy
 		cost = 10
 		prerequisite = {
 			focus = PYA_full_return_to_sp
@@ -192,16 +262,27 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_communist_server
 		}
+		completion_reward = {
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.1
+            }
+		}
 		x = 15
 		y = 6
 		#идея на плюс к демократии
 	}
 	focus = {
 		id = PYA_hunting_on_cheaters
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_bans
 		cost = 10
 		prerequisite = {
 			focus = PYA_democratic_server
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.08
+			add_political_power = 200
 		}
 		x = 13
 		y = 8
@@ -209,10 +290,20 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_introduce_general_elections
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_elections
 		cost = 10
 		prerequisite = {
 			focus = PYA_democratic_server
+		}
+		completion_reward = {
+			set_politics = {
+    			ruling_party = democratic
+    			elections_allowed = no
+			}
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.1
+            }
 		}
 		x = 15
 		y = 7.5
@@ -220,10 +311,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_currency_development
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_currency
 		cost = 10
 		prerequisite = {
 			focus = PYA_democratic_server
+		}
+		completion_reward = {
+			add_ideas = PYA_currency_idea
 		}
 		x = 17
 		y = 8
@@ -242,44 +336,63 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_hunting_on_cheaters
 		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = PYA_lab_idea
+		}
 		x = 15
 		y = 9
 		#ячейка для исследований и плюс к изучению
 	}
-	focus = {
-		id = PYA_union_with_dipins
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = PYA_otso_secret_laboratory
-		}
-		mutually_exclusive = { focus = PYA_union_with_razdva }
-		x = 14
-		y = 10
-
-	}
-	focus = {
-		id = PYA_union_with_razdva
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = PYA_otso_secret_laboratory
-		}
-		mutually_exclusive = { focus = PYA_union_with_dipins }
-		x = 16
-		y = 10
-
-	}
+	#focus = {
+	#	id = PYA_union_with_dipins
+	#	icon = GFX_goal_unknown
+	#	cost = 10
+	#	prerequisite = {
+	#		focus = PYA_otso_secret_laboratory
+	#	}
+	#	mutually_exclusive = { focus = PYA_union_with_razdva }
+	#	x = 14
+	#	y = 10
+#
+	#}
+	#focus = {
+	#	id = PYA_union_with_razdva
+	#	icon = GFX_goal_unknown
+	#	cost = 10
+	#	prerequisite = {
+	#		focus = PYA_otso_secret_laboratory
+	#	}
+	#	mutually_exclusive = { focus = PYA_union_with_dipins }
+	#	x = 16
+	#	y = 10
+#
+	#}
 	focus = {
 		id = PYA_protect_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_demo
 		cost = 10
 		prerequisite = {
-			focus = PYA_union_with_dipins
-			focus = PYA_union_with_razdva
+			#focus = PYA_union_with_dipins
+			#focus = PYA_union_with_razdva
+			focus = PYA_otso_secret_laboratory
+		}
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_government = fascism
+				}
+				PYA = {
+					create_wargoal = {
+						type = topple_government
+						target = PREV
+					} 
+				}
+			}
 		}
 		x = 15
-		y = 11
+		y = 10
 		#цели войны на фашистские страны смена власти
 	}
 	focus = {
@@ -291,6 +404,13 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = PYA_return_old_vibes
+		}
+		completion_reward = {
+			news_event = { id = squad_news.17 days = 2 }
+			add_popularity = {
+    			ideology = hypecratia
+    			popularity = 0.15
+			}
 		}
 		x = 22
 		y = 1
@@ -306,6 +426,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_make_time_for_minecraft
 		}
+		completion_reward = {
+			custom_effect_tooltip = PYA_hypetime
+		}
 		x = 19
 		y = 2
 		#полит советники яйцефонк и мелшер
@@ -318,7 +441,7 @@ focus_tree = {
 			focus = PYA_make_time_for_hype
 		}
 		completion_reward = {
-
+			add_ideas = PYA_new_music_idea
 		}
 		x = 19
 		y = 3
@@ -326,7 +449,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_internet_hype_force
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_internet_world
 		cost = 10
 		prerequisite = {
 			focus = PYA_new_hype_wave
@@ -346,10 +469,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_become_a_meme
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_mememan
 		cost = 10
 		prerequisite = {
 			focus = PYA_internet_hype_force
+		}
+		completion_reward = {
+			add_country_leader_trait = PYA_real_mem
 		}
 		x = 21
 		y = 4
@@ -357,10 +483,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_42_force
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_42
 		cost = 10
 		prerequisite = {
 			focus = PYA_new_music
+		}
+		completion_reward = {
+			add_ideas = PYA_42_force_idea
 		}
 		x = 20
 		y = 5
@@ -368,7 +497,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_local_dictator_force
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_dictatorship
 		cost = 10
 		prerequisite = {
 			focus = PYA_new_hype_wave
@@ -394,6 +523,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_local_dictator_force
 		}
+		completion_reward = {
+			custom_effect_tooltip = PYA_eka
+		}
 		x = 23
 		y = 4
 		#можно добавить еку фашиста-милитариста
@@ -401,11 +533,31 @@ focus_tree = {
 	
 	focus = {
 		id = PYA_extend_nether_hyperloop
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_nether_hl
 		cost = 10
 		prerequisite = {
 			focus = PYA_distribute_resources
 			focus = PYA_distribute_armor
+		}
+		completion_reward = {
+			build_railway = {
+				level = 2
+				path = { 11052 6185 9171 9095 6152 9175 11058 58 190 6155 192 }
+			}
+			build_railway = {
+				path = { 122 3114 3188 6216 6204 3093 3096 21 3022 }
+			}
+			build_railway = {
+				path = { 192 3145 91 11050 3058 3082 6079 }
+			}
+			build_railway = {
+				level = 2
+				path = { 6079 6107 9191 }
+			}
+			build_railway = {
+				level = 2
+				path = { 6079 3040 11077 76 9128 }
+			}
 		}
 		x = 7
 		y = 8
@@ -413,10 +565,43 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_build_giant_iron_farm
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_ironfarm
 		cost = 15
 		prerequisite = {
 			focus = PYA_remove_villagers_restrictions
+		}
+		completion_reward = {
+			if = {
+				limit = { 916 = { is_owned_and_controlled_by = PYA } }
+				add_resource = {
+    				type = steel
+    				amount = 4
+    				state = 916
+				}
+			}
+			if = {
+				limit = { 918 = { is_owned_and_controlled_by = PYA } }
+				add_resource = {
+    				type = aluminium
+    				amount = 3
+    				state = 918
+				}
+			
+			}
+
+			if = {
+				limit = { 38 = { is_owned_and_controlled_by = PYA } }
+				add_resource = {
+    				type = aluminium
+    				amount = 9
+    				state = 38
+				}
+				add_resource = {
+    				type = steel
+    				amount = 3
+    				state = 38
+				}
+			}
 		}
 		x = 10
 		y = 9
@@ -424,10 +609,30 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_spread_red_mold
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_redmold
 		cost = 15
 		prerequisite = {
 			focus = PYA_extend_nether_hyperloop
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = RAZ
+				type = annex_everything
+			}
+
+			hidden_effect = {
+				MPK = {
+					set_politics = {
+    					ruling_party = communism
+    					elections_allowed = no
+					}
+					add_popularity = {
+                		ideology = communism
+                		popularity = 0.2
+            		}
+				}
+
+			}
 		}
 		x = 8
 		y = 9
@@ -435,13 +640,22 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_communist_schizophrenia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_com
 		cost = 25
 		prerequisite = {
 			focus = PYA_build_giant_iron_farm
 		}
 		prerequisite = {
 			focus = PYA_spread_red_mold
+		}
+		completion_reward = {
+			add_popularity = {
+                ideology = communism
+                popularity = 0.2
+            }
+			SVI = {
+				country_event = { id = pyatorka.3 days = 3 }
+			}
 		}
 		x = 9
 		y = 10
@@ -457,6 +671,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PYA_make_time_for_hype
 		}
+		completion_reward = {
+			custom_effect_tooltip = PYA_minetime
+		}
 		x = 25
 		y = 2
 		#полит советники ханов както
@@ -467,6 +684,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = PYA_make_time_for_minecraft
+		}
+		completion_reward = {
+			remove_ideas = sp_crisis
 		}
 		x = 25
 		y = 3
@@ -479,17 +699,25 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_visit_the_servers
 		}
+		completion_reward = {
+			add_ideas = PYA_developed_farms_idea
+		}
 		x = 24
 		y = 5
 		#плюсы к производству и ресурсам чуть чуть
 	}
 	focus = {
 		id = PYA_create_freakland
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_freakland
 		cost = 10
 		prerequisite = {
 			focus = PYA_42_force
 			focus = PYA_farm_development_sp
+		}
+
+		completion_reward = {
+			add_ideas =  PYA_freakland_hype
+			news_event = { id = squad_news.18 days = 2 }
 		}
 		x = 22
 		y = 6
@@ -497,10 +725,21 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_hype_expansion
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_more_territorial_claims
 		cost = 10
 		prerequisite = {
 			focus = PYA_create_freakland
+		}
+
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = RAZ
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = KUS
+			}
 		}
 		x = 20
 		y = 7
@@ -513,16 +752,41 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_create_freakland
 		}
+		completion_reward = {
+			add_ideas = PYA_fugabots_subsidies
+
+			SVI = {
+				country_event = { id = pyatorka.2 days = 2 }
+			}
+
+			ARA = {
+				country_event = { id = pyatorka.2 days = 2 }
+			}
+
+			RAZ = {
+				country_event = { id = pyatorka.2 days = 2 }
+			}
+
+			BTK = {
+				country_event = { id = pyatorka.2 days = 2 }
+			}
+		}
 		x = 22
 		y = 7
 		#ивенты к нескольким странам за нашествие фугаботов и дебафы
 	}
 	focus = {
 		id = PYA_destroy_cloaka_mol
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_war
 		cost = 10
 		prerequisite = {
 			focus = PYA_create_freakland
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = GCM
+			}
 		}
 		x = 24
 		y = 7
@@ -531,10 +795,13 @@ focus_tree = {
 	
 	focus = {
 		id = PYA_new_youtube_content
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_youtube
 		cost = 10
 		prerequisite = {
 			focus = PYA_build_water_hyperloops
+		}
+		completion_reward = {
+			add_ideas = PYA_continue_youtube_idea
 		}
 		mutually_exclusive = { focus = PYA_continue_tiktok_hype }
 		x = 24
@@ -548,16 +815,38 @@ focus_tree = {
 		prerequisite = {
 			focus = PYA_sponsor_fugabots
 		}
+
+		completion_reward = {
+			build_railway = {
+				path = { 11052 6185 9171 9095 6152 9175 11058 58 190 6155 192 }
+			}
+			build_railway = {
+				path = { 122 3114 3188 6216 6204 3093 3096 21 3022 }
+			}
+			build_railway = {
+				path = { 192 3145 91 11050 3058 3082 6079 }
+			}
+			build_railway = {
+				path = { 6079 6107 9191 }
+			}
+			build_railway = {
+				path = { 6079 3040 11077 76 9128 }
+			}
+		}
 		x = 22
 		y = 8
 		#инфраструктура и скорость дивизий
 	}
 	focus = {
 		id = PYA_continue_twitch_streams
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PYA_twitch
 		cost = 10
 		prerequisite = {
 			focus = PYA_build_water_hyperloops
+		}
+		completion_reward = {
+			add_ideas = PYA_continue_twitch_idea
+			add_research_slot = 1
 		}
 		mutually_exclusive = { focus = PYA_new_youtube_content }
 		x = 20
@@ -566,11 +855,14 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_create_42_empire
-		icon = GFX_PYA_boss21
+		icon = GFX_goal_PYA_big42
 		cost = 10
 		prerequisite = {
 			focus = PYA_new_youtube_content
 			focus = PYA_continue_twitch_streams
+		}
+		completion_reward = {
+			custom_effect_tooltip = in_development
 		}
 		x = 22
 		y = 10

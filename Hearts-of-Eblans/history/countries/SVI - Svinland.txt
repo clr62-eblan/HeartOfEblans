@@ -1,4 +1,4 @@
-capital = 209
+capital = 195
 
 oob = "SVI_1936"
 

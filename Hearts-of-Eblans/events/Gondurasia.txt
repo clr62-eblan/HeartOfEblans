@@ -583,7 +583,9 @@ country_event = {
 	option = {
 		name = gonduras.16.b
 		
-		
+		GON = {
+			white_peace = MOY
+		}
 
 		ai_chance = {
 			base = 50
@@ -628,6 +630,12 @@ country_event = {
 			release_on_controlled = MST
 			MST = {
 				load_oob = "MST_war"
+			}
+			GON = {
+				declare_war_on = {
+                	target = MST
+                	type = annex_everything
+            	}
 			}
 		}
 		ai_chance = {

@@ -2517,7 +2517,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 80
+			factor = 20
 		}
 
 		available = {
@@ -2559,7 +2559,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 60
+			factor = 20
 		}
 
 		available = {
@@ -4054,7 +4054,7 @@ focus = {
     }
 
     ai_will_do = {
-
+		factor = 30
     }
   }
 
@@ -4076,7 +4076,7 @@ focus = {
     }
 
     ai_will_do = {
-
+		factor = 20
     }
   }
 
@@ -4098,7 +4098,7 @@ focus = {
     }
 
     ai_will_do = {
-
+		factor = 10
     }
   }
 
@@ -4120,7 +4120,7 @@ focus = {
     }
 
     ai_will_do = {
-
+		factor = 20
     }
   }
 
@@ -4141,9 +4141,8 @@ focus = {
 		set_country_flag = DRE_added_trump
 		custom_effect_tooltip = DRE_trump_avaliable_effect
     }
-
     ai_will_do = {
-
+		factor = 20
     }
   }
 
@@ -4335,7 +4334,7 @@ focus = {
     }
 
     ai_will_do = {
-
+		factor = 15
     }
   }
 
@@ -4367,7 +4366,7 @@ focus = {
     }
 
     ai_will_do = {
-
+		factor = 15
     }
   }
 
@@ -4399,7 +4398,7 @@ focus = {
     }
 
     ai_will_do = {
-
+		factor = 15
     }
   }
 
@@ -4425,7 +4424,7 @@ focus = {
     }
 
     ai_will_do = {
-
+		factor = 15
     }
   }
 

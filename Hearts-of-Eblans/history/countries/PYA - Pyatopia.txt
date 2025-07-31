@@ -9,31 +9,15 @@ add_ideas = {
 	dva_disa
 	sp_crisis
 	slay_2023_mem_goda
-	ankapi_borba
-	sudia
 }
 
 recruit_character = universal_hype_PYA
 
-recruit_character = PYA_Gena
-recruit_character = PYA_Mr_Brison
-
-recruit_character = PYA_Eka_normis
-
-recruit_character = PYA_Mc_Kvadrat
-recruit_character = PYA_Gigilo
-recruit_character = PYA_Mc_Max
-recruit_character = PYA_Zvezda
-
-recruit_character = PYA_Joper_normis
-recruit_character = PYA_Skrinnik
-recruit_character = PYA_Zakviel
-recruit_character = PYA_Skrepka
-recruit_character = PYA_Saya_Moon
-recruit_character = PYA_Oster
-recruit_character = PYA_Nerkin
-recruit_character = PYA_Mesh
-recruit_character = PYA_Melham
+recruit_character = PYA_yaica
+recruit_character = PYA_melsher
+recruit_character = PYA_cacto
+recruit_character = PYA_hanov
+recruit_character = PYA_eka
 
 set_autonomy = {
 	target = MPK
@@ -130,78 +114,13 @@ create_field_marshal = {
 	picture = "PAT_Gena.dds"
 	traits = { }
 	id = 45577528792
-	skill = 5
+	skill = 4
 	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 4
 }
-create_field_marshal = {
-	name = "Мистр Брисон"
-	picture = "PAT_Mr_Brison.dds"
-	traits = { }
-	id = 455477527
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
-}	
-create_corps_commander = {
-	name = "Мс Квадрат"
-	picture = "PAT_Mc_Kvadrat.dds"
-	traits = { }
-	id = 455496359357
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "МС Макс"
-	picture = "PAT_Mc_Max.dds"
-	traits = { }
-	id = 41045411
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
-}	
-create_corps_commander = {
-	name = "Гигила"
-	picture = "PAT_Gigilo.dds"
-	traits = { }
-	id = 455454462
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 4
-}	
-create_corps_commander = {
-	name = "Звезда"
-	picture = "PAT_Zvezda.dds"
-	traits = { }
-	id = 01010101
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
-}	
-create_corps_commander = {
-	name = "Ека"
-	picture = "PAT_Eka.dds"
-	traits = { }
-	id = 4554846
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 3
-}
+
 set_popularities = {
 	democratic = 19
 	fascism = 12

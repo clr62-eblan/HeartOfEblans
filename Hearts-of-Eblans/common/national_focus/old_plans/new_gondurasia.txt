@@ -1795,69 +1795,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GON_stintler_palace_start
-		available = {
-		}
-
-		bypass = {
-		}
-
-		icon = GFX_goal_GON_palace_dream
-		x = 26
-		y = 0
-
-		cost = 10
-		search_filters = {FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-            add_political_power = 100
-			add_ideas = GON_stint_palace_1
-		}
-	}
-
-	focus = {
-		id = GON_stole_money
-		relative_position_id = GON_stintler_palace_start
-		prerequisite = { focus = GON_stintler_palace_start }
-		available = {
-		}
-
-		bypass = {
-		}
-
-		icon = GFX_goal_GON_stole_money_palace
-		x = 0
-		y = 1
-
-		cost = 10
-		search_filters = {FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-            add_political_power = 50
-			add_timed_idea = { idea = GON_stolen_money days = 100 }
-		}
-	}
-
-	focus = {
-		id = GON_start_building
-		relative_position_id = GON_stintler_palace_start
-		prerequisite = { focus = GON_stole_money }
-		available = {
-		}
-
-		bypass = {
-		}
-
-		icon = GFX_goal_GON_palace_start
-		x = 0
-		y = 2
-
-		cost = 10
-		search_filters = {FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-            set_variable = { is_palace_selected = 1 }
-			custom_effect_tooltip = GON_start_palace_build_effect
-		}
-	}
+	
 
 	focus = {
 		id = GON_civil_works

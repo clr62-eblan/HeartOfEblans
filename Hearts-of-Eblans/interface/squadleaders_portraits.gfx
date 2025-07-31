@@ -13,6 +13,41 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_portrait_GON_milana_star_small"
 		texturefile = "gfx/interface/ideas/milana_star.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_PYA_AfterSlay"
+		texturefile = "gfx/leaders/PYA/5opka_as.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_PYA_yaica_small"
+		texturefile = "gfx/interface/ideas/portrait_PYA_yaica.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_PYA_melsher_small"
+		texturefile = "gfx/interface/ideas/portrait_PYA_melsher.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_PYA_cacto_small"
+		texturefile = "gfx/interface/ideas/portrait_PYA_cacto.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_portrait_PYA_Eka_small"
+		textureFile = "gfx/interface/ideas/portrait_PYA_Eka_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_PYA_Eka"
+		textureFile = "gfx/leaders/PYA/Eka.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_PYA_hanov_small"
+		texturefile = "gfx/interface/ideas/portrait_PYA_hanov.dds"
 	}
 
 	SpriteType = {

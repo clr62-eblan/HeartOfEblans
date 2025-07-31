@@ -1942,10 +1942,13 @@ focus_tree = {
 					remove_idea = SVI_shadow_of_gosperevorot_2
 					add_idea = SVI_shadow_of_gosperevorot_3
 				}
+				set_country_flag = SVI_destroyed_duma
 			}
 
 			set_cosmetic_tag = SVI_ORDER
 			add_stability = 0.05
+
+			remove_ideas = SVI_peoples_duma_1
 		}
 	}
 

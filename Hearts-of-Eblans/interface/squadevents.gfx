@@ -23,11 +23,36 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_stariybog"
 		texturefile = "gfx/event_pictures/pya_stariybog.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_newhypewave"
+		texturefile = "gfx/event_pictures/pya_hypewave.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_freakland"
+		texturefile = "gfx/event_pictures/pya_freakland.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_report_event_svo_nehvatka"
 		texturefile = "gfx/event_pictures/nehvatka_beopripasov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_old_vibes"
+		texturefile = "gfx/event_pictures/old_vibes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_pirates"
+		texturefile = "gfx/event_pictures/pirates.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fugabots"
+		texturefile = "gfx/event_pictures/fugabots.dds"
 	}	
 	
 	spriteType = {

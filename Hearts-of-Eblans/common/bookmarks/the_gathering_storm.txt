@@ -71,7 +71,7 @@ bookmarks = {
 		}
 
 
-		HAM={
+		PYA={
 			history = ""
 			ideology = hypecratia
 			ideas = {
@@ -129,7 +129,7 @@ bookmarks = {
 			}
 		}
 		
-		"PYA" = {
+		"HAM" = {
 			minor = yes
 			history = ""
 			ideology = fascism

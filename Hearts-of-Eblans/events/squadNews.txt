@@ -346,3 +346,66 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = squad_news.17
+	title = squad_news.17.t
+	desc = squad_news.17.d
+	picture = GFX_report_event_newhypewave
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.17.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+		 play_song = "new_hype_wave"
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.18
+	title = squad_news.18.t
+	desc = squad_news.18.d
+	picture = GFX_report_event_freakland
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.18.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+		 play_song = "freakland"
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.19
+	title = squad_news.19.t
+	desc = squad_news.19.d
+	picture = GFX_report_event_old_vibes
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.19.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+

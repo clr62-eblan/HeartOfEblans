@@ -2,7 +2,7 @@ capital = 41
 
 oob = "SPR_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 
 add_ideas = { 
 	closed_economy
@@ -116,16 +116,6 @@ create_country_leader = {
 		#
 	}
 }
-create_country_leader = {
-	name = "Стинтик"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "stint_hype.dds"
-	expire = "2000.1.1"
-	ideology = hypetiktok
-	traits = {
-		#
-	}
-}
 
 set_popularities = {
 	hypecratia = 9
@@ -134,62 +124,3 @@ set_popularities = {
 	communism = 8
 	neutrality = 52
 }
-
-create_field_marshal = {
-	name = "Максимильян Стинтлер"
-	picture = "stintler.dds"
-	traits = { }
-	id = 47658899
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
-}	
-create_corps_commander = {
-	name = "aFs QQ"
-	picture = "aFs_QQ.dds"
-	traits = { stint_moder }
-	id = 7768724
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 2
-}	
-
-create_corps_commander = {
-	name = "cherepaha a5"
-	picture = "cherepaha_a5.dds"
-	traits = { stint_moder }
-	id = 05677567
-	skill = 2
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "DARKSY72"
-	picture = "DARKSY72.dds"
-	traits = { stint_moder }
-	id = 05647701
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Neket Ondi"
-	picture = "Neket_Ondi.dds"
-	traits = { stint_moder }
-	id = 0145671
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 4
-}
-
-

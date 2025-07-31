@@ -40,6 +40,107 @@ spriteTypes = {
         name = "GFX_idea_SVI_unity"
         texturefile = "gfx/interface/ideas/idea_SVI_unity.dds"
     }	
+
+	spriteType = {
+        name = "GFX_idea_PYA_new_mus"
+        texturefile = "gfx/interface/ideas/new_mus.dds"
+    }	
+
+	spriteType = {
+        name = "GFX_idea_PYA_farms"
+        texturefile = "gfx/interface/ideas/farms.dds"
+    }	
+
+	spriteType = {
+        name = "GFX_idea_generic_twitch"
+        texturefile = "gfx/interface/ideas/twitch.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_generic_youtube"
+        texturefile = "gfx/interface/ideas/youtube.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_orange_curtains"
+        texturefile = "gfx/interface/ideas/orange_curtains.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_elytras"
+        texturefile = "gfx/interface/ideas/elytras.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_armor"
+        texturefile = "gfx/interface/ideas/PYA_armor.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_blocks"
+        texturefile = "gfx/interface/ideas/PYA_blocks.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_lab"
+        texturefile = "gfx/interface/ideas/PYA_lab.dds"
+    }
+
+
+	spriteType = {
+        name = "GFX_idea_PYA_sp_dawn"
+        texturefile = "gfx/interface/ideas/sp_dawn.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_protect"
+        texturefile = "gfx/interface/ideas/PYA_protect.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_villagers"
+        texturefile = "gfx/interface/ideas/PYA_villagers.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_joper_economy"
+        texturefile = "gfx/interface/ideas/joper_economy.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_upgraded_navy"
+        texturefile = "gfx/interface/ideas/upgraded_navy.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_currency"
+        texturefile = "gfx/interface/ideas/PYA_cur.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_pirates"
+        texturefile = "gfx/interface/ideas/PYA_pirates.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_freakland"
+        texturefile = "gfx/interface/ideas/freakland.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_fugabots"
+        texturefile = "gfx/interface/ideas/fugabots.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_fugabots_attack"
+        texturefile = "gfx/interface/ideas/fugabots_attack.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_PYA_42_force_icon"
+        texturefile = "gfx/interface/ideas/sorokdva_force.dds"
+    }
 	
 	spriteType = {
         name = "GFX_idea_SVI_citizenship"
@@ -327,10 +428,6 @@ spriteTypes = {
         name = "GFX_idea_BTK_part"
         texturefile = "gfx/interface/ideas/BTK_part.dds"
     }
-	spriteType = {
-		name = "GFX_portrait_PYA_Eka_small"
-		textureFile = "gfx/interface/ideas/portrait_PYA_Eka_small.dds"
-	}
 	spriteType = {
 		name = "GFX_portrait_PYA_Joper_small"
 		textureFile = "gfx/interface/ideas/portrait_PYA_Joper_small.dds"

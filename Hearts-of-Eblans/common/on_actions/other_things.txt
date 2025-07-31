@@ -61,9 +61,9 @@ on_actions = {
 				limit = {
 					tag = GON
 					FROM = { tag = MOY }
-					DIP = { NOT = { has_country_flag = deepins_offensive } }
+					DPN = { NOT = { has_country_flag = deepins_offensive } }
 				}
-				DIP = {
+				DPN = {
 					country_event = { id = gonduras.14 }
 					set_country_flag = deepins_offensive
 				}

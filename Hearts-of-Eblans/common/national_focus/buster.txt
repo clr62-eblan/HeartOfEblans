@@ -37,6 +37,9 @@ focus_tree = {
 
 				PYA = {
 					country_event = { id = pyatorka.1 days = 2 random_days = 5 }
+					set_country_leader_portrait = {
+						portrait = GFX_portrait_PYA_AfterSlay
+					}
 				}
 			}
 		}

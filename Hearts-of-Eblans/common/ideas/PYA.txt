@@ -29,9 +29,6 @@ ideas = {
 				fuel_gain_factor = -0.4
 			}
 		}
-	}
-	
-		country = {
 		ankapi_borba_time = {
 			allowed = {
 				always = no
@@ -55,9 +52,6 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 0.1
 			}
 		}
-	}
-	
-	country = {
 		sudia = {
 			allowed = {
 				always = no
@@ -71,9 +65,6 @@ ideas = {
 				political_power_gain = -0.15
 			}
 		}
-	}
-	
-	country = {
 		joper_economic = {
 			allowed = {
 				always = y
@@ -90,20 +81,295 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
-	}
-	country = {
-		fugaboti = {
+
+		PYA_new_music_idea = {
 			allowed = {
 				always = no
 				original_tag = PYA
 			}
 			
-			picture = 
+			picture = PYA_new_mus
+
+			modifier = {
+				hypecratia_drift = 0.01
+				research_speed_factor = 0.05
+				party_popularity_stability_factor = 0.1
+			}
+		}
+
+		PYA_developed_farms_idea = {
+			allowed = {
+				always = no
+				original_tag = PYA
+			}
+			
+			picture = PYA_farms
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				local_resources = 0.03
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+
+		PYA_freakland_hype = {
+			allowed = {
+				always = no
+				original_tag = PYA
+			}
+			
+			picture = PYA_freakland
+
+			modifier = {
+				army_morale_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				political_power_cost = -0.1
+				stability_weekly = 0.01
+			}
+		}
+
+		PYA_fugabots_subsidies = {
+			allowed = {
+				always = no
+				original_tag = PYA
+			}
+			
+			picture = PYA_fugabots
+
+			modifier = {
+				agency_upgrade_time = -0.1
+				decryption_factor = 0.1
+				operation_cost = -0.1
+				intel_network_gain_factor = 0.1
+			}
+		}
+
+		PYA_fugabots_attack = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_fugabots_attack
+
+			modifier = {
+				intelligence_agency_defense = -0.15
+				foreign_subversive_activites = 0.05
+				civilian_intel_to_others = 10
+				war_support_factor = -0.05
+				army_strength_factor = -0.03
+			}
+		}
+
+		PYA_42_force_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_42_force_icon
+
+			modifier = {
+				army_attack_factor = 0.03
+				army_attack_speed_factor = 0.05
+				army_defence_factor = 0.03
+			}
+		}
+
+		PYA_currency_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_currency
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.04
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+
+		PYA_pirate_attacks = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_pirates
+
+			modifier = {
+				intelligence_agency_defense = -0.15
+				foreign_subversive_activites = 0.05
+				civilian_intel_to_others = 10
+				war_support_factor = -0.05
+				army_strength_factor = -0.03
+			}
+		}
+
+		PYA_continue_twitch_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_twitch
+
+			modifier = {
+				research_speed_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		PYA_continue_youtube_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_youtube
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.03
+			}
+		}
+
+		PYA_orange_curtains = {
+			allowed = {
+				always = no
+			}
+			
+			picture = orange_curtains
+
+			modifier = {
+				drift_defence_factor = 0.3
+				weekly_convoys_war_support = 0.02
+			}
+		}
+
+		PYA_joper_economy = {
+			allowed = {
+				always = no
+			}
+			
+			picture = joper_economy
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				line_change_production_efficiency_factor = 0.03
+				license_purchase_cost_factor = -0.3
+				consumer_goods_factor = -0.04
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		PYA_upgraded_navy = {
+			allowed = {
+				always = no
+			}
+			
+			picture = upgraded_navy
+
+			modifier = {
+				experience_gain_navy = 0.02
+				naval_coordination 0.05
+				naval_detection = 0.03
+				naval_morale_factor = 0.05
+			}
+		}
+
+		PYA_elytras = {
+			allowed = {
+				always = no
+			}
+			
+			picture = elytras
+
+			modifier = {
+				experience_gain_air = 0.02
+				air_agility_factor = 0.05
+				air_intercept_efficiency = 0.05
+				air_superiority_efficiency = 0.05
+			}
+		}
+
+		PYA_distributed_armor = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_armor
+
+			modifier = {
+				army_defence_factor = 0.05
+				army_defence_against_major_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+
+		PYA_distributed_resources = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_blocks
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				local_resources = -0.03
+				production_oil_factor = 0.03
+			}
+		}
+
+		PYA_protect_builders_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_protect
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.07
+				production_cost_industrial_complex_factor = -0.07
+			}
+		}
+
+		PYA_villagers_restrictions_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_villagers
 
 			modifier = {
 				stability_factor = -0.05
-				war_support_factor = 0.05
-				fascism_drift = 0.0015
+				local_resources = 0.02
+				production_speed_buildings_factor = 0.03
+				industry_repair_factor = 0.05
+			}
+		}
+
+		PYA_lab_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_lab
+
+			modifier = {
+				research_speed_factor = 0.05
+				scientist_xp_gain_factor = 0.03
+			}
+		}
+
+		PYA_sp_dawn_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = PYA_sp_dawn
+
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = 0.02
+				enemy_justify_war_goal_time = 0.04
+				political_power_gain = 0.04
 			}
 		}
 	}

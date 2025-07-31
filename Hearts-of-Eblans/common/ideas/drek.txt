@@ -955,7 +955,7 @@ ideas = {
 			}
 		}
 
-		DRE_military_economic_boost {
+		DRE_military_economic_boost = {
 			picture = generic_economic_increase
 			allowed = {
 				original_tag = DRE
