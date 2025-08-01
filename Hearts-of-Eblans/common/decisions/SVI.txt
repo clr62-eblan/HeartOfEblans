@@ -26,7 +26,7 @@ parliament_gui_decision_category = {
 		remove_effect = {
 			custom_effect_tooltip = "low_parliament_popularity_increase"
 			hidden_effect = {
-			low_parliament_popularity_increase = yes
+				low_parliament_popularity_increase = yes
 			}
 		}
 	

@@ -1,13 +1,13 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			set_variable = { SVI_new_dumas_project = 0 }
 			SVI = {
-				# You can put this in the country's history file alternatively too.
 				parliament_gui_initial = yes
 			}
-			set_variable = { SVI_new_dumas_project = 0 }
 		}
 	}
+	
 	on_daily = {
 		effect = {
 			reload_parliament_gui = yes

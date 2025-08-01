@@ -1,8 +1,6 @@
 parliament_gui_decision_category = {
 	icon = usa_congress
-
-	# picture = 
-
+	
 	allowed = { original_tag = SVI }
 	visible = {
  		NOT = { has_country_flag = SVI_destroyed_duma }

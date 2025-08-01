@@ -1690,6 +1690,10 @@ focus_tree = {
 		relative_position_id = SVI_national_renaissance_party
 		prerequisite = { focus = SVI_national_renaissance_party }
 
+		ai_will_do = {
+			factor = 20
+		}
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1715,6 +1719,10 @@ focus_tree = {
 		relative_position_id = SVI_national_renaissance_party
 		prerequisite = { focus = SVI_national_renaissance_party }
 
+		ai_will_do = {
+			factor = 20
+		}
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1739,6 +1747,10 @@ focus_tree = {
 		y = 2
 		relative_position_id = SVI_national_renaissance_party
 		prerequisite = { focus = SVI_new_order_movement focus = SVI_parade_of_strength }
+
+		ai_will_do = {
+			factor = 40
+		}
 
 		completion_reward = {
 			hidden_effect = {
@@ -1775,6 +1787,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = SVI_national_youth
 		prerequisite = { focus = SVI_national_youth }
+		ai_will_do = {
+			factor = 20
+		}
 
 		completion_reward = {
 			if = {
@@ -1807,9 +1822,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = SVI_national_youth
 		prerequisite = { focus = SVI_national_youth }
+		ai_will_do = {
+			factor = 20
+		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -1821,6 +1839,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = SVI_national_youth
 		prerequisite = { focus = SVI_national_youth }
+		ai_will_do = {
+			factor = 20
+		}
 
 		completion_reward = {
 			if = {
@@ -1851,6 +1872,9 @@ focus_tree = {
 		prerequisite = { focus = SVI_nation_exceptionalism_act }
 		prerequisite = { focus = SVI_vilification_of_government }
 		mutually_exclusive = { focus = SVI_return_power_by_force }
+		ai_will_do = {
+			factor = 20
+		}
 
 		available = {
 			fascism > 0.48
@@ -1889,6 +1913,9 @@ focus_tree = {
 		prerequisite = { focus = SVI_nation_exceptionalism_act }
 		prerequisite = { focus = SVI_support_from_army_circles }
 		mutually_exclusive = { focus = SVI_arrest_of_parliamentary_traitors }
+		ai_will_do = {
+			factor = 20
+		}
 
 		available = {
 			if = {
@@ -1934,6 +1961,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = SVI_nation_exceptionalism_act
 		prerequisite = { focus = SVI_return_power_by_force focus = SVI_arrest_of_parliamentary_traitors }
+		ai_will_do = {
+			factor = 20
+		}
 
 		completion_reward = {
 			if = {
