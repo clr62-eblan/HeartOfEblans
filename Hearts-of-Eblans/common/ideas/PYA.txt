@@ -10,8 +10,8 @@ ideas = {
 			picture = PYA_new_mus
 
 			modifier = {
-				hypecratia_drift = 0.01
-				research_speed_factor = 0.05
+				hypecratia_drift = 0.05
+				research_speed_factor = 0.1
 				party_popularity_stability_factor = 0.1
 			}
 		}
@@ -25,9 +25,9 @@ ideas = {
 			picture = PYA_farms
 
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.15
 				local_resources = 0.03
-				line_change_production_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
 			}
 		}
 
@@ -40,10 +40,10 @@ ideas = {
 			picture = PYA_freakland
 
 			modifier = {
-				army_morale_factor = 0.05
+				army_morale_factor = 0.12
 				production_speed_buildings_factor = 0.05
 				political_power_cost = -0.1
-				stability_weekly = 0.01
+				stability_weekly = 0.005
 			}
 		}
 
@@ -56,10 +56,10 @@ ideas = {
 			picture = PYA_fugabots
 
 			modifier = {
-				agency_upgrade_time = -0.1
-				decryption_factor = 0.1
+				agency_upgrade_time = -0.2
+				decryption_factor = 0.25
 				operation_cost = -0.1
-				intel_network_gain_factor = 0.1
+				intel_network_gain_factor = 0.15
 			}
 		}
 
@@ -87,9 +87,9 @@ ideas = {
 			picture = PYA_42_force_icon
 
 			modifier = {
-				army_attack_factor = 0.03
-				army_attack_speed_factor = 0.05
-				army_defence_factor = 0.03
+				army_attack_factor = 0.1
+				army_attack_speed_factor = 0.1
+				army_defence_factor = 0.05
 			}
 		}
 
@@ -101,9 +101,9 @@ ideas = {
 			picture = PYA_currency
 
 			modifier = {
-				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.04
-				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.08
 			}
 		}
 
@@ -132,7 +132,7 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.05
-				army_core_attack_factor = 0.05
+				army_core_attack_factor = 0.1
 			}
 		}
 
@@ -144,8 +144,9 @@ ideas = {
 			picture = generic_youtube
 
 			modifier = {
-				industrial_capacity_factory = 0.05
-				production_speed_buildings_factor = 0.03
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.1
+				army_core_defence_factor = 0.05
 			}
 		}
 
@@ -170,9 +171,9 @@ ideas = {
 			picture = joper_economy
 
 			modifier = {
-				industrial_capacity_factory = 0.05
-				line_change_production_efficiency_factor = 0.03
-				consumer_goods_factor = -0.04
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.05
+				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
@@ -187,8 +188,8 @@ ideas = {
 			modifier = {
 				experience_gain_navy = 0.15
 				naval_coordination 0.05
-				naval_detection = 0.03
-				naval_morale_factor = 0.05
+				naval_detection = 0.05
+				naval_morale_factor = 0.08
 			}
 		}
 
@@ -201,9 +202,9 @@ ideas = {
 
 			modifier = {
 				experience_gain_air = 0.15
-				air_agility_factor = 0.05
-				air_intercept_efficiency = 0.05
-				air_superiority_efficiency = 0.05
+				air_agility_factor = 0.1
+				air_intercept_efficiency = 0.1
+				air_superiority_efficiency = 0.1
 			}
 		}
 
@@ -243,8 +244,8 @@ ideas = {
 			picture = PYA_protect
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.07
-				production_cost_industrial_complex_factor = -0.07
+				production_speed_industrial_complex_factor = 0.15
+				production_cost_industrial_complex_factor = -0.05
 			}
 		}
 
@@ -258,8 +259,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				local_resources = 0.02
-				production_speed_buildings_factor = 0.03
-				industry_repair_factor = 0.05
+				production_speed_buildings_factor = 0.075
+				industry_repair_factor = 0.1
 			}
 		}
 
@@ -284,9 +285,9 @@ ideas = {
 			picture = PYA_sp_dawn
 
 			modifier = {
-				stability_factor = 0.03
-				war_support_factor = 0.02
-				enemy_justify_war_goal_time = 0.04
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				enemy_justify_war_goal_time = 0.05
 				political_power_gain = 0.04
 			}
 		}

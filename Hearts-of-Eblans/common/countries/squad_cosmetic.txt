@@ -48,3 +48,8 @@ SVI_USSR = {
 	color = rgb { 122 27 27 }
 	color_ui = rgb { 122 27 27 }
 }
+
+PYA_EMPIRE = {
+	color = rgb { 184 37 37 }
+	color_ui = rgb { 184 37 37 }
+}

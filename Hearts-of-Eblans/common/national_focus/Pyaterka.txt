@@ -844,15 +844,19 @@ focus_tree = {
 
 		completion_reward = {
 			build_railway = {
+				level = 2
 				path = { 11052 6185 9171 9095 6152 9175 11058 58 190 6155 192 }
 			}
 			build_railway = {
+				level = 2
 				path = { 122 3114 3188 6216 6204 3093 3096 21 3022 }
 			}
 			build_railway = {
+				level = 2
 				path = { 192 3145 91 11050 3058 3082 6079 }
 			}
 			build_railway = {
+				level = 2
 				path = { 6079 6107 9191 }
 			}
 			build_railway = {
@@ -892,8 +896,138 @@ focus_tree = {
 			focus = PYA_new_youtube_content
 			focus = PYA_continue_twitch_streams
 		}
+		available = {
+			if = {
+				limit = {
+					has_government = hypecratia
+				}
+				hypecratia > 0.79
+			}
+
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.59
+			}
+        	custom_trigger_tooltip = {
+            	tooltip = PYA_42_empire_need
+			
+				148 = {
+					is_fully_controlled_by = PYA
+				}
+
+				722 = {
+					is_fully_controlled_by = PYA
+				}
+
+				147 = {
+					is_fully_controlled_by = PYA
+				}
+
+				929 = {
+					is_fully_controlled_by = PYA
+				}
+
+				149 = {
+					is_fully_controlled_by = PYA
+				}
+
+				150 = {
+					is_fully_controlled_by = PYA
+				}
+
+				926 = {
+					is_fully_controlled_by = PYA
+				}
+
+				927 = {
+					is_fully_controlled_by = PYA
+				}
+
+				930 = {
+					is_fully_controlled_by = PYA
+				}
+
+				928 = {
+					is_fully_controlled_by = PYA
+				}
+
+				111 = {
+					is_fully_controlled_by = PYA
+				}
+
+				215 = {
+					is_fully_controlled_by = PYA
+				}
+
+				213 = {
+					is_fully_controlled_by = PYA
+				}
+			}
+		}
+
 		completion_reward = {
-			custom_effect_tooltip = in_development
+			set_cosmetic_tag = PYA_EMPIRE
+
+			custom_effect_tooltip = PYA_42_empire_effect
+			hidden_effect = {
+				100 = {
+					add_core_of = PYA
+				}
+
+				148 = {
+					add_core_of = PYA
+				}
+
+				722 = {
+					add_core_of = PYA
+				}
+
+				147 = {
+					add_core_of = PYA
+				}
+
+				929 = {
+					add_core_of = PYA
+				}
+
+				149 = {
+					add_core_of = PYA
+				}
+
+				150 = {
+					add_core_of = PYA
+				}
+
+				926 = {
+					add_core_of = PYA
+				}
+
+				927 = {
+					add_core_of = PYA
+				}
+
+				930 = {
+					add_core_of = PYA
+				}
+
+				928 = {
+					add_core_of = PYA
+				}
+
+				111 = {
+					add_core_of = PYA
+				}
+
+				215 = {
+					add_core_of = PYA
+				}
+
+				213 = {
+					add_core_of = PYA
+				}
+			}
 		}
 		x = 22
 		y = 10

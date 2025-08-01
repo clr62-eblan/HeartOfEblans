@@ -1809,6 +1809,8 @@ focus_tree = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
+			set_country_flag =  GON_civwar
+			
 			remove_ideas = GON_legends_of_stintler
 		}
 	}

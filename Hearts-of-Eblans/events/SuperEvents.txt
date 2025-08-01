@@ -34,7 +34,19 @@ country_event = {
 	
 	hidden = yes
 	
-	is_triggered_only = yes
+	trigger = {
+		DRE = {
+			has_country_flag = SDO_started_chb
+		}
+		CHB = {
+		    has_war_with = DRE
+			NOT = {
+				controls_province = 11586
+				is_puppet = yes
+				is_subject = yes
+			}
+		}
+	}
 
 	immediate = {
 		name = super.2.a
@@ -59,6 +71,7 @@ country_event = {
 	
 	trigger = {
 		DRE = {
+			has_country_flag = SDO_started_chb
 		    has_war_with = CHB
 			NOT = {
 				controls_province = 11666

@@ -55,6 +55,23 @@ on_actions = {
 		}
 	}
 	
+	on_peace = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = SBG }
+				}
+				PYA = {
+					annex_country = {
+						target = SBG
+						transfer_troops = no
+					}
+				}
+			}
+		}
+	}
+	
+	
 	on_declare_war = {
 		effect = {
 			if = {

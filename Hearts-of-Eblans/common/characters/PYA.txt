@@ -43,7 +43,7 @@ characters = {
 				original_tag = PYA
 			}
 			traits = {
-				the_young_magnate
+				the_young_magnate hypecratia_booster
 			}
 			available = {
 				has_completed_focus = PYA_make_time_for_hype

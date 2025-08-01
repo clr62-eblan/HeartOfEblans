@@ -6,7 +6,6 @@ set_research_slots = 3
 
 add_ideas = { 
 	closed_economy
-	isolation
 	GON_kotel_shabanova
 	GON_legends_of_stintler
 	demografic_problems

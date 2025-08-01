@@ -1850,7 +1850,6 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_ideas = DRE_false_flag_operations
-			people_support_development_improvement = yes
 			CHB = {
 				country_event = { id = svo.5 hours = 7 }
 			}
@@ -5398,8 +5397,12 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			JHF = {
-				country_event = { id = drek.5 days = 3 }
+			every_neighbor_country = { #Targets every neighbor country
+    			limit = {
+        			controls_state = 52
+					controls_state = 53
+    			}
+    			country_event = { id = drek.5 days = 3 } #Neighbor countries with more than 5 military factories give military access to the ROOT country
 			}
 		}
 	}
@@ -6487,8 +6490,12 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			BTK = {
-				country_event = { id = drek.5 days = 3 }
+			every_neighbor_country = { #Targets every neighbor country
+    			limit = {
+        			controls_state = 52
+					controls_state = 53
+    			}
+    			country_event = { id = drek.5 days = 3 } #Neighbor countries with more than 5 military factories give military access to the ROOT country
 			}
 		}
 	}

@@ -554,7 +554,7 @@ focus_tree = {
 	focus = {
 		id = BTK_partnerki
 		icon = GFX_BTK_partner
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = BTK_nachalo_army
 		}
@@ -573,7 +573,7 @@ focus_tree = {
 	focus = {
 		id = BTK_pari
 		icon = GFX_BTK_pari
-		cost = 1.00
+		cost = 5
 		relative_position_id = BTK_partnerki
 		prerequisite = {
 			focus = BTK_partnerki
@@ -591,7 +591,7 @@ focus_tree = {
 	focus = {
 		id = BTK_yandex
 		icon = GFX_BTK_yandex
-		cost = 1.00
+		cost = 5
 		relative_position_id = BTK_partnerki
 		prerequisite = {
 			focus = BTK_partnerki
@@ -609,7 +609,7 @@ focus_tree = {
 	focus = {
 		id = BTK_strim_s_ham
 		icon = GFX_BTK_strim_hametova
-		cost = 1.00
+		cost = 6
 		relative_position_id = BTK_loyal_narezka
 		prerequisite = {
 			focus = BTK_loyal_narezka
@@ -639,7 +639,7 @@ focus_tree = {
 	focus = {
 		id = BTK_attack_tiktok_likee
 		icon = GFX_BTK_attack
-		cost = 1.00
+		cost = 6
 		relative_position_id = BTK_loyal_narezka
 		prerequisite = {
 			focus = BTK_pari
@@ -668,7 +668,7 @@ focus_tree = {
 	focus = {
 		id = BTK_army_uchenia
 		icon = GFX_BTK_army_uchenia
-		cost = 1.00
+		cost = 3
 		relative_position_id = BTK_attack_tiktok_likee
 		prerequisite = {
 			focus = BTK_strim_s_ham
@@ -714,7 +714,7 @@ focus_tree = {
 			focus = BTK_army_uchenia
 		}
 		completion_reward = {
-			
+			navy_experience = 25
 		}
 		x = -3
 		y = 1
@@ -808,6 +808,12 @@ focus_tree = {
 				uses = 2
 				category = infantry_weapons
 			}
+			add_tech_bonus = {
+				name = NOR_artillery_development
+				bonus = 0.75
+				uses = 2
+				category = artillery  
+			}
 		}
 		x = 2
 		y = 1
@@ -860,6 +866,35 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_transatlantic
 		}
+
+		complete_effect = {
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}	
+					is_fully_controlled_by = ROOT
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}	
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_equipment_to_stockpile = { 
+				type = convoy
+				amount = 50
+				producer = ROOT
+			}	
+		}
+
 		relative_position_id = BTK_transatlantic
 		x = 0
 		y = 2
@@ -875,6 +910,13 @@ focus_tree = {
 		relative_position_id = BTK_transatlantic
 		prerequisite = {
 			focus = BTK_transatlantic
+		}
+		complete_effect = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = trade_interdiction_tree
+			}	
 		}
 		x = 1
 		y = 1

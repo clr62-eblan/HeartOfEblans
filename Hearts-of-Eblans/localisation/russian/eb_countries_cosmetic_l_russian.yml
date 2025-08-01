@@ -31,11 +31,15 @@
  SVI_ORDER_ADJ: "Свинлендовск"
  SVI_ORDER_DEF: "Свинлендовский Орден"
 
+ PYA_EMPIRE: "Гегемония 42"
+ PYA_EMPIRE_ADJ: "42 гегемонск"
+ PYA_EMPIRE_DEF: "Гегемония 42"
+
  BTK_89: "89 Рейх"
- BTK_89_ADJ: "89 Рейх"
- BTK_89_DEF: "89 Рейхск"
+ BTK_89_ADJ: "89 Рейхск"
+ BTK_89_DEF: "89 Рейх"
  BTK_89_fascism: "89 Рейх"
- BTK_89_fascism_DEF: "Новый 89ый"
+ BTK_89_fascism_DEF: "89 Рейх"
  BTK_89_fascism_ADJ: "89 Рейхск"
  BTK_89_communism: "Коммунистическая Социалистическая Республика 89"
  BTK_89_communism_DEF: "КСР89"

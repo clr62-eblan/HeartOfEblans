@@ -1171,6 +1171,7 @@ focus_tree = {
 			custom_effect_tooltip = toha_tsar_will_be_main
 			hidden_effect = {
 			retire_character = SVI_laki
+			recruit_character = SVI_toha_tsar
 			promote_character = SVI_toha_tsar
 			}
 
@@ -2305,6 +2306,7 @@ focus_tree = {
 			add_timed_idea = { idea = SVI_last_pillar days = 265 }
 			hidden_effect = {
 			retire_character = SVI_laki
+			recruit_character = evgeniyZryagoshin
 			promote_character = evgeniyZryagoshin
 			}
 			set_party_name = { 

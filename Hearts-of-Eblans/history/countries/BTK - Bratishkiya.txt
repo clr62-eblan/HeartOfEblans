@@ -76,7 +76,7 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "bratishkin_fas.dds"
 	expire = "2000.1.1"
-	ideology = nazism
+	ideology = gen_nazism
 	traits = {
 		#
 	}
