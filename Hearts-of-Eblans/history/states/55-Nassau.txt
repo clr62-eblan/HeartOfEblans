@@ -17,9 +17,6 @@ state = {
 			arms_factory = 1
 			industrial_complex = 2
 
-			# Edersee Dam
-			11533 = { dam = 1 }
-
 		}
 
 		victory_points = {
@@ -32,15 +29,6 @@ state = {
 
 		victory_points = {
 			11560 2 # Mainz
-		}
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 3
-				arms_factory = 4
-				# From "Develop Heraeus Research Facilities"
-				industrial_complex = 4
-			}
 		}
 	}
 

@@ -50,6 +50,11 @@ focus_tree = {
 		available = {
 
 		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
 		x = 20
 		y = 0
 		completion_reward = {
@@ -598,7 +603,7 @@ focus_tree = {
 
 			news_event = { id = squad_news.14 days = 5 }
 			add_stability = -0.01
-			war_support_factor = 0.01
+			add_war_support = 0.01
 			add_political_power = 50
 			add_popularity = {
     			ideology = democratic
@@ -799,10 +804,8 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
-			swap_ideas = {
-				remove_idea = SVI_democracy_export_idea_1
-				add_timed_idea = { idea = SVI_democracy_export_idea_2 days = 100 }
-			}
+			remove_ideas = SVI_democracy_export_idea_1
+			add_timed_idea = { idea = SVI_democracy_export_idea_2 days = 100 }
 		}
 	}
 
@@ -1168,7 +1171,6 @@ focus_tree = {
 			custom_effect_tooltip = toha_tsar_will_be_main
 			hidden_effect = {
 			retire_character = SVI_laki
-			recruit_character = SVI_toha_tsar
 			promote_character = SVI_toha_tsar
 			}
 
@@ -1584,8 +1586,8 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			swap_ideas = {
-				remove = SVI_power_that_cannot_be_broken_idea_1
-				add = SVI_power_that_cannot_be_broken_idea_2
+				remove_idea = SVI_power_that_cannot_be_broken_idea_1
+				add_idea = SVI_power_that_cannot_be_broken_idea_2
 			}
 		}
 	}
@@ -1620,6 +1622,10 @@ focus_tree = {
 		prerequisite = { focus = SVI_total_safety }
 		mutually_exclusive = { focus = SVI_stolitsa_will_awash_in_red }
 
+		ai_will_do = {
+			factor = 50
+		}
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1645,6 +1651,10 @@ focus_tree = {
 		relative_position_id = SVI_day_of_rage
 		prerequisite = { focus = SVI_day_of_rage }
 		mutually_exclusive = { focus = SVI_increased_militaristic_sentiment }
+
+		ai_will_do = {
+			factor = 50
+		}
 
 		completion_reward = {
 			if = {
@@ -2265,7 +2275,6 @@ focus_tree = {
 			add_timed_idea = { idea = SVI_last_pillar days = 265 }
 			hidden_effect = {
 			retire_character = SVI_laki
-			recruit_character = evgeniyZryagoshin
 			promote_character = evgeniyZryagoshin
 			}
 			set_party_name = { 
@@ -2998,7 +3007,7 @@ focus_tree = {
 			}
 
 			add_resource = {
-   				type = chrome
+   				type = chromium
     			amount = 2
     			state = 809
 			}
@@ -3399,6 +3408,10 @@ focus_tree = {
 		y = 0
 		relative_position_id = SVI_total_safety
 
+		ai_will_do = {
+			factor = 10
+		}
+
 		available = {
 			custom_trigger_tooltip = { tooltip = need_parliament_support_75
 			if = {
@@ -3426,161 +3439,6 @@ focus_tree = {
 			swap_ideas = {
 				add_idea = SVI_svintogon_2
 				remove_idea = SVI_svintogon_1
-			}
-		}
-	}
-
-	focus = {
-		id = SVI_stabilize_supply
-		icon = GFX_focus_generic_reinforcing_the_supply_network
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = SVI_practice_defense_scenarios
-		prerequisite = { focus = SVI_practice_defense_scenarios }
-
-		completion_reward = {
-			if = {
-				limit = { has_idea = SVI_svintogon_3_winter }
-				
-				swap_ideas = {
-					remove_idea = SVI_svintogon_3_winter
-					add_idea = SVI_svintogon_3_winter_supply
-				}
-			}
-			else = {
-				swap_ideas = {
-				add_idea = SVI_svintogon_3_supply
-				remove_idea = SVI_svintogon_2
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SVI_overtaking_winter
-		icon = GFX_focus_generic_winter_warfare
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = SVI_practice_defense_scenarios
-		prerequisite = { focus = SVI_practice_defense_scenarios }
-
-		completion_reward = {
-			if = {
-				limit = { has_idea = SVI_svintogon_3_supply }
-				swap_ideas = {
-					remove_idea = SVI_svintogon_3_supply
-					add_idea = SVI_svintogon_3_winter_supply
-				}
-			}
-			else = {
-				swap_ideas = {
-				add_ideas = SVI_svintogon_3_winter
-				remove_idea = SVI_svintogon_2
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = SVI_special_forces
-		icon = GFX_focus_eng_special_air_service
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = SVI_overtaking_winter
-		prerequisite = { focus = SVI_overtaking_winter focus = SVI_stabilize_supply }
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SVI_tank_expirements
-		icon = GFX_goal_generic_army_tanks
-		x = 2
-		y = 3
-		prerequisite = { focus = SVI_practice_defense_scenarios }
-		relative_position_id = SVI_practice_defense_scenarios
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_tech_bonus = {
-				name = AUS_panzer_effort_bonus
-				bonus = 0.25
-				uses = 2
-				category = cat_light_armor
-			}
-	
-			add_tech_bonus = {
-				name = AUS_panzer_effort_bonus
-				bonus = 0.25
-				uses = 2
-				category = cat_heavy_armor
-			}
-		 	
-			add_tech_bonus = {
-				name = AUS_panzer_effort_bonus
-				bonus = 0.25
-				uses = 2
-				category = cat_medium_armor
-			}
-		}
-	}
-
-
-	focus = {
-		id = SVI_firedawn
-		icon = GFX_focus_generic_anti_tank_guns
-		x = -2
-		y = 3
-		prerequisite = { focus = SVI_practice_defense_scenarios }
-		relative_position_id = SVI_practice_defense_scenarios
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
-			add_tech_bonus = {
-				uses = 2
-				bonus = 1.0
-				category = armor
 			}
 		}
 	}

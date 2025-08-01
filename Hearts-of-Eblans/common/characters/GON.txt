@@ -40,7 +40,7 @@ characters = {
 			idea_token = MilanaStar
 			allowed = {
 				has_country_flag = sheltered_likers
-				NOT = { has_completed_focus = has_country_flag = star_country }
+				NOT = { has_country_flag = star_country }
 			}	
 			traits  = {
 				tiktok_favorite
@@ -59,7 +59,7 @@ characters = {
 			visible = { 
 				original_tag = GON
 				has_country_flag = sheltered_likers
-				NOT = { has_completed_focus = has_country_flag = star_country }
+				NOT = { has_country_flag = star_country }
 			}
        }
 	}
@@ -78,7 +78,7 @@ characters = {
 			idea_token = MilanaNecrasova
 			allowed = {
 				has_country_flag = sheltered_likers
-				NOT = { has_completed_focus = has_country_flag = necrasova_country }
+				NOT = { has_country_flag = necrasova_country }
 			}	
 			traits  = {
 				the_young_magnate

@@ -109,62 +109,44 @@ ideas = {
 		}
 
 		GON_digital_elite = {
-			icon = RAJ_military_into_the_workforce
+			picture = RAJ_military_into_the_workforce
 			modifier = {
-				research_bonus = {
-					electronics = 0.03
-					computing = 0.03
-				}
 				research_speed_factor = 0.05
 			}
 		}
 
 		GON_digital_propaganda_network = {
-			icon = can_wartime_prices_and_trade_board
+			picture = can_wartime_prices_and_trade_board
 			modifier = {
 				war_support_factor = 0.1
 				stability_factor = 0.02
-				research_bonus = {
-					electronics = 0.05
-				}
+				intel_network_gain = 0.2
+				operation_cost = -0.1
 			}
 		}
 
 		GON_meme_politics_culture = {
-			icon = MEX_politicised_army
+			picture = MEX_politicised_army
 			modifier = {
 				stability_factor = 0.1
 				war_support_factor = 0.05
-				research_bonus = {
-					electronics = 0.05
-				}
+				hypecratia_drift = 0.05
 			}
 		}
 
 		GON_ham_equipment_supply = {
-			icon = generic_supply_line
+			picture = generic_supply_line
 			modifier = {
-				equipment_bonus = {
-					mechanized_equipment = 0.1
-					armor = 0.05
-				}
-				research_bonus = {
-					cat_mechanized_equipment = 0.05
-				}
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.03
+				max_planning_factor = 0.03
 			}
 		}
 
 		GON_military_industry_expansion = {
-			icon = SOV_third_five_year_plan_military
+			picture = SOV_third_five_year_plan_military
 			modifier = {
-				industrial_capacity_factor = 0.05
-				equipment_bonus = {
-					infantry_equipment = 0.1
-					artillery = 0.05
-				}
-				research_bonus = {
-					cat_industry = 0.05
-				}
+				industrial_capacity_factory = 0.05
 			}
 		}
 
@@ -310,7 +292,7 @@ ideas = {
 		}
 
 		GON_food_production_idea = {
-			icon = generic_agrarian_reform
+			picture = generic_agrarian_reform
 			allowed = {
 				original_tag = GON
 				always = no
@@ -322,7 +304,7 @@ ideas = {
 		}
 
 		GON_hop_industry_idea = {
-			icon = generic_central_management
+			picture = generic_central_management
 			allowed = {
 				original_tag = GON
 				always = no
@@ -334,19 +316,19 @@ ideas = {
 		}
 
 		GON_national_cousine_idea = {
-			icon = SWE_hungershield
+			picture = SWE_hungershield
 			allowed = {
 				original_tag = GON
 				always = no
 			}
 			modifier = {
 				weekly_manpower = 50
-				war_support = 0.01
+				war_support_factor = 0.01
 			}
 		}
 
 		GON_trade_agreements_idea = {
-			icon = can_wartime_prices_and_trade_board
+			picture = can_wartime_prices_and_trade_board
 			allowed = {
 				original_tag = GON
 				always = no
@@ -358,7 +340,7 @@ ideas = {
 		}
 
 		GON_lower_taxes_idea = {
-			icon = low_taxes
+			picture = low_taxes
 			allowed = {
 				original_tag = GON
 				always = no
@@ -371,7 +353,7 @@ ideas = {
 		}
 
 		GON_chemical_industry_idea = {
-			icon = generic_flexible_foreign_policy2
+			picture = generic_flexible_foreign_policy2
 			allowed = {
 				original_tag = GON
 				always = no
@@ -384,7 +366,7 @@ ideas = {
 		}
 
 		GON_livestock_industry_idea = {
-			icon = ARG_argentine_beef
+			picture = ARG_argentine_beef
 			allowed = {
 				original_tag = GON
 				always = no
@@ -515,8 +497,6 @@ ideas = {
 			modifier = {
 				mechanized_attack_factor = 0.3
 				motorized_attack_factor = 0.3
-				motorized_speed_factor = 0.5
-				mechanized_speed_factor = 0.5
 			}
 		}
 		

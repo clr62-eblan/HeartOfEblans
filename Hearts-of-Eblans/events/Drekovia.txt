@@ -190,11 +190,14 @@ country_event = {
 				add = 60
 			}
 		}
-		DRE = {
-			transfer_state = 52
-			transfer_state = 53
+		52 = {
+			transfer_state_to = DRE
+		}		
+		53 = {
+			transfer_state_to = DRE
 		}
 	}
+	
 	option = {
 		name = drek.5.b #no
 
@@ -204,7 +207,7 @@ country_event = {
 		DRE = {
 			add_state_claim = 52
 			add_state_claim = 53
-			declare_war_on = {
+			create_wargoal = {
 				target = JHF
 				type = annex_everything
 			}

@@ -48,7 +48,6 @@ GCH = "countries/Gaechka.txt"
 TND = "countries/Tenderlybae.txt"
 GNS = "countries/Gensyxa.txt"
 JHF = "countries/JojoHF.txt"
-ST2 = "countries/Stintia_2.txt"
 
 AMN = "countries/AmNam.txt"
 DOR = "countries/Dora.txt"

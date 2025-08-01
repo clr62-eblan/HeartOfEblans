@@ -1,9 +1,11 @@
-set_stability = 1
-set_war_support = 0.65
-capital=18
+capital = 102
+
+set_stability = 0.9
+set_war_support = 0.78
+
+set_research_slots = 2
 
 
-set_research_slots = 1
 
 # Starting tech
 set_technology = {
@@ -21,18 +23,39 @@ set_technology = {
 	mass_assault = 1
 	fleet_in_being = 1
 }
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 34
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Наместник Ростовский"
+	name = "Жиров Емеля"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Baron.dds"
+	picture = "hnr.dds"
 	expire = "2000.1.1"
 	ideology = stalinism
 	traits = {
@@ -41,9 +64,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Наместник Ростовский"
+	name = "Жиров Емеля"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Baron.dds"
+	picture = "hnr.dds"
 	expire = "2000.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -52,9 +75,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Барон Ростовский"
+	name = "Жиров Емеля"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Baron.dds"
+	picture = "hnr.dds"
 	expire = "2000.1.1"
 	ideology = despotism
 	traits = {
@@ -63,9 +86,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "HIM Korya_MC"
+	name = "Жиров Емеля"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "korya.dds"
+	picture = "hnr.dds"
 	expire = "2000.1.1"
 	ideology = liberalism
 	traits = {
@@ -74,9 +97,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Царь всея Ростова"
+	name = "Жиров Емеля"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Baron.dds"
+	picture = "hnr.dds"
 	expire = "2000.1.1"
 	ideology = hypetiktok
 	traits = {
@@ -85,11 +108,11 @@ create_country_leader = {
 }
 
 set_popularities = {
-	hypecratia = 20
-	democratic = 52
-	fascism = 16
-	communism = 0
-	neutrality = 12
+	hypecratia = 7
+	democratic = 13
+	fascism = 3
+	communism = 7
+	neutrality = 70
 }
 
 

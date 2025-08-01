@@ -14,11 +14,9 @@ country_event = {
 		ai_chance = {
 			base = 0.1
 			modifier = {
-				modifier = {
-					factor = 11
-					FROM = {
-						has_war = yes
-					}
+				factor = 11
+				FROM = {
+					has_war = yes
 				}
 			}
 		}
@@ -588,7 +586,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			base = 50
+			base = 10
 		}
 	}
 }

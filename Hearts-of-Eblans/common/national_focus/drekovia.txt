@@ -5589,12 +5589,6 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			hidden_effect = {
-				swap_ideas ={
-					remove_idea = defeted_at_wwone
-					add_idea = defeted_at_wwone_2
-				}
-			}
 			ZOL = { add_ideas = DRE_development_of_economic_relations_ns}
 		}
 	}

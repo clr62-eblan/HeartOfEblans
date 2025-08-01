@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		advisor = {
-			allowed = { has_completed_focus = BTK_upgrade_twitch }
+			allowed = { original_tag = BTK }
 			slot = political_advisor
 			idea_token = universal_hype_btk
 			traits = { hypecratia_booster }

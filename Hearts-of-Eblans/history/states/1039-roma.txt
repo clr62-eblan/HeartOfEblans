@@ -7,7 +7,7 @@ state={
 	history = {
 		owner = ZOL
 		victory_points = {
-			9904 20
+			9904 10
 		}
 		buildings = {
 			infrastructure = 4 #was: 8
@@ -15,12 +15,6 @@ state={
 			industrial_complex = 1
 			dockyard = 3
 			air_base = 2
-			6973 = {
-				naval_base = 10
-			}
-			11833 = {
-				naval_base = 4
-			}
 		}
 		add_core_of = ZOL
 	}

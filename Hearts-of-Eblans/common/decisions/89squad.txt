@@ -204,182 +204,182 @@ form_BTK_89_cat = {
 
 	}
 }
-BTK_council_cat = {
-	BTK_fas = {
-		icon = generic_form_nation
-		cost = 15
-		days_re_enable=14
-		days_remove = 10
-		allowed = {
-			focus_progress = {
-				focus = BTK_nach_89
-				progress > 0.01
-			}
-			NOT = {
-				has_completed_focus = BTK_nach_89
-			}
-		}
-		visible = {
-			focus_progress = {
-				focus = BTK_nach_89
-				progress > 0.01
-			}
-			NOT = {
-				has_completed_focus = BTK_nach_89
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 100
-				has_idea = bad_government
-			}
-		}
-		complete_effect = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.07
-			}
-			add_stability = -0.06
-		}
-	}
-	BTK_dem = {
-		icon = generic_form_nation
-		cost = 15
-		days_re_enable=14
-		days_remove = 10
-		allowed = {
-			focus_progress = {
-				focus = BTK_nach_89
-				progress > 0.01
-			}
-			NOT = {
-				has_completed_focus = BTK_nach_89
-			}
-		}
-		visible = {
-			focus_progress = {
-				focus = BTK_nach_89
-				progress > 0.01
-			}
-			NOT = {
-				has_completed_focus = BTK_nach_89
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_idea = bad_government
-			}
-		}
-		complete_effect = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.07
-			}
-			add_stability = -0.06
-		}
-		
-	}
-	BTK_comm = {
-		icon = generic_form_nation
-		cost = 15
-		days_re_enable=14
-		days_remove = 10
-		allowed = {
-			focus_progress = {
-				focus = BTK_nach_89
-				progress > 0.01
-			}
-			NOT = {
-				has_completed_focus = BTK_nach_89
-			}
-		}
-		visible = {
-			focus_progress = {
-				focus = BTK_nach_89
-				progress > 0.01
-			}
-			NOT = {
-				has_completed_focus = BTK_nach_89
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_idea = bad_government
-			}
-		}
-		complete_effect = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.07
-			}
-			add_stability = -0.06
-		}
-	}
-	BTK_neu = {
-		icon = generic_form_nation
-		cost = 15
-		days_re_enable=14
-		days_remove = 10
-		allowed = {
-			focus_progress = {
-				focus = BTK_nach_89
-				progress > 0.01
-			}
-			NOT = {
-				has_completed_focus = BTK_nach_89
-			}
-		}
-		visible = {
-			focus_progress = {
-				focus = BTK_nach_89
-				progress > 0.01
-			}
-			NOT = {
-				has_completed_focus = BTK_nach_89
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_idea = bad_government
-			}
-		}
-		complete_effect = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.07
-			}
-			add_stability = -0.06
-		}
-	}
-}
-BTK_reform89_cat = {
-	BTK_panel_start = {
-		icon = generic_form_nation
-		#picture = GFX_decision_cat_picture_form_greater_greece
-		
-		fire_only_once = yes
-		cost = 100
-	
-		allowed = {
-			original_tag = BTK
-		}
-		visible = {
-			original_tag = BTK
-		}
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-	}
-}
+#BTK_council_cat = {
+#	BTK_fas = {
+#		icon = generic_form_nation
+#		cost = 15
+#		days_re_enable=14
+#		days_remove = 10
+#		allowed = {
+#			focus_progress = {
+#				focus = BTK_nach_89
+#				progress > 0.01
+#			}
+#			NOT = {
+#				has_completed_focus = BTK_nach_89
+#			}
+#		}
+#		visible = {
+#			focus_progress = {
+#				focus = BTK_nach_89
+#				progress > 0.01
+#			}
+#			NOT = {
+#				has_completed_focus = BTK_nach_89
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 100
+#				has_idea = bad_government
+#			}
+#		}
+#		complete_effect = {
+#			add_popularity = {
+#				ideology = fascism
+#				popularity = 0.07
+#			}
+#			add_stability = -0.06
+#		}
+#	}
+#	BTK_dem = {
+#		icon = generic_form_nation
+#		cost = 15
+#		days_re_enable=14
+#		days_remove = 10
+#		allowed = {
+#			focus_progress = {
+#				focus = BTK_nach_89
+#				progress > 0.01
+#			}
+#			NOT = {
+#				has_completed_focus = BTK_nach_89
+#			}
+#		}
+#		visible = {
+#			focus_progress = {
+#				focus = BTK_nach_89
+#				progress > 0.01
+#			}
+#			NOT = {
+#				has_completed_focus = BTK_nach_89
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				has_idea = bad_government
+#			}
+#		}
+#		complete_effect = {
+#			add_popularity = {
+#				ideology = democratic
+#				popularity = 0.07
+#			}
+#			add_stability = -0.06
+#		}
+#		
+#	}
+#	BTK_comm = {
+#		icon = generic_form_nation
+#		cost = 15
+#		days_re_enable=14
+#		days_remove = 10
+#		allowed = {
+#			focus_progress = {
+#				focus = BTK_nach_89
+#				progress > 0.01
+#			}
+#			NOT = {
+#				has_completed_focus = BTK_nach_89
+#			}
+#		}
+#		visible = {
+#			focus_progress = {
+#				focus = BTK_nach_89
+#				progress > 0.01
+#			}
+#			NOT = {
+#				has_completed_focus = BTK_nach_89
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				has_idea = bad_government
+#			}
+#		}
+#		complete_effect = {
+#			add_popularity = {
+#				ideology = communism
+#				popularity = 0.07
+#			}
+#			add_stability = -0.06
+#		}
+#	}
+#	BTK_neu = {
+#		icon = generic_form_nation
+#		cost = 15
+#		days_re_enable=14
+#		days_remove = 10
+#		allowed = {
+#			focus_progress = {
+#				focus = BTK_nach_89
+#				progress > 0.01
+#			}
+#			NOT = {
+#				has_completed_focus = BTK_nach_89
+#			}
+#		}
+#		visible = {
+#			focus_progress = {
+#				focus = BTK_nach_89
+#				progress > 0.01
+#			}
+#			NOT = {
+#				has_completed_focus = BTK_nach_89
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				has_idea = bad_government
+#			}
+#		}
+#		complete_effect = {
+#			add_popularity = {
+#				ideology = neutrality
+#				popularity = 0.07
+#			}
+#			add_stability = -0.06
+#		}
+#	}
+#}
+#BTK_reform89_cat = {
+#	BTK_panel_start = {
+#		icon = generic_form_nation
+#		#picture = GFX_decision_cat_picture_form_greater_greece
+#		
+#		fire_only_once = yes
+#		cost = 100
+#	
+#		allowed = {
+#			original_tag = BTK
+#		}
+#		visible = {
+#			original_tag = BTK
+#		}
+#		ai_will_do = {
+#			factor = 200
+#			modifier = {
+#				factor = 0
+#				is_historical_focus_on = yes
+#			}
+#		}
+#	}
+#}
 

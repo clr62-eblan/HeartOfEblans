@@ -38,6 +38,10 @@ focus_tree = {
 			}
 			add_stability = 0.03
 		}
+
+		ai_will_do = {
+			factor = 0
+		}
 		x = 7
 		y = 1
 		relative_position_id = chb_policits_effort
@@ -304,6 +308,10 @@ focus_tree = {
 			}
 			add_stability = 0.05
 		}
+
+		ai_will_do = {
+			factor = 50
+		}
 		x = 0
 		y = 1
 		relative_position_id = chb_policits_effort
@@ -318,6 +326,9 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_ideas = CHB_at_the_helm
+		}
+		ai_will_do = {
+			factor = 50
 		}
 		x = 0
 		y = 1
@@ -848,7 +859,15 @@ focus_tree = {
 		mutually_exclusive = { focus = chb_fascism_path focus = chb_hypecratia_path }
 		cost = 10
 		completion_reward = {
+			add_popularity = {
+    			ideology = communism
+    			popularity = 0.1
+			}
 			add_political_power = 100
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 		x = -7
 		y = 1
@@ -1140,6 +1159,10 @@ focus_tree = {
 
 		available = {
 			always = no
+		}
+
+		ai_will_do = {
+			factor = 50
 		}
 
 		completion_reward = {

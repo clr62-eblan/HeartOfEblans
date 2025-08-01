@@ -153,40 +153,6 @@ country_event = {
 	}
 }
 country_event = {
-	id = btk.25
-	title = btk.0.t
-	desc = btk.0.d
-	picture = GFX_report_event_picture_BTK_4
-	
-	major = no
-	
-	is_triggered_only = yes
-	option = {
-		name = btk.0.a
-		
-		hidden_effect = {
-			BTK = {
-				declare_war_on = {
-					target = ST9
-					type = annex_everything
-				}
-			}
-		}
-	}
-	option = {
-		name = btk.0.b
-		
-		hidden_effect = {
-			BTK = {
-				annex_country = {
-					target = ST9
-					transfer_troops = yes
-				}
-			}
-		}
-	}
-}
-country_event = {
 	id = btk.26
 	title = btk.0.t
 	desc = btk.0.d
@@ -456,6 +422,11 @@ country_event = {
 				popularity = 0.12
 			}
 		}
+
+		ai_chance = {
+			factor = 100
+		}
+
 	}
 }
 country_event = {
@@ -509,6 +480,10 @@ country_event = {
 				ideology = fascism
 				popularity = 0.12
 			}
+		}
+
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
@@ -564,6 +539,10 @@ country_event = {
 				popularity = 0.12
 			}
 		}
+
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 country_event = {
@@ -617,6 +596,10 @@ country_event = {
 				ideology = fascism
 				popularity = 0.12
 			}
+		}
+
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
