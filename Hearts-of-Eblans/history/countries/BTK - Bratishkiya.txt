@@ -11,7 +11,7 @@ add_ideas = {
 	BTK_bad_government
 	slay_2023_king
 	BTK_army_0
-	BTK_dead_economy
+	BTK_dead_economy1
 	BTK_mass_opposition
 }
 

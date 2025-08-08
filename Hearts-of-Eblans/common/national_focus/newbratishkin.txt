@@ -131,6 +131,12 @@ focus_tree = {
         prerequisite = {
             focus = BTK_concept_of_restoration
         }
+		available = {
+			NOT = {
+				has_idea = BTK_army_0
+			}
+		}
+
         relative_position_id = BTK_concept_of_restoration
 		completion_reward = {
             SHD = { country_event = btk.24 days = 2 }
@@ -425,7 +431,10 @@ focus_tree = {
         }
         relative_position_id = BTK_squadgaz
 		completion_reward = {
-            remove_ideas = BTK_dead_economy
+			swap_ideas = {
+            	remove_idea = BTK_dead_economy1
+				add_idea = BTK_custom_policy_idea
+			}
             hidden_effect = {
 			    add_to_variable = { bratishkin_support = 7}
                 modify_bratishkin_support = yes

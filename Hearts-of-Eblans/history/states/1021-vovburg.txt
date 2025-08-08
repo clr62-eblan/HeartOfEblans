@@ -22,9 +22,9 @@ state={
 		#}
 
 		buildings = {
-			infrastructure = 4
-			arms_factory = 5
-			industrial_complex = 4
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
 			anti_air_building = 2
 			air_base = 6
             6521 = {
@@ -38,14 +38,6 @@ state={
             3499 = {
                 land_facility = 1 #Representing Kommersdorf's Research Facilities
             }
-		}
-
-		1939.1.1 = {
-			buildings = {
-				radar_station = 1
-				arms_factory = 6
-				industrial_complex = 3
-			}
 		}
 	} 
 }

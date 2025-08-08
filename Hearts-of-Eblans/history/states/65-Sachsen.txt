@@ -17,7 +17,7 @@ state = {
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
-			industrial_complex = 7
+			industrial_complex = 2
 		}
 
 		victory_points = {
@@ -30,14 +30,6 @@ state = {
 
 		victory_points = {
 			9471 2 # Chemnitz
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 2
-				arms_factory = 5
-				industrial_complex = 10
-			}
 		}
 	}
 

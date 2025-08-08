@@ -1070,6 +1070,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = SVI_decay_stopped }
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 40
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+
 			add_ideas = SVI_act_of_stabilisation
 			
 			custom_effect_tooltip = "low_parliament_popularity_decrease"
@@ -1098,6 +1110,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = SVI_decay_stopped }
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 40
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
 			swap_ruler_traits = { remove = SVI_strong_leader add = SVI_symbol_of_stability}
 
 			add_popularity = {
@@ -1126,6 +1149,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = SVI_decay_stopped }
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 120
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
 			custom_effect_tooltip = "strong_parliament_popularity_decrease"
 			hidden_effect = {
 				strong_parliament_popularity_decrease = yes
@@ -1143,7 +1176,7 @@ focus_tree = {
 				remove_idea = SVI_peoples_duma_1
 			}
 
-			add_timed_idea = { idea = SVI_constitutional_revision days = 210}
+			add_timed_idea = { idea = SVI_constitutional_revision days = 150}
 		}
 	}
 
