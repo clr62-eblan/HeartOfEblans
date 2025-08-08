@@ -2218,10 +2218,6 @@ focus_tree = {
 		}
 
 		available = {
-			power_balance_value = {
-    			id = stint_moders_balance
-    			value < -0.1
-			}
 		}
 
 		bypass = {

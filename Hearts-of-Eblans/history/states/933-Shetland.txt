@@ -11,7 +11,7 @@ state = {
 	history = {
 		owner = SVE
 		add_core_of = SVE
-		add_core_of = SCO
+		add_core_of = ARA
 
 		buildings = {
 			infrastructure = 1	

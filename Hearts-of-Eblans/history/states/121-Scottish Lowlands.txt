@@ -21,6 +21,7 @@ state={
 			}
 		}
 		add_core_of = SVE
+		add_core_of = ARA
 	}
 
 	provinces={
