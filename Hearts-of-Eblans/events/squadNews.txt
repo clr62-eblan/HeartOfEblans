@@ -245,7 +245,7 @@ news_event = {
 	title = squad_news.12.t
 	desc = squad_news.12.d
 	picture = GFX_report_event_svo_start
-	
+	major = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -284,6 +284,7 @@ news_event = {
 	title = squad_news.14.t
 	desc = squad_news.14.d
 	picture = GFX_news_event_t2x2_amsterdam
+	major = yes
 	
 	is_triggered_only = yes
 	
