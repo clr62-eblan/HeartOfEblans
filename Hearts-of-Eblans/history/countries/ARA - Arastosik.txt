@@ -12,7 +12,7 @@ add_ideas = { defeted_at_wwone
 	ARA_gos_apparat_idea 
 	ARA_massive_opposition 
 	ARA_slabie_zakoni 
-	aircrafts
+	
 }
 
 # Starting tech
@@ -104,7 +104,7 @@ if = {
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -113,7 +113,7 @@ create_country_leader = {
 	name = "Аратосс-Гауптштурмфюрер"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "aratoss.dds"
-	expire = "2000.1.1"
+	
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -124,7 +124,7 @@ create_country_leader = {
 	name = "Адрей Аратоссик"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Portrait_dem_Andrey.dds"
-	expire = "2000.1.1"
+	
 	ideology = conservatism
 	traits = {
 		#
@@ -135,7 +135,7 @@ create_country_leader = {
 	name = "Андрей Иосиф Аратоссов"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Aratoss.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -146,7 +146,7 @@ create_country_leader = {
 	name = "Аратосс Великий"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Portrait_dem_Andrey.dds"
-	expire = "2000.1.1"
+	
 	ideology = centrism
 	traits = {
 		#

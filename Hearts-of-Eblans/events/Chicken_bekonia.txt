@@ -390,7 +390,7 @@ country_event = {
 	option = {
 		name = chicken.14.b
 		
-		CHB = { add_ideas = mazeloff_dolg }
+		CHB = { add_timed_idea = { idea = mazeloff_dolg days = 300 } }
 		
 		hidden_effect = {
 			ZOL = {

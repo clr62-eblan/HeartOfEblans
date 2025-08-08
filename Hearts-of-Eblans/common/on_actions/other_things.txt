@@ -12,6 +12,9 @@ on_actions = {
 
 	on_weekly = {
 		effect = {
+			army_experience = 0.7
+			navy_experience = 0.7
+			air_experience = 0.7
 			if = {
 				limit = {  
 					OR = { 
@@ -67,6 +70,11 @@ on_actions = {
 						transfer_troops = no
 					}
 				}
+				SBG = {
+					every_core_state = {
+						add_core_of = PYA
+					}
+				}
 			}
 		}
 	}
@@ -83,6 +91,21 @@ on_actions = {
 				DPN = {
 					country_event = { id = gonduras.14 }
 					set_country_flag = deepins_offensive
+				}
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = ARA
+					check_variable = { ara_return < 1 }
+				}
+				ARA = {
+					set_variable = { ara_return = 1 }
+					country_event = aratos.9
 				}
 			}
 		}

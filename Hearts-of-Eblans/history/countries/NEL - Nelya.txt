@@ -24,7 +24,7 @@ set_technology = {
 }
 
 add_ideas = {
-	aircrafts
+	
 }
 
 recruit_character = universal_hype_nel
@@ -78,7 +78,7 @@ if = {
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 34
 	elections_allowed = no
 }
@@ -87,7 +87,7 @@ create_country_leader = {
 	name = "Неля Рэй"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Nelya_hype.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -98,7 +98,7 @@ create_country_leader = {
 	name = "Неля Рейхс"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Nelya_hype.dds"
-	expire = "2000.1.1"
+	
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -109,7 +109,7 @@ create_country_leader = {
 	name = "Неля Рэй"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Nelya_hype.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		#
@@ -120,7 +120,7 @@ create_country_leader = {
 	name = "Неля Ray"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Nelya_hype.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -131,7 +131,7 @@ create_country_leader = {
 	name = "Nelyaray"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Nelya_hype.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#

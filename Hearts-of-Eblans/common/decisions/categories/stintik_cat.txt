@@ -1,0 +1,49 @@
+form_STI_empire_cat = {
+
+	icon = GFX_decision_category_generic_political_actions
+	picture = GFX_decision_form_sti_empire
+	
+	allowed = {
+		original_tag = GON
+	}
+
+	visible = {
+		original_tag = GON
+	}
+	priority = 50
+}
+
+form_STI_bop_cat = {
+
+	icon = GFX_decision_category_generic_political_actions
+	
+	allowed = {
+		original_tag = GON
+	}
+
+	visible = {
+		original_tag = GON
+		has_power_balance = {
+			id = stint_moders_balance
+		}
+	}
+	priority = 50
+}
+
+STI_sanctions_cat = {
+	priority = 50
+	icon = GFX_decision_category_generic_economy
+	
+	allowed = {
+		original_tag = GON
+	}
+	
+	visible = {
+		original_tag = GON
+		OR = {
+			has_completed_focus = STI_self_determination
+			has_completed_focus = STI_political_interference
+			has_completed_focus = STI_new_hype_life
+		}
+	}
+}

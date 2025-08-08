@@ -198,3 +198,28 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = aratos.9
+	title = aratos.9.t
+	desc = aratos.9.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aratos.9.a #ok
+		ai_chance = {
+			factor = 55
+		}
+		
+		create_wargoal = {
+			target = SVE
+			type = annex_everything
+		}
+		
+		hidden_effect = {
+			add_threat = 5
+		}
+	}
+}

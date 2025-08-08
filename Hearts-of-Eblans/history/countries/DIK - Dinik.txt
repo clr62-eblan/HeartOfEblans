@@ -70,7 +70,7 @@ if = {
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -79,7 +79,7 @@ create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "e.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -90,7 +90,7 @@ create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "e.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#
@@ -101,7 +101,7 @@ create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "e.dds"
-	expire = "2000.1.1"
+	
 	ideology = gen_nazism
 	traits = {
 		#
@@ -112,7 +112,7 @@ create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "e.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -123,7 +123,7 @@ create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "e.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		#

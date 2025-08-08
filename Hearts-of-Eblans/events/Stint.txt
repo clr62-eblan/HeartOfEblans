@@ -1,0 +1,1324 @@
+add_namespace = stintik
+add_namespace = stintik_trade
+
+country_event = {	
+	
+	id = stintik.1
+	title = stintik.1.t
+	desc = stintik.1.d
+	picture = GFX_report_event_reign_of_shabani
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stintik.1.a #yes
+	    ai_chance = {
+	    	factor = 10
+	    }
+	
+	    retire_character = Sti_shabani
+        add_country_leader_role = {
+            character = Sti_parliament
+            promote_leader = yes
+            country_leader = {
+                ideology = centrism
+                traits = { disagreements }
+            }
+        }
+
+        set_power_balance = {
+            id = stint_moders_balance
+            left_side = stint_side
+            right_side = moders_side
+        }
+
+        set_cosmetic_tag = STI_parliament
+	}
+}
+
+#STINT CIVIL WAR
+country_event = {	
+	
+	id = stintik.2
+	title = stintik.2.t
+	desc = stintik.2.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stintik.2.a #yes
+	    ai_chance = {
+	    	factor = 10
+	    }
+        custom_effect_tooltip = STI_civil_war_tt
+        custom_effect_tooltip = STI_vips_mobilize_tt
+        custom_effect_tooltip = STI_moders_gone_tt
+        hidden_effect = {
+	        retire_character = Sti_parliament
+            news_event = { id = squad_news.21 days = 2 }
+
+            remove_power_balance = { id = stint_moders_balance }
+            set_politics = {
+                ruling_party = neutrality
+            }
+            set_popularities = {
+	            democratic = 7
+	            neutrality = 76
+	            fascism = 13
+	            communism = 4
+            }
+
+            release_on_controlled = STM
+            declare_war_on = {
+                target = STM
+                type = annex_everything
+            }
+
+            STM = {
+                load_oob = "STM_1936"
+            }
+
+            set_cosmetic_tag = STI_SHABANI_STATE
+            set_country_flag = GON_civil_war_shabani
+
+            country_event = { id = stintik.7 days = 24 }
+
+            if = {
+                limit = {
+                    has_country_flag = STI_extra_weapons
+                }
+                country_event = { id = stintik.3 days = 3 }
+            }
+
+            if = {
+                limit = {
+                    has_country_flag = STI_donations
+                }
+                country_event = { id = stintik.6 days = 6 }
+            }
+
+            if = {
+                limit = {
+                    has_country_flag = STI_strong_rules
+                }
+                country_event = { id = stintik.4 days = 4 }
+            }
+
+            if = {
+                limit = {
+                    has_country_flag = STI_extra_industry
+                }
+
+                country_event = { id = stintik.5 days = 2 }
+            }
+        }
+	}
+}
+
+
+#STI_extra_weapons
+country_event = {	
+	id = stintik.3
+	title = stintik.3.t
+	desc = stintik.3.d
+	picture = GFX_report_event_FIN_petsamo_mine
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stintik.3.a #yes
+	    ai_chance = {
+	    	factor = 10
+	    }
+	
+	    add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 2500
+            producer = GON
+        }
+	}
+}
+#STI_strong_rules
+country_event = {	
+	id = stintik.4
+	title = stintik.4.t
+	desc = stintik.4.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stintik.3.a #yes
+	    ai_chance = {
+	    	factor = 10
+	    }
+
+        add_manpower = 20000
+	
+	    add_timed_idea = {
+            idea = GON_strong_rules
+            days = 200
+        }
+	}
+}
+
+#STI_extra_industry
+country_event = {	
+	id = stintik.5
+	title = stintik.5.t
+	desc = stintik.5.d
+	picture = GFX_report_event_generic_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stintik.3.a #yes
+	    ai_chance = {
+	    	factor = 10
+	    }
+
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 100
+			producer = GON
+		}
+	}
+}
+
+#STI_donations
+country_event = {	
+	id = stintik.6
+	title = stintik.6.t
+	desc = stintik.6.d
+	picture = GFX_report_event_BRA_us_cooperation
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stintik.3.a #yes
+	    ai_chance = {
+	    	factor = 10
+	    }
+
+		add_stability = 0.1
+        add_war_support = 0.1
+	}
+}
+
+#STI buster nayobka
+country_event = {	
+	id = stintik.7
+	title = stintik.7.t
+	desc = stintik.7.d
+	picture = GFX_report_event_DEN_fascist_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stintik.7.a #yes
+	    ai_chance = {
+	    	factor = 10
+	    }
+
+		461 = {
+            transfer_state_to = PBU
+        }
+	}
+}
+
+#STI shabanov civil war end
+country_event = {	
+	id = stintik.8
+	title = stintik.8.t
+	desc = stintik.8.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	
+	is_triggered_only = yes
+	
+    #Heir
+	option = {
+	    name = stintik.8.a
+	    ai_chance = {
+	    	factor = 10
+	    }
+		custom_effect_tooltip = shabanibecome_tt
+		hidden_effect = {
+			retire_character = Sti_stul
+			complete_national_focus = STI_heir_to_the_throne
+			remove_ideas = GON_mobilized_king_army_neu
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+        set_cosmetic_tag = STI_HEIR_STATE
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = STI_moders_comeback
+		clr_country_flag = STI_moders_gone
+        
+	}
+
+    #Stintler
+	option = {
+	    name = stintik.8.b
+	    ai_chance = {
+	    	factor = 20
+	    }
+		custom_effect_tooltip = stintlerbecome_tt
+		custom_effect_tooltip = generic_skip_one_line_tt
+        set_politics = {
+            ruling_party = fascism
+        }
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = STI_moders_comeback
+		clr_country_flag = STI_moders_gone
+		hidden_effect = {
+			retire_character = Sti_stul
+			drop_cosmetic_tag = yes
+			swap_ideas = {
+				remove_idea = GON_mobilized_king_army_neu
+				add_idea = GON_mobilized_king_army_fas
+			}
+        	set_popularities = {
+	    	    democratic = 10
+	    	    neutrality = 7
+	    	    fascism = 80
+	    	    communism = 3
+        	}
+        	complete_national_focus = STI_claim_stintler_rights
+		}
+	}
+}
+
+
+#nelya flirt pact
+country_event = {	
+	id = stintik.9
+	title = stintik.9.t
+	desc = stintik.9.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+    #Yes
+	option = {
+	    name = stintik.9.a
+	    ai_chance = {
+	    	factor = 10
+	    }
+
+		add_to_variable = { GON.nelya_flirt_status = 15 }
+        diplomatic_relation = {
+		    country = GON
+		    relation = non_aggression_pact
+		    active = yes
+		}
+	}
+
+    #No
+	option = {
+	    name = stintik.9.b
+	    ai_chance = {
+	    	factor = 15
+	    }
+
+		GON = { country_event = stintik.10 }
+	}
+}
+
+country_event = {	
+	id = stintik.10
+	title = stintik.10.t
+	desc = stintik.10.d
+	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
+	
+	is_triggered_only = yes
+    #No
+	option = {
+	    name = stintik.10.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+
+		
+	}
+}
+
+country_event = {	
+	id = stintik.11
+	title = stintik.11.t
+	desc = stintik.11.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+    #No
+	option = {
+	    name = stintik.11.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+
+		
+	}
+}
+
+#Nelya flirt anshlus
+country_event = {	
+	id = stintik.12
+	title = stintik.12.t
+	desc = stintik.12.d
+	picture = GFX_report_event_AUS_military_march
+	
+	is_triggered_only = yes
+    #Annex
+	option = {
+	    name = stintik.12.a
+		ai_chance = {
+			base = 5	
+			modifier = {
+				set_temp_variable = { t = GON.nelya_flirt_status }
+				add = t
+			}
+		}
+
+		GON = {
+			annex_country = {
+    			target = NEL
+   				transfer_troops = no
+			}
+		}
+	}
+
+    #Decline
+	option = {
+	    name = stintik.12.b
+	    ai_chance = {
+	    	factor = 15
+	    }
+
+		GON = { country_event = { id = stintik.13 days = 2 } }
+	}
+}
+
+country_event = {	
+	id = stintik.13
+	title = stintik.13.t
+	desc = stintik.13.d
+	picture = GFX_report_event_ENG_middle_eastern_conflict_2
+	
+	is_triggered_only = yes
+    #No
+	option = {
+	    name = stintik.13.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+
+		GON = {
+			create_wargoal = {
+				target = NEL
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {	
+	id = stintik.14
+	title = stintik.14.t
+	desc = stintik.14.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+    #ally
+	option = {
+	    name = stintik.14.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+
+		
+		hidden_effect = { #offset from fascist reasons on 00_on_actions
+			add_ai_strategy = {
+			   type = alliance
+			   id = GON
+			   value = 500
+			}
+			GON = {
+				add_ai_strategy = {
+				   type = alliance
+				   id = PREV
+				   value = 500
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				GON = { is_faction_leader = yes }
+			}
+			GON = { add_to_faction = PREV }
+		}
+
+		if = {
+			limit = {
+				GON = { is_in_faction = no }
+			}
+			GON = { 
+				create_faction = "Великое Объединение сильнейших"
+				add_to_faction = PREV
+			}
+		}
+
+	}
+
+
+    #no ally
+	option = {
+	    name = stintik.14.b
+	    ai_chance = {
+	    	factor = 15
+	    }
+
+		GON = { country_event = { id = stintik.15 days = 2 } }
+	}
+}
+
+country_event = {	
+	id = stintik.15
+	title = stintik.15.t
+	desc = stintik.15.d
+	picture = GFX_report_event_generic_rally2
+	
+	is_triggered_only = yes
+    #No
+	option = {
+	    name = stintik.15.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+	}
+}
+
+#secure nelya
+country_event = {
+	id = stintik.16
+	title = stintik.16.t
+	desc = stintik.16.d
+	picture = GFX_report_event_nelya_expansion
+	
+	is_triggered_only = yes
+	
+	#Oki
+	option = {
+		name = stintik.16.a
+		
+		172 = {
+			transfer_state_to = GON
+		}
+		166 = {
+			transfer_state_to = GON
+		}
+		794 = {
+			transfer_state_to = GON
+		}
+		177 = {
+			transfer_state_to = GON
+		}
+		167 = {
+			transfer_state_to = GON
+		}
+		165 = {
+			transfer_state_to = GON
+		}
+		set_capital = {state = 25}
+
+		ai_chance = {
+			base = 12
+		}
+	}
+
+	#No
+	option = {
+		name = stintik.16.b
+		
+		hidden_effect = {
+			GON = {
+				country_event = { id = stintik.17 }
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {	
+	id = stintik.17
+	title = stintik.17.t
+	desc = stintik.17.d
+	picture = GFX_report_event_DEN_fascist_troops
+	
+	is_triggered_only = yes
+    #No
+	option = {
+	    name = stintik.17.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+		GON = {
+			create_wargoal = {
+				target = NEL
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {	
+	id = stintik.18
+	title = stintik.18.t
+	desc = stintik.18.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+    #Transfer
+	option = {
+	    name = stintik.18.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+		698 = {
+			transfer_state_to = GON
+		}
+		116 = {
+			transfer_state_to = GON
+		}
+	}
+
+    #Otkaz
+	option = {
+	    name = stintik.18.b
+	    ai_chance = {
+	    	factor = 15
+	    }
+		GON = { country_event = stintik.19 }
+	}
+}
+
+country_event = {	
+	id = stintik.19
+	title = stintik.19.t
+	desc = stintik.19.d
+	picture = GFX_report_event_gre_allied_diplomacy
+	
+	is_triggered_only = yes
+
+    #Holly crap
+	option = {
+	    name = stintik.19.b
+	    ai_chance = {
+	    	factor = 15
+	    }
+	}
+
+    #Pay
+	option = {
+	    name = stintik.19.a
+	    ai_chance = {
+	    	factor = 30
+	    }
+		ARA = { country_event = stintik.20 }
+		custom_effect_tooltip = if_they_accept_tt
+		show_ideas_tooltip = GON_paying_for_islands
+	}
+}
+
+#Pay predloshenie
+country_event = {	
+	id = stintik.20
+	title = stintik.20.t
+	desc = stintik.20.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+    #Oki
+	option = {
+	    name = stintik.20.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+		GON  = {
+			add_timed_idea = {
+				idea = GON_paying_for_islands
+				days = 200
+			}
+		}
+		698 = {
+			transfer_state_to = GON
+		}
+		116 = {
+			transfer_state_to = GON
+		}
+	}
+
+    #NO
+	option = {
+	    name = stintik.20.b
+	    ai_chance = {
+	    	factor = 30
+	    }
+		
+	}
+}
+
+#Pay predloshenie
+country_event = {	
+	id = stintik.21
+	title = stintik.21.t
+	desc = stintik.21.d
+	picture = GFX_report_event_heraclion
+	
+	is_triggered_only = yes
+
+    #Oki
+	option = {
+	    name = stintik.21.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+		GON  = {
+			give_guarantee = CHB
+		}
+		182 = {
+			transfer_state_to = GON
+		}
+	}
+
+    #NO
+	option = {
+	    name = stintik.21.b
+	    ai_chance = {
+	    	factor = 30
+	    }
+		
+	}
+}
+
+
+country_event = {	
+	id = stintik.22
+	title = stintik.14.t
+	desc = stintik.14.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+    #ally
+	option = {
+	    name = stintik.14.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+
+		
+		hidden_effect = { #offset from fascist reasons on 00_on_actions
+			add_ai_strategy = {
+			   type = alliance
+			   id = GON
+			   value = 500
+			}
+			GON = {
+				add_ai_strategy = {
+				   type = alliance
+				   id = PREV
+				   value = 500
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				GON = { is_faction_leader = yes }
+			}
+			GON = { add_to_faction = PREV }
+		}
+
+		if = {
+			limit = {
+				GON = { is_in_faction = no }
+			}
+			GON = { 
+				create_faction = "Средиземноморская Ось"
+				add_to_faction = PREV
+			}
+		}
+
+	}
+
+
+    #no ally
+	option = {
+	    name = stintik.14.b
+	    ai_chance = {
+	    	factor = 15
+	    }
+
+		GON = { country_event = { id = stintik.23 days = 2 } }
+	}
+}
+
+country_event = {	
+	id = stintik.23
+	title = stintik.15.t
+	desc = stintik.15.d
+	picture = GFX_report_event_generic_rally2
+	
+	is_triggered_only = yes
+    #No
+	option = {
+	    name = stintik.15.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+	}
+}
+
+
+country_event = {	
+	
+	id = stintik.24
+	title = stintik.24.t
+	desc = stintik.24.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stintik.24.a #yes
+	    ai_chance = {
+	    	factor = 10
+	    }
+        custom_effect_tooltip = STI_civil_war_tt
+        hidden_effect = {
+	        retire_character = Sti_parliament
+			retire_character = Sti_stul
+            news_event = { id = squad_news.22 days = 2 }
+
+            remove_power_balance = { id = stint_moders_balance }
+            set_politics = {
+                ruling_party = democratic
+            }
+            set_popularities = {
+	            democratic = 45
+	            neutrality = 21
+	            fascism = 5
+	            communism = 4
+				hypecratia = 25
+            }
+
+            release_on_controlled = SUT
+            declare_war_on = {
+                target = SUT
+                type = annex_everything
+            }
+
+            SUT = {
+                load_oob = "SUT_1936"
+            }
+
+            set_cosmetic_tag = STI_MODERS_COUNCIL
+            set_country_flag = GON_civil_war_moders
+
+            if = {
+                limit = {
+                    has_country_flag = STI_extra_weapons
+                }
+                country_event = { id = stintik.3 days = 3 }
+            }
+
+            if = {
+                limit = {
+                    has_country_flag = STI_extra_industry
+                }
+
+                country_event = { id = stintik.5 days = 2 }
+            }
+        }
+	}
+}
+
+country_event = {	
+	id = stintik.25
+	title = stintik.25.t
+	desc = stintik.25.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	
+	is_triggered_only = yes
+	
+    #Afs
+	option = {
+	    name = stintik.25.a
+	    ai_chance = {
+	    	factor = 25
+	    }
+		retire_character = Sti_moders_council_main
+        set_politics = {
+            ruling_party = hypecratia
+        }
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = afsQQbecome_tt
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+			add_country_leader_role = {
+			    character = afsygga
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = hypetiktok
+			        traits = { great_fieldmarshal }
+			    }
+			}
+        	set_popularities = {
+	    	    democratic = 7
+	    	    neutrality = 34
+	    	    fascism = 5
+	    	    communism = 3
+				hypecratia = 51
+        	}
+        	complete_national_focus = STI_suspend_constitution
+			set_cosmetic_tag = GON_AFS
+		}
+        
+	}
+
+    #NeketOndi
+	option = {
+	    name = stintik.25.b
+	    ai_chance = {
+	    	factor = 7
+	    }
+
+		retire_character = Sti_moders_council_main
+        set_politics = {
+            ruling_party = democratic
+        }
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = neketbecome_tt
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+			add_country_leader_role = {
+			    character = neketondi
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = liberalism
+			        traits = { animeshnik }
+			    }
+			}
+        	set_popularities = {
+	    	    democratic = 75
+	    	    neutrality = 5
+	    	    fascism = 6
+	    	    communism = 4
+				hypecratia = 10
+        	}
+        	complete_national_focus = STI_act_with_constitution
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		set_cosmetic_tag = GON_NEKET
+	}
+}
+
+country_event = {	
+	id = stintik.26
+	title = stintik.26.t
+	desc = stintik.26.d
+	picture = GFX_report_event_spr_anarchist_uprising2
+	
+	is_triggered_only = yes
+    #
+	option = {
+	    name = stintik.26.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+		add_stability = -0.02
+		add_war_support = 0.03
+		add_manpower = 30000
+		country_event = {
+			id = stintik.27
+			days = 3
+		}
+	}
+}
+
+country_event = {	
+	id = stintik.27
+	title = stintik.27.t
+	desc = stintik.27.d
+	picture = GFX_report_event_spr_anarchist_uprising2
+	
+	is_triggered_only = yes
+    #
+	option = {
+	    name = stintik.27.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+			custom_effect_tooltip = straf_divisions_tt
+			hidden_effect = {
+				#set_technology = { penal_infantry = 1 popup = no } #Note: Granting tech will make the penal battalion available for any template
+				division_template = {
+					name = "Straf-Division"
+					division_names_group = GON_PEN_01
+					is_locked = yes
+					force_allow_recruiting = yes
+					division_cap = 12
+
+					regiments = {
+						penal_battalion = { x = 0 y = 0 }
+						penal_battalion = { x = 0 y = 1 }
+						penal_battalion = { x = 0 y = 2 }
+						penal_battalion = { x = 1 y = 0 }
+						penal_battalion = { x = 1 y = 1 }
+						penal_battalion = { x = 1 y = 2 }
+						penal_battalion = { x = 2 y = 0 }
+						penal_battalion = { x = 2 y = 1 }
+						penal_battalion = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "division_template = \"Straf-Division\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 3
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					random_country_division = {
+						limit = {
+							division_has_battalion_in_template = penal_battalion
+						}
+						add_divisional_commander_xp = 2300
+					}
+				}
+			}
+	}
+}
+
+country_event = {	
+	id = stintik.28
+	title = stintik.28.t
+	desc = stintik.28.d
+	picture = GFX_report_event_generic_research_lab
+	
+	is_triggered_only = yes
+    #
+	option = {
+	    name = stintik.28.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+		add_stability = 0.03
+		add_tech_bonus = {
+			name = electronics_bonus
+			bonus = 1.0
+			uses = 1
+			category = electronics
+		}
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}	
+		add_tech_bonus = {
+			name = infantry_artillery_bonus #@#
+			bonus = 1.0
+			uses = 1
+			category = infantry_weapons
+			category = artillery
+		}
+	}
+}
+
+country_event = {	
+	id = stintik.29
+	title = stintik.29.t
+	desc = stintik.29.d
+	picture = GFX_report_event_generic_research_lab
+	
+	is_triggered_only = yes
+    #
+	option = {
+	    name = stintik.29.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+		add_stability = 0.01
+	}
+}
+
+country_event = {	
+	id = stintik.30
+	title = stintik.14.t
+	desc = stintik.14.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+    #ally
+	option = {
+	    name = stintik.14.a
+	    ai_chance = {
+	    	factor = 40
+	    }
+
+		
+		hidden_effect = { #offset from fascist reasons on 00_on_actions
+			add_ai_strategy = {
+			   type = alliance
+			   id = GON
+			   value = 500
+			}
+			GON = {
+				add_ai_strategy = {
+				   type = alliance
+				   id = PREV
+				   value = 500
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				GON = { is_faction_leader = yes }
+			}
+			GON = { add_to_faction = PREV }
+		}
+
+		if = {
+			limit = {
+				GON = { is_in_faction = no }
+			}
+			GON = { 
+				create_faction = "Демократический Блок"
+				add_to_faction = PREV
+			}
+		}
+
+	}
+
+
+    #no ally
+	option = {
+	    name = stintik.14.b
+	    ai_chance = {
+	    	factor = 10
+	    }
+
+		GON = { country_event = { id = stintik.23 days = 2 } }
+	}
+}
+
+country_event = {	
+	id = stintik.31
+	title = stintik.31.t
+	desc = stintik.31.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+    #
+	option = {
+	    name = stintik.31.a
+	    ai_chance = {
+	    	factor = 15
+	    }
+		add_stability = 0.01
+		add_popularity = { ideology = hypecratia popularity = 0.05 }
+	}
+}
+
+
+
+#TRADE
+country_event = { 
+	id = stintik_trade.1
+	title = stintik_trade.1.t
+	desc = stintik_trade.1.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = { #Accepts
+		name = stintik_trade.1.a
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM
+					value > 24
+				}
+			}
+			modifier = {
+				factor = 2
+				industrial_complex < 15
+			}
+		}		
+		effect_tooltip = {
+			ROOT = {
+				add_ideas = GON_trading
+				add_opinion_modifier = {
+					target = FROM
+					modifier = GER_trading_partners
+				}
+			}
+		}
+		custom_effect_tooltip = war_will_cancel_deal_tt
+		FROM = {
+			country_event = { id = stintik_trade.2 hours = 5 random_hours = 5 }
+		}
+	}
+
+	option = { #Rejects
+		name = stintik_trade.1.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 15
+				has_opinion = {
+					target = FROM
+					value < -29
+				}
+			}
+			modifier = {
+				add = 15
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+			}
+			modifier = {
+				add = 20
+				FROM = {
+					has_added_tension_amount > 15
+				}
+			}
+		}		
+		FROM = {
+			country_event = { id = stintik_trade.3 hours = 5 random_hours = 5 }
+		}
+	}
+}
+country_event = { #FROM accepts our trade deal
+	id = stintik_trade.2
+	title = stintik_trade.2.t
+	desc = stintik_trade.2.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	option = { #Good!
+		name = stintik_trade.1.a #Intentional 
+		FROM = {
+			add_ideas = GON_trading
+			add_opinion_modifier = {
+				target = PREV
+				modifier = GER_trading_partners
+			}
+		}
+		custom_effect_tooltip = war_will_cancel_deal_tt
+		hidden_effect = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+}
+country_event = { #FROM rejects our trade deal
+	id = stintik_trade.3
+	title = stintik_trade.3.t
+	desc = stintik_trade.3.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	option = { #Too bad for them...
+		name = stintik_trade.3.a	
+	}
+}
+
+country_event = { #FROM rejects our trade deal
+	id = stintik_trade.4
+	title = stintik_trade.4.t
+	desc = stintik_trade.4.d
+	picture = GFX_report_event_SWI_parliament_members
+
+	is_triggered_only = yes
+
+	option = { #invest
+		name = stintik_trade.4.a
+
+		ai_chance = {
+			factor 60
+		}
+
+		add_timed_idea = {
+			idea = GON_pas_investments
+			days = 150
+		}
+
+		GON = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+	option = { #no
+		name = stintik_trade.4.b	
+		ai_chance = {
+			factor 10
+		}
+		GON = { id = stintik_trade.5 hours = 6 random_hours = 12 }
+	}
+}
+
+country_event = { #FROM rejects our trade deal
+	id = stintik_trade.5
+	title = stintik_trade.5.t
+	desc = stintik_trade.5.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	option = { #Too bad for them...
+		name = stintik_trade.5.a	
+	}
+}
+

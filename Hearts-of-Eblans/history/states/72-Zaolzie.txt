@@ -12,11 +12,6 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = LAG
-
-		1939.3.14 = {
-			owner = LAG
-			controller = POL
-		}
 	}
 
 	provinces={

@@ -51,6 +51,22 @@ characters = {
        }
     }
 
+	lin_night ={ 
+        name = "Lin_night"
+        portraits= {
+            army = {
+				small = "GFX_lin_night_small"
+            }
+        }
+	   advisor = {
+           slot = political_advisor
+           idea_token = lin_night
+           cost = 100
+           allowed = { original_tag = CHB NOT = { has_government = communism } } # Optional, doesn't change anything.
+           traits = { ponilub }
+       }
+    }
+
     miramestinchortt ={ 
         name = "Miramestinchortt"
         portraits= {
@@ -69,11 +85,29 @@ characters = {
             legacy_id = -1
        }
 	   advisor = {
-           slot = high_command
+           slot = army_chief
            idea_token = miramestinchortt
            ledger = army
            allowed = { original_tag = CHB } # Optional, doesn't change anything.
-           traits = { army_cavalry_2 }
+           traits = { army_infantry_2 }
+       }
+    }
+
+    Shukov ={ 
+        name = "Маршал Жуков, Глава советской армии"
+        portraits= {
+            army = {
+                large = "GFX_portrait_shukov"
+            }
+        }
+        field_marshal = {
+			traits = { fast_planner war_hero }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 1
+            legacy_id = -1
        }
     }
 	
@@ -86,12 +120,12 @@ characters = {
             }
         }
         corps_commander = {
-			traits = {  winter_specialist }
+			traits = { winter_specialist }
             skill = 3
             attack_skill = 1
-            defense_skill = 3
-            planning_skill = 1
-            logistics_skill = 1
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 2
             legacy_id = -1
        }
 	   advisor = {

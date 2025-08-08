@@ -1,0 +1,13 @@
+form_Greater_sla_cat = {
+
+	icon = GFX_decision_category_border_conflicts
+	
+	allowed = {
+		original_tag = SLA
+	}
+
+	visible = {
+		original_tag = SLA
+	}
+	priority = 40
+}

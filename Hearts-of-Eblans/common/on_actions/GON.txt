@@ -1,0 +1,66 @@
+on_actions = {
+    on_peace = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = STM }
+				}
+				GON = {
+					STM = {
+						every_core_state = {
+							add_core_of = GON
+						}
+					}
+                    country_event = { id = stintik.8 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					FROM = { tag = SUT }
+				}
+				SUT = {
+					every_core_state = {
+						add_core_of = GON
+					}
+				}
+				GON = {
+                    country_event = { id = stintik.25 days = 3 }
+				}
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+					original_tag = NEL
+					original_tag = MOY
+					original_tag = ZOL
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
+				THIS = {
+					if = {
+						limit = {
+							has_idea = GON_fascism_influence
+							fascism > 0.45
+						}
+						set_politics = {
+    						ruling_party = fascism
+    						elections_allowed = no
+						}
+						add_ai_strategy = {
+						   type = alliance
+						   id = GON
+						   value = 100
+						}
+					}
+				}
+			}
+		}
+	}
+}

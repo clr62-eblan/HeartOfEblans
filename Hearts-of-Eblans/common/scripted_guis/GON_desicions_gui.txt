@@ -98,10 +98,30 @@ scripted_gui = {
 				image = "GFX_GON_palace_state_[?bilyard]"
 			}
 			GON_palace_state_progressbar = {
-				frame = palace_ready_state_2
+				frame = palace_ready_state
 			}
 			GON_palace_blueprint = {
 				frame = selected_floor
+			}
+		}
+	}	
+	
+	Nelya_flirt_gui = {
+		context_type = decision_category
+		window_name = "Nelya_flirt_window"
+		visible = {
+			always = yes
+		}
+		ai_enabled = {
+			original_tag = GON
+		}
+		
+		effects = {
+		}
+		
+		properties = {
+			GON_flirt_progress_bar = {
+				frame = nelya_flirt_status
 			}
 		}
 	}

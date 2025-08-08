@@ -1,0 +1,85 @@
+DRE_EMPIRE = {
+    color = rgb { 101 21 110 }
+    color_ui = rgb { 101 21 110}
+}
+SVI_BUSTER = {
+	color = rgb { 186 107 22 }
+	color_ui = rgb { 186 107 22 }
+}
+CHB_EBLAN = {
+	color = rgb { 51 51 51 }
+	color_ui = rgb { 51 51 51 }
+}
+
+ARA_OF = {
+	color = rgb { 120 25 8 }
+	color_ui = rgb { 120 25 8 }
+}
+BTK_89 = {
+	color = rgb { 89 65 169 }
+	color_ui = rgb { 89 65 169 }
+}
+ARA_OF = {
+	color = rgb { 120 25 8 }
+	color_ui = rgb { 120 25 8 }
+}
+
+ARA_HDR = {
+	color = rgb { 135 54 114 }
+	color_ui = rgb { 135 54 114 }
+}
+
+ARA_HypeD = {
+	color = rgb { 107 7 24 }
+	color_ui = rgb { 107 7 24 }
+}
+
+SVI_HIS = {
+	color = rgb { 222 184 184 }
+	color_ui = rgb { 222 184 184 }
+}
+
+SVI_ORDER = {
+	color = rgb { 92 15 15 }
+	color_ui = rgb { 92 15 15 }
+}
+
+SVI_USSR = {
+	color = rgb { 122 27 27 }
+	color_ui = rgb { 122 27 27 }
+}
+
+PYA_EMPIRE = {
+	color = rgb { 184 37 37 }
+	color_ui = rgb { 184 37 37 }
+}
+
+STI_parliament = {
+	color = rgb { 41 61 133 }
+	color_ui = rgb { 41 61 133 }
+}
+
+GON_BIG_GON = {
+	color = rgb { 79 36 209 }
+	color_ui = rgb { 79 36 209 }
+}
+
+STI_SHABANI_STATE = {
+	color = rgb { 184 231 255 }
+	color_ui = rgb { 184 231 255 }
+}
+
+STI_MODERS_COUNCIL = {
+	color = rgb { 61 99 48 }
+	color_ui = rgb { 61 99 48 }
+}
+
+STI_HEIR_STATE = {
+	color = rgb { 73 158 186 }
+	color_ui = rgb { 73 158 186 }
+}
+
+GON_AFS = {
+	color = rgb { 37 94 97 }
+	color_ui = rgb { 37 94 97 }
+}

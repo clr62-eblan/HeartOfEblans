@@ -126,7 +126,7 @@ country_event = {
 	option = {
 		name = pyatorka.3.b #no
 		ai_chance = {
-			factor = 10
+			factor = 70
 		}
 		PYA = {
 			create_wargoal = {

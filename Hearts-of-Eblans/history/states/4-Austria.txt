@@ -36,18 +36,6 @@ state = {
                 }
             }
 		}
-		
-		1938.3.12 = {
-			owner = BTK
-			controller = GER
-			add_core_of = BTK
-		}
-
-		1939.1.1 = {
-			buildings = {
-				anti_air_building = 5
-			}
-		}
 
 	}
 

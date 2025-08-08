@@ -17,12 +17,12 @@ set_technology = {
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	elections_allowed = no
 }
 
 add_ideas = {
-	aircrafts
+	
 }
 
 recruit_character = universal_hype_lag
@@ -39,7 +39,7 @@ create_country_leader = {
 	name = "Лагода"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "lagoda.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#
@@ -50,7 +50,7 @@ create_country_leader = {
 	name = "Лагода"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "lagoda.dds"
-	expire = "2000.1.1"
+	
 	ideology = rexism
 	traits = {
 		#
@@ -61,7 +61,7 @@ create_country_leader = {
 	name = "Лагода"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "lagoda.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		#
@@ -72,7 +72,7 @@ create_country_leader = {
 	name = "Лагода"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "lagoda.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -82,7 +82,7 @@ create_country_leader = {
 	name = "Лагода"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "lagoda.dds"
-	expire = "2000.1.1"
+	
 	ideology = leninism
 	traits = {
 		#

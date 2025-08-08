@@ -627,8 +627,8 @@ focus_tree = {
 			}
 			hidden_effect = {
 				swap_ideas = {
-					remove_idea = BTK_debarmy_1
-					add_idea = BTK_debarmy_2
+					remove_idea = BTK_army_1
+					add_idea = BTK_army_2
 				}
 			}
 		}

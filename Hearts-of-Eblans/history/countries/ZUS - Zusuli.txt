@@ -10,7 +10,7 @@ set_research_slots = 10
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 34
 	elections_allowed = no
 }
@@ -19,7 +19,7 @@ create_country_leader = {
 	name = "Наместник Ростовский"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Zusuli.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -36,7 +36,7 @@ create_country_leader = {
 	name = "Непокорные Зусулы"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Zusuli.dds"
-	expire = "2000.1.1"
+	
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -47,7 +47,7 @@ create_country_leader = {
 	name = "Непокорные Зусулы"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Zusuli.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		#
@@ -58,7 +58,7 @@ create_country_leader = {
 	name = "Непокорные Зусулы"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Zusuli.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -69,7 +69,7 @@ create_country_leader = {
 	name = "Непокорные Зусулы"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Zusuli.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#

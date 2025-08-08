@@ -32,6 +32,154 @@ ideas = {
 				
 			}
 		}
+		BTK_vladimir_bratishkin_1 = {
+		
+			removal_cost = -1
+
+			picture = BTK_bratishkin
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.15
+			}
+		}
+		BTK_vladimir_bratishkin_2 = {
+		
+			removal_cost = -1
+
+			picture = BTK_bratishkin
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.1
+				army_morale_factor = 0.02
+			}
+		}
+		BTK_vladimir_bratishkin_3 = {
+		
+			removal_cost = -1
+
+			picture = BTK_bratishkin
+
+			modifier = {
+				stability_factor = 0.02
+				army_morale_factor = 0.05
+			}
+		}
+		BTK_vladimir_bratishkin_4 = {
+		
+			removal_cost = -1
+
+			picture = BTK_bratishkin
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.02
+				political_power_factor = 0.03
+				army_morale_factor = 0.05
+			}
+		}
+		BTK_vladimir_bratishkin_5 = {
+		
+			removal_cost = -1
+
+			picture = BTK_bratishkin2
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.04
+				political_power_factor = 0.05
+				political_power_cost = -0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		BTK_reformed_kolhozes = {
+		
+			removal_cost = -1
+
+			picture = generic_agrarian_reform
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		BTK_hitech_park_idea = {
+		
+			removal_cost = -1
+
+			picture = jap_supremacy_of_technology
+
+			modifier = {
+				research_speed_factor = 0.05
+				scientist_research_bonus_factor = 0.05
+				scientist_breakthrough_bonus_factor = 0.05
+			}
+		}
+		BTK_vovdrev_idea = {
+		
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		BTK_squadgaz_idea = {
+		
+			removal_cost = -1
+
+			picture = BTK_squadgaz
+
+			modifier = {
+				local_resources_factor = 0.05
+				base_fuel_gain_factor = 0.1
+				max_fuel_factor = 0.1
+				supply_factor = 0.05
+			}
+		}
+		BTK_territorial_brigades_idea = {
+		
+			removal_cost = -1
+
+			picture = ARG_war_division
+
+			modifier = {
+				mobilization_speed = 0.04
+				training_time_factor = -0.02
+				war_support_factor = 0.02
+				army_core_defence_factor = 0.04
+			}
+		}
+		BTK_kso_idea = {
+		
+			removal_cost = -1
+
+			picture = generic_spy_coup
+
+			modifier = {
+				decryption_factor = 0.05
+				civilian_intel_factor = 0.1
+				intel_network_gain_factor = 0.05
+			}
+		}
+		BTK_mass_opposition = {
+		
+			removal_cost = -1
+
+			picture = BEL_scars_of_ww1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				drift_defence_factor = -0.2
+			}
+		}
 		BTK_eblan_protector= {
 		
 			removal_cost = -1
@@ -229,6 +377,34 @@ ideas = {
 			}
 		}
 
+		BTK_capitalism_idea = {
+		
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		BTK_officer_reform_idea = {
+		
+			removal_cost = -1
+
+			picture = tur_kemalist_officers
+
+			modifier = {
+				war_support_factor = 0.05
+				field_officer_promotion_penalty = -0.2
+				grant_medal_cost_factor = -0.3
+				experience_gain_army = 0.1
+			}
+		}
+
 		BTK_dead_economy = {
 			removal_cost = -1
 
@@ -240,10 +416,10 @@ ideas = {
 				line_change_production_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.35
 				production_factory_start_efficiency_factor = -0.5
-				production_factory_max_efficiency_factor = -0.75
+				production_factory_max_efficiency_factor = -0.6
 				production_lack_of_resource_penalty_factor = 0.25
 				production_speed_buildings_factor = -0.5
-				civilian_factory_use = 15
+				consumer_goods_factor = 0.5
 				industry_repair_factor = -0.15
 				industrial_capacity_factory = -0.25
 				industrial_capacity_dockyard = -0.25

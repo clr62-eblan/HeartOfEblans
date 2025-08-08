@@ -50,6 +50,14 @@ spriteTypes = {
 		textureFile2 = "gfx/interface/custom_gui/GON/GON_test_pb_empty.png"
 		size = { x = 432 y = 70 }
 		effectFile = "gfx/FX/progress.lua"
+	} 	
+	
+	progressbartype = {
+		name = "GFX_GON_nelya_flirt_progressbar"
+		textureFile1 = "gfx/interface/custom_gui/GON/GON_nel_flirt_full.png"
+		textureFile2 = "gfx/interface/custom_gui/GON/GON_nel_flirt_empty.png"
+		size = { x = 432 y = 70 }
+		effectFile = "gfx/FX/progress.lua"
 	} 
 
 }

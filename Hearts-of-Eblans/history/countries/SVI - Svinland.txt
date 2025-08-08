@@ -9,7 +9,7 @@ add_ideas = {
 	svinland_ru
 	SVI_peoples_duma_1
 	SVI_shadow_of_gosperevorot_1
-	aircrafts
+	
 }
 
 # Starting tech
@@ -98,7 +98,7 @@ if = {
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -107,7 +107,7 @@ create_country_leader = {
 	name = "Татыржа Антон Владимирович"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Tatyrsha.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		el_presidente
@@ -118,7 +118,7 @@ create_country_leader = {
 	name = "Антон Фон Скырлович"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "AntonFonSkirlovich.dds"
-	expire = "2000.1.1"
+	
 	ideology = fascism_ideology
 	traits = {
 		el_presidente
@@ -129,7 +129,7 @@ create_country_leader = {
 	name = "Антоша T2X2"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "t2x2.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		el_presidente 
@@ -140,7 +140,7 @@ create_country_leader = {
 	name = "Антоша T2X"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "AntoshaT2x.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		el_presidente

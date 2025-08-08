@@ -21,7 +21,7 @@ state={
 			air_base = 1
 		}
 		add_core_of = GON
-
+		add_core_of = SUT
 	}
 
 	provinces={

@@ -27,6 +27,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_BTK_bratishkin"
+	texturefile = "gfx/interface/goals/BTK/BTK_bratishkin.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_PYA_prime"
 	texturefile = "gfx/interface/goals/focus_PYA_prime.dds"			
 	}
@@ -812,6 +817,66 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_STI_moy_allied"
+	texturefile = "gfx/interface/goals/STI_moy_allied.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_chb_heraclion"
+	texturefile = "gfx/interface/goals/STI_chb_heraclion3.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_chb_trade"
+	texturefile = "gfx/interface/goals/STI_chb_trade.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_ara_invite"
+	texturefile = "gfx/interface/goals/STI_ara_invite.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_ara_discounts"
+	texturefile = "gfx/interface/goals/STI_ara_discounts.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_dip_investments"
+	texturefile = "gfx/interface/goals/STI_dip_investments.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_chb_friend"
+	texturefile = "gfx/interface/goals/STI_chb_friend.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_moy_annex"
+	texturefile = "gfx/interface/goals/STI_moy_annex.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_pas_pact"
+	texturefile = "gfx/interface/goals/STI_pas_pact.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_return_citizens"
+	texturefile = "gfx/interface/goals/STI_return_citizens.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_stintler_expansion"
+	texturefile = "gfx/interface/goals/STI_stintler_expansion.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_STI_pas_attack"
+	texturefile = "gfx/interface/goals/STI_pas_attack.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_GON_step_forward"
 	texturefile = "gfx/interface/goals/focus_GON_step_forward.dds"			
 	}
@@ -1210,6 +1275,11 @@ spriteTypes = {
 	name = "GFX_goal_war_gvin"
 	texturefile = "gfx/interface/goals/gvin_war.dds"			
 	}
+
+	SpriteType = {
+	name = "GFX_goal_war_chb"
+	texturefile = "gfx/interface/goals/chb_war.dds"			
+	}
 	
 	SpriteType = {
 	name = "GFX_goal_chb_zarplata_moderam"
@@ -1220,6 +1290,16 @@ spriteTypes = {
 	name = "GFX_goal_chb_ya_bekon"
 	texturefile = "gfx/interface/goals/focus_chb_ya_bekon.dds"			
 	}	
+
+	SpriteType = {
+	name = "GFX_goal_STI_gbank"
+	texturefile = "gfx/interface/goals/STI_gbank.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_goal_STI_bubel"
+	texturefile = "gfx/interface/goals/STI_bubel.dds"			
+	}
 	
 	SpriteType = {
 	name = "GFX_goal_chb_kill_dictator"
@@ -1472,4 +1552,163 @@ spriteTypes = {
 	name = "GFX_goal_DOR_friends"
 	texturefile = "gfx/interface/goals/focus_DOR_dora_friends.dds"			
 	}
+
+	
+
+	SpriteType = {
+	    name = "GFX_goal_STI_reign_of_shabani"
+	    texturefile = "gfx/interface/goals/STI_reign_of_shabani.dds"			
+	}	
+
+	SpriteType = {
+	    name = "GFX_goal_STI_stint_side"
+	    texturefile = "gfx/interface/goals/STI_stint_side.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_limit_moders"
+	    texturefile = "gfx/interface/goals/STI_limit_moders.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_get_weapons"
+	    texturefile = "gfx/interface/goals/STI_get_weapons.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_industrialists_independency"
+	    texturefile = "gfx/interface/goals/STI_industrialists_independency.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_strict_rules"
+	    texturefile = "gfx/interface/goals/STI_strict_rules.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_royal_army"
+	    texturefile = "gfx/interface/goals/STI_royal_army.dds"			
+	}
+    
+	SpriteType = {
+	    name = "GFX_goal_STI_donate_support"
+	    texturefile = "gfx/interface/goals/STI_donate_support.dds"			
+	}
+        
+	SpriteType = {
+	    name = "GFX_goal_STI_act_of_moders"
+	    texturefile = "gfx/interface/goals/STI_act_of_moders.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_heir_to_the_throne"
+	    texturefile = "gfx/interface/goals/STI_heir_to_the_throne.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_self_determination"
+	    texturefile = "gfx/interface/goals/STI_self_determination.dds"			
+	}
+
+
+	SpriteType = {
+	    name = "GFX_goal_STI_moders_side"
+	    texturefile = "gfx/interface/goals/STI_moders_side.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_defence_council"
+	    texturefile = "gfx/interface/goals/STI_defence_council.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_protect_production"
+	    texturefile = "gfx/interface/goals/STI_protect_production.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_prepare_guns"
+	    texturefile = "gfx/interface/goals/STI_prepare_guns.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_more_freedoms"
+	    texturefile = "gfx/interface/goals/STI_more_freedoms.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_prepare_chat"
+	    texturefile = "gfx/interface/goals/STI_prepare_chat.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_release_banned"
+	    texturefile = "gfx/interface/goals/STI_release_banned.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_metro"
+	    texturefile = "gfx/interface/goals/STI_metro.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_dip_pact"
+	    texturefile = "gfx/interface/goals/STI_dip_pact.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_ensure_loyalty"
+	    texturefile = "gfx/interface/goals/STI_ensure_loyalty.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_stintler"
+	    texturefile = "gfx/interface/goals/STI_stintler.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_afs"
+	    texturefile = "gfx/interface/goals/STI_afs.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_cherepaxa"
+	    texturefile = "gfx/interface/goals/STI_cherepaxa.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_democracy_shield"
+	    texturefile = "gfx/interface/goals/STI_democracy_shield2.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_vokzal"
+	    texturefile = "gfx/interface/goals/STI_vokzal.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_ham_friend"
+	    texturefile = "gfx/interface/goals/STI_ham_friend.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_neketondi"
+	    texturefile = "gfx/interface/goals/STI_neketondi.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_gondurmetprom"
+	    texturefile = "gfx/interface/goals/STI_gondurmetprom.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_zol_influence"
+	    texturefile = "gfx/interface/goals/STI_zol_influence.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_STI_olimpiadas"
+	    texturefile = "gfx/interface/goals/STI_olimpiadas.dds"			
+	}
+
 }

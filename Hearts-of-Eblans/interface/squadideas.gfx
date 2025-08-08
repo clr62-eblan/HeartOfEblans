@@ -31,6 +31,21 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/acf_gon.dds"
     }    
 
+    spriteType = {
+        name = "GFX_idea_BTK_bratishkin"
+        texturefile = "gfx/interface/ideas/bratishkin.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_BTK_bratishkin2"
+        texturefile = "gfx/interface/ideas/bratishkin2.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_BTK_squadgaz"
+        texturefile = "gfx/interface/ideas/squadgaz.dds"
+    }
+
 	
     spriteType = {
         name = "GFX_idea_vigilium"
@@ -68,13 +83,28 @@ spriteTypes = {
     }
 
 	spriteType = {
+        name = "GFX_idea_gondurmetro"
+        texturefile = "gfx/interface/ideas/gondurmetro.dds"
+    }
+
+	spriteType = {
         name = "GFX_idea_orange_curtains"
         texturefile = "gfx/interface/ideas/orange_curtains.dds"
     }
 
 	spriteType = {
+        name = "GFX_idea_shield_of_democracy"
+        texturefile = "gfx/interface/ideas/shield_of_democracy.dds"
+    }
+
+	spriteType = {
         name = "GFX_idea_elytras"
         texturefile = "gfx/interface/ideas/elytras.dds"
+    }
+
+	spriteType = {
+        name = "GFX_idea_STI_gondurmetprom"
+        texturefile = "gfx/interface/ideas/gondurmetprom.dds"
     }
 
 	spriteType = {
@@ -246,6 +276,11 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_hypecratia_ethos"
         texturefile = "gfx/interface/ideas/hypecratia_ethos.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_STI_gbank"
+        texturefile = "gfx/interface/ideas/gbank.dds"
     }
 	
 	spriteType = {

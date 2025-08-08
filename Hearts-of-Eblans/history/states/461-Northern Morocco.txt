@@ -13,7 +13,7 @@ state = {
 	history = {
 
 		owner = GON
-		set_demilitarized_zone = yes
+		add_core_of = STM
 
 		victory_points = {
 			7069 10 # Casablanca

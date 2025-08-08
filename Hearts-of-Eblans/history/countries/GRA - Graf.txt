@@ -14,7 +14,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = hypecratia
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -23,7 +23,7 @@ create_country_leader = {
 	name = "Граф"
 	desc = ""
 	picture = "GCM.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -34,7 +34,7 @@ create_country_leader = {
 	name = "Граф"
 	desc = ""
 	picture = "GCM.dds"
-	expire = "2000.1.1"
+	
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -45,7 +45,7 @@ create_country_leader = {
 	name = "Граф"
 	desc = ""
 	picture = "GCM.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		#
@@ -56,7 +56,7 @@ create_country_leader = {
 	name = "Граф"
 	desc = ""
 	picture = "GRA.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -67,7 +67,7 @@ create_country_leader = {
 	name = "Артём Граф"
 	desc = ""
 	picture = "GRA.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypeclown
 	traits = {
 		#

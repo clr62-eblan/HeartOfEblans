@@ -68,7 +68,7 @@ if = {
 
 set_politics = {
 	ruling_party = hypecratia
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	elections_allowed = no
 }
 
@@ -76,7 +76,7 @@ create_country_leader = {
 	name = "Иосиф Каша"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kussia.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -87,7 +87,7 @@ create_country_leader = {
 	name = "Великий Фюрер Каша"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kussia.dds"
-	expire = "2000.1.1"
+	
 	ideology = gen_nazism
 	traits = {
 		#
@@ -98,7 +98,7 @@ create_country_leader = {
 	name = "Каша"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kussia.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		#
@@ -109,7 +109,7 @@ create_country_leader = {
 	name = "Куссия"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kussia.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -120,7 +120,7 @@ create_country_leader = {
 	name = "Куссия"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kussia.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#

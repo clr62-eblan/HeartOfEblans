@@ -33,14 +33,14 @@ set_technology = {
 recruit_character = universal_hype_hes
 add_ideas = {
 	soplya_coin
-	aircrafts
+	
 }
 set_convoys = 150
 
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -56,7 +56,7 @@ create_country_leader = {
 	name = "Адольф Хеслер"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hes.dds"
-	expire = "2000.1.1"
+	
 	ideology = gen_nazism
 	traits = {
 		dictator
@@ -67,7 +67,7 @@ create_country_leader = {
 	name = "Хесус"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hes.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -78,7 +78,7 @@ create_country_leader = {
 	name = "Хесус"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hes.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -89,7 +89,7 @@ create_country_leader = {
 	name = "Хесус"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hes.dds"
-	expire = "2000.1.1"
+	
 	ideology = oligarchism
 	traits = {
 		#
@@ -100,7 +100,7 @@ create_country_leader = {
 	name = "Хесус"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hes.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#

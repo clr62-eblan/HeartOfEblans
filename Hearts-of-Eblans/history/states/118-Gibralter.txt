@@ -17,6 +17,7 @@ state=
 			}
 		}
 		add_core_of = GON
+		add_core_of = STM
 	}
 	provinces={
 		4135

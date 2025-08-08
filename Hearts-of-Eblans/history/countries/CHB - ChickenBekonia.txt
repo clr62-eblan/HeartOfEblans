@@ -10,7 +10,7 @@ set_war_support = 0.21
 
 add_ideas = { 
 	CHB_hungary_problem
-	aircrafts
+	
 }
 
 # Starting tech
@@ -41,13 +41,15 @@ recruit_character = universal_hype_chb
 recruit_character = apppostol
 recruit_character = miramestinchortt
 recruit_character = filinnn
+recruit_character = lin_night
+recruit_character = Shukov
 
 set_convoys = 20
 
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -64,7 +66,7 @@ create_country_leader = {
 	name = "Илья Мазелофф"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "mzlff.dds"
-	expire = "2000.1.1"
+	
 	ideology = gen_nazism
 	traits = {
 		dictator
@@ -75,7 +77,7 @@ create_country_leader = {
 	name = "Совет Модераторов"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "SovetModerov.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -86,7 +88,7 @@ create_country_leader = {
 	name = "Кот Завертин"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Zavertin.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -97,7 +99,7 @@ create_country_leader = {
 	name = "MZLFF"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "MZLF.dds"
-	expire = "2000.1.1"
+	
 	ideology = oligarchism
 	traits = {
 		#
@@ -108,7 +110,7 @@ create_country_leader = {
 	name = "Илья Мазелловв"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Mazyaka.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#

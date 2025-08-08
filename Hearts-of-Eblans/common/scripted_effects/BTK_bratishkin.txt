@@ -1,0 +1,43 @@
+modify_bratishkin_support = {
+	#BRATISHKIN SUPPORT MAX - 160
+	if = {
+		limit = { AND = { check_variable = { bratishkin_support > 0} has_idea = BTK_bad_government } }
+		swap_ideas = {
+			remove_idea = BTK_bad_government
+			add_idea = BTK_vladimir_bratishkin_1 
+		}
+	}
+
+	if = {
+		limit = { AND = { check_variable = { bratishkin_support > 39} has_idea = BTK_vladimir_bratishkin_1 } }
+		swap_ideas = {
+			remove_idea = BTK_vladimir_bratishkin_1
+			add_idea = BTK_vladimir_bratishkin_2 
+		}
+	}
+
+
+	if = {
+		limit = { AND = { check_variable = { bratishkin_support > 79} has_idea = BTK_vladimir_bratishkin_2 } }
+		swap_ideas = {
+			remove_idea = BTK_vladimir_bratishkin_2
+			add_idea = BTK_vladimir_bratishkin_3
+		}
+	}
+
+	if = {
+		limit = { AND = { check_variable = { bratishkin_support > 119 } has_idea = BTK_vladimir_bratishkin_3 } }
+		swap_ideas = {
+			remove_idea = BTK_vladimir_bratishkin_3
+			add_idea = BTK_vladimir_bratishkin_4
+		}
+	}
+
+	if = {
+		limit = { AND = { check_variable = { bratishkin_support > 159 } has_idea = BTK_vladimir_bratishkin_4 } }
+		swap_ideas = {
+			remove_idea = BTK_vladimir_bratishkin_4
+			add_idea = BTK_vladimir_bratishkin_5
+		}
+	}
+}

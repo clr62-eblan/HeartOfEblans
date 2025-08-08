@@ -1373,5 +1373,465 @@ dvorets_building_cat_2 = {
 	}
 }
 
-afc_gon_cat = {
+nelya_flirt_cat = {
+
+	STI_annex = {
+	
+		icon = GFX_decision_eng_blackshirt_speech
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		cost = 50
+		days_remove = 35
+		
+		highlight_states = {
+			highlight_state_targets = {
+				every_state = {
+					limit = {
+						is_fully_controlled_by = NEL
+					}
+					state = THIS
+				}
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = nelya_need_100			
+				
+				check_variable = { nelya_flirt_status > 99 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+		}
+		
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			NEL = { country_event = stintik.12 }
+		}
+	
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	STI_coop_strim = {
+	
+		icon = GFX_decision_eng_ally_imperialist_coup
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		cost = 50
+		days_remove = 15
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 165
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+		allowed = {
+			original_tag = GON
+		}
+		
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		custom_cost_text = decision_cost_civ_factory_3
+	
+		available = {
+			check_variable = { is_all_nelya_decisions_blocked < 1 }
+		}
+		
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+	
+		visible = {
+			original_tag = GON
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_nelya_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = nelya_flirt_add_5
+			add_to_variable = { nelya_flirt_status = 5 }
+			set_variable = { is_all_nelya_decisions_blocked = 0 }
+		}
+	
+		ai_will_do = {
+			factor = 50
+		}
+	}	
+	
+	STI_friendly_visit = {
+	
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		cost = 50
+		days_remove = 20
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 165
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			check_variable = { is_all_nelya_decisions_blocked < 1 }
+		}
+		
+	
+		visible = {
+			original_tag = GON
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_nelya_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = nelya_flirt_add_10
+			add_to_variable = { nelya_flirt_status = 10 }
+			set_variable = { is_all_nelya_decisions_blocked = 0 }
+		}
+	
+		ai_will_do = {
+			factor = 50
+		}
+	}	
+	
+	STI_pact = {
+	
+		icon = GFX_decision_eng_trade_unions_support
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		cost = 50
+		days_remove = 35
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = STI_pact_cost
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 165
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			check_variable = { is_all_nelya_decisions_blocked < 1 }
+		}
+		
+	
+		visible = {
+			original_tag = GON
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_nelya_decisions_blocked = 1 }
+			add_command_power = -20
+		}
+	
+		remove_effect = {
+			NEL = { country_event = stintik.9 }
+			set_variable = { is_all_nelya_decisions_blocked = 0 }
+		}
+	
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}
+
+GON_influence_cat = {
+
+	GON_influence_nel_decision = {
+		priority = 1
+		icon = GFX_decision_SWI_expand_covert_operations 
+
+		ai_will_do = {
+			base = 25
+			modifier = {
+				factor = 0.5
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM 
+					ratio > 1
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM 
+					ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM 
+					ratio > 1.5
+				}
+			}
+		}
+
+		targets = { NEL }
+
+		target_trigger = {
+			FROM = {
+				NOT = { has_war_with = ROOT }
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_in_faction_with = ROOT
+				}
+				NOT = { has_government = fascism }
+				fascism < 50
+			}
+		}
+
+		target_root_trigger =  {
+			has_completed_focus = STI_pressure_on_Nelya
+			has_government = fascism
+		}
+
+		fire_only_once = no
+
+		cost = 25
+
+		days_re_enable = 732 #Match the Timed NS below + couple of days to make sure NS is gone when the decision comes back
+
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					add_timed_idea = {
+						idea = GON_fascism_influence
+						days = 730 #Match the days_re_enable above
+					}
+				}
+			}		
+
+
+			effect_tooltip = {
+				FROM = {
+					add_timed_idea = {
+						idea = GON_fascism_influence
+						days = 730 #Match the days_re_enable above
+					}
+					add_opinion_modifier = { 
+						target = GON 
+						modifier = GER_german_influence
+					}
+				}
+			}
+		}
+	}
+	
+	GON_influence_moy_decision = {
+		priority = 1
+		icon = GFX_decision_SWI_expand_covert_operations 
+
+		ai_will_do = {
+			base = 25
+			modifier = {
+				factor = 0.5
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM 
+					ratio > 1
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM 
+					ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM 
+					ratio > 1.5
+				}
+			}
+		}
+
+		targets = { MOY }
+
+		target_trigger = {
+			FROM = {
+				NOT = { has_war_with = ROOT }
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_in_faction_with = ROOT
+				}
+				NOT = { has_government = fascism }
+				fascism < 50
+			}
+		}
+
+		target_root_trigger =  {
+			has_completed_focus = STI_pressure_on_Morphi
+			has_government = fascism
+		}
+
+		fire_only_once = no
+
+		cost = 25
+
+		days_re_enable = 732 #Match the Timed NS below + couple of days to make sure NS is gone when the decision comes back
+
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					add_timed_idea = {
+						idea = GON_fascism_influence
+						days = 730 #Match the days_re_enable above
+					}
+				}
+			}
+
+			effect_tooltip = {
+				FROM = {
+					add_timed_idea = {
+						idea = GON_fascism_influence
+						days = 730 #Match the days_re_enable above
+					}
+					add_opinion_modifier = { 
+						target = GON 
+						modifier = GER_german_influence
+					}
+				}
+			}
+		}
+	}	
+	
+	GON_influence_zol_decision = {
+		priority = 1
+		icon = GFX_decision_SWI_expand_covert_operations 
+
+		ai_will_do = {
+			base = 25
+			modifier = {
+				factor = 0.5
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM 
+					ratio > 1
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM 
+					ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM 
+					ratio > 1.5
+				}
+			}
+		}
+
+		targets = { ZOL }
+
+		target_trigger = {
+			FROM = {
+				NOT = { has_war_with = ROOT }
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_in_faction_with = ROOT
+				}
+				NOT = { has_government = fascism }
+				fascism < 50
+			}
+		}
+
+		target_root_trigger =  {
+			has_completed_focus = STI_pressure_on_Zolo
+			has_government = fascism
+		}
+
+		fire_only_once = no
+
+		cost = 25
+
+		days_re_enable = 732 #Match the Timed NS below + couple of days to make sure NS is gone when the decision comes back
+
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					add_timed_idea = {
+						idea = GON_fascism_influence
+						days = 730 #Match the days_re_enable above
+					}
+				}
+			}
+
+
+			effect_tooltip = {
+				FROM = {
+					add_timed_idea = {
+						idea = GON_fascism_influence
+						days = 730 #Match the days_re_enable above
+					}
+					add_opinion_modifier = { 
+						target = GON 
+						modifier = GER_german_influence
+					}
+				}
+			}
+		}
+	}
 }

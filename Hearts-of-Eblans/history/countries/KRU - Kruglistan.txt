@@ -16,7 +16,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	elections_allowed = no
 }
 
@@ -32,7 +32,7 @@ create_country_leader = {
 	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kru.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#
@@ -43,7 +43,7 @@ create_country_leader = {
 	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kru.dds"
-	expire = "2000.1.1"
+	
 	ideology = rexism
 	traits = {
 		#
@@ -54,7 +54,7 @@ create_country_leader = {
 	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kru.dds"
-	expire = "2000.1.1"
+	
 	ideology = moderatism
 	traits = {
 		#
@@ -65,7 +65,7 @@ create_country_leader = {
 	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kru.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -76,7 +76,7 @@ create_country_leader = {
 	name = "Дед-Минор"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "kru.dds"
-	expire = "2000.1.1"
+	
 	ideology = leninism
 	traits = {
 		#

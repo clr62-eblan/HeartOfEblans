@@ -13,15 +13,12 @@ state={
 
 	history={
 		owner = GON
-		set_demilitarized_zone = yes
+		add_core_of = STM
 		victory_points = {
 			9945 3
 		}
 		victory_points = {
-			12100 2
-		}
-		victory_points = {
-			12087 1
+			12100 1
 		}
 		buildings = {
 			infrastructure = 2

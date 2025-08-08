@@ -3,17 +3,16 @@ capital = 1021
 oob = "BTK_1936"
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
-set_research_slots = 5
+set_research_slots = 3
 recruit_character = BTK_Bratishkin
 recruit_character =kulina_advisor
 
 add_ideas = {
 	BTK_bad_government
-	BTK_parlament
 	slay_2023_king
 	BTK_army_0
 	BTK_dead_economy
-	aircrafts
+	BTK_mass_opposition
 }
 
 # Starting tech
@@ -46,17 +45,17 @@ set_convoys = 40
 
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1" 
+	ruling_party = fascism
+	last_election = "2022.1.1" 
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
 	democratic = 25
-	fascism = 15
+	fascism = 50
 	communism = 2
-	neutrality = 50
+	neutrality = 15
 	hypecratia = 8
 }
 
@@ -64,7 +63,7 @@ set_popularities = {
 #	name = "Братишкин"
 #	desc = "POLITICS_PRINCE_PAUL_DESC"
 #	picture = "bratishkin_fascism.dds"
-#	expire = "2000.1.1"
+#	
 #	ideology = gen_nazism
 #	traits = {
 #		#
@@ -75,7 +74,7 @@ create_country_leader = {
 	name = "Вова Братишкин"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "bratishkin_fas.dds"
-	expire = "2000.1.1"
+	
 	ideology = gen_nazism
 	traits = {
 		#
@@ -86,7 +85,7 @@ create_country_leader = {
 	name = "Иосиф Вовка"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "bratishkin_communism.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -97,7 +96,7 @@ create_country_leader = {
 	name = "Владимир Братишкин"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "bratishkin_neutrality.dds"
-	expire = "2000.1.1"
+	
 	ideology = oligarchism
 	traits = {
 		#
@@ -108,7 +107,7 @@ create_country_leader = {
 	name = "Братишкин"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "bratishkin_hypecratia.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypelikee
 	traits = {
 		#

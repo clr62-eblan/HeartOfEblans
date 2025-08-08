@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
-		date = 1936.1.1.12
+		date = 2023.1.1.1
 		picture = "GFX_select_date_1936"
 		default_country = "CHB"
 		default = yes
@@ -13,7 +13,9 @@ bookmarks = {
 				CHB_hungary_problem
 			}
 			focuses = {
-				#
+				chb_internet_mobilisation
+				chb_fascism_path
+				chb_meme_of_war
 			}
 		}
 		SVI={
@@ -26,6 +28,9 @@ bookmarks = {
 				svinland_ru
 			}
 			focuses = {
+				SVI_support_of_retired_marshal
+				SVI_the_cult_of_one_svin
+				SVI_vigilium_2
 			}
 		}
 		DRE={
@@ -37,36 +42,38 @@ bookmarks = {
 				DRE_viplati_reparatiy
 			}
 			focuses = {
-				DRE_own_way
+				DRE_remilitatize_west
 				DRE_svo_chb_start
-				DRE_svergnut_dreyka
+				DRE_rally_the_opposition
 			}
 		}
 		GON={
 			history = ""
 			ideology = neutrality
 			ideas = {
-				GON_kotel_shabanova
-				GON_legends_of_stintler
-				demografic_problems
-				GON_economics_recession
-				GON_political_corruption
+				GON_brain_drain
+				GON_unfinished_army_reform
+				GON_old_constitution
+				GON_totaler_sanctions
 			}
 			focuses = {
+				STI_heir_to_the_throne
+				STI_claim_stintler_rights
+				STI_act_with_constitution
 			}
 		}
 		ARA={
 			history = ""
-			ideology = hypecratia
+			ideology = fascism
 			ideas = {
-				defeted_at_wwone
-				ARA_national_catastrophe
-				ARA_dicator_constitution
+				ARA_gos_apparat_idea
+				ARA_massive_opposition
+				ARA_slabie_zakoni
 			}
 			focuses = {
-				ARA_crush_communist
-				ARA_restore_SZS
-				ARA_people_republic
+				ARA_total_control_of_people_minds
+				ARA_parlament_fight
+				ARA_hype_chuma
 			}
 		}
 
@@ -75,8 +82,14 @@ bookmarks = {
 			history = ""
 			ideology = hypecratia
 			ideas = {
+				dva_disa
+				sp_crisis
+				slay_2023_mem_goda
 			}
 			focuses = {
+				PYA_begin_new_prime
+				PYA_create_42_empire
+				PYA_joper_economic_plan
 			}
 		}
 		BTK={
@@ -84,13 +97,13 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				BTK_bad_government
-				BTK_parlament
+				BTK_mass_opposition
 				slay_2023_king
 			}
 			focuses = {
-				BTK_restart_89_squad
-				BTK_dead_economy
-				BTK_loyal_narezka
+				BTK_new_dawn
+				BTK_vladimir_bratishkin
+				BTK_squadgaz
 			}
 		}
 

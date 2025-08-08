@@ -15,7 +15,7 @@ give_guarantee = DRE
 add_ideas = { 
 	HAM_hypecratia_militia
 	hametova_politics 
-	aircrafts
+	
 }
 
 # Starting tech
@@ -43,7 +43,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = hypecratia
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -52,7 +52,7 @@ create_country_leader = {
 	name = "Хаметова Милана"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hametova_communism.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		maloletka
@@ -63,7 +63,7 @@ create_country_leader = {
 	name = "Адольф мил Хаметов"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hametova_fascism.dds"
-	expire = "2000.1.1"
+	
 	ideology = fascism_ideology
 	traits = {
 		maloletka
@@ -74,7 +74,7 @@ create_country_leader = {
 	name = "Милана и Дипик"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hametova_neutrality.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		maloletka
@@ -85,7 +85,7 @@ create_country_leader = {
 	name = "Милана Хаметова"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hametova_democratic.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		maloletka
@@ -96,7 +96,7 @@ create_country_leader = {
 	name = "Милаша Хаметова"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "hametova.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypelikee
 	traits = {
 		maloletka

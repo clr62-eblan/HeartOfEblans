@@ -1,6 +1,5 @@
 division_template = {
-	name = "Войска Генсухи"		# Same for "Active" and "Reserve" Infantry Divisions
-	division_names_group = GNS_INF_01
+	name = "Войска Генсухи"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }

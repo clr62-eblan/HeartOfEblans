@@ -10,7 +10,7 @@ recruit_character = universal_hype_rab
 army_experience = 100
 
 add_ideas = {
-	aircrafts
+	
 }
 
 # Starting tech
@@ -47,7 +47,7 @@ set_convoys = 20
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -64,7 +64,7 @@ create_country_leader = {
 	name = "Штабс-Унтер Жора"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "rab_leader.dds"
-	expire = "2000.1.1"
+	
 	ideology = gen_nazism
 	traits = {
 		#
@@ -75,7 +75,7 @@ create_country_leader = {
 	name = "Жора"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "rab_leader.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -86,7 +86,7 @@ create_country_leader = {
 	name = "Генсек Георгий 1"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "rab_leader.dds"
-	expire = "2000.1.1"
+	
 	ideology = anarchist_communism
 	traits = {
 		#
@@ -97,7 +97,7 @@ create_country_leader = {
 	name = "Жора"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "rab_leader.dds"
-	expire = "2000.1.1"
+	
 	ideology = oligarchism
 	traits = {
 		#
@@ -108,7 +108,7 @@ create_country_leader = {
 	name = "Жорик"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "rab_leader.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#

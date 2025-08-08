@@ -7,8 +7,9 @@ state = {
 
 	history = { 
 
-		owner = GON
-		add_core_of = CBV
+		owner = PAS
+		add_core_of = PAS
+		add_core_of = GON
 
 		victory_points = {
 			13014 1 # Praia

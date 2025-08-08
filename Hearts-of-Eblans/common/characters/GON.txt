@@ -86,56 +86,12 @@ characters = {
 			cost = 120
 		}
 	}
-	maksim_iosif_shabanov = {
-		name = "Максим Иосиф Шабанов"
-		
-		portraits = {
-			civilian = {
-				large = GFX_portrait_maksim_stintlerev
-			}
-			army = {
-				small="GFX_gon_shabanov_com_small"
-			}
-		}
-		country_leader = {
-			ideology = stalinism
-			expire = "1965.1.1.1"
-			id = -1
-			traits = {
-				
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = maksim_iosif_shabanov
-			allowed = {
-				original_tag = GON 
-			}	
-			visible = {
-				has_country_flag = GON_shaban_invite
-			}
-			available = {
-				has_country_flag = GON_shaban_invite
-				
-				NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = maksim_iosif_shabanov
-					}
-				}
-			}
-			traits  = {
-				revolutionary_author
-			}	
-			cost = 100
-		}
-	}	
 	
 	afsygga ={ 
-        name = "aFsyGGA"
+        name = "aFsQQ"
         portraits= {
             army = {
-                large = "GFX_gon_person_large"
+                large = "GFX_portrait_afs"
 				small = "GFX_moder_small"
             }
         }
@@ -147,13 +103,13 @@ characters = {
             planning_skill = 1
             logistics_skill = 1
             legacy_id = -1
-			visible = { original_tag = GON }
+			visible = { original_tag = GON NOT = { has_country_flag = STI_moders_gone } }
        }
 	   advisor = {
            slot = army_chief
            idea_token = afsygga
            ledger = army
-           allowed = { original_tag = GON } # Optional, doesn't change anything.
+           allowed = { original_tag = GON NOT = { has_country_flag = STI_moders_gone } } # Optional, doesn't change anything.
            traits = { army_chief_morale_2 }
        }
     }
@@ -162,7 +118,7 @@ characters = {
         name = "NeketOndi"
         portraits= {
             army = {
-                large = "GFX_gon_person_large"
+                large = "GFX_portrait_neketondi"
 				small = "GFX_moder_small"
             }
         }
@@ -174,13 +130,13 @@ characters = {
             planning_skill = 1
             logistics_skill = 3
             legacy_id = -1
-			visible = { original_tag = GON }
+			visible = { original_tag = GON NOT = { has_country_flag = STI_moders_gone } }
        }
 	   advisor = {
            slot = high_command
            idea_token = neketondi
            ledger = army
-           allowed = { original_tag = GON } # Optional, doesn't change anything.
+           allowed = { original_tag = GON NOT = { has_country_flag = STI_moders_gone } } # Optional, doesn't change anything.
            traits = { army_entrenchment_2 }
        }
     }
@@ -189,7 +145,7 @@ characters = {
         name = "cherepaxa_o5"
         portraits= {
             army = {
-                large = "GFX_gon_person_large"
+                large = "GFX_portrait_cherepaxa"
 				small = "GFX_moder_small"
             }
         }
@@ -201,14 +157,227 @@ characters = {
             planning_skill = 3
             logistics_skill = 2
             legacy_id = -1
-			visible = { original_tag = GON }
+			visible = { original_tag = GON NOT = { has_country_flag = STI_moders_gone } }
        }
 	   advisor = {
            slot = army_chief
            idea_token = cherepaxa_o5
            ledger = army
-           allowed = { original_tag = GON } # Optional, doesn't change anything.
+           allowed = { original_tag = GON NOT = { has_country_flag = STI_moders_gone } } # Optional, doesn't change anything.
            traits = { army_regrouping_2 }
        }
     }
+
+	prymlan ={ 
+        name = "Prymlan"
+        portraits= {
+            army = {
+                large = "GFX_portrait_prymlan"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { career_officer trait_cautious organisational_leader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+            legacy_id = -1
+			visible = { original_tag = GON NOT = { has_country_flag = STI_moders_gone } }
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = prymlan
+           ledger = army
+           allowed = { original_tag = GON NOT = { has_country_flag = STI_moders_gone } } # Optional, doesn't change anything.
+           traits = { army_chief_organizational_1 }
+       }
+    }	
+
+	#VIPS
+
+	shinka ={ 
+        name = "sh1nkaa_lina"
+        portraits= {
+            army = {
+                large = "GFX_portrait_vip"
+				small = "GFX_moder_small"
+            }
+        }
+		corps_commander = {
+			traits = { trait_reckless armor_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_country_flag = GON_civil_war_shabani }
+		}
+    }	
+
+	dengaly ={ 
+        name = "dengaly_"
+        portraits= {
+            army = {
+                large = "GFX_portrait_vip"
+				small = "GFX_moder_small"
+            }
+        }
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_country_flag = GON_civil_war_shabani }
+		}
+    }	
+
+	franchua ={ 
+        name = "franchua"
+        portraits= {
+            army = {
+                large = "GFX_portrait_vip"
+				small = "GFX_moder_small"
+            }
+        }
+		corps_commander = {
+			traits = { politically_connected militias_officer urban_assault_specialist }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_country_flag = GON_civil_war_shabani }
+		}
+    }	
+	
+	Sti_parliament ={ 
+        name = "Палата 3 чинов"
+        portraits= {
+            army = {
+                large = "GFX_portrait_stint_parliament"
+            }
+        }
+
+
+		country_leader = {
+			ideology = centrism
+			traits = {
+				disagreements
+			}
+			id=7878
+		}
+    }	
+	
+	Sti_shabani ={ 
+        name = "Максильо Шабани де Стинто"
+        portraits= {
+            army = {
+                large = "GFX_portrait_shabani"
+            }
+        }
+		
+		country_leader = {
+			ideology = despotism
+			traits = {
+				#
+			}
+			id=7777
+		}
+    }
+
+	Sti_stul ={ 
+        name = "Его Величество Королевский Трон"
+        portraits= {
+            army = {
+                large = "GFX_portrait_stul"
+            }
+        }
+
+		country_leader = {
+			ideology = despotism
+			traits = {
+				nikakoy_concretiki
+			}
+			id=7676
+		}
+    }
+
+	Sti_moders_council ={ 
+        name = "Военный совет Модерации"
+        portraits= {
+            army = {
+                large = "GFX_portrait_moders_council"
+            }
+        }
+		country_leader = {
+			ideology = liberalism
+			desc = "POLITICS_PRINCE_PAUL_DESC"
+			id = 7575
+		}
+    }
+
+	Sti_moders_council_main ={ 
+        name = "Военный совет Модерации"
+        portraits= {
+            army = {
+                large = "GFX_portrait_moders_council"
+            }
+        }
+		country_leader = {
+			ideology = liberalism
+			desc = "POLITICS_PRINCE_PAUL_DESC"
+			id = 7474
+		}
+    }
+
+	Sti_not_stintler ={ 
+        name = "Абсолютно точно не стинтлер"
+        portraits= {
+            army = {
+                large = "GFX_gon_person_large"
+            }
+        }
+
+		country_leader = {
+			ideology = liberalism
+			desc = "POLITICS_PRINCE_PAUL_DESC"
+		}
+    }
+
+	Sti_shabani_heir ={ 
+        name = "Максильо Шабани де Лисий"
+        portraits= {
+            army = {
+                large = "GFX_portrait_shabani_heir"
+            }
+        }
+
+		country_leader = {
+			ideology = centrism
+			desc = "POLITICS_PRINCE_PAUL_DESC"
+		}
+    }
+
+	Sti_stintler ={ 
+        name = "Стинтлер"
+        portraits= {
+            army = {
+                large = "GFX_portrait_stintler"
+            }
+        }
+
+		country_leader = {
+			ideology = falangism
+			desc = "POLITICS_PRINCE_PAUL_DESC"
+		}
+    }
+	
+	
 }

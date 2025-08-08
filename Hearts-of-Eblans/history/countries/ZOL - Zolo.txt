@@ -26,7 +26,7 @@ recruit_character = stalin
 
 
 add_ideas = {
-	aircrafts
+	
 }
 
 if = {
@@ -79,7 +79,7 @@ if = {
 
 set_politics = {
 	ruling_party = hypecratia
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -88,7 +88,7 @@ create_country_leader = {
 	name = "Джугашвили Иван Золиков"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "zolo_communism.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		slaboumie
@@ -99,7 +99,7 @@ create_country_leader = {
 	name = "Иван Золик"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "zolo_hypecratia.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		slaboumie
@@ -110,7 +110,7 @@ create_country_leader = {
 	name = "Иван Золочевский"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "zolo_fascism.dds"
-	expire = "2000.1.1"
+	
 	ideology = gen_nazism
 	traits = {
 		slaboumie
@@ -121,7 +121,7 @@ create_country_leader = {
 	name = "Иван Золо"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "zolo_neutrality.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		slaboumie
@@ -132,7 +132,7 @@ create_country_leader = {
 	name = "Иван Золо"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "zolo_neutrality.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		slaboumie

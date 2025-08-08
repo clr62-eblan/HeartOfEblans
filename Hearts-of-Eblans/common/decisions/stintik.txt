@@ -1,0 +1,438 @@
+form_STI_empire_cat = {
+	form_STI_empire = {
+	
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+	
+		allowed = {
+			original_tag = GON 
+		}
+	
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = STI_iberia_control	
+				# Iberia
+				controls_state = 171
+				controls_state = 180
+				controls_state = 112
+				controls_state = 181
+				controls_state = 795
+				controls_state = 179
+				controls_state = 169
+				controls_state = 170
+				controls_state = 788
+				controls_state = 174
+				controls_state = 790
+				controls_state = 791
+				controls_state = 41
+				controls_state = 175
+				controls_state = 789
+				controls_state = 173
+				controls_state = 118
+				controls_state = 792
+				controls_state = 176
+				controls_state = 793
+				controls_state = 168
+				controls_state = 172
+				controls_state = 166
+				controls_state = 794
+				controls_state = 167
+				controls_state = 165
+				controls_state = 177
+				controls_state = 290
+				controls_state = 461
+			}
+			custom_trigger_tooltip = {
+				tooltip = STI_nelya_control	
+
+				
+				# Shadow
+				controls_state = 19
+				controls_state = 806
+				controls_state = 25
+				controls_state = 31
+				controls_state = 22
+				controls_state = 1044
+				controls_state = 1043
+
+			}
+			custom_trigger_tooltip = {
+				tooltip = STI_moy_control
+				
+
+				# Devochki
+				controls_state = 1045
+				controls_state = 23
+				controls_state = 1046
+				controls_state = 24
+				controls_state = 33
+				controls_state = 1050
+				controls_state = 26
+				controls_state = 27
+				controls_state = 20
+				controls_state = 32
+				controls_state = 17
+			}
+			custom_trigger_tooltip = {
+				tooltip = STI_zol_control
+
+				#jojohf
+				controls_state = 21
+				controls_state = 851
+				controls_state = 735
+				
+				
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 171
+				state = 180
+				state = 112
+				state = 181
+				state = 795
+				state = 179
+				state = 169
+				state = 170
+				state = 788
+				state = 174
+				state = 790
+				state = 791
+				state = 41
+				state = 175
+				state = 789
+				state = 173
+				state = 118
+				state = 792
+				state = 176
+				state = 793
+				state = 168
+				state = 172
+				state = 166
+				state = 794
+				state = 167
+				state = 165
+				state = 177
+				state = 290
+				state = 461
+				
+				state = 19
+				state = 806
+				state = 25
+				state = 31
+				state = 22
+				state = 1044
+				state = 1043
+
+				state = 1045
+				state = 23
+				state = 1046
+				state = 24
+				state = 33
+				state = 1050
+				state = 26
+				state = 27
+				state = 20
+				state = 32
+				state = 17
+
+				state = 21
+				state = 851
+				state = 735
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+		visible = {
+			original_tag = GON
+		}
+	
+		complete_effect = {
+			set_cosmetic_tag = GON_BIG_GON
+			custom_effect_tooltip = biggon_tt
+			hidden_effect = {
+			735 = {
+				add_core_of = ROOT
+			}
+			851 = {
+				add_core_of = ROOT
+			}
+			21 = {
+				add_core_of = ROOT
+			}
+			17 = {
+				add_core_of = ROOT
+			}
+			32 = {
+				add_core_of = ROOT
+			}
+			20 = {
+				add_core_of = ROOT
+			}
+			27 = {
+				add_core_of = ROOT
+			}
+			26 = {
+				add_core_of = ROOT
+			}
+			1050 = {
+				add_core_of = ROOT
+			}
+			33 = {
+				add_core_of = ROOT
+			}
+			24 = {
+				add_core_of = ROOT
+			}
+			1046 = {
+				add_core_of = ROOT
+			}
+			23 = {
+				add_core_of = ROOT
+			}
+			1045 = {
+				add_core_of = ROOT
+			}
+			1043 = {
+				add_core_of = ROOT
+			}
+			1044 = {
+				add_core_of = ROOT
+			}
+			22 = {
+				add_core_of = ROOT
+			}
+			31 = {
+				add_core_of = ROOT
+			}
+			25 = {
+				add_core_of = ROOT
+			}
+			806 = {
+				add_core_of = ROOT
+			}
+			19 = {
+				add_core_of = ROOT
+			}
+			461 = {
+				add_core_of = ROOT
+			}
+			290 = {
+				add_core_of = ROOT
+			}
+			177 = {
+				add_core_of = ROOT
+			}
+			165 = {
+				add_core_of = ROOT
+			}
+			167 = {
+				add_core_of = ROOT
+			}
+			794 = {
+				add_core_of = ROOT
+			}
+			166 = {
+				add_core_of = ROOT
+			}
+			172 = {
+				add_core_of = ROOT
+			}
+			168 = {
+				add_core_of = ROOT
+			}
+			793 = {
+				add_core_of = ROOT
+			}
+			176 = {
+				add_core_of = ROOT
+			}
+			792 = {
+				add_core_of = ROOT
+			}
+			118 = {
+				add_core_of = ROOT
+			}
+			173 = {
+				add_core_of = ROOT
+			}
+			789 = {
+				add_core_of = ROOT
+			}
+			175 = {
+				add_core_of = ROOT
+			}
+			41 = {
+				add_core_of = ROOT
+			}
+			791 = {
+				add_core_of = ROOT
+			}
+			790 = {
+				add_core_of = ROOT
+			}
+			174 = {
+				add_core_of = ROOT
+			}
+			788 = {
+				add_core_of = ROOT
+			}
+			170 = {
+				add_core_of = ROOT
+			}
+			169 = {
+				add_core_of = ROOT
+			}
+			179 = {
+				add_core_of = ROOT
+			}
+			171 = {
+				add_core_of = ROOT
+			}
+			180 = {
+				add_core_of = ROOT
+			}
+			181 = {
+				add_core_of = ROOT
+			}
+			112 = {
+				add_core_of = ROOT
+			}
+			795 = {
+				add_core_of = ROOT
+			}
+			}
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+form_STI_bop_cat = {
+	form_STI_support_moders = {
+	
+		icon = GFX_decision_generic_decision
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		days_remove = 15
+		cost = 50
+
+		ai_will_do
+			
+		visible = {
+			original_tag = GON
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier ={
+				factor = 100
+				has_completed_focus = STI_moders_side
+			}
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = stint_moders_balance
+				value = 0.1
+			}
+		}
+	}
+
+	form_STI_find_support_in_tgchat = {
+	
+		icon = GFX_decision_generic_political_discourse
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		days_remove = 15
+		cost = 50
+			
+		visible = {
+			original_tag = GON
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier ={
+				factor = 100
+				has_completed_focus = STI_moders_side
+			}
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = stint_moders_balance
+				value = 0.15
+			}
+		}
+	}
+
+	form_STI_ban_a_bunch_of_chatters = {
+	
+		icon = GFX_decision_generic_arrest
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		days_remove = 15
+		cost = 50
+			
+		visible = {
+			original_tag = GON
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier ={
+				factor = 100
+				has_completed_focus = STI_stint_side
+			}
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = stint_moders_balance
+				value = -0.15
+			}
+		}
+	}
+
+
+	form_STI_support_stint = {
+	
+		icon = GFX_decision_generic_operation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		days_remove = 15
+		cost = 50
+			
+		visible = {
+			original_tag = GON
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier ={
+				factor = 100
+				has_completed_focus = STI_stint_side
+			}
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = stint_moders_balance
+				value = -0.1
+			}
+		}
+	}
+}

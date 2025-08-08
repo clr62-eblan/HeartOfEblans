@@ -33,6 +33,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_freakland"
 		texturefile = "gfx/event_pictures/pya_freakland.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_reign_of_shabani"
+		texturefile = "gfx/event_pictures/reign_of_shabani.dds"
 	}
 	
 	spriteType = {
@@ -51,6 +56,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_event_nelya_expansion"
+		texturefile = "gfx/event_pictures/sti_nelya_expansion.dds"
+	}
+
+	spriteType = {
 		name = "GFX_report_event_pirates"
 		texturefile = "gfx/event_pictures/pirates.dds"
 	}
@@ -58,6 +68,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_fugabots"
 		texturefile = "gfx/event_pictures/fugabots.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_report_event_heraclion"
+		texturefile = "gfx/event_pictures/smert_v_nishite.dds"
 	}	
 	
 	spriteType = {

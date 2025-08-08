@@ -117,7 +117,7 @@ form_BTK_89_cat = {
 	
 		visible = {
 			original_tag = BTK
-			has_completed_focus = BTK_restart_89_squad
+			has_completed_focus = BTK_concept_of_restoration
 		}
 	
 		complete_effect = {
@@ -153,55 +153,6 @@ form_BTK_89_cat = {
 				is_historical_focus_on = yes
 			}
 		}
-	}
-	Vernut_stariy = {
-		icon = generic_form_nation
-		#picture = GFX_decision_cat_picture_form_greater_greece
-		
-		fire_only_once = yes
-		cost = 100
-	
-		allowed = {
-			original_tag = BTK
-		}
-		visible = {
-			has_cosmetic_tag = BTK_89
-			OR = {
-				owns_state = 54
-				owns_state = 50
-			}
-			NOT = {
-				owns_state = 52
-				owns_state = 53
-			}
-		}
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 52
-				state = 53
-				
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-		complete_effect = {
-			transfer_state = 52
-			transfer_state = 53
-			53 = {
-				set_demilitarized_zone = no
-			}
-			52 = {
-				set_demilitarized_zone = no
-			}
-		}
-
 	}
 }
 #BTK_council_cat = {

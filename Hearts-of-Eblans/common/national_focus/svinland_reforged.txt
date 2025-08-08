@@ -1357,6 +1357,13 @@ focus_tree = {
 			hidden_effect = {
 				strong_parliament_popularity_decrease = yes
 			}
+
+			create_wargoal = {
+    			type = annex_everything
+    			target = BUS
+				expire = 720
+			}
+			remove_ideas = SVI_buster_oposite
 		}
 	}
 
@@ -1984,6 +1991,10 @@ focus_tree = {
 					add_idea = SVI_shadow_of_gosperevorot_3
 				}
 				set_country_flag = SVI_destroyed_duma
+			}
+
+			set_rule = {
+				can_create_factions = yes
 			}
 
 			set_cosmetic_tag = SVI_ORDER
@@ -3144,6 +3155,10 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
+			set_rule = {
+				can_create_factions = yes
+			}
+
 			country_event = { id = svin.29 days = 3 }
 		}
 	}
@@ -3475,6 +3490,49 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SVI_military_podryadi
+		icon = GFX_focus_generic_military_industry
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = SVI_practice_defense_scenarios
+		prerequisite = { focus = SVI_practice_defense_scenarios }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SVI_subside_building
+		icon = GFX_focus_RAJ_special_economic_zones
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = SVI_practice_defense_scenarios
+		prerequisite = { focus = SVI_practice_defense_scenarios }
+
+		completion_reward = {
+			add_ideas = SVI_building_subsidize
+		}
+	}
+
 
 	focus = {
 		id = SVI_northern_expansion_2
@@ -3496,7 +3554,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
 		}
 	}
 
@@ -3516,6 +3573,8 @@ focus_tree = {
 				check_variable = { deputatov_za > 79}
 			}
 			}
+
+			has_war = no
 		}
 
 		completion_reward = {
@@ -3542,6 +3601,8 @@ focus_tree = {
 				check_variable = { deputatov_za > 79}
 			}
 			}
+
+			has_war = no
 		}
 
 		completion_reward = {
@@ -3592,6 +3653,7 @@ focus_tree = {
 				check_variable = { deputatov_za > 79}
 			}
 			}
+			has_war = no
 		}
 
 		completion_reward = {
@@ -3618,6 +3680,7 @@ focus_tree = {
 				check_variable = { deputatov_za > 79}
 			}
 			}
+			has_war = no
 		}
 
 		completion_reward = {
@@ -3655,6 +3718,22 @@ focus_tree = {
 				remove_idea = SVI_vigilium_1_idea
 			}
 			news_event = { id = squad_news.20 days = 2 }
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
 		}
 	}
 }

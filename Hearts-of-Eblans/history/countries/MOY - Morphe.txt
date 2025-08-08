@@ -9,7 +9,7 @@ set_war_support = 0.13
 
 add_ideas = {
 	defeted_at_wwone
-	aircrafts
+	
 }
 
 set_technology = {
@@ -25,7 +25,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = hypecratia
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	elections_allowed = no
 }
 
@@ -41,7 +41,7 @@ create_country_leader = {
 	name = "Морфи_ya"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Morphe.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypelikee
 	traits = {
 		#
@@ -52,7 +52,7 @@ create_country_leader = {
 	name = "Обер-фельдарцт Морфи"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Morphe.dds"
-	expire = "2000.1.1"
+	
 	ideology = rexism
 	traits = {
 		#
@@ -62,7 +62,7 @@ create_country_leader = {
 	name = "Морфи"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Morphe.dds"
-	expire = "2000.1.1"
+	
 	ideology = moderatism
 	traits = {
 		#
@@ -72,7 +72,7 @@ create_country_leader = {
 	name = "Морфи"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Morphe.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -82,7 +82,7 @@ create_country_leader = {
 	name = "Морфи Высоцкая"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Morphe.dds"
-	expire = "2000.1.1"
+	
 	ideology = leninism
 	traits = {
 		#

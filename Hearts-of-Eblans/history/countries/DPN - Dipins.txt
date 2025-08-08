@@ -14,7 +14,7 @@ set_research_slots = 3
 recruit_character = universal_hype_dip
 
 add_ideas = {
-	aircrafts
+	
 }
 
 # Starting tech
@@ -34,7 +34,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -43,7 +43,7 @@ create_country_leader = {
 	name = "Генсек Диппинс"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "dip.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -54,7 +54,7 @@ create_country_leader = {
 	name = "Великий Диппинс-Обер-фельдфебель"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "dip.dds"
-	expire = "2000.1.1"
+	
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -65,7 +65,7 @@ create_country_leader = {
 	name = "Диппинс"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "dip.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		#
@@ -76,7 +76,7 @@ create_country_leader = {
 	name = "Диппинс"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "dip.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -87,7 +87,7 @@ create_country_leader = {
 	name = "Дипкинс"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "dip.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypetiktok
 	traits = {
 		#

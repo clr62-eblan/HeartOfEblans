@@ -52,13 +52,6 @@ state = {
 			}
 
 		}
-
-		1938.9.30 = {
-			owner = BTK
-			controller = GER
-			add_core_of = BTK
-		}
-
 	}
 
 	provinces = {

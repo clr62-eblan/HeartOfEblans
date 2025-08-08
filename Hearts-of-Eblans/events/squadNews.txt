@@ -261,6 +261,7 @@ news_event = {
 	title = squad_news.13.t
 	desc = squad_news.13.d
 	picture = GFX_report_event_hamster_economy
+	major = yes
 	
 	is_triggered_only = yes
 	
@@ -420,6 +421,40 @@ news_event = {
 	
 	option = {
 		name = squad_news.20.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.21
+	title = squad_news.21.t
+	desc = squad_news.21.d
+	picture = GFX_news_event_ger_civil_war
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.21.a #yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+news_event = {
+	id = squad_news.22
+	title = squad_news.21.t
+	desc = squad_news.22.d
+	picture = GFX_news_event_ger_civil_war
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.21.a #yes
 		ai_chance = {
 			factor = 90
 		}

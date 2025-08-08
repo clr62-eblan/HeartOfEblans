@@ -23,7 +23,7 @@ state={
 
 		}
 		add_core_of = NEL
-
+		add_core_of = GON
 	}
 
 	provinces={

@@ -280,6 +280,18 @@ leader_traits = {
 			factor = 0
 		}
 	}
+		
+	ponilub = {
+		random = no
+		sprite = 13
+		production_speed_buildings_factor = 0.03
+		consumer_goods_factor = -0.05
+		war_support_factor = 0.03
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 	el_presidente = {
 		random = no
@@ -299,6 +311,50 @@ leader_traits = {
 		political_power_factor = 0.25
 		weekly_casualties_war_support = 0.001
 		ai_desired_divisions_factor = 0.20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	disagreements = {
+		random = no
+		political_power_factor = -0.1
+		war_support_factor = -0.03
+		stability_factor = -0.03
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	nikakoy_concretiki = {
+		random = no
+		political_power_factor = -0.05
+		stability_factor = -0.03
+		drift_defence_factor = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	great_fieldmarshal = {
+		random = no
+		political_power_factor = 0.02
+		experience_gain_army_factor = 0.05
+		army_org_factor = 0.03
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	animeshnik = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.02
+		army_morale_factor = 0.03
 
 		ai_will_do = {
 			factor = 1

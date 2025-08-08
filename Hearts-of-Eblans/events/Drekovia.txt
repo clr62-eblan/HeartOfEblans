@@ -184,11 +184,7 @@ country_event = {
 	option = {
 		name = drek.5.a #yes
 		ai_chance = {
-			base = 30
-			modifier = {
-				factor={is_ai=no}
-				add = 60
-			}
+			base = 50
 		}
 		52 = {
 			transfer_state_to = DRE
@@ -202,14 +198,17 @@ country_event = {
 		name = drek.5.b #no
 
 		ai_chance = {
-			base = 60
+			base = 20
 		}
 		DRE = {
 			add_state_claim = 52
 			add_state_claim = 53
-			create_wargoal = {
-				target = PREV
-				type = annex_everything
+			if = {
+				limit = { PREV = { NOT = { original_tag = BTK } } }
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
 			}
 		}
 	}

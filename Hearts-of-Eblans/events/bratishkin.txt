@@ -48,7 +48,7 @@ country_event = {
 		
 		hidden_effect = {
 			BTK = {
-				declare_war_on = {
+				create_wargoal = {
 					target = GNS
 					type = annex_everything
 				}
@@ -82,7 +82,7 @@ country_event = {
 		
 		hidden_effect = {
 			BTK = {
-				declare_war_on = {
+				create_wargoal = {
 					target = GCH
 					type = annex_everything
 				}
@@ -100,7 +100,7 @@ country_event = {
 				}
 			}
 			BTK = {
-				declare_war_on = {
+				create_wargoal = {
 					target = GNS
 					type = annex_everything
 				}
@@ -132,7 +132,7 @@ country_event = {
 		
 		hidden_effect = {
 			BTK = {
-				declare_war_on = {
+				create_wargoal = {
 					target = SHD
 					type = annex_everything
 				}

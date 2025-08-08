@@ -1,0 +1,617 @@
+focus_tree = {
+	id = brat
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = BTK
+		}
+	}
+	default = no 
+	continuous_focus_position = { x = 400 y = 1000 }
+	initial_show_position = {
+		focus = BTK_vladimir_bratishkin
+	}
+	focus = {
+		id = BTK_vladimir_bratishkin
+		icon = GFX_goal_BTK_bratishkin
+		cost = 10
+		x = 25
+		y = 0
+		cancelable = no
+		completion_reward = {
+            effect_tooltip = {
+                swap_ideas = {
+                    remove_idea = BTK_bad_government
+                    add_idea = BTK_vladimir_bratishkin_1
+                }
+            }
+
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 13}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_reform_kolhoz
+		icon = GFX_focus_generic_agricultural_subsidies
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = {
+            focus = BTK_vladimir_bratishkin
+        }
+        relative_position_id = BTK_vladimir_bratishkin
+		completion_reward = {
+            add_ideas = BTK_reformed_kolhozes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_hitech_park
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = 2
+		y = 1
+        prerequisite = {
+            focus = BTK_vladimir_bratishkin
+        }
+        relative_position_id = BTK_vladimir_bratishkin
+		completion_reward = {
+            add_ideas = BTK_hitech_park_idea
+            random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_concept_of_restoration
+		icon = GFX_BTK_polit
+		cost = 10
+		x = 4
+		y = 1
+        prerequisite = {
+            focus = BTK_vladimir_bratishkin
+        }
+        relative_position_id = BTK_vladimir_bratishkin
+		completion_reward = {
+            custom_effect_tooltip = BTK_restart_89_squad_tt
+            add_war_support = 0.03
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_shadow_annex
+		icon = GFX_BTK_shd
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = {
+            focus = BTK_concept_of_restoration
+        }
+        relative_position_id = BTK_concept_of_restoration
+		completion_reward = {
+            SHD = { country_event = btk.24 days = 2 }
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_gns_annex
+		icon = GFX_BTK_gens
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = {
+            focus = BTK_shadow_annex
+        }
+        available ={
+            has_war = no
+        }
+        relative_position_id = BTK_shadow_annex
+		completion_reward = {
+            GNS = { country_event = btk.22 days = 2 }
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+
+	focus = {
+		id = BTK_gch_annex
+		icon = GFX_BTK_gaech
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = {
+            focus = BTK_shadow_annex
+        }
+        available ={
+            has_war = no
+        }
+        relative_position_id = BTK_shadow_annex
+		completion_reward = {
+            GCH = { country_event = btk.23 days = 3 }
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_jojo_annex
+		icon = GFX_BTK_jojo
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = {
+            focus = BTK_gch_annex
+        }
+        prerequisite = {
+            focus = BTK_gns_annex
+        }
+        available ={
+            has_war = no
+        }
+        relative_position_id = BTK_gch_annex
+		completion_reward = {
+            JHF = { country_event = btk.21 days = 3 }
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_evelone_annex
+		icon = GFX_BTK_evelone
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = {
+            focus = BTK_jojo_annex
+        }
+        available ={
+            has_war = no
+        }
+        relative_position_id = BTK_jojo_annex
+		completion_reward = {
+            create_wargoal = {
+                target = EVL
+                type = annex_everything
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_new_dawn
+		icon = GFX_BTK_restart_89
+		cost = 10
+		x = -4
+		y = 2
+        prerequisite = {
+            focus = BTK_evelone_annex
+        }
+        prerequisite = {
+            focus = BTK_custom_policy
+        }
+        prerequisite = {
+            focus = BTK_capitalism
+        }
+        relative_position_id = BTK_evelone_annex
+		completion_reward = {
+            effect_tooltip = {
+                swap_ideas = {
+                    remove_idea = BTK_vladimir_bratishkin_4
+                    add_idea = BTK_vladimir_bratishkin_5
+                }
+            }
+
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+
+	focus = {
+		id = BTK_promise_nuclear_program
+		icon = GFX_focus_generic_nuclear_development
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = {
+            focus = BTK_hitech_park
+        }
+        prerequisite = {
+            focus = BTK_reform_kolhoz
+        }
+        relative_position_id = BTK_hitech_park
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_tech = atomic_research }
+				}
+				add_tech_bonus = {
+					name = GER_uranverein
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+			}
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_vovdrev
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		x = -2
+		y = 1
+        prerequisite = {
+            focus = BTK_vladimir_bratishkin
+        }
+        relative_position_id = BTK_vladimir_bratishkin
+		completion_reward = {
+            add_ideas = BTK_vovdrev_idea
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+            
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_vovavia
+		icon = GFX_focus_generic_aircraft_production
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = {
+            focus = BTK_vovdrev
+        }
+        prerequisite = {
+            focus = BTK_reform_kolhoz
+        }
+        relative_position_id = BTK_vovdrev
+		completion_reward = {
+            add_ideas = BTK_vovavia_idea
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+
+	focus = {
+		id = BTK_squadgaz
+		icon = GFX_focus_PER_invite_oil_nations
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = {
+            focus = BTK_vovavia
+        }
+        prerequisite = {
+            focus = BTK_promise_nuclear_program
+        }
+        relative_position_id = BTK_vovavia
+		completion_reward = {
+            add_ideas = BTK_squadgaz_idea
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+	focus = {
+		id = BTK_custom_policy
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = 0
+		y = 2
+        prerequisite = {
+            focus = BTK_squadgaz
+        }
+        relative_position_id = BTK_squadgaz
+		completion_reward = {
+            remove_ideas = BTK_dead_economy
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+
+	}
+
+
+	focus = {
+		id = BTK_kso
+		icon = GFX_focus_generic_advanced_military_studies
+		cost = 10
+		x = -4
+		y = 1
+        prerequisite = {
+            focus = BTK_vladimir_bratishkin
+        }
+        relative_position_id = BTK_vladimir_bratishkin
+		completion_reward = {
+            add_ideas = BTK_kso_idea
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+
+	focus = {
+		id = BTK_territorial_brigades
+		icon = GFX_focus_GER_strafbataillon
+		cost = 10
+		x = -6
+		y = 1
+        prerequisite = {
+            focus = BTK_vladimir_bratishkin
+        }
+        relative_position_id = BTK_vladimir_bratishkin
+		completion_reward = {
+            add_ideas = BTK_territorial_brigades_idea
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+
+	focus = {
+		id = BTK_crackdown_opp
+		icon = GFX_focus_hol_war_on_pacifism
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = {
+            focus = BTK_territorial_brigades
+        }
+        prerequisite = {
+            focus = BTK_kso
+        }
+        relative_position_id = BTK_territorial_brigades
+		completion_reward = {
+            remove_ideas = BTK_mass_opposition
+            hidden_effect = {
+                swap_ideas = {
+                    remove_idea = BTK_army_0
+                    add_idea = BTK_army_2
+                }
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+
+	focus = {
+		id = BTK_liquidate_public_organisations
+		icon = GFX_focus_generic_annex_country
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = {
+            focus = BTK_crackdown_opp
+        }
+        relative_position_id = BTK_crackdown_opp
+		completion_reward = {
+            add_popularity = {
+    			ideology = fascism
+    			popularity = 0.05
+			}
+            add_stability = 0.03
+            add_war_support = 0.03
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+
+	focus = {
+		id = BTK_anticor
+		icon = GFX_focus_ARG_crackdown_on_corruption
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = {
+            focus = BTK_crackdown_opp
+        }
+        relative_position_id = BTK_crackdown_opp
+		completion_reward = {
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+
+	focus = {
+		id = BTK_capitalism
+		icon = GFX_focus_RAJ_institutional_money_laundering
+		cost = 10
+		x = 0
+		y = 2
+        prerequisite = {
+            focus = BTK_anticor
+        }
+        prerequisite = {
+            focus = BTK_reform_officers
+        }
+        prerequisite = {
+            focus = BTK_transarmy
+        }
+        relative_position_id = BTK_anticor
+		completion_reward = {
+            add_ideas = BTK_capitalism_idea
+            hidden_effect = {
+                swap_ideas = {
+                    remove_idea = BTK_army_2
+                    add_idea = BTK_cool_army
+                }
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+
+	focus = {
+		id = BTK_transarmy
+		icon = GFX_focus_generic_tank_air_support
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = {
+            focus = BTK_liquidate_public_organisations
+        }
+        relative_position_id = BTK_liquidate_public_organisations
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_panzergrenadier
+				ahead_reduction = 1
+				bonus = 0.5
+				uses = 3
+				category = cat_mechanized_equipment
+			}
+
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+
+	focus = {
+		id = BTK_reform_officers
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = {
+            focus = BTK_liquidate_public_organisations
+        }
+        relative_position_id = BTK_liquidate_public_organisations
+		completion_reward = {
+            add_ideas = BTK_officer_reform_idea
+            hidden_effect = {
+			    add_to_variable = { bratishkin_support = 7}
+                modify_bratishkin_support = yes
+            }
+		}
+	}
+}

@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_bop_STI_moders"
+		texturefile = "gfx/interface/bop/bop_STI_moders.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_bop_STI_stint"
+		texturefile = "gfx/interface/bop/bop_STI_stint.dds"
+	}
+	
+}

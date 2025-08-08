@@ -13,7 +13,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	elections_allowed = no
 }
 
@@ -29,7 +29,7 @@ create_country_leader = {
 	name = "Ам Ням"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "amn.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypelikee
 	traits = {
 		
@@ -40,7 +40,7 @@ create_country_leader = {
 	name = "Ам Ням"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "amn.dds"
-	expire = "2000.1.1"
+	
 	ideology = rexism
 	traits = {
 		
@@ -51,7 +51,7 @@ create_country_leader = {
 	name = "Ам Ням"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "amn.dds"
-	expire = "2000.1.1"
+	
 	ideology = moderatism
 	traits = {
 		
@@ -62,7 +62,7 @@ create_country_leader = {
 	name = "Ам Ням"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "amn.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		
@@ -73,7 +73,7 @@ create_country_leader = {
 	name = "Батько Дрейка"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "bat.dds"
-	expire = "2000.1.1"
+	
 	ideology = leninism
 	traits = {
 		

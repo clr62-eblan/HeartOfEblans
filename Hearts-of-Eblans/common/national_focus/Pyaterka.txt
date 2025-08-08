@@ -39,6 +39,10 @@ focus_tree = {
                 ideology = hypecratia
                 popularity = -0.1
             }
+
+			set_rule = {
+				can_create_factions = yes
+			}
 		}
 		x = 10
 		y = 1

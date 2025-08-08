@@ -22,7 +22,7 @@ focus_tree = {
 		id = DRE_politics
 		icon = GFX_goal_drake_politics
 		allow_branch = {
-			has_completed_focus = DRE_claims_on_bavaria
+			always = no
 		}
 		x = 6
 		y = 0
@@ -4675,7 +4675,7 @@ focus = {
 		x = 6
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -4729,6 +4729,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_threat = 3
 			152 = {
 				set_demilitarized_zone = no
 			}
@@ -5203,6 +5204,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_threat = 3
 			KRU = {
 				country_event = { id = drek.3 days = 3}
 			}
@@ -5397,6 +5399,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_threat = 5
 			every_neighbor_country = { #Targets every neighbor country
     			limit = {
         			controls_state = 52
@@ -5555,6 +5558,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_threat = 5
 			SLA = {
 				country_event = {
 					id = drek.8
@@ -5982,6 +5986,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_threat = 3
 			add_popularity = {
 				ideology = neutrality
     			popularity = 0.3
@@ -6073,6 +6078,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_threat = 2
 			hidden_effect = { #offset from fascist reasons on 00_on_actions
 				add_ai_strategy = {
 				   type = alliance
@@ -6236,6 +6242,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_threat = 5
 			add_state_claim = 155
 			add_state_claim = 154
 			add_state_claim = 43

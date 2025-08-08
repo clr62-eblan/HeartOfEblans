@@ -229,6 +229,19 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			tooltip = RULE_YOU_CANT_DEOCUP
 			NOT = { FROM = { tag = AMN } }
 		}
+	}		
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			original_tag = GON
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_YOU_CANT_DEOCUP
+			NOT = { FROM = { tag = STM } }
+		}
 	}	
 	if = {
 		limit = {

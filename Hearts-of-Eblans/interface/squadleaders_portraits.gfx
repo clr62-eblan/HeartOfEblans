@@ -124,6 +124,16 @@ SpriteTypes = {
 	}	
 	
 	SpriteType = {
+		name = "GFX_portrait_shabani"
+		texturefile = "gfx/leaders/GON/stint.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_lin_night_small"
+		texturefile = "gfx/interface/ideas/lin_night.dds"
+	}	
+	
+	SpriteType = {
 		name = "GFX_portrait_aratoss_fuhrer"
 		texturefile = "gfx/leaders/ARA/Aratoss.dds"
 	}	
@@ -131,6 +141,66 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_portrait_aratoss_parlament"
 		texturefile = "gfx/leaders/ARA/ara_parlament.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_shukov"
+		texturefile = "gfx/leaders/CHB/shukov.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_stint_parliament"
+		texturefile = "gfx/leaders/GON/parliament.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_stul"
+		texturefile = "gfx/leaders/GON/stulchak.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_moders_council"
+		texturefile = "gfx/leaders/GON/moders_council.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_shabani_heir"
+		texturefile = "gfx/leaders/GON/stint_heir.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_stintler"
+		texturefile = "gfx/leaders/GON/stint_stintler.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_nelya"
+		texturefile = "gfx/leaders/NEL/Nelya_hype.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_afs"
+		texturefile = "gfx/leaders/GON/afs.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_cherepaxa"
+		texturefile = "gfx/leaders/GON/cherepaxa.dds"
+	}
+		
+	SpriteType = {
+		name = "GFX_portrait_neketondi"
+		texturefile = "gfx/leaders/GON/Neket_Ondi.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_prymlan"
+		texturefile = "gfx/leaders/GON/prymlan.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_vip"
+		texturefile = "gfx/leaders/person_vip.dds"
 	}
 	
 }

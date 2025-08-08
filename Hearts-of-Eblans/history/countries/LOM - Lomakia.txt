@@ -27,7 +27,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1936.1.1"
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -36,7 +36,7 @@ create_country_leader = {
 	name = "Генсек Ломака"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "lom.dds"
-	expire = "2000.1.1"
+	
 	ideology = stalinism
 	traits = {
 		#
@@ -47,7 +47,7 @@ create_country_leader = {
 	name = "Обер-Фюрер Ломака"
 	desc = "POLITICS_PRINCE_PAUL_DESC"	
 	picture = "lom.dds"
-	expire = "2000.1.1"
+	
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -58,7 +58,7 @@ create_country_leader = {
 	name = "Ломака"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "lom.dds"
-	expire = "2000.1.1"
+	
 	ideology = despotism
 	traits = {
 		#
@@ -69,7 +69,7 @@ create_country_leader = {
 	name = "Ломака"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "lom.dds"
-	expire = "2000.1.1"
+	
 	ideology = liberalism
 	traits = {
 		#
@@ -80,7 +80,7 @@ create_country_leader = {
 	name = "Ломака"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "lom.dds"
-	expire = "2000.1.1"
+	
 	ideology = hypelikee
 	traits = {
 		#

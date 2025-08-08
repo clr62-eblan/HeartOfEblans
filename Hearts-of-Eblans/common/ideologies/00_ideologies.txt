@@ -5,7 +5,7 @@ ideologies = {
 		types = {
 
 			conservatism = {
-				color = { 59 75 112 }
+				color = { 126 188 222 }
 			}
 
 			liberalism = {
@@ -13,7 +13,7 @@ ideologies = {
 			}
 
 			socialism = {
-				color = { 196 75 87 }
+				color = { 126 188 222 }
 			}
 			
 		}
@@ -27,7 +27,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 
-		color = { 53 86 145 }
+		color = { 126 188 222 }
 
 		rules = {
 			can_create_collaboration_government = no

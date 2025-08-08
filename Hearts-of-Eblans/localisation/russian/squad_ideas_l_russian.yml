@@ -44,6 +44,7 @@
  borets_s_pafosom: "«Пресекатель» пафоса на SLAY 2023"
  dva_disa: "Два дисса на лпешку"
  CHB_mazloyoun_idea: "Мазлоюнг"
+ SVI_building_subsidize: "Гос. Субсидирование строек"
 
  DRE_treaty_of_triannon: "Ебланский договор"
  SVI_buster_oposite: "Бустерградовская оппозиция"
@@ -190,7 +191,6 @@
  GON_internet_punishers_idea: "Интернет каратели"
  GON_domestic_services_idea: "Государственные сервисы"
  GON_internet_punishers_idea_2: "Интернет каратели"
- GON_right_messenger_idea: "Правильный мессенджер"
  GON_digital_elite: "Цифровая элита"
  GON_hypecratisation_people: "Хайпократизация населения"
  GON_meme_politics_culture: "Политическая культура мемов"
@@ -235,7 +235,6 @@
  GON_infamous_decade: "Позорное прошлое"
  GON_infamous_decade_3_idea: "Позорное прошлое"
  GON_infamous_decade: "Позорное прошлое"
- GON_anti_corruption_politics: "Антикоррупционная политика"
  GON_regulated_salaries: "Отрегулированные государством зарплаты"
  GON_social_welfare_fund_ns: "Фонд национального благосостояния"
  GON_for_all_idea: "Гондурассия для всех!"
