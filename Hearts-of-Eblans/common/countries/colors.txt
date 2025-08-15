@@ -199,6 +199,26 @@ GCH = {
 	color = rgb { 8 96 95 }
 	color_ui = rgb { 8 96 95 }
 }
+DLX = {
+	color = rgb { 212 142 30 }
+	color_ui = rgb { 212 142 30 }
+}
+FST = {
+	color = rgb { 173 153 191 }
+	color_ui = rgb { 173 153 191 }
+}
+SAS = {
+	color = rgb { 51 88 255 }
+	color_ui = rgb { 51 88 255 }
+}
+DNL = {
+	color = rgb { 138 237 227 }
+	color_ui = rgb { 138 237 227 }
+}
+ANI = {
+	color = rgb { 245 159 211 }
+	color_ui = rgb { 245 159 211 }
+}
 TND = {
 	color = rgb { 86 163 166 }
 	color_ui = rgb { 86 163 166 }

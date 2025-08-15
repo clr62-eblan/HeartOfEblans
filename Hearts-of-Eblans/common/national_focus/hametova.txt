@@ -1,0 +1,493 @@
+focus_tree = {
+	id = hametova_focus
+	
+	country = {
+		factor = 0
+	}
+	default = no
+
+	continuous_focus_position = { x = 200 y = 1700 }
+
+	#HAMETOVA
+	
+	focus = {
+		id = ham_hametova_second_term
+		icon = GFX_goal_unknown
+		x = 10
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+        }
+    }
+
+	##MUSIC
+	focus = {
+		id = ham_reform_program
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_hametova_second_term }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_hametova_second_term
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_content_reforms
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_reform_program }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_reform_program
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_content_reforms
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_reform_program }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_reform_program
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_content_reforms
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_reform_program }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_reform_program
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_bolee_adult_content
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		mutually_exclusive = { focus = ham_endless_detstvo }
+		prerequisite = { focus = ham_content_reforms }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_content_reforms
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_full_transfer_to_tiktok
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_bolee_adult_content }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_bolee_adult_content
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_endless_detstvo
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		cost = 10
+		mutually_exclusive = { focus = ham_bolee_adult_content }
+		prerequisite = { focus = ham_content_reforms }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_content_reforms
+
+		completion_reward = {
+        }
+    }
+
+
+	focus = {
+		id = ham_continue_shit_conveir
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_endless_detstvo }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_endless_detstvo
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_superlikes_expropriation
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_continue_shit_conveir }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_continue_shit_conveir
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_shodki_s_fanatami
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_continue_shit_conveir }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_continue_shit_conveir
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_advertisements
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_shodki_s_fanatami focus = ham_superlikes_expropriation }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_shodki_s_fanatami
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_music_reforms
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_reform_program }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_reform_program
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_real_vokal
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		mutually_exclusive = { focus = ham_autotune }
+		prerequisite = { focus = ham_music_reforms }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_music_reforms
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_autotune
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		mutually_exclusive = { focus = ham_real_vokal }
+		prerequisite = { focus = ham_music_reforms }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_music_reforms
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_autotune
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		mutually_exclusive = { focus = ham_real_vokal }
+		prerequisite = { focus = ham_music_reforms }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_music_reforms
+
+		completion_reward = {
+        }
+    }
+
+
+	focus = {
+		id = ham_politica_of_collaborations
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_reform_program }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_reform_program
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_bratishkin_strim
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_politica_of_collaborations }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_politica_of_collaborations
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_land_reform
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_bratishkin_strim }
+		prerequisite = { focus = ham_autotune focus = ham_real_vokal }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_bratishkin_strim
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_drake_protection
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		mutually_exclusive = { focus = ham_forget_about_drake }
+		prerequisite = { focus = ham_land_reform }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_land_reform
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_forget_about_drake
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		mutually_exclusive = { focus = ham_drake_protection }
+		prerequisite = { focus = ham_land_reform }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_land_reform
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_fans_privatisation_plan
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_land_reform }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_land_reform
+
+		completion_reward = {
+        }
+    }
+
+
+
+
+
+	##ARMY
+
+	focus = {
+		id = ham_new_military_doctrine
+		icon = GFX_goal_unknown
+		x = -6
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_hametova_second_term }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_hametova_second_term
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_organize_milanas_guardians
+		icon = GFX_goal_unknown
+		x = -4
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_hametova_second_term }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_hametova_second_term
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_new_defense_system
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_organize_milanas_guardians }
+		prerequisite = { focus = ham_new_military_doctrine }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_organize_milanas_guardians
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_gain_palata_support
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_new_defense_system }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_new_defense_system
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_arrest_milana_star
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_gain_palata_support }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_gain_palata_support
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_help_from_eastern_guys
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_new_defense_system }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_gain_palata_support
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_prepare_for_third_term
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_help_from_eastern_guys focus = ham_arrest_milana_star }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_help_from_eastern_guys
+
+		completion_reward = {
+        }
+    }
+
+
+	###ELECTIONS###
+
+	focus = {
+		id = ham_likers_election
+		icon = GFX_goal_unknown
+		x = 0
+		y = 9
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_hametova_second_term
+
+		completion_reward = {
+        }
+    }
+
+
+	focus = {
+		id = ham_milana_star_government
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_likers_election }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_likers_election
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_milana_hametova_third_term
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_likers_election }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_likers_election
+
+		completion_reward = {
+        }
+    }
+
+	focus = {
+		id = ham_milana_necrasova_government
+		icon = GFX_goal_unknown
+		x = -5
+		y = 1
+		cost = 10
+		prerequisite = { focus = ham_likers_election }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		relative_position_id = ham_likers_election
+
+		completion_reward = {
+        }
+    }
+}

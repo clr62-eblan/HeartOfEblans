@@ -7,16 +7,15 @@ state = {
 	state_category = large_town
 	
 	resources = {
-		rubber = 342 # was: 848
+		rubber = 140 # was: 848
 		steel = 20 # was: 32
-		tungsten = 189 # was: 308
+		tungsten = 70 # was: 308
 		aluminium = 15 # was: 25
 	}
 
 	history = {
-		owner = ZUS
-		#owner = MAL
-		#add_core_of = MAL
+		owner = FST
+		add_core_of = FST
 
 		victory_points = {
 			12299 10

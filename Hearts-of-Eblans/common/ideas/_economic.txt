@@ -128,7 +128,7 @@ ideas = {
 
 					}
 
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat }
 				}
 
 				if = {
@@ -208,7 +208,7 @@ ideas = {
 
 					}
 
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat }
 				}
 
 				if = {
@@ -328,7 +328,7 @@ ideas = {
 
 					}
 
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat }
 				}
 
 				if = {
@@ -444,7 +444,7 @@ ideas = {
 
 					}
 
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat }
 				}
 				
 				if = {

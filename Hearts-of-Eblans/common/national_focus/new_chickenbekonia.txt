@@ -75,6 +75,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = tiktok_platform
 			set_politics = {
 			    ruling_party = hypecratia
 			    elections_allowed = no
@@ -130,6 +131,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_ideas = chb_develop_social_media_idea
+			decrease_corruption_law = yes
 		}
 		x = 1
 		y = 1
@@ -234,6 +236,7 @@ focus_tree = {
 		prerequisite = { focus = chb_digital_defense focus = chb_official_like_account }
 		cost = 10
 		completion_reward = {
+			increase_taxes_law = yes
 			add_timed_idea = {
 				idea = CHB_internet_mobilisation_idea
 				days = 1340
@@ -405,7 +408,7 @@ focus_tree = {
 
 	focus = {
 		id = chb_destroy_opposition
-		icon = GFX_SOV_left_opposition_coup_ccp_2d_sov_compatibility
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		prerequisite = { focus = chb_massive_rearmament }
         prerequisite = { focus = chb_firepower }
 		cost = 10
@@ -464,6 +467,7 @@ focus_tree = {
 		prerequisite = { focus = chb_destroy_opposition }
 		cost = 10
 		completion_reward = {
+			increase_media_law = yes
 			add_ideas = CHB_influence_of_trends_idea
 		}
 		x = 1
@@ -484,6 +488,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			increase_media_law = yes
 			add_popularity = {
     			ideology = hypecratia
     			popularity = -1
@@ -881,6 +886,17 @@ focus_tree = {
 		icon = GFX_focus_por_workers_of_iberia
 		prerequisite = { focus = chb_communism_path }
 		cost = 10
+		available = {
+			if = {
+				limit = { is_ai = no}
+				custom_trigger_tooltip = {
+					tooltip = need_media_free
+					need_media_law_free = yes
+				}
+			}
+			
+		}
+
 		completion_reward = {
 			add_ideas = chicken_collective
 		}
@@ -1019,6 +1035,7 @@ focus_tree = {
 		prerequisite = { focus = chb_socialism_building }
 		cost = 10
 		completion_reward = {
+			decrease_corruption_law = yes
 			add_popularity = {
     			ideology = fascism
     			popularity = -0.08
@@ -1106,6 +1123,7 @@ focus_tree = {
 		prerequisite = { focus = chb_socialism_building }
 		cost = 10
 		completion_reward = {
+			decrease_taxes_law = yes
 			add_ideas = chb_com_with_a_human_face_idea
 		}
 		x = 1
@@ -1270,6 +1288,7 @@ focus_tree = {
 		prerequisite = { focus = chb_modernization_of_logistics focus = chb_creation_of_longterm_military_fund }
 		cost = 10
 		completion_reward = {
+			decrease_corruption_law = yes
 			add_ideas = CHB_defense_contract_stability
 		}
 		x = 1

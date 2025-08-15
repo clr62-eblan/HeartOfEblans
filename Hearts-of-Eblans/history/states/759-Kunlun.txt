@@ -9,9 +9,7 @@ state={
 	state_category = wasteland
 	history={
 		owner = ZUS
-		#add_core_of = VAH
-		#add_core_of = CHI
-		#add_core_of = VAH
+		add_core_of = ZUS
 		buildings = {
 			infrastructure = 1
 

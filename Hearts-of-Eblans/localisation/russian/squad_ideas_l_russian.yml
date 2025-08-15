@@ -43,8 +43,22 @@
  SVI_vigilium_2_idea: "Античит Vigilium"
  borets_s_pafosom: "«Пресекатель» пафоса на SLAY 2023"
  dva_disa: "Два дисса на лпешку"
- CHB_mazloyoun_idea: "Мазлоюнг"
+ CHB_mazloyoun_idea: "ЮнМаз"
  SVI_building_subsidize: "Гос. Субсидирование строек"
+ medals_granting_idea: "Выдача медалей"
+ internet_punishers_idea: "Интернет-каратели"
+ GENERIC_banned_schools: "Запрещённые школы"
+ hypeexpand_idea: "Расширение жизненного пространства"
+ klyatva_vernosti_idea: "Клятва верности"
+ own_merch_idea: "Свой мерч"
+ generic_traditional_values_idea: "Защита традиционных ценностей"
+ generic_liberal_institutions1: "Индивидуальная свобода"
+ mil_corps_idea: "Военный конклав"
+ independent_country_strike_idea: "Великие похождения"
+ army_training_improve_idea: "Улучшенная армейская тренировка"
+ forties_neu_idea: "Строительство бункеров"
+ world_is_me_idea: "Мир это я!"
+
 
  DRE_treaty_of_triannon: "Ебланский договор"
  SVI_buster_oposite: "Бустерградовская оппозиция"
@@ -330,6 +344,20 @@
  SVI_opposition_camps: "Программы идеологического перевоспитания"
  SVI_new_citizenship_idea: "Новое гражданство"
  SVI_world_is_not_for_the_weak_idea: "Мир не для слабых"
+
+ soc_propaganda: "Социалистическая пропаганда"
+ international_brigades_idea: "Интернациональные бригады"
+ workers_unions_idea: "Сформированные профсоюзы"
+ mil_commisars_idea: "Военные коммисары"
+ spread_com_idea: "Распространение коммунизма"
+ autonomous_kolhoz_idea: "Автономия колхозов"
+ com_councils_idea: "Региональные советы"
+ proletarian_army_idea: "Армия пролетариата"
+ secret_police_idea: "Секретная полиция"
+ nationalism_develop_idea: "Поддержка национализма"
+ fascism_intervention_idea: "Вмешательство в мировую политику"
+
+
  
  
  SVI_svintogon_1: "Свинтогон"

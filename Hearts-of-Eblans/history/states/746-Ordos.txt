@@ -9,26 +9,13 @@ state={
 	
 	history=
 	{
-		owner = ZUS
-		#add_core_of = VAH
-		#add_core_of = CHI
-		#add_core_of = VAH
-		#add_core_of = VAH
+		owner = VAH
+		add_core_of = VAH
 		
 		buildings = {
 			infrastructure = 1
 		}
-
-		1938.10.25 = {
-			controller = JAP
-		}
 		
-		1939.1.1 = {
-			
-			owner = ZUS
-			controller = MEN
-
-		}
 	}
 	manpower=500000
 	buildings_max_level_factor=1.000

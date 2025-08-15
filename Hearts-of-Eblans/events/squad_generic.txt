@@ -1,0 +1,29 @@
+add_namespace = sqgen
+#КОнтент для других стран
+country_event = {
+	id = sqgen.1
+	title = sqgen.1.t
+	desc = sqgen.1.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+    #TIKITOKI
+	option = {
+		name = sqgen.1.a
+		
+		add_ideas = tiktok_platform
+	}
+	option = {
+		name = sqgen.1.b
+		
+		add_ideas = likee_platform
+	}
+
+	option = {
+		name = sqgen.1.c
+		
+		add_ideas = twitch_platform
+	}
+}

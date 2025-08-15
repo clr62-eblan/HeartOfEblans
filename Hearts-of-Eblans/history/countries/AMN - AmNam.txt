@@ -11,6 +11,10 @@ set_technology = {
 	basic_train = 1
 }
 
+add_ideas = {
+	no_main_platform
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "2022.1.1"

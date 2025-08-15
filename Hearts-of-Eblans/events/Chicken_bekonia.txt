@@ -797,7 +797,7 @@ country_event = {
 	
 	#Real
 	option = {
-		name = chicken.27.a
+		name = chicken.28.a
 		CHB = {
 			complete_national_focus = chb_structural_assessment_of_production
 		}
@@ -805,9 +805,24 @@ country_event = {
 	
 	#Fake
 	option = {
-		name = chicken.27.b
+		name = chicken.28.b
 		CHB = {
 			complete_national_focus = chb_industry_renisance
 		}
 	}
+}
+
+#Economic vector
+country_event = {
+	id = chicken.29
+	title = chicken.29.t
+	desc = chicken.29.d
+	picture = GFX_report_event_AUS_political_rally
+	
+	is_triggered_only = yes
+	
+	#Real
+	option = {
+		name = chicken.29.a
+	}	
 }

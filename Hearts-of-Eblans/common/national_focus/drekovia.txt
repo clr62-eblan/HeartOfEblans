@@ -1811,6 +1811,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_media_law = yes
 			add_political_power = 25
 			add_war_support = 0.15
 			add_stability = 0.05
@@ -1888,6 +1889,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_corruption_law = yes
 			random_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1914,7 +1916,6 @@ focus = {
 					instant_build = yes
 				}
 			}
-			people_support_development_improvement = yes
 		}
 	}
 
@@ -2044,6 +2045,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_media_law = yes
 			annex_country = {
     			target = SNR
     			transfer_troops = yes
@@ -2089,6 +2091,10 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			hidden_effect = {
+				increase_corruption_law = yes
+			}
+
 			set_country_flag = SDO_started_chb
 			declare_war_on = {
 				target = CHB
@@ -4072,6 +4078,9 @@ focus = {
 
     completion_reward = {
       remove_ideas = DRE_viplati_reparatiy
+	  CHB = {
+		country_event = chicken.29
+	  }
     }
 
     ai_will_do = {
@@ -4242,6 +4251,9 @@ focus = {
 				instant_build = yes
 			}
 		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		decrease_taxes_law = yes
     }
 
     ai_will_do = {
@@ -4420,6 +4432,7 @@ focus = {
 	}
 
     completion_reward = {
+		decrease_corruption_law = yes
     }
 
     ai_will_do = {
@@ -4810,6 +4823,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_taxes_law
 			random_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -5152,6 +5166,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_corruption_law = yes
 			random_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -5272,6 +5287,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_media_law = yes
 			add_country_leader_trait = DRE_supreme_commander_armed_forces
 		}
 	}
@@ -6045,6 +6061,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_corruption_law = yes
 			add_timed_idea = { idea = DRE_national_rebuilding days = 365 }
 		}
 	}
@@ -6078,6 +6095,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_media_law = yes
 			add_threat = 2
 			hidden_effect = { #offset from fascist reasons on 00_on_actions
 				add_ai_strategy = {
@@ -6615,6 +6633,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_corruption_law = yes
 			add_research_slot = 1
 		}
 	}
@@ -6966,6 +6985,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_taxes_law = yes
 			add_political_power = 100
 		}
 	}
@@ -7154,6 +7174,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_corruption_law = yes
 			add_political_power = 100
 			remove_ideas = DRE_extraordinary_act
 		}

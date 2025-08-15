@@ -12,7 +12,8 @@ state={
 	}
 
 	history={
-		#owner = BHU
+		owner = DNL
+		add_core_of = DNL
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

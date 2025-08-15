@@ -1,5 +1,116 @@
 spriteTypes = {
 
+
+	spriteType = {
+        name = "GFX_idea_abs_trans"
+        texturefile = "gfx/interface/ideas/laws/idea_cor_1.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_low_corr"
+        texturefile = "gfx/interface/ideas/laws/idea_cor_2.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_med_corr"
+        texturefile = "gfx/interface/ideas/laws/idea_cor_3.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_high_corr"
+        texturefile = "gfx/interface/ideas/laws/idea_cor_4.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_mafia_corr"
+        texturefile = "gfx/interface/ideas/laws/idea_cor_5.png"
+    }  	
+	
+	
+	spriteType = {
+        name = "GFX_idea_media_independent"
+        texturefile = "gfx/interface/ideas/laws/idea_med_1.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_media_free"
+        texturefile = "gfx/interface/ideas/laws/idea_med_2.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_media_mixed"
+        texturefile = "gfx/interface/ideas/laws/idea_med_3.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_media_progov"
+        texturefile = "gfx/interface/ideas/laws/idea_med_4.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_media_onlygov"
+        texturefile = "gfx/interface/ideas/laws/idea_med_5.png"
+    }  	
+	
+	
+	
+	spriteType = {
+        name = "GFX_idea_taxes_symbolic"
+        texturefile = "gfx/interface/ideas/laws/idea_tax_1.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_taxes_low"
+        texturefile = "gfx/interface/ideas/laws/idea_tax_2.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_taxes_medium"
+        texturefile = "gfx/interface/ideas/laws/idea_tax_3.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_taxes_high"
+        texturefile = "gfx/interface/ideas/laws/idea_tax_4.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_taxes_unbelievable"
+        texturefile = "gfx/interface/ideas/laws/idea_tax_5.png"
+    }  	
+	
+	
+	
+	spriteType = {
+        name = "GFX_idea_platform_likee"
+        texturefile = "gfx/interface/ideas/laws/idea_ptf_4.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_platform_twitch"
+        texturefile = "gfx/interface/ideas/laws/idea_ptf_1.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_platform_tiktok"
+        texturefile = "gfx/interface/ideas/laws/idea_ptf_2.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_platform_analog"
+        texturefile = "gfx/interface/ideas/laws/idea_ptf_6.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_platform_nomain"
+        texturefile = "gfx/interface/ideas/laws/idea_ptf_5.png"
+    }  
+
+
+
+
+
+
     spriteType = {
         name = "GFX_idea_bezmoderov"
         texturefile = "gfx/interface/ideas/bezmoderov.dds"
@@ -29,6 +140,11 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_GON_acf"
         texturefile = "gfx/interface/ideas/acf_gon.dds"
+    }  
+
+    spriteType = {
+        name = "GFX_idea_hype_world"
+        texturefile = "gfx/interface/ideas/hype_world.dds"
     }    
 
     spriteType = {
@@ -329,7 +445,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_low_taxes"
+		name = "GFX_idea_low_taxesi"
 		texturefile = "gfx/interface/ideas/low_taxes.dds"
 	}
 
@@ -349,7 +465,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_high_taxes"
+		name = "GFX_idea_high_taxesi"
 		texturefile = "gfx/interface/ideas/high_taxes.dds"
 	}
     ### Pyaterka

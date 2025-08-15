@@ -8,10 +8,8 @@ state={
 	manpower = 480164
 
 	history = {
-		#owner = 
-		add_core_of = KLT
-		add_core_of = PAK
-		add_core_of = BLC
+		owner = DLX
+		add_core_of = DLX
 
 		buildings = {
 			infrastructure = 1 #was: 5

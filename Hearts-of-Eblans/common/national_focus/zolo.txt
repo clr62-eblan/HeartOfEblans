@@ -298,7 +298,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 
 		cost = 10

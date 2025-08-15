@@ -80,6 +80,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_media_law = yes
 			add_political_power = 50
 			add_war_support = 0.01
 			add_stability = 0.03
@@ -197,6 +198,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_taxes_law = yes
 			add_stability = 0.05
 			add_war_support = 0.05
 		}
@@ -275,6 +277,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_media_law = yes
 			add_popularity = {
     			ideology = democratic
     			popularity = 0.1
@@ -329,6 +332,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_corruption_law = yes
 			country_event = stintik.24
 			hidden_effect = {
 				SUT = {
@@ -1166,6 +1170,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_media_law = yes
 			add_ideas = GON_democratic_diplomats
 		}
 	}
@@ -1533,6 +1538,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_ideas = tiktok_platform
+			decrease_taxes_law = yes
 			add_timed_idea = {
 				idea = GON_new_hype_life
 				days = 120
@@ -2011,6 +2018,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_corruption_law = yes
 			swap_ideas = {
 				remove_idea = GON_railway_reform2
 				add_idea = GON_gondurmetro
@@ -2049,6 +2057,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_media_law = yes
 			country_event = { id = stintik.29 hours = 6 random_hours = 12 }
 		}
 	}
@@ -2335,6 +2344,7 @@ focus_tree = {
 		}
 
 		available = {
+			increase_corruption_law = yes
 			power_balance_value = {
     			id = stint_moders_balance
     			value < -0.34
@@ -2374,6 +2384,7 @@ focus_tree = {
 		}
 
 		available = {
+			increase_media_law = yes
 			power_balance_value = {
     			id = stint_moders_balance
     			value < -0.5
@@ -2541,6 +2552,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_taxes_law = yes
 			custom_effect_tooltip = STI_claim_stintler_rights_tt
 		}
 	}
@@ -2576,6 +2588,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_corruption_law = yes
 			add_ideas = GON_state_above_all_1
 		}
 	}
@@ -2666,6 +2679,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_corruption_law = yes
 			add_ideas = GON_gondurmetprom
 		}
 	}
@@ -3311,6 +3325,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_taxes_law = yes
 			create_faction = "Средиземноморская Ось"
 			hidden_effect = {
 				set_rule = {
@@ -3511,6 +3526,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_taxes_law = yes
 			add_ideas = GON_royal_industry_1
 			788 = {
 				add_extra_state_shared_building_slots = 1
@@ -3869,6 +3885,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			decrease_corruption_law = yes
 			add_ideas = GON_legends_of_kotel_1
 		}
 	}
@@ -4271,6 +4288,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			increase_media_law = yes
 			add_ideas = GON_aggresive_expansion
 		}
 	}

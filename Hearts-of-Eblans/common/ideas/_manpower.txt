@@ -33,7 +33,7 @@ ideas = {
 					limit = {
 						original_tag = DRE
 					}
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat_aat }
 				}
 
 				if = {
@@ -101,7 +101,7 @@ ideas = {
 					limit = {
 						original_tag = DRE
 					}
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat }
 				}
 
 				if = {
@@ -291,7 +291,7 @@ ideas = {
 					limit = {
 						original_tag = DRE
 					}
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat }
 				}
 
 				if = {
@@ -482,7 +482,7 @@ ideas = {
 					limit = {
 						original_tag = DRE
 					}
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat }
 				}
 
 				if = {
@@ -670,7 +670,7 @@ ideas = {
 					limit = {
 						original_tag = DRE
 					}
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat }
 				}
 
 				if = {
@@ -844,7 +844,7 @@ ideas = {
 					limit = {
 						original_tag = DRE
 					}
-					NOT = { has_idea = DRE_treaty_of_triannon }
+					NOT = { has_idea = DRE_treaty_of_triannon_aat }
 				}
 				
 				if = {

@@ -3,6 +3,7 @@ capital = 914
 
 add_ideas = {
 	zabitiy_chel
+	twitch_analogs_platform
 }
 
 set_research_slots = 1

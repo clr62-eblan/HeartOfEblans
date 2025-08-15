@@ -44,6 +44,21 @@ drekovia_sdo_cat = {
 		}
 	}
 }
+
+drekovia_vapers_cat = {
+	priority = 20
+	icon = GFX_decision_category_border_conflicts
+
+	allowed = {
+		original_tag = DRE
+	}
+
+	visible = {
+		original_tag = DRE
+		has_country_flag = DRE_SLA_WAR
+	}
+}
+
 drekovia_rostov_cat = {
 	priority = 29
 	icon = GFX_decision_category_generic_economy

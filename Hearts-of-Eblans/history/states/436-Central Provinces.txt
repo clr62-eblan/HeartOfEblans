@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		#owner = RAJ
+		owner = SAS
+		add_core_of = SAS
 		
 		buildings = {
 			infrastructure = 1

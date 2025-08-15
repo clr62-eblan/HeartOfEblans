@@ -13,9 +13,7 @@ state={
 
 	history={
 		owner = ZUS
-		#add_core_of = VAH
-		#add_core_of = CHI
-		#add_core_of = VAH
+		add_core_of = ZUS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

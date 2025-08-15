@@ -12,8 +12,8 @@ state={
 	}
 
 	history={
-		##owner = RAJ
-		add_core_of = MYS
+		owner = SAS
+		add_core_of = SAS
 		victory_points = {
 			8011 10
 		}

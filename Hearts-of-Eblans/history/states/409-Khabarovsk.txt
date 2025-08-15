@@ -10,7 +10,8 @@ state = {
 	state_category = rural
 
 	history = {
-		owner = ZUS
+		owner = ANI
+		add_core_of = ANI
 		victory_points = {
 			12189 1
 		}
@@ -22,9 +23,6 @@ state = {
 				naval_base = 1
 			}
 		}
-		#add_core_of = RAB
-		add_core_of = FER
-		add_core_of = VLA
 	}
 
 	provinces = {

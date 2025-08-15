@@ -1396,7 +1396,6 @@ focus_tree = {
     			target = BUS
 				expire = 720
 			}
-			remove_ideas = SVI_buster_oposite
 		}
 	}
 

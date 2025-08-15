@@ -167,7 +167,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            add_ideas = ARA_freedom_of_press
+            decrease_media_law = yes
             add_political_power = 50
 		}
 	}
@@ -209,6 +209,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			decrease_taxes_law = yes
 			add_stability = 0.1
 			set_politics = {
 				ruling_party = hypecratia
@@ -450,6 +451,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			increase_corruption_law = yes
 			set_power_balance = { id = president_parlament_balance }
 			add_stability = -0.05
 			add_war_support = -0.05
@@ -745,6 +747,9 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			hidden_effect ={
+				increase_corruption_law = yes
+			}
 			retire_character = hypecratia_president
 			remove_ideas = ARA_where_is_president
 			remove_ideas = ARA_president_isolation
@@ -797,7 +802,19 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			add_ideas = ARA_pro_government_media
+			if = {
+				limit = { 
+					OR = {
+						NOT = {
+							has_idea = only_gov_media
+						}
+						NOT = {
+							has_idea = pro_gov_media
+						}
+					}
+				}
+				add_ideas = pro_gov_media
+			}
 			if = {
 				limit = { has_idea = ARA_freedom_of_press}
 				remove_ideas = ARA_freedom_of_press
@@ -840,6 +857,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			increase_corruption_law = yes
 			swap_ideas = {
 			add_idea = ARA_destroyed_legislation
 			remove_idea = ARA_slabie_zakoni
@@ -865,6 +883,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			increase_corruption_law = yes
 			add_ideas = ARA_dicator_constitution
 		}
 	}
@@ -934,6 +953,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			increase_media_law = yes
 			add_ideas = ARA_broken_democratic_principles
 		}
 	}
@@ -978,6 +998,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			increase_taxes_law = yes
 			country_event = { id = aratos.8 hours = 1}
 		}
 	}
@@ -1599,6 +1620,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			increase_media_law = yes
            swap_ideas = {
             add_idea = ARA_zhestkie_zakoni
             remove_idea = ARA_slabie_zakoni
@@ -1758,6 +1780,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
+			increase_corruption_law = yes
         	add_war_support = 0.15
 
 			add_ideas = ARA_no_one_exept_aratoss
@@ -1780,7 +1803,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-           add_ideas = ARA_pro_government_media
+           increase_media_law = yes
 		}
 	}
 
@@ -1847,10 +1870,11 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-           swap_ideas = {
-			remove_idea = ARA_pro_government_media
-			add_idea = ARA_only_government_media
-		   }
+			increase_media_law = yes
+           #swap_ideas = {
+			#remove_idea = ARA_pro_government_media
+			#add_idea = ARA_only_government_media
+		   #}
 		}
 	}
 
@@ -1912,10 +1936,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-            swap_ideas = {
-			remove_idea = ARA_only_government_media
 			add_idea = ARA_total_mind_control
-		   }
 		}
 	}
 

@@ -12,13 +12,20 @@ guiTypes = {
 		}
 		Orientation = center
 		Origo = center
-		clipping = no 
+		#clipping = no 
 		
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_frontend_bg"
 			alwaystransparent = yes
 		}
+		
+		#iconType = {   #anim lancaster
+		#	name = "rain_anim"
+		#	position = { x = 0 y = 0 }
+		#	quadTextureSprite = "GFX_frontend_bg_rain_anim"
+		#	orientation = upper_left
+		#}
 		
 	}
 	
@@ -280,7 +287,7 @@ guiTypes = {
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
 		position = { x=0 y =0}
-		size = { width = 320 height = 400 }
+		size = { width = 320 height = 570 }
 		Orientation = CENTER
 		Origo = center		
 				
@@ -299,6 +306,13 @@ guiTypes = {
 			format = centre
 			maxWidth = 250
 			maxHeight = 20	
+		}
+		
+		iconType = {
+			name = "credits_update_icon"
+			position = { x= -433 y=-335 }
+			spriteType = "GFX_credits_update_icon"
+			orientation = lower_right
 		}
 		
 			
@@ -332,7 +346,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 35 y = 300 }
+			position = { x = 35 y = 200 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -344,7 +358,7 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 35 y = 520 }
+			position = { x = 35 y = 540 }
 		}
 		
 		
@@ -397,6 +411,8 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
+
+		
 		ButtonType = {
 			name = "nudge_button"
 			position = { x = 16 y = 281 }
@@ -415,11 +431,20 @@ guiTypes = {
 			oversound = ui_menu_over
 			
 		}
+		
+		ButtonType = {
+			name = "sponsors_button"
+			position = { x=5 y=355 }
+			quadTextureSprite ="GFX_sponsor_button_icon"
+			font = "hoi_24header"			
+			text = "Sponsors_button_txt"
+			pdx_tooltip = "HOE_DONATERS"
+		}
 	}
 	
 	containerWindowType = {
 		name = "mainmenu_social_buttons"
-		position = { x=-50 y=-32 }	
+		position = { x=-50 y=10 }	
 		size = { width = 240 height = 90 }
 		Orientation = center	
 		origo = center
@@ -485,7 +510,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "youtube_button"
-			position = { x=75 y=-42 }
+			position = { x=75 y=10 }
 			quadTextureSprite ="youtube"
 			#clicksound = click_default
 			pdx_tooltip = "HOE_YOUTUBE"
@@ -495,7 +520,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "tg_button"
-			position = { x=125 y=-42 }
+			position = { x=125 y=10 }
 			quadTextureSprite ="discord"
 			#clicksound = click_default
 			pdx_tooltip = "HOE_GIT"

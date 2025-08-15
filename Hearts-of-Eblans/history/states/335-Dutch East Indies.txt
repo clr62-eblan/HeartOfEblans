@@ -7,13 +7,13 @@ state={
 	state_category = city
 	
 	resources={
-		rubber=140 # was: 242
+		rubber=50 # was: 242
 		oil=10 # was: 16
 	}
 
 	history={
-		#owner = INS
-		#add_core_of = INS
+		owner = ANI
+		add_core_of = ANI
 		victory_points = {
 			7381 5
 		}

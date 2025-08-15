@@ -13,7 +13,8 @@ state={
 	local_supplies=0.000
 	history={
 
-		#owner = RAJ
+		owner = SAS
+		add_core_of = SAS
 		buildings = {
 			infrastructure = 1
 		}

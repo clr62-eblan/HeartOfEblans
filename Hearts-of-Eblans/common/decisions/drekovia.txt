@@ -351,6 +351,49 @@ drekovia_sdo_cat = {
 		}
 	}
 }
+
+drekovia_vapers_cat = { 
+
+	pozor_v_venetsii = {
+		activation = {
+			AND = {
+				DRE = { has_war_with = SLA }
+				DRE = { NOT = { has_country_flag = DRE_pozor_v_venetsii } }
+				DRE = { is_subject = no }
+				SLA = { exists = yes }
+			}
+		}
+		visible = {
+			DRE = { has_war_with = SLA }
+			DRE = { NOT = { has_country_flag = DRE_pozor_v_venetsii } }
+			DRE = { is_subject = no }
+		}
+	
+		icon = GFX_decision_generic_tank
+		
+		days_mission_timeout = 75
+		fire_only_once = yes
+		is_good = no
+		
+		available = {
+			OR = {
+				SLA = { is_subject_of = DRE }
+				SLA = { exists = no }
+			}
+		}
+		
+		timeout_effect = {
+			DRE = { country_event = drek.35 }
+		}
+		
+		complete_effect = {
+			
+		}
+		
+	}
+}
+
+
 drekovia_rostov_cat = {
 	DRE_increase_doverie = {
 

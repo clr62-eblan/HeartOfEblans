@@ -7,8 +7,8 @@ state={
 	}
 
 	history={
-		owner = ZUS
-		#owner = SIA
+		owner = FST
+		add_core_of = FST
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

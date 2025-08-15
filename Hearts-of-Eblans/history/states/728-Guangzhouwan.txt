@@ -6,9 +6,8 @@ state={
 	state_category = enclave
 	
 	history={
-		owner = ZUS
-		#add_core_of = CHI
-		#add_core_of = VAH
+		owner = FST
+		add_core_of = FST
 		buildings = {
 			infrastructure = 2
 			11981 = {

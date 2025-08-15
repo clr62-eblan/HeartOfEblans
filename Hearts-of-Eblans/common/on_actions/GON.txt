@@ -11,6 +11,10 @@ on_actions = {
 							add_core_of = GON
 						}
 					}
+					annex_country = {
+						target = STM
+						transfer_troops = no
+					}
                     country_event = { id = stintik.8 days = 3 }
 				}
 			}
@@ -24,6 +28,10 @@ on_actions = {
 					}
 				}
 				GON = {
+					annex_country = {
+						target = SUT
+						transfer_troops = no
+					}
                     country_event = { id = stintik.25 days = 3 }
 				}
 			}
@@ -52,6 +60,9 @@ on_actions = {
 						set_politics = {
     						ruling_party = fascism
     						elections_allowed = no
+						}
+						GON = {
+							puppet = PREV
 						}
 						add_ai_strategy = {
 						   type = alliance

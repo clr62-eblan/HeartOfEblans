@@ -11,8 +11,8 @@ state = {
 	state_category = rural
 	
 	history = {
-		#owner = 
-		
+		owner = FST
+		add_core_of = FST
 	}
 
 	provinces = {

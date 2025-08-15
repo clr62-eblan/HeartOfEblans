@@ -13,8 +13,6 @@ state = {
 			}
 
 		}
-		#add_core_of = RAB
-		add_core_of = FER
 	}
 
 	provinces = {

@@ -40,6 +40,202 @@ ideas = {
 			}
 		}
 
+	
+		soc_propaganda = {
+		
+			removal_cost = -1
+
+			picture = socialist_science_focus
+		
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+
+		international_brigades_idea = {
+		
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+		
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteers_tension = -0.1
+				send_volunteer_factor = 0.15
+			}
+		}
+
+		workers_unions_idea = {
+		
+			removal_cost = -1
+
+			picture = por_iberian_workers_united
+		
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		autonomous_kolhoz_idea = {
+		
+			removal_cost = -1
+
+			picture = eng_spirit_of_the_industrial_revolution
+		
+			modifier = {
+				consumer_goods_factor = -0.04
+				stability_factor = 0.03
+				base_fuel_gain_factor = 0.05
+				supply_factor = 0.03
+			}
+		}
+
+		mil_commisars_idea = {
+		
+			removal_cost = -1
+
+			picture = SOV_purged_junior_navy_officers
+		
+			modifier = {
+				experience_gain_army_factor = 0.05
+				experience_gain_navy_factor = 0.05
+				experience_gain_air_factor = 0.05
+			}
+		}
+
+		spread_com_idea = {
+		
+			removal_cost = -1
+
+			picture = ger_the_great_red_menace
+		
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.35
+				communism_drift = 0.05
+			}
+		}
+
+		proletarian_army_idea = {
+		
+			removal_cost = -1
+
+			picture = generic_communist_army
+		
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				army_core_defence_factor = 0.1
+				communism_drift = 0.05
+			}
+		}
+
+		secret_police_LA  = {
+			allowed = {
+				always = no
+			}
+			name = secret_police_idea
+			available = {  }
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+					
+			modifier = {
+				operative_slot = 1
+				root_out_resistance_effectiveness_factor = 0.15
+			}
+		}
+
+		secret_police_norm  = {
+			allowed = {
+				always = no
+			}
+			name = secret_police_idea
+			available = {  }
+
+			removal_cost = -1
+
+			picture = generic_secret_police
+					
+			modifier = {
+				root_out_resistance_effectiveness_factor = 0.15
+			}
+		}
+
+
+		nationalism_develop_idea = {
+		
+			removal_cost = -1
+
+			picture = generic_fascist_workers
+		
+			modifier = {
+				drift_defence_factor = 0.3
+				fascism_drift = 0.1
+				army_morale_factor = 0.03
+			}
+		}
+
+		fascism_intervention_idea = {
+		
+			removal_cost = -1
+
+			picture = generic_fascism_rising
+		
+			modifier = {
+				justify_war_goal_time = -0.25
+				enemy_declare_war_tension = 0.05
+			}
+		}
+
+		medals_granting_idea = {
+		
+			removal_cost = -1
+
+			picture = RAJ_military_into_the_workforce
+		
+			modifier = {
+				grant_medal_cost_factor = -0.5
+				field_officer_promotion_penalty = -0.15
+				female_divisional_commander_chance = 0.2
+				navy_weather_penalty = -0.1
+			}
+		}
+
+		internet_punishers_idea = {
+		
+			removal_cost = -1
+
+			picture = ARG_military_government
+		
+			modifier = {
+				training_time_factor = -0.15
+				compliance_growth_on_our_occupied_states = 0.05
+				resistance_activity = -0.1
+				resistance_target = -0.1
+			}
+		}
+
+		com_councils_idea = {
+		
+			removal_cost = -1
+
+			picture = SOV_the_local_soviets_idea_nsb_ccp_sov_compatibility
+		
+			modifier = {
+				subjects_autonomy_gain = -0.1
+				autonomy_gain = 0.05
+				mic_to_overlord_factor = 0.1
+				cic_to_overlord_factor = 0.1
+				annex_cost_factor = -0.15
+				puppet_cost_factor = -0.3
+			}
+		}
+
+
 		cantattack = {
 		
 			removal_cost = -1
@@ -176,6 +372,175 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.4
 				local_resources = -0.25
+			}
+		}
+
+        own_merch_idea = {
+			
+			picture = NOR_printing_money
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		generic_liberal_institutions1 = {
+			allowed = {
+				always = no
+			}
+			available = {  }
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+					
+			modifier = {
+				democratic_drift = 0.05
+				compliance_growth = 0.2
+				trade_laws_cost_factor = -0.25
+				research_speed_factor = 0.03
+			}
+		}
+
+		army_training_improve_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_train_tracks
+					
+			modifier = {
+				war_support_factor = 0.05
+				enemy_justify_war_goal_time = 0.15
+				send_volunteers_tension = -0.20
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+				training_time_factor = -0.05
+			}
+		}
+
+		world_is_me_idea = {
+			allowed = {
+				always = no
+			}
+			available = {  }
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+					
+			modifier = {
+				neutrality_drift = 0.1
+				army_morale_factor = 0.1
+				max_command_power = 50
+				production_speed_buildings_factor = 0.1
+				min_export = -0.1
+			}
+		}
+
+		forties_neu_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+					
+			modifier = {
+				production_speed_bunker_factor = 0.4
+				army_defence_factor = 0.05
+				dig_in_speed_factor = 0.1
+			}
+		}
+
+		mil_corps_idea = {
+			available = { }
+
+			removal_cost = -1
+
+			picture = generic_mountain_warfare
+
+			modifier = {
+				command_power_gain_mult = 0.15
+				experience_gain_army_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				experience_gain_air_factor = 0.1
+			}
+		}
+
+		independent_country_strike_idea = {
+			available = { }
+
+			removal_cost = -1
+
+			picture = ITA_bandits_war
+
+			modifier = {
+				generate_wargoal_tension = -0.15
+				army_attack_against_major_factor = 0.05
+				army_defence_against_major_factor = 0.05
+			}
+		}
+
+		generic_traditional_values_idea = {
+			allowed = {
+				always = no
+			}
+			available = {  }
+
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil2
+					
+			modifier = {
+				stability_factor = 0.1
+				conscription_factor = 0.02
+				political_power_factor = 0.03
+			}
+		}
+
+		generic_democratising = {
+			allowed = {
+				always = no
+			}
+			available = {  }
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+					
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+
+        klyatva_vernosti_idea = {
+			
+			picture = generic_disjointed_gov
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+
+        hypeexpand_idea = {
+			
+			picture = hype_world
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.3
+				generate_wargoal_tension = -0.15
 			}
 		}
 		

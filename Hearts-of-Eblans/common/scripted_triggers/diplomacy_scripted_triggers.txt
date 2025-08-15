@@ -241,6 +241,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_YOU_CANT_DEOCUP
 			NOT = { FROM = { tag = STM } }
+			NOT = { FROM = { tag = SUT } }
 		}
 	}	
 	if = {

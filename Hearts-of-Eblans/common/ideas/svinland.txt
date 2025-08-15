@@ -14,10 +14,14 @@ ideas = {
 		}
 		
 		SVI_buster_oposite = {
-			allowed = {
-				country_exists = BUS
-			}
 			picture = svi_bustergrad_oposite
+
+			cancel = {
+				OR = {
+					BUS = { exists = no }
+					BUS = { is_subject = yes }
+				}
+			}
 			
 			removal_cost = -1
 			

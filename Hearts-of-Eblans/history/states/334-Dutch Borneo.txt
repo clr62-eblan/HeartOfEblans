@@ -3,7 +3,7 @@ state = {
 	name = "STATE_334"
 	manpower = 2168600
 	resources = {
-		rubber = 75 # was: 138
+		rubber = 45 # was: 138
 		oil = 5 # was: 10
 	}
 	
@@ -11,9 +11,8 @@ state = {
 
 	history = {
 
-		#owner = INS
-		#add_core_of = INS
-		owner = ZUS
+		owner = DNL
+		add_core_of = DNL
 		victory_points = {
 			10237 1 
 		}

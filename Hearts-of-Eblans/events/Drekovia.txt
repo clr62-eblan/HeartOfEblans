@@ -262,6 +262,9 @@ country_event = {
 		}
 		
 		DRE = {
+			set_country_flag = DRE_SLA_WAR_PREP
+			custom_effect_tooltip = sla_dre_war_tt
+
 			create_wargoal = {
 				target = SLA
 				type = annex_everything
@@ -297,7 +300,7 @@ country_event = {
 			factor = 10
 		}
 
-		DRE = { country_event = { id = drek.7 days = 3 } }
+		DRE = { country_event = { id = drek.9 days = 3 } }
 		
 	}
 }
@@ -316,10 +319,11 @@ country_event = {
 		ai_chance = {
 
 		}
-		
+		set_country_flag = DRE_SLA_WAR_PREP
+		custom_effect_tooltip = sla_dre_war_tt
 		create_wargoal = {
-				target = SLA
-				type = annex_everything
+			target = SLA
+			type = annex_everything
 		}
 	}
 }
@@ -1127,6 +1131,29 @@ country_event = {
 			create_wargoal = {
 				type = annex_everything
 				target = ROS
+			}
+		}
+	}
+}
+
+country_event = {
+	id = drek.35
+	title = drek.35.t
+	desc = drek.35.d
+	picture = GFX_report_event_AUS_military_march
+	
+	is_triggered_only = yes
+	
+	#uydom
+	option = {
+		name = drek.35.a
+		ai_chance = {
+			base = 5
+		}
+		white_peace = SLA
+		hidden_effect = {
+			39 = {
+				transfer_state_to = SLA
 			}
 		}
 	}

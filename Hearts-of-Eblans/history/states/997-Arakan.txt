@@ -6,7 +6,8 @@ state = {
 	manpower = 530980
 	
 	history = {
-		#owner = 
+		owner = FST
+		add_core_of = FST
 		
 	}
 

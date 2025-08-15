@@ -1,0 +1,144 @@
+decrease_corruption_law = {
+
+	if = {
+		limit = { has_idea = mafia_country }
+		add_ideas = high_corruption
+	}
+
+	if = {
+		limit = { has_idea = high_corruption }
+		add_ideas = medium_corruption
+	}
+
+	if = {
+		limit = { has_idea = medium_corruption }
+		add_ideas = low_corruption
+	}
+
+	if = {
+		limit = { has_idea = low_corruption }
+		add_ideas = absolute_transparency
+	}
+
+}
+
+increase_media_law = {
+
+	if = {
+		limit = { has_idea = pro_gov_media }
+		add_ideas = only_gov_media
+	}
+
+	if = {
+		limit = { has_idea = mixed_media }
+		add_ideas = pro_gov_media
+	}
+
+	if = {
+		limit = { has_idea = free_media }
+		add_ideas = mixed_media
+	}
+
+	if = {
+		limit = { has_idea = independent_media }
+		add_ideas = free_media
+	}
+
+}
+
+decrease_media_law = {
+
+	if = {
+		limit = { has_idea = only_gov_media }
+		add_ideas = pro_gov_media
+	}
+
+	if = {
+		limit = { has_idea = pro_gov_media }
+		add_ideas = mixed_media
+	}
+
+	if = {
+		limit = { has_idea = mixed_media }
+		add_ideas = free_media
+	}
+
+	if = {
+		limit = { has_idea = free_media }
+		add_ideas = independent_media
+	}
+
+}
+
+decrease_taxes_law = {
+
+	if = {
+		limit = { has_idea = unbelievable_taxes }
+		add_ideas = high_taxes
+	}
+
+	if = {
+		limit = { has_idea = high_taxes }
+		add_ideas = medium_taxes
+	}
+
+	if = {
+		limit = { has_idea = medium_taxes }
+		add_ideas = low_taxes
+	}
+
+	if = {
+		limit = { has_idea = low_taxes }
+		add_ideas = symbolic_taxes
+	}
+
+}
+
+increase_taxes_law = {
+
+	if = {
+		limit = { has_idea = high_taxes }
+		add_ideas = unbelievable_taxes
+	}
+
+	if = {
+		limit = { has_idea = medium_taxes }
+		add_ideas = high_taxes
+	}
+
+	if = {
+		limit = { has_idea = low_taxes }
+		add_ideas = medium_taxes
+	}
+
+	if = {
+		limit = { has_idea = symbolic_taxes }
+		add_ideas = low_taxes
+	}
+
+}
+
+increase_corruption_law = {
+
+	if = {
+		limit = { has_idea = high_corruption }
+		add_ideas = mafia_country
+	}
+
+	if = {
+		limit = { has_idea = medium_corruption }
+		add_ideas = high_corruption
+	}
+
+	if = {
+		limit = { has_idea = low_corruption }
+		add_ideas = medium_corruption
+	}
+
+	if = {
+		limit = { has_idea = absolute_transparency }
+		add_ideas = low_corruption
+	}
+
+}
+

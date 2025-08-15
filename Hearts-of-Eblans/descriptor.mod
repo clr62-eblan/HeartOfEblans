@@ -1,12 +1,14 @@
-version="1.2.6"
+version="1.2.7"
 tags={
-	"Alternative History"
-	"Events"
 	"National Focuses"
+	"Sound"
+	"Events"
 	"Gameplay"
+	"Alternative History"
 	"Ideologies"
+	"Graphics"
 }
-name="Hearts of Eblans 1.2.6"
+name="Hearts of Eblans 1.2.7"
 picture="thumbnail.png"
 replace_path="gfx/loadingscreens"
 replace_path="common/bookmarks"

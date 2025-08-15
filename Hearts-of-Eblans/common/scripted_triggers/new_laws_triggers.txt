@@ -1,0 +1,23 @@
+need_media_law_free = {
+    OR = {
+        has_idea = free_media
+        has_idea = independent_media
+    }
+}
+
+need_media_law_mixed = {
+    OR = {
+	    has_idea = mixed_media
+        has_idea = free_media
+        has_idea = independent_media
+    }
+}
+
+need_media_law_progov = {
+    OR = {
+        has_idea = pro_gov_media
+        has_idea = mixed_media
+        has_idea = free_media
+        has_idea = independent_media
+    }
+}

@@ -357,20 +357,22 @@ PixelShader =
 
 	float DayNightFactor( float3 vGlobeNormal, float vMin, float vMax )
 	{
-		float vDot = dot( vGlobeNormal, DayNight_Hour_SunDir.yzw );
-		return saturate( 1 - vFoWOpacity_FoWTime_SnowMudFade_MaxGameSpeed.w );
+		//float vDot = dot( vGlobeNormal, DayNight_Hour_SunDir.yzw );
+		//return saturate( 1 - vFoWOpacity_FoWTime_SnowMudFade_MaxGameSpeed.w );
+		return 0.8f;
 	}
 
 
 	float DayNightFactor( float3 vGlobeNormal )
 	{
-		return DayNightFactor( vGlobeNormal, FEATHER_MIN, FEATHER_MAX );
+		//return DayNightFactor( vGlobeNormal, FEATHER_MIN, FEATHER_MAX );
+		return 0.8f;
 	}
 
 	float3 NightifyColor( float3 vDayColor, float vBlend )
 	{
 
-		float vDesaturation = lerp(0.0f, 0.8f, vBlend * vBlend * vBlend );	
+		float vDesaturation = lerp(0.0f, 0.6f, vBlend * vBlend * vBlend );	
 
 		float Grey = dot( vDayColor.rgb, float3( 0.4f, 0.3f, 0.05f ) );
 		float3 vNightColor = saturate(lerp(vec3(Grey), Grey * float3(0.2,0.7,1.2), vec3(0.25f) ));
