@@ -12,6 +12,14 @@ add_ideas = {
 	CHB_hungary_problem
 	CHB_outdated_industry
 	twitch_platform
+	divine_intellect
+}
+
+CHB = {
+	add_to_array = {
+		array = opennedAlbums
+		value = 8
+	}
 }
 
 set_country_flag = generic_trackofday_flag

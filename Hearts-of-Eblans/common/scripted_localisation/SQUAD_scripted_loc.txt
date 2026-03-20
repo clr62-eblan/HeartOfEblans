@@ -1,0 +1,145 @@
+defined_text = {
+    name = btk_freikorps_state_tt
+    text = {
+        trigger = {
+            check_variable = { BTK_FREIKORS_STATUS = 1 }
+        }
+        localization_key = BTK_freikors_status_integrated
+    }
+    text = {
+        trigger = {
+            check_variable = { BTK_FREIKORS_STATUS = 2 }
+        }
+        localization_key = BTK_freikors_status_nonaction
+    }
+    text = {
+        trigger = {
+            check_variable = { BTK_FREIKORS_STATUS = 3 }
+        }
+        localization_key = BTK_freikors_status_active
+    }
+}
+
+######################################################
+###  BTK NAREZKI FACTIONS STATUS
+######################################################
+
+# Rolfs Loyalty Status
+defined_text = {
+    name = BTK_rolfs_loyalty_display
+    text = {
+        trigger = {
+            has_country_flag = BTK_rolfs_integrated_flag
+        }
+        localization_key = BTK_faction_status_integrated
+    }
+    text = {
+        trigger = {
+            has_country_flag = BTK_rolfs_destroyed_flag
+        }
+        localization_key = BTK_faction_status_destroyed
+    }
+    text = {
+        localization_key = BTK_rolfs_loyalty_percent
+    }
+}
+
+# Rolfs Popularity Status
+defined_text = {
+    name = BTK_rolfs_popularity_display
+    text = {
+        trigger = {
+            has_country_flag = BTK_rolfs_integrated_flag
+        }
+        localization_key = BTK_faction_status_integrated
+    }
+    text = {
+        trigger = {
+            has_country_flag = BTK_rolfs_destroyed_flag
+        }
+        localization_key = BTK_faction_status_destroyed
+    }
+    text = {
+        localization_key = BTK_rolfs_popularity_percent
+    }
+}
+
+# MBRFF Loyalty Status
+defined_text = {
+    name = BTK_mbrff_loyalty_display
+    text = {
+        trigger = {
+            has_country_flag = BTK_mbrff_integrated_flag
+        }
+        localization_key = BTK_faction_status_integrated
+    }
+    text = {
+        trigger = {
+            has_country_flag = BTK_mbrff_destroyed_flag
+        }
+        localization_key = BTK_faction_status_destroyed
+    }
+    text = {
+        localization_key = BTK_mbrff_loyalty_percent
+    }
+}
+
+# MBRFF Popularity Status
+defined_text = {
+    name = BTK_mbrff_popularity_display
+    text = {
+        trigger = {
+            has_country_flag = BTK_mbrff_integrated_flag
+        }
+        localization_key = BTK_faction_status_integrated
+    }
+    text = {
+        trigger = {
+            has_country_flag = BTK_mbrff_destroyed_flag
+        }
+        localization_key = BTK_faction_status_destroyed
+    }
+    text = {
+        localization_key = BTK_mbrff_popularity_percent
+    }
+}
+
+# Zar Loyalty Status
+defined_text = {
+    name = BTK_zar_loyalty_display
+    text = {
+        trigger = {
+            has_country_flag = BTK_zar_integrated_flag
+        }
+        localization_key = BTK_faction_status_integrated
+    }
+    text = {
+        trigger = {
+            has_country_flag = BTK_zar_destroyed_flag
+        }
+        localization_key = BTK_faction_status_destroyed
+    }
+    text = {
+        localization_key = BTK_zar_loyalty_percent
+    }
+}
+
+# Zar Popularity Status
+defined_text = {
+    name = BTK_zar_popularity_display
+    text = {
+        trigger = {
+            has_country_flag = BTK_zar_integrated_flag
+        }
+        localization_key = BTK_faction_status_integrated
+    }
+    text = {
+        trigger = {
+            has_country_flag = BTK_zar_destroyed_flag
+        }
+        localization_key = BTK_faction_status_destroyed
+    }
+    text = {
+        localization_key = BTK_zar_popularity_percent
+    }
+}

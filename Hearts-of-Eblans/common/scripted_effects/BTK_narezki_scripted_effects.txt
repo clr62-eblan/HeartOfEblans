@@ -1,0 +1,161 @@
+######################################################
+###  BTK NAREZKI FACTIONS SCRIPTED EFFECTS
+######################################################
+
+# Initialize all BTK narezki factions variables
+BTK_initialize_narezki_factions = {
+	# Rolfs - higher starting loyalty
+	set_variable = { BTK_rolfs_loyalty = 35 }
+	set_variable = { BTK_rolfs_popularity = 25 }
+	
+	# MBRFF - low loyalty
+	set_variable = { BTK_mbrff_loyalty = 15 }
+	set_variable = { BTK_mbrff_popularity = 30 }
+	
+	# Zar - low loyalty
+	set_variable = { BTK_zar_loyalty = 10 }
+	set_variable = { BTK_zar_popularity = 20 }
+	
+	# Unlock factions system
+	set_country_flag = BTK_narezki_factions_unlocked
+}
+
+# Increase Rolfs loyalty (low)
+BTK_rolfs_low_loyalty_increase = {
+	add_to_variable = { BTK_rolfs_loyalty = 5 }
+	clamp_variable = { var = BTK_rolfs_loyalty min = 0 max = 100 }
+}
+
+# Increase Rolfs loyalty (medium)
+BTK_rolfs_medium_loyalty_increase = {
+	add_to_variable = { BTK_rolfs_loyalty = 10 }
+	clamp_variable = { var = BTK_rolfs_loyalty min = 0 max = 100 }
+}
+
+# Increase Rolfs loyalty (high)
+BTK_rolfs_high_loyalty_increase = {
+	add_to_variable = { BTK_rolfs_loyalty = 15 }
+	clamp_variable = { var = BTK_rolfs_loyalty min = 0 max = 100 }
+}
+
+# Increase Rolfs popularity (low)
+BTK_rolfs_low_popularity_increase = {
+	add_to_variable = { BTK_rolfs_popularity = 3 }
+	clamp_variable = { var = BTK_rolfs_popularity min = 0 max = 100 }
+}
+
+# Increase Rolfs popularity (medium)
+BTK_rolfs_medium_popularity_increase = {
+	add_to_variable = { BTK_rolfs_popularity = 7 }
+	clamp_variable = { var = BTK_rolfs_popularity min = 0 max = 100 }
+}
+
+# Increase Rolfs popularity (high)
+BTK_rolfs_high_popularity_increase = {
+	add_to_variable = { BTK_rolfs_popularity = 10 }
+	clamp_variable = { var = BTK_rolfs_popularity min = 0 max = 100 }
+}
+
+# Increase MBRFF loyalty (low)
+BTK_mbrff_low_loyalty_increase = {
+	add_to_variable = { BTK_mbrff_loyalty = 5 }
+	clamp_variable = { var = BTK_mbrff_loyalty min = 0 max = 100 }
+}
+
+# Increase MBRFF loyalty (medium)
+BTK_mbrff_medium_loyalty_increase = {
+	add_to_variable = { BTK_mbrff_loyalty = 10 }
+	clamp_variable = { var = BTK_mbrff_loyalty min = 0 max = 100 }
+}
+
+# Increase MBRFF loyalty (high)
+BTK_mbrff_high_loyalty_increase = {
+	add_to_variable = { BTK_mbrff_loyalty = 15 }
+	clamp_variable = { var = BTK_mbrff_loyalty min = 0 max = 100 }
+}
+
+# Increase MBRFF popularity (low)
+BTK_mbrff_low_popularity_increase = {
+	add_to_variable = { BTK_mbrff_popularity = 3 }
+	clamp_variable = { var = BTK_mbrff_popularity min = 0 max = 100 }
+}
+
+# Increase MBRFF popularity (medium)
+BTK_mbrff_medium_popularity_increase = {
+	add_to_variable = { BTK_mbrff_popularity = 7 }
+	clamp_variable = { var = BTK_mbrff_popularity min = 0 max = 100 }
+}
+
+# Increase MBRFF popularity (high)
+BTK_mbrff_high_popularity_increase = {
+	add_to_variable = { BTK_mbrff_popularity = 10 }
+	clamp_variable = { var = BTK_mbrff_popularity min = 0 max = 100 }
+}
+
+# Increase Zar loyalty (low)
+BTK_zar_low_loyalty_increase = {
+	add_to_variable = { BTK_zar_loyalty = 5 }
+	clamp_variable = { var = BTK_zar_loyalty min = 0 max = 100 }
+}
+
+# Increase Zar loyalty (medium)
+BTK_zar_medium_loyalty_increase = {
+	add_to_variable = { BTK_zar_loyalty = 10 }
+	clamp_variable = { var = BTK_zar_loyalty min = 0 max = 100 }
+}
+
+# Increase Zar loyalty (high)
+BTK_zar_high_loyalty_increase = {
+	add_to_variable = { BTK_zar_loyalty = 15 }
+	clamp_variable = { var = BTK_zar_loyalty min = 0 max = 100 }
+}
+
+# Increase Zar popularity (low)
+BTK_zar_low_popularity_increase = {
+	add_to_variable = { BTK_zar_popularity = 3 }
+	clamp_variable = { var = BTK_zar_popularity min = 0 max = 100 }
+}
+
+# Increase Zar popularity (medium)
+BTK_zar_medium_popularity_increase = {
+	add_to_variable = { BTK_zar_popularity = 7 }
+	clamp_variable = { var = BTK_zar_popularity min = 0 max = 100 }
+}
+
+# Increase Zar popularity (high)
+BTK_zar_high_popularity_increase = {
+	add_to_variable = { BTK_zar_popularity = 10 }
+	clamp_variable = { var = BTK_zar_popularity min = 0 max = 100 }
+}
+
+# Decrease loyalty effects (for negative events)
+BTK_rolfs_loyalty_decrease = {
+	add_to_variable = { BTK_rolfs_loyalty = -10 }
+	clamp_variable = { var = BTK_rolfs_loyalty min = 0 max = 100 }
+}
+
+BTK_mbrff_loyalty_decrease = {
+	add_to_variable = { BTK_mbrff_loyalty = -10 }
+	clamp_variable = { var = BTK_mbrff_loyalty min = 0 max = 100 }
+}
+
+BTK_zar_loyalty_decrease = {
+	add_to_variable = { BTK_zar_loyalty = -10 }
+	clamp_variable = { var = BTK_zar_loyalty min = 0 max = 100 }
+}
+
+# Decrease popularity effects (for negative events)
+BTK_rolfs_popularity_decrease = {
+	add_to_variable = { BTK_rolfs_popularity = -10 }
+	clamp_variable = { var = BTK_rolfs_popularity min = 0 max = 100 }
+}
+
+BTK_mbrff_popularity_decrease = {
+	add_to_variable = { BTK_mbrff_popularity = -10 }
+	clamp_variable = { var = BTK_mbrff_popularity min = 0 max = 100 }
+}
+
+BTK_zar_popularity_decrease = {
+	add_to_variable = { BTK_zar_popularity = -10 }
+	clamp_variable = { var = BTK_zar_popularity min = 0 max = 100 }
+}

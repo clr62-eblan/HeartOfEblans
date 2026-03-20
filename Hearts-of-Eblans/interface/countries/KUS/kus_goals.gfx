@@ -1,0 +1,58 @@
+spriteTypes = {	
+	SpriteType = {
+	    name = "GFX_goal_KUS_true_knight"
+	    texturefile = "gfx/interface/goals/KUS/kussia_true_knight.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_zavoz_master"
+	    texturefile = "gfx/interface/goals/KUS/kussia_zavoz_master.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_old_ways"
+	    texturefile = "gfx/interface/goals/KUS/kussia_old_ways.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_stabilize_situation"
+	    texturefile = "gfx/interface/goals/KUS/kussia_stabilize_situation.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_sponsor_workers"
+	    texturefile = "gfx/interface/goals/KUS/kussia_sponsor_workers.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_end_of_peace"
+	    texturefile = "gfx/interface/goals/KUS/kussia_end_of_peace.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_list_of_spana"
+	    texturefile = "gfx/interface/goals/KUS/kussia_list_of_spana.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_railroads"
+	    texturefile = "gfx/interface/goals/KUS/kussia_railroads.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_researches"
+	    texturefile = "gfx/interface/goals/KUS/kussia_researches.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_center_army"
+	    texturefile = "gfx/interface/goals/KUS/kussia_center_army.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_great_again"
+	    texturefile = "gfx/interface/goals/KUS/kussia_great_again.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_trends"
+	    texturefile = "gfx/interface/goals/KUS/kussia_trends.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_hartia"
+	    texturefile = "gfx/interface/goals/KUS/kussia_hartia.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_genocid_maker"
+	    texturefile = "gfx/interface/goals/KUS/kussia_genocid_maker.png"			
+	}
+}

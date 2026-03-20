@@ -67,6 +67,22 @@ characters = {
        }
     }
 
+    NCB_LinNight ={ 
+        name = "Лёня ЛинНайт"
+        portraits= {
+            army = {
+                small = "GFX_lin_night_small"
+				large = "NCB_LinNightPortrait"
+            }
+        }
+	   country_leader = {
+            ideology = gen_nazism
+            traits = { # 
+                disepticonmilitarist
+			}
+        }
+    }
+
 	bogdan_tsymbal ={ 
         name = "Богдан Цимбал"
         portraits= {

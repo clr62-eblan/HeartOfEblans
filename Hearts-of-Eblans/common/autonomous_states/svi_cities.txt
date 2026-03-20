@@ -51,12 +51,10 @@ autonomy_state = {
 			original_tag = BUS
 			original_tag = DIM
 		}
-		}
 		OVERLORD = {
 			original_tag = SVI
 		}
 	}
-
 	can_take_level = {
 		#trigger here
 	}
@@ -65,3 +63,4 @@ autonomy_state = {
 		#trigger here
 	}
 }
+	

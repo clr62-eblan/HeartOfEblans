@@ -13,7 +13,6 @@ state = {
 
 		owner = JHF
 		add_core_of = JHF
-		add_core_of = BTK
 
 		victory_points = {
 			11544 10 # Nuremberg
@@ -24,8 +23,8 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 2
+			industrial_complex = 1
 		}
 
 		1939.1.1 = {

@@ -1,0 +1,125 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_portrait_BTK_shefius_i"
+		texturefile = "gfx/leaders/BTK/shefius.dds"
+	}
+    spriteType = {
+		name = "GFX_portrait_BTK_squad_parliament"
+		texturefile = "gfx/leaders/BTK/squad_parliament.dds"
+	}
+    spriteType = {
+		name = "GFX_portrait_BTK_victor_brotelnikov"
+		texturefile = "gfx/leaders/BTK/victor_brotelnikov.dds"
+	}
+    spriteType = {
+		name = "GFX_portrait_BTK_vladimir_bratishkin"
+		texturefile = "gfx/leaders/BTK/vladimir_bratishkin.dds"
+	}
+    spriteType = {
+		name = "GFX_portrait_BTK_rish"
+		texturefile = "gfx/leaders/BTK/RishBig.dds"
+	}
+    spriteType = {
+		name = "GFX_portrait_BTK_rish_small"
+		texturefile = "gfx/leaders/BTK/RishSmall.dds"
+	}
+
+
+    spriteType = {
+		name = "GFX_report_event_BTK_89squad_jozvill"
+		texturefile = "gfx/event_pictures/BTK/89squad_jozvill.dds"
+	}
+    spriteType = {
+		name = "GFX_report_event_BTK_89squad_generic"
+		texturefile = "gfx/event_pictures/BTK/89squad_generic.dds"
+	}
+    spriteType = {
+		name = "GFX_report_event_BTK_89squad_train"
+		texturefile = "gfx/event_pictures/BTK/89squad_train.dds"
+	}
+    spriteType = {
+		name = "GFX_report_event_BTK_89squad_explosion"
+		texturefile = "gfx/event_pictures/BTK/89squad_explosion.dds"
+	}
+    spriteType = {
+		name = "GFX_report_event_BTK_89squad_army"
+		texturefile = "gfx/event_pictures/BTK/89squad_army.dds"
+	}
+    spriteType = {
+		name = "GFX_report_event_BTK_89squad_freedom"
+		texturefile = "gfx/event_pictures/BTK/89squad_freedom.dds"
+	}
+    spriteType = {
+		name = "GFX_report_event_BTK_89squad_decay"
+		texturefile = "gfx/event_pictures/BTK/89squad_decay.dds"
+	}
+
+
+
+    spriteType = {
+		name = "GFX_idea_SQUAD_manpower_rotation_icon"
+		texturefile = "gfx/interface/ideas/BTK/manpower_rotation_act.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_BTK_tenMinutes_delivery_icon"
+		texturefile = "gfx/interface/ideas/BTK/tenMinutes.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_BTK_gosstroy_icon"
+		texturefile = "gfx/interface/ideas/BTK/gosStroy.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_BTK_favr_idea_icon"
+		texturefile = "gfx/interface/ideas/BTK/favr_idea.dds"
+	}
+
+
+    spriteType = {
+		name = "GFX_idea_SQUAD_paranoia_back"
+		texturefile = "gfx/interface/custom_gui/BTK/paranoia_back.png"
+	}
+    spriteType = {
+		name = "GFX_idea_SQUAD_paranoia_meter"
+		texturefile = "gfx/interface/custom_gui/BTK/paranoia_meter.png"
+	}
+    spriteType = {
+		name = "GFX_idea_SQUAD_paranoia_arrow"
+		texturefile = "gfx/interface/custom_gui/BTK/paranoia_arrow.png"
+	}
+
+
+    spriteType = {
+		name = "GFX_idea_SQUAD_freikors_background"
+		texturefile = "gfx/interface/custom_gui/BTK/armies_balance/freikors_bg.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_SQUAD_freikors_logo"
+		texturefile = "gfx/interface/custom_gui/BTK/armies_balance/freikors_logo.png"
+	}
+
+
+    spriteType = {
+		name = "GFX_narezki_rofls_icon"
+		texturefile = "gfx/interface/custom_gui/BTK/narezki/rofls.png"
+	}
+    spriteType = {
+		name = "GFX_narezki_mbrff_icon"
+		texturefile = "gfx/interface/custom_gui/BTK/narezki/Mbrff.png"
+	}
+    spriteType = {
+		name = "GFX_narezki_zar_icon"
+		texturefile = "gfx/interface/custom_gui/BTK/narezki/zar.png"
+	}
+    spriteType = {
+		name = "GFX_narezki_rofls_decision_icon"
+		texturefile = "gfx/interface/custom_gui/BTK/narezki/decisions/rofls_decision.dds"
+	}
+    spriteType = {
+		name = "GFX_narezki_mbrff_decision_icon"
+		texturefile = "gfx/interface/custom_gui/BTK/narezki/decisions/mbrff_decision.dds"
+	}
+    spriteType = {
+		name = "GFX_narezki_zar_decision_icon"
+		texturefile = "gfx/interface/custom_gui/BTK/narezki/decisions/zar_decision.dds"
+	}
+}

@@ -1,11 +1,17 @@
 set_stability = 1
 set_war_support = 0.65
-capital=52
+capital=65
 
 oob = "JHF_1936"
 
 
 set_research_slots = 1
+
+add_ideas = {
+	SQUAD_manpower_rotation
+}
+
+set_cosmetic_tag = SQUAD_MEMBER
 
 # Starting tech
 set_technology = {

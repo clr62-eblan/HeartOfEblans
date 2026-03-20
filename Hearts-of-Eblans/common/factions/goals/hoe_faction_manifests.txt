@@ -1,0 +1,26 @@
+@manifest_fulfilled_value = 0.75
+
+faction_manifest_reunite_squad = {
+	name = faction_manifest_reunite_squad_name
+	description = faction_manifest_reunite_squad_desc
+	is_manifest = yes
+	ratio_progress = {
+		total_amount_collection = collection:former_squad_terriatories
+		completed_amount_collection = collection:controlled_former_squad_terriatories
+		
+		scale = {
+			army_morale_factor = 0.05
+			compliance_growth = 0.1
+		}
+
+		progress_sections = {
+			manifest_fulfilled = {
+				min = @manifest_fulfilled_value
+	
+				modifier = {
+					factory_energy_consumption = -0.1
+				}			
+			}
+		}
+	}
+}

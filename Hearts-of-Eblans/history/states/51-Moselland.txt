@@ -13,7 +13,6 @@ state = {
 
 		owner = GCH
 		add_core_of = GCH
-		add_core_of = BTK
 
 		victory_points = {
 			6469 10 # Essen

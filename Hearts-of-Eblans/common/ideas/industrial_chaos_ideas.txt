@@ -1,0 +1,103 @@
+ideas = {
+	country = {
+		GENERAL_rapid_industrialization_unrest = {
+			picture = generic_industrial_unrest
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		GENERAL_industrial_sabotage = {
+			picture = generic_sabotage
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+
+		GENERAL_crops_idea_weak = {
+			picture = generic_agriculture
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.05
+				stability_factor = 0.02
+			}
+		}
+
+		GENERAL_crops_idea_medium = {
+			picture = generic_agriculture
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.10
+				stability_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		GENERAL_crops_idea_strong = {
+			picture = generic_agriculture
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.15
+				stability_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		GENERAL_national_strengthening_idea = {
+			picture = generic_nationalism
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		GENERAL_supported_landowners = {
+			picture = generic_landowners
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		GENERAL_reformed_landowning_idea = {
+			picture = generic_land_reform
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		GENERAL_slowed_modernisation = {
+			picture = generic_slowed_modernisation
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.10
+				stability_factor = 0.05
+			}
+		}
+	}
+}

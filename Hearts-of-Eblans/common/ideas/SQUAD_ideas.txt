@@ -1,0 +1,232 @@
+# CREATED BY CLR62 - Licensed under MIT License
+ 
+ideas = {
+	country = {
+		BTK_purges = {
+			picture = generic_purge
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = 0.1
+                war_support_factor = -0.1
+                army_attack_factor = -0.1
+                army_defence_factor = -0.05
+			}
+		}
+		BTK_critical_beurocracy = {
+			picture = FRA_matignon_agreements
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				training_time_factor = 0.1
+                war_support_factor = -0.1
+                army_attack_factor = -0.1
+                army_defence_factor = -0.05
+			}
+		}
+        BTK_centro_bank = {
+			picture = trade
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				trade_opinion_factor = 0.3
+				political_power_cost = -0.05
+			}
+		}
+
+        BTK_tenMinutes_delivery = {
+			picture = BTK_tenMinutes_delivery_icon
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				base_fuel_gain_factor = 0.03
+				supply_factor = 0.05
+				out_of_supply_factor = -0.03
+				army_fuel_consumption_factor = -0.02
+			}
+		}
+
+		BTK_reformed_joint_army = {
+			picture = general_staff
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				training_time_factor = -0.10
+				conscription_factor = 0.05
+			}
+		}
+
+		GRI_gos_stroy = {
+			picture = BTK_gosstroy_icon
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				production_speed_infrastructure_factor = 0.05 
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		BTK_legacy_of_shefius = {
+			picture = generic_cism_heroism
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.05
+			}
+		}
+
+		BTK_reactionary_dominance = {
+			picture = generic_victors_of_ww1
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.05
+				political_power_gain = 0.10
+			}
+		}
+
+		BTK_liberal_reforms = {
+			picture = generic_intel_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+
+		BTK_secret_service = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = BTK_favr_idea_icon
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.05
+				army_intel_factor = 0.25
+				enemy_operative_detection_chance_factor = 0.10
+				resistance_growth = -0.05
+				drift_defence_factor = 0.15
+			}
+		}
+		BTK_secret_service_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = BTK_favr_idea_icon
+			removal_cost = -1
+			modifier = {
+				decryption_power_factor = 0.05
+				army_intel_factor = 0.25
+				enemy_operative_detection_chance_factor = 0.10
+				resistance_growth = -0.05
+				drift_defence_factor = 0.15
+			}
+		}
+
+		######################################################
+		###  BTK NAREZKI FACTIONS PURGE DEBUFFS
+		######################################################
+
+		BTK_narezki_military_purge = {
+			picture = generic_purge
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.10
+				training_time_factor = 0.25
+				army_org_factor = -0.10
+				command_power_gain_mult = -0.20
+			}
+		}
+
+		BTK_narezki_industrial_purge = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.10
+				production_factory_efficiency_gain_factor = -0.15
+				consumer_goods_factor = 0.05
+				research_speed_factor = -0.05
+			}
+		}
+
+		BTK_narezki_naval_sabotage = {
+			picture = generic_coastal_navy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				naval_speed_factor = -0.10
+				naval_hit_chance = -0.10
+				naval_coordination = -0.10
+				ships_at_battle_start = -0.15
+				naval_detection = -0.15
+			}
+		}
+    }
+}

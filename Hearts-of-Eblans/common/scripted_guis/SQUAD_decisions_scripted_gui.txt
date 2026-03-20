@@ -1,0 +1,19 @@
+scripted_gui = {
+    BTK_Freikors_gui = {
+        context_type = decision_category
+        window_name = "BTK_freikors_window"
+        visible = {
+			always = yes
+		}
+		ai_enabled = {
+			original_tag = BTK
+		}
+		
+		effects = {
+		}
+		
+		properties = {
+			
+		}
+    }
+}

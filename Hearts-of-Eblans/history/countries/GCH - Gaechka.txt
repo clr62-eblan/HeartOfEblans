@@ -4,6 +4,11 @@ set_war_support = 0.65
 
 oob = "GCH_1936"
 
+add_ideas = {
+	SQUAD_manpower_rotation
+}
+
+set_cosmetic_tag = SQUAD_MEMBER
 
 
 set_research_slots = 1
@@ -95,7 +100,7 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "gaechka.dds"
 	
-	ideology = despotism
+	ideology = constitutional_monarhism
 	traits = {
 		#
 	}

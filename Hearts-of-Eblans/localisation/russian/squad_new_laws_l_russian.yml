@@ -24,9 +24,27 @@
  twitch_platform: "Twitch"
  twitch_analogs_platform: "Аналоги Твича"
  no_main_platform: "Платформа отсутствует"
+ community_intellect: "Интеллектуальное развитие"
+ stupid_dummies_intellect: "Тупые болванчики"
+ dumb_intellect: "Глупые"
+ middle_intellect: "Среднеразвитый интеллект"
+ developt_intellect: "Высокий интеллект"
+ divine_intellect: "Божественный разум"
 
  need_media_onlygov: "Необходим закон о СМИ - §YТолько правительственные СМИ§!"
  need_media_progov: "Необходим закон о СМИ - §YПро-правительственные СМИ иди ниже§!"
  need_media_mixed: "Необходим закон о СМИ - §YСмешанные СМИ или ниже§!"
  need_media_free: "Необходим закон о СМИ - §YСвободные СМИ или ниже§!"
  need_media_independent: "Необходим закон о СМИ - §YНезависимые СМИ§!"
+
+ corruption_will_increase_tt: "Уровень коррупции §Oвозрастёт§!"
+ corruption_will_decrease_tt: "Уровень коррупции §Gуменьшится§!"
+
+ intellect_will_increase_tt: "Уровень интеллектуального развития §Gвозрастёт§!"
+ intellect_will_decrease_tt: "Уровень интеллектуального развития §Oупадёт§!"
+
+ taxes_will_increase_tt: "Закон о налогах §Oвозрастёт§!"
+ taxes_will_decrease_tt: "Закон о налогах §Gуменьшится§!"
+
+ media_will_increase_tt: "Закон о СМИ §Oужесточится§!"
+ media_will_decrease_tt: "Закон о СМИ §Gсмягчится§!"

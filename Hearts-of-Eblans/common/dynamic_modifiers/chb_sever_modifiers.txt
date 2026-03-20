@@ -1,0 +1,30 @@
+chb_severe_separatism_modifier = {
+	enable = { always = yes }
+	color = { 180 50 50 }
+	resistance_target = 0.50
+	compliance_gain = -0.05
+	local_factories_botch = 0.50
+	local_supplies = -0.30
+	local_resources_factor = -0.50
+}
+
+chb_integrated_separatism_modifier = {
+	enable = { always = yes }
+	color = { 180 150 50 }
+	resistance_target = 0.20
+	compliance_gain = 0.05
+	local_factories_botch = 0.20
+	local_supplies = -0.10
+	local_resources_factor = -0.10
+}
+
+chb_crushed_separatism_modifier = {
+	enable = { always = yes }
+	color = { 50 50 50 }
+	resistance_target = -1.00 # Suppresses resistance
+	compliance_gain = -0.10   # But also ruins compliance
+	local_factories_botch = 0.80
+	local_supplies = 0.10
+	local_resources_factor = -0.80 # Scorched earth
+	local_manpower = -0.90
+}

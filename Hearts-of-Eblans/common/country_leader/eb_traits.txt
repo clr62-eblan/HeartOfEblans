@@ -50,6 +50,13 @@ leader_traits = {
 		resistance_growth = -0.02
 	}
 
+	lead_moderator = {
+		stability_factor = 0.02
+		resistance_growth = -0.05
+		compliance_growth = 0.03
+		max_planning_factor = 0.03
+	}
+
 
 	HAM_union_savior = {
 		army_morale_factor = 0.03

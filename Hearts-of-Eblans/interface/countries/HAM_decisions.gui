@@ -1,9 +1,4 @@
-# CREATED BY CLR62 - 2025
-# Licensed under CC BY-NC-SA 4.0 for END USERS only
-# Full license: https://creativecommons.org/licenses/by-nc-sa/4.0/
-# 
-# Paradox Interactive retains all rights to Hearts of Iron IV
-# Available on GitHub and Steam Workshop
+# CREATED BY CLR62 - Licensed under MIT License
 
 guiTypes = {
 containerWindowType = {

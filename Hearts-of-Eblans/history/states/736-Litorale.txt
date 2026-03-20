@@ -9,8 +9,7 @@ state = {
 			6626 3
 		}
 		owner = CHB
-		add_core_of = CHB
-		add_core_of = SNR
+		add_core_of = NCB
 		buildings = {
 			infrastructure = 1
 			dockyard = 1
@@ -21,6 +20,7 @@ state = {
 
 		}
 
+		set_resistance = 11
 	}
 
 	provinces = {

@@ -1,0 +1,792 @@
+add_namespace = btk_squad
+
+#Preparing to tour
+country_event = {
+	id = btk_squad.1
+	title = btk_squad.1.t
+	desc = btk_squad.1.d
+	picture = GFX_report_event_BTK_89squad_generic
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    trigger = {
+        NOT = { has_country_flag = BTK_SHEF_DEAD }
+    }
+	
+	option = {
+		name = btk_squad.1.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		
+		add_political_power = 100
+        add_stability = 0.03
+
+        hidden_effect = {
+            country_event = { id = btk_squad.2 days = 15 }
+        }
+	}
+}
+
+country_event = {
+	id = btk_squad.2
+	title = btk_squad.2.t
+	desc = btk_squad.2.d
+	picture = GFX_report_event_BTK_89squad_jozvill
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.2.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		
+		add_political_power = 50
+        add_stability = 0.05
+
+        hidden_effect = {
+            country_event = { id = btk_squad.3 days = 25 }
+        }
+	}
+}
+
+country_event = {
+	id = btk_squad.3
+	title = btk_squad.3.t
+	desc = btk_squad.3.d
+	picture = GFX_report_event_BTK_89squad_train
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.3.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		
+		add_political_power = -25
+
+        hidden_effect = {
+            country_event = { id = btk_squad.4 days = 20 }
+        }
+	}
+}
+
+
+#SHEF DIED
+country_event = {
+	id = btk_squad.4
+	title = btk_squad.4.t
+	desc = btk_squad.4.d
+	picture = GFX_report_event_BTK_89squad_explosion
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.4.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		
+		add_political_power = -50
+        add_stability = -0.15
+        add_war_support = -0.1
+
+        set_country_flag = BTK_SHEF_DEAD
+
+        retire_character = BTK_Shefius_I
+
+        add_country_leader_role = {
+            character = BTK_Squad_Parliament
+            country_leader = {
+                ideology = reactionism
+                traits = { # 
+
+			    }
+                desc = BTK_Squad_Parliament_desc
+            }
+            promote_leader = yes
+        }
+
+		end_puppet = BGZ
+		BGZ = {
+			drop_cosmetic_tag = yes
+		}
+
+		#set_autonomy = {
+    	#	target = BGZ
+    	#	autonomous_state = autonomy_free
+    	#	end_wars = no
+    	#	end_civil_wars = no
+		#}
+
+        hidden_effect = {
+			BGZ = {
+				leave_faction = yes
+			}
+            complete_national_focus = SQUAD_samodershez_pal
+			country_event = { id = btk_squad.12 days = 20 random_days = 20 }
+        }
+	}
+}
+
+#Preemnik start
+country_event = {
+	id = btk_squad.5
+	title = btk_squad.5.t
+	desc = btk_squad.5.d
+	picture = GFX_report_event_BTK_89squad_generic
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.5.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+}
+
+#Brotelnikov start
+country_event = {
+	id = btk_squad.6
+	title = btk_squad.6.t
+	desc = btk_squad.6.d
+	picture = GFX_report_event_BTK_89squad_generic
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.5.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		add_stability = 0.07
+		add_war_support = 0.03
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.07
+		}
+	}
+}
+
+#Army revolt stopped
+country_event = {
+	id = btk_squad.7
+	title = btk_squad.7.t
+	desc = btk_squad.7.d
+	picture = GFX_report_event_generic_siloviki
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.7.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		trigger = {
+			has_completed_focus = SQUAD_mest_konfederatov
+		}
+		add_stability = 0.03
+
+		add_army_experience = -20
+		add_command_power = -10
+		add_war_support = -0.02
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.03
+		}
+	}
+
+	option = {
+		name = btk_squad.7.b #yes
+		ai_chance = {
+			factor = 55
+		}
+		trigger = {
+			has_completed_focus = SQUAD_brat_vse_ispravit
+		}
+		add_stability = 0.03
+
+		add_army_experience = -20
+		add_command_power = -10
+		add_war_support = -0.02
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.03
+		}
+
+		1049 = {
+			add_manpower = -3000 
+		}
+	}
+}
+
+#Обращение владимира
+country_event = {
+	id = btk_squad.8
+	title = btk_squad.8.t
+	desc = btk_squad.8.d
+	picture = GFX_report_event_BTK_89squad_generic
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.8.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		add_war_support = 0.02
+		add_stability = 0.03
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+	}
+}
+
+#Поддержка от ЧВК
+country_event = {
+	id = btk_squad.9
+	title = btk_squad.9.t
+	desc = btk_squad.9.d
+	picture = GFX_report_event_BTK_89squad_army
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.9.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		add_war_support = 0.04
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.03
+		}
+	}
+}
+
+#Либеральные идейкинсы
+country_event = {
+	id = btk_squad.10
+	title = btk_squad.10.t
+	desc = btk_squad.10.d
+	picture = GFX_report_event_BTK_89squad_freedom
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.10.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		add_stability = 0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+}
+
+#Центробанк за нас
+country_event = {
+	id = btk_squad.11
+	title = btk_squad.11.t
+	desc = btk_squad.11.d
+	picture = GFX_report_event_BTK_89squad_freedom
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.11.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		add_stability = 0.025
+		add_war_support = 0.025
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+}
+
+
+#Муха отделяется
+country_event = {
+	id = btk_squad.12
+	title = btk_squad.12.t
+	desc = btk_squad.12.d
+	picture = GFX_report_event_BTK_89squad_decay
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.12.a #yes
+		ai_chance = {
+			factor = 55
+		}
+		end_puppet = MUH
+		MUH = {
+			drop_cosmetic_tag = yes
+		}
+		hidden_effect = {
+			MUH = {
+				leave_faction = yes
+			}
+		}
+	}
+}
+
+# Отколоться или присоединиться Вова
+country_event = {
+    id = btk_squad.13
+    title = btk_squad.13.t
+    desc = btk_squad.13.d
+    picture = GFX_report_event_BTK_89squad_decay
+
+    is_triggered_only = yes
+
+    option = {
+        name = btk_squad.13.a
+        ai_chance = {
+            factor = 10
+            modifier = {
+            	factor = 0
+            	is_ai = yes
+            }
+        }
+
+		hidden_effect = {
+		    every_core_state = {
+				add_core_of = BTK
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+
+        BTK = {
+           annex_country = { target = ROOT transfer_troops = yes } 
+        }
+    }
+
+    # Refuse
+    option = {
+        name = btk_squad.13.b
+        ai_chance = {
+            factor = 100
+        }
+
+		add_stability = 0.05
+
+        leave_faction = yes
+		BTK = {
+			end_puppet = ROOT
+		}
+
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+		}
+    }
+}
+
+# Отколоться или присоединиться Виктор
+country_event = {
+    id = btk_squad.14
+    title = btk_squad.14.t
+    desc = btk_squad.14.d
+    picture = GFX_report_event_BTK_89squad_decay
+
+    is_triggered_only = yes
+
+    option = {
+        name = btk_squad.14.a
+        ai_chance = {
+            factor = 10
+            modifier = {
+            	factor = 0
+            	is_ai = yes
+            }
+        }
+
+		hidden_effect = {
+		    every_core_state = {
+				add_core_of = BTK
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+
+        BTK = {
+           annex_country = { target = ROOT transfer_troops = yes } 
+        }
+    }
+
+    # Refuse
+    option = {
+        name = btk_squad.14.b
+        ai_chance = {
+            factor = 100
+        }
+
+		add_stability = 0.05
+
+        leave_faction = yes
+		BTK = {
+			end_puppet = ROOT
+		}
+
+		hidden_effect = {
+			every_core_state = {
+				add_core_of = BTK
+			}
+			drop_cosmetic_tag = yes
+		}
+    }
+}
+
+######################################################
+###  BTK NAREZKI FACTIONS EVENTS
+######################################################
+
+# Check if all factions are resolved (integrated or destroyed)
+# This is a scripted trigger to use in events
+
+# Faction instability - Stability loss
+country_event = {
+	id = btk_squad.50
+	title = btk_squad.50.t
+	desc = btk_squad.50.d
+	picture = GFX_report_event_BTK_89squad_decay
+	
+	is_triggered_only = no
+	
+	trigger = {
+		original_tag = BTK
+		has_country_flag = BTK_narezki_factions_unlocked
+		# At least one faction is not resolved
+		OR = {
+			AND = {
+				NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+				NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+			}
+			AND = {
+				NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+				NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			}
+			AND = {
+				NOT = { has_country_flag = BTK_zar_integrated_flag }
+				NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			}
+		}
+		NOT = { has_country_flag = BTK_narezki_event_cooldown }
+	}
+
+	mean_time_to_happen = {
+		days = 60
+		modifier = {
+			factor = 0.8
+			has_stability < 0.5
+		}
+		modifier = {
+			factor = 1.5
+			has_stability > 0.7
+		}
+	}
+	
+	option = {
+		name = btk_squad.50.a
+		ai_chance = {
+			factor = 100
+		}
+		
+		add_stability = -0.03
+		
+		hidden_effect = {
+			set_country_flag = { flag = BTK_narezki_event_cooldown days = 30 value = 1 }
+		}
+	}
+}
+
+# Faction criticism - Ruling party popularity loss
+country_event = {
+	id = btk_squad.51
+	title = btk_squad.51.t
+	desc = btk_squad.51.d
+	picture = GFX_report_event_BTK_89squad_decay
+	
+	is_triggered_only = no
+	
+	trigger = {
+		original_tag = BTK
+		has_country_flag = BTK_narezki_factions_unlocked
+		# At least one faction is not resolved
+		OR = {
+			AND = {
+				NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+				NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+			}
+			AND = {
+				NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+				NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			}
+			AND = {
+				NOT = { has_country_flag = BTK_zar_integrated_flag }
+				NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			}
+		}
+		NOT = { has_country_flag = BTK_narezki_criticism_cooldown }
+	}
+
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.7
+			has_war = yes
+		}
+	}
+	
+	option = {
+		name = btk_squad.51.a
+		ai_chance = {
+			factor = 100
+		}
+		
+		add_popularity = {
+			ideology = ruling_party
+			popularity = -0.05
+		}
+		add_political_power = -25
+		
+		hidden_effect = {
+			set_country_flag = { flag = BTK_narezki_criticism_cooldown days = 45 value = 1 }
+		}
+	}
+}
+
+# Faction purges - Major debuff event (rare)
+country_event = {
+	id = btk_squad.52
+	title = btk_squad.52.t
+	desc = btk_squad.52.d
+	picture = GFX_report_event_generic_siloviki
+	
+	is_triggered_only = no
+	
+	trigger = {
+		original_tag = BTK
+		has_country_flag = BTK_narezki_factions_unlocked
+		# At least TWO factions are not resolved
+		OR = {
+			AND = {
+				NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+				NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+				NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+				NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			}
+			AND = {
+				NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+				NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+				NOT = { has_country_flag = BTK_zar_integrated_flag }
+				NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			}
+			AND = {
+				NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+				NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+				NOT = { has_country_flag = BTK_zar_integrated_flag }
+				NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			}
+		}
+		NOT = { has_country_flag = BTK_narezki_purge_cooldown }
+	}
+
+	mean_time_to_happen = {
+		days = 180
+		modifier = {
+			factor = 0.6
+			has_stability < 0.4
+		}
+		modifier = {
+			factor = 2.0
+			has_stability > 0.6
+		}
+	}
+	
+	# Military purge
+	option = {
+		name = btk_squad.52.a
+		ai_chance = {
+			factor = 50
+		}
+		
+		add_timed_idea = { idea = BTK_narezki_military_purge days = 100 }
+		add_stability = -0.05
+		
+		hidden_effect = {
+			set_country_flag = { flag = BTK_narezki_purge_cooldown days = 120 value = 1 }
+		}
+	}
+	
+	# Industrial purge
+	option = {
+		name = btk_squad.52.b
+		ai_chance = {
+			factor = 50
+		}
+		
+		add_timed_idea = { idea = BTK_narezki_industrial_purge days = 100 }
+		add_stability = -0.05
+		
+		hidden_effect = {
+			set_country_flag = { flag = BTK_narezki_purge_cooldown days = 120 value = 1 }
+		}
+	}
+}
+
+# Naval sabotage event
+country_event = {
+	id = btk_squad.53
+	title = btk_squad.53.t
+	desc = btk_squad.53.d
+	picture = GFX_report_event_BTK_89squad_decay
+	
+	is_triggered_only = no
+	
+	trigger = {
+		original_tag = BTK
+		has_country_flag = BTK_narezki_factions_unlocked
+		# At least one faction is not resolved
+		OR = {
+			AND = {
+				NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+				NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+			}
+			AND = {
+				NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+				NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			}
+			AND = {
+				NOT = { has_country_flag = BTK_zar_integrated_flag }
+				NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			}
+		}
+		NOT = { has_country_flag = BTK_narezki_naval_cooldown }
+		has_navy_size = { size > 5 }
+	}
+
+	mean_time_to_happen = {
+		days = 150
+	}
+	
+	option = {
+		name = btk_squad.53.a
+		ai_chance = {
+			factor = 100
+		}
+		
+		add_ideas = BTK_narezki_naval_sabotage
+		add_war_support = -0.03
+		
+		hidden_effect = {
+			set_country_flag = { flag = BTK_narezki_naval_cooldown days = 90 value = 1 }
+		}
+	}
+}
+
+# Faction resolved - All factions dealt with
+country_event = {
+	id = btk_squad.54
+	title = btk_squad.54.t
+	desc = btk_squad.54.d
+	picture = GFX_report_event_BTK_89squad_generic
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+		original_tag = BTK
+		has_country_flag = BTK_narezki_factions_unlocked
+		# All factions are resolved
+		OR = {
+			has_country_flag = BTK_rolfs_integrated_flag
+			has_country_flag = BTK_rolfs_destroyed_flag
+		}
+		OR = {
+			has_country_flag = BTK_mbrff_integrated_flag
+			has_country_flag = BTK_mbrff_destroyed_flag
+		}
+		OR = {
+			has_country_flag = BTK_zar_integrated_flag
+			has_country_flag = BTK_zar_destroyed_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = btk_squad.54.a
+		ai_chance = {
+			factor = 100
+		}
+		
+		add_stability = 0.10
+		add_political_power = 100
+		add_war_support = 0.05
+		
+		# Remove any active purge debuffs
+		if = {
+			limit = { has_idea = BTK_narezki_military_purge }
+			remove_ideas = BTK_narezki_military_purge
+		}
+		if = {
+			limit = { has_idea = BTK_narezki_industrial_purge }
+			remove_ideas = BTK_narezki_industrial_purge
+		}
+		if = {
+			limit = { has_idea = BTK_narezki_naval_sabotage }
+			remove_ideas = BTK_narezki_naval_sabotage
+		}
+		
+		set_country_flag = BTK_narezki_factions_resolved
+	}
+}
+
+country_event = {
+	id = btk_squad.55
+	title = btk_squad.55.t
+	desc = btk_squad.55.d
+	picture = GFX_report_event_BTK_89squad_generic
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btk_squad.55.a
+		set_country_flag = BTK_narezki_factions_unlocked
+		BTK_initialize_narezki_factions = yes
+	}
+}

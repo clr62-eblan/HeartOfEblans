@@ -13,9 +13,9 @@ state={
 
 	history={
 		owner = CHB
+		set_resistance = 20
 		
-		add_core_of = CHB
-		add_core_of = HNR
+		add_core_of = NCB
 		buildings = {
 			infrastructure = 3
 			arms_factory = 4

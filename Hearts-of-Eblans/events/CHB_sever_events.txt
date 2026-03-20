@@ -1,0 +1,73 @@
+add_namespace = chb_sever
+
+# Hidden loop event to calculate average resistance and compliance
+country_event = {
+	id = chb_sever.1
+	title = chb_sever.1.t
+	desc = chb_sever.1.d
+	picture = GFX_report_event_generic_factory
+	hidden = yes
+
+	trigger = {
+		tag = CHB
+		has_country_flag = CHB_sever_started
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = { chb_sever_avg_resistance = 0 }
+		set_variable = { chb_sever_avg_compliance = 0 }
+		set_variable = { chb_sever_state_count = 0 }
+
+		every_owned_state = {
+			limit = {
+				is_core_of = NCB
+			}
+			add_to_variable = { global.chb_sever_avg_resistance = resistance }
+			add_to_variable = { global.chb_sever_avg_compliance = compliance }
+			add_to_variable = { global.chb_sever_state_count = 1 }
+		}
+
+		if = {
+			limit = { check_variable = { chb_sever_state_count > 0 } }
+			divide_variable = { chb_sever_avg_resistance = chb_sever_state_count }
+			divide_variable = { chb_sever_avg_compliance = chb_sever_state_count }
+		}
+
+		# Start the event again in 3 days
+		if = {
+			limit = { has_country_flag = CHB_sever_started }
+			country_event = { id = chb_sever.1 days = 3 }
+		}
+	}
+}
+
+# Event for arresting the coordinator
+country_event = {
+	id = chb_sever.2
+	title = chb_sever.2.t
+	desc = chb_sever.2.d
+	picture = GFX_report_event_generic_factory
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		# Cycle the coordinator frame variable
+		if = {
+			limit = { check_variable = { SeverCoordinator = 1 } }
+			set_variable = { SeverCoordinator = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { SeverCoordinator = 2 } }
+			set_variable = { SeverCoordinator = 3 }
+		}
+		else = {
+			set_variable = { SeverCoordinator = 1 }
+		}
+		
+		# Give a temporary buff to resistance target
+		add_ideas = chb_coordinator_arrested_buff
+	}
+}

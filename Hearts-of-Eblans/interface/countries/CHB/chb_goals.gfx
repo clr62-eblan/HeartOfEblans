@@ -1,0 +1,106 @@
+spriteTypes = {	
+	SpriteType = {
+	    name = "GFX_goal_CHB_rule_by_fear"
+	    texturefile = "gfx/interface/goals/CHB/chb_rule_by_fear.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_linnight_deal"
+	    texturefile = "gfx/interface/goals/CHB/chb_linnight_deal.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_develop_states"
+	    texturefile = "gfx/interface/goals/CHB/chb_develop_states.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_refrom_doctrine"
+	    texturefile = "gfx/interface/goals/CHB/chb_refrom_doctrine.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_fuck_burocrats"
+	    texturefile = "gfx/interface/goals/CHB/chb_fuck_beurocrats.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_mobilize_moders"
+	    texturefile = "gfx/interface/goals/CHB/chb_mobilize_moders.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_unity_under_dictator"
+	    texturefile = "gfx/interface/goals/CHB/chb_unity_under_one_dictator.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_stop_tiktok_napliv"
+	    texturefile = "gfx/interface/goals/CHB/chb_stop_tiktok_napliv.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_northern_problems"
+	    texturefile = "gfx/interface/goals/CHB/chb_northern_problems.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_prepare_for_expansion"
+	    texturefile = "gfx/interface/goals/CHB/chb_prepare_for_the_expansion.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_phantasmagoria"
+	    texturefile = "gfx/interface/goals/CHB/chb_phantasmagoria.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_totaller_discrimination"
+	    texturefile = "gfx/interface/goals/CHB/chb_totaller_discrimination.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_peacefull_way"
+	    texturefile = "gfx/interface/goals/CHB/chb_peacefull_way.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_incvisition"
+	    texturefile = "gfx/interface/goals/CHB/chb_incvisition.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_rapid_renovation"
+	    texturefile = "gfx/interface/goals/CHB/chb_rapid_renovation.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_imrove_payments"
+	    texturefile = "gfx/interface/goals/CHB/chb_imrove_payments.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_destroy_separatism"
+	    texturefile = "gfx/interface/goals/CHB/chb_destroy_separatism.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_otstupniki_hunt"
+	    texturefile = "gfx/interface/goals/CHB/chb_ohota_na_otstupnikov.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_reestr_severyan"
+	    texturefile = "gfx/interface/goals/CHB/chb_reestr.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_incvisition_methods"
+	    texturefile = "gfx/interface/goals/CHB/chb_incvisition_methods.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_public_executions"
+	    texturefile = "gfx/interface/goals/CHB/chb_public_executions.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_enter_army"
+	    texturefile = "gfx/interface/goals/CHB/chb_enter_army.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_rapid_asimilation"
+	    texturefile = "gfx/interface/goals/CHB/chb_asimilatia.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_odin_narod"
+	    texturefile = "gfx/interface/goals/CHB/chb_vi_mi.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_flekland_war"
+	    texturefile = "gfx/interface/goals/CHB/chb_flekland_kill.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_red_threat"
+	    texturefile = "gfx/interface/goals/CHB/chb_red_threat.png"			
+	}
+}

@@ -611,14 +611,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/BTK_shd.dds"
 	}
 	spriteType = {
-		name = "GFX_BTK_restart_89"
-		texturefile = "gfx/interface/goals/BTK_restart_89.dds"
-	}
-	spriteType = {
-		name = "GFX_BTK_polit"
-		texturefile = "gfx/interface/goals/BTK_polit.dds"
-	}
-	spriteType = {
 		name = "GFX_BTK_newprivate"
 		texturefile = "gfx/interface/goals/BTK_newprivate.dds"
 	}
@@ -649,10 +641,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_BTK_cut_tax"
 		texturefile = "gfx/interface/goals/BTK_cut_tax.dds"
-	}
-	spriteType = {
-		name = "GFX_BTK_internal"
-		texturefile = "gfx/interface/goals/BTK_internal.dds"
 	}
 	spriteType = {
 		name = "GFX_BTK_sts9"

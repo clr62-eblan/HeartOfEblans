@@ -1,0 +1,19 @@
+spriteTypes = {
+    SpriteType = {
+	    name = "CHB_SEVER_FLAG"
+	    texturefile = "gfx/interface/custom_gui/CHB/Sever/sever_flag_bordered.png"			
+	}
+    SpriteType = {
+	    name = "CHB_SEVER_TERRITORY"
+	    texturefile = "gfx/interface/custom_gui/CHB/Sever/sever_picture.png"			
+	}
+    SpriteType = {
+	    name = "CHB_SEVER_COORDINATORS"
+	    texturefile = "gfx/interface/custom_gui/CHB/Sever/sever_coordinators.png"		
+		noOfFrames = 5	
+	}
+	SpriteType = {
+	    name = "NCB_LinNightPortrait"
+	    texturefile = "gfx/interface/custom_gui/CHB/Sever/lin_nightsever.png"			
+	}
+}

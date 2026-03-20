@@ -37,3 +37,22 @@ CHB_smartiki_category = {
 		has_country_flag = CHB_SMARTIKI_OPENED
 	}
 }
+
+CHB_sever_category = {
+
+	priority = 120
+	icon = GFX_decision_category_generic_military
+	picture = GFX_decision_category_military
+	visible_when_empty = yes
+
+	scripted_gui = CHB_sever_gui
+
+	allowed = {
+		original_tag = CHB
+	}
+
+	visible = {
+		original_tag = CHB
+		has_country_flag = CHB_sever_started
+	}
+}

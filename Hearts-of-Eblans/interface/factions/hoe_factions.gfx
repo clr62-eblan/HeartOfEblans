@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = { # 89 SQUAD
+	 	name = "GFX_faction_icon_enSquad"
+	 	texturefile = "gfx/interface/factions/faction_logos/faction_icon_ensquad.dds"
+	 	noOfFrames = 2
+	}
+
+    spriteType = {
+		name = "GFX_faction_icon_enSquad_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_icon_ensquad_miniature.dds"
+	}
+}

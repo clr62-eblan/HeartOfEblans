@@ -1,0 +1,23 @@
+﻿l_russian:
+ ara_currency_small: "§4[?THIS.arov_v_kazne] £GFX_texticon_SVI_ar Ара §!"
+ ara_currency_single: "§4[?THIS.arov_v_kazne] £GFX_texticon_SVI_ar Ар §!"
+ ara_currency_alot: "§4[?THIS.arov_v_kazne] £GFX_texticon_SVI_ar Аров §!"
+ SVI_kazna_decision_cost_500_and_75_tt: "§4500 £GFX_texticon_SVI_ar Аров§! £pol_power §Y75§!"
+ SVI_kazna_decision_cost_500_and_75_tt_blocked: "§R500§! £GFX_texticon_SVI_ar §4Аров§! £pol_power §R75§!"
+ SVI_kazna_decision_cost_300_and_50_tt: "§4300 £GFX_texticon_SVI_ar Аров§! £pol_power §Y50§!"
+ SVI_kazna_decision_cost_300_and_50_tt_blocked: "§R300§! £GFX_texticon_SVI_ar §4Аров§! £pol_power §R50§!"
+ SVI_kazna_decision_cost_400_and_50_tt: "§4400 £GFX_texticon_SVI_ar Аров§! £pol_power §Y50§!"
+ SVI_kazna_decision_cost_400_and_50_tt_blocked: "§R400§! £GFX_texticon_SVI_ar §4Аров§! £pol_power §R50§!"
+ SVI_kazna_decision_cost_600_and_75_tt: "§4600 £GFX_texticon_SVI_ar Аров§! £pol_power §Y75§!"
+ SVI_kazna_decision_cost_600_and_75_tt_blocked: "§R600§! £GFX_texticon_SVI_ar §4Аров§! £pol_power §R75§!"
+ SVI_kazna_decision_cost_750_and_100_tt: "§4750 £GFX_texticon_SVI_ar Аров§! £pol_power §Y100§!"
+ SVI_kazna_decision_cost_750_and_100_tt_blocked: "§R750§! £GFX_texticon_SVI_ar §4Аров§! £pol_power §R100§!"
+ SVI_kazna_decision_cost_1000_and_100_tt: "§41000 £GFX_texticon_SVI_ar Аров§! £pol_power §Y100§!"
+ SVI_kazna_decision_cost_1000_and_100_tt_blocked: "§R1000§! £GFX_texticon_SVI_ar §4Аров§! £pol_power §R100§!"
+
+ SVI_trade_income_cat: "Торговые доходы"
+ SVI_trade_income_mission: "Сбор торговых пошлин"
+ SVI_trade_income_mission_desc: "Каждые 120 дней казна получает доход от торговых партнёров."
+ SVI_trade_income_tt: "Будет получено §G200§! £GFX_texticon_SVI_ar Аров"
+
+ SVI_kazna_desc: "\nВ данный момент в казне государства и вашем распоряжении есть ровно \n[Kazna_capacity_text]\n"

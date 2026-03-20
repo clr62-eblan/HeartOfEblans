@@ -1,0 +1,27 @@
+state={
+	id=1051
+	name="STATE_1051"
+	resources={
+		oil = 1
+	}
+
+	history={
+		owner = DPN
+		add_core_of = DPN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			516 30
+		}
+	}
+
+	provinces={
+		516
+	}
+	manpower = 93000
+	buildings_max_level_factor = 0.500
+	state_category = metropolis
+
+	local_supplies=0.0 
+}

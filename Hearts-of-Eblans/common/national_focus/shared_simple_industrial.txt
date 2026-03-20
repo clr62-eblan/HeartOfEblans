@@ -1,0 +1,826 @@
+shared_focus = {
+	id = GENERAL_gradual_approach
+	icon = GFX_focus_generic_self_management
+	x = 1
+	y = 0
+	mutually_exclusive = {
+		focus = GENERAL_rapid_industrialisation
+	}
+	available = {
+		
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = 0.10
+		add_political_power = 50
+		add_ideas = civilian_economy
+	}
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GENERAL_better_shovels
+	icon = GFX_focus_generic_mining_industry
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = GENERAL_gradual_approach
+		focus= GENERAL_rapid_industrialisation
+	}
+	available = {
+	}
+	cost = 6
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			technology = excavation1
+		}
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = GENERAL_cottage_industry
+	icon = GFX_goal_generic_construction
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = GENERAL_gradual_approach
+	}
+	available = {
+	}
+	cost = 6
+	completion_reward = {
+
+		if = {
+			limit = {
+				NOT = { has_idea = absolute_transparency }
+			}
+			custom_effect_tooltip = corruption_will_decrease_tt
+
+			hidden_effect = {
+				decrease_corruption_law = yes
+			}
+		}
+		add_offsite_civ_factories = 1
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GENERAL_better_crops
+	icon = GFX_focus_ARG_capitalize_the_beef_industry
+	x = 2
+	y = 2
+	prerequisite = {
+		focus = GENERAL_better_shovels
+	}
+	available = {
+	}
+	mutually_exclusive = {
+		focus = GENERAL_import_agricultural_tools
+	}
+	cost = 6
+	completion_reward = {
+		add_ideas = GENERAL_crops_idea_weak
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER }
+}
+
+shared_focus = {
+	id = GENERAL_leverage_religious_schools
+	icon = GFX_focus_research
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = GENERAL_better_shovels
+	}
+	prerequisite = {
+		focus = GENERAL_cottage_industry
+	}
+	available = {
+	}
+	cost = 6
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = { has_idea = divine_intellect }
+			}
+			custom_effect_tooltip = intellect_will_increase_tt
+
+			hidden_effect = {
+				increase_intellect_law = yes
+			}
+		}
+		if = {
+			limit = {
+				amount_research_slots < 5
+			}
+			add_research_slot = 1
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = GENERAL_support_local_weaponsmiths
+	icon = GFX_focus_generic_military_industry
+	x = 1
+	y = 3
+	prerequisite = {
+		focus = GENERAL_leverage_religious_schools
+	}
+	available = {
+		NOT = {
+			has_country_flag = GENERAL_hempstrand
+		}
+	}
+	cost = 6
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GENERAL_rapid_industrialisation
+	icon = GFX_goal_generic_production
+	x = 5
+	y = 0
+	available = {
+	}
+	mutually_exclusive = {
+		focus = GENERAL_gradual_approach
+	}
+	cost = 6
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = { has_idea = mafia_country }
+			}
+			custom_effect_tooltip = corruption_will_increase_tt
+
+			hidden_effect = {
+				increase_corruption_law = yes
+			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		add_stability = -0.05
+		add_war_support = 0.05
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_ask_RIV_for_help
+	icon = GFX_focus_generic_agricultural_subsidies
+	x = 4
+	y = 1
+	prerequisite = {
+		focus = GENERAL_rapid_industrialisation
+	}
+	available = {
+
+	}
+	mutually_exclusive = {
+		focus = GENERAL_national_strengthening
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.05
+		add_political_power = -50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 2
+			category = industry
+		}
+		if = {
+			limit = {
+				amount_research_slots < 5
+			}
+			add_research_slot = 1
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = GENERAL_national_strengthening
+	icon = GFX_focus_generic_modernize_industry
+	x = 6
+	y = 1
+	prerequisite = {
+		focus = GENERAL_rapid_industrialisation
+	}
+	available = {
+	}
+	mutually_exclusive = {
+		focus = GENERAL_ask_RIV_for_help
+	}
+	cost = 6
+	completion_reward = {
+		add_war_support = 0.05
+		add_tech_bonus = {
+			name = defensive_bonus
+			bonus = 0.5
+			uses = 1
+			category = construction_tech
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GENERAL_industrial_base
+	icon = GFX_goal_generic_construct_civ_factory
+	x = 6
+	y = 2
+	prerequisite = {
+		focus = GENERAL_national_strengthening
+		focus = GENERAL_ask_RIV_for_help
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+		}
+	}
+	cost = 6
+	completion_reward = {
+		#country_event = { id = sqgen.2 }
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GENERAL_import_agricultural_tools
+	icon = GFX_goal_continuous_non_factory_construct
+	x = 4
+	y = 2
+	prerequisite = {
+		focus = GENERAL_ask_RIV_for_help
+	}
+	mutually_exclusive = {
+		focus = GENERAL_better_crops
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+		}
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.05
+		add_ideas = GENERAL_crops_idea_medium
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_forced_revolution
+	icon = GFX_focus_ICE_embrace_the_workers_revolution
+	x = 5
+	y = 3
+	prerequisite = {
+		focus = GENERAL_industrial_base
+	}
+	prerequisite = {
+		focus = GENERAL_import_agricultural_tools
+		focus = GENERAL_better_crops
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+		}
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.05
+		add_war_support = 0.05
+		add_political_power = 100
+
+		if = {
+			limit = {
+				NOT = { has_idea = mafia_country }
+			}
+			custom_effect_tooltip = corruption_will_increase_tt
+
+			hidden_effect = {
+				increase_corruption_law = yes
+			}
+		}
+
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_patriotic_literacy_campaign
+	icon = GFX_focus_research
+	x = 6
+	y = 4
+	prerequisite = {
+		focus = GENERAL_forced_revolution
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+		}
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.10
+		add_war_support = 0.05
+		add_political_power = -100
+
+		if = {
+			limit = {
+				NOT = { has_idea = divine_intellect }
+			}
+			custom_effect_tooltip = intellect_will_increase_tt
+
+			hidden_effect = {
+				increase_intellect_law = yes
+			}
+		}
+		if = {
+			limit = {
+				amount_research_slots < 5
+			}
+			add_research_slot = 1
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = GENERAL_national_stone_road_initiative
+	icon = GFX_focus_generic_road_investment
+	x = 6
+	y = 5
+	prerequisite = {
+		focus = GENERAL_patriotic_literacy_campaign
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+			has_country_flag = GENERAL_hempstrand
+		}
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.05
+		add_manpower = -500
+
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+
+}
+
+shared_focus = {
+	id = GENERAL_newer_farming_methods
+	icon = GFX_focus_generic_farmland
+	x = 3
+	y = 3
+	prerequisite = {
+		focus = GENERAL_import_agricultural_tools
+		focus = GENERAL_better_crops
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+			has_country_flag = GENERAL_hempstrand
+		}
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.05
+		if = {
+			limit = {
+				has_idea = GENERAL_crops_idea_weak
+			}
+			swap_ideas = { remove_idea = GENERAL_crops_idea_weak add_idea = GENERAL_crops_idea_medium }
+		}
+		else_if = {
+			limit = {
+				has_idea = GENERAL_crops_idea_medium
+			}
+			swap_ideas = { remove_idea = GENERAL_crops_idea_medium add_idea = GENERAL_crops_idea_strong }
+		}
+	}
+	search_filters = { FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_military_industry
+	icon = GFX_goal_generic_construct_mil_factory
+	x = 4
+	y = 4
+	prerequisite = {
+		focus = GENERAL_forced_revolution
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+			has_country_flag = GENERAL_hempstrand
+		}
+	}
+	cost = 6
+	completion_reward = {
+		#country_event = {id = sqgen.3}
+		add_war_support = 0.05
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GENERAL_dig_deep_and_greedily
+	icon = GFX_focus_generic_steel
+	x = 4
+	y = 5
+	prerequisite = {
+		focus = GENERAL_military_industry
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+			has_country_flag = GENERAL_hempstrand
+		}
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.05
+		add_war_support = 0.03
+		add_manpower = -1300
+		random_owned_controlled_state = {
+			add_resource = {
+				type = steel
+				amount = 5
+			}
+			add_resource = {
+				type = tungsten
+				amount = 5
+			}
+			add_resource = {
+				type = aluminium
+				amount = 5
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_preserve_tradition
+	icon = GFX_goal_generic_defence
+	x = 0
+	y = 5
+	prerequisite = {
+		focus = GENERAL_support_landowners
+		focus = GENERAL_reformed_landowning
+	}
+	mutually_exclusive = {
+		focus = GENERAL_foreign_education
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = 0.10
+		add_political_power = 75
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_support_landowners
+	icon = GFX_focus_generic_welfare
+	x = 0
+	y = 4
+	prerequisite = {
+		focus = GENERAL_support_local_weaponsmiths
+	}
+	mutually_exclusive = {
+		focus = GENERAL_reformed_landowning
+	}
+	available = {
+		NOT = {
+			has_government = communism
+		}
+	}
+	cost = 6
+	completion_reward = {
+		add_ideas = GENERAL_supported_landowners
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_eternal_tradition
+	icon = GFX_focus_jap_spiritual_mobilization
+	x = 0
+	y = 6
+	prerequisite = {
+		focus = GENERAL_preserve_tradition
+		focus = GENERAL_foreign_education
+	}
+	mutually_exclusive = {
+		focus = GENERAL_the_power_of_steam
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 150
+
+		if = {
+			limit = {
+				NOT = { has_idea = pro_gov_media }
+			}
+			custom_effect_tooltip = media_will_increase_tt
+
+			hidden_effect = {
+				increase_media_law = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+}
+
+shared_focus = {
+	id = GENERAL_reformed_landowning
+	icon = GFX_focus_generic_land_reclamation
+	x = 2
+	y = 4
+	prerequisite = {
+		focus = GENERAL_support_local_weaponsmiths
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+		}
+	}
+	mutually_exclusive = {
+		focus = GENERAL_support_landowners
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.05
+		add_ideas = GENERAL_reformed_landowning_idea
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_foreign_education
+	icon = GFX_focus_generic_court
+	x = 2
+	y = 5
+	prerequisite = {
+		focus = GENERAL_reformed_landowning
+		focus = GENERAL_support_landowners
+	}
+	mutually_exclusive = {
+		focus = GENERAL_preserve_tradition
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+			has_country_flag = GENERAL_hempstrand
+		}
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.05
+		add_political_power = 100
+
+		if = {
+			limit = {
+				NOT = { has_idea = divine_intellect }
+			}
+			custom_effect_tooltip = intellect_will_increase_tt
+
+			hidden_effect = {
+				increase_intellect_law = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_the_power_of_steam
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	x = 2
+	y = 6
+	prerequisite = {
+		focus = GENERAL_foreign_education
+		focus = GENERAL_preserve_tradition
+	}
+	available = {
+		has_agrarian_society = yes
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+			has_country_flag = GENERAL_hempstrand
+		}
+	}
+	mutually_exclusive = {
+		focus = GENERAL_eternal_tradition
+	}
+	cost = 6
+	completion_reward = {
+		add_stability = -0.05
+		#increase_society_development = yes
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = GENERAL_dragged_into_the_future
+	icon = GFX_focus_generic_self_management
+	x = 5
+	y = 6
+	prerequisite = {
+		focus = GENERAL_dig_deep_and_greedily
+	}
+	prerequisite = {
+		focus = GENERAL_national_stone_road_initiative
+	}
+	prerequisite = {
+		focus = GENERAL_forced_revolution
+	}
+	available = {
+		NOT = {
+			has_idea = GENERAL_slowed_modernisation
+			has_country_flag = GENERAL_hempstrand
+		}
+	}
+	cost = 12
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+
+		if = {
+			limit = {
+				NOT = { has_idea = absolute_transparency }
+			}
+			custom_effect_tooltip = corruption_will_decrease_tt
+
+			hidden_effect = {
+				decrease_corruption_law = yes
+			}
+		}
+
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_STABILITY }
+}

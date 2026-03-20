@@ -90,6 +90,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ideology_constitutional_monarhism"
+		texturefile = "gfx/interface/ideologies/constitutional_monarhism.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ideology_conservatism"
 		texturefile = "gfx/interface/ideologies/conservatism.dds"
 	}
@@ -102,6 +107,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_socialism"
 		texturefile = "gfx/interface/ideologies/socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_marxism"
+		texturefile = "gfx/interface/ideologies/marxism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_reactionism"
+		texturefile = "gfx/interface/ideologies/reactionism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_monarhist_communism"
+		texturefile = "gfx/interface/ideologies/monarhist_communism.dds"
 	}
 
 	spriteType = {

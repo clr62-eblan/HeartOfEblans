@@ -13,7 +13,6 @@ state = {
 
 		owner = GCH
 		add_core_of = GCH
-		add_core_of = BTK
 
 		buildings = {
 

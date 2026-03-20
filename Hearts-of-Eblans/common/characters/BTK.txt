@@ -20,39 +20,93 @@ characters = {
 		}
 		
 	}
-	BTK_Bratishkin = {
-		name=BTK_Bratishkin
+
+
+
+
+	BTK_Shefius_I = {
+		name=BTK_Shefius_I
 		portraits={
 			civilian = {
-				large="GFX_portrait_BTK"
+				large="GFX_portrait_BTK_shefius_i"
 			}
 		}
 		country_leader = {
-            ideology = conservatism
+            ideology = reactionism
             traits = { # 
+
 			}
-            desc = BTK_socialist  
+            desc = BTK_Shefius_I_desc  
         }
+
+		corps_commander = {
+			traits = { urban_assault_specialist }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 2
+            legacy_id = -1
+       }
 	}
-	kulina_advisor = {
-		name = "Алина 'Kulina666'"
-		portraits = {
+
+	BTK_Rish098 = {
+		name=BTK_Rish098
+		portraits={
 			civilian = {
-				small = GFX_mc_maks_small
+				large="GFX_portrait_BTK_rish"
+				small="GFX_portrait_BTK_rish_small"
 			}
 		}
+
 		advisor = {
+			allowed = { original_tag = BTK }
 			slot = political_advisor
-			idea_token = BTK_alina
-			allowed = {
-				tag=BTK
+			idea_token = BTK_Rish098_adv
+			traits = { lead_moderator }
+		}
+
+		field_marshal = {
+			traits = { inspirational_leader }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 1
+            legacy_id = -1
+       }
+	}
+	
+	BTK_Squad_Parliament = {
+		name=BTK_Squad_Parliament
+		portraits={
+			civilian = {
+				large="GFX_portrait_BTK_squad_parliament"
 			}
-			traits = {
-				mc_chuma
+		}
+	}
+
+	BTK_Victor_brotelnikov = {
+		name=BTK_Victor_brotelnikov
+		portraits={
+			civilian = {
+				large="GFX_portrait_BTK_victor_brotelnikov"
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
+		}
+		country_leader = {
+            ideology = liberalism
+            traits = { # 
+
+			}
+            desc = BTK_Victor_brotelnikov_desc  
+        }
+	}
+
+	BTK_Vladimir_bratishkin = {
+		name=BTK_Vladimir_Bratishkin
+		portraits={
+			civilian = {
+				large="GFX_portrait_BTK_vladimir_bratishkin"
 			}
 		}
 	}

@@ -11,9 +11,8 @@ state = {
 
 	history = {
 
-		owner = GNS
-		add_core_of = GNS
-		add_core_of = BTK
+		owner = GCH
+		add_core_of = GCH
 
 		victory_points = {
 			241 5 # Wilhelmshaven

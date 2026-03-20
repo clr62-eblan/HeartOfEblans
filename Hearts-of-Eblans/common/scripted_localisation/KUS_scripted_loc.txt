@@ -1,0 +1,84 @@
+defined_text = {
+	name = get_kussia_icon
+	
+	text = {
+		trigger = {
+            check_variable = { SHPANA_KUSSIA_CONTROL_STATE = 1 }
+         }
+		localization_key = "GFX_shpana_kussia_controlled"
+	}
+	text = {
+		trigger = { 
+            check_variable = { SHPANA_KUSSIA_CONTROL_STATE = 0 }
+        }
+		localization_key = "GFX_shpana_kussia_uncontrolled"
+	}
+}
+
+defined_text = {
+	name = get_mafanya_icon
+	
+	text = {
+		trigger = {
+            check_variable = { SHPANA_MAFANYA_CONTROL_STATE = 1 }
+         }
+		localization_key = "GFX_shpana_mafanya_controlled"
+	}
+	text = {
+		trigger = { 
+            check_variable = { SHPANA_MAFANYA_CONTROL_STATE = 0 }
+        }
+		localization_key = "GFX_shpana_mafanya_uncontrolled"
+	}
+}
+
+defined_text = {
+	name = get_lida_icon
+	
+	text = {
+		trigger = {
+            check_variable = { SHPANA_LIDA_CONTROL_STATE = 1 }
+         }
+		localization_key = "GFX_shpana_lida_controlled"
+	}
+	text = {
+		trigger = { 
+            check_variable = { SHPANA_LIDA_CONTROL_STATE = 0 }
+        }
+		localization_key = "GFX_shpana_lida_uncontrolled"
+	}
+}
+
+defined_text = {
+	name = get_sexbomb_icon
+	
+	text = {
+		trigger = {
+            check_variable = { SHPANA_SEX_CONTROL_STATE = 1 }
+         }
+		localization_key = "GFX_shpana_sexbomb_controlled"
+	}
+	text = {
+		trigger = { 
+            check_variable = { SHPANA_SEX_CONTROL_STATE = 0 }
+        }
+		localization_key = "GFX_shpana_sexbomb_uncontrolled"
+	}
+}
+
+defined_text = {
+	name = get_derzko_icon
+	
+	text = {
+		trigger = {
+            check_variable = { SHPANA_DER_CONTROL_STATE = 1 }
+         }
+		localization_key = "GFX_shpana_der_controlled"
+	}
+	text = {
+		trigger = { 
+            check_variable = { SHPANA_DER_CONTROL_STATE = 0 }
+        }
+		localization_key = "GFX_shpana_der_uncontrolled"
+	}
+}

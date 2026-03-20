@@ -150,18 +150,6 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
-	name = "Гена"
-	picture = "PAT_Gena.dds"
-	traits = { }
-	id = 45577528792
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
 set_popularities = {
 	democratic = 19
 	fascism = 12

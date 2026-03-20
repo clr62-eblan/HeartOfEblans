@@ -1,9 +1,4 @@
-# CREATED BY CLR62 - 2025
-# Licensed under CC BY-NC-SA 4.0 for END USERS only
-# Full license: https://creativecommons.org/licenses/by-nc-sa/4.0/
-# 
-# Paradox Interactive retains all rights to Hearts of Iron IV
-# Available on GitHub and Steam Workshop
+# CREATED BY CLR62 - Licensed under MIT License
  
 decrease_corruption_law = {
 
@@ -11,21 +6,19 @@ decrease_corruption_law = {
 		limit = { has_idea = mafia_country }
 		add_ideas = high_corruption
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = high_corruption }
 		add_ideas = medium_corruption
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = medium_corruption }
 		add_ideas = low_corruption
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = low_corruption }
 		add_ideas = absolute_transparency
 	}
+	
 
 }
 
@@ -35,18 +28,15 @@ increase_media_law = {
 		limit = { has_idea = pro_gov_media }
 		add_ideas = only_gov_media
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = mixed_media }
 		add_ideas = pro_gov_media
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = free_media }
 		add_ideas = mixed_media
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = independent_media }
 		add_ideas = free_media
 	}
@@ -55,24 +45,62 @@ increase_media_law = {
 
 decrease_media_law = {
 
-	if = {
+	else_if = {
 		limit = { has_idea = only_gov_media }
 		add_ideas = pro_gov_media
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = pro_gov_media }
 		add_ideas = mixed_media
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = mixed_media }
 		add_ideas = free_media
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = free_media }
 		add_ideas = independent_media
+	}
+
+}
+decrease_intellect_law = {
+
+	if = {
+		limit = { has_idea = divine_intellect }
+		add_ideas = developt_intellect
+	}
+	else_if = {
+		limit = { has_idea = developt_intellect }
+		add_ideas = middle_intellect
+	}
+	else_if = {
+		limit = { has_idea = middle_intellect }
+		add_ideas = dumb_intellect
+	}
+	ielse_iff = {
+		limit = { has_idea = dumb_intellect }
+		add_ideas = stupid_dummies_intellect
+	}
+
+}
+
+increase_intellect_law = {
+
+	if = {
+		limit = { has_idea = developt_intellect }
+		add_ideas = divine_intellect
+	}
+	else_if = {
+		limit = { has_idea = middle_intellect }
+		add_ideas = developt_intellect
+	}
+	else_if = {
+		limit = { has_idea = dumb_intellect }
+		add_ideas = middle_intellect
+	}
+	else_if = {
+		limit = { has_idea = stupid_dummies_intellect }
+		add_ideas = dumb_intellect
 	}
 
 }
@@ -83,18 +111,15 @@ decrease_taxes_law = {
 		limit = { has_idea = unbelievable_taxes }
 		add_ideas = high_taxes
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = high_taxes }
 		add_ideas = medium_taxes
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = medium_taxes }
 		add_ideas = low_taxes
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = low_taxes }
 		add_ideas = symbolic_taxes
 	}
@@ -107,18 +132,15 @@ increase_taxes_law = {
 		limit = { has_idea = high_taxes }
 		add_ideas = unbelievable_taxes
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = medium_taxes }
 		add_ideas = high_taxes
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = low_taxes }
 		add_ideas = medium_taxes
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = symbolic_taxes }
 		add_ideas = low_taxes
 	}
@@ -131,18 +153,15 @@ increase_corruption_law = {
 		limit = { has_idea = high_corruption }
 		add_ideas = mafia_country
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = medium_corruption }
 		add_ideas = high_corruption
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = low_corruption }
 		add_ideas = medium_corruption
 	}
-
-	if = {
+	else_if = {
 		limit = { has_idea = absolute_transparency }
 		add_ideas = low_corruption
 	}

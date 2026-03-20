@@ -1,0 +1,27 @@
+defined_text = {
+	name = GetSeverCoordinatorName
+	text = {
+		trigger = {
+			check_variable = { SeverCoordinator = 1 }
+		}
+		localization_key = chb_sever_coordinator_1
+	}
+	text = {
+		trigger = {
+			check_variable = { SeverCoordinator = 2 }
+		}
+		localization_key = chb_sever_coordinator_2
+	}
+	text = {
+		trigger = {
+			check_variable = { SeverCoordinator = 3 }
+		}
+		localization_key = chb_sever_coordinator_3
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = chb_sever_coordinator_1
+	}
+}

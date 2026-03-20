@@ -1,0 +1,206 @@
+ideas = {
+	country = {
+		# Nac duh: "Nastoyaschiy rycar'" - obschiy bonus za pervyy focus
+		KUS_true_knight_spirit = {
+			allowed = {
+				always = no
+			}
+			picture = generic_morale
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		# Nac duh: Stabilizaciya situacii
+		KUS_stabilized_nation = {
+			allowed = {
+				always = no
+			}
+			picture = generic_political_support
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		# Nac duh: Korol' trendov (Hypecratia)
+		KUS_king_of_trends_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_fascism_drift_2
+			modifier = {
+				hypecratia_drift = 0.02
+				political_power_gain = 0.1
+			}
+		}
+
+		# Nac duh: Imperatorskaya hartiya
+		KUS_imperial_charter = {
+			allowed = {
+				always = no
+			}
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.15
+			}
+		}
+
+		# Nac duh: Narodnoe blyudo - bonus ot uluchsheniya byta
+		KUS_narodnoe_bludo_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_goods_red_line
+			modifier = {
+				consumer_goods_factor = -0.03
+				monthly_population = 0.1
+			}
+		}
+
+		# Nac duh: Vyuchka proizvodstva
+		KUS_train_production_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		# Nac duh: Zolotoy vek khaypa
+		KUS_golden_age_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		# Nac duh: Dominaciya khaypa (final'niy focus)
+		KUS_hype_dominance_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_manpower_bonus
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				political_power_gain = 0.2
+				stability_factor = 0.05
+			}
+		}
+
+		### FASCISM PATH IDEAS ###
+
+		# Nac duh: Genocid maker - fascistskiy sdvig
+		KUS_genocid_maker_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				fascism_drift = 0.03
+				war_support_factor = 0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		# Nac duh: Orden dokeserov - slezhka za lyud'mi
+		KUS_orden_doxers_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_intel_bonus
+			modifier = {
+				decryption_factor = 0.1
+				operative_slot = 1
+			}
+		}
+
+		# Nac duh: Politika ksenofobii
+		KUS_xenophobia_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				conscription = 0.02
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		# Nac duh: Voenizaciya detey
+		KUS_militarized_youth = {
+			allowed = {
+				always = no
+			}
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.03
+				training_time_army_factor = -0.1
+			}
+		}
+
+		# Nac duh: stroshayshiy control economiki
+		KUS_strict_economy_control = {
+			allowed = {
+				always = no
+			}
+			picture = generic_trade
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.1
+				political_power_factor = -0.1
+			}
+		}
+
+		# Nac duh: ya naidu tebya - global'naya razvedka
+		KUS_intelligence_network = {
+			allowed = {
+				always = no
+			}
+			picture = generic_intel_bonus
+			modifier = {
+				decryption_factor = 0.15
+				enemy_operative_detection_chance_factor = 0.2
+			}
+		}
+
+		# Nac duh: Ob"edinenie s seksbombov (konec voennoy vetki fascism)
+		KUS_reunification_spirit = {
+			allowed = {
+				always = no
+			}
+			picture = generic_fascism_drift_2
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+
+
+		KUS_inspections_in_mo_idea = {
+			allowed = {
+				always = no
+			}
+			picture = SOV_purged_junior_navy_officers
+			modifier = {
+				army_attack_factor = -0.05
+				army_morale_factor = -0.05
+				training_time_factor = -0.1
+				war_support_factor = -0.03
+			}
+		}
+	}
+}

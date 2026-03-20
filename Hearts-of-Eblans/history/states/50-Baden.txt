@@ -11,9 +11,8 @@ state = {
 
 	history = {
 
-		owner = JHF
-		add_core_of = JHF
-		add_core_of = BTK
+		owner = MBZ
+		add_core_of = MBZ
 
 		victory_points = {
 			9517 20 #Stuttgart

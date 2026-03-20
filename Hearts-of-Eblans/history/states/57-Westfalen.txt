@@ -5,9 +5,8 @@ state = {
 	state_category = large_city
 
 	history = {
-		owner = GNS
-		add_core_of = GNS
-		add_core_of = BTK
+		owner = GCH
+		add_core_of = GCH
 
 		victory_points = {
 			495 5 # Dortmund

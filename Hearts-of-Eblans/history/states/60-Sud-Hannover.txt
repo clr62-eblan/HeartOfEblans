@@ -12,8 +12,8 @@ state = {
 
 	history = {
 
-		owner = BTK
-		add_core_of = BTK
+		owner = JHF
+		add_core_of = JHF
 
 		victory_points = { 
 			3561 5 # Erfurt
@@ -35,9 +35,9 @@ state = {
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 3
-				arms_factory = 2
+				arms_factory = 1
 				# From "The Four Year Plan"
-				industrial_complex = 2
+				industrial_complex = 1
 			}
 		}
 	}

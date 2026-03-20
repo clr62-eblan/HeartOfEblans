@@ -306,20 +306,54 @@ form_BTK_89_cat = {
 #		}
 #	}
 #}
-#BTK_reform89_cat = {
-#	BTK_panel_start = {
+#BTK_integration_cat = {
+#	form_BTK_89 = {
+#
 #		icon = generic_form_nation
 #		#picture = GFX_decision_cat_picture_form_greater_greece
 #		
 #		fire_only_once = yes
-#		cost = 100
-#	
+#		cost = 0
+#
 #		allowed = {
-#			original_tag = BTK
+#			original_tag = BTK 
 #		}
+#
+#		available = {
+#			is_subject = no
+#			custom_trigger_tooltip = {
+#				tooltip = btk_control_dik_terr
+#				# Bratishkin
+#				controls_state = 86
+#				controls_state = 87
+#				controls_state = 98
+#			}
+#		}
+#
+#		highlight_states = {
+#			highlight_state_targets = {
+#				state = 86
+#				state = 87
+#				state = 98
+#			}
+#			highlight_color_while_active = 3
+#			highlight_color_before_active = 2
+#		}
+#
 #		visible = {
 #			original_tag = BTK
+#			OR = {
+#				has_completed_focus = SQUAD_preemnik
+#				has_completed_focus = SQUAD_brotelnikov_i_partiya
+#			}
 #		}
+#
+#		complete_effect = {
+#			86 = {
+#				add_core_of = BTK
+#			}
+#		}
+#
 #		ai_will_do = {
 #			factor = 200
 #			modifier = {
@@ -330,3 +364,950 @@ form_BTK_89_cat = {
 #	}
 #}
 
+######################################################
+###  BTK NAREZKI FACTIONS SYSTEM
+######################################################
+
+BTK_narezki_factions_cat = {
+
+	# ROLFS - Speech Decision
+	BTK_support_rolfs_speech = {
+		priority = 42
+		icon = GFX_narezki_rofls_decision_icon
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 2
+				check_variable = { BTK_rolfs_loyalty < 30 }
+			}
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+			NOT = { has_country_flag = BTK_rolfs_bolstered_flag }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 30
+
+		visible = {
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+			NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+		}
+
+		cost = 25
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_rolfs_loyalty = 5 }
+			add_to_variable = { BTK_rolfs_popularity = 3 }
+			clamp_variable = { var = BTK_rolfs_loyalty min = 0 max = 100 }
+			clamp_variable = { var = BTK_rolfs_popularity min = 0 max = 100 }
+			custom_effect_tooltip = BTK_rolfs_loyalty_increased_tt
+			custom_effect_tooltip = BTK_rolfs_popularity_increased_tt
+			set_country_flag = BTK_speech_rolfs_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# MBRFF - Speech Decision
+	BTK_support_mbrff_speech = {
+		priority = 32
+		icon = GFX_narezki_mbrff_decision_icon
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 2
+				check_variable = { BTK_mbrff_loyalty < 30 }
+			}
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+			NOT = { has_country_flag = BTK_mbrff_bolstered_flag }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 30
+
+		visible = {
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+		}
+
+		cost = 25
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_mbrff_loyalty = 5 }
+			add_to_variable = { BTK_mbrff_popularity = 3 }
+			clamp_variable = { var = BTK_mbrff_loyalty min = 0 max = 100 }
+			clamp_variable = { var = BTK_mbrff_popularity min = 0 max = 100 }
+			custom_effect_tooltip = BTK_mbrff_loyalty_increased_tt
+			custom_effect_tooltip = BTK_mbrff_popularity_increased_tt
+			set_country_flag = BTK_speech_mbrff_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# ZAR - Speech Decision
+	BTK_support_zar_speech = {
+		priority = 22
+		icon = GFX_narezki_zar_decision_icon
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 2
+				check_variable = { BTK_zar_loyalty < 30 }
+			}
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+			NOT = { has_country_flag = BTK_zar_bolstered_flag }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 30
+
+		visible = {
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			NOT = { has_country_flag = BTK_zar_integrated_flag }
+		}
+
+		cost = 25
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_zar_loyalty = 5 }
+			add_to_variable = { BTK_zar_popularity = 3 }
+			clamp_variable = { var = BTK_zar_loyalty min = 0 max = 100 }
+			clamp_variable = { var = BTK_zar_popularity min = 0 max = 100 }
+			custom_effect_tooltip = BTK_zar_loyalty_increased_tt
+			custom_effect_tooltip = BTK_zar_popularity_increased_tt
+			set_country_flag = BTK_speech_zar_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# ROLFS - Joint Act Decision
+	BTK_rolfs_joint_act = {
+		priority = 43
+		icon = GFX_narezki_rofls_decision_icon
+
+		ai_will_do = {
+			base = 3
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_joint_act_requirement_tt
+				check_variable = { BTK_rolfs_loyalty = 25 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 14
+
+		days_re_enable = 60
+
+		visible = {
+			OR = {
+				has_country_flag = BTK_speech_rolfs_flag
+				has_country_flag = BTK_rolfs_legalized_flag
+			}
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+			NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+		}
+
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_rolfs_loyalty = 10 }
+			add_to_variable = { BTK_rolfs_popularity = 7 }
+			clamp_variable = { var = BTK_rolfs_loyalty min = 0 max = 100 }
+			clamp_variable = { var = BTK_rolfs_popularity min = 0 max = 100 }
+			custom_effect_tooltip = BTK_rolfs_loyalty_increased_tt
+			custom_effect_tooltip = BTK_rolfs_popularity_increased_tt
+			set_country_flag = BTK_rolfs_joint_act_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# MBRFF - Joint Act Decision
+	BTK_mbrff_joint_act = {
+		priority = 33
+		icon = GFX_narezki_mbrff_decision_icon
+
+		ai_will_do = {
+			base = 3
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_joint_act_requirement_tt
+				check_variable = { BTK_mbrff_loyalty = 25 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 14
+
+		days_re_enable = 60
+
+		visible = {
+			OR = {
+				has_country_flag = BTK_speech_mbrff_flag
+				has_country_flag = BTK_mbrff_legalized_flag
+			}
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+		}
+
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_mbrff_loyalty = 10 }
+			add_to_variable = { BTK_mbrff_popularity = 7 }
+			clamp_variable = { var = BTK_mbrff_loyalty min = 0 max = 100 }
+			clamp_variable = { var = BTK_mbrff_popularity min = 0 max = 100 }
+			custom_effect_tooltip = BTK_mbrff_loyalty_increased_tt
+			custom_effect_tooltip = BTK_mbrff_popularity_increased_tt
+			set_country_flag = BTK_mbrff_joint_act_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# ZAR - Joint Act Decision
+	BTK_zar_joint_act = {
+		priority = 23
+		icon = GFX_narezki_zar_decision_icon
+
+		ai_will_do = {
+			base = 3
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_joint_act_requirement_tt
+				check_variable = { BTK_zar_loyalty = 25 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 14
+
+		days_re_enable = 60
+
+		visible = {
+			OR = {
+				has_country_flag = BTK_speech_zar_flag
+				has_country_flag = BTK_zar_legalized_flag
+			}
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			NOT = { has_country_flag = BTK_zar_integrated_flag }
+		}
+
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_zar_loyalty = 10 }
+			add_to_variable = { BTK_zar_popularity = 7 }
+			clamp_variable = { var = BTK_zar_loyalty min = 0 max = 100 }
+			clamp_variable = { var = BTK_zar_popularity min = 0 max = 100 }
+			custom_effect_tooltip = BTK_zar_loyalty_increased_tt
+			custom_effect_tooltip = BTK_zar_popularity_increased_tt
+			set_country_flag = BTK_zar_joint_act_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# ROLFS - Bolster Faction
+	BTK_bolster_rolfs = {
+		priority = 44
+		icon = GFX_narezki_rofls_decision_icon
+
+		ai_will_do = {
+			base = 10
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_bolster_requirement_tt
+				check_variable = { BTK_rolfs_loyalty = 40 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 21
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = BTK_rolfs_joint_act_flag
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+			NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+			NOT = { has_country_flag = BTK_rolfs_bolstered_flag }
+		}
+
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_rolfs_loyalty = 15 }
+			add_to_variable = { BTK_rolfs_popularity = 10 }
+			clamp_variable = { var = BTK_rolfs_loyalty min = 0 max = 100 }
+			clamp_variable = { var = BTK_rolfs_popularity min = 0 max = 100 }
+			custom_effect_tooltip = BTK_rolfs_loyalty_increased_tt
+			custom_effect_tooltip = BTK_rolfs_popularity_increased_tt
+			set_country_flag = BTK_rolfs_bolstered_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# MBRFF - Bolster Faction
+	BTK_bolster_mbrff = {
+		priority = 34
+		icon = GFX_narezki_mbrff_decision_icon
+
+		ai_will_do = {
+			base = 10
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_bolster_requirement_tt
+				check_variable = { BTK_mbrff_loyalty = 40 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 21
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = BTK_mbrff_joint_act_flag
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+			NOT = { has_country_flag = BTK_mbrff_bolstered_flag }
+		}
+
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_mbrff_loyalty = 15 }
+			add_to_variable = { BTK_mbrff_popularity = 10 }
+			clamp_variable = { var = BTK_mbrff_loyalty min = 0 max = 100 }
+			clamp_variable = { var = BTK_mbrff_popularity min = 0 max = 100 }
+			custom_effect_tooltip = BTK_mbrff_loyalty_increased_tt
+			custom_effect_tooltip = BTK_mbrff_popularity_increased_tt
+			set_country_flag = BTK_mbrff_bolstered_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# ZAR - Bolster Faction
+	BTK_bolster_zar = {
+		priority = 24
+		icon = GFX_narezki_zar_decision_icon
+
+		ai_will_do = {
+			base = 10
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_bolster_requirement_tt
+				check_variable = { BTK_zar_loyalty = 40 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 21
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = BTK_zar_joint_act_flag
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			NOT = { has_country_flag = BTK_zar_integrated_flag }
+			NOT = { has_country_flag = BTK_zar_bolstered_flag }
+		}
+
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_zar_loyalty = 15 }
+			add_to_variable = { BTK_zar_popularity = 10 }
+			clamp_variable = { var = BTK_zar_loyalty min = 0 max = 100 }
+			clamp_variable = { var = BTK_zar_popularity min = 0 max = 100 }
+			custom_effect_tooltip = BTK_zar_loyalty_increased_tt
+			custom_effect_tooltip = BTK_zar_popularity_increased_tt
+			set_country_flag = BTK_zar_bolstered_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# ROLFS - Integrate Faction
+	BTK_integrate_rolfs = {
+		priority = 45
+		icon = GFX_narezki_rofls_decision_icon
+
+		ai_will_do = {
+			base = 20
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_integrate_requirement_tt
+				check_variable = { BTK_rolfs_loyalty = 75 compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_integrate_popularity_tt
+				check_variable = { BTK_rolfs_popularity = 50 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = BTK_rolfs_bolstered_flag
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+			NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+		}
+
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			set_country_flag = BTK_rolfs_integrated_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+			custom_effect_tooltip = BTK_rolfs_integrated_tt
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	# MBRFF - Integrate Faction
+	BTK_integrate_mbrff = {
+		priority = 35
+		icon = GFX_narezki_mbrff_decision_icon
+
+		ai_will_do = {
+			base = 20
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_integrate_requirement_tt
+				check_variable = { BTK_mbrff_loyalty = 75 compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_integrate_popularity_tt
+				check_variable = { BTK_mbrff_popularity = 50 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = BTK_mbrff_bolstered_flag
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+		}
+
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			set_country_flag = BTK_mbrff_integrated_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+			custom_effect_tooltip = BTK_mbrff_integrated_tt
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	# ZAR - Integrate Faction
+	BTK_integrate_zar = {
+		priority = 25
+		icon = GFX_narezki_zar_decision_icon
+
+		ai_will_do = {
+			base = 20
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_integrate_requirement_tt
+				check_variable = { BTK_zar_loyalty = 75 compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_integrate_popularity_tt
+				check_variable = { BTK_zar_popularity = 50 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = BTK_zar_bolstered_flag
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			NOT = { has_country_flag = BTK_zar_integrated_flag }
+		}
+
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			set_country_flag = BTK_zar_integrated_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+			custom_effect_tooltip = BTK_zar_integrated_tt
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	######################################################
+	###  OPPRESSION DECISIONS (Decrease Popularity)
+	######################################################
+
+	# ROLFS - Oppress
+	BTK_oppress_rolfs = {
+		priority = 41
+		icon = GFX_narezki_rofls_decision_icon
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				check_variable = { BTK_rolfs_popularity > 60 }
+			}
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+			NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+		}
+
+		days_remove = 14
+
+		days_re_enable = 45
+
+		visible = {
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+			NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+		}
+
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_rolfs_popularity = -15 }
+			add_to_variable = { BTK_rolfs_loyalty = -10 }
+			clamp_variable = { var = BTK_rolfs_popularity min = 0 max = 100 }
+			clamp_variable = { var = BTK_rolfs_loyalty min = 0 max = 100 }
+			custom_effect_tooltip = BTK_rolfs_popularity_decreased_tt
+			custom_effect_tooltip = BTK_rolfs_loyalty_decreased_tt
+			add_stability = -0.02
+			set_country_flag = BTK_rolfs_oppressed_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# MBRFF - Oppress
+	BTK_oppress_mbrff = {
+		priority = 31
+		icon = GFX_narezki_mbrff_decision_icon
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				check_variable = { BTK_mbrff_popularity > 60 }
+			}
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+			NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+		}
+
+		days_remove = 14
+
+		days_re_enable = 45
+
+		visible = {
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+		}
+
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_mbrff_popularity = -15 }
+			add_to_variable = { BTK_mbrff_loyalty = -10 }
+			clamp_variable = { var = BTK_mbrff_popularity min = 0 max = 100 }
+			clamp_variable = { var = BTK_mbrff_loyalty min = 0 max = 100 }
+			custom_effect_tooltip = BTK_mbrff_popularity_decreased_tt
+			custom_effect_tooltip = BTK_mbrff_loyalty_decreased_tt
+			add_stability = -0.02
+			set_country_flag = BTK_mbrff_oppressed_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	# ZAR - Oppress
+	BTK_oppress_zar = {
+		priority = 21
+		icon = GFX_narezki_zar_decision_icon
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				check_variable = { BTK_zar_popularity > 60 }
+			}
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+			NOT = { has_country_flag = BTK_zar_integrated_flag }
+		}
+
+		days_remove = 14
+
+		days_re_enable = 45
+
+		visible = {
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			NOT = { has_country_flag = BTK_zar_integrated_flag }
+		}
+
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			add_to_variable = { BTK_zar_popularity = -15 }
+			add_to_variable = { BTK_zar_loyalty = -10 }
+			clamp_variable = { var = BTK_zar_popularity min = 0 max = 100 }
+			clamp_variable = { var = BTK_zar_loyalty min = 0 max = 100 }
+			custom_effect_tooltip = BTK_zar_popularity_decreased_tt
+			custom_effect_tooltip = BTK_zar_loyalty_decreased_tt
+			add_stability = -0.02
+			set_country_flag = BTK_zar_oppressed_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+		}
+	}
+
+	######################################################
+	###  DESTRUCTION DECISIONS
+	######################################################
+
+	# ROLFS - Destroy
+	BTK_destroy_rolfs = {
+		priority = 40
+		icon = GFX_narezki_rofls_decision_icon
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 0
+				check_variable = { BTK_rolfs_loyalty > 30 }
+			}
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_destroy_popularity_tt
+				check_variable = { BTK_rolfs_popularity = 20 compare = less_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_destroy_loyalty_tt
+				check_variable = { BTK_rolfs_loyalty = 20 compare = less_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = BTK_rolfs_oppressed_flag
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_rolfs_destroyed_flag }
+			NOT = { has_country_flag = BTK_rolfs_integrated_flag }
+		}
+
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			set_country_flag = BTK_rolfs_destroyed_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+			custom_effect_tooltip = BTK_rolfs_destroyed_tt
+			add_stability = -0.05
+			add_war_support = 0.03
+		}
+	}
+
+	# MBRFF - Destroy
+	BTK_destroy_mbrff = {
+		priority = 30
+		icon = GFX_narezki_mbrff_decision_icon
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 0
+				check_variable = { BTK_mbrff_loyalty > 30 }
+			}
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_destroy_popularity_tt
+				check_variable = { BTK_mbrff_popularity = 20 compare = less_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_destroy_loyalty_tt
+				check_variable = { BTK_mbrff_loyalty = 20 compare = less_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = BTK_mbrff_oppressed_flag
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_mbrff_destroyed_flag }
+			NOT = { has_country_flag = BTK_mbrff_integrated_flag }
+		}
+
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			set_country_flag = BTK_mbrff_destroyed_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+			custom_effect_tooltip = BTK_mbrff_destroyed_tt
+			add_stability = -0.05
+			add_war_support = 0.03
+		}
+	}
+
+	# ZAR - Destroy
+	BTK_destroy_zar = {
+		priority = 20
+		icon = GFX_narezki_zar_decision_icon
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 0
+				check_variable = { BTK_zar_loyalty > 30 }
+			}
+		}
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_destroy_popularity_tt
+				check_variable = { BTK_zar_popularity = 20 compare = less_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = BTK_faction_destroy_loyalty_tt
+				check_variable = { BTK_zar_loyalty = 20 compare = less_than_or_equals }
+			}
+			NOT = { has_country_flag = BTK_narezki_ongoing_flag }
+		}
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = BTK_zar_oppressed_flag
+			has_country_flag = BTK_narezki_factions_unlocked
+			NOT = { has_country_flag = BTK_zar_destroyed_flag }
+			NOT = { has_country_flag = BTK_zar_integrated_flag }
+		}
+
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = BTK_narezki_ongoing_flag
+		}
+
+		remove_effect = {
+			set_country_flag = BTK_zar_destroyed_flag
+			clr_country_flag = BTK_narezki_ongoing_flag
+			custom_effect_tooltip = BTK_zar_destroyed_tt
+			add_stability = -0.05
+			add_war_support = 0.03
+		}
+	}
+}

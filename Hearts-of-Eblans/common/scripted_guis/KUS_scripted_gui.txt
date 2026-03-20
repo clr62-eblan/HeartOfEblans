@@ -1,0 +1,36 @@
+scripted_gui = {
+
+	kus_shpana_scripted_gui = {
+		context_type = decision_category
+		window_name = "KUS_shpana_window"
+		visible = {
+			always = yes
+		}
+		ai_enabled = {
+			original_tag = KUS
+		}
+		
+		effects = {
+            
+		}
+		
+		properties = {
+            Shpana_kussia_control = {
+                image = "[get_kussia_icon]"
+            }
+            Shpana_mafanya_control = {
+                image = "[get_mafanya_icon]"
+            }
+            Shpana_lida_control = {
+                image = "[get_lida_icon]"
+            }
+            Shpana_der_control = {
+                image = "[get_derzko_icon]"
+            }
+            Shpana_sexbomb_control = {
+                image = "[get_sexbomb_icon]"
+            }
+			
+		}
+	}
+}

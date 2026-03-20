@@ -1,0 +1,42 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_shpana_kussia_uncontrolled"
+		texturefile = "gfx/interface/custom_gui/KUS/kus_uncontrolled.png"
+	}
+    spriteType = {
+		name = "GFX_shpana_kussia_controlled"
+		texturefile = "gfx/interface/custom_gui/KUS/kus_controlled.png"
+	}
+    spriteType = {
+		name = "GFX_shpana_mafanya_controlled"
+		texturefile = "gfx/interface/custom_gui/KUS/mny_controlled.png"
+	}
+    spriteType = {
+		name = "GFX_shpana_mafanya_uncontrolled"
+		texturefile = "gfx/interface/custom_gui/KUS/mny_uncontrolled.png"
+	}
+    spriteType = {
+		name = "GFX_shpana_sexbomb_controlled"
+		texturefile = "gfx/interface/custom_gui/KUS/sex_controlled.png"
+	}
+    spriteType = {
+		name = "GFX_shpana_sexbomb_uncontrolled"
+		texturefile = "gfx/interface/custom_gui/KUS/sex_uncontrolled.png"
+	}
+    spriteType = {
+		name = "GFX_shpana_lida_controlled"
+		texturefile = "gfx/interface/custom_gui/KUS/lid_controlled.png"
+	}
+    spriteType = {
+		name = "GFX_shpana_lida_uncontrolled"
+		texturefile = "gfx/interface/custom_gui/KUS/lid_uncontrolled.png"
+	}
+    spriteType = {
+		name = "GFX_shpana_der_controlled"
+		texturefile = "gfx/interface/custom_gui/KUS/der_controlled.png"
+	}
+    spriteType = {
+		name = "GFX_shpana_der_uncontrolled"
+		texturefile = "gfx/interface/custom_gui/KUS/der_uncontrolled.png"
+	}
+}

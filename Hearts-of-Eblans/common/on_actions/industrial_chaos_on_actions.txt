@@ -1,0 +1,31 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = GENERAL_rapid_industrialization_unrest
+				}
+				if = {
+					limit = {
+						has_stability < 0.5
+					}
+					if = {
+						limit = {
+							NOT = { has_idea = GENERAL_industrial_sabotage }
+						}
+						add_ideas = GENERAL_industrial_sabotage
+						# Custom tooltip or log?
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_idea = GENERAL_industrial_sabotage
+						}
+						remove_ideas = GENERAL_industrial_sabotage
+					}
+				}
+			}
+		}
+	}
+}

@@ -3,6 +3,10 @@ state={
 	id=209
 	name="STATE_209" # Pskov
 	manpower = 639587
+
+	resources = {
+		aluminium = 4
+	}
 	
 	state_category = town
 

@@ -7,16 +7,12 @@ state = {
 		steel = 4 # was: 48, then 25 then 15
 	}
 	
-	state_category = metropolis
+	state_category = town
 
 	history = {
 
 		owner = DPN
 		add_core_of = DPN
-
-		victory_points = { 
-			516 30 
-		}
 
 		victory_points = { 
 			6560 5 
@@ -41,7 +37,7 @@ state = {
 	}
 
 	provinces = {
-		516 3576 6446 6560 
+		3576 6446 6560 
 	}
 
 	local_supplies = 0.0 

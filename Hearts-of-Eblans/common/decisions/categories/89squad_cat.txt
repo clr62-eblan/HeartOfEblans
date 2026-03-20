@@ -8,7 +8,7 @@ form_BTK_89_cat = {
 	}
 
 	visible = {
-		original_tag = BTK
+		always = no
 	}
 	priority = 29
 }
@@ -36,4 +36,46 @@ BTK_council_cat = {
 	visible = {
 		original_tag = BTK
 	}
+}
+
+BTK_freikors_cat = {
+	icon = GFX_decision_BTK_parl
+	visible_when_empty = yes
+	scripted_gui = BTK_Freikors_gui
+	allowed = {
+		original_tag = BTK
+	}
+
+	visible = {
+		original_tag = BTK
+		has_country_flag = BTK_FREIKORS_STARTED
+	}
+}
+
+BTK_integration_cat = {
+	icon = GFX_decision_category_GER_weltpolitik
+	allowed = {
+		original_tag = BTK
+	}
+
+	visible = {
+		original_tag = BTK
+	}
+}
+
+BTK_narezki_factions_cat = {
+	icon = GFX_decision_category_generic_propaganda
+	visible_when_empty = yes
+	scripted_gui = BTK_narezki_factions_decision_ui
+	
+	allowed = {
+		original_tag = BTK
+	}
+
+	visible = {
+		original_tag = BTK
+		has_country_flag = BTK_narezki_factions_unlocked
+	}
+	
+	priority = 50
 }

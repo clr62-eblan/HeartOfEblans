@@ -9,6 +9,10 @@ song = "mazokgrad_fall"
 chance = { factor = 0 }}
 
 music = {
+song = "startup_theme"
+chance = { factor = 0 }}
+
+music = {
 song = "dayraid_fall"
 chance = { factor = 0 }}
 

@@ -18,6 +18,12 @@ set_technology = {
 	naval_bomber1 = 1
 }
 
+add_ideas = {
+	SQUAD_manpower_rotation
+}
+
+set_cosmetic_tag = SQUAD_MEMBER
+
 
 
 if = {
@@ -78,7 +84,7 @@ set_politics = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "e.dds"
+	picture = "dik.dds"
 	
 	ideology = stalinism
 	traits = {
@@ -89,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "e.dds"
+	picture = "dik.dds"
 	
 	ideology = hypetiktok
 	traits = {
@@ -100,7 +106,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "e.dds"
+	picture = "dik.dds"
 	
 	ideology = gen_nazism
 	traits = {
@@ -111,7 +117,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "e.dds"
+	picture = "dik.dds"
 	
 	ideology = liberalism
 	traits = {
@@ -122,7 +128,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Динико"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "e.dds"
+	picture = "dik.dds"
 	
 	ideology = despotism
 	traits = {

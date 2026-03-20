@@ -323,7 +323,7 @@ characters = {
         }
 		
 		country_leader = {
-			ideology = despotism
+			ideology = constitutional_monarhism
 			traits = {
 				#
 			}
@@ -340,7 +340,7 @@ characters = {
         }
 
 		country_leader = {
-			ideology = despotism
+			ideology = centrism
 			traits = {
 				nikakoy_concretiki
 			}

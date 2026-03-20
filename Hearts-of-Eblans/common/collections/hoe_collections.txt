@@ -1,0 +1,13 @@
+former_squad_terriatories = {
+	input = constant:state_groups.en_squad_states
+	name = COLLECTION_FORMER_SQUAD_STATES
+}
+controlled_former_squad_terriatories = {
+	input = collection:former_squad_terriatories
+	name = COLLECTION_CONTROLLED_FORMER_SQUAD_STATES
+	operators = {
+		limit = {
+			is_controlled_by_ROOT_or_ally = yes 
+		}
+	}
+}

@@ -1,0 +1,7 @@
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_texticon_SVI_ar"
+        texturefile = "gfx/texticons/SVI_ar_texticon.dds"
+        legacy_lazy_load = no
+    }
+}

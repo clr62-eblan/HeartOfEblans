@@ -1,0 +1,99 @@
+spriteTypes = {	
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_shefius_dead"
+	    texturefile = "gfx/interface/goals/BTK/shefius_dead.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_brother_way"
+	    texturefile = "gfx/interface/goals/BTK/brother_way.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_confederats_way"
+	    texturefile = "gfx/interface/goals/BTK/confederats_way.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_find_impostors"
+	    texturefile = "gfx/interface/goals/BTK/find_impostors.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_great_appeal"
+	    texturefile = "gfx/interface/goals/BTK/great_appeal.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_centrobank_nash"
+	    texturefile = "gfx/interface/goals/BTK/centrobank_nash.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_tax_decrease"
+	    texturefile = "gfx/interface/goals/BTK/tax_decrease.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_organize_favr"
+	    texturefile = "gfx/interface/goals/BTK/organize_favr.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_reform_centrobank"
+	    texturefile = "gfx/interface/goals/BTK/reform_centrobank.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_remember_history"
+	    texturefile = "gfx/interface/goals/BTK/remember_history.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_kill_opponents"
+	    texturefile = "gfx/interface/goals/BTK/kill_opponents.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_gosstroy"
+	    texturefile = "gfx/interface/goals/BTK/gosstroy.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_tenminuts_delivery"
+	    texturefile = "gfx/interface/goals/BTK/tenminuts_delivery.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_preemnik"
+	    texturefile = "gfx/interface/goals/BTK/preemnik.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SQUAD_bratelnikov"
+	    texturefile = "gfx/interface/goals/BTK/bratelnikov.dds"			
+	}
+	spriteType = {
+		name = "GFX_BTK_restart_89"
+		texturefile = "gfx/interface/goals/BTK/BTK_restart_89.dds"
+	}
+	spriteType = {
+		name = "GFX_BTK_polit"
+		texturefile = "gfx/interface/goals/BTK/BTK_polit.dds"
+	}
+	spriteType = {
+		name = "GFX_BTK_internal"
+		texturefile = "gfx/interface/goals/BTK/BTK_internal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SQUAD_baragozzers_attack"
+		texturefile = "gfx/interface/goals/BTK/baragozzers_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_SQUAD_diniko_attack"
+		texturefile = "gfx/interface/goals/BTK/diniko_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_SQUAD_gaechka_attack"
+		texturefile = "gfx/interface/goals/BTK/gaechka_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_SQUAD_jojohf_attack"
+		texturefile = "gfx/interface/goals/BTK/jojohf_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_SQUAD_mibroz_attack"
+		texturefile = "gfx/interface/goals/BTK/mibroz_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_SQUAD_muhanjan_attack"
+		texturefile = "gfx/interface/goals/BTK/muhanjan_attack.dds"
+	}
+}

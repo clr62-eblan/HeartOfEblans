@@ -27,6 +27,7 @@ recruit_character = stalin
 
 add_ideas = {
 	tiktok_platform
+	stupid_dummies_intellect
 }
 
 if = {

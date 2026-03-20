@@ -1,0 +1,71 @@
+SHPANA_CHECK_STATES = {
+	if = {
+		limit = { 
+            KUS = {
+			    all_core_state = {
+			    	is_fully_controlled_by = FROM.FROM
+			    }
+            }
+		}
+        set_variable = { SHPANA_KUSSIA_CONTROL_STATE = 1}
+	}
+    else = {
+        set_variable = { SHPANA_KUSSIA_CONTROL_STATE = 0 }
+    }
+
+    if = {
+		limit = { 
+            MNY = {
+			    all_core_state = {
+			    	is_fully_controlled_by = FROM.FROM
+			    }
+            }
+		}
+        set_variable = { SHPANA_MAFANYA_CONTROL_STATE = 1}
+	}
+    else = {
+        set_variable = { SHPANA_MAFANYA_CONTROL_STATE = 0 }
+    }
+
+    if = {
+		limit = { 
+            LID = {
+			    all_core_state = {
+			    	is_fully_controlled_by = FROM.FROM
+			    }
+            }
+		}
+        set_variable = { SHPANA_LIDA_CONTROL_STATE = 1}
+	}
+    else = {
+        set_variable = { SHPANA_LIDA_CONTROL_STATE = 0 }
+    }
+
+    if = {
+		limit = { 
+            SEX = {
+			    all_core_state = {
+			    	is_fully_controlled_by = FROM.FROM
+			    }
+            }
+		}
+        set_variable = { SHPANA_SEX_CONTROL_STATE = 1}
+	}
+    else = {
+        set_variable = { SHPANA_SEX_CONTROL_STATE = 0 }
+    }
+
+    if = {
+		limit = { 
+            DER = {
+			    all_core_state = {
+			    	is_fully_controlled_by = FROM.FROM
+			    }
+            }
+		}
+        set_variable = { SHPANA_DER_CONTROL_STATE = 1}
+	}
+    else = {
+        set_variable = { SHPANA_DER_CONTROL_STATE = 0 }
+    }
+}

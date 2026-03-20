@@ -1,0 +1,1716 @@
+focus_tree = {
+	id = reich_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BTK
+		}
+	}
+	default = no
+
+	shared_focus = GENERAL_gradual_approach
+	shared_focus = GENERAL_rapid_industrialisation
+
+    
+    focus = {
+		id = SQUAD_samodershez_pal
+		icon = GFX_goal_SQUAD_shefius_dead
+		x = 15
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Wait_till_shef_die_tt
+				always = no
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = Will_open_new_focuses_tt
+		}
+	}
+
+	#BRAT
+
+    focus = {
+		id = SQUAD_brat_vse_ispravit
+		icon = GFX_goal_SQUAD_brother_way
+		x = -2
+		y = 1
+		relative_position_id = SQUAD_samodershez_pal
+		prerequisite = { focus = SQUAD_samodershez_pal }
+		mutually_exclusive = { focus = SQUAD_mest_konfederatov }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = btk_squad.5 days = 2 }
+		}
+	}
+
+    focus = {
+		id = SQUAD_great_obrashenie
+		icon = GFX_goal_SQUAD_great_appeal
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_brat_vse_ispravit
+		prerequisite = { focus = SQUAD_brat_vse_ispravit }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = btk_squad.8 days = 1 }
+		}
+	}
+
+    focus = {#Поддержка от ЧВК
+		id = SQUAD_private_groups_support
+		icon = GFX_goal_generic_army_artillery
+		x = -2
+		y = 1
+		relative_position_id = SQUAD_brat_vse_ispravit
+		prerequisite = { focus = SQUAD_brat_vse_ispravit }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = btk_squad.9 days = 2 }
+		}
+	}
+
+    focus = {
+		id = SQUAD_progov_metings
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_great_obrashenie
+		prerequisite = { focus = SQUAD_private_groups_support }
+		prerequisite = { focus = SQUAD_great_obrashenie }
+		prerequisite = { focus = SQUAD_find_imposters_in_army }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.03
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.03
+			}
+		}
+	}
+
+    focus = {
+		id = SQUAD_preemnik
+		icon = GFX_goal_SQUAD_preemnik
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_progov_metings
+		prerequisite = { focus = SQUAD_progov_metings }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			BTK = {
+
+				add_country_leader_role = {
+					character = BTK_Vladimir_bratishkin
+					country_leader = {
+						expire = "3000.1.1"
+						ideology = reactionism
+						traits = {  }
+					}
+					promote_leader = yes
+				}
+			}
+			hidden_effect = { 
+				set_cosmetic_tag = BTK_ORDENAT
+				set_country_flag = BTK_PREEMNIK
+
+				country_event = {
+					id = btk_squad.55
+					days = 10
+				}
+			}
+
+		}
+	}
+
+    focus = {#Найти предателей в армии
+		id = SQUAD_find_imposters_in_army
+		icon = GFX_goal_SQUAD_find_impostors
+		x = 2
+		y = 1
+		relative_position_id = SQUAD_brat_vse_ispravit
+		prerequisite = { focus = SQUAD_brat_vse_ispravit focus =  SQUAD_mest_konfederatov}
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		select_effect = {
+			hidden_effect = {
+				country_event = { id = btk_squad.7 days = 30 }
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = { idea = BTK_purges days = 200 }
+		}
+	}
+
+
+
+
+
+
+
+	#NE BRAT
+
+    focus = {
+		id = SQUAD_mest_konfederatov
+		icon = GFX_goal_SQUAD_confederats_way
+		x = 2
+		y = 1
+		relative_position_id = SQUAD_samodershez_pal
+		prerequisite = { focus = SQUAD_samodershez_pal }
+		mutually_exclusive = { focus = SQUAD_brat_vse_ispravit }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = btk_squad.6 days = 2 }
+		}
+	}
+
+	focus = {
+		id = SQUAD_provesti_liberalnie_idei_v_massi
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_mest_konfederatov
+		prerequisite = { focus = SQUAD_mest_konfederatov }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = btk_squad.10 days = 2 }
+		}
+	}
+
+	focus = {
+		id = SQUAD_centrobank_za_nas
+		icon = GFX_goal_SQUAD_centrobank_nash
+		x = 2
+		y = 1
+		relative_position_id = SQUAD_mest_konfederatov
+		prerequisite = { focus = SQUAD_mest_konfederatov }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = btk_squad.11 days = 2 }
+		}
+	}
+
+	focus = {
+		id = SQUAD_poddershka_neskolkih_neytralitetov
+		icon = GFX_focus_CHL_invite_french_aristocracy
+		x = 0
+		y = 2
+		relative_position_id = SQUAD_mest_konfederatov
+		prerequisite = { focus = SQUAD_centrobank_za_nas }
+		prerequisite = { focus = SQUAD_provesti_liberalnie_idei_v_massi }
+		prerequisite = { focus = SQUAD_find_imposters_in_army }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_brotelnikov_i_partiya
+		icon = GFX_goal_SQUAD_bratelnikov
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_poddershka_neskolkih_neytralitetov
+		prerequisite = { focus = SQUAD_poddershka_neskolkih_neytralitetov }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.20
+			}
+			BTK = {
+				set_politics = {
+    				ruling_party = democratic
+    				elections_allowed = no
+				}
+			}
+			hidden_effect = { 
+				set_country_flag = BTK_LIBERALS
+				country_event = {
+					id = btk_squad.55
+					days = 10
+				}
+			}
+		}
+	}
+
+
+
+	#AFTER SELECTION
+
+	#SHARED
+	focus = {
+		id = SQUAD_reform_ministerstva
+		icon = GFX_BTK_polit
+		x = -2
+		y = 1
+		relative_position_id = SQUAD_brotelnikov_i_partiya
+		prerequisite = { focus = SQUAD_brotelnikov_i_partiya focus = SQUAD_preemnik }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			remove_ideas = BTK_critical_beurocracy
+		}
+	}
+
+	focus = {
+		id = SQUAD_reform_centrobank
+		icon = GFX_goal_SQUAD_reform_centrobank
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_reform_ministerstva
+		prerequisite = { focus = SQUAD_reform_ministerstva }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			decrease_corruption_law = yes
+			add_ideas = BTK_centro_bank
+		}
+	}
+
+	focus = {
+		id = SQUAD_taxes_reform
+		icon = GFX_goal_SQUAD_tax_decrease
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_reform_centrobank
+		prerequisite = { focus = SQUAD_reform_centrobank }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			decrease_taxes_law = yes
+			custom_effect_tooltip = can_change_taxes_law_tt
+		}
+	}
+
+
+	#PREEMNIK
+	focus = {
+		id = SQUAD_army_above_all
+		icon = GFX_focus_generic_army_doctrines_2
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_preemnik
+		prerequisite = { focus = SQUAD_preemnik }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = SQUAD_can_change_conscription_tt
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_remember_history
+		icon = GFX_goal_SQUAD_remember_history
+		x = -2
+		y = 1
+		relative_position_id = SQUAD_preemnik
+		prerequisite = { focus = SQUAD_preemnik }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			add_ideas = BTK_legacy_of_shefius
+		}
+	}
+
+	focus = {
+		id = SQUAD_land_reform
+		icon = GFX_focus_generic_land_reclamation
+		x = -2
+		y = 0
+		relative_position_id = SQUAD_remember_history
+		prerequisite = { focus = SQUAD_preemnik }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.05
+			68 = { add_extra_state_shared_building_slots = 1 }
+			762 = { add_extra_state_shared_building_slots = 1 }
+			61 = { add_extra_state_shared_building_slots = 1 }
+		}
+	}
+
+	focus = {
+		id = SQUAD_block_opponents
+		icon = GFX_goal_SQUAD_kill_opponents
+		x = -1
+		y = 1
+		relative_position_id = SQUAD_remember_history
+		prerequisite = { focus = SQUAD_remember_history }
+		prerequisite = { focus = SQUAD_army_above_all }
+		prerequisite = { focus = SQUAD_land_reform }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = SQUAD_form_tankorps
+		icon = GFX_focus_generic_tankette
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_army_above_all
+		prerequisite = { focus = SQUAD_army_above_all }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+		
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 2.0
+				uses = 2
+				category = cat_heavy_armor
+			}
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = SQUAD_na_puti_k_vosstanovleniu
+		icon = GFX_focus_generic_spread_fascism
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_block_opponents
+		prerequisite = { focus = SQUAD_block_opponents }
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = BGZ
+						tag = DIK
+						tag = GCH
+						tag = MUH
+						tag = MBZ
+						tag = JHF
+					}
+					is_subject_of = BTK
+				}
+				country_event = { id = btk_squad.13 days = 2 }
+			}
+		}
+	}
+
+	#LIBERALS
+	focus = {
+		id = SQUAD_slyshba_dostavki_za_ten_minut
+		icon = GFX_goal_SQUAD_tenminuts_delivery
+		x = 2
+		y = 1
+		relative_position_id = SQUAD_brotelnikov_i_partiya
+		prerequisite = { focus = SQUAD_brotelnikov_i_partiya }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = BTK_tenMinutes_delivery
+		}
+	}
+	focus = {
+		id = SQUAD_voen_kontrakti
+		icon = GFX_focus_generic_military_industry
+		x = 4
+		y = 1
+		relative_position_id = SQUAD_brotelnikov_i_partiya
+		prerequisite = { focus = SQUAD_brotelnikov_i_partiya }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = SQUAD_support_otkritie_GosStroy
+		icon = GFX_goal_SQUAD_gosstroy
+		x = -1
+		y = 1
+		relative_position_id = SQUAD_voen_kontrakti
+		prerequisite = { focus = SQUAD_voen_kontrakti }
+		prerequisite = { focus = SQUAD_slyshba_dostavki_za_ten_minut }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = GRI_gos_stroy
+		}
+	}
+
+	focus = {
+		id = SQUAD_stop_fascist
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_brotelnikov_i_partiya
+		prerequisite = { focus = SQUAD_brotelnikov_i_partiya }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+		}
+	}
+
+	focus = {#Федеральное агентство внешней разведник ФАВР
+		id = SQUAD_form_favr
+		icon = GFX_goal_SQUAD_organize_favr
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_stop_fascist
+		prerequisite = { focus = SQUAD_stop_fascist }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_ideas = BTK_secret_service_lar
+			}
+			else = {
+				add_ideas = BTK_secret_service
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_osvobodim_kontinent
+		icon = GFX_focus_GER_european_confederation
+		x = 0
+		y = 1
+		relative_position_id = SQUAD_support_otkritie_GosStroy
+		prerequisite = { focus = SQUAD_support_otkritie_GosStroy }
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = BGZ
+						tag = DIK
+						tag = GCH
+						tag = MUH
+						tag = MBZ
+						tag = JHF
+					}
+					is_subject_of = BTK
+				}
+				country_event = { id = btk_squad.14 days = 2 }
+			}
+		}
+	}
+
+
+	#WARS
+	focus = {
+		id = SQUAD_return_baragozz
+		icon = GFX_SQUAD_baragozzers_attack
+		x = 1
+		y = 1
+		relative_position_id = SQUAD_na_puti_k_vosstanovleniu
+		prerequisite = { focus = SQUAD_na_puti_k_vosstanovleniu focus = SQUAD_osvobodim_kontinent }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		bypass = {
+	    	BGZ = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+		available = {
+			has_war = no
+			is_neighbor_of = BGZ
+			BGZ = {
+				NOT = {
+					is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+				}
+			}
+			is_subject = no
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = BGZ 
+			}
+			}
+			declare_war_on = { 
+			    type = annex_everything 
+				target = BGZ 
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_vzyat_danzig_v_oborot
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = -1
+		y = 1
+		relative_position_id = SQUAD_return_baragozz
+		prerequisite = { focus = SQUAD_return_baragozz }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		available = {
+			85 = {
+				is_fully_controlled_by = BTK
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			85 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_kick_diniko
+		icon = GFX_SQUAD_diniko_attack
+		x = 3
+		y = 1
+		relative_position_id = SQUAD_na_puti_k_vosstanovleniu
+		prerequisite = { focus = SQUAD_na_puti_k_vosstanovleniu focus = SQUAD_osvobodim_kontinent }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		bypass = {
+	    	DIK = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+		available = {
+			has_war = no
+			is_neighbor_of = DIK
+			DIK = {
+				NOT = {
+					is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+				}
+			}
+			is_subject = no
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = DIK 
+			}
+			}
+			declare_war_on = { 
+			    type = annex_everything 
+				target = DIK 
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_expand_oil_production
+		icon = GFX_focus_PER_increase_oil_sales
+		x = -1
+		y = 1
+		relative_position_id = SQUAD_kick_diniko
+		prerequisite = { focus = SQUAD_kick_diniko }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		available = {
+			62 = {
+				is_fully_controlled_by = BTK
+			}
+			98 = {
+				is_fully_controlled_by = BTK
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_resource = {
+    			type = oil
+    			amount = 3
+    			state = 98
+			}
+
+			add_resource = {
+    			type = oil
+    			amount = 2
+    			state = 62
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_destroy_jojo
+		icon = GFX_SQUAD_jojohf_attack
+		x = 9
+		y = 1
+		relative_position_id = SQUAD_na_puti_k_vosstanovleniu
+		prerequisite = { focus = SQUAD_na_puti_k_vosstanovleniu focus = SQUAD_osvobodim_kontinent }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		bypass = {
+	    	DIK = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+		available = {
+			has_war = no
+			is_neighbor_of = JHF
+			JHF = {
+				NOT = {
+					is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+				}
+			}
+			is_subject = no
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = JHF 
+			}
+			}
+			declare_war_on = { 
+			    type = annex_everything 
+				target = JHF 
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_fuck_gaechka
+		icon = GFX_SQUAD_gaechka_attack
+		x = 7
+		y = 1
+		relative_position_id = SQUAD_na_puti_k_vosstanovleniu
+		prerequisite = { focus = SQUAD_na_puti_k_vosstanovleniu focus = SQUAD_osvobodim_kontinent }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		bypass = {
+	    	GCH = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+		available = {
+			has_war = no
+			is_neighbor_of = GCH
+			GCH = {
+				NOT = {
+					is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+				}
+			}
+			is_subject = no
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = GCH 
+			}
+			}
+			declare_war_on = { 
+			    type = annex_everything 
+				target = GCH 
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_reform_joint_army
+		icon = GFX_focus_AUS_frontmiliz_focus
+		x = 1
+		y = 1
+		relative_position_id = SQUAD_fuck_gaechka
+		prerequisite = { focus = SQUAD_fuck_gaechka }
+		prerequisite = { focus = SQUAD_destroy_jojo }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_completed_focus = SQUAD_army_above_all }
+				}
+				custom_effect_tooltip = SQUAD_can_change_conscription_tt
+			}
+
+			add_ideas = BTK_reformed_joint_army
+		}
+	}
+
+	focus = {
+		id = SQUAD_Industrialize_conquerd
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 1
+		y = 1
+		relative_position_id = SQUAD_destroy_jojo
+		prerequisite = { focus = SQUAD_destroy_jojo }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		available = {
+			54 = {
+				is_fully_controlled_by = BTK
+			}
+			65 = {
+				is_fully_controlled_by = BTK
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			54 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			65 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_expand_on_muha
+		icon = GFX_SQUAD_muhanjan_attack
+		x = 1
+		y = 1
+		relative_position_id = SQUAD_expand_oil_production
+		prerequisite = { focus = SQUAD_expand_oil_production }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		bypass = {
+	    	MUH = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+		available = {
+			has_war = no
+			is_neighbor_of = MUH
+			MUH = {
+				NOT = {
+					is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+				}
+			}
+			is_subject = no
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = MUH 
+			}
+			}
+			declare_war_on = { 
+			    type = annex_everything 
+				target = MUH 
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_checkmate_mibrozz
+		icon = GFX_SQUAD_mibroz_attack
+		x = -1
+		y = 1
+		relative_position_id = SQUAD_reform_joint_army
+		prerequisite = { focus = SQUAD_reform_joint_army }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		bypass = {
+	    	MBZ = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+		}
+		available = {
+			has_war = no
+			is_neighbor_of = MBZ
+			MBZ = {
+				NOT = {
+					is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+				}
+			}
+			is_subject = no
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = MBZ 
+			}
+			}
+			declare_war_on = { 
+			    type = annex_everything 
+				target = MBZ 
+			}
+		}
+	}
+
+	focus = {
+		id = SQUAD_loyal_minors
+		icon = GFX_BTK_internal
+		x = 5
+		y = 1
+		relative_position_id = SQUAD_na_puti_k_vosstanovleniu
+		prerequisite = { focus = SQUAD_na_puti_k_vosstanovleniu focus = SQUAD_osvobodim_kontinent }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SQUAD_invest_in_scientists
+		icon = GFX_focus_research2
+		x = 0
+		y = 2
+		relative_position_id = SQUAD_loyal_minors
+		prerequisite = { focus = SQUAD_loyal_minors }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SQUAD_new_dawn_of_squad
+		icon = GFX_BTK_restart_89
+		x = 0
+		y = 2
+		relative_position_id = SQUAD_invest_in_scientists
+		prerequisite = { focus = SQUAD_invest_in_scientists }
+		prerequisite = { focus = SQUAD_expand_on_muha }
+		prerequisite = { focus = SQUAD_checkmate_mibrozz }
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 50
+		}
+	
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = btk_controls_all_squad_terr
+
+				controls_state = 56
+				controls_state = 57
+				controls_state = 55
+				controls_state = 51
+				controls_state = 42
+				controls_state = 978
+				controls_state = 28
+				controls_state = 50
+				controls_state = 52
+				controls_state = 53
+				controls_state = 54
+				controls_state = 60
+				controls_state = 65
+				controls_state = 59
+				controls_state = 64
+				controls_state = 1049
+				controls_state = 61
+				controls_state = 62
+				controls_state = 63
+				controls_state = 68
+				controls_state = 66
+				controls_state = 67
+				controls_state = 86
+				controls_state = 87
+				controls_state = 98
+				controls_state = 807
+				controls_state = 85
+				controls_state = 5
+				controls_state = 763
+				controls_state = 188
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+}

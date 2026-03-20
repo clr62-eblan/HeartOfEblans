@@ -75,10 +75,281 @@ parliament_gui_decision_category = {
 	}
 }	
 
+SVI_kazna = {
+	SVI_trade_income_mission = {
+
+		icon = GFX_decision_generic_operation
+
+		activation = {
+			original_tag = SVI
+			NOT = { has_country_flag = SVI_trade_income_collecting }
+		}
+
+		visible = {
+			original_tag = SVI
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 120
+		priority = 2005
+
+		fire_only_once = no
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		complete_effect = {
+			set_country_flag = SVI_trade_income_collecting
+		}
+
+		timeout_effect = {
+			#set_variable = { SVI_trade_partners_count = 0 }
+			#every_other_country = {
+			#	limit = {
+			#		exists = yes
+			#		has_trade_with = ROOT
+			#	}
+			#	ROOT = {
+			#		add_to_variable = { SVI_trade_partners_count = 1 }
+			#	}
+			#}
+			#set_variable = { SVI_trade_income_amount = SVI_trade_partners_count }
+			#multiply_variable = { SVI_trade_income_amount = 100 }
+			add_to_variable = { arov_v_kazne = 200 }
+			custom_effect_tooltip = SVI_trade_income_tt
+			clr_country_flag = SVI_trade_income_collecting
+		}
+	}
+
+	promote_partiotism = {
+	
+		icon = GFX_decision_CHL_mapuche_reorganize_the_bolivian_government
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		cost = 75
+		days_remove = 30
+	
+		allowed = {
+			original_tag = SVI
+		}
+	
+		available = {
+		}
+		
+
+		visible = {
+			original_tag = SVI
+		}
+		
+		complete_effect = {
+			add_to_variable = { arov_v_kazne = -500 }
+			add_political_power = -75
+		}
+
+		custom_cost_trigger = {
+			check_variable = {
+				arov_v_kazne > 499
+				political_power > 74
+			}
+		}
+		custom_cost_text = SVI_kazna_decision_cost_500_and_75_tt
+
+		modifier = {
+			political_power_gain = -0.5
+		}
+
+		remove_effect = {
+			add_war_support = 0.10
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = SVI_patriotic_fervor
+				days = 180
+			}
+		}
+	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	expand_industry = {
+	
+		icon = GFX_decision_generic_construction
+		cost = 100
+		days_remove = 45
+	
+		allowed = {
+			original_tag = SVI
+		}
+	
+		available = {
+		}
+
+		visible = {
+			original_tag = SVI
+		}
+		
+		complete_effect = {
+			add_to_variable = { arov_v_kazne = -750 }
+			add_political_power = -100
+		}
+
+		custom_cost_trigger = {
+			check_variable = {
+				arov_v_kazne > 749
+				political_power > 99
+			}
+		}
+		custom_cost_text = SVI_kazna_decision_cost_750_and_100_tt
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = SVI_industrial_investment
+				days = 120
+			}
+		}
+	
+		ai_will_do = {
+			factor = 150
+		}
+	}
+
+	strengthen_army = {
+	
+		icon = GFX_decision_generic_prepare_civil_war
+		cost = 75
+		days_remove = 40
+	
+		allowed = {
+			original_tag = SVI
+		}
+	
+		available = {
+			has_army_size = { size > 5 }
+		}
+
+		visible = {
+			original_tag = SVI
+		}
+		
+		complete_effect = {
+			add_to_variable = { arov_v_kazne = -600 }
+			add_political_power = -75
+		}
+
+		custom_cost_trigger = {
+			check_variable = {
+				arov_v_kazne > 599
+				political_power > 74
+			}
+		}
+		custom_cost_text = SVI_kazna_decision_cost_600_and_75_tt
+
+		modifier = {
+			political_power_gain = -0.5
+		}
+
+		remove_effect = {
+			army_experience = 25
+			add_timed_idea = {
+				idea = SVI_army_modernization
+				days = 180
+			}
+		}
+	
+		ai_will_do = {
+			factor = 120
+		}
+	}
+
+	improve_infrastructure = {
+	
+		icon = GFX_decision_generic_construction
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = SVI
+		}
+	
+		available = {
+		}
+
+		visible = {
+			original_tag = SVI
+		}
+		
+		complete_effect = {
+			add_to_variable = { arov_v_kazne = -400 }
+			add_political_power = -50
+		}
+
+		custom_cost_trigger = {
+			check_variable = {
+				arov_v_kazne > 399
+				political_power > 49
+			}
+		}
+		custom_cost_text = SVI_kazna_decision_cost_400_and_50_tt
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = SVI_infrastructure_program
+				days = 150
+			}
+		}
+	
+		ai_will_do = {
+			factor = 130
+		}
+	}
+	
+}
+
 SVI_uncertain_future_cat = {
 	SVI_growing_public_dissent_mission = {
 
-		priority = 1
+		priority = 2000
 
 		icon = GFX_decision_revolt
 
@@ -110,7 +381,7 @@ SVI_uncertain_future_cat = {
 SVI_imminent_collapse_cat = {
 	SVI_collapse_mission = {
 
-		priority = 50
+		priority = 2000
 
 		icon = GFX_decision_revolt
 

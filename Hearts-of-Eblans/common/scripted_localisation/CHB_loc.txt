@@ -1,0 +1,10 @@
+defined_text = {
+	name = CHB_SEVER_COORDINATOR_PORTRAIT
+	
+	text = {
+		trigger = {
+			check_variable = { CHB.SeverCoordinator = 0 }
+		}
+		localization_key = "CHB_SEVER_LINNIGHT"
+	}
+}

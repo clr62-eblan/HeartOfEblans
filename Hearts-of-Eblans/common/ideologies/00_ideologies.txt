@@ -13,7 +13,6 @@ ideologies = {
 			}
 
 			socialism = {
-				color = { 126 188 222 }
 			}
 			
 		}
@@ -81,6 +80,9 @@ ideologies = {
 			}
 
 			anti_revisionism = {
+			}
+
+			monarhist_communism = {
 			}
 
 			anarchist_communism = {
@@ -209,6 +211,10 @@ ideologies = {
 			rexism = {
 				
 			}
+
+			reactionism = {
+				
+			}
 		}
 
 		dynamic_faction_names = {
@@ -265,6 +271,9 @@ ideologies = {
 			}
 
 			centrism = {
+			}
+			
+			constitutional_monarhism = {
 			}
 		}
 

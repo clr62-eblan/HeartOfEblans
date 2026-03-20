@@ -12,6 +12,7 @@ add_ideas = {
 	GON_totaler_sanctions
 	mafia_country
 	mixed_media
+	divine_intellect
 }
 
 set_country_flag = generic_trackofday_flag

@@ -15,6 +15,11 @@ music = {
 }
 
 music = {
+	name = "startup_theme"
+	file = "SquadMusic/startup_theme.ogg"
+}
+
+music = {
 	name = "democracy_threat"
 	file = "SquadMusic/democracy_threat.ogg"
 }

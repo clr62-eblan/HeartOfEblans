@@ -1,0 +1,27 @@
+refresh_chb_sever_compilance_and_resistance = {
+	CHB = {
+        set_temp_variable = { resistance_summ = 0 }
+        set_temp_variable = { resistance_count = 0 }
+        every_state = {
+            limit = {
+                is_core_of = NCB
+            }
+            add_to_temp_variable = { resistance_summ = resistance }
+            add_to_temp_variable = { resistance_count = 1 }
+        }
+        divide_temp_variable = { resistance_summ = resistance_count }
+        set_variable = { ncb_resistance = resistance_summ }
+
+        set_temp_variable = { compilance_summ = 0 }
+        set_temp_variable = { compilance_count = 0 }
+        every_state = {
+            limit = {
+                is_core_of = NCB
+            }
+            add_to_temp_variable = { compilance_summ = compliance }
+            add_to_temp_variable = { compilance_count = 1 }
+        }
+        divide_temp_variable = { compilance_summ = compilance_count }
+        set_variable = { ncb_compilance = compilance_summ }
+    }
+}

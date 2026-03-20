@@ -16,3 +16,23 @@ scripted_gui = {
 		}
 	}
 }
+scripted_gui = {
+
+	CHB_sever_gui = {
+		context_type = decision_category
+		window_name = "CHB_Sever_window"
+		visible = {
+			original_tag = CHB
+		}
+		
+		effects = {
+            
+		}
+		
+		properties = {
+			sever_coordinator_portrait = {
+				frame = SeverCoordinator
+			}
+		}
+	}
+}

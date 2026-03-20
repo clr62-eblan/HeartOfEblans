@@ -1,9 +1,4 @@
-# CREATED BY CLR62 - 2025
-# Licensed under CC BY-NC-SA 4.0 for END USERS only
-# Full license: https://creativecommons.org/licenses/by-nc-sa/4.0/
-# 
-# Paradox Interactive retains all rights to Hearts of Iron IV
-# Available on GitHub and Steam Workshop
+# CREATED BY CLR62 - Licensed under MIT License
  
 ideas = {
     corruption_law = {
@@ -222,6 +217,18 @@ ideas = {
 
             level = 1
 
+            allowed_to_remove = {
+                if = {
+                    limit = {
+                        NOT = { tag = BTK }
+                    }
+                    always = yes
+                }
+                else = {
+                    has_completed_focus = SQUAD_taxes_reform
+                }
+            }
+
             modifier = {
 				local_resources_factor = 0.07
                 political_power_factor = 0.2
@@ -229,7 +236,7 @@ ideas = {
                 conscription_factor = 0.1
                 stability_factor = -0.1
                 industrial_capacity_factory = -0.15
-                production_speed_buildings_factor -0.2
+                production_speed_buildings_factor = -0.2
                 monthly_population = -0.05
             }
         }
@@ -328,6 +335,7 @@ ideas = {
             available = { 
                 always = no
             }
+            allowed = { always = yes }
 
             level = 1
 
@@ -345,6 +353,7 @@ ideas = {
             available = { 
                 always = no
             }
+            allowed = { always = yes }
 
             level = 2
 
@@ -364,6 +373,8 @@ ideas = {
             available = { 
                 always = no
             }
+
+            allowed = { always = yes }
 
             default = yes
 
@@ -388,6 +399,7 @@ ideas = {
             available = { 
                 always = no
             }
+            allowed = { always = yes }
 
             level = 4
 
@@ -406,11 +418,120 @@ ideas = {
             available = { 
                 always = no
             }
+            allowed = { always = yes }
 
             level = 5
 
             modifier = {
                 
+            }
+        }
+    }
+
+    community_intellect = {
+        law = yes
+        use_list_view = yes
+
+        divine_intellect = {
+            picture = intellect_divine
+            removal_cost = -1
+
+            available = { 
+               
+            }
+            allowed = { always = yes }
+
+            level = 1
+
+            modifier = {
+            }
+        }
+
+        developt_intellect = {
+            picture = intellect_developt
+            removal_cost = -1
+
+            available = { 
+                
+            }
+            allowed = { always = yes }
+
+            default = yes
+
+            level = 2
+
+            modifier = {
+                special_project_speed_factor = -0.1
+				research_speed_factor = -0.15
+				land_doctrine_cost_factor = 0.0.5
+				air_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = 0.1
+				political_power_gain = 0.1
+            }
+        }
+
+        middle_intellect = {
+            picture = intellect_medium
+            removal_cost = -1
+
+            available = { 
+               
+            }
+
+            allowed = { always = yes }
+
+
+            level = 3
+
+            modifier = {
+                special_project_speed_factor = -0.2
+				research_speed_factor = -0.25
+				land_doctrine_cost_factor = 0.1
+				air_doctrine_cost_factor = 0.15
+				naval_doctrine_cost_factor = 0.15
+				political_power_gain = 0.15
+            }
+        }
+
+        dumb_intellect = {
+            picture = intellect_dumb
+            removal_cost = -1
+
+            available = { 
+                
+            }
+            allowed = { always = yes }
+
+            level = 4
+
+            modifier = {
+                special_project_speed_factor = -0.3
+				research_speed_factor = -0.4
+				land_doctrine_cost_factor = 0.2
+				air_doctrine_cost_factor = 0.25
+				naval_doctrine_cost_factor = 0.25
+				political_power_gain = 0.2
+            }
+        }
+
+        stupid_dummies_intellect = {
+            picture = intellect_stupid_dummies
+            removal_cost = -1
+
+            available = { 
+                
+            }
+            allowed = { always = yes }
+
+            level = 5
+
+            modifier = {
+                special_project_speed_factor = -0.4
+				research_speed_factor = -0.5
+				land_doctrine_cost_factor = 0.3
+				air_doctrine_cost_factor = 0.3
+				naval_doctrine_cost_factor = 0.3
+				political_power_gain = 0.25
             }
         }
     }

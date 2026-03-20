@@ -1,0 +1,41 @@
+ideas = {
+	country = {
+		chb_coordinator_arrested_buff = {
+			picture = generic_intel_bonus
+			allowed = { always = no }
+			visible = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				resistance_target = -0.20
+			}
+		}
+		
+		chb_inquisition_idea = {
+			picture = generic_secret_police
+			allowed = { always = no }
+			visible = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				resistance_damage_to_garrison = -0.50
+				resistance_target = -0.30
+				compliance_gain = -0.05
+				non_core_manpower = 0.05
+			}
+		}
+		
+		chb_peaceful_integration_idea = {
+			picture = generic_democracy_drift_bonus
+			allowed = { always = no }
+			visible = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				compliance_gain = 0.08
+				resistance_target = -0.15
+				political_power_cost = 0.10
+			}
+		}
+	}
+}

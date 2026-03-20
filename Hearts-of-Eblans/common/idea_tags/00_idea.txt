@@ -69,6 +69,7 @@ idea_categories = {
 		slot = media_law
 		slot = corruption_law
 		slot = taxes_law
+		slot = community_intellect
 		slot = main_platform
 		
 		

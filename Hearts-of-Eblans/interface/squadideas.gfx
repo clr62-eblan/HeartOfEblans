@@ -51,6 +51,32 @@ spriteTypes = {
         name = "GFX_idea_media_onlygov"
         texturefile = "gfx/interface/ideas/laws/idea_med_5.png"
     }  	
+
+
+	spriteType = {
+        name = "GFX_idea_intellect_divine"
+        texturefile = "gfx/interface/ideas/laws/idea_ci_1.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_intellect_developt"
+        texturefile = "gfx/interface/ideas/laws/idea_ci_2.png"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_intellect_medium"
+        texturefile = "gfx/interface/ideas/laws/idea_ci_3.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_intellect_dumb"
+        texturefile = "gfx/interface/ideas/laws/idea_ci_4.png"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_intellect_stupid_dummies"
+        texturefile = "gfx/interface/ideas/laws/idea_ci_5.png"
+    }  	
 	
 	
 	

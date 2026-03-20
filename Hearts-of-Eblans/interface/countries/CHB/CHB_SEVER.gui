@@ -1,0 +1,64 @@
+guiTypes = {
+containerWindowType = {
+		name = "CHB_Sever_window"
+		position = { x = 50 y = 50 }
+		size = { width = 100% height= 260 }
+		#instantTextBoxType = {
+		#	name ="Sever_title"
+		#	position = { x = 10 y = 0 }
+		#	font = "hoi_24header"
+		#	text = "chb_sever_title_text"
+		#	format = center
+		#	maxHeight = 40
+		#	maxWidth = 470
+		#}
+
+		iconType = {
+			name = "sever_flag"
+			position = { x = 170 y = 10 }
+			spriteType = "CHB_SEVER_FLAG"
+			scale = 0.9
+		}	
+		iconType = {
+			name = "sever_coordinator_portrait"
+			position = { x = 20 y = 20 }
+			spriteType = "CHB_SEVER_COORDINATORS"
+			scale = 0.9
+		}	
+		iconType = {
+			name = "sever_coordinator_portrait_frame"
+			position = { x = 10 y = 13 }
+			spriteType = "GFX_pol_leader_frame"
+			scale = 0.9
+		}	
+
+		instantTextBoxType = {
+			name ="Sever_coordinator_text"
+			position = { x = 22 y = 217 }
+			font = "hoi_16mbs"
+			text = "chb_sever_coordinator"
+			format = left
+			maxHeight = 20
+			maxWidth = 200
+		}
+
+		instantTextBoxType = {
+			name ="Sever_resis_text"
+			position = { x = 170 y = 100 }
+			font = "hoi_24header"
+			text = "chb_sever_resistance"
+			format = left
+			maxHeight = 40
+			maxWidth = 470
+		}
+		instantTextBoxType = {
+			name ="Sever_poddershka_text"
+			position = { x = 170 y = 130 }
+			font = "hoi_24header"
+			text = "chb_sever_compilance"
+			format = left
+			maxHeight = 40
+			maxWidth = 470
+		}
+    }
+}

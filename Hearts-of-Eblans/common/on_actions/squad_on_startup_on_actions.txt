@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            BTK = {
+                country_event = { id = btk_squad.1 days = 7 }
+            }
+        }
+    }
+}

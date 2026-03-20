@@ -1,0 +1,227 @@
+add_namespace = kussia
+
+# Event: Stabilizaciya strany - vibor puti razvitiya
+country_event = {
+	id = kussia.1
+	title = kussia.1.t
+	desc = kussia.1.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.1.a
+		add_political_power = 50
+	}
+}
+
+# Event: Naydeny nasledniki - sobitie ot spiska naslednikov
+country_event = {
+	id = kussia.2
+	title = kussia.2.t
+	desc = kussia.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.2.a
+		add_stability = 0.05
+		add_political_power = 25
+	}
+}
+
+# Event: Grazhdanskie volneniya - ot peacetime_over
+country_event = {
+	id = kussia.3
+	title = kussia.3.t
+	desc = kussia.3.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	# Podavit' protesti
+	option = {
+		name = kussia.3.a
+		add_stability = -0.03
+		add_war_support = 0.05
+	}
+
+	# Poyti na ustupki
+	option = {
+		name = kussia.3.b
+		add_stability = 0.03
+		add_war_support = -0.03
+	}
+}
+
+# Event: Imperial'naya hartiya prinyata (Hypecratia path)
+country_event = {
+	id = kussia.4
+	title = kussia.4.t
+	desc = kussia.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.4.a
+		add_ideas = KUS_imperial_charter
+	}
+}
+
+# Event: Issledovaniya novykh tekhnologiy - noviy NII otkryt
+country_event = {
+	id = kussia.5
+	title = kussia.5.t
+	desc = kussia.5.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.5.a
+		add_research_slot = 1
+	}
+}
+
+# Event: Genocid maker - nachalo fashistskogo puti
+country_event = {
+	id = kussia.10
+	title = kussia.10.t
+	desc = kussia.10.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.10.a
+		add_ideas = KUS_genocid_maker_idea
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+}
+
+# Event: Ksenofobiya prinyata kak gosudarstvennaya politika
+country_event = {
+	id = kussia.11
+	title = kussia.11.t
+	desc = kussia.11.d
+	picture = GFX_report_event_generic_rally2
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.11.a
+		add_ideas = KUS_xenophobia_idea
+	}
+}
+
+# Event: Mafanya soglasna prisoedinit'sya
+country_event = {
+	id = kussia.12
+	title = kussia.12.t
+	desc = kussia.12.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# Da, prisoedinit'
+	option = {
+		name = kussia.12.a
+		ai_chance = {
+			factor = 70
+		}
+		add_political_power = 50
+		add_stability = 0.05
+	}
+
+	# Net, otkazat'
+	option = {
+		name = kussia.12.b
+		ai_chance = {
+			factor = 30
+		}
+		add_political_power = -25
+	}
+}
+
+# Event: Zapusk sputnikov - nauchnoe dostizhenie
+country_event = {
+	id = kussia.13
+	title = kussia.13.t
+	desc = kussia.13.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.13.a
+		add_research_slot = 1
+		add_war_support = 0.05
+	}
+}
+
+# Event: Ob"edinenie s seksbombov - final'noe sobitie fascism path
+country_event = {
+	id = kussia.14
+	title = kussia.14.t
+	desc = kussia.14.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.14.a
+		add_ideas = KUS_reunification_spirit
+	}
+}
+
+# inspectii v mo
+country_event = {
+	id = kussia.15
+	title = kussia.15.t
+	desc = kussia.15.d
+	picture = GFX_report_event_BTK_89squad_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.15.a
+		add_ideas = KUS_inspections_in_mo_idea
+		hidden_effect = {
+			country_event = {
+				id = kussia.16
+				days = 100
+				random_days = 40
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kussia.16
+	title = kussia.16.t
+	desc = kussia.16.d
+	picture = GFX_report_event_BTK_89squad_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.16.a
+		219 = {
+			add_manpower = -1200
+		}
+		253 = {
+			add_manpower = -450
+		}
+		242 = {
+			add_manpower = -700
+		}
+		213 = {
+			add_manpower = -340
+		}
+	}
+}

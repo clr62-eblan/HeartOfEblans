@@ -9,7 +9,7 @@ state = {
 		aluminium = 7 # was: 20
 	}
 
-	state_category = city
+	state_category = rural
 
 	history = {
 		
@@ -21,7 +21,7 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 2 #was: 6
 			industrial_complex = 1
 		}
 		

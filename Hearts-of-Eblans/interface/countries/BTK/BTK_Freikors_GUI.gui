@@ -1,0 +1,34 @@
+guiTypes = {
+    containerWindowType = {
+    	name = "BTK_freikors_window"
+    	position = { x = 50 y = 50 }
+    	size = { width = 100% height= 145 }	
+        
+    	iconType = {
+            name = "BTK_freikors_logo"
+    		position = { x = 24 y = 5 }
+    		spriteType = "GFX_idea_SQUAD_freikors_logo"
+            pdx_tooltip = "BTK_freikors_desc"
+    		scale = 0.4
+    	}
+        instantTextBoxType = {
+            name ="BTK_freikors_title"
+            position = { x = 215 y = 15 }
+            font = "hoi_36header"
+            text = "BTK_freikors_title_text"
+            format = center
+            maxHeight = 200
+            maxWidth = 200
+        }
+    
+    	instantTextBoxType = {
+			name ="BTK_freikors_status"
+			position = { x = 240 y = 60 }
+			font = "hoi_24header"
+			text = "BTK_freikors_status_text"
+			format = center
+			maxHeight = 100
+			maxWidth = 150
+		}
+    }
+}

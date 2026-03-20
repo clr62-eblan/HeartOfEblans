@@ -11,9 +11,8 @@ state = {
 
 	history = {
 
-		owner = GCH
-		add_core_of = GCH
-		add_core_of = BTK
+		owner = MUH
+		add_core_of = MUH
 
 		victory_points = { 
 			11435 1 # Bitburg

@@ -1,0 +1,85 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KUS_shpana_window"
+		position = { x = 50 y = 50 }
+		size = { width = 100% height = 620 }
+		instantTextBoxType = {
+			name ="KUS_SHPANA_HEADER"
+			position = { x = 10 y = -5 }
+			font = "hoi_24header"
+			text = "KUS_SHPANA_HEADER_TEXT"
+			format = center
+			maxHeight = 80
+			maxWidth = 470
+		}			
+		
+		instantTextBoxType = {
+			name ="KUS_SHPANA_DESC"
+			position = { x = 10 y = 10 }
+			font = "hoi_18"
+			text = "KUS_SHPANA_DESC_TEXT"
+			format = center
+			maxHeight = 80
+			maxWidth = 470
+		}
+		
+		#buttonType = {
+		#	name = "GON_palace_first_floor"
+		#	position = { x = 0 y = 10 }
+		#	spriteType = "GFX_GON_palace_floor_1_btn"
+		#}
+		#
+		#buttonType = {
+		#	name = "GON_palace_second_floor"
+		#	position = { x = 435 y = 10 }
+		#	spriteType = "GFX_GON_palace_floor_2_btn"
+		#}
+		
+		iconType = {
+			name = "Shpana_kussia_control"
+			position = { x = 10 y = 75 }
+			quadTextureSprite = "GFX_goal_DOR_cuterock_rebirth"
+            scale = 0.5
+		}
+
+		iconType = {
+			name = "Shpana_mafanya_control"
+			position = { x = 72 y = 47 }
+			spriteType = "GFX_goal_DOR_cuterock_rebirth"
+            scale = 0.5
+		}
+
+		iconType = {
+			name = "Shpana_sexbomb_control"
+			position = { x = 190 y = 320 }
+			spriteType = "GFX_goal_DOR_cuterock_rebirth"
+            scale = 0.5
+		}	
+
+
+		iconType = {
+			name = "Shpana_lida_control"
+			position = { x = 240 y = 213 }
+			spriteType = "GFX_goal_DOR_cuterock_rebirth"
+            scale = 0.5
+		}	
+
+		iconType = {
+			name = "Shpana_der_control"
+			position = { x = 65 y = 365 }
+			spriteType = "GFX_goal_DOR_cuterock_rebirth"
+            scale = 0.5
+		}	
+		
+		instantTextBoxType = {
+			name ="KUS_SHPANA_PRETENDENTS"
+			position = { x = 10 y = 490 }
+			font = "hoi_18"
+			text = "KUS_SHPANA_PRETENDENTS_TEXT"
+			format = center
+			maxHeight = 80
+			maxWidth = 470
+		}
+		
+	}
+}

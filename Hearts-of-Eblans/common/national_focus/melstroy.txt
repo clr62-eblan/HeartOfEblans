@@ -1,0 +1,247 @@
+# CREATED BY CLR62 - Licensed under MIT License
+ 
+focus_tree = {
+	id = zolo_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = MLS
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 150 y = 1000 }
+
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+
+    focus = {
+		id = MLS_posledniy_poezd_iz_murino
+		icon = GFX_goal_unknown
+		x = 13
+		y = 0
+		cost = 5
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = MLS_ya_zapert_na_etom_ostrove
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		offset = {
+		}
+		cost = 5
+        relative_position_id = MLS_posledniy_poezd_iz_murino
+        prerequisite = { focus = MLS_posledniy_poezd_iz_murino }
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = MLS_ostrovnie_partneri
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		offset = {
+		}
+		cost = 5
+        relative_position_id = MLS_ya_zapert_na_etom_ostrove
+        prerequisite = { focus = MLS_ya_zapert_na_etom_ostrove }
+
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = MLS_reorganize_drunskuyu_armiyu
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		relative_position_id = MLS_ya_zapert_na_etom_ostrove
+        prerequisite = { focus = MLS_ya_zapert_na_etom_ostrove }
+		cost = 5
+
+	}
+
+    focus = {
+		id = MLS_stop_a_gde_kolbaska
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = MLS_reorganize_drunskuyu_armiyu
+        prerequisite = { focus = MLS_reorganize_drunskuyu_armiyu }
+		cost = 5
+
+	}
+
+    focus = {
+		id = MLS_metodi_borby_s_fogami
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = MLS_reorganize_drunskuyu_armiyu
+        prerequisite = { focus = MLS_reorganize_drunskuyu_armiyu }
+		cost = 5
+	}
+
+    focus = {
+		id = MLS_nakormit_armiyu
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = MLS_metodi_borby_s_fogami
+        prerequisite = { focus = MLS_metodi_borby_s_fogami }
+        prerequisite = { focus = MLS_stop_a_gde_kolbaska }
+		cost = 5
+
+	}
+
+    focus = {
+		id = MLS_ustoychivost_k_terperaturnim_izmeneniyam
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = MLS_metodi_borby_s_fogami
+        prerequisite = { focus = MLS_metodi_borby_s_fogami }
+        prerequisite = { focus = MLS_banya_doda_i_pradoda }
+		cost = 5
+	}
+
+	focus = {
+		id = MLS_deploy_in_selo_molochnoe
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = MLS_ya_zapert_na_etom_ostrove
+        prerequisite = { focus = MLS_ya_zapert_na_etom_ostrove }
+		cost = 5
+
+	}
+
+	focus = {
+		id = MLS_banya_doda_i_pradoda
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = MLS_deploy_in_selo_molochnoe
+        prerequisite = { focus = MLS_deploy_in_selo_molochnoe }
+		cost = 5
+
+	}
+
+    focus = {
+		id = MLS_rekvizirovat_tramvai
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = MLS_deploy_in_selo_molochnoe
+        prerequisite = { focus = MLS_deploy_in_selo_molochnoe }
+		cost = 5
+
+	}
+
+	focus = {
+		id = MLS_caught_pauchnost
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = MLS_deploy_in_selo_molochnoe
+        prerequisite = { focus = MLS_deploy_in_selo_molochnoe }
+		cost = 5
+
+	}
+	focus = {
+		id = MLS_mobilize_paukov #Укротить паучность
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = MLS_caught_pauchnost
+        prerequisite = { focus = MLS_caught_pauchnost }
+		cost = 5
+
+	}
+
+
+	focus = {
+		id = MLS_napadenie_armii_murino
+		icon = GFX_goal_unknown
+		x = -4
+		y = 1
+		relative_position_id = MLS_mobilize_paukov
+        prerequisite = { focus = MLS_mobilize_paukov focus = MLS_ustoychivost_k_terperaturnim_izmeneniyam focus = MLS_nakormit_armiyu }
+		cost = 5
+	}
+
+	focus = {
+		id = MLS_derevenskoe_nachalo
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = MLS_napadenie_armii_murino
+        prerequisite = { focus = MLS_napadenie_armii_murino }
+		cost = 5
+	}
+
+	focus = {
+		id = MLS_new_generals
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = MLS_derevenskoe_nachalo
+        prerequisite = { focus = MLS_derevenskoe_nachalo }
+		cost = 5
+	}
+	focus = {
+		id = MLS_zashita_ot_iphonovoy_artillerii
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = MLS_new_generals
+        prerequisite = { focus = MLS_new_generals }
+		cost = 5
+	}
+	focus = {
+		id = MLS_priora_cveta_patisona
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = MLS_derevenskoe_nachalo
+        prerequisite = { focus = MLS_derevenskoe_nachalo }
+		cost = 5
+	}
+
+	focus = {
+		id = MLS_stitchki_s_gorodskimi
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = MLS_priora_cveta_patisona
+        prerequisite = { focus = MLS_priora_cveta_patisona }
+        prerequisite = { focus = MLS_new_generals }
+		cost = 5
+	}
+
+
+	focus = {
+		id = MLS_neobhodimost_retirovatsya
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = MLS_stitchki_s_gorodskimi
+        prerequisite = { focus = MLS_stitchki_s_gorodskimi }
+		cost = 5
+	}
+}

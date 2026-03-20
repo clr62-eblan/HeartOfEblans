@@ -27,3 +27,102 @@ country_event = {
 		add_ideas = twitch_platform
 	}
 }
+
+country_event = {
+	id = sqgen.2
+	title = sqgen.2.t
+	desc = sqgen.2.d
+	picture = GFX_event_eqc_new_manehattan
+
+	is_triggered_only = yes
+
+	option = {#Moderate Investment will suffice
+		name = sqgen.2.a
+		add_stability = -0.05
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	option = {#We have to build as many as possible
+		name = sqgen.2.b
+		add_stability = -0.10
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	option = {#Build them all! It doesn't matter how badly they dislike it!
+		name = sqgen.2.c
+		trigger = {
+			has_completed_focus = FBK_ask_RIV_for_help
+		}
+		add_stability = -0.15
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {#Attitude Towards Military Factories
+	id = sqgen.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FBK.51"}
+	title = sqgen.3.t
+	desc = sqgen.3.d
+	picture = GFX_event_eqc_new_manehattan
+
+	is_triggered_only = yes
+
+	option = {#Small development
+		name = sqgen.3.a
+		add_stability = -0.05
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	option = {#A solid development
+		name = sqgen.3.b
+		add_stability = -0.10
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	option = {#Massive Arsenals!
+		name = sqgen.3.c
+		trigger = {
+			has_government = fascism
+		}
+		add_stability = -0.15
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
