@@ -949,7 +949,7 @@ focus_tree = {
 
 		available = {
 			BTK = {
-				has_completed_focus = BTK_resource_extraction
+				has_completed_focus = SQUAD_voen_kontrakti
 			}
 		}
 
@@ -987,7 +987,7 @@ focus_tree = {
 
 		available = {
 			BTK = {
-				has_completed_focus = BTK_vovavia
+				has_completed_focus = SQUAD_vovavia
 			}
 		}
 
@@ -1441,6 +1441,10 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = hametova.59 hours = 2 }
 			remove_ideas = hametova_politics
+
+			set_rule = {
+				can_create_factions = yes
+			}
         }
     }
 

@@ -6,17 +6,7 @@ state = {
 
 	history = {
 
-		owner = ZUS
-
-		IF = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
-			transfer_state_to = ZUS
-			add_dynamic_modifier = {
-				modifier = COG_state_loyal_to_belgium_modifier
-			}
-		}
+		owner = ADL
 
 		buildings = {
 			infrastructure = 2
@@ -41,7 +31,7 @@ state = {
 			13365 1 # Nkamba
 		}
 
-		add_core_of = ZUS
+		add_core_of = ADL
 
 	}
 

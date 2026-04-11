@@ -108,6 +108,12 @@ ideas = {
 						has_war = yes
 						enemies_strength_ratio > 0.5
 					}
+					AND = {
+						original_tag = SVI
+						SVI = {
+							has_completed_focus = SVI_the_Duma_defense_act
+						}
+					}
 				}
 				has_war_support > 0.2
 				#Special rules AST in TFV

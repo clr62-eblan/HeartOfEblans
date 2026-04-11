@@ -103,3 +103,7 @@ chance = { factor = 0 }}
 music = {
 song = "freakland"
 chance = { factor = 0 }}
+
+music = {
+song = "derevnya_durakov"
+chance = { factor = 0 }}

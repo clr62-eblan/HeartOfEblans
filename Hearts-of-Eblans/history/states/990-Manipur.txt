@@ -7,8 +7,8 @@ state={
 	state_category = rural
 	manpower = 445606
 	history={
-		owner = SAS
-		add_core_of = SAS
+		owner = NWK
+		add_core_of = NWK
 		
 		buildings = {
 			infrastructure = 1

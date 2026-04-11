@@ -1,1 +1,207 @@
-debug_decisions = {}
+debug_decisions = {
+    BTK_kill_shefius = {
+		priority = 32
+		icon = GFX_narezki_mbrff_decision_icon
+
+		allowed = { 
+			original_tag = BTK
+		}
+
+		available = {
+            original_tag = BTK
+		}
+
+		visible = {
+			original_tag = BTK
+		}
+
+		cost = 0
+
+		complete_effect = {
+			country_event = btk_squad.4
+		}
+	}
+    ZOL_form_empire_instantly = {
+		priority = 32
+		icon = GFX_narezki_mbrff_decision_icon
+
+		allowed = { 
+			original_tag = ZOL
+		}
+
+		available = {
+            original_tag = ZOL
+		}
+
+		visible = {
+			original_tag = ZOL
+		}
+
+		cost = 0
+
+		complete_effect = {
+			158 = {
+				transfer_state_to = ZOL
+			}
+			161 = {
+				transfer_state_to = ZOL
+			}
+			735 = {
+				transfer_state_to = ZOL
+			}
+			851 = {
+				transfer_state_to = ZOL
+			}
+			21 = {
+				transfer_state_to = ZOL
+			}
+			162 = {
+				transfer_state_to = ZOL
+			}
+			157 = {
+				transfer_state_to = ZOL
+			}
+			2 = {
+				transfer_state_to = ZOL
+			}
+			849 = {
+				transfer_state_to = ZOL
+			}
+			117 = {
+				transfer_state_to = ZOL
+			}
+			156 = {
+				transfer_state_to = ZOL
+			}
+			1 = {
+				transfer_state_to = ZOL
+			}
+			736 = {
+				transfer_state_to = ZOL
+			}
+			852 = {
+				transfer_state_to = ZOL
+			}
+			103 = {
+				transfer_state_to = ZOL
+			}
+			163 = {
+				transfer_state_to = ZOL
+			}
+			804 = {
+				transfer_state_to = ZOL
+			}
+			853 = {
+				transfer_state_to = ZOL
+			}
+			102 = {
+				transfer_state_to = ZOL
+			}
+			109 = {
+				transfer_state_to = ZOL
+			}
+			104 = {
+				transfer_state_to = ZOL
+			}
+			105 = {
+				transfer_state_to = ZOL
+			}
+			934 = {
+				transfer_state_to = ZOL
+			}
+			44 = {
+				transfer_state_to = ZOL
+			}
+			805 = {
+				transfer_state_to = ZOL
+			}
+			185 = {
+				transfer_state_to = ZOL
+			}
+			186 = {
+				transfer_state_to = ZOL
+			}
+			114 = {
+				transfer_state_to = ZOL
+			}
+			115 = {
+				transfer_state_to = ZOL
+			}
+			22 = {
+				transfer_state_to = ZOL
+			}
+			25 = {
+				transfer_state_to = ZOL
+			}
+			31 = {
+				transfer_state_to = ZOL
+			}
+			165 = {
+				transfer_state_to = ZOL
+			}
+			19 = {
+				transfer_state_to = ZOL
+			}
+			806 = {
+				transfer_state_to = ZOL
+			}
+			172 = {
+				transfer_state_to = ZOL
+			}
+			166 = {
+				transfer_state_to = ZOL
+			}
+			794 = {
+				transfer_state_to = ZOL
+			}
+			167 = {
+				transfer_state_to = ZOL
+			}
+			177 = {
+				transfer_state_to = ZOL
+			}
+			845 = {
+				transfer_state_to = ZOL
+			}
+			847 = {
+				transfer_state_to = ZOL
+			}
+			3 = {
+				transfer_state_to = ZOL
+			}
+			151 = {
+				transfer_state_to = ZOL
+			}
+			846 = {
+				transfer_state_to = ZOL
+			}
+			159 = {
+				transfer_state_to = ZOL
+			}
+			850 = {
+				transfer_state_to = ZOL
+			}
+			160 = {
+				transfer_state_to = ZOL
+			}
+			39 = {
+				transfer_state_to = ZOL
+			}
+			32 = {
+				transfer_state_to = ZOL
+			}
+			20 = {
+				transfer_state_to = ZOL
+			}
+			26 = {
+				transfer_state_to = ZOL
+			}
+			33 = {
+				transfer_state_to = ZOL
+			}
+			23 = {
+				transfer_state_to = ZOL
+			}
+		}
+	}
+}

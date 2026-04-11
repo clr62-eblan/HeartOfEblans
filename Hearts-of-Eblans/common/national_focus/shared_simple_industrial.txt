@@ -154,10 +154,10 @@ shared_focus = {
 	cost = 6
 	completion_reward = {
 		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
-				type = industrial_complex
-				level = 1
+				type = arms_factory
+				level = 2
 				instant_build = yes
 			}
 			add_building_construction = {
@@ -210,7 +210,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = GENERAL_ask_RIV_for_help
+	id = GENERAL_FIND_EXTERNAL_HELP
 	icon = GFX_focus_generic_agricultural_subsidies
 	x = 4
 	y = 1
@@ -225,7 +225,7 @@ shared_focus = {
 	}
 	cost = 6
 	completion_reward = {
-		add_stability = -0.05
+		add_stability = -0.03
 		add_political_power = -50
 
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -257,7 +257,7 @@ shared_focus = {
 	available = {
 	}
 	mutually_exclusive = {
-		focus = GENERAL_ask_RIV_for_help
+		focus = GENERAL_FIND_EXTERNAL_HELP
 	}
 	cost = 6
 	completion_reward = {
@@ -271,8 +271,16 @@ shared_focus = {
 		random_owned_controlled_state = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
-				type = arms_factory
+				type = industrial_complex
 				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -287,7 +295,7 @@ shared_focus = {
 	y = 2
 	prerequisite = {
 		focus = GENERAL_national_strengthening
-		focus = GENERAL_ask_RIV_for_help
+		focus = GENERAL_FIND_EXTERNAL_HELP
 	}
 	available = {
 		NOT = {
@@ -305,6 +313,14 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -314,7 +330,7 @@ shared_focus = {
 	x = 4
 	y = 2
 	prerequisite = {
-		focus = GENERAL_ask_RIV_for_help
+		focus = GENERAL_FIND_EXTERNAL_HELP
 	}
 	mutually_exclusive = {
 		focus = GENERAL_better_crops
@@ -351,7 +367,7 @@ shared_focus = {
 	}
 	cost = 6
 	completion_reward = {
-		add_stability = -0.05
+		add_stability = -0.03
 		add_war_support = 0.05
 		add_political_power = 100
 
@@ -393,7 +409,6 @@ shared_focus = {
 	}
 	cost = 6
 	completion_reward = {
-		add_stability = -0.10
 		add_war_support = 0.05
 		add_political_power = -100
 
@@ -433,7 +448,7 @@ shared_focus = {
 	}
 	cost = 6
 	completion_reward = {
-		add_stability = -0.05
+		add_stability = -0.02
 		add_manpower = -500
 
 		random_owned_controlled_state = {
@@ -463,40 +478,6 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
-}
-
-shared_focus = {
-	id = GENERAL_newer_farming_methods
-	icon = GFX_focus_generic_farmland
-	x = 3
-	y = 3
-	prerequisite = {
-		focus = GENERAL_import_agricultural_tools
-		focus = GENERAL_better_crops
-	}
-	available = {
-		NOT = {
-			has_idea = GENERAL_slowed_modernisation
-			has_country_flag = GENERAL_hempstrand
-		}
-	}
-	cost = 6
-	completion_reward = {
-		add_stability = -0.05
-		if = {
-			limit = {
-				has_idea = GENERAL_crops_idea_weak
-			}
-			swap_ideas = { remove_idea = GENERAL_crops_idea_weak add_idea = GENERAL_crops_idea_medium }
-		}
-		else_if = {
-			limit = {
-				has_idea = GENERAL_crops_idea_medium
-			}
-			swap_ideas = { remove_idea = GENERAL_crops_idea_medium add_idea = GENERAL_crops_idea_strong }
-		}
-	}
-	search_filters = { FOCUS_FILTER_STABILITY }
 }
 
 shared_focus = {
@@ -544,7 +525,7 @@ shared_focus = {
 	}
 	cost = 6
 	completion_reward = {
-		add_stability = -0.05
+		add_stability = -0.02
 		add_war_support = 0.03
 		add_manpower = -1300
 		random_owned_controlled_state = {
@@ -568,7 +549,7 @@ shared_focus = {
 shared_focus = {
 	id = GENERAL_preserve_tradition
 	icon = GFX_goal_generic_defence
-	x = 0
+	x = 1
 	y = 5
 	prerequisite = {
 		focus = GENERAL_support_landowners
@@ -686,43 +667,6 @@ shared_focus = {
 		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
-}
-
-shared_focus = {
-	id = GENERAL_foreign_education
-	icon = GFX_focus_generic_court
-	x = 2
-	y = 5
-	prerequisite = {
-		focus = GENERAL_reformed_landowning
-		focus = GENERAL_support_landowners
-	}
-	mutually_exclusive = {
-		focus = GENERAL_preserve_tradition
-	}
-	available = {
-		NOT = {
-			has_idea = GENERAL_slowed_modernisation
-			has_country_flag = GENERAL_hempstrand
-		}
-	}
-	cost = 6
-	completion_reward = {
-		add_stability = -0.05
-		add_political_power = 100
-
-		if = {
-			limit = {
-				NOT = { has_idea = divine_intellect }
-			}
-			custom_effect_tooltip = intellect_will_increase_tt
-
-			hidden_effect = {
-				increase_intellect_law = yes
-			}
-		}
-	}
-	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 }
 
 shared_focus = {

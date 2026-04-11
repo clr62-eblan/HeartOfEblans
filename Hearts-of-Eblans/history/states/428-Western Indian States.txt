@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = SAS
-		add_core_of = SAS
+		owner = TND
+		add_core_of = TND
 
 		victory_points = {
 			10118 1 # Jamnagar

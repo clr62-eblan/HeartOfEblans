@@ -7,15 +7,16 @@ state={
 	state_category = wasteland
 	
 	resources={
-		chromium=90 # was: 168
+		chromium=25 # was: 168
 	}
 
 	history={
-		owner = ZUS
+		owner = ADE
 		buildings = {
 			infrastructure = 1
+			air_base = 2
 		}
-		add_core_of = BOT
+		add_core_of = ADE
 		victory_points = {
 			8214 1
 		}

@@ -39,4 +39,20 @@ spriteTypes = {
 		name = "GFX_shpana_der_uncontrolled"
 		texturefile = "gfx/interface/custom_gui/KUS/der_uncontrolled.png"
 	}
+
+
+    spriteType = {
+		name = "GFX_idea_kus_economy_control"
+		texturefile = "gfx/interface/ideas/kus_economy_control.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_kus_narodnoe_bludo"
+		texturefile = "gfx/interface/ideas/idea_KUS_narodnoe_bludo.dds"
+	}
+
+
+    spriteType = {
+		name = "GFX_report_event_KUS_grafi"
+		texturefile = "gfx/event_pictures/kus_artem_grafik.dds"
+	}
 }

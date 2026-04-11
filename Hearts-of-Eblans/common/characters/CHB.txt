@@ -41,12 +41,13 @@ characters = {
             planning_skill = 1
             logistics_skill = 1
             legacy_id = -1
+			visible = { has_country_flag = CHB_MODERS_RETURNED }
        }
 	   advisor = {
            slot = army_chief
            idea_token = apppostol
            ledger = army
-           allowed = { original_tag = CHB } # Optional, doesn't change anything.
+           allowed = { original_tag = CHB }
            traits = { army_entrenchment_3 }
        }
     }
@@ -62,8 +63,46 @@ characters = {
            slot = political_advisor
            idea_token = lin_night
            cost = 100
-           allowed = { original_tag = CHB NOT = { has_government = communism } } # Optional, doesn't change anything.
+           allowed = { original_tag = CHB NOT = { has_government = communism } NOT = { has_country_flag = CHB_disable_lin_night } }
            traits = { disepticonmilitarist }
+       }
+    }
+
+	eva_tofi ={ 
+        name = "Ева Tofikinss"
+        portraits= {
+            army = {
+				small = "GFX_tofikins_small"
+                large = "GFX_tofikins_large"
+            }
+        }
+	   advisor = {
+           slot = political_advisor
+           idea_token = eva_tofi
+           cost = 100
+           allowed = { 
+                original_tag = CHB
+                OR = {
+                    has_government = fascism 
+                    has_government = neutrality 
+                    has_government = hypecratia
+                } 
+           }
+           available = {
+            has_completed_focus = chb_osudit_tiktokerskoe_prishestvie
+           }
+           traits = { little_churchill }
+       }
+
+       corps_commander = {
+			traits = { }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+            legacy_id = -1
+			visible = { has_completed_focus = chb_osudit_tiktokerskoe_prishestvie }
        }
     }
 
@@ -94,14 +133,14 @@ characters = {
            slot = political_advisor
            idea_token = bogdan_tsymbal
            cost = 100
-           allowed = { original_tag = CHB } # Optional, doesn't change anything.
+           allowed = { original_tag = CHB }
            traits = { eb_internal_affairs_minister }
        }
        advisor = {
            slot = high_command
            idea_token = bogdan_tsymbal
            ledger = army
-           allowed = { original_tag = CHB } # Optional, doesn't change anything.
+           allowed = { original_tag = CHB }
            traits = { army_entrenchment_2 }
        }
     }
@@ -117,7 +156,7 @@ characters = {
            slot = political_advisor
            idea_token = jumper_cube
            cost = 100
-           allowed = { original_tag = CHB } # Optional, doesn't change anything.
+           allowed = { original_tag = CHB }
            available = { has_country_flag = CHB_JUMPER_PASSED }
            traits = { jumper_trait }
        }
@@ -139,12 +178,13 @@ characters = {
             planning_skill = 1
             logistics_skill = 1
             legacy_id = -1
+			visible = { has_country_flag = CHB_MODERS_RETURNED }
        }
 	   advisor = {
            slot = army_chief
            idea_token = miramestinchortt
            ledger = army
-           allowed = { original_tag = CHB } # Optional, doesn't change anything.
+           allowed = { original_tag = CHB }
            traits = { army_infantry_2 }
        }
     }
@@ -183,13 +223,105 @@ characters = {
             planning_skill = 2
             logistics_skill = 2
             legacy_id = -1
+			visible = { has_country_flag = CHB_MODERS_RETURNED }
        }
 	   advisor = {
            slot = high_command
            idea_token = filinnn
            ledger = army
-           allowed = { original_tag = CHB } # Optional, doesn't change anything.
+           allowed = { original_tag = CHB }
            traits = { army_CombinedArms_2 }
        }
     }
+
+    venzek ={ 
+        name = "Venzek_"
+        portraits= {
+            army = {
+                large = "GFX_chb_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { urban_assault_specialist trait_engineer }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 1
+            legacy_id = -1
+       }
+    }
+
+    chapaclutch ={ 
+        name = "ChapaClutch"
+        portraits= {
+            army = {
+                large = "GFX_chb_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = chapaclutch
+			allowed = {
+				original_tag = CHB
+				has_dlc = "Gotterdammerung"
+				has_dlc = "La Resistance"
+			}
+			available = {
+				has_completed_focus = chb_otdelenie_razvedki
+			}
+
+			traits = {
+				GER_intelligence_coordinator
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+		}
+    }
+
+    CHB_mazelov_fas = {
+		name=CHB_maza
+		portraits={
+			civilian = {
+				large="GFX_portrait_CHB_mzlff"
+			}
+		}
+		country_leader = {
+            ideology = gen_nazism
+            traits = { # 
+                dictator
+			}
+            desc = CHB_mzlff_desc  
+        }
+
+		corps_commander = {
+			traits = { fast_planner inspirational_leader }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 2
+            legacy_id = -1
+       }
+	}
+
+    CHB_zavertin = {
+		name=CHB_zavertin
+		portraits={
+			civilian = {
+				large="GFX_portrait_CHB_zavertin"
+			}
+		}
+		country_leader = {
+            ideology = stalinism
+            traits = { # 
+                
+			}
+            desc = CHB_zavertin_desc  
+        }
+	}
 }

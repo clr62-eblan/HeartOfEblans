@@ -7,8 +7,8 @@ state = {
 	
 	history = {
 		
-		owner = GNS
-		add_core_of = GNS
+		owner = KRU
+		add_core_of = KRU
 
 		buildings = {
 			infrastructure = 4

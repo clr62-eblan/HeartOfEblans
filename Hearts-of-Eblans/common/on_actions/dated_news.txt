@@ -62,6 +62,32 @@ on_actions = {
                     set_country_flag = CHB_JUMPER_PASSED
                 }
             }
+            if = {
+                limit = {
+                    date > 2026.04.05
+                    NOT = { has_global_flag = MAZELOF_OGUREZ }
+                    CHB = {
+                        has_government = fascism
+                    }
+                }
+
+                set_global_flag = MAZELOF_OGUREZ
+                news_event = squad_news.34
+            }
+            if = {
+                limit = {
+                    date > 2026.05.20
+                    NOT = { has_global_flag = DKK_TNDR }
+                    DKK = {
+                        NOT = { has_government = communism }
+                    }
+                }
+
+                set_global_flag = DKK_TNDR
+                DKK = {
+                    country_event = { id = sqgen.4 hours = 2 }
+                }
+            }
 
             #if = {
             #    limit = {

@@ -9,8 +9,8 @@ state={
 		chromium=2 # was: 2
 	}
 	history={
-		owner = SAS
-		add_core_of = SAS
+		owner = DNL
+		add_core_of = DNL
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

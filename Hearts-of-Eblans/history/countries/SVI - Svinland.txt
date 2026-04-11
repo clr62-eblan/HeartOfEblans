@@ -35,6 +35,14 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+set_autonomy = {
+	target = ASL
+	autonomous_state = autonomy_colony
+}
+
+set_variable = { oshidaemie_dohod_arov = 235 }
+set_variable = { arov_v_kazne = 50 }
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -168,7 +176,7 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "AntoshaT2x.dds"
 	
-	ideology = hypetiktok
+	ideology = hypetwitch
 	traits = {
 		el_presidente
 	}

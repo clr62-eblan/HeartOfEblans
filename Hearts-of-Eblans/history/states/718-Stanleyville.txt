@@ -10,7 +10,7 @@ state = {
 
 	history = {
 
-		owner = ZUS
+		owner = ADL
 
 		buildings = {
 			infrastructure = 1
@@ -20,7 +20,7 @@ state = {
 			1950 3 # Stanleyville
 		}
 
-		add_core_of = ZUS
+		add_core_of = ADL
 
 	}
 

@@ -7,6 +7,7 @@ state = {
 
 	history = {
 
+		owner = ZUS
 		#owner = AST
 		#add_core_of = AST
 

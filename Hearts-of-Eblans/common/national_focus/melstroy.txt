@@ -1,13 +1,13 @@
 # CREATED BY CLR62 - Licensed under MIT License
  
 focus_tree = {
-	id = zolo_focus
+	id = mel_focus
 
 	country = {
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 0
 			tag = MLS
 		}
 	}

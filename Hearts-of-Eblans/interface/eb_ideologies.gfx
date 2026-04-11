@@ -18,6 +18,10 @@ spriteTypes = {
 		name = "GFX_ideology_hype_cuterock"
 		texturefile = "gfx/interface/ideologies/ideology_hype_cuterock.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_hypetwitch"
+		texturefile = "gfx/interface/ideologies/ideology_hypetwitch.dds"
+	}
 
 	spriteType = {
 		name = "GFX_ideology_neutrality_group"

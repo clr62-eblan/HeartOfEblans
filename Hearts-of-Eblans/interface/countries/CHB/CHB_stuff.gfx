@@ -16,4 +16,44 @@ spriteTypes = {
 	    name = "NCB_LinNightPortrait"
 	    texturefile = "gfx/interface/custom_gui/CHB/Sever/lin_nightsever.png"			
 	}
+	SpriteType = {
+	    name = "GFX_tofikins_small"
+	    texturefile = "gfx/leaders/CHB/tofikins_small.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_tofikins_large"
+	    texturefile = "gfx/leaders/CHB/tofikins.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_report_event_chb_ncb_uprise"
+	    texturefile = "gfx/event_pictures/CHB/NCB_uprise_2.png"			
+	}
+	SpriteType = {
+	    name = "GFX_report_event_chb_zavertin_arrest"
+	    texturefile = "gfx/event_pictures/CHB/CHB_zavertin_arrest.png"			
+	}
+	SpriteType = {
+	    name = "GFX_report_event_chb_koncerts"
+	    texturefile = "gfx/event_pictures/CHB/CHB_koncerts.png"			
+	}
+	SpriteType = {
+	    name = "GFX_report_event_chb_phantasmagoria_park"
+	    texturefile = "gfx/event_pictures/chb_phantasmagoria_park.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_report_event_chb_ogurez"
+	    texturefile = "gfx/event_pictures/CHB/CHB_ogurez_news.png"			
+	}
+	SpriteType = {
+	    name = "GFX_idea_chb_mazloyun"
+	    texturefile = "gfx/interface/ideas/chb_mazloyun.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_idea_chb_smartiki"
+	    texturefile = "gfx/interface/ideas/chb_smartiki.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_idea_chb_phantasmagoria_ide"
+	    texturefile = "gfx/interface/ideas/chb_phantasmagor.dds"			
+	}
 }

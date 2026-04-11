@@ -59,8 +59,18 @@ SpriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_tod_album_chb_glavtayna_icon"
+		texturefile = "gfx/interface/custom_gui/TrackOfDay/Mzlff/CHB_glavtayna.png"
+	}
+
+	spriteType = {
 		name = "GFX_tod_album_chb_brightside_icon"
 		texturefile = "gfx/interface/custom_gui/TrackOfDay/Mzlff/CHB_brightside.png"
+	}
+
+	spriteType = {
+		name = "GFX_tod_album_chb_phantasmagoria_icon"
+		texturefile = "gfx/interface/custom_gui/TrackOfDay/Mzlff/CHB_phantasmagoria.png"
 	}
 
 	spriteType = {
@@ -139,6 +149,14 @@ SpriteTypes = {
 	spriteType = {
 		name = "GFX_tod_decision_chb_brightside"
 		texturefile = "gfx/interface/decisions/icons/CHB_brightside.dds"
+	}
+	spriteType = {
+		name = "GFX_tod_decision_chb_phantasmagoria"
+		texturefile = "gfx/interface/decisions/icons/CHB_phantasmagoria.dds"
+	}
+	spriteType = {
+		name = "GFX_tod_decision_chb_glavtayna"
+		texturefile = "gfx/interface/decisions/icons/CHB_glavtayna.dds"
 	}
 
 

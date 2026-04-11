@@ -79,6 +79,11 @@ country_event = {
 				is_subject = yes
 			}
 		}
+		AMN = {
+			NOT = {
+				controls_province = 11666
+			}
+		}
 	}
 
 	immediate = {

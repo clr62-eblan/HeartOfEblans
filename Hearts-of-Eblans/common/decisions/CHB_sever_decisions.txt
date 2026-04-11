@@ -1,20 +1,20 @@
 CHB_sever_category = {
 
-	chb_arrest_coordinator = {
-		icon = generic_spy_coup
-		
-		available = {
-			political_power > 100
-		}
-		
-		cost = 100
-		days_remove = 14
-		
-		complete_effect = {
-			# Triggers coordinate arrest & cycle
-			country_event = { id = chb_sever.2 }
-		}
-	}
+	#chb_arrest_coordinator = {
+	#	icon = generic_spy_coup
+	#	
+	#	available = {
+	#		political_power > 100
+	#	}
+	#	
+	#	cost = 100
+	#	days_remove = 14
+	#	
+	#	complete_effect = {
+	#		# Triggers coordinate arrest & cycle
+	#		country_event = { id = chb_sever.2 }
+	#	}
+	#}
 	
 	chb_send_humanitarian_aid = {
 		icon = generic_goods
@@ -114,9 +114,54 @@ CHB_sever_category = {
 		complete_effect = {
 			every_owned_state = {
 				limit = { is_core_of = NCB }
-				add_resistance = -30
+				add_resistance = -10
 				add_compliance = -10
 			}
+		}
+	}
+
+	chb_vvod_voysk = {
+		icon = generic_military_deal
+
+		days_mission_timeout = 50
+		activation = {
+			always = no
+		}
+		
+		available = { 
+			NCB = {
+				any_core_state = {
+					is_controlled_by = CHB
+				}
+				all_core_state = {
+					OR = {
+						NOT = { is_controlled_by = CHB }
+						CHB = {
+							divisions_in_state = {
+								state = PREV
+								size > 0
+							}
+						}
+					}
+				}
+			}
+		}
+		is_good = no
+		
+		complete_effect = {
+			random_list = {
+				70 = {
+					country_event = { id = chb_sever.3 days = 2 }
+				}
+				30 = {
+					country_event = { id = chb_sever.5 days = 2 }
+				}
+			}
+			
+		}
+
+		timeout_effect = {
+			country_event = { id = chb_sever.4 days = 2 }
 		}
 	}
 

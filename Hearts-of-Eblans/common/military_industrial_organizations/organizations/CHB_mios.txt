@@ -8,7 +8,9 @@ military_industrial_organization = {
 		}
 
 		available = {
-			has_completed_focus = chb_smartiks_industry
+			CHB = {
+				has_completed_focus = chb_smartiki_organisation
+			}
 		}
 
 		equipment_type = {

@@ -1,0 +1,326 @@
+add_namespace = chb_politics
+
+# Положительная диктатура - завершение rule_by_fear
+country_event = {
+	id = chb_politics.1
+	title = chb_politics.1.t
+	desc = chb_politics.1.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_politics.1.a
+		add_stability = 0.05
+		add_political_power = 50
+		add_ideas = chb_rule_by_fear_idea
+	}
+}
+
+# Переговоры с ЛинНайтом - он отказывается
+country_event = {
+	id = chb_politics.2
+	title = chb_politics.2.t
+	desc = chb_politics.2.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_politics.2.a
+		add_political_power = -50
+		add_stability = -0.03
+		add_timed_idea = { idea = chb_linnight_deal_idea days = 200 }
+	}
+}
+
+# Модеры возвращаются на фронт (legacy - может вызываться другими способами)
+country_event = {
+	id = chb_politics.3
+	title = chb_politics.3.t
+	desc = chb_politics.3.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_politics.3.a
+		set_country_flag = CHB_MODERS_RETURNED
+		army_experience = 25
+	}
+}
+
+# Единая нация - торжественное объединение
+country_event = {
+	id = chb_politics.4
+	title = chb_politics.4.t
+	desc = chb_politics.4.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_politics.4.a
+		add_political_power = 100
+		add_stability = 0.05
+		add_war_support = 0.1
+		add_ideas = chb_national_unity_idea
+	}
+}
+
+# Ультиматум Флек-Ленду
+country_event = {
+	id = chb_politics.5
+	title = chb_politics.5.t
+	desc = chb_politics.5.d
+	picture = GFX_report_event_NOR_storting
+
+	is_triggered_only = yes
+
+	# Гарантировать независимость в обмен на Стамбул
+	option = {
+		name = chb_politics.5.a
+		FLA = {
+			country_event = { id = chb_politics.50 hours = 6 }
+		}
+	}
+
+	# Забрать силой
+	option = {
+		name = chb_politics.5.b
+		create_wargoal = {
+			type = annex_everything
+			target = FLA
+		}
+	}
+}
+
+# FLA receives ultimatum
+country_event = {
+	id = chb_politics.50
+	title = chb_politics.50.t
+	desc = chb_politics.50.d
+	picture = GFX_report_event_NOR_storting
+
+	is_triggered_only = yes
+
+	# Accept - give Stambul
+	option = {
+		name = chb_politics.50.a
+		ai_chance = {
+			factor = 60
+		}
+		797 = {
+			transfer_state_to = CHB
+		}
+		CHB = {
+			give_guarantee = FLA
+			country_event = { id = chb_politics.51 hours = 3 }
+		}
+	}
+
+	# Refuse
+	option = {
+		name = chb_politics.50.b
+		ai_chance = {
+			factor = 40
+		}
+		CHB = {
+			country_event = { id = chb_politics.52 hours = 3 }
+			create_wargoal = {
+				type = annex_everything
+				target = FLA
+			}
+		}
+	}
+}
+
+# FLA accepted
+country_event = {
+	id = chb_politics.51
+	title = chb_politics.51.t
+	desc = chb_politics.51.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = excellent
+	}
+}
+
+# FLA refused
+country_event = {
+	id = chb_politics.52
+	title = chb_politics.52.t
+	desc = chb_politics.52.d
+	picture = GFX_report_event_iww_demonstration
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_politics.52.a
+	}
+}
+
+# Красная угроза - заговор Завертина
+country_event = {
+	id = chb_politics.6
+	title = chb_politics.6.t
+	desc = chb_politics.6.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	# Подавить заговор
+	option = {
+		name = chb_politics.6.a
+		add_stability = -0.05
+		add_political_power = -25
+		swap_ideas = {
+			add_idea = CHB_red_threat_idea
+			remove_idea = chb_kom_podpolie_idea
+		}
+		set_country_flag = CHB_red_threat_dealt
+	}
+}
+
+# Арест Завертина
+country_event = {
+	id = chb_politics.7
+	title = chb_politics.7.t
+	desc = chb_politics.7.d
+	picture = GFX_report_event_chb_zavertin_arrest
+
+	is_triggered_only = yes
+
+	# Арестовать
+	option = {
+		name = chb_politics.7.a
+		add_popularity = {
+			ideology = communism
+			popularity = -0.12
+		}
+		add_political_power = 50
+		add_stability = 0.03
+	}
+}
+
+# Министерство правды
+country_event = {
+	id = chb_politics.8
+	title = chb_politics.8.t
+	desc = chb_politics.8.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_politics.8.a
+		add_ideas = chb_ministry_of_truth_idea
+		add_political_power = 25
+	}
+}
+
+# Ультиматум Ломакии - требование Ломауполиса
+country_event = {
+	id = chb_politics.9
+	title = chb_politics.9.t
+	desc = chb_politics.9.d
+	picture = GFX_report_event_NOR_storting
+
+	is_triggered_only = yes
+	
+	# Потребовать дипломатически
+	option = {
+		name = chb_politics.9.a
+		LOM = {
+			country_event = { id = chicken.25 hours = 6 }
+		}
+	}
+}
+
+# Интеграция Ломакии
+country_event = {
+	id = chb_politics.10
+	title = chb_politics.10.t
+	desc = chb_politics.10.d
+	picture = GFX_report_event_NOR_storting
+
+	is_triggered_only = yes
+
+	# Потребовать аннексию
+	option = {
+		name = chb_politics.10.a
+		LOM = {
+			country_event = { id = chicken.26 hours = 6 }
+		}
+	}
+}
+
+# Восточные претензии
+country_event = {
+	id = chb_politics.11
+	title = chb_politics.11.t
+	desc = chb_politics.11.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_politics11.a
+		add_state_claim = 82
+		add_state_claim = 83
+		add_state_claim = 81
+		add_state_claim = 84
+		add_state_claim = 76
+		add_war_support = 0.05
+	}
+}
+
+# Требование Кипра
+country_event = {
+	id = chb_politics.12
+	title = chb_politics.12.t
+	desc = chb_politics.12.d
+	picture = GFX_report_event_NOR_storting
+
+	is_triggered_only = yes
+
+	# Дипломатически
+	option = {
+		name = chb_politics.12.a
+		DKK = {
+			country_event = { id = chicken.27 hours = 6 }
+		}
+	}
+	
+	# Силой
+	option = {
+		name = chb_politics.12.b
+		create_wargoal = {
+			type = annex_everything
+			target = DKK
+		}
+	}
+}
+
+# Я - Чикен-Беконец! Финальное событие
+country_event = {
+	id = chb_politics.13
+	title = chb_politics.13.t
+	desc = chb_politics.13.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_politics.13.a
+		add_political_power = 150
+		add_stability = 0.1
+		add_war_support = 0.1
+		every_owned_state = {
+			add_core_of = CHB
+		}
+	}
+}

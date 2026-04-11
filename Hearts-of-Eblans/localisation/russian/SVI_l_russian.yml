@@ -17,7 +17,25 @@
 
  SVI_trade_income_cat: "Торговые доходы"
  SVI_trade_income_mission: "Сбор торговых пошлин"
- SVI_trade_income_mission_desc: "Каждые 120 дней казна получает доход от торговых партнёров."
- SVI_trade_income_tt: "Будет получено §G200§! £GFX_texticon_SVI_ar Аров"
+ SVI_trade_income_mission_desc: "Каждые 120 дней казна получает доход от торговых партнёров. В зависимости от положений в стране вы можете получать либо больше денег с торговли, либо вообще не получать, на это влияет установленная §YТорговая политика§! и §YЗакон об экономике§! в разделе §YПолитика§!"
+ SVI_trade_income_tt: "Будет получено [Current_kazna_income]"
+ ara_currency_small_inc: "§4[?THIS.oshidaemie_dohod_arov] £GFX_texticon_SVI_ar Ара §!"
+ ara_currency_single_inc: "§4[?THIS.oshidaemie_dohod_arov] £GFX_texticon_SVI_ar Ар §!"
+ ara_currency_alot_inc: "§4[?THIS.oshidaemie_dohod_arov] £GFX_texticon_SVI_ar Аров §!"
+
+ SVI_kazna_income: "Будет добавлять §4$INCOME$ Аров§! в получку со сбора торговых пошлин в решениях."
 
  SVI_kazna_desc: "\nВ данный момент в казне государства и вашем распоряжении есть ровно \n[Kazna_capacity_text]\n"
+
+ ADE_sovet: "Африканский совет"
+ ADE_vitalya: "Виталий Старший"
+ SVI_svintogon_modifier: "Свинтогон"
+ SVI_demo_conscription_upp_avaliable: "Вам станет доступен §YРасширенный призыв§!, но чтобы его становить Поддержка войны должна быть больше 20%"
+ SVI_reform_training: "Реформа воееной подготовки"
+ SVI_prepare_for_winter_war: "Подготовиться к зимней войне"
+ SVI_expand_supplies: "Расширить пути снабжения"
+ SVI_svintogon_change_tt: "Изменить §YСвинтогон§! на:"
+ SVI_patriotic_fervor: "Патриотический подъем"
+ SVI_industrial_investment: "Промышленные инвестиции"
+ SVI_army_modernization: "Модернизация армии"
+ SVI_infrastructure_program: "Инфраструктурная программа"

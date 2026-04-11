@@ -23,6 +23,14 @@ spriteTypes = {
 		name = "GFX_portrait_BTK_rish_small"
 		texturefile = "gfx/leaders/BTK/RishSmall.dds"
 	}
+    spriteType = {
+		name = "GFX_portrait_BTK_meddison"
+		texturefile = "gfx/leaders/BTK/maddison.dds"
+	}
+    spriteType = {
+		name = "GFX_portrait_BTK_neutral"
+		texturefile = "gfx/leaders/BTK/bratishkin_neutrality.dds"
+	}
 
 
     spriteType = {

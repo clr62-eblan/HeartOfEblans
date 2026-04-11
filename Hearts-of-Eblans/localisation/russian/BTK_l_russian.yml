@@ -39,7 +39,11 @@
  BTK_custom_policy_idea: "Новая таможенная политика"
  BTK_dead_economy1: "Ушатанная экономика"
  BTK_vovavia_concern: "ВовАвиа"
- 
+ GENERAL_crops_idea_weak: "Развитие посевов"
+ GENERAL_supported_landowners: "Поддержка собственников"
+ GENERAL_reformed_landowning_idea: "Реформа землевладения"
+ GENERAL_crops_idea_medium: "Сельскохозяйственный инструментарий"
+ SQUAD_vovavia: "ВовАвиа"
  
  BTK_industrial_recovery: "Меры по восстановлению промышленности"
  BTK_industrial_recovery_desc: "Наша промышленность лежит в руинах после распада. Мы должны принять срочные меры для восстановления производства."
@@ -250,4 +254,6 @@
  BTK_new_dawn_desc: "89 Рейх возрождён во всей славе!"
  BTK_evelone_annex: "Конфликт с Эвелоном"
  BTK_evelone_annex_desc: "Последний враг должен быть повержен."
+
+ MDS_war_tt: "§RСторонники Мэддисона начнут гражданскую войну§!"
 

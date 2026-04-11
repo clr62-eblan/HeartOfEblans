@@ -70,16 +70,39 @@ guiTypes = {
 			spriteType = "GFX_goal_DOR_cuterock_rebirth"
             scale = 0.5
 		}	
+
+		gridBoxType = {
+            name = "KUS_SHPANA_PRETENDENTS"
+            position = { x = 200 y = 490 }
+            size = { width = 0 height = 0 }
+            slotsize = { width = 100 height = 30 }
+            add_horizontal = no
+            max_slots_vertical = 5
+        }
 		
-		instantTextBoxType = {
-			name ="KUS_SHPANA_PRETENDENTS"
-			position = { x = 10 y = 490 }
-			font = "hoi_18"
-			text = "KUS_SHPANA_PRETENDENTS_TEXT"
-			format = center
-			maxHeight = 80
-			maxWidth = 470
-		}
+		#instantTextBoxType = {
+		#	name ="KUS_SHPANA_PRETENDENTS"
+		#	position = { x = 10 y = 490 }
+		#	font = "hoi_18"
+		#	text = "KUS_SHPANA_PRETENDENTS_TEXT"
+		#	format = center
+		#	maxHeight = 80
+		#	maxWidth = 470
+		#}
 		
 	}
+
+	containerWindowType = {
+        name = "pretendents_list_entry"
+        position = { x = 0 y = 0 }
+        size = { width = 0 height = 0 }
+
+        instantTextBoxType = {
+            name = "shpana_pretendent_country_name"
+            position = { x = 0 y = 0}
+			format = center
+            text = [THIS.GetNameWithFlag]
+            font = hoi_20bs
+        }
+    }
 }

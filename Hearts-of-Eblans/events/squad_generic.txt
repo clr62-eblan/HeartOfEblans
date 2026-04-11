@@ -126,3 +126,84 @@ country_event = {#Attitude Towards Military Factories
 		}
 	}
 }
+
+country_event = {	
+	id = sqgen.4
+	title = sqgen.4.t
+	desc = sqgen.4.d
+	picture = GFX_report_event_tndr_rises
+	
+	is_triggered_only = yes
+	
+	#MI ZA NIH
+	option = {
+		name = sqgen.4.a #yes
+		ai_chance = {
+			factor = 10
+		}
+			
+		custom_effect_tooltip = tndr_start_on_their_side_tt
+
+		hidden_effect = {
+			DKK = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = ROOT
+					size = 0.62
+					capital = 354
+					states = { 354 355 230 800 353 349 348 798 346 345 342 }
+					keep_all_characters = yes
+					keep_political_leader = yes
+    				keep_political_party_members = yes
+					create_country_leader = {
+						name = "Даня Кашин"
+						desc = "POLITICS_PRINCE_PAUL_DESC"
+						picture = "gfx/leaders/DKK/dkk.dds"
+
+						ideology = despotism
+						traits = {
+							#
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#MI PROTIV
+	option = {
+		name = sqgen.4.b #yes
+		ai_chance = {
+			factor = 10
+		}
+
+		custom_effect_tooltip = tndr_start_on_now_side_tt
+			
+		hidden_effect = {
+			DKK = {
+				start_civil_war = {
+					ruling_party = ROOT
+					ideology = communism
+					size = 0.45
+					capital = 291
+					states = { 676 1001 421 1011 291 1010 680 677 799 554 553 }
+					keep_all_characters = yes
+					keep_political_leader = yes
+    				keep_political_party_members = yes
+					create_country_leader = {
+						name = "Пан полковник Кашин"
+						desc = "POLITICS_PRINCE_PAUL_DESC"
+						picture = "gfx/leaders/DKK/tndr.dds"
+
+						ideology = despotism
+						traits = {
+							#
+						}
+					}
+				}
+		}
+		}
+	}
+
+	
+}

@@ -1,0 +1,30 @@
+division_template = {
+	name = "Армия Друнов"		# Same for "Active" and "Reserve" Infantry Divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }  
+	}
+}
+
+units = {
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7193
+		division_template = "Армия Друнов"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	
+}

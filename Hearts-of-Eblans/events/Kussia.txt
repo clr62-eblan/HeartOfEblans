@@ -46,13 +46,6 @@ country_event = {
 		add_stability = -0.03
 		add_war_support = 0.05
 	}
-
-	# Poyti na ustupki
-	option = {
-		name = kussia.3.b
-		add_stability = 0.03
-		add_war_support = -0.03
-	}
 }
 
 # Event: Imperial'naya hartiya prinyata (Hypecratia path)
@@ -101,6 +94,10 @@ country_event = {
 			ideology = fascism
 			popularity = 0.1
 		}
+		set_politics = {
+    		ruling_party = fascism
+    		elections_allowed = no
+		}
 	}
 }
 
@@ -134,8 +131,12 @@ country_event = {
 		ai_chance = {
 			factor = 70
 		}
-		add_political_power = 50
-		add_stability = 0.05
+		KUS = { 
+			annex_country = {
+				target = MNY
+				transfer_troops = yes
+			}
+		}
 	}
 
 	# Net, otkazat'
@@ -144,7 +145,30 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		add_political_power = -25
+		KUS = {
+			country_event = { id = kussia.20 days = 3 }
+		}
+	}
+}
+# Mafanya otkaz
+country_event = {
+	id = kussia.20
+	title = kussia.20.t
+	desc = kussia.20.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# Da, prisoedinit'
+	option = {
+		name = kussia.20.a
+		ai_chance = {
+			factor = 70
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = MNY
+		}
 	}
 }
 
@@ -222,6 +246,67 @@ country_event = {
 		}
 		213 = {
 			add_manpower = -340
+		}
+		remove_ideas = KUS_inspections_in_mo_idea
+	}
+}
+
+#INTEGRATE GRAF
+country_event = {
+	id = kussia.17
+	title = kussia.17.t
+	desc = kussia.17.d
+	picture = GFX_report_event_KUS_grafi
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.17.a
+		custom_effect_tooltip = kus_gramophone_tt
+		hidden_effect = {
+			random_list = {
+				85 = {
+					country_event = { id = kussia.18 days = 9 }
+				}
+				15 = {
+					country_event = { id = kussia.19 days = 12 }
+				}
+			}
+		}
+	}
+}
+
+#INTEGRATE GRAF SUCCESS
+country_event = {
+	id = kussia.18
+	title = kussia.18.t
+	desc = kussia.18.d
+	picture = GFX_report_event_KUS_grafi
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.18.a
+		annex_country = {
+    		target = GRA
+    		transfer_troops = yes
+		}
+	}
+}
+#INTEGRATE GRAF PROVAL
+country_event = {
+	id = kussia.19
+	title = kussia.19.t
+	desc = kussia.19.d
+	picture = GFX_report_event_KUS_grafi
+
+	is_triggered_only = yes
+
+	option = {
+		name = kussia.19.a
+		create_wargoal = {
+    		type = annex_everything
+    		target = GRA
 		}
 	}
 }

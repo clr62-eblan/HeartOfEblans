@@ -28,3 +28,19 @@ chb_crushed_separatism_modifier = {
 	local_resources_factor = -0.80 # Scorched earth
 	local_manpower = -0.90
 }
+
+CHB_com_intel_modifiers = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_spy_intel
+
+	drift_defence_factor = CHB_com_intel_driftdefense
+	communism_drift = CHB_com_intel_com_drift
+	subversive_activites_upkeep = CHB_com_intel_subversive_activities
+	intel_network_gain_factor = CHB_com_intel_network_gain
+	decryption_factor = CHB_com_intel_decryption
+	encryption_factor = CHB_com_intel_encryption
+	civilian_factory_use = CHB_com_intel_factory_use
+	required_garrison_factor = CHB_com_intel_required_garrison
+	compliance_growth_on_our_occupied_states = CHB_com_intel_compilance
+	resistance_target = CHB_com_resistance
+}

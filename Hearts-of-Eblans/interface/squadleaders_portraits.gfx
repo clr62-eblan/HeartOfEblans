@@ -19,10 +19,47 @@ SpriteTypes = {
 		name = "GFX_portrait_PYA_AfterSlay"
 		texturefile = "gfx/leaders/PYA/5opka_as.dds"
 	}	
+	SpriteType = {
+		name = "GFX_portrait_ZOL_fas_duche"
+		texturefile = "gfx/leaders/ZOL/zolo_fascism_duche.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_ZOL_hyp_duche"
+		texturefile = "gfx/leaders/ZOL/zolo_hype_duche.dds"
+	}	
 	
 	SpriteType = {
 		name = "GFX_portrait_PYA_yaica_small"
 		texturefile = "gfx/interface/ideas/portrait_PYA_yaica.dds"
+	}	
+	SpriteType = {
+		name = "GFX_portrait_ADE_sovet"
+		texturefile = "gfx/leaders/ADE/sovet.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KUS_durka"
+		texturefile = "gfx/leaders/KUS/durka.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KUS_durka_small"
+		texturefile = "gfx/leaders/KUS/durka_small.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KUS_amalina_small"
+		texturefile = "gfx/leaders/KUS/amalina_small.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KUS_pussia"
+		texturefile = "gfx/leaders/KUS/pussia.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KUS_pussia_small"
+		texturefile = "gfx/leaders/KUS/pussia_small.dds"
+	}	
+	SpriteType = {
+		name = "GFX_portrait_ADE_vitalya"
+		texturefile = "gfx/leaders/ADE/ade.dds"
 	}	
 
 	SpriteType = {
@@ -48,6 +85,14 @@ SpriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_PYA_Eka"
 		textureFile = "gfx/leaders/PYA/Eka.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CHB_mzlff"
+		textureFile = "gfx/leaders/CHB/mzlff.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CHB_zavertin"
+		textureFile = "gfx/leaders/CHB/Zavertin.dds"
 	}
 	
 	SpriteType = {

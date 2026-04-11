@@ -109,7 +109,7 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stint_hype.dds"
 	
-	ideology = hypetiktok
+	ideology = hypetwitch
 	traits = {
 		#
 	}

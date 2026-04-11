@@ -1379,6 +1379,56 @@ ideas = {
 				war_stability_factor = 0.04
 			}
 		}
+
+		SVI_patriotic_fervor = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_political_support
+			
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		SVI_industrial_investment = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		SVI_army_modernization = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		SVI_infrastructure_program = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_exploit_mines
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
     }
 
 }

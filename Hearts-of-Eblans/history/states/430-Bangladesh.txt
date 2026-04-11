@@ -15,8 +15,8 @@ state={
 			}
 
 		}
-		owner = SAS
-		add_core_of = SAS
+		owner = NWK
+		add_core_of = NWK
 
 	}
 

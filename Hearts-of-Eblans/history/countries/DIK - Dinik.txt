@@ -1,5 +1,5 @@
 capital = 289
-
+oob = "DIK_1936"
 set_research_slots = 2
 
 # Starting tech

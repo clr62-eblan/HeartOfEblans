@@ -70,6 +70,9 @@ if = {
 }
 
 recruit_character = universal_hype_kus
+recruit_character = kus_army_general_1
+recruit_character = kus_army_general_2
+recruit_character = kus_pol_advisor_1
 
 if = {
 	limit = {

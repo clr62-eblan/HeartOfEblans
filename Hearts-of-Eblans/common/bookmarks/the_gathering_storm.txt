@@ -96,14 +96,12 @@ bookmarks = {
 			history = ""
 			ideology = fascism
 			ideas = {
-				BTK_bad_government
-				BTK_mass_opposition
 				slay_2023_king
 			}
 			focuses = {
-				BTK_new_dawn
-				BTK_vladimir_bratishkin
-				BTK_squadgaz
+				SQUAD_preemnik
+				SQUAD_samodershez_pal
+				SQUAD_brotelnikov_i_partiya
 			}
 		}
 
@@ -153,6 +151,19 @@ bookmarks = {
 				ham_western_threats
 				ham_new_doctrine
 				ham_endless_detstvo
+			}
+		}
+		"KUS" = {
+			minor = yes
+			history = ""
+			ideology = hypecratia
+			ideas = {
+				
+			}
+			focuses = {
+				KUS_king_of_trends
+				KUS_true_knight_of_hype
+				KUS_genocid_maker
 			}
 		}
 		

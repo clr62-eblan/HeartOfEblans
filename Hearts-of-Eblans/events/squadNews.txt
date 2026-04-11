@@ -63,7 +63,7 @@ news_event = {
 	id = squad_news.4
 	title = squad_news.4.t
 	desc = squad_news.4.d
-	picture = GFX_news_event_generic_parliament
+	picture = GFX_news_event_dre_remilitarization
 	
 	major = yes
 	
@@ -644,6 +644,64 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			play_song = "jumper_passed"
+		}
+	}
+}
+
+#OGUREZ
+news_event = {
+	id = squad_news.34
+	title = squad_news.34.t
+	desc = squad_news.34.d
+	picture = GFX_report_event_chb_ogurez
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.34.a
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			play_song = "derevnya_durakov"
+		}
+	}
+}
+#PARK PHANTASMAGORIA
+news_event = {
+	id = squad_news.35
+	title = squad_news.35.t
+	desc = squad_news.35.d
+	picture = GFX_report_event_chb_phantasmagoria_park
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.35.a
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+#PARK PHANTASMAGORIA
+news_event = {
+	id = squad_news.36
+	title = squad_news.36.t
+	desc = squad_news.36.d
+	picture = GFX_report_event_kus_shpana
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.36.a
+		ai_chance = {
+			factor = 90
 		}
 	}
 }

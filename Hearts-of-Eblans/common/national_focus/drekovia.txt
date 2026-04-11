@@ -1219,11 +1219,6 @@ focus = {
 		}
 
 		available = {
-			CHB = {
-				exists = yes
-				has_capitulated = no
-				is_subject = no
-			}
 		}
 
 		bypass = {
@@ -1237,28 +1232,26 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			CHB = {
-				release_on_controlled = SNR
-				release_on_controlled = HNR
+				release_on_controlled = NCB
 				remove_ideas = CHB_hungary_problem
+				country_event = { id = chicken.43 days = 3 }
+				clr_country_flag = CHB_sever_started
+				set_country_flag = CHB_detached_NCB
+			}
+
+			hidden_effect = {
+				NCB = {
+					set_cosmetic_tag = NCB_SNR
+				}
 			}
 
 			diplomatic_relation = { 
-				country = SNR 
+				country = NCB 
 				relation = military_access 
 			}
 
 			diplomatic_relation = { 
-				country = HNR 
-				relation = military_access 
-			}
-
-			diplomatic_relation = { 
-				country = SNR 
-				relation = guarantee 
-			}
-
-			diplomatic_relation = { 
-				country = HNR 
+				country = NCB 
 				relation = guarantee 
 			}
 		}
@@ -1590,16 +1583,13 @@ focus = {
 			if = {
 				AND = {
 					has_equipment = {
-    					infantry_equipment > 1200
+    					infantry_equipment > 599
 					}
 					has_equipment = {
-    					support_equipment > 300
+    					support_equipment > 199
 					}
 					has_equipment = {
-    					artillery_equipment > 200
-					}
-					has_equipment = {
-    					motorized_equipment_1 > 200
+    					artillery_equipment > 199
 					}
 				}
 			}
@@ -1618,138 +1608,24 @@ focus = {
 			send_equipment = {
 				equipment = infantry_equipment
 				amount = 500
-				target = SNR
+				target = NCB
 			}
 			send_equipment = {
 				equipment = support_equipment
 				amount = 150
-				target = SNR
+				target = NCB
 			}
 			send_equipment = {
 				equipment = artillery_equipment
 				amount = 100
-				target = SNR
-			}
-			send_equipment = {
-				equipment = motorized_equipment_1
-				amount = 100
-				target = SNR
-			}
-			send_equipment = {
-				equipment = infantry_equipment
-				amount = 700
-				target = HNR
-			}
-			send_equipment = {
-				equipment = support_equipment
-				amount = 150
-				target = HNR
-			}
-			send_equipment = {
-				equipment = artillery_equipment
-				amount = 100
-				target = HNR
-			}
-			send_equipment = {
-				equipment = motorized_equipment_1
-				amount = 100
-				target = HNR
+				target = NCB
 			}
 
-			SNR = {
-				division_template = { 
-				name = "SNR_SDO_division"
-				division_names_group = SNR_SDO_01
-				is_locked = no
-				regiments = { 
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-
-					infantry = { x = 2 y = 0 }
+			custom_effect_tooltip = NCB_will_get_army
+			hidden_effect = {
+				NCB = {
+					load_oob = "NCB_WAR"
 				}
-				support = {
-					recon = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1}
-				}
-				}
-				random_owned_controlled_state = {
-					create_unit = { 
-						division = "name = \"1. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = SNR
-					}
-					create_unit = { 
-						division = "name = \"2. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = SNR
-					}
-					create_unit = { 
-						division = "name = \"3. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = SNR
-					}
-					create_unit = { 
-						division = "name = \"4. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = SNR
-					}
-					create_unit = { 
-						division = "name = \"5. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = SNR
-					}
-					create_unit = { 
-						division = "name = \"6. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = SNR
-					}
-			}
-			}
-
-			HNR = {
-				division_template = { 
-				name = "HNR_SDO_division"
-				division_names_group = SNR_SDO_01
-				is_locked = no
-				regiments = { 
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-
-					infantry = { x = 2 y = 0 }
-				}
-				support = {
-					recon = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1}
-				}
-				}
-				random_owned_controlled_state = {
-					create_unit = { 
-						division = "name = \"1. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = HNR
-					}
-					create_unit = { 
-						division = "name = \"2. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = HNR
-					}
-					create_unit = { 
-						division = "name = \"3. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = HNR
-					}
-					create_unit = { 
-						division = "name = \"4. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = HNR
-					}
-					create_unit = { 
-						division = "name = \"5. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = HNR
-					}
-					create_unit = { 
-						division = "name = \"6. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = HNR
-					}
-			}
 			}
 		}
 	}
@@ -1953,7 +1829,7 @@ focus = {
 				is_subject = no
 			}
 			if = {
-			has_manpower > 5000
+			has_manpower > 2499
 			}
 		}
 
@@ -1967,21 +1843,16 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_manpower -5000
-			SNR = {
-				people_support_development_improvement = yes
-				add_manpower = 2500
-			}
-
-			HNR = {
+			add_manpower = -2500
+			NCB = {
 				people_support_development_improvement = yes
 				add_manpower = 2500
 			}
 
 			hidden_effect = {
-			CHB = {
-				country_event = { id = svo.3 days = 2}
-			}
+				CHB = {
+					country_event = { id = svo.3 days = 2}
+				}
 			}
 		}
 	}
@@ -2060,11 +1931,7 @@ focus = {
 		completion_reward = {
 			increase_media_law = yes
 			annex_country = {
-    			target = SNR
-    			transfer_troops = yes
-			}
-			annex_country = {
-    			target = HNR
+    			target = NCB
     			transfer_troops = yes
 			}
 			news_event = { id = squad_news.12 hours = 4 }
@@ -2114,14 +1981,7 @@ focus = {
 				type = annex_everything
 			}
 
-			SNR = {
-				declare_war_on = {
-					target = CHB
-					type = annex_everything
-				}
-			}
-
-			HNR = {
+			NCB = {
 				declare_war_on = {
 					target = CHB
 					type = annex_everything
@@ -5908,6 +5768,15 @@ focus = {
 				capital = 4
 				states = { 848 153 152 4 }
 				keep_all_characters = yes
+				create_country_leader = {
+					name = "Денис Каломиша"
+					desc = "POLITICS_PRINCE_PAUL_DESC"
+					picture = "gfx/leaders/DRE/drake_hype.dds"
+					ideology = hypelikee
+					traits = {
+						maloletka
+					}
+				}
 			}
 
 			152 = {
@@ -5920,6 +5789,22 @@ focus = {
 				set_demilitarized_zone = no
 			}
 			add_timed_idea = { idea = DRE_clamp_down_on_hypecratia days = 365}
+
+			hidden_effect = {
+				ADE = {
+					retire_character = ADE_vitalya
+					add_country_leader_role = {
+						character = ADE_sovet
+						country_leader = {
+							ideology = hypelikee
+							traits = {
+								#
+							}
+						}
+						promote_leader = yes
+					}
+				}
+			}
 		}
 	}
 

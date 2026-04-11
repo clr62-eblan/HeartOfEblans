@@ -4,6 +4,7 @@ state={
 	name="STATE_519"
 
 	history={
+		owner = ZUS
 		#owner = AST
 		buildings = {
 			infrastructure = 1

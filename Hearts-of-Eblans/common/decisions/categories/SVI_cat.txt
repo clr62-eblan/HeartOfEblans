@@ -18,6 +18,7 @@ SVI_kazna = {
 	allowed = { original_tag = SVI }
 	visible = {
  		NOT = { has_country_flag = SVI_null_kazna }
+		NOT = { has_country_flag = SVI_destroyed_duma }
 	}
 
 	priority = 988

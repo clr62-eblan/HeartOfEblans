@@ -32,11 +32,9 @@ trackOfDay_cat = {
 	###############
 
 	PYA_music_0_clown_decision = {
+        days_re_enable = 200
         # 1000 Жизней - Клоун
 		icon = GFX_tod_decision_pya_1000lifes
-		
-
-		days_re_enable = 90
 		days_remove = 90
 		cost = 10
 	
@@ -88,11 +86,9 @@ trackOfDay_cat = {
 	}
 
 	PYA_music_0_buggati_decision = {
+        days_re_enable = 200
         # 1000 Жизней - Клоун
 		icon = GFX_tod_decision_pya_1000lifes
-		
-
-		days_re_enable = 90
 		cost = 10
 	
 		allowed = {
@@ -149,11 +145,9 @@ trackOfDay_cat = {
 	
 	
 	PYA_music_0_otso_decision = {
+        days_re_enable = 200
         # 1000 Жизней - Клоун
 		icon = GFX_tod_decision_pya_1000lifes
-		
-
-		days_re_enable = 90
 		cost = 10
 	
 		allowed = {
@@ -216,11 +210,9 @@ trackOfDay_cat = {
 	###############
 
     PYA_music_1_longisland_decision = {
+        days_re_enable = 200
         # Supernova - Лонг Айленд
 		icon = GFX_tod_decision_pya_supernova
-		
-
-		days_re_enable = 90
 		cost = 10
 	
 		allowed = {
@@ -277,11 +269,9 @@ trackOfDay_cat = {
     
 	
 	PYA_music_1_mersi_decision = {
+        days_re_enable = 200
         # Supernova - Лонг Айленд
 		icon = GFX_tod_decision_pya_supernova
-		
-
-		days_re_enable = 90
 		cost = 10
 	
 		allowed = {
@@ -337,11 +327,9 @@ trackOfDay_cat = {
 
 
 	PYA_music_1_cleopatra_decision = {
+        days_re_enable = 200
         # Supernova - Лонг Айленд
 		icon = GFX_tod_decision_pya_supernova
-		
-
-		days_re_enable = 90
 		cost = 10
 	
 		allowed = {
@@ -401,6 +389,7 @@ trackOfDay_cat = {
 	#################
 
 	PYA_music_2_thanksboss_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_pya_golovolomka
 		
 		cost = 10
@@ -466,6 +455,7 @@ trackOfDay_cat = {
 	
 	
 	PYA_music_2_fublya_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_pya_golovolomka
 		
 		cost = 10
@@ -525,6 +515,7 @@ trackOfDay_cat = {
 	######################
 
 	PYA_music_3_repit_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_pya_superpupernova
 		
 		cost = 10
@@ -585,6 +576,7 @@ trackOfDay_cat = {
 	}
 	
 	PYA_music_3_xxl_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_pya_superpupernova
 		
 		cost = 10
@@ -640,6 +632,7 @@ trackOfDay_cat = {
 	}
 	
 	PYA_music_3_tonirovaniy_shigul_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_pya_superpupernova
 		
 		cost = 10
@@ -698,6 +691,7 @@ trackOfDay_cat = {
 	###############
 
 	PYA_music_4_zmishare_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_pya_zmishare
 		
 		cost = 10
@@ -764,6 +758,7 @@ trackOfDay_cat = {
 	###############
 
 	ham_music_6_crash_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_ham_crash
 		
 		cost = 10
@@ -816,6 +811,7 @@ trackOfDay_cat = {
 	}
 
 	ham_music_7_chikibriki_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_ham_chikibriki
 		
 		cost = 10
@@ -883,6 +879,7 @@ trackOfDay_cat = {
 
 
 	chb_music_8_cheloveyniki_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_lighthouse
 		
 		cost = 10
@@ -936,6 +933,7 @@ trackOfDay_cat = {
 
 
 	chb_music_8_globalvipe_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_lighthouse
 		
 		cost = 10
@@ -988,6 +986,7 @@ trackOfDay_cat = {
 	}
 
 	chb_music_8_whosearch_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_lighthouse
 		
 		cost = 10
@@ -1044,6 +1043,7 @@ trackOfDay_cat = {
 
 
 	chb_music_9_monopolarity_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_anemone
 		
 		cost = 10
@@ -1097,6 +1097,7 @@ trackOfDay_cat = {
 	}
 
 	chb_music_9_moles_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_anemone
 		
 		cost = 10
@@ -1156,6 +1157,7 @@ trackOfDay_cat = {
 
 
 	chb_music_10_anabios_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_coldness
 		
 		cost = 10
@@ -1212,6 +1214,7 @@ trackOfDay_cat = {
 	}
 
 	chb_music_10_sneshinka_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_coldness
 		
 		cost = 10
@@ -1270,6 +1273,7 @@ trackOfDay_cat = {
 
 
 	chb_music_11_porovnu_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_brightside
 		
 		cost = 10
@@ -1326,6 +1330,7 @@ trackOfDay_cat = {
 	}
 
 	chb_music_11_crates_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_brightside
 		
 		cost = 10
@@ -1383,6 +1388,7 @@ trackOfDay_cat = {
 
 
 	chb_music_11_pryanik_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_chb_brightside
 		
 		cost = 10
@@ -1440,6 +1446,7 @@ trackOfDay_cat = {
 
 
 	gon_music_12_hitandlera_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_gon_hitandlera
 		
 		cost = 10
@@ -1493,6 +1500,7 @@ trackOfDay_cat = {
 	}
 
 	gon_music_13_hryas_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_gon_hryas
 		
 		cost = 10
@@ -1546,6 +1554,7 @@ trackOfDay_cat = {
 	}
 
 	gon_music_14_notmyvibe_decision = {
+        days_re_enable = 200
 		icon = GFX_tod_decision_gon_notmyvibe
 		
 		cost = 10
@@ -1587,6 +1596,217 @@ trackOfDay_cat = {
 				set_country_flag = TOD_already_activated
 			}
 			set_variable = { selected_album = 14 }
+			set_variable = { selected_track = 0 }
+		}
+
+		remove_effect = {
+			clear_tod_track = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+
+	chb_music_15_malopomalu_decision = {
+        days_re_enable = 200
+		icon = GFX_tod_decision_chb_phantasmagoria
+		
+		cost = 10
+	
+		allowed = {
+			always = yes
+		}
+	
+		available = {
+			NOT = { has_country_flag = TOD_already_activated }
+			custom_trigger_tooltip = {
+				tooltip = tod_disabled_for
+				check_variable = { tod_cooldown = 0 }
+			}
+		}
+
+		days_remove = 90
+	
+		visible = {
+			AND = {
+				original_tag = CHB
+            	is_in_array = {
+            	    array = opennedAlbums
+            	    value = 15
+            	}
+			}
+		}
+
+		modifier = {
+			political_power_factor = 0.05
+			consumer_goods_factor = -0.05
+        }
+	
+		complete_effect = {
+			hidden_effect = {
+				scoped_sound_effect = "tod_set_sound_sfx"
+				set_country_flag = TOD_already_activated
+			}
+			set_variable = { selected_album = 15 }
+			set_variable = { selected_track = 0 }
+		}
+
+		remove_effect = {
+			clear_tod_track = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	chb_music_15_autodrom_decision = {
+        days_re_enable = 200
+		icon = GFX_tod_decision_chb_phantasmagoria
+		
+		cost = 10
+	
+		allowed = {
+			always = yes
+		}
+	
+		available = {
+			NOT = { has_country_flag = TOD_already_activated }
+			custom_trigger_tooltip = {
+				tooltip = tod_disabled_for
+				check_variable = { tod_cooldown = 0 }
+			}
+		}
+
+		days_remove = 90
+	
+		visible = {
+			AND = {
+				original_tag = CHB
+            	is_in_array = {
+            	    array = opennedAlbums
+            	    value = 15
+            	}
+			}
+		}
+
+		modifier = {
+			army_speed_factor = 0.05
+			org_loss_when_moving = -0.05
+        }
+	
+		complete_effect = {
+			hidden_effect = {
+				scoped_sound_effect = "tod_set_sound_sfx"
+				set_country_flag = TOD_already_activated
+			}
+			set_variable = { selected_album = 15 }
+			set_variable = { selected_track = 1 }
+		}
+
+		remove_effect = {
+			clear_tod_track = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	chb_music_15_epilogue_decision = {
+        days_re_enable = 200
+		icon = GFX_tod_decision_chb_phantasmagoria
+		
+		cost = 10
+	
+		allowed = {
+			always = yes
+		}
+	
+		available = {
+			NOT = { has_country_flag = TOD_already_activated }
+			custom_trigger_tooltip = {
+				tooltip = tod_disabled_for
+				check_variable = { tod_cooldown = 0 }
+			}
+		}
+
+		days_remove = 90
+	
+		visible = {
+			AND = {
+				original_tag = CHB
+            	is_in_array = {
+            	    array = opennedAlbums
+            	    value = 15
+            	}
+			}
+		}
+
+		modifier = {
+			stability_weekly = 0.005
+			war_support_weekly = 0.005
+        }
+	
+		complete_effect = {
+			hidden_effect = {
+				scoped_sound_effect = "tod_set_sound_sfx"
+				set_country_flag = TOD_already_activated
+			}
+			set_variable = { selected_album = 15 }
+			set_variable = { selected_track = 2 }
+		}
+
+		remove_effect = {
+			clear_tod_track = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	chb_music_16_glavtayna_decision = {
+        days_re_enable = 200
+		icon = GFX_tod_decision_chb_glavtayna
+		
+		cost = 10
+	
+		allowed = {
+			always = yes
+		}
+	
+		available = {
+			NOT = { has_country_flag = TOD_already_activated }
+			custom_trigger_tooltip = {
+				tooltip = tod_disabled_for
+				check_variable = { tod_cooldown = 0 }
+			}
+		}
+
+		days_remove = 90
+	
+		visible = {
+			AND = {
+				original_tag = CHB
+            	is_in_array = {
+            	    array = opennedAlbums
+            	    value = 16
+            	}
+			}
+		}
+
+		modifier = {
+			research_speed_factor = 0.05
+			encryption = 1
+        }
+	
+		complete_effect = {
+			hidden_effect = {
+				scoped_sound_effect = "tod_set_sound_sfx"
+				set_country_flag = TOD_already_activated
+			}
+			set_variable = { selected_album = 16 }
 			set_variable = { selected_track = 0 }
 		}
 

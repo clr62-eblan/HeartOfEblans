@@ -12,9 +12,8 @@ state = {
 
 	history = {
 
-		owner = ZUS
-		add_core_of = ZAM
-		add_core_of = BAR
+		owner = HNV
+		add_core_of = HNV
 
 		victory_points = {
 			697 1 # Mongu
@@ -22,6 +21,7 @@ state = {
 
 		buildings = {
 			infrastructure = 1
+			arms_factory = 1
 		}
 	}
 

@@ -4,12 +4,84 @@ spriteTypes = {
 	    texturefile = "gfx/interface/goals/CHB/chb_rule_by_fear.png"			
 	}
 	SpriteType = {
+	    name = "GFX_goal_CHB_indoctrination"
+	    texturefile = "gfx/interface/goals/CHB/chb_indoctrination.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_reign_zavertin"
+	    texturefile = "gfx/interface/goals/CHB/chb_reign_zavertin.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_youngmaz"
+	    texturefile = "gfx/interface/goals/CHB/chb_younmaz.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_destroy_trendlovers"
+	    texturefile = "gfx/interface/goals/CHB/chb_destroy_trendlovers.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_voenkom"
+	    texturefile = "gfx/interface/goals/CHB/chb_voenkom.png"			
+	}
+	SpriteType = {
 	    name = "GFX_goal_CHB_linnight_deal"
 	    texturefile = "gfx/interface/goals/CHB/chb_linnight_deal.png"			
 	}
 	SpriteType = {
 	    name = "GFX_goal_CHB_develop_states"
 	    texturefile = "gfx/interface/goals/CHB/chb_develop_states.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_sever_com"
+	    texturefile = "gfx/interface/goals/CHB/chb_sever_com.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_sleshka_com"
+	    texturefile = "gfx/interface/goals/CHB/chb_sleshka_com.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_phantasmagoria_song"
+	    texturefile = "gfx/interface/goals/CHB/chb_phantasmagoria_song.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_smartik_war"
+	    texturefile = "gfx/interface/goals/CHB/chb_smartik_war.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_kipr_demand"
+	    texturefile = "gfx/interface/goals/CHB/chb_kipr_demand.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_yagermeyster"
+	    texturefile = "gfx/interface/goals/CHB/chb_yagermeyster.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_gvin_claims"
+	    texturefile = "gfx/interface/goals/CHB/chb_gvin_claims.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_kaliningrad"
+	    texturefile = "gfx/interface/goals/CHB/chb_kaliningrad.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_drake_border"
+	    texturefile = "gfx/interface/goals/CHB/chb_drake_border.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_gvinland_finish"
+	    texturefile = "gfx/interface/goals/CHB/chb_gvinland.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_shkolniki_pravi"
+	    texturefile = "gfx/interface/goals/CHB/chb_shkolniki_pravi.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_zavertin_kpss"
+	    texturefile = "gfx/interface/goals/CHB/chb_zavertin_kpss.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_ya_chickenbekon"
+	    texturefile = "gfx/interface/goals/CHB/chb_ya_chickenbekon.png"			
 	}
 	SpriteType = {
 	    name = "GFX_goal_CHB_refrom_doctrine"
@@ -54,6 +126,18 @@ spriteTypes = {
 	SpriteType = {
 	    name = "GFX_goal_CHB_incvisition"
 	    texturefile = "gfx/interface/goals/CHB/chb_incvisition.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_lomaupolis"
+	    texturefile = "gfx/interface/goals/CHB/chb_lomaupolis.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_lomakia_integ"
+	    texturefile = "gfx/interface/goals/CHB/chb_lomaka.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_CHB_dreams_police"
+	    texturefile = "gfx/interface/goals/CHB/chb_dreams_police.png"			
 	}
 	SpriteType = {
 	    name = "GFX_goal_CHB_rapid_renovation"

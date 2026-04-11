@@ -1,7 +1,29 @@
 on_actions = {
 	on_startup = {
         effect = {
-			SHPANA_CHECK_STATES = yes
+			KUS = {
+				SHPANA_CHECK_STATES = yes
+				add_to_array = {
+            	    array = global.sphana_pretendents
+            	    value = KUS.id
+            	}
+				add_to_array = {
+            	    array = global.sphana_pretendents
+            	    value = MNY.id
+            	}
+				add_to_array = {
+            	    array = global.sphana_pretendents
+            	    value = LID.id
+            	}
+				add_to_array = {
+            	    array = global.sphana_pretendents
+            	    value = SEX.id
+            	}
+				add_to_array = {
+            	    array = global.sphana_pretendents
+            	    value = DER.id
+            	}
+			}
 			#every_country = {
 			#	limit = {
 			#		is_ai = no
@@ -18,7 +40,41 @@ on_actions = {
 
 	on_daily = {
 		effect = {
-			SHPANA_CHECK_STATES = yes
+			KUS = {
+				SHPANA_CHECK_STATES = yes
+				CHECK_IS_SHPANA_FULLY_CONNECTED = yes
+			}
+		}
+	}
+
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = GON }
+					NOT = { FROM = { original_tag = GON } }
+				}
+				FROM = {
+					add_to_array = { 
+						array = GON.GON_war_targets_array 
+						value = THIS
+					}
+					log = "[THIS.GetName] was added to array"
+				}
+			}
+			if = {
+				limit = {
+					FROM = { original_tag = GON }
+					NOT = { ROOT = { original_tag = GON } }
+				}
+				ROOT = {
+					add_to_array = { 
+						array = GON.GON_war_targets_array 
+						value = THIS
+					}
+					log = "[THIS.GetName] was added to array"
+				}
+			}
 		}
 	}
 
@@ -34,6 +90,9 @@ on_actions = {
 						NEL = { has_capitulated = yes } 
 					} 
 					DPN = { NOT = { has_country_flag = deepins_nelya } } 
+					165 = {
+						is_controlled_by = GON
+					}
 				}
 				news_event = {
 					id = squad_news.15

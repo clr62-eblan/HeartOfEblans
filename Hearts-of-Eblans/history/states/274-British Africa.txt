@@ -12,8 +12,8 @@ state = {
 
 	history = {
 
-		owner = ZUS
-		add_core_of = GHA
+		owner = GNS
+		add_core_of = GNS
 
 		victory_points = {
 			10862 2 # Accra 

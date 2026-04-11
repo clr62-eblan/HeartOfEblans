@@ -23,8 +23,8 @@ state = {
 			11401 3
 		}
 
-		owner = GNS
-		add_core_of = GNS
+		owner = KRU
+		add_core_of = KRU
 
 		buildings = {
 

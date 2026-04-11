@@ -7,7 +7,7 @@ defined_text = { # 1 Ар, 2 Ара, 15 Ар
     # ЭТО НЕ РАБОТАЕТ, ЁБАНЫЙ ХАРТС ОФ АЙРОН И НИЩАЯ СТУДИЯ ПИДАРОКС ИНТИРТИЙНМИНТ НЕ МОГУТ НОРМАЛЬНО РЕАЛИЗОВАТЬ СИСТЕМУ АРГУМЕНТОВ БЛЯТ
     # ТЫ НЕ МОЖЕШЬ В Scripted_localisation ПЕРЕДАВАТЬ АРГУМЕНТЫ СУКА, ХРАНИТЬ ИХ ТЫ ТОЖЕ НЕ МОЖЕШЬ НОРМАЛЬНО
     # ТОЖЕ САМОЕ КСТАТИ СО SCRIPTED_EFFECTS, ТИПО, ВЫ СОЗДАЛИ МЕТОДЫ(ФУНКЦИИ) МОЛОДЦЫ, ПОТРЯСАЮЩЕ
-    # ТОЛЬКО ТЫ В НИХ НИЧО НОРМАЛЬНО ПЕРЕДАТЬ НЕ МОЖЕШЬ, НО БЛЯТЬ САМОЕ СМЕШНОЕ ЧТО В КОНСОЛЬНЫЕ КОМАНДЫ
+    # ТОЛЬКО ТЫ В НИХ НИЧО НОРМАЛЬНО ПЕРЕДАТЬ - НЕ МОЖЕШЬ, НО БЛЯТЬ САМОЕ СМЕШНОЕ ЧТО В КОНСОЛЬНЫЕ КОМАНДЫ
     # ТЫ МОЖЕШЬ ПЕРЕДАВАТЬ АРГУМЕНТЫ И ТЕБЕ В КАЖДОЙ КОНСОЛЬНОЙ КОМАНДЕ ПРОСТО ДАЁТСЯ МАССИВ ARGS
     # СУКА, В ЧЁМ ПРОБЛЕМА ТОЖЕ САМОЕ СДЕЛАТЬ В SCRIPTED_EFFECTS И LOCALISATION???
     # ВИДИМО ОНИ НАСТОЛЬКО НЕМОЩИ СЕЙЧАС ЧТО КОГДА-ТО ДАВНО КАКИЕ-ТО УМНЫЕ ЛЮДИ СДЕЛАЛИ ЭТОТ ДВИЖОК CLAUSEWITZ
@@ -74,5 +74,33 @@ defined_text = {
     #Все остальные
     text = {
         localization_key = ara_currency_alot
+    }
+}
+
+defined_text = {
+    name = Current_kazna_income
+    text = {
+        trigger = {
+            THIS = {        	
+                OR = {
+                    check_variable = { num = oshidaemie_dohod_arov mod 10 = 2 }
+                    check_variable = { num = oshidaemie_dohod_arov mod 10 = 3 }
+                    check_variable = { num = oshidaemie_dohod_arov mod 10 = 4 }
+                }
+            }
+        }
+        localization_key = ara_currency_small_inc
+    }
+
+    text = {
+        trigger = {
+            THIS = { check_variable = { num = oshidaemie_dohod_arov mod 10 = 1 } }
+        }
+        localization_key = ara_currency_single_inc
+    }
+
+    #Все остальные
+    text = {
+        localization_key = ara_currency_alot_inc
     }
 }

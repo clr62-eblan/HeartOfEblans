@@ -25,4 +25,83 @@ characters = {
 			}
 		}
 	}
+
+	kus_army_general_1 = {
+		name = "durka_nax"
+		portraits = {
+			army = {
+				large = GFX_KUS_durka
+				small = GFX_KUS_durka_small
+			}
+			civilian = {
+				small = GFX_KUS_durka_small
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer organizer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = high_command
+			idea_token = kus_army_general_1
+			allowed = {
+				original_tag = KUS
+			}
+			traits = { army_infantry_2 }
+			cost = 150
+		}
 	}
+
+	kus_army_general_2 = {
+		name = "Pussia"
+		portraits = {
+			army = {
+				large = GFX_KUS_pussia
+				small = GFX_KUS_pussia_small
+			}
+			civilian = {
+				small = GFX_KUS_pussia_small
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer trickster }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = kus_army_general_2
+			allowed = {
+				original_tag = KUS
+			}
+			traits = { army_armored_2 }
+			cost = 100
+		}
+	}
+
+	kus_pol_advisor_1 = {
+		name = "Amalina89"
+		portraits = {
+			civilian = {
+				small = GFX_KUS_amalina_small
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = kus_pol_advisor_1
+			allowed = {
+				original_tag = KUS
+			}	
+			traits = { silent_workhorse }	
+			cost = 100
+		}
+	}
+}

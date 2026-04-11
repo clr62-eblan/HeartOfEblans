@@ -24,8 +24,8 @@ state = {
 			12812 1
 		}
 		
-		owner = ZUS
-		add_core_of = ZUS
+		owner = SAS
+		add_core_of = SAS
 	}
 
 	provinces = {

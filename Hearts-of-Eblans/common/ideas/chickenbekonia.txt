@@ -33,6 +33,60 @@ ideas = {
 				fascism_drift = -0.01
 			}
 		}
+		CHB_totaller_descrimination_idea = {
+			picture = chi_war_of_resistance
+
+			allowed = {
+				original_tag = CHB
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				required_garrison_factor = -0.03
+				resistance_target = -0.03
+			}
+		}
+		CHB_totaller_descrimination_idea_2 = {
+			picture = chi_war_of_resistance2
+
+			allowed = {
+				original_tag = CHB
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_damage_to_garrison_on_our_occupied_states = -0.05
+				required_garrison_factor = -0.05
+				resistance_target = -0.05
+			}
+		}
+		CHB_totaller_descrimination_idea_3 = {
+			picture = chi_war_of_resistance3
+
+			allowed = {
+				original_tag = CHB
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_damage_to_garrison_on_our_occupied_states = -0.07
+				required_garrison_factor = -0.1
+				resistance_target = -0.05
+				resistance_decay_on_our_occupied_states = 0.05
+			}
+		}
 	
 		YUG_bezmoderov = {
 			
@@ -52,6 +106,58 @@ ideas = {
                 training_time_factor = -0.1
 			}
 			
+		}
+
+		CHB_subject_history_indoctrination = {
+			picture = generic_railroads
+
+			removal_cost = -1
+
+			cancel = {
+				NOT = {
+					is_subject_of = CHB
+				}
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+				max_planning_factor = 0.1
+			}
+		}
+		CHB_phantasmagoria_park_idea = {
+			picture = chb_phantasmagoria_ide
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				monthly_population = 0.02
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		CHB_subject_shared_supplies = {
+			picture = generic_communist_army
+
+			removal_cost = -1
+
+			cancel = {
+				NOT = {
+					is_subject_of = CHB
+				}
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				supply_factor = 0.05
+				army_fuel_capacity_factor = 0.1
+				truck_attrition_factor = -0.15
+			}
 		}
 
 		CHB_at_the_helm = {
@@ -75,7 +181,7 @@ ideas = {
 
 		CHB_mazloyoun_idea = {
 			
-			picture = generic_army_war_college
+			picture = chb_mazloyun
 
 			allowed = {
 				original_tag = CHB
@@ -206,8 +312,6 @@ ideas = {
 				original_tag = CHB
 				always = no
 			}
-
-			
 
 			removal_cost = -1
 			
@@ -985,6 +1089,20 @@ ideas = {
 			}
 		}
 		
+		# --- Military Bureaucracy (starting debuff, removed by improve_bureaucracy focus) ---
+		
+		CHB_military_bureaucracy = {
+			picture = generic_pp_unity_bonus
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.15
+				decision_cost_factor = 0.2
+				training_time_factor = 0.1
+				conscription_factor = -0.1
+			}
+		}
+
 		# --- Industrial Modernization Spirits ---
 		
 		CHB_outdated_industry = {
@@ -1106,23 +1224,251 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
-		CHB_emergency_measures_active = {
-			picture = generic_pp_unity_bonus
+
+		# --- Political Branch Spirits ---
+
+		chb_rule_by_fear_idea = {
+			picture = generic_fascism_drift_2
 			allowed = { original_tag = CHB always = no }
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.05
-				political_power_factor = -0.05
+				political_power_factor = 0.1
+				fascism_drift = 0.02
 			}
 		}
 
-		CHB_foreign_investments = {
-			picture = generic_invest_infrastructure
+		chb_expanded_doctrine_idea = {
+			picture = generic_army_war_college
 			allowed = { original_tag = CHB always = no }
 			removal_cost = -1
 			modifier = {
-				production_speed_industrial_complex_factor = 0.10
+				experience_gain_army_factor = 0.1
+				planning_speed = 0.1
+				max_planning = 0.1
+			}
+		}
+
+		chb_linnight_deal_idea = {
+			picture = generic_intel_bonus
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				resistance_target = 0.05
+				political_power_factor = -0.05
+				stability_factor = -0.03
+			}
+		}
+
+		chb_moders_on_front_idea = {
+			picture = generic_manpower_bonus
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.1
+				army_morale_factor = 0.05
+			}
+		}
+
+		chb_reformed_bureaucracy_idea = {
+			picture = generic_pp_unity_bonus
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				decision_cost_factor = -0.1
+			}
+		}
+
+		chb_national_unity_idea = {
+			picture = generic_war_support
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.05
+				conscription = 0.02
+			}
+		}
+
+		chb_expansionist_doctrine_idea = {
+			picture = generic_fascism_drift_bonus
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				justify_war_goal_time = -0.25
+				war_support_factor = 0.05
+				generate_wargoal_tension = -0.25
+			}
+		}
+
+		chb_ministry_of_truth_idea = {
+			picture = generic_spy_intel
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.001
+				democratic_drift = -0.03
+				drift_defence_factor = 0.25
+			}
+		}
+
+		chb_project_superstar_1_idea = {
+			picture = BRA_embraer
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				production_speed_infrastructure_factor = 0.05
+				stability_factor = 0.03
+				army_morale_factor = 0.02
+			}
+		}
+		chb_tiho_i_standartno_idea = {
+			picture = ETH_conservative_high_command
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				breakthrough_factor = 0.03
+				dig_in_speed_factor = 0.05
+				war_support_factor = 0.03
+			}
+		}
+		chb_zavodi_smartikov = {
+			picture = chb_smartiki
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+				war_support_factor = 0.01
+				supply_consumption_factor = -0.02
+			}
+		}
+
+		chb_antidrake_border_idea = {
+			picture = generic_fortify_the_borders
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = DRE
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}
+			modifier = {
+				production_speed_bunker_factor = 0.2
+			}
+		}
+		chb_kom_podpolie_idea = {
+			picture = generic_communism_banned
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				add_stability = -0.02
+			}
+		}
+		chb_kom_podpolie_idea_2 = {
+			picture = generic_shield_against_communism
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				add_stability = -0.04
+				communism_drift = 0.035
+			}
+		}
+		chb_kom_interests_idea = {
+			picture = generic_shield_against_communism
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.03
+			}
+		}
+		chb_kom_verhovenstvo_idea = {
+			picture = generic_communism_drift_bonus
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.05
+				stability_factor = 0.03
+			}
+		}
+		chb_udarnaya_sovetskaya_stroyka_idea = {
+			picture = SOV_rebuild_the_savior_cathedral_ccp_sov_compatibility
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industry_air_damage_factor = -0.05
+			}
+		}
+		chb_pereraspredelenie_voennih_moshnostey = {
+			picture = GER_recovering_economy
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.03
+				production_factory_max_efficiency_factor = -0.03
+				production_factory_efficiency_gain_factor = -0.05
+				training_time_factor = 0.05
+			}
+
+			on_remove = {
+				add_ideas = chb_uporyadochnoe_proizvodstvo
+			}
+		}
+		chb_uporyadochnoe_proizvodstvo = {
+			picture = GER_wirtschaftswunder
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.02
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+		}
+		chb_regulated_prices = {
+			picture = can_wartime_prices_and_trade_board
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
 				consumer_goods_factor = -0.05
+				stability_factor = 0.03
+			}
+		}
+		chb_proletarian_legion = {
+
+			picture = SPR_international_brigades
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 4
+				air_volunteer_cap = 2
+			}
+		}
+
+		chb_regional_voenkomati_idea = {
+			picture = FRA_national_mobilization_focus
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+				training_time_factor = -0.1
+			}
+		}
+
+		chb_ya_chickenbekonez_idea = {
+			picture = MEX_revolutionary_army
+			allowed = { original_tag = CHB always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				army_morale_factor = 0.1
 			}
 		}
 	}

@@ -411,3 +411,107 @@ form_STI_bop_cat = {
 		}
 	}
 }
+
+
+# Operational Planning
+GON_operational_planning_cat = {
+	# Campaign Instructions against [FROM.GetName]
+	GON_operational_planning = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_war_with = FROM
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 10
+				FROM = {
+					original_tag = NEL
+				}
+				has_completed_focus = STI_pressure_on_Nelya
+			}
+			modifier = {
+				factor = 10
+				FROM = {
+					original_tag = MOY
+				}
+				has_completed_focus = STI_pressure_on_Morphi
+			}
+			modifier = {
+				factor = 10
+				FROM = {
+					original_tag = ZOL
+				}
+				has_completed_focus = STI_pressure_on_Zolo
+			}
+		}
+
+		allowed = {
+			original_tag = GON
+		}
+
+		days_remove = 250
+
+		custom_cost_trigger = {
+			command_power > 24
+			has_army_experience > 14
+		}
+
+		custom_cost_text = decision_cost_CP_25_ArmXP_15 
+
+		available = {
+			NOT = {	has_country_flag = GON_operational_planning_flag }
+			OR = {
+				has_war_with = FROM
+				has_wargoal_against = FROM
+			}
+		}
+
+		target_array = ROOT.GON_war_targets_array
+
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+				any_controlled_state = {
+					is_on_continent = europe
+					any_neighbor_state = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+			}
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				army_experience = -15
+				set_country_flag = GON_operational_planning_flag
+			}
+			
+			every_state = {
+				limit = {
+					is_controlled_by = FROM
+					is_on_continent = europe
+				}
+				add_dynamic_modifier = {
+					modifier = GON_planning_modifier
+					scope = GON
+					days = 90
+				}
+			}
+			hidden_effect = { #This removes the GER_operational_planning_flag, enabling Germany to do the decision again. remove_effect won't work if the country in question capitulates
+				country_event = { id = stintik_technical.1 days = 90 } 
+			}
+		}
+		remove_effect = {
+		}
+	}
+}

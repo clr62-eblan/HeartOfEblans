@@ -11,8 +11,8 @@ state={
 	}
 
 	history={
-		owner = SAS
-		add_core_of = SAS
+		owner = TND
+		add_core_of = TND
 		buildings = {
 			infrastructure = 1 #was: 5
 		}

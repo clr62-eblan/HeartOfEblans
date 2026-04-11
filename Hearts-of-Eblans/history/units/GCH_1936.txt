@@ -36,7 +36,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 9517  # Hoeselt
+		location = 241  # Hoeselt
 		division_template = "Гаечкины войска"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
@@ -47,29 +47,29 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 3530  # Hoeselt
+		location = 495  # Hoeselt
 		division_template = "Гаечкины войска"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 
 	}
-		division= {
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 6542  # Hoeselt
+		location = 587  # Hoeselt
 		division_template = "Гаечкины войска"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 
 	}
-		division= {
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 9638  # Hoeselt
+		location = 11533  # Hoeselt
 		division_template = "Гаечкины войска"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
@@ -80,34 +80,24 @@ units = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 663  # Hoeselt
+		location = 3355  # Hoeselt
 		division_template = "Гаечкины войска"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 
 	}
-		division= {
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 6
 		}
-		location = 9620  # Hoeselt
+		location = 3547  # Hoeselt
 		division_template = "Гаечкины войска"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 
 	}
-		division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 7
-		}
-		location = 6712  # Hoeselt
-		division_template = "Гаечкины войска"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-
-	}
+}
 
 ### Starting Production ###
 instant_effect = {

@@ -56,3 +56,20 @@ CHB_sever_category = {
 		has_country_flag = CHB_sever_started
 	}
 }
+
+CHB_bekonian_subjects = {
+	priority = 10
+	icon = GFX_decision_decision_category_GER_volkskommissariats
+
+	allowed = {
+		original_tag = CHB
+	}
+
+	visible_when_empty = yes #This is supposed to be visible when empty!
+
+	visible = {
+		is_subject = no
+		has_government = communism
+		has_completed_focus = chb_bekonian_subjects
+	}
+}

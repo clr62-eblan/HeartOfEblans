@@ -49,6 +49,20 @@ characters = {
             legacy_id = -1
        }
 	}
+	BTK_neutral_bratishkin = {
+		name=BTK_neutral_bratishkin
+		portraits={
+			civilian = {
+				large="GFX_portrait_BTK_neutral"
+			}
+		}
+		create_country_leader = {
+			ideology = oligarchism
+			traits = {
+				#
+			}
+		}
+	}
 
 	BTK_Rish098 = {
 		name=BTK_Rish098
@@ -82,6 +96,14 @@ characters = {
 		portraits={
 			civilian = {
 				large="GFX_portrait_BTK_squad_parliament"
+			}
+		}
+	}
+	BTK_Meddison = {
+		name=BTK_MEDDISON
+		portraits={
+			civilian = {
+				large="GFX_portrait_BTK_meddison"
 			}
 		}
 	}

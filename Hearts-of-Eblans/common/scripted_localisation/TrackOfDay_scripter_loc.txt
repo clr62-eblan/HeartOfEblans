@@ -96,6 +96,12 @@ defined_text = {
         }
         localization_key = "GFX_tod_album_gon_notmyvibe"
     }
+    text = {
+        trigger = {
+            check_variable = { selected_album = 15 }
+        }
+        localization_key = "GFX_tod_album_chb_phantasmagoria"
+    }
 }
 
 #        ALBUMS/TRACKS ID
@@ -205,6 +211,18 @@ defined_text = {
             check_variable = { selected_album = 14 }
         }
         localization_key = "gon_notmyvibe"
+    }
+    text = {
+        trigger = {
+            check_variable = { selected_album = 15 }
+        }
+        localization_key = "chb_phantasmagoria"
+    }
+    text = {
+        trigger = {
+            check_variable = { selected_album = 16 }
+        }
+        localization_key = "chb_glavtayna"
     }
 }
 
@@ -407,5 +425,33 @@ defined_text = {
             AND = { check_variable = {  selected_album = 14 } check_variable = {  selected_track = 0 } }
         }
         localization_key = "gon_notmyvibe"
+    }
+
+
+    text = {
+        trigger = {
+            AND = { check_variable = {  selected_album = 15 } check_variable = {  selected_track = 0 } }
+        }
+        localization_key = "chb_malopomalu"
+    }
+    text = {
+        trigger = {
+            AND = { check_variable = {  selected_album = 15 } check_variable = {  selected_track = 1 } }
+        }
+        localization_key = "chb_autodrom"
+    }
+    text = {
+        trigger = {
+            AND = { check_variable = {  selected_album = 15 } check_variable = {  selected_track = 2 } }
+        }
+        localization_key = "chb_epilogue"
+    }
+
+
+    text = {
+        trigger = {
+            AND = { check_variable = {  selected_album = 16 } check_variable = {  selected_track = 0 } }
+        }
+        localization_key = "chb_glavtayna"
     }
 }

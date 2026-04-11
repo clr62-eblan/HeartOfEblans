@@ -3001,6 +3001,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 			add_war_support = 0.05
+			custom_effect_tooltip = GON_unlock_planning_tt
+			effect_tooltip = { #This is done for tooltip purposes
+				add_dynamic_modifier = { modifier = GON_planning_modifier }
+			}
 		}
 	}
 
@@ -3036,6 +3040,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			NEL = { country_event = { id = stintik.16 days = 2 }}
+
 		}
 	}
 

@@ -8,8 +8,8 @@ state = {
 	
 	history = {
 
-		owner = FST
-		add_core_of = FST
+		owner = NWK
+		add_core_of = NWK
 		
 
 		buildings = {

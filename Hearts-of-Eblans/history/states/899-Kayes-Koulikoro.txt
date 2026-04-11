@@ -5,8 +5,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = PBU
-		add_core_of = MLI
+		owner = GNS
+		add_core_of = GNS
 		
 		buildings = {
 			infrastructure = 2

@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = ZUS
-		add_core_of = RCG
+		owner = ADL
+		add_core_of = ADL
 
 		victory_points = {
 			8193 3 #Brazzaville

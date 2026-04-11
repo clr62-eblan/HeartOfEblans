@@ -12,109 +12,12 @@ guiTypes = {
 		}
 		Orientation = center
 		Origo = center
-		#clipping = no 
+		clipping = no 
 		
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_frontend_bg"
 			alwaystransparent = yes
-		}
-		
-		#iconType = {   #anim lancaster
-		#	name = "rain_anim"
-		#	position = { x = 0 y = 0 }
-		#	quadTextureSprite = "GFX_frontend_bg_rain_anim"
-		#	orientation = upper_left
-		#}
-		
-	}
-	
-	containerWindowType = {
-		name = "owned_dlc_item"
-		size = { width = 50 height = 50 }
-		
-		buttonType =
-		{
-			position = { x = -230 y = 0 }
-			name ="dlc_button"
-			spriteType = "GFX_frontend_banner_dlc018"
-		}
-		
-		iconType = {
-			name = "glowup"
-			position = { x = -50 y = -21 }
-			spriteType = "GFX_spirit_glow"
-			scale = 0.8
-			#hide = yes
-		}
-		
-		buttonType = {
-			name = "owned_tick"
-			spriteType = "GFX_BPT_area_defense_setting_tick"
-			position = { x = -6 y = 1 }
-			Orientation = center_left
-			scale = 0.56
-			alwaysTransparent = yes
-			#hide = yes
-		}
-		
-		buttonType = {
-			name = "enabled_tick"
-			spriteType = "GFX_general_check"
-			position = { x = 28 y = 24 }
-			Orientation = center_left
-			alwaysTransparent = yes
-		}
-		
-	}
-	
-	containerWindowType = {
-		name = "unowned_dlc_item"
-		size = { width = 50 height = 50 }
-		
-		buttonType =
-		{
-			position = { x = -230 y = 0 }
-			name ="dlc_button"
-			spriteType = "GFX_frontend_banner_dlc018"
-		}
-		
-		buttonType = {
-			name = "owned_tick"
-			spriteType = "GFX_BPT_area_defense_setting_tick"
-			position = { x = -6 y = 1 }
-			Orientation = center_left
-			scale = 0.56
-			alwaysTransparent = yes
-			#enabled = no
-		}
-		
-		buttonType = {
-			name = "enabled_tick"
-			spriteType = "GFX_general_check"
-			position = { x = 28 y = 24 }
-			Orientation = center_left
-			alwaysTransparent = yes
-		}
-		
-	}
-	
-	### MAIN MENU PANEL (DLC Ownership) 
-	containerWindowType = {
-		name  ="mainmenu_dlc_ownership"
-		position = { x=5 y =0 }
-		size = { width = 370 height = 528}
-		Orientation = lower_left
-		origo = lower_left
-		
-		gridBoxType = {
-			name = "potential_dlc_list"
-			position = { x = 0 y = 0}
-			size = { width = 50 height = 300 }
-			#Orientation = upper_left
-			slotsize = {width=50 height=51 }
-			max_slots_vertical = 1
-			format = "RIGHT"
 		}
 		
 	}
@@ -287,7 +190,7 @@ guiTypes = {
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
 		position = { x=0 y =0}
-		size = { width = 320 height = 570 }
+		size = { width = 320 height = 450 }
 		Orientation = CENTER
 		Origo = center		
 				
@@ -346,7 +249,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 35 y = 200 }
+			position = { x = 35 y = 0 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -358,7 +261,7 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 35 y = 540 }
+			position = { x = 35 y = 365 }
 		}
 		
 		
@@ -423,7 +326,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 303 }
+			position = { x = 16 y = 330 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -432,15 +335,15 @@ guiTypes = {
 			
 		}
 		
-		ButtonType = {
-			name = "sponsors_button"
-			position = { x=5 y=355 }
-			quadTextureSprite ="GFX_sponsor_button_icon"
-			font = "hoi_24header"			
-			text = "Sponsors_button_txt"
-			pdx_tooltip = "HOE_DONATERS"
-			web_link = "https://www.donationalerts.com/r/clr62"
-		}
+		#ButtonType = {
+		#	name = "sponsors_button"
+		#	position = { x=5 y=355 }
+		#	quadTextureSprite ="GFX_sponsor_button_icon"
+		#	font = "hoi_24header"			
+		#	text = "Sponsors_button_txt"
+		#	pdx_tooltip = "HOE_DONATERS"
+		#	web_link = "https://www.donationalerts.com/r/clr62"
+		#}
 	}
 	
 	containerWindowType = {
@@ -511,7 +414,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "youtube_button"
-			position = { x=75 y=10 }
+			position = { x=75 y=-30 }
 			quadTextureSprite ="youtube"
 			#clicksound = click_default
 			pdx_tooltip = "HOE_YOUTUBE"
@@ -521,7 +424,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "tg_button"
-			position = { x=125 y=10 }
+			position = { x=125 y=-30 }
 			quadTextureSprite ="discord"
 			#clicksound = click_default
 			pdx_tooltip = "HOE_GIT"

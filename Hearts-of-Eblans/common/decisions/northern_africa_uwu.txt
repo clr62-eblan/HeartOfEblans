@@ -1,0 +1,124 @@
+generic_form_northern_africa_cat = {
+	form_norhern_africa = {
+	
+		icon = generic_form_nation
+		picture = GFX_decision_africa_north_unite
+		
+		fire_only_once = yes
+		cost = 25
+	
+		allowed = {
+			always = yes
+		}
+	
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = AFRICA_asl_control	
+				# Iberia
+				controls_state = 719
+				controls_state = 681
+				controls_state = 893
+				controls_state = 541
+				controls_state = 894
+				controls_state = 895
+				controls_state = 892
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFRICA_ade_control	
+
+				controls_state = 275
+				controls_state = 544
+				controls_state = 542
+
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFRICA_ach_control	
+
+				controls_state = 545
+				controls_state = 896
+				controls_state = 770
+				controls_state = 897
+				controls_state = 543
+				controls_state = 708
+
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFRICA_hnv_control
+
+				controls_state = 891
+				controls_state = 981
+				controls_state = 771
+				controls_state = 889
+				controls_state = 540
+
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 719
+				state = 681
+				state = 893
+				state = 541
+				state = 894
+				state = 895
+				state = 892
+				state = 275
+				state = 544
+				state = 542
+				state = 545
+				state = 896
+				state = 770
+				state = 897
+				state = 543
+				state = 708
+				state = 891
+				state = 981
+				state = 771
+				state = 889
+				state = 540
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+		visible = {
+			always = yes
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				719 = { add_core_of = ROOT }
+				681 = { add_core_of = ROOT }
+				893 = { add_core_of = ROOT }
+				541 = { add_core_of = ROOT }
+				894 = { add_core_of = ROOT }
+				895 = { add_core_of = ROOT }
+				892 = { add_core_of = ROOT }
+				275 = { add_core_of = ROOT }
+				544 = { add_core_of = ROOT }
+				542 = { add_core_of = ROOT }
+				545 = { add_core_of = ROOT }
+				896 = { add_core_of = ROOT }
+				770 = { add_core_of = ROOT }
+				897 = { add_core_of = ROOT }
+				543 = { add_core_of = ROOT }
+				708 = { add_core_of = ROOT }
+				891 = { add_core_of = ROOT }
+				981 = { add_core_of = ROOT }
+				771 = { add_core_of = ROOT }
+				889 = { add_core_of = ROOT }
+				540 = { add_core_of = ROOT }
+			}
+
+			set_cosmetic_tag = AFR_united
+
+			mark_focus_tree_layout_dirty = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

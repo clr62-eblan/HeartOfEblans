@@ -1,0 +1,10 @@
+GON_planning_modifier = { #Attack Bonuses for Germany in enemy states
+	enable = { always = yes } 
+	icon = GFX_modifiers_GER_blitzkrieg
+
+	breakthrough_factor = 0.05
+	army_infantry_attack_factor = 0.1
+	modifier_army_sub_unit_militia_attack_factor = 0.1
+	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
+	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
+}

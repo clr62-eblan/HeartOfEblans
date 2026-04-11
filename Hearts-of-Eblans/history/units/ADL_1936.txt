@@ -1,0 +1,144 @@
+division_template = {
+	name = "Дивизии Абдулая"		# Same for "Active" and "Reserve" Infantry Divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }  
+	}
+}
+
+units = {
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1950
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10908
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3181
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}	
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7963
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 5139
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 8193
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 5117
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 8016
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 1929
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 12824
+		division_template = "Дивизии Абдулая"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ADL"
+		}
+		requested_factories = 1
+		progress = 0.52
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ADL"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+}

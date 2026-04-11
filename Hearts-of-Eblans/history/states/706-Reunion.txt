@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = ZUS
-		add_core_of = MAD
+		add_core_of = ZUS
 		buildings = {
 			infrastructure = 2
 			13017 = {

@@ -124,5 +124,4 @@ instant_effect = {
 		progress = 0.48
 		efficiency = 100
 	}
-	}
 }

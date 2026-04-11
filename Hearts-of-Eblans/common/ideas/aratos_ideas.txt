@@ -54,6 +54,16 @@ ideas = {
 				surrender_limit = 1
 			}
 		}
+
+		idea_RAJ_kingmaker = {
+			
+			removal_cost = -1
+
+			picture = SPR_crush_the_revolution
+
+			modifier = {
+			}
+		}
 		
 		ARA_people_republick = {
 			allowed = {

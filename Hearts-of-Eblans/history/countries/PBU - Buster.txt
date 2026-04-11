@@ -55,14 +55,13 @@ if = {
 }
 
 add_ideas = {
-	
 	PBU_slay_2023
 }
 
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = hypecratia
 	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -117,7 +116,7 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "BUS.dds"
 	
-	ideology = hypetiktok
+	ideology = hypetwitch
 	traits = {
 		polkovnik
 	}
@@ -127,8 +126,8 @@ set_popularities = {
 	democratic = 2
 	fascism = 5
 	communism = 2
-	neutrality = 56
-	hypecratia = 35
+	neutrality = 35
+	hypecratia = 56
 }
 
 

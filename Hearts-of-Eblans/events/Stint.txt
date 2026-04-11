@@ -1,5 +1,6 @@
 add_namespace = stintik
 add_namespace = stintik_trade
+add_namespace = stintik_technical
 
 country_event = {	
 	
@@ -33,6 +34,18 @@ country_event = {
         }
 
         set_cosmetic_tag = STI_parliament
+	}
+}
+
+country_event = { #clear country flag so we can do more Operational Planning
+	id = stintik_technical.1
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = GON_operational_planning_flag
 	}
 }
 

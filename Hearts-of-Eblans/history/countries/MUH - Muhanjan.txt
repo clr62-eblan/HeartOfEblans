@@ -11,6 +11,8 @@ set_technology = {
 	basic_train = 1
 }
 
+oob = "MUH_1936"
+
 add_ideas = {
 	SQUAD_manpower_rotation
 }

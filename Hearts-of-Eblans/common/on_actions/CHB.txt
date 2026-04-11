@@ -1,4 +1,5 @@
 on_actions = {
+
 	on_daily_CHB = {
 		effect = {
 			if = {
@@ -14,17 +15,26 @@ on_actions = {
 				country_event = { id = chicken.100 }
 				set_country_flag = CHB_shukov_casualty_event_fired
 			}
-		}
-		if = {
-			limit = {
-				tag = CHB
-				has_country_flag = CHB_SMARIK_SPAWNED
-				NOT = { has_country_flag = CHB_INCEDENT_SMART }
-				has_war = yes
+
+			if = {
+				limit = {
+					tag = CHB
+					has_country_flag = CHB_SMARIK_SPAWNED
+					NOT = { has_country_flag = CHB_INCEDENT_SMART }
+					has_war = yes
+				}
+				set_country_flag = CHB_INCEDENT_SMART
+				news_event = { id = squad_news.30 days = 10 }
 			}
-			set_country_flag = CHB_INCEDENT_SMART
-			news_event = { id = squad_news.30 days = 10 }
+
+			if = {
+				limit = {
+					tag = CHB
+				}
+				refresh_chb_sever_compilance_and_resistance = yes
+			}
 		}
+		
 
 		#if = {
 		#	limit = {

@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		GENERAL_rapid_industrialization_unrest = {
-			picture = generic_industrial_unrest
+			picture = generic_improved_industries
 			allowed = { always = no }
 			removal_cost = -1
 			
@@ -12,7 +12,7 @@ ideas = {
 		}
 
 		GENERAL_industrial_sabotage = {
-			picture = generic_sabotage
+			picture = POL_disjointed_industry
 			allowed = { always = no }
 			removal_cost = -1
 			
@@ -25,7 +25,7 @@ ideas = {
 		}
 
 		GENERAL_crops_idea_weak = {
-			picture = generic_agriculture
+			picture = generic_agrarian_reform
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -35,7 +35,7 @@ ideas = {
 		}
 
 		GENERAL_crops_idea_medium = {
-			picture = generic_agriculture
+			picture = generic_agrarian_reform
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -46,7 +46,7 @@ ideas = {
 		}
 
 		GENERAL_crops_idea_strong = {
-			picture = generic_agriculture
+			picture = generic_agrarian_reform
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -57,7 +57,7 @@ ideas = {
 		}
 
 		GENERAL_national_strengthening_idea = {
-			picture = generic_nationalism
+			picture = ARG_growing_nationalism_modifier
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -68,7 +68,7 @@ ideas = {
 		}
 
 		GENERAL_supported_landowners = {
-			picture = generic_landowners
+			picture = AUS_streamline_cruiser_production_idea
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -79,7 +79,7 @@ ideas = {
 		}
 
 		GENERAL_reformed_landowning_idea = {
-			picture = generic_land_reform
+			picture = RAJ_tenancy_reforms
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {

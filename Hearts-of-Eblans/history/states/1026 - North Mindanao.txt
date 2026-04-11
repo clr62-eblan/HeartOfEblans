@@ -7,7 +7,7 @@ state = {
 
 	history = {
 
-		#owner = PHI
+		owner = ZUS
 		#add_core_of = PHI
 
 		buildings = {

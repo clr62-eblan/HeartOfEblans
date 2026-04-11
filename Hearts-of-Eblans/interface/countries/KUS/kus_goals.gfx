@@ -20,8 +20,28 @@ spriteTypes = {
 	    texturefile = "gfx/interface/goals/KUS/kussia_sponsor_workers.png"			
 	}
 	SpriteType = {
+	    name = "GFX_goal_KUS_narodnoe_bludo"
+	    texturefile = "gfx/interface/goals/KUS/focus_KUS_narodnoe_bludo.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_KUS_inspection"
+	    texturefile = "gfx/interface/goals/KUS/focus_KUS_inspection.dds"			
+	}
+	SpriteType = {
 	    name = "GFX_goal_KUS_end_of_peace"
 	    texturefile = "gfx/interface/goals/KUS/kussia_end_of_peace.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_RAB_war"
+	    texturefile = "gfx/interface/goals/focus_RAB_war.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_SEX_war"
+	    texturefile = "gfx/interface/goals/focus_SEX_war.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_DLX_war"
+	    texturefile = "gfx/interface/goals/focus_DLX_war.dds"			
 	}
 	SpriteType = {
 	    name = "GFX_goal_KUS_list_of_spana"
@@ -38,6 +58,14 @@ spriteTypes = {
 	SpriteType = {
 	    name = "GFX_goal_KUS_center_army"
 	    texturefile = "gfx/interface/goals/KUS/kussia_center_army.png"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_MNY_war"
+	    texturefile = "gfx/interface/goals/focus_MNY_war.dds"			
+	}
+	SpriteType = {
+	    name = "GFX_goal_LID_war"
+	    texturefile = "gfx/interface/goals/focus_LID_war.dds"			
 	}
 	SpriteType = {
 	    name = "GFX_goal_KUS_great_again"

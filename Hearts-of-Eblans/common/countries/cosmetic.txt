@@ -99,7 +99,26 @@ BTK_ORDENAT = {
 	color_ui = rgb { 255 139 31 }
 }
 
+BTK_MDS_RULE = {
+	color = rgb { 115 45 156 }
+	color_ui = rgb { 115 45 156 }
+}
+
 KUS_MNY_UNI= {
 	color = rgb { 255 187 0 }
 	color_ui = rgb { 255 187 0 }
+}
+
+ZOL_EMPIRE= {
+	color = rgb { 9 128 41 }
+	color_ui = rgb { 9 128 41 }
+}
+
+KUS_SHPANA= {
+	color = rgb { 24 34 143 }
+	color_ui = rgb { 24 34 143 }
+}
+CHB_socialism_union = {
+	color = rgb { 145 0 0 }
+	color_ui = rgb { 145 0 0 }
 }

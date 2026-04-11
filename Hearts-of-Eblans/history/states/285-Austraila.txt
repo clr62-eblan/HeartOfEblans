@@ -6,7 +6,7 @@ state = {
 
 	history = {
 
-		#owner = AST
+		owner = ZUS
 		#add_core_of = AST
 
 		buildings = {

@@ -1,0 +1,18 @@
+decision_categories = {
+	chb_industrial_crisis_category = {
+		icon = generic_economy
+		allowed = {
+			original_tag = CHB
+		}
+		visible = {
+			OR = {
+				has_idea = CHB_inflationary_defense_credit_5
+				has_idea = CHB_inflationary_defense_credit_4
+				has_idea = CHB_inflationary_defense_credit_3
+				has_idea = CHB_inflationary_defense_credit_2
+				has_idea = CHB_inflationary_defense_credit
+				has_idea = CHB_collapsing_home_front
+			}
+		}
+	}
+}

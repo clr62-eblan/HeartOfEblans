@@ -1,0 +1,95 @@
+decisions = {
+	chb_industrial_crisis_category = {
+		chb_fix_inflation_5 = {
+			icon = generic_economy
+			available = {
+				has_idea = CHB_inflationary_defense_credit_5
+				political_power > 100
+			}
+			cost = 100
+			fire_only_once = no
+			days_remove = 30
+			remove_effect = {
+				remove_ideas = CHB_inflationary_defense_credit_5
+				add_ideas = CHB_inflationary_defense_credit_4
+				add_stability = 0.05
+			}
+		}
+
+		chb_fix_inflation_4 = {
+			icon = generic_economy
+			available = {
+				has_idea = CHB_inflationary_defense_credit_4
+				political_power > 100
+			}
+			cost = 100
+			fire_only_once = no
+			days_remove = 30
+			remove_effect = {
+				remove_ideas = CHB_inflationary_defense_credit_4
+				add_ideas = CHB_inflationary_defense_credit_3
+				add_stability = 0.05
+			}
+		}
+
+		chb_fix_inflation_3 = {
+			icon = generic_economy
+			available = {
+				has_idea = CHB_inflationary_defense_credit_3
+				political_power > 100
+			}
+			cost = 100
+			fire_only_once = no
+			days_remove = 30
+			remove_effect = {
+				remove_ideas = CHB_inflationary_defense_credit_3
+				add_ideas = CHB_inflationary_defense_credit_2
+			}
+		}
+
+		chb_fix_inflation_2 = {
+			icon = generic_economy
+			available = {
+				has_idea = CHB_inflationary_defense_credit_2
+				political_power > 100
+			}
+			cost = 100
+			fire_only_once = no
+			days_remove = 30
+			remove_effect = {
+				remove_ideas = CHB_inflationary_defense_credit_2
+				add_ideas = CHB_inflationary_defense_credit
+			}
+		}
+
+		chb_fix_inflation = {
+			icon = generic_economy
+			available = {
+				has_idea = CHB_inflationary_defense_credit
+				political_power > 100
+			}
+			cost = 100
+			fire_only_once = yes
+			days_remove = 30
+			remove_effect = {
+				remove_ideas = CHB_inflationary_defense_credit
+				add_stability = 0.05
+			}
+		}
+
+		chb_fix_collapsing_home_front = {
+			icon = generic_economy
+			available = {
+				has_idea = CHB_collapsing_home_front
+				political_power > 150
+			}
+			cost = 150
+			fire_only_once = yes
+			days_remove = 45
+			remove_effect = {
+				remove_ideas = CHB_collapsing_home_front
+				add_stability = 0.1
+			}
+		}
+	}
+}

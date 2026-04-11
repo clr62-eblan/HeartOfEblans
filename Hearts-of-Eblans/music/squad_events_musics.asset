@@ -38,6 +38,10 @@ music = {
 	name = "indeykin_dom"
 	file = "SquadMusic/indeykin_dom.ogg"
 }
+music = {
+	name = "derevnya_durakov"
+	file = "SquadMusic/derevnya_durakov.ogg"
+}
 
 music = {
 	name = "sobaka_bustera"

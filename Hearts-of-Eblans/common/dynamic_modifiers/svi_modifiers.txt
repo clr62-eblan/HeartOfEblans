@@ -1,0 +1,13 @@
+SVI_svintogon_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_svintogon
+
+	drift_defence_factor = SVI_svintogon_driftdef_factor
+	required_garrison_factor = SVI_svintogon_reqgarrison_factor
+	max_planning_factor = SVI_svintogon_maxplanning_factor
+	training_time_factor = SVI_svintogon_trainingtime_factor
+	army_defence_factor = SVI_svintogon_armydefense_factor
+	winter_attrition_factor = SVI_svintogon_winterattrition_factor
+	acclimatization_cold_climate_gain_factor = SVI_svintogon_coldacclimatize_factor
+    supply_factor = SVI_svintogon_supply_factor
+}

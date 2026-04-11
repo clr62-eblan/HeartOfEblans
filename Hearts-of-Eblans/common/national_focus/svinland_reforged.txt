@@ -16,6 +16,9 @@ focus_tree = {
 
 	continuous_focus_position = { x = 5000 y = 1100 }
 
+	shared_focus = news_aviation_effort
+	shared_focus = news_naval_effort
+
 	focus = {
 		id = SVI_extend_constitution
 		mutually_exclusive = { focus = SVI_total_safety }
@@ -26,6 +29,10 @@ focus_tree = {
 
 		available = {
 
+		}
+
+		ai_will_do = {
+			factor = 50
 		}
 
 		completion_reward = {
@@ -82,11 +89,15 @@ focus_tree = {
 		id = SVI_return_of_confidence
 		mutually_exclusive = { focus = SVI_return_to_greatness }
 		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
-		cost = 5
+		cost = 7
 		x = -4
 		y = 1
 		relative_position_id = SVI_extend_constitution
 		prerequisite = { focus = SVI_extend_constitution }
+
+		ai_will_do = {
+			factor = 50
+		}
 
 		available = {
 			custom_trigger_tooltip = { tooltip = need_parliament_support_40
@@ -298,7 +309,7 @@ focus_tree = {
 	focus = {
 		id = SVI_the_voice_of_the_street
 		icon = GFX_goal_generic_national_unity
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_consolidation_of_the_Duma
@@ -326,7 +337,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 40
+					days = 60
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -369,7 +380,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 60
+					days = 65
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -398,6 +409,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			
+			custom_effect_tooltip = SVI_demo_conscription_upp_avaliable
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = "low_parliament_popularity_increase"
 			hidden_effect = {
 			low_parliament_popularity_increase = yes
@@ -409,7 +423,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 55
+					days = 65
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -504,7 +518,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 80
+					days = 90
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -515,7 +529,7 @@ focus_tree = {
 	focus = {
 		id = SVI_reintegration_of_bustergrad
 		icon = GFX_goal_svi_destroy_bustergrad
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_trust_in_the_President
@@ -526,6 +540,7 @@ focus_tree = {
     			target = BUS
     			transfer_troops = no
 			}
+
 			remove_ideas = SVI_buster_oposite
 		}
 	}
@@ -555,7 +570,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 50
+					days = 60
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -582,7 +597,7 @@ focus_tree = {
 	focus = {
 		id = SVI_public_debats
 		icon = GFX_focus_generic_industrialists
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_amnesty_for_the_opposition
@@ -629,7 +644,7 @@ focus_tree = {
 	focus = {
 		id = SVI_freedom_of_press
 		icon = GFX_focus_SWE_radiotjanst
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_public_debats
@@ -665,7 +680,7 @@ focus_tree = {
 	focus = {
 		id = SVI_educational_reform
 		icon = GFX_focus_generic_university_3
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_freedom_of_press
@@ -683,21 +698,21 @@ focus_tree = {
 	focus = {
 		id = SVI_symbol_of_the_future
 		icon = GFX_goal_generic_democratic_propaganda
-		cost = 5
+		cost = 1
 		x = 0
 		y = 1
 		relative_position_id = SVI_educational_reform
 		prerequisite = { focus = SVI_educational_reform }
 
 		completion_reward = {
-			
+			custom_effect_tooltip = in_development
 		}
 	}
 
 	focus = {
 		id = SVI_svinland_unity_programm
 		icon = GFX_goal_SVI_one_country_one_folk
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_amnesty_for_the_opposition
@@ -776,7 +791,7 @@ focus_tree = {
 	focus = {
 		id = SVI_democracy_under_the_protection_of_the_law
 		icon = GFX_focus_ARG_defense_and_democracy
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_democracy_export
@@ -814,7 +829,7 @@ focus_tree = {
 	focus = {
 		id = SVI_peace_and_diplomacy
 		icon = GFX_focus_RAJ_to_shake_the_world
-		cost = 5
+		cost = 7
 		x = 1
 		y = 2
 		relative_position_id = SVI_democracy_export
@@ -902,7 +917,7 @@ focus_tree = {
 	focus = {
 		id = SVI_new_dumas_budget
 		icon = GFX_focus_generic_economic_recovery
-		cost = 5
+		cost = 7
 		x = 0
 		y = 4
 		relative_position_id = SVI_trust_in_the_President
@@ -954,7 +969,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 45
+					days = 50
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -965,7 +980,7 @@ focus_tree = {
 	focus = {
 		id = SVI_public_tranquility
 		icon = GFX_focus_BEL_v_for_victory
-		cost = 5
+		cost = 7
 		x = 0
 		y = 2
 		relative_position_id = SVI_convening_of_the_constitutional_council
@@ -991,6 +1006,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = SVI_extend_constitution
 		prerequisite = { focus = SVI_extend_constitution }
+
+		ai_will_do = {
+			factor = 50
+		}
 
 		available = {
 			custom_trigger_tooltip = { tooltip = need_parliament_support_65
@@ -1028,7 +1047,7 @@ focus_tree = {
 	focus = {
 		id = SVI_pact_with_the_wavering 
 		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_return_to_greatness
@@ -1041,7 +1060,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 40
+					days = 60
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1056,7 +1075,7 @@ focus_tree = {
 	focus = {
 		id = SVI_the_stabilization_act
 		icon = GFX_focus_ARG_strengthening_the_concordancia
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_pact_with_the_wavering
@@ -1078,7 +1097,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 40
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1096,7 +1115,7 @@ focus_tree = {
 	focus = {
 		id = SVI_symbol_of_order
 		icon = GFX_goal_SVI_symbol_of_stability
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_pact_with_the_wavering
@@ -1118,7 +1137,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 40
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1135,7 +1154,7 @@ focus_tree = {
 	focus = {
 		id = SVI_constitutional_reform
 		icon = GFX_goal_SVI_constitution
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_symbol_of_order
@@ -1185,7 +1204,7 @@ focus_tree = {
 	focus = {
 		id = SVI_new_government
 		icon = GFX_focus_BEL_government_resigns
-		cost = 5
+		cost = 7
 		x = -2
 		y = 1
 		relative_position_id = SVI_constitutional_reform
@@ -1221,7 +1240,7 @@ focus_tree = {
 	focus = {
 		id = SVI_competitor_takeover
 		icon = GFX_focus_BRA_end_the_state_of_emergency
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_new_government
@@ -1234,7 +1253,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 45
+					days = 60
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1256,7 +1275,7 @@ focus_tree = {
 	focus = {
 		id = SVI_loyality_program
 		icon = GFX_goal_generic_major_alliance
-		cost = 5
+		cost = 7
 		x = 2
 		y = 1
 		relative_position_id = SVI_constitutional_reform
@@ -1281,7 +1300,7 @@ focus_tree = {
 	focus = {
 		id = SVI_preparing_for_the_celebrations
 		icon = GFX_focus_generic_royal_wedding
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_loyality_program
@@ -1294,7 +1313,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 45
+					days = 60
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1305,7 +1324,7 @@ focus_tree = {
 	focus = {
 		id = SVI_people_referendum
 		icon = GFX_focus_generic_election
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_constitutional_reform
@@ -1374,7 +1393,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 50
+					days = 60
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1404,7 +1423,7 @@ focus_tree = {
 	focus = {
 		id = SVI_power_that_cannot_be_broken
 		icon = GFX_focus_AFG_against_kabul
-		cost = 5
+		cost = 7
 		x = 3
 		y = 1
 		relative_position_id = SVI_Decree_on_the_powers_of_the_President
@@ -1416,7 +1435,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 35
+					days = 50
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1428,7 +1447,7 @@ focus_tree = {
 	focus = {
 		id = SVI_historical_status
 		icon = GFX_focus_generic_vatican_state
-		cost = 5
+		cost = 7
 		x = -3
 		y = 1
 		relative_position_id = SVI_Decree_on_the_powers_of_the_President
@@ -1440,7 +1459,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 35
+					days = 50
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1469,7 +1488,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 50
+					days = 45
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1489,7 +1508,7 @@ focus_tree = {
 	focus = {
 		id = SVI_temporary_order
 		icon = GFX_focus_GER_autarky_achieved
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_dissolution_of_the_Duma
@@ -1502,7 +1521,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 40
+					days = 60
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1513,7 +1532,7 @@ focus_tree = {
 	focus = {
 		id = SVI_law_on_Compulsory_Uniformity
 		icon = GFX_focus_generic_monarchy_2
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_dissolution_of_the_Duma
@@ -1550,7 +1569,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 25
+					days = 35
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1561,7 +1580,7 @@ focus_tree = {
 	focus = {
 		id = SVI_centralized_economy
 		icon = GFX_focus_generic_central_planning
-		cost = 5
+		cost = 7
 		x = -2
 		y = 1
 		relative_position_id = SVI_restoration_of_monarchical_symbols
@@ -1585,7 +1604,7 @@ focus_tree = {
 	focus = {
 		id = SVI_reforming_the_bureaucracy 
 		icon = GFX_focus_BRA_repeale_national_security_law
-		cost = 5
+		cost = 7
 		x = 0
 		y = 2
 		relative_position_id = SVI_restoration_of_monarchical_symbols
@@ -1609,7 +1628,7 @@ focus_tree = {
 	focus = {
 		id = SVI_one_army_one_nation
 		icon = GFX_goal_SVI_one_country_one_folk
-		cost = 5
+		cost = 7
 		x = 2
 		y = 1
 		relative_position_id = SVI_restoration_of_monarchical_symbols
@@ -1657,7 +1676,7 @@ focus_tree = {
 	focus = {
 		id = SVI_day_of_rage
 		icon = GFX_goal_generic_cooperate_with_fascists
-		cost = 5
+		cost = 7
 		x = -4
 		y = 1
 		relative_position_id = SVI_total_safety
@@ -1675,7 +1694,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 50
+					days = 60
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -1687,7 +1706,7 @@ focus_tree = {
 	focus = {
 		id = SVI_national_renaissance_party
 		icon = GFX_focus_generic_spread_fascism
-		cost = 5
+		cost = 7
 		x = 3
 		y = 1
 		relative_position_id = SVI_day_of_rage
@@ -1726,7 +1745,7 @@ focus_tree = {
 	focus = {
 		id = SVI_new_order_movement
 		icon = GFX_goal_tripartite_pact
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_national_renaissance_party
@@ -1755,7 +1774,7 @@ focus_tree = {
 	focus = {
 		id = SVI_parade_of_strength
 		icon = GFX_focus_generic_fascist_troops
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_national_renaissance_party
@@ -1784,7 +1803,7 @@ focus_tree = {
 	focus = {
 		id = SVI_national_youth
 		icon = GFX_focus_generic_military_academy
-		cost = 5
+		cost = 7
 		x = 0
 		y = 2
 		relative_position_id = SVI_national_renaissance_party
@@ -1824,7 +1843,7 @@ focus_tree = {
 	focus = {
 		id = SVI_vilification_of_government
 		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 5
+		cost = 7
 		x = -2
 		y = 1
 		relative_position_id = SVI_national_youth
@@ -1859,7 +1878,7 @@ focus_tree = {
 	focus = {
 		id = SVI_nation_exceptionalism_act
 		icon = GFX_goal_SVI_national_strenght
-		cost = 5
+		cost = 1
 		x = 0
 		y = 1
 		relative_position_id = SVI_national_youth
@@ -1876,7 +1895,7 @@ focus_tree = {
 	focus = {
 		id = SVI_support_from_army_circles
 		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
-		cost = 5
+		cost = 7
 		x = 2
 		y = 1
 		relative_position_id = SVI_national_youth
@@ -1907,7 +1926,7 @@ focus_tree = {
 	focus = {
 		id = SVI_arrest_of_parliamentary_traitors
 		icon = GFX_focus_FIN_parmis_devils
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_nation_exceptionalism_act
@@ -1948,7 +1967,7 @@ focus_tree = {
 	focus = {
 		id = SVI_return_power_by_force
 		icon = GFX_focus_AFG_scavenging
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_nation_exceptionalism_act
@@ -2041,7 +2060,7 @@ focus_tree = {
 	focus = {
 		id = SVI_reintegration_of_bustergrad_fas
 		icon = GFX_goal_svi_destroy_bustergrad
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_proclamation_of_order
@@ -2059,7 +2078,7 @@ focus_tree = {
 	focus = {
 		id = SVI_ministry_of_propaganda
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 5
+		cost = 7
 		x = 2
 		y = 1
 		relative_position_id = SVI_proclamation_of_order
@@ -2087,7 +2106,7 @@ focus_tree = {
 	focus = {
 		id = SVI_program_of_ideological_reeducation
 		icon = GFX_focus_POL_warsaw_main_station
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_ministry_of_propaganda
@@ -2112,7 +2131,7 @@ focus_tree = {
 	focus = {
 		id = SVI_svin_science
 		icon = GFX_goal_generic_scientific_exchange
-		cost = 5
+		cost = 7
 		x = -2
 		y = 1
 		relative_position_id = SVI_proclamation_of_order
@@ -2137,7 +2156,7 @@ focus_tree = {
 	focus = {
 		id = SVI_censorship_of_information
 		icon = GFX_focus_generic_radio_communication
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_svin_science
@@ -2168,7 +2187,7 @@ focus_tree = {
 	focus = {
 		id = SVI_new_citizenship
 		icon = GFX_focus_generic_treaty
-		cost = 5
+		cost = 7
 		x = 0
 		y = 2
 		relative_position_id = SVI_reintegration_of_bustergrad_fas
@@ -2193,7 +2212,7 @@ focus_tree = {
 	focus = {
 		id = SVI_the_cult_of_one_svin
 		icon = GFX_goal_leader_of_svins
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_new_citizenship
@@ -2218,8 +2237,33 @@ focus_tree = {
 	focus = {
 		id = SVI_world_is_not_for_the_weak
 		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		cost = 5
+		cost = 7
 		x = -1
+		y = 1
+		relative_position_id = SVI_the_cult_of_one_svin
+		prerequisite = { focus = SVI_the_cult_of_one_svin }
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = SVI_decay_stopped }
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 65
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			add_ideas = SVI_world_is_not_for_the_weak_idea
+		}
+	}
+
+	focus = {
+		id = SVI_war_economy
+		icon = GFX_focus_RAJ_war_taxes
+		cost = 7
+		x = 1
 		y = 1
 		relative_position_id = SVI_the_cult_of_one_svin
 		prerequisite = { focus = SVI_the_cult_of_one_svin }
@@ -2236,31 +2280,6 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
-			add_ideas = SVI_world_is_not_for_the_weak_idea
-		}
-	}
-
-	focus = {
-		id = SVI_war_economy
-		icon = GFX_focus_RAJ_war_taxes
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = SVI_the_cult_of_one_svin
-		prerequisite = { focus = SVI_the_cult_of_one_svin }
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = SVI_decay_stopped }
-				}
-				add_days_mission_timeout = {
-					mission = SVI_growing_public_dissent_mission
-					days = 45
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-
 			if = {
 				limit = { NOT = {has_idea = war_economy } }
 				add_ideas = war_economy
@@ -2272,7 +2291,7 @@ focus_tree = {
 	focus = {
 		id = SVI_disruption_of_decay
 		icon = GFX_goal_decay_cancel
-		cost = 5
+		cost = 7
 		x = 0
 		y = 2
 		relative_position_id = SVI_the_cult_of_one_svin
@@ -2292,12 +2311,15 @@ focus_tree = {
 	focus = {
 		id = SVI_increased_militaristic_sentiment
 		icon = GFX_focus_generic_advanced_military_studies
-		cost = 5
+		cost = 7
 		x = -3
 		y = 1
 		relative_position_id = SVI_day_of_rage
 		prerequisite = { focus = SVI_day_of_rage }
 		mutually_exclusive = { focus = SVI_national_renaissance_party }
+		ai_will_do = {
+			factor = 50
+		}
 
 		completion_reward = {
 			if = {
@@ -2306,7 +2328,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 45
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2340,7 +2362,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 60
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2370,7 +2392,7 @@ focus_tree = {
 	focus = {
 		id = SVI_field_commanders_council
 		icon = GFX_focus_CONGO_congolese_generals
-		cost = 5
+		cost = 7
 		x = -2
 		y = 1
 		relative_position_id = SVI_last_pillar
@@ -2392,7 +2414,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 50
+					days = 65
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2436,7 +2458,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 55
+					days = 65
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2449,7 +2471,7 @@ focus_tree = {
 	focus = {
 		id = SVI_army_on_the_streets
 		icon = GFX_focus_generic_tank_assault
-		cost = 5
+		cost = 7
 		x = 2
 		y = 1
 		relative_position_id = SVI_last_pillar
@@ -2462,7 +2484,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 50
+					days = 65
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2484,7 +2506,7 @@ focus_tree = {
 	focus = {
 		id = SVI_arrest_of_separatist_deputies
 		icon = GFX_focus_mex_arrest_general_cedillo
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_support_of_retired_marshal
@@ -2499,7 +2521,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 50
+					days = 65
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2527,7 +2549,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 85
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2560,7 +2582,7 @@ focus_tree = {
 	focus = {
 		id = SVI_military_government
 		icon = GFX_focus_generic_military_dictatorship
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_abolition_of_the_Duma
@@ -2573,7 +2595,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 45
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2588,7 +2610,7 @@ focus_tree = {
 	focus = {
 		id = SVI_mobilizing_the_economy
 		icon = GFX_focus_generic_combined_arms
-		cost = 5
+		cost = 7
 		x = -2
 		y = 1
 		relative_position_id = SVI_abolition_of_the_Duma
@@ -2601,7 +2623,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 45
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2618,7 +2640,7 @@ focus_tree = {
 	focus = {
 		id = SVI_nationalization_of_strategic_enterprises
 		icon = GFX_focus_CHL_la_corporacion_araucania
-		cost = 5
+		cost = 7
 		x = 2
 		y = 1
 		relative_position_id = SVI_abolition_of_the_Duma
@@ -2631,7 +2653,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 40
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2697,7 +2719,7 @@ focus_tree = {
 	focus = {
 		id = SVI_oath_of_generals
 		icon = GFX_focus_CZE_german_puppet
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_military_government
@@ -2710,7 +2732,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 45
+					days = 80
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2741,7 +2763,7 @@ focus_tree = {
 	focus = {
 		id = SVI_retraining_officer_corps
 		icon = GFX_focus_AUS_raid_military_storages
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_military_government
@@ -2754,7 +2776,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 75
+					days = 90
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2766,7 +2788,7 @@ focus_tree = {
 	focus = {
 		id = SVI_the_steel_fist_plan
 		icon = GFX_goal_generic_political_pressure
-		cost = 5
+		cost = 7
 		x = 0
 		y = 2
 		relative_position_id = SVI_military_government
@@ -2787,7 +2809,7 @@ focus_tree = {
 	focus = {
 		id = SVI_blow_to_bustergrad
 		icon = GFX_goal_svi_destroy_bustergrad
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_the_steel_fist_plan
@@ -2805,7 +2827,7 @@ focus_tree = {
 	focus = {
 		id = SVI_Eliminate_opposition
 		icon = GFX_focus_spr_masters_of_our_own_fate
-		cost = 5
+		cost = 7
 		x = -2
 		y = 1
 		relative_position_id = SVI_the_steel_fist_plan
@@ -2818,7 +2840,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 60
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2830,7 +2852,7 @@ focus_tree = {
 	focus = {
 		id = SVI_army_is_law
 		icon = GFX_focus_FIN_weapon_caches
-		cost = 5
+		cost = 7
 		x = 2
 		y = 1
 		relative_position_id = SVI_the_steel_fist_plan
@@ -2843,7 +2865,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 60
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2855,7 +2877,7 @@ focus_tree = {
 	focus = {
 		id = SVI_new_citizens_oath
 		icon = GFX_focus_generic_whispers
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_Eliminate_opposition
@@ -2868,7 +2890,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 55
+					days = 65
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2881,7 +2903,7 @@ focus_tree = {
 	focus = {
 		id = SVI_army_is_our_people
 		icon = GFX_focus_generic_little_entente
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_army_is_law
@@ -2894,7 +2916,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 55
+					days = 65
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2906,7 +2928,7 @@ focus_tree = {
 	focus = {
 		id = SVI_stability_exports
 		icon = GFX_focus_RAJ_the_crown_and_the_world
-		cost = 5
+		cost = 7
 		x = 0
 		y = 2
 		relative_position_id = SVI_blow_to_bustergrad
@@ -2926,12 +2948,16 @@ focus_tree = {
 	focus = {
 		id = SVI_stolitsa_will_awash_in_red
 		icon = GFX_focus_BEL_the_grand_place
-		cost = 5
+		cost = 7
 		x = 7
 		y = 1
 		relative_position_id = SVI_total_safety
 		prerequisite = { focus = SVI_total_safety }
 		mutually_exclusive = { focus = SVI_day_of_rage }
+
+		ai_will_do = {
+			factor = 50
+		}
 
 		completion_reward = {
 			if = {
@@ -2940,7 +2966,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2957,7 +2983,7 @@ focus_tree = {
 	focus = {
 		id = SVI_voice_of_workers
 		icon = GFX_focus_por_workers_of_iberia
-		cost = 5
+		cost = 7
 		x = -2
 		y = 1
 		relative_position_id = SVI_stolitsa_will_awash_in_red
@@ -2970,7 +2996,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 60
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -2985,7 +3011,7 @@ focus_tree = {
 	focus = {
 		id = SVI_red_meetings
 		icon = GFX_focus_generic_workers_and_farmers_rise
-		cost = 5
+		cost = 7
 		x = 2
 		y = 1
 		relative_position_id = SVI_stolitsa_will_awash_in_red
@@ -2998,7 +3024,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 60
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3013,7 +3039,7 @@ focus_tree = {
 	focus = {
 		id = SVI_retraining_program
 		icon = GFX_focus_NOR_moscows_education_centers
-		cost = 5
+		cost = 7
 		x = 1
 		y = 2
 		relative_position_id = SVI_stolitsa_will_awash_in_red
@@ -3026,7 +3052,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 60
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3038,7 +3064,7 @@ focus_tree = {
 	focus = {
 		id = SVI_communist_party_congress
 		icon = GFX_focus_generic_communist_industry
-		cost = 5
+		cost = 7
 		x = -1
 		y = 2
 		relative_position_id = SVI_stolitsa_will_awash_in_red
@@ -3052,7 +3078,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 60
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3064,7 +3090,7 @@ focus_tree = {
 	focus = {
 		id = SVI_nationalization_of_resources
 		icon = GFX_focus_generic_resource_extraction
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_communist_party_congress
@@ -3094,7 +3120,7 @@ focus_tree = {
 	focus = {
 		id = SVI_revolutionary_propaganda
 		icon = GFX_goal_generic_propaganda
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_retraining_program
@@ -3107,7 +3133,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 60
+					days = 70
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3119,7 +3145,7 @@ focus_tree = {
 	focus = {
 		id = SVI_equality_act
 		icon = GFX_focus_generic_communist
-		cost = 5
+		cost = 7
 		x = -1
 		y = 2
 		relative_position_id = SVI_retraining_program
@@ -3136,7 +3162,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 70
+					days = 80
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3171,7 +3197,7 @@ focus_tree = {
 	focus = {
 		id = SVI_ultimatum_to_Duma
 		icon = GFX_focus_generic_annex_country_2
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_equality_act
@@ -3184,7 +3210,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 70
+					days = 80
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3200,7 +3226,7 @@ focus_tree = {
 	focus = {
 		id = SVI_workers_union
 		icon = GFX_focus_ICE_embrace_the_workers_revolution
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_ultimatum_to_Duma
@@ -3213,7 +3239,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3225,7 +3251,7 @@ focus_tree = {
 	focus = {
 		id = SVI_overthrow_of_the_old_regime
 		icon = GFX_focus_usa_voter_registration_act
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_ultimatum_to_Duma
@@ -3238,7 +3264,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3255,7 +3281,7 @@ focus_tree = {
 	focus = {
 		id = SVI_red_army_of_the_people
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_workers_union
@@ -3268,7 +3294,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3280,7 +3306,7 @@ focus_tree = {
 	focus = {
 		id = SVI_planned_economy
 		icon = GFX_focus_generic_central_planning
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_overthrow_of_the_old_regime
@@ -3293,7 +3319,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3305,7 +3331,7 @@ focus_tree = {
 	focus = {
 		id = SVI_agrarian_collectivisation
 		icon = GFX_focus_generic_agricultural_subsidies
-		cost = 5
+		cost = 7
 		x = -1
 		y = 1
 		relative_position_id = SVI_planned_economy
@@ -3318,7 +3344,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3330,7 +3356,7 @@ focus_tree = {
 	focus = {
 		id = SVI_state_insurance
 		icon = GFX_focus_GER_customs_union
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_red_army_of_the_people
@@ -3343,7 +3369,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3355,7 +3381,7 @@ focus_tree = {
 	focus = {
 		id = SVI_international_aid
 		icon = GFX_focus_ETH_callout_to_the_world
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		relative_position_id = SVI_state_insurance
@@ -3369,7 +3395,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3387,7 +3413,7 @@ focus_tree = {
 	focus = {
 		id = SVI_suppression_of_sabotage
 		icon = GFX_focus_SOV_military_purge
-		cost = 5
+		cost = 7
 		x = -2
 		y = 1
 		relative_position_id = SVI_international_aid
@@ -3400,7 +3426,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3412,7 +3438,7 @@ focus_tree = {
 	focus = {
 		id = SVI_idea_for_posterity
 		icon = GFX_focus_SOV_proclaim_soviet_hegemony
-		cost = 5
+		cost = 7
 		x = 2
 		y = 1
 		relative_position_id = SVI_international_aid
@@ -3425,7 +3451,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3437,7 +3463,7 @@ focus_tree = {
 	focus = {
 		id = SVI_svinland_unified
 		icon = GFX_focus_ger_great_red_menace
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_international_aid
@@ -3450,7 +3476,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = SVI_growing_public_dissent_mission
-					days = 65
+					days = 75
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -3462,7 +3488,7 @@ focus_tree = {
 	focus = {
 		id = SVI_world_of_svinland
 		icon = GFX_goal_SVI_national_strenght
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_svinland_unified
@@ -3490,7 +3516,7 @@ focus_tree = {
 		relative_position_id = SVI_total_safety
 
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 
 		available = {
@@ -3503,7 +3529,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = SVI_svintogon_1
+			add_dynamic_modifier = {
+				modifier = SVI_svintogon_modifier
+			}
+			add_to_variable = { SVI_svintogon_driftdef_factor = 0.1 tooltip = drift_defence_factor_tt }
 		}
 	}
 
@@ -3511,22 +3540,32 @@ focus_tree = {
 		id = SVI_practice_defense_scenarios
 		icon = GFX_goal_generic_position_armies
 		cost = 5
-		x = -2
-		y = 3
+		x = 0
+		y = 2
 		relative_position_id = SVI_war_department
 		prerequisite = { focus = SVI_war_department }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = SVI_svintogon_2
-				remove_idea = SVI_svintogon_1
+			custom_effect_tooltip = SVI_svintogon_change_tt
+			add_to_variable = { max_planning_factor = 0.05 tooltip = max_planning_factor_tt }
+			add_to_variable = { SVI_svintogon_armydefense_factor = 0.03 tooltip = army_defence_factor_tt }
+			add_to_variable = { SVI_svintogon_reqgarrison_factor = -0.05 tooltip = required_garrison_factor_modifier_tt }
+
+			if = {
+				limit = {
+					NOT = { has_country_flag = SVI_decay_stopped }
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 20
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 		}
 	}
-
 	focus = {
-		id = SVI_military_podryadi
-		icon = GFX_focus_generic_military_industry
+		id = SVI_prepare_for_winter_war
+		icon = GFX_focus_generic_winter_warfare
 		cost = 5
 		x = 1
 		y = 1
@@ -3534,28 +3573,26 @@ focus_tree = {
 		prerequisite = { focus = SVI_practice_defense_scenarios }
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = arms_factory
-    				level = 1
-    				instant_build = yes
+			custom_effect_tooltip = SVI_svintogon_change_tt
+			add_to_variable = { SVI_svintogon_winterattrition_factor = -0.1 tooltip = winter_attrition_factor_tt }
+			add_to_variable = { SVI_svintogon_coldacclimatize_factor = 0.05 tooltip = acclimatization_cold_climate_gain_factor_tt }
+			
+
+			if = {
+				limit = {
+					NOT = { has_country_flag = SVI_decay_stopped }
 				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = arms_factory
-    				level = 1
-    				instant_build = yes
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 20
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 		}
 	}
-
 	focus = {
-		id = SVI_subside_building
-		icon = GFX_focus_RAJ_special_economic_zones
+		id = SVI_reform_training
+		icon = GFX_focus_SMB_tierra_del_fuego_training
 		cost = 5
 		x = -1
 		y = 1
@@ -3563,7 +3600,48 @@ focus_tree = {
 		prerequisite = { focus = SVI_practice_defense_scenarios }
 
 		completion_reward = {
-			add_ideas = SVI_building_subsidize
+			custom_effect_tooltip = SVI_svintogon_change_tt
+			add_to_variable = { SVI_svintogon_trainingtime_factor = -0.1 tooltip = training_time_factor_tt }
+			add_to_variable = { SVI_svintogon_armydefense_factor = 0.02 tooltip = army_defence_factor_tt }
+
+			if = {
+				limit = {
+					NOT = { has_country_flag = SVI_decay_stopped }
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 20
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+		}
+	}
+	focus = {
+		id = SVI_expand_supplies
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = SVI_reform_training
+		prerequisite = { focus = SVI_reform_training }
+		prerequisite = { focus = SVI_prepare_for_winter_war }
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_svintogon_change_tt
+			add_to_variable = { SVI_svintogon_supply_factor = 0.05 tooltip = supply_factor_tt }
+			add_to_variable = { SVI_svintogon_reqgarrison_factor = -0.05 tooltip = required_garrison_factor_modifier_tt }
+			add_to_variable = { max_planning_factor = 0.05 tooltip = max_planning_factor_tt }
+
+			if = {
+				limit = {
+					NOT = { has_country_flag = SVI_decay_stopped }
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 20
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
 		}
 	}
 
@@ -3609,6 +3687,10 @@ focus_tree = {
 			}
 
 			has_war = no
+			strength_ratio = {
+    			tag = RAZ
+    			ratio > 0.95
+			}
 		}
 
 		completion_reward = {
@@ -3637,6 +3719,10 @@ focus_tree = {
 			}
 
 			has_war = no
+			strength_ratio = {
+    			tag = PYA
+    			ratio > 0.95
+			}
 		}
 
 		completion_reward = {
@@ -3644,6 +3730,7 @@ focus_tree = {
     			type = annex_everything
     			target = PYA
 			}
+
 		}
 	}
 
@@ -3688,6 +3775,10 @@ focus_tree = {
 			}
 			}
 			has_war = no
+			strength_ratio = {
+    			tag = RAB
+    			ratio > 0.95
+			}
 		}
 
 		completion_reward = {
@@ -3715,6 +3806,10 @@ focus_tree = {
 			}
 			}
 			has_war = no
+			strength_ratio = {
+    			tag = KUS
+    			ratio > 0.95
+			}
 		}
 
 		completion_reward = {
@@ -3727,9 +3822,9 @@ focus_tree = {
 	focus = {
 		id = SVI_vigilium_1
 		icon = GFX_goal_SVI_vigilium
-		cost = 5
+		cost = 7
 		x = 2
-		y = 3
+		y = 4
 		relative_position_id = SVI_war_department
 		prerequisite = { focus = SVI_war_department }
 
@@ -3740,7 +3835,7 @@ focus_tree = {
 	focus = {
 		id = SVI_vigilium_2
 		icon = GFX_goal_SVI_vigilium2
-		cost = 5
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = SVI_vigilium_1

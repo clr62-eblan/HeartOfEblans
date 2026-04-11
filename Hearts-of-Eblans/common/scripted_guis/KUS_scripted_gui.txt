@@ -32,5 +32,13 @@ scripted_gui = {
             }
 			
 		}
+
+        dynamic_lists = {
+			KUS_SHPANA_PRETENDENTS = {
+				array = global.sphana_pretendents
+				entry_container = pretendents_list_entry
+				change_scope = yes
+			}
+		}
 	}
 }

@@ -13,8 +13,8 @@ state={
 	}
 
 	history={
-		owner = SAS
-		add_core_of = SAS
+		owner = TND
+		add_core_of = TND
 		victory_points = {
 			8011 10
 		}

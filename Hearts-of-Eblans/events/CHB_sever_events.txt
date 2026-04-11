@@ -8,38 +8,24 @@ country_event = {
 	picture = GFX_report_event_generic_factory
 	hidden = yes
 
-	trigger = {
-		tag = CHB
-		has_country_flag = CHB_sever_started
-	}
-
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = { chb_sever_avg_resistance = 0 }
-		set_variable = { chb_sever_avg_compliance = 0 }
-		set_variable = { chb_sever_state_count = 0 }
+		# Освежаем переменные сепаратистов
+		#refresh_chb_sever_compilance_and_resistance = yes
 
-		every_owned_state = {
+		# Проверка на автостарт восстания, если фокус не взят
+		if = {
 			limit = {
-				is_core_of = NCB
+				NOT = {
+					has_completed_focus = chb_northern_problems
+				}
 			}
-			add_to_variable = { global.chb_sever_avg_resistance = resistance }
-			add_to_variable = { global.chb_sever_avg_compliance = compliance }
-			add_to_variable = { global.chb_sever_state_count = 1 }
+			country_event = { id = chb_sever.7 days = 1 }
 		}
 
-		if = {
-			limit = { check_variable = { chb_sever_state_count > 0 } }
-			divide_variable = { chb_sever_avg_resistance = chb_sever_state_count }
-			divide_variable = { chb_sever_avg_compliance = chb_sever_state_count }
-		}
-
-		# Start the event again in 3 days
-		if = {
-			limit = { has_country_flag = CHB_sever_started }
-			country_event = { id = chb_sever.1 days = 3 }
-		}
+		# Бесконечный цикл каждые 30 дней для поддержания вычислений
+		#country_event = { id = chb_sever.1 days = 30 }
 	}
 }
 
@@ -69,5 +55,143 @@ country_event = {
 		
 		# Give a temporary buff to resistance target
 		add_ideas = chb_coordinator_arrested_buff
+	}
+}
+
+
+#VVOD VOYSK
+country_event = {
+	id = chb_sever.3
+	title = chb_sever.3.t
+	desc = chb_sever.3.d
+	picture = GFX_report_event_chb_ncb_uprise
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_sever.3.a #yes
+		ai_chance = {
+			factor = 30
+		}
+		custom_effect_tooltip = CHB_NCB_destroy_focus_will_open
+		set_country_flag = chb_voyska_vvedeni
+	}
+}
+
+#VVOD VOYSK - PROVAL
+country_event = {
+	id = chb_sever.5
+	title = chb_sever.5.t
+	desc = chb_sever.5.d
+	picture = GFX_report_event_chb_ncb_uprise
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_sever.5.a #yes
+		ai_chance = {
+			factor = 30
+		}
+		custom_effect_tooltip = CHB_NCB_RISE_WILL_START
+		hidden_effect = {
+			start_ncb_rise = yes
+		}
+	}
+}
+
+#NE VVEDENI VOYSKA
+country_event = {
+	id = chb_sever.4
+	title = chb_sever.4.t
+	desc = chb_sever.4.d
+	picture = GFX_report_event_chb_ncb_uprise
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_sever.5.a #yes
+		ai_chance = {
+			factor = 30
+		}
+
+		custom_effect_tooltip = CHB_NCB_RISE_WILL_START
+		hidden_effect = {
+			start_ncb_rise = yes
+		}
+	}
+}
+
+
+#OHOTA
+country_event = {
+	id = chb_sever.6
+	title = chb_sever.6.t
+	desc = chb_sever.6.d
+	picture = GFX_report_event_generic_siloviki
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_sever.6.a #yes
+		ai_chance = {
+			factor = 30
+		}
+		custom_effect_tooltip = {
+			localization_key = chb_sever_compilance_will_decrease_tt
+			COMPIL_COUNT = 10
+		}
+		custom_effect_tooltip = {
+			localization_key = chb_sever_resistance_will_decrease_tt
+			RESIS_COUNT = 6
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = { is_core_of = NCB }
+				add_resistance = -6
+				add_compliance = -10
+			}
+		}
+
+		102 = {
+			add_manpower = -2100
+		}
+		853 = {
+			add_manpower = -156
+		}
+		736 = {
+			add_manpower = -204
+		}
+		add_stability = -0.03
+
+	}
+}
+
+#SEVER AUTOSTART
+country_event = {
+	id = chb_sever.7
+	title = chb_sever.7.t
+	desc = chb_sever.7.d
+	picture = GFX_report_event_generic_siloviki
+
+	is_triggered_only = yes
+
+	option = {
+		name = chb_sever.7.a #yes
+		ai_chance = {
+			factor = 30
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = chb_northern_problems
+				}
+			}
+			complete_focus = chb_northern_problems
+		}
+		
+		every_owned_state = {
+			limit = { is_core_of = NCB }
+			add_dynamic_modifier = { modifier = chb_severe_separatism_modifier }
+		}
 	}
 }

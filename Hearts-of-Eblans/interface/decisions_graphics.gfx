@@ -43,6 +43,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_category_africa_north_unite"
+		texturefile = "gfx/interface/decisions/africa_north_unite.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_category_image_template"
 		texturefile = "gfx/interface/decisions/category_image_template.dds"
 	}

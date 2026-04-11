@@ -6,10 +6,9 @@ state = {
 
 	history = {
 
-		owner = ZUS
+		owner = GNS
 
-		add_core_of = NGA
-		add_core_of = BIA
+		add_core_of = GNS
 
 		victory_points = {
 			8034 2 # Enugu

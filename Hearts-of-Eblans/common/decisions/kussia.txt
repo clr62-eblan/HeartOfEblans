@@ -28,6 +28,119 @@ form_KUS_shpana_cat = {
 				    	add_core_of = KUS
 				    }
             	}
+				add_to_variable = { SHPANA_CONNECT_STATUS = 1 }
+				remove_from_array = {
+            	    array = global.sphana_pretendents
+            	    value = MNY.id
+            	}
+			}
+		}
+	}
+	KUS_unite_kus_lid = {
+	
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+	
+		allowed = {
+			original_tag = KUS
+		}
+	
+		available = {
+			check_variable = { SHPANA_LIDA_CONTROL_STATE = 1 }
+			check_variable = { SHPANA_KUSSIA_CONTROL_STATE = 1 }
+		}
+	
+		visible = {
+			original_tag = KUS
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				LID = {
+				    every_core_state = {
+				    	add_core_of = KUS
+				    }
+            	}
+				add_to_variable = { SHPANA_CONNECT_STATUS = 1 }
+				remove_from_array = {
+            	    array = global.sphana_pretendents
+            	    value = LID.id
+            	}
+			}
+		}
+	}
+	KUS_unite_kus_sex = {
+	
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+	
+		allowed = {
+			original_tag = KUS
+		}
+	
+		available = {
+			check_variable = { SHPANA_SEX_CONTROL_STATE = 1 }
+			check_variable = { SHPANA_KUSSIA_CONTROL_STATE = 1 }
+		}
+	
+		visible = {
+			original_tag = KUS
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				SEX = {
+				    every_core_state = {
+				    	add_core_of = KUS
+				    }
+            	}
+				add_to_variable = { SHPANA_CONNECT_STATUS = 1 }
+				remove_from_array = {
+            	    array = global.sphana_pretendents
+            	    value = SEX.id
+            	}
+			}
+		}
+	}
+	KUS_unite_kus_der = {
+	
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+	
+		allowed = {
+			original_tag = KUS
+		}
+	
+		available = {
+			check_variable = { SHPANA_DER_CONTROL_STATE = 1 }
+			check_variable = { SHPANA_KUSSIA_CONTROL_STATE = 1 }
+		}
+	
+		visible = {
+			original_tag = KUS
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				DER = {
+				    every_core_state = {
+				    	add_core_of = KUS
+				    }
+            	}
+				add_to_variable = { SHPANA_CONNECT_STATUS = 1 }
+				remove_from_array = {
+            	    array = global.sphana_pretendents
+            	    value = DER.id
+            	}
 			}
 		}
 	}

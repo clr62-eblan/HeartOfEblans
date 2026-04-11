@@ -150,6 +150,9 @@ ideologies = {
 			hype_cuterock = {
 				color = { 248 189 255 }
 			}
+			hypetwitch = {
+				color = { 141 54 255 }
+			}
 		}
 
 		dynamic_faction_names = {
@@ -190,6 +193,7 @@ ideologies = {
 
 		}
 
+		ai_fascist = yes
 	}
 
 	fascism = {

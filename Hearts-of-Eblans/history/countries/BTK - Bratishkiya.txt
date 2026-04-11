@@ -22,6 +22,7 @@ add_ideas = {
 	SQUAD_manpower_rotation
 	divine_intellect
 	unbelievable_taxes
+	SQUAD_brotelnikov_i_partiya
 }
 
 set_autonomy = {
@@ -105,6 +106,8 @@ recruit_character = BTK_Squad_Parliament
 recruit_character = BTK_Victor_brotelnikov
 recruit_character = BTK_Vladimir_bratishkin
 recruit_character = BTK_Rish098
+recruit_character = BTK_neutral_bratishkin
+recruit_character = BTK_Meddison
 
 set_convoys = 40
 
@@ -146,22 +149,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Владимир Братишкин"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "bratishkin_neutrality.dds"
-	
-	ideology = oligarchism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "Братишкин"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "bratishkin_hypecratia.dds"
 	
-	ideology = hypelikee
+	ideology = hypetwitch
 	traits = {
 		#
 	}

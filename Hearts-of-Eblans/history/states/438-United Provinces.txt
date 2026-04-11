@@ -9,8 +9,8 @@ state={
 	state_category=town
 	local_supplies=0.000
 	history={
-		owner = SAS
-		add_core_of = SAS
+		owner = DNL
+		add_core_of = DNL
 		victory_points = {
 			1377 10
 		}

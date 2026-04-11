@@ -1,6 +1,6 @@
 capital = 107
 
-oob = "YUG_1936"
+oob = "CHB_1936"
 set_naval_oob = "YUG_1936_naval"
 set_research_slots = 3
 starting_train_buffer = 2
@@ -11,8 +11,25 @@ set_war_support = 0.21
 add_ideas = { 
 	CHB_hungary_problem
 	CHB_outdated_industry
+	CHB_military_bureaucracy
 	twitch_platform
 	divine_intellect
+	chb_kom_podpolie_idea
+}
+
+
+set_rule = {
+	can_create_factions = yes
+}
+
+every_owned_state = {
+	limit = {
+		is_core_of = NCB
+	}
+	start_resistance = yes
+	set_compliance = 21
+	set_resistance = 43
+	set_garrison_strength = 1.0
 }
 
 CHB = {
@@ -20,6 +37,11 @@ CHB = {
 		array = opennedAlbums
 		value = 8
 	}
+}
+
+set_autonomy = {
+	target = ACH
+	autonomous_state = autonomy_colony
 }
 
 set_country_flag = generic_trackofday_flag
@@ -81,8 +103,13 @@ recruit_character = lin_night
 recruit_character = Shukov
 recruit_character = jumper_cube
 recruit_character = bogdan_tsymbal
+recruit_character = venzek
+recruit_character = chapaclutch
+recruit_character = CHB_mazelov_fas
+recruit_character = CHB_zavertin
+recruit_character = eva_tofi
 
-set_convoys = 20
+set_convoys = 100
 
 
 set_politics = {
@@ -101,33 +128,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Илья Мазелофф"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "mzlff.dds"
-	
-	ideology = gen_nazism
-	traits = {
-		dictator
-	}
-}
-
-create_country_leader = {
 	name = "Совет Модераторов"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "SovetModerov.dds"
 	
 	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Кот Завертин"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Zavertin.dds"
-	
-	ideology = stalinism
 	traits = {
 		#
 	}
@@ -149,53 +154,10 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Mazyaka.dds"
 	
-	ideology = hypetiktok
+	ideology = hypetwitch
 	traits = {
 		#
 	}
 }
 
-# Шаблоны дивизий Смартиков (территориальная оборона)
-division_template = {
-	name = "Smartiki Battalion"
-	division_names_group = CHB_MOT_01
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-	}
-}
 
-division_template = {
-	name = "Smartiki Elite"
-	division_names_group = CHB_MOT_01
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		
-		light_armor = { x = 2 y = 0 }
-		light_armor = { x = 2 y = 1 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
-	}
-}

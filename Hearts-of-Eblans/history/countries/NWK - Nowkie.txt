@@ -1,0 +1,85 @@
+capital = 995
+set_research_slots = 2
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	basic_train = 1
+}
+
+add_ideas = {
+	twitch_platform
+}
+
+set_politics = {
+	ruling_party = hypecratia
+	last_election = "2022.1.1"
+	elections_allowed = no
+}
+
+set_popularities = {
+	hypecratia = 67
+	democratic = 4
+	communism = 6
+	fascism = 20
+	neutrality = 3
+}
+
+create_country_leader = {
+	name = "Илья Новки"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "nowkie.dds"
+	
+	ideology = hypetwitch
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Новки"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "nowkie.dds"
+	
+	ideology = rexism
+	traits = {
+		
+	}
+}
+	
+create_country_leader = {
+	name = "Новки"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "nowkie.dds"
+	
+	ideology = moderatism
+	traits = {
+		
+	}
+}
+	
+create_country_leader = {
+	name = "Новки"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "nowkie.dds"
+	
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+	
+create_country_leader = {
+	name = "Новки"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "nowkie.dds"
+	
+	ideology = leninism
+	traits = {
+		
+	}
+}

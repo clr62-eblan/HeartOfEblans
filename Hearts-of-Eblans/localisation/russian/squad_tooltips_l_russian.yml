@@ -62,6 +62,8 @@
   sla_dre_war_tt: "Если вы начнёте войну с Туманным Конклавом, то вы будуте вынужденны завершить её за 75 дней, в противном случае вам придётся уйти с их земель"
 
   squad_advisor_will_be_unlocked: "£GFX_new_polit_advisor Станет доступен новый политический советник §Y$ADVISOR$§!"
+  squad_advisor_and_general_will_be_unlocked: "£GFX_new_polit_advisor Станет доступен новый политический советник и генерал армии §Y$ADVISOR$§!"
+  squad_advisor_will_be_locked: "£GFX_new_polit_advisor Политический советник §Y$ADVISOR$§! станет недоступен и будет уволен с занимаемых должностей"
 
   hypecratia_drift: "£boost_popularity_texticon Ежедневная поддерка Хайпократии"
 
@@ -69,3 +71,15 @@
 
   CHB_JUMPER_PASSED: "Джампер пройден"
   MPK_we_are_lost: "§YМы потеряем больше 90% своей территории, а также всю армию. Это конец§!"
+
+  ZOL_nek_control: "Полный контроль территорий @NEKНеглотайкостана"
+  ZOL_moy_control: "Полный контроль южных территорий @MOYГосударства Морфи"
+  ZOL_nel_control: "Полный контроль территорий @NELНеля-Рейска"
+  ZOL_pbu_control: "Полный контроль островов @PBUПротектората Бустеренко в Средиземном море"
+  ZOL_chb_control: "Полный контроль береговой линии @CHBЧикен-Беконии"
+  ZOL_zol_control: "Полный контроль территорий @ZOLСтраны Золиков"
+ 
+  AFRICA_asl_control: "Полный контроль территорий @ASL[ASL.GetNameDef]"
+  AFRICA_ade_control: "Полный контроль территорий @ADE[ADE.GetNameDef]"
+  AFRICA_ach_control: "Полный контроль территорий @ACH[ACH.GetNameDef]"
+  AFRICA_hnv_control: "Полный контроль территорий @HNV[HNV.GetNameDef]"

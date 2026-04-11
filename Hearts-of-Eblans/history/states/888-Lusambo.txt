@@ -6,7 +6,7 @@ state = {
 
 	history = {
 
-		owner = ZUS
+		owner = ADL
 
 
 		victory_points = {
@@ -17,7 +17,7 @@ state = {
 			infrastructure = 1
 		}
 
-		add_core_of = ZUS
+		add_core_of = ADL
 
 	}
 

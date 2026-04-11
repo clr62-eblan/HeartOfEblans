@@ -109,6 +109,7 @@ country_event = {
 
 			    }
                 desc = BTK_Squad_Parliament_desc
+				legacy_id = 9942
             }
             promote_leader = yes
         }
@@ -413,7 +414,6 @@ country_event = {
     }
 }
 
-# Отколоться или присоединиться Виктор
 country_event = {
     id = btk_squad.14
     title = btk_squad.14.t
@@ -466,6 +466,79 @@ country_event = {
 		}
     }
 }
+# Восстание медисонцев
+country_event = {
+    id = btk_squad.15
+    title = btk_squad.15.t
+    desc = btk_squad.15.d
+    picture = GFX_report_event_BTK_89squad_decay
+
+    is_triggered_only = yes
+
+    option = {
+        name = btk_squad.15.a
+        ai_chance = {
+            factor = 100
+        }
+
+		country_event = { id = btk_squad.7 days = 2 }
+    }
+
+    # Refuse
+    option = {
+        name = btk_squad.15.b
+        ai_chance = {
+            factor = 5
+        }
+		custom_effect_tooltip = MDS_war_tt
+
+		hidden_effect = {
+			start_civil_war = {
+    			ruling_party = neutrality
+    			# Original country's ideology changes to communism
+    			ideology = fascism
+    			# Breakaway gets old ideology of ROOT
+    			size = 0.4
+    			capital = 1049
+    			states = {
+    			    1049 64 62 61
+    			}
+    			keep_all_characters = yes
+				FROM = {
+					retire_character = BTK_Vladimir_bratishkin
+				}
+				recruit_character = BTK_Vladimir_bratishkin
+				add_country_leader_role = {
+					character = BTK_Vladimir_bratishkin
+					country_leader = {
+						expire = "3000.1.1"
+						ideology = reactionism
+						traits = {  }
+					}
+					promote_leader = yes
+				}
+			}
+			ROOT = {
+				retire_character = BTK_neutral_bratishkin
+				set_cosmetic_tag = BTK_MDS_RULE
+				add_country_leader_role = {
+           			character = BTK_Meddison
+           			country_leader = {
+           			    ideology = centrism
+           			    traits = { # 
+
+						    }
+           			    desc = BTK_Meddison_desc
+           			}
+           			promote_leader = yes
+        		}
+				mark_focus_tree_layout_dirty = yes
+				load_focus_tree = generic_focus
+				add_ideas = limited_conscription
+			}
+		}
+    }
+}
 
 ######################################################
 ###  BTK NAREZKI FACTIONS EVENTS
@@ -505,14 +578,14 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 60
+		days = 80
 		modifier = {
 			factor = 0.8
-			has_stability < 0.5
+			has_stability < 0.3
 		}
 		modifier = {
-			factor = 1.5
-			has_stability > 0.7
+			factor = 2
+			has_stability > 0.6
 		}
 	}
 	
@@ -525,7 +598,7 @@ country_event = {
 		add_stability = -0.03
 		
 		hidden_effect = {
-			set_country_flag = { flag = BTK_narezki_event_cooldown days = 30 value = 1 }
+			set_country_flag = { flag = BTK_narezki_event_cooldown days = 50 value = 1 }
 		}
 	}
 }
@@ -561,7 +634,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 75
+		days = 90
 		modifier = {
 			factor = 0.7
 			has_war = yes
@@ -573,15 +646,40 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
-		add_popularity = {
-			ideology = ruling_party
-			popularity = -0.05
+
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
 		}
+		else_if = {
+			limit = {
+				has_government = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+		}
+		
+		
 		add_political_power = -25
 		
 		hidden_effect = {
-			set_country_flag = { flag = BTK_narezki_criticism_cooldown days = 45 value = 1 }
+			set_country_flag = { flag = BTK_narezki_criticism_cooldown days = 60 value = 1 }
 		}
 	}
 }
@@ -623,7 +721,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 180
+		days = 200
 		modifier = {
 			factor = 0.6
 			has_stability < 0.4
@@ -645,7 +743,7 @@ country_event = {
 		add_stability = -0.05
 		
 		hidden_effect = {
-			set_country_flag = { flag = BTK_narezki_purge_cooldown days = 120 value = 1 }
+			set_country_flag = { flag = BTK_narezki_purge_cooldown days = 150 value = 1 }
 		}
 	}
 	
@@ -660,7 +758,7 @@ country_event = {
 		add_stability = -0.05
 		
 		hidden_effect = {
-			set_country_flag = { flag = BTK_narezki_purge_cooldown days = 120 value = 1 }
+			set_country_flag = { flag = BTK_narezki_purge_cooldown days = 150 value = 1 }
 		}
 	}
 }

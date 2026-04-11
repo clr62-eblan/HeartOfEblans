@@ -38,8 +38,20 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/freakland_superpower.dds"
 	}
 	spriteType = {
+		name = "GFX_news_event_dre_remilitarization"
+		texturefile = "gfx/event_pictures/dre_remilitarize.dds"
+	}
+	spriteType = {
 		name = "GFX_report_event_superlikes"
 		texturefile = "gfx/event_pictures/superlikes.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_kus_shpana"
+		texturefile = "gfx/event_pictures/kus_shpana.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tndr_rises"
+		texturefile = "gfx/event_pictures/tndr_rise.dds"
 	}
 
 	spriteType = {

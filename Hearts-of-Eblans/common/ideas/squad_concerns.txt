@@ -20,7 +20,7 @@ ideas = {
                 OR = {
 				    AND = {
                         original_tag = BTK
-                        has_completed_focus = BTK_vovavia
+                        has_completed_focus = SQUAD_vovavia
                         NOT = { has_country_flag = VOVAVIA_SOLD }
                     }
                     AND = {

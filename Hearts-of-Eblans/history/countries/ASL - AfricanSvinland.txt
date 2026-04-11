@@ -1,0 +1,88 @@
+capital = 681
+set_research_slots = 2
+oob = "ASL_1936"
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	basic_train = 1
+}
+
+add_ideas = {
+	twitch_platform
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2022.1.1"
+	elections_allowed = no
+}
+
+set_convoys = 86
+
+set_popularities = {
+	hypecratia = 9
+	democratic = 40
+	communism = 12
+	fascism = 30
+	neutrality = 9
+}
+
+create_country_leader = {
+	name = "Rof1s"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "asl.dds"
+	
+	ideology = hypetwitch
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Rof1s"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "asl.dds"
+	
+	ideology = rexism
+	traits = {
+		
+	}
+}
+	
+create_country_leader = {
+	name = "Rof1s"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "asl.dds"
+	
+	ideology = moderatism
+	traits = {
+		
+	}
+}
+	
+create_country_leader = {
+	name = "Rof1s"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "asl.dds"
+	
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+	
+create_country_leader = {
+	name = "Rof1s"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "asl.dds"
+	
+	ideology = leninism
+	traits = {
+		
+	}
+}

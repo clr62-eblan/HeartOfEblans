@@ -227,6 +227,12 @@ ideas = {
                 else = {
                     has_completed_focus = SQUAD_taxes_reform
                 }
+                if = {
+                    limit = {
+                        has_cosmetic_tag = BTK_MDS_RULE
+                    }
+                    always = yes
+                }
             }
 
             modifier = {
@@ -332,10 +338,10 @@ ideas = {
             picture = platform_likee
             removal_cost = -1
 
-            available = { 
-                always = no
-            }
+            cancel_if_invalid = no
+
             allowed = { always = yes }
+            allowed_to_remove = { always = no }
 
             level = 1
 
@@ -350,10 +356,10 @@ ideas = {
             picture = platform_tiktok
             removal_cost = -1
 
-            available = { 
-                always = no
-            }
+            cancel_if_invalid = no
+
             allowed = { always = yes }
+            allowed_to_remove = { always = no }
 
             level = 2
 
@@ -370,11 +376,10 @@ ideas = {
             picture = platform_twitch
             removal_cost = -1
 
-            available = { 
-                always = no
-            }
+            cancel_if_invalid = no
 
             allowed = { always = yes }
+            allowed_to_remove = { always = no }
 
             default = yes
 
@@ -396,10 +401,10 @@ ideas = {
             picture = platform_analog
             removal_cost = -1
 
-            available = { 
-                always = no
-            }
+            cancel_if_invalid = no
+
             allowed = { always = yes }
+            allowed_to_remove = { always = no }
 
             level = 4
 
@@ -415,10 +420,10 @@ ideas = {
             picture = platform_nomain
             removal_cost = -1
 
-            available = { 
-                always = no
-            }
+            cancel_if_invalid = no
+
             allowed = { always = yes }
+            allowed_to_remove = { always = no }
 
             level = 5
 
@@ -435,9 +440,10 @@ ideas = {
         divine_intellect = {
             picture = intellect_divine
             removal_cost = -1
+            cancel_if_invalid = no
 
             available = { 
-               
+               always = no
             }
             allowed = { always = yes }
 
@@ -450,9 +456,10 @@ ideas = {
         developt_intellect = {
             picture = intellect_developt
             removal_cost = -1
+            cancel_if_invalid = no
 
             available = { 
-                
+                always = no
             }
             allowed = { always = yes }
 
@@ -461,21 +468,22 @@ ideas = {
             level = 2
 
             modifier = {
-                special_project_speed_factor = -0.1
-				research_speed_factor = -0.15
-				land_doctrine_cost_factor = 0.0.5
-				air_doctrine_cost_factor = 0.1
-				naval_doctrine_cost_factor = 0.1
-				political_power_gain = 0.1
+                #special_project_speed_factor = -0.1
+				#research_speed_factor = -0.15
+				#land_doctrine_cost_factor = 0.05
+				#air_doctrine_cost_factor = 0.1
+				#naval_doctrine_cost_factor = 0.1
+				#political_power_gain = 0.1
             }
         }
 
         middle_intellect = {
             picture = intellect_medium
             removal_cost = -1
+            cancel_if_invalid = no
 
             available = { 
-               
+               always = no
             }
 
             allowed = { always = yes }
@@ -484,54 +492,56 @@ ideas = {
             level = 3
 
             modifier = {
-                special_project_speed_factor = -0.2
-				research_speed_factor = -0.25
-				land_doctrine_cost_factor = 0.1
-				air_doctrine_cost_factor = 0.15
-				naval_doctrine_cost_factor = 0.15
-				political_power_gain = 0.15
+                #special_project_speed_factor = -0.2
+				#research_speed_factor = -0.25
+				#land_doctrine_cost_factor = 0.1
+				#air_doctrine_cost_factor = 0.15
+				#naval_doctrine_cost_factor = 0.15
+				#political_power_gain = 0.15
             }
         }
 
         dumb_intellect = {
             picture = intellect_dumb
             removal_cost = -1
+            cancel_if_invalid = no
 
             available = { 
-                
+                always = no
             }
             allowed = { always = yes }
 
             level = 4
 
             modifier = {
-                special_project_speed_factor = -0.3
-				research_speed_factor = -0.4
-				land_doctrine_cost_factor = 0.2
-				air_doctrine_cost_factor = 0.25
-				naval_doctrine_cost_factor = 0.25
-				political_power_gain = 0.2
+                #special_project_speed_factor = -0.3
+				#research_speed_factor = -0.4
+				#land_doctrine_cost_factor = 0.2
+				#air_doctrine_cost_factor = 0.25
+				#naval_doctrine_cost_factor = 0.25
+				#political_power_gain = 0.2
             }
         }
 
         stupid_dummies_intellect = {
             picture = intellect_stupid_dummies
             removal_cost = -1
+            cancel_if_invalid = no
 
             available = { 
-                
+                always = no
             }
             allowed = { always = yes }
 
             level = 5
 
             modifier = {
-                special_project_speed_factor = -0.4
-				research_speed_factor = -0.5
-				land_doctrine_cost_factor = 0.3
-				air_doctrine_cost_factor = 0.3
-				naval_doctrine_cost_factor = 0.3
-				political_power_gain = 0.25
+                #special_project_speed_factor = -0.4
+				#research_speed_factor = -0.5
+				#land_doctrine_cost_factor = 0.3
+				#air_doctrine_cost_factor = 0.3
+				#naval_doctrine_cost_factor = 0.3
+				#political_power_gain = 0.25
             }
         }
     }

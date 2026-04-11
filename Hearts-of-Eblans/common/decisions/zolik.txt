@@ -1,0 +1,244 @@
+form_slaboumni_empire_cat = {
+	form_zolo_empire = {
+	
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 25
+	
+		allowed = {
+			original_tag = ZOL 
+		}
+	
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = SLA_sla_control	
+				# Iberia
+				controls_state = 151
+				controls_state = 846
+				controls_state = 159
+				controls_state = 850
+				controls_state = 160
+				controls_state = 39
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZOL_nek_control	
+
+				controls_state = 845
+				controls_state = 847
+				controls_state = 3
+
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZOL_moy_control	
+
+				controls_state = 32
+				controls_state = 20
+				controls_state = 26
+				controls_state = 33
+				controls_state = 23
+
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZOL_nel_control	
+
+				controls_state = 22
+				controls_state = 25
+				controls_state = 31
+				controls_state = 165
+				controls_state = 19
+				controls_state = 806
+				controls_state = 172
+				controls_state = 166
+				controls_state = 794
+				controls_state = 167
+				controls_state = 177
+
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZOL_pbu_control	
+				controls_state = 114
+				controls_state = 115
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZOL_chb_control	
+				controls_state = 736
+				controls_state = 852
+				controls_state = 103
+				controls_state = 163
+				controls_state = 804
+				controls_state = 853
+				controls_state = 102
+				controls_state = 109
+				controls_state = 104
+				controls_state = 105
+				controls_state = 934
+				controls_state = 44
+				controls_state = 805
+				controls_state = 185
+				controls_state = 186
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZOL_zol_control
+				
+
+				# Zolik full
+				controls_state = 158
+				controls_state = 161
+				controls_state = 735
+				controls_state = 851
+				controls_state = 21
+				controls_state = 162
+				controls_state = 157
+				controls_state = 2
+				controls_state = 849
+				controls_state = 117
+				controls_state = 156
+				controls_state = 1
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 158
+				state = 161
+				state = 735
+				state = 851
+				state = 21
+				state = 162
+				state = 157
+				state = 2
+				state = 849
+				state = 117
+				state = 156
+				state = 1
+				state = 736
+				state = 852
+				state = 103
+				state = 163
+				state = 804
+				state = 853
+				state = 102
+				state = 109
+				state = 104
+				state = 105
+				state = 934
+				state = 44
+				state = 805
+				state = 185
+				state = 186
+				state = 114
+				state = 115
+				state = 22
+				state = 25
+				state = 31
+				state = 165
+				state = 19
+				state = 806
+				state = 172
+				state = 166
+				state = 794
+				state = 167
+				state = 177
+				state = 845
+				state = 847
+				state = 3
+				state = 151
+				state = 846
+				state = 159
+				state = 850
+				state = 160
+				state = 39
+				state = 32
+				state = 20
+				state = 26
+				state = 33
+				state = 23
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+		visible = {
+			original_tag = ZOL
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				158 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				735 = { add_core_of = ROOT }
+				851 = { add_core_of = ROOT }
+				21 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				157 = { add_core_of = ROOT }
+				2 = { add_core_of = ROOT }
+				849 = { add_core_of = ROOT }
+				117 = { add_core_of = ROOT }
+				156 = { add_core_of = ROOT }
+				1 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				852 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				163 = { add_core_of = ROOT }
+				804 = { add_core_of = ROOT }
+				853 = { add_core_of = ROOT }
+				102 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				104 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				934 = { add_core_of = ROOT }
+				44 = { add_core_of = ROOT }
+				805 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				186 = { add_core_of = ROOT }
+				114 = { add_core_of = ROOT }
+				115 = { add_core_of = ROOT }
+				22 = { add_core_of = ROOT }
+				25 = { add_core_of = ROOT }
+				31 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				19 = { add_core_of = ROOT }
+				806 = { add_core_of = ROOT }
+				172 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				794 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				177 = { add_core_of = ROOT }
+				845 = { add_core_of = ROOT }
+				847 = { add_core_of = ROOT }
+				3 = { add_core_of = ROOT }
+				151 = { add_core_of = ROOT }
+				846 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				850 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				32 = { add_core_of = ROOT }
+				20 = { add_core_of = ROOT }
+				26 = { add_core_of = ROOT }
+				33 = { add_core_of = ROOT }
+				23 = { add_core_of = ROOT }
+			}
+
+			set_country_leader_portrait = {
+				ideology = hypecratia
+				portrait = GFX_portrait_ZOL_hyp_duche
+			}
+			set_country_leader_portrait = {
+				ideology = fascism
+				portrait = GFX_portrait_ZOL_fas_duche
+			}
+
+			set_cosmetic_tag = ZOL_EMPIRE
+
+			mark_focus_tree_layout_dirty = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

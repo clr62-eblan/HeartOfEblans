@@ -60,6 +60,8 @@ country_event = {
 		}
 	}
 }
+
+
 # YUG says no
 country_event = {
 	id = chicken.3
@@ -737,6 +739,9 @@ country_event = {
 	#Okey
 	option = {
 		name = chicken.26.a
+		ai_chance = {
+			factor = 0
+		}
 		CHB = {
 			annex_country = {
 			    target = LOM
@@ -748,6 +753,9 @@ country_event = {
 	#No
 	option = {
 		name = chicken.24.b
+		ai_chance = {
+			factor = 90
+		}
 		CHB = {
 			create_wargoal = {
     			type = puppet_wargoal_focus
@@ -842,6 +850,40 @@ country_event = {
 	#Real
 	option = {
 		name = chicken.30.a
+		add_ideas = { chb_zavodi_smartikov }
+		add_stability = 0.02
+
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}	
+}
+
+#Smartiki group
+country_event = {
+	id = chicken.31
+	title = chicken.31.t
+	desc = chicken.31.d
+	picture = GFX_report_event_smartiki_group
+	
+	is_triggered_only = yes
+	
+	#Real
+	option = {
+		name = chicken.30.a
 		set_country_flag = CHB_SMARTIKI_OPENED
 		custom_effect_tooltip = {
 			localization_key = squad_decision_willopen_tt
@@ -929,6 +971,201 @@ country_event = {
 		swap_ideas = {
 			remove_idea = CHB_economic_strain
 			add_idea = CHB_economic_collapse
+		}
+	}
+}
+# PogasitVseZadolshenosti
+country_event = {
+	id = chicken.37
+	title = chicken.37.t
+	desc = chicken.37.d
+	picture = GFX_report_event_FIN_paasikivi_president
+	is_triggered_only = yes
+
+	option = {
+		name = chicken.37.a # Desperate measures
+		add_stability = 0.03
+		add_political_power = 100
+	}
+}
+# KoncikVKaliningrade
+country_event = {
+	id = chicken.38
+	title = chicken.38.t
+	desc = chicken.38.d
+	picture = GFX_report_event_chb_koncerts
+	is_triggered_only = yes
+
+	option = {
+		name = chicken.38.a
+		add_stability = -0.05
+		add_political_power = -100
+	}
+}
+# DetiBiliPravi
+country_event = {
+	id = chicken.39
+	title = chicken.39.t
+	desc = chicken.39.d
+	picture = GFX_report_event_chb_koncerts
+	is_triggered_only = yes
+
+	option = {
+		name = chicken.39.a
+	}
+}
+
+
+country_event = { #NEW SUBJECT
+	id = chicken.40
+	title = chicken.40.t
+	desc = chicken.40.d
+	picture = GFX_report_event_generic_communist_congress
+
+	is_triggered_only = yes
+
+	option = {
+		name = chicken.40.a
+		ai_chance = {
+			base = 10
+		}
+
+		FROM = {
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_bekonianstate
+				end_wars = no 
+				end_civil_wars = no 
+			}
+		}
+
+		IF = {
+			limit = {
+				FROM = {
+					has_completed_focus = chb_shared_zd
+				}
+
+				NOT = {
+					has_idea = CHB_subject_shared_supplies
+				}
+			}
+
+			add_ideas = CHB_subject_shared_supplies
+		}
+	}
+}
+
+country_event = { #SUBJECT INTEGRATE
+	id = chicken.41
+	title = chicken.41.t
+	desc = chicken.41.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+	
+	option = { #we had a good run
+		name = chicken.41.a
+
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+		
+		effect_tooltip = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_compliance = 50
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		
+		hidden_effect = {
+			FROM = {
+				every_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_compliance = 50
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+}
+country_event = {
+	id = chicken.42
+	title = chicken.42.t
+	desc = chicken.42.d
+	picture = GFX_report_event_chb_ncb_uprise
+
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.42.a
+
+		every_owned_state = {
+			limit = { is_core_of = NCB }
+			add_core_of = CHB
+		}
+	}
+}
+country_event = {
+	id = chicken.43
+	title = chicken.43.t
+	desc = chicken.43.d
+	picture = GFX_report_event_chb_ncb_uprise
+
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.43.a
+	}
+}
+country_event = {
+	id = chicken.44
+	title = chicken.44.t
+	desc = chicken.44.d
+	picture = GFX_report_event_chb_ncb_uprise
+
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.44.a
+		every_owned_state = {
+		limit = {
+				is_core_of = NCB
+			}
+			add_resistance = -5
+		}
+	}
+}
+country_event = {
+	id = chicken.45
+	title = chicken.45.t
+	desc = chicken.45.d
+	picture = GFX_report_event_chb_ncb_uprise
+
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.44.a
+		every_owned_state = {
+		limit = {
+				is_core_of = NCB
+			}
+			add_resistance_target = {
+    			id = 123
+    			amount = 25
+    			occupied = NCB
+    			occupier = CHB
+    			days = 250
+			}
 		}
 	}
 }

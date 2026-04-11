@@ -6,8 +6,8 @@ state={
 	manpower = 1802132
 
 	history = {
-		owner = ZUS
-		add_core_of = SUD
+		owner = ADL
+		add_core_of = ADL
 		buildings = {
 			infrastructure = 2
 

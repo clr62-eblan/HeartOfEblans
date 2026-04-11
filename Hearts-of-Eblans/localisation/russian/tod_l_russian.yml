@@ -39,6 +39,11 @@
   gon_hitandlera: "Гид и Лера"
   gon_hryas: "Хрясь"
   gon_notmyvibe: "Это не мой вайб"
+  chb_phantasmagoria: "PHANTASMAGORIA"
+  chb_malopomalu: "Мало-помалу"
+  chb_autodrom: "Автодром"
+  chb_epilogue: "Эпилог"
+  chb_glavtayna: "главная тайна неба"
 
 
   tod_will_be_unlocked: "£GFX_music_disk_texticon Будет открыт альбом §Y$ALBUM$§!"
@@ -89,6 +94,11 @@
   gon_music_13_hryas_decision: "Выбрать: §YХрясь§!"
   gon_music_14_notmyvibe_decision: "Выбрать: §YЭто не мой вайб§!"
 
+  chb_music_15_malopomalu_decision: "Выбрать: §YМало-помалу§!"
+  chb_music_15_autodrom_decision: "Выбрать: §YАвтодром§!"
+  chb_music_15_epilogue_decision: "Выбрать: §YЭпилог§!"
+  chb_music_16_glavtayna_decision: "Выбрать: §Yглавная тайна неба§!"
+
 
 
   PYA_musical_effort: "Развитие музыки"
@@ -100,6 +110,7 @@
   CHB_anemone_album: "Выпустить «ANEMONE»"
   CHB_coldness_album: "Выпустить «холода ветра»"
   CHB_brightside_album: "Выпустить «Светлая сторона»"
+  CHB_glavtayna_album: "Выпустить «Светлая сторона»"
 
   GON_hitandlera_album: "Выпустить «Гид и Лера»"
   GON_hryas_album: "Выпустить «Хрясь»"

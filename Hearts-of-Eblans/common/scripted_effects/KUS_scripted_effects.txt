@@ -1,9 +1,10 @@
 SHPANA_CHECK_STATES = {
 	if = {
 		limit = { 
+
             KUS = {
 			    all_core_state = {
-			    	is_fully_controlled_by = FROM.FROM
+			    	is_fully_controlled_by = KUS
 			    }
             }
 		}
@@ -17,7 +18,7 @@ SHPANA_CHECK_STATES = {
 		limit = { 
             MNY = {
 			    all_core_state = {
-			    	is_fully_controlled_by = FROM.FROM
+			    	is_fully_controlled_by = KUS
 			    }
             }
 		}
@@ -31,7 +32,7 @@ SHPANA_CHECK_STATES = {
 		limit = { 
             LID = {
 			    all_core_state = {
-			    	is_fully_controlled_by = FROM.FROM
+			    	is_fully_controlled_by = KUS
 			    }
             }
 		}
@@ -45,7 +46,7 @@ SHPANA_CHECK_STATES = {
 		limit = { 
             SEX = {
 			    all_core_state = {
-			    	is_fully_controlled_by = FROM.FROM
+			    	is_fully_controlled_by = KUS
 			    }
             }
 		}
@@ -59,7 +60,7 @@ SHPANA_CHECK_STATES = {
 		limit = { 
             DER = {
 			    all_core_state = {
-			    	is_fully_controlled_by = FROM.FROM
+			    	is_fully_controlled_by = KUS
 			    }
             }
 		}
@@ -67,5 +68,16 @@ SHPANA_CHECK_STATES = {
 	}
     else = {
         set_variable = { SHPANA_DER_CONTROL_STATE = 0 }
+    }
+}
+
+CHECK_IS_SHPANA_FULLY_CONNECTED = {
+    if = {
+        limit = {
+            check_variable = { SHPANA_CONNECT_STATUS = 4 }
+            NOT = { has_country_flag = SHPANA_REUNIFIED_FULLY }
+        }
+        set_cosmetic_tag = KUS_SHPANA
+        set_country_flag = SHPANA_REUNIFIED_FULLY
     }
 }

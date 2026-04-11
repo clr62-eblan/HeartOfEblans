@@ -108,6 +108,53 @@ characters = {
            traits = { army_commando_1 }
        }
     }
+
+    ADE_sovet = {
+		name=ADE_sovet
+		portraits={
+			civilian = {
+				large="GFX_portrait_ADE_sovet"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			traits = {
+				#
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			traits = {
+				#
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {
+				#
+			}
+		}
+	}
+    ADE_vitalya = {
+		name=ADE_vitalya
+		portraits={
+			civilian = {
+				large="GFX_portrait_ADE_vitalya"
+			}
+		}
+		country_leader = {
+			ideology = hypelikee
+			traits = {
+				#
+			}
+		}
+	}
 	
     alenakuz ={ 
         name = "alenakus03"
