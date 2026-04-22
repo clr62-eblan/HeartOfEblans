@@ -50,6 +50,8 @@ autonomy_state = {
 			original_tag = PIE
 			original_tag = BUS
 			original_tag = DIM
+			original_tag = BRV
+			original_tag = ELN
 		}
 		OVERLORD = {
 			original_tag = SVI

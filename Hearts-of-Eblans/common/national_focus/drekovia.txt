@@ -2395,7 +2395,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 40
+			factor = 50
 		}
 
 		available = {
@@ -4437,6 +4437,7 @@ focus = {
 		icon = GFX_goal_drake_politics
 		x = 6
 		y = 0
+
 
 		cost = 5
 

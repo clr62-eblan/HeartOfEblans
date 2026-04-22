@@ -60,5 +60,41 @@ ideas = {
 			
 			traits = { industrial_concern }
 		}
+
+        stolich_insitute = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_tag = SVI
+			}
+			visible = {
+                OR = {
+				    original_tag = SVI
+                    AND = {
+                        owns_state = 195
+                        SVI = { has_completed_focus = BUS_stolichniy_institut_yadernoy_energetici }
+                    }
+                }
+			}
+			available = {
+				owns_state = 195
+				if = {
+					limit = { original_tag = SVI }
+
+					has_completed_focus = BUS_stolichniy_institut_yadernoy_energetici
+				}
+			}
+
+			research_bonus = {
+				rocketry = 0.08
+				nuclear = 0.15
+			}
+
+			modifier = {
+				sp_tag_rocket_speed_factor = 0.08
+			}
+
+			traits = { nuclear_concern }
+		}
     }
 }

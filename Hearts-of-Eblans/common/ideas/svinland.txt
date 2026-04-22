@@ -14,6 +14,17 @@ ideas = {
 				surrender_limit = 0.05
 			}
 		}
+        SVI_vrata_v_zhirogorsk_idea = {
+		
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				max_dig_in = 0.5
+			}
+		}
 		
 		SVI_buster_oposite = {
 			picture = svi_bustergrad_oposite
@@ -52,6 +63,283 @@ ideas = {
 				consumer_goods_factor = 0.15
 			}
 		}
+		SVI_anticorruption_buro_idea = {
+			allowed = {
+				always = no
+			}
+			picture = ARG_political_corruption_modifier
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = 0.05
+				political_power_factor = -0.03
+			}
+		}
+
+		SVI_builders_guilds = {
+			allowed = {
+				always = no
+				tag = AUS
+			}
+
+			removal_cost = -1
+			picture = ast_all_in
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+
+		}
+
+		SVI_underground_resistance_cells = {
+			name = SVI_underground_resistance_cells
+			picture = chi_war_of_resistance3
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_decay_on_our_occupied_states = -0.20
+				resistance_target_on_our_occupied_states = 0.1
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1
+				target_sabotage_cost = -0.15
+				target_sabotage_factor = 0.1
+			}
+		}
+
+		SVI_underground_resistance_cells_no_lar = {
+			name = SVI_underground_resistance_cells
+			picture = chi_war_of_resistance3
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_decay_on_our_occupied_states = -0.20
+				resistance_target_on_our_occupied_states = 0.1
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1
+				boost_resistance_factor = 0.1
+			}
+		}
+
+		SVI_economical_spad = {
+			allowed = {
+				always = no
+			}
+			picture = generic_economic_crisis
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		SVI_vostanavlivaush_economica = {
+			allowed = {
+				always = no
+			}
+			picture = ARG_civilian_economy_boost
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.05
+				experience_gain_army_factor = -0.1
+			}
+
+			on_remove = {
+				
+			}
+		}
+		SVI_inostrannie_sredstva = {
+			allowed = {
+				always = no
+			}
+			picture = HABSBURG_economy
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.03
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+
+			on_remove = {
+
+			}
+		}
+		SVI_shandarmeriya = {
+			allowed = {
+				always = no
+			}
+			picture = generic_secret_police
+			
+			removal_cost = -1
+			
+			modifier = {
+				resistance_target = -0.05
+				required_garrison_factor = -0.05
+				intel_network_gain_factor = 0.05
+				fascism_drift = 0.04
+			}
+		}
+		SVI_dolgoshdannoe_spokoystvie = {
+			allowed = {
+				AND = {
+					has_war = no
+					has_civil_war = no
+				}
+			}
+			picture = ETH_peacekeeping_forces
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15
+				stability_weekly = 0.002
+			}
+		}
+		SVI_vostanovit_slavu_rodini = {
+			allowed = {
+				always = no
+			}
+			picture = BEL_legacy_of_the_great_war
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SVI_front_opolchenie = {
+			allowed = {
+				always = no
+			}
+			picture = hol_expand_the_colonial_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				modifier_army_sub_unit_militia_attack_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.05
+				modifier_army_sub_unit_militia_speed_factor = 0.05
+			}
+		}
+		SVI_colhozi = {
+			allowed = {
+				always = no
+			}
+			picture = generic_agrarian_reform
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.03
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.06
+				conscription_factor = -0.01
+			}
+		}
+
+		pioneers = {
+	
+			allowed = {
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+			picture = generic_communist_army
+			modifier = {
+				communism_drift = 0.01
+				political_power_gain = 0.05
+			}
+		}
+        pioneers2 = {
+			
+			allowed = {
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+			picture = generic_communist_army
+			modifier = {
+				communism_drift = 0.002
+				political_power_gain = 0.07
+				conscription= 0.025
+			}
+		}
+
+
+		SVI_polit_kommisariati = {
+			allowed = {
+				always = no
+			}
+			picture = generic_agrarian_reform
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_regain = 0.1
+				initiative_factor = 0.02
+			}
+		}
+		SVI_fit_for_fight = {
+			allowed = {
+				always = no
+			}
+			picture = generic_fascism_drift_2
+			
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = -0.1
+				mobilization_laws_cost_factor = -0.15
+				trade_laws_cost_factor = -0.1
+			}
+		}
+		SVI_economical_spad_2 = {
+			allowed = {
+				always = no
+			}
+			picture = generic_economic_crisis
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = 0.05
+			}
+		}
 
 		SVI_vigilium_1_idea = {
 			allowed = {
@@ -62,9 +350,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = 0.025
 				war_support_factor = -0.03
-				army_morale_factor = 0.05
+				army_morale_factor = 0.02
+				resistance_activity = -0.05
+				compliance_gain = 0.5
 			}
 		}
 
@@ -77,10 +367,76 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.1
-				war_support_factor = -0.05
+				stability_factor = 0.05
+				war_support_factor = -0.01
 				army_morale_factor = 0.05
-				army_core_defence_factor = 0.05
+				resistance_activity = -0.1
+				compliance_gain = 1.5
+			}
+		}
+		SVI_fan_materialism_idea = {
+			allowed = {
+				always = no
+			}
+			picture = SVI_materialism
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		SVI_com_influence_from_cowboy = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_shield_against_communism
+
+			cancel = {
+				fascism > 0.46
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.1
+				custom_modifier_tooltip = SVI_com_influence_tt
+			}
+		}
+		SVI_com_influence_from_cowboy_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_shield_against_communism
+
+			cancel = {
+				fascism > 0.46
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.15
+				custom_modifier_tooltip = SVI_com_influence_tt
+			}
+		}
+		SVI_pdd_law = {
+			allowed = {
+				always = no
+			}
+			picture = ARG_invest_in_roads
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = -0.03
+				monthly_population = -0.05
+				supply_factor = 0.02
+				production_speed_rail_way_factor = 0.1
+				production_speed_supply_node_factor = 0.05
 			}
 		}
 
@@ -618,6 +974,20 @@ ideas = {
 				annex_cost_factor = -0.12
 			}
 		}
+	    SVI_armiya_professionalov = {
+			allowed = {
+				always = no
+			}
+			
+			picture = NORDIC_army_communist
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.1
+			}
+		}
 
 	    SVI_new_citizenship_idea = {
 			allowed = {
@@ -634,6 +1004,35 @@ ideas = {
 				drift_defence_factor = 0.5
 				army_morale_factor = 0.05
 				consumer_goods_factor = -0.1
+			}
+		}
+
+		SVI_plata_za_gibraltar = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills_payment
+
+			cancel = {
+			    OR = {
+			    	has_war_with = GON
+			    	GON = {
+			    		is_subject = yes
+			    	}
+			    }
+			}
+
+			targeted_modifier = {
+				tag = GON
+				cic_to_target_factor = 0.1
+				extra_trade_to_target_factor = 0.15
 			}
 		}
 
@@ -1139,9 +1538,25 @@ ideas = {
 			modifier = {
 			    political_power_cost = -0.5
 			    political_power_factor = 0.1
-			    war_stability_factor = -0.15
+			    war_stability_factor = -0.05
 			    embargo_cost_factor = -0.5
-			    local_resources = 0.1
+			    local_resources = 0.05
+			}
+		}
+    	SVI_rapid_convoy_production = {
+			allowed = {
+				always = no
+			}
+			
+			picture = liberty_ships_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+			    industrial_capacity_dockyard = 0.1
+				transport_capacity = 0.1
+				convoy_escort_efficiency = 0.5
+				convoy_retreat_speed = 0.3
 			}
 		}
 
@@ -1158,9 +1573,80 @@ ideas = {
 			    political_power_factor = 0.05
 			    production_speed_buildings_factor = 0.05
                 industry_repair_factor = 0.1
-                resistance_activity = -0.1
+                resistance_activity = -0.05
+			}
+		}
+
+		SVI_switzerland_rozvidka = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_spy_coup
+			
+			removal_cost = -1
+			
+			modifier = {
                 operation_risk = -0.1
                 operation_cost = -0.15
+				intel_from_operatives_factor = 0.05
+			}
+		}
+		SVI_interventionism = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+                consumer_goods_factor = -0.05
+			}
+		}
+		SVI_big_pig_president = {
+			allowed = {
+				always = no
+			}
+			
+			picture = SVI_bigpig
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+		SVI_economica_v_eshovih_rukovitsah = {
+			allowed = {
+				always = no
+			}
+			
+			picture = GER_economy_of_conquest
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.12
+				industrial_capacity_factory = -0.1
+				war_support_factor = -0.03
+			}
+		}
+		SVI_big_pig_president_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = SVI_bigpig
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				neutrality_drift = 0.035
+				army_org_factor = 0.03
 			}
 		}
 
@@ -1249,7 +1735,68 @@ ideas = {
 			    research_speed_factor = -0.1
 				civilian_factory_use = 2
                 political_power_cost = 0.15
-				stability_weekly = -0.007
+				stability_weekly = -0.004
+			}
+		}
+    	SVI_civ_podpol = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_reserve_divisions
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+				org_loss_when_moving = -0.03
+				enemy_army_speed_factor = -0.04
+			}
+		}
+    	SVI_civ_profsoyuzi = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				communism_drift = 0.03
+			}
+		}
+
+    	SVI_civ_zashitim = {
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_shield_against_communism
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.2
+				add_stability = 0.05
+				neutrality_drift = 0.04
+			}
+		}
+    	SVI_civ_vidvarm = {
+			allowed = {
+				always = no
+			}
+			
+			picture = SOV_third_five_year_plan_military
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				war_support_factor = 0.05
+				army_org_factor = 0.05
 			}
 		}
 

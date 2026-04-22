@@ -11,6 +11,41 @@ on_actions = {
 	on_daily = {
 		effect = {
 			reload_parliament_gui = yes
+
+			if = {
+				limit = {
+					OR = {
+					original_tag = RAZ
+					original_tag = CHB
+					original_tag = KUS
+					original_tag = PYA
+					original_tag = JKY
+					}
+					NOT = {
+						has_government = communism
+					}
+				}
+				THIS = {
+					if = {
+						limit = {
+							has_idea = SVI_com_influence_from_cowboy
+							communism > 0.45
+						}
+						set_politics = {
+    						ruling_party = communism
+    						elections_allowed = no
+						}
+						SVI = {
+							puppet = PREV
+						}
+						add_ai_strategy = {
+						   type = alliance
+						   id = SVI
+						   value = 100
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -27,24 +62,51 @@ on_actions = {
 				SVI = {
 					if = {
 						limit = { NOT = { has_country_flag = SVI_destroyed_duma } }
-						random_list = {
-							25 = {
-								country_event = { id = svin.7}
-							}				
-							25 = {
-								country_event = { id = svin.8}
-							}				
-							25 = {
-								country_event = { id = svin.9}
-							}				
-							25 = {
-								country_event = { id = svin.10}
-							}				
-							25 = {
-								country_event = { id = svin.11}
-							}					
-							25 = {
-								country_event = { id = svin.12}
+						if = {
+							limit = {
+								OR = {
+									has_government = democratic
+									has_government = fascism
+								}
+							}
+							random_list = {
+								25 = {
+									country_event = { id = svin.7}
+								}				
+								25 = {
+									country_event = { id = svin.8}
+								}				
+								25 = {
+									country_event = { id = svin.9}
+								}				
+								25 = {
+									country_event = { id = svin.10}
+								}				
+								25 = {
+									country_event = { id = svin.11}
+								}					
+								25 = {
+									country_event = { id = svin.12}
+								}
+							}
+						}
+						else = {
+							random_list = {
+								25 = {
+									country_event = { id = svin.7}
+								}				
+								25 = {
+									country_event = { id = svin.8}
+								}				
+								25 = {
+									country_event = { id = svin.9}
+								}				
+								25 = {
+									country_event = { id = svin.10}
+								}				
+								25 = {
+									country_event = { id = svin.11}
+								}
 							}
 						}
 					}

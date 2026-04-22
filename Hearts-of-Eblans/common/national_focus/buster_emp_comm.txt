@@ -1,0 +1,824 @@
+# CREATED BY CLR62 - Licensed under MIT License
+ 
+focus_tree = {
+	id = buscom_focus
+	
+	country = {
+		factor = 0
+	}
+	default = no
+	
+	focus = {
+		id = BUS_communisticheskiy_triumph
+		icon = GFX_focus_AUS_danubian_socialist_communes
+		x = 10
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = {
+				id = bus_com.4
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BUS_podchinit_goroda
+		icon = GFX_goal_SVI_cities_doveria
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BUS_communisticheskiy_triumph
+		prerequisite = { focus = BUS_communisticheskiy_triumph }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = {
+				id = bus_com.5
+				days = 2
+			}
+		}
+	}
+	focus = {
+		id = BUS_osvobodit_marshi
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = BUS_communisticheskiy_triumph
+		prerequisite = { focus = BUS_communisticheskiy_triumph }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 30
+			add_command_power = 20
+		}
+	}
+	focus = {
+		id = BUS_revolutiya_v_skandinavii
+		icon = GFX_goal_SVI_razdva_in_flames
+		x = -1
+		y = 1
+		cost = 10
+		bypass = {
+			RAZ = {
+				OR = {
+					exists = no
+					is_subject = yes
+					has_government = communism
+				}
+			}
+		}
+		relative_position_id = BUS_osvobodit_marshi
+		prerequisite = { focus = BUS_osvobodit_marshi }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			RAZ = {
+				country_event = {
+					id = bus_com.6
+					days = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUS_revolutiya_v_pyatopii
+		icon = GFX_goal_SVI_pyatorka_drug_abo_vrag
+		x = 0
+		y = 2
+		cost = 10
+		bypass = {
+			PYA = {
+				OR = {
+					exists = no
+					is_subject = yes
+					has_government = communism
+				}
+			}
+		}
+		relative_position_id = BUS_revolutiya_v_skandinavii
+		prerequisite = { focus = BUS_revolutiya_v_skandinavii }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			PYA = {
+				country_event = {
+					id = bus_com.6
+					days = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUS_kusian_war
+		icon = GFX_goal_SVI_kussian_war
+		x = 1
+		y = 1
+		cost = 10
+
+		available = {
+			has_war = no
+		}
+
+		bypass = {
+			KUS = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		relative_position_id = BUS_revolutiya_v_skandinavii
+		prerequisite = { focus = BUS_revolutiya_v_skandinavii }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			create_wargoal = {
+				target = KUS
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BUS_chicken_bekonskiy_perevorot
+		icon = GFX_goal_SVI_chicken_in_flames
+		x = -3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+
+		mutually_exclusive = { focus = BUS_druzya_navsegda }
+		bypass = {
+			CHB = {
+				has_government = communism
+			}
+		}
+		available = {
+			CHB = {
+				exists = yes
+				is_subject = no
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		relative_position_id = BUS_revolutiya_v_skandinavii
+		prerequisite = { focus = BUS_revolutiya_v_skandinavii }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			CHB = {
+				country_event = {
+					id = bus_com.6
+					days = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUS_druzya_navsegda
+		icon = GFX_goal_SVI_chicken_com
+		x = -1
+		y = 1
+		cost = 1
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		mutually_exclusive = { focus = BUS_chicken_bekonskiy_perevorot }
+		available = {
+			CHB = {
+				is_subject = no
+				exists = yes
+				is_in_faction = no
+			}
+		}
+		relative_position_id = BUS_revolutiya_v_skandinavii
+		prerequisite = { focus = BUS_revolutiya_v_skandinavii }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+	focus = {
+		id = BUS_koloniya_luniya
+		icon = GFX_goal_SVI_jky_focus
+		x = 1
+		y = 1
+		bypass = {
+			JKY = {
+				OR = {
+				exists = no
+				is_subject = yes
+				}
+			}
+		}
+		cost = 10
+		relative_position_id = BUS_osvobodit_marshi
+		prerequisite = { focus = BUS_osvobodit_marshi }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			JKY = {
+				add_ideas = SVI_com_influence_from_cowboy_2
+			}
+		}
+	}
+	focus = {
+		id = BUS_koloniya_sardiniya
+		icon = GFX_goal_generic_territory_or_war
+		x = 0
+		y = 3
+
+		bypass = {
+			SVI = {
+				controls_state = 114
+			}
+		}
+
+		available = {
+			PBU = {
+				controls_state = 114
+			}
+		}
+
+		cost = 10
+		relative_position_id = BUS_koloniya_luniya
+		prerequisite = { focus = BUS_koloniya_luniya }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			PBU = {
+				country_event = {
+					id = bus_com.8
+					days = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUS_planovaya_economica
+		icon = GFX_focus_generic_communist_industry
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = BUS_communisticheskiy_triumph
+		prerequisite = { focus = BUS_communisticheskiy_triumph}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			13 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			191 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+			263 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}
+			246 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}
+			244 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			809 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			811 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_colhozi
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_planovaya_economica
+		prerequisite = { focus = BUS_planovaya_economica}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = SVI_colhozi
+		}
+		
+	}
+	focus = {
+		id = BUS_voennie_kommisariati
+		icon = GFX_focus_generic_soviet_politics
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BUS_colhozi
+		prerequisite = { focus = BUS_colhozi}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = SVI_polit_kommisariati
+		}
+		
+	}
+	focus = {
+		id = BUS_oboronno_promishlenniy_complex
+		icon = GFX_focus_generic_military_industry
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = BUS_planovaya_economica
+		prerequisite = { focus = BUS_planovaya_economica}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				prioritize = { 209 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				prioritize = { 191 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_aviationnaya_promishlennost
+		icon = GFX_goal_generic_air_production
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_oboronno_promishlenniy_complex
+		prerequisite = { focus = BUS_oboronno_promishlenniy_complex}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = light_air
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = medium_air
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = heavy_air
+			}
+
+			random_owned_controlled_state = {
+				add_resource = {
+					type = aluminium
+					amount = 5
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			190 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_tankovaya_promka
+		icon = GFX_focus_generic_tank_assembly
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BUS_expand_oil_promishlennost
+		prerequisite = { focus = BUS_expand_oil_promishlennost}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_heavy_armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_light_armor
+			}
+		}
+	}
+	focus = {
+		id = BUS_connect_sever_ug
+		icon = GFX_focus_generic_railroad
+		x = 1
+		y = 2
+		cost = 10
+		relative_position_id = BUS_oboronno_promishlenniy_complex
+		prerequisite = { focus = BUS_aviationnaya_promishlennost}
+		prerequisite = { focus = BUS_expand_oil_promishlennost}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			hidden_effect = {
+				build_railway = {
+                	level = 2
+					start_province = 310
+                	target_province = 341
+                	build_only_on_allied = yes
+            	}
+			}
+			build_railway = {
+                level = 2
+				start_province = 341
+                target_province = 11234
+                build_only_on_allied = yes
+            }
+			build_railway = {
+                level = 2
+				start_province = 9340
+                target_province = 11202
+                build_only_on_allied = yes
+            }
+			build_railway = {
+                level = 2
+				start_province = 181
+                target_province = 9234
+                build_only_on_allied = yes
+            }
+		}
+		
+	}
+	focus = {
+		id = BUS_expand_oil_promishlennost
+		icon = GFX_goal_generic_oil_refinery
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_oboronno_promishlenniy_complex
+		prerequisite = { focus = BUS_oboronno_promishlenniy_complex}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_tech = synth_oil_experiments } }
+				set_technology = { synth_oil_experiments = 1 }
+			}
+			208 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+				set_state_category = city 
+				add_manpower = 75000
+			}
+			add_tech_bonus = {
+				name = synth_bonus
+				bonus = 2.0
+				uses = 2
+				category = synth_resources
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_pioneriya
+		icon = GFX_focus_GER_the_peoples_victory
+		x = 10
+		y = 0
+		cost = 6
+		available = {
+			has_war = no
+		}
+		relative_position_id = BUS_communisticheskiy_triumph
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = {
+				id = bus_com.1
+				days = 2
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_den_znaniy
+		icon = GFX_focus_generic_university_1
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = BUS_pioneriya
+		prerequisite = { focus = BUS_pioneriya }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = {
+				id = bus_com.3
+				days = 2
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_voenno_patrioticheskie_organizatsii
+		icon = GFX_focus_generic_military_academy
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = BUS_pioneriya
+		prerequisite = { focus = BUS_pioneriya }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = {
+				id = bus_com.2
+				days = 2
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_new_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = BUS_pioneriya
+		prerequisite = { focus = BUS_pioneriya }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			13 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			195 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_fan_materialism
+		icon = GFX_goal_SVI_fan_materialism
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BUS_new_factories
+		prerequisite = { focus = BUS_new_factories }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = SVI_fan_materialism_idea
+		}
+		
+	}
+	focus = {
+		id = BUS_radio_techs
+		icon = GFX_focus_generic_radio_communication
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_fan_materialism
+		prerequisite = { focus = BUS_fan_materialism }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = radio_bonus_buscom
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_stolichniy_institut_yadernoy_energetici #СИЯЭ
+		icon = GFX_focus_generic_university_3
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_fan_materialism
+		prerequisite = { focus = BUS_fan_materialism }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_new_concern_tt
+			custom_effect_tooltip = idea_desc|stolich_insitute
+		}
+		
+	}
+	focus = {
+		id = BUS_mirniy_atom
+		icon = GFX_focus_generic_nuclear_development
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BUS_stolichniy_institut_yadernoy_energetici
+		prerequisite = { focus = BUS_stolichniy_institut_yadernoy_energetici }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = { 
+						1048 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = nuclear_facility
+						}
+					}
+					1048 = {
+						add_building_construction = {
+							type = nuclear_facility
+							level = 1
+							instant_build = yes
+							province = 3501
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = nuclear_bonus_buscom
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_rocket_techs
+		icon = GFX_focus_rocketry
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = BUS_stolichniy_institut_yadernoy_energetici
+		prerequisite = { focus = BUS_stolichniy_institut_yadernoy_energetici }
+		prerequisite = { focus = BUS_radio_techs }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = rocket_bonus_buscom
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			if = {
+				limit = {
+					has_tech = experimental_rockets
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 2
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.9
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_free_obrazovanie
+		icon = GFX_focus_generic_university_2
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = BUS_den_znaniy
+		prerequisite = { focus = BUS_den_znaniy }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			every_unit_leader = { 
+				if = { 
+					limit = { skill > 4 }
+					gain_xp = 1250
+				}
+				else_if = {
+					limit = { skill > 3 }
+					gain_xp = 750
+				}
+				else_if = {
+					limit = { skill > 2 }
+					gain_xp = 500
+				}
+				else_if = {
+					limit = { skill > 1 }
+					gain_xp = 250
+				}
+				else = {
+					gain_xp = 150
+				}
+			}
+		}
+		
+	}
+}

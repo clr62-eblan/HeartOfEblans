@@ -61,7 +61,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Максильо Шабани де Лисий"
+	name = "Максильо Шабани де Лыстенко"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "shaban.dds"
 	

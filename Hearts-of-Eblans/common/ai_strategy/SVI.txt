@@ -1,0 +1,416 @@
+ENG_unit_production = {
+
+	allowed = {	original_tag = SVI }
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 70
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 25
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 100
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 20
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = support
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 10
+	}
+}
+
+SVI_bomber_production = {
+	allowed = {
+		original_tag = SVI
+	}
+	enable = {
+		num_of_military_factories > 30
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = tactical_bomber
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = strategic_bomber
+		value = 1
+	}
+}
+
+SVI_bba_air_prod_1 = {
+	allowed = { original_tag = SVI }
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 200
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 15 #because doctrine this = 15
+	}
+
+ 	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cas
+		value = 1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 2
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 2
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 2
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = 1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_fighter
+		value = 25
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_naval_bomber
+		value = 25
+	}
+}
+
+SVI_fighter_enhanced_production = {
+	allowed = { original_tag = SVI }
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		has_equipment = { small_plane_airframe > 4000 }
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 10
+	}
+
+	ai_strategy = {
+		type = air_xp_spend_priority
+		id = upgrade_xp_cutoff
+		value = 100
+	}
+}
+
+SVI_the_home_fleet  = {
+	allowed = { original_tag = SVI }
+
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 16 # north sea
+		value = 70
+	}
+}
+
+SVI_the_med_fleet  = {
+	allowed = { original_tag = SVI }
+
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 69 # nice #eastern med
+		value = 20
+	}
+}
+SVI_protect_drake_against_lagoda = {
+	allowed = { original_tag = SVI }
+
+	enable = {
+		DRE = { has_war_with = LAG }
+	}
+	abort = {
+		OR = {
+			NOT = { DRE = { has_war_with = LAG } }
+		}
+	}
+
+	ai_strategy = {
+		type = protect
+		id = "DRE"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "DRE"
+		value = 200
+	}
+}
+
+SVI_nowar_with_lagoda_before_civilwar = {
+	allowed = { original_tag = SVI }
+
+	enable = {
+		SVI = {
+			OR = {
+				has_country_flag = SVI_AI_RANDOM_NEUTRALITY
+				has_country_flag = SVI_AI_RANDOM_COMMUNISM
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_completed_focus = BUS_dolgosdannoe_spokoystvie
+			has_completed_focus = BUS_communisticheskiy_triumph
+		}
+	}
+
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "LAG"
+		value = 500
+	}
+}
+
+
+SVI_no_alliace_with_BTK = {
+	allowed = { original_tag = SVI }
+
+	enable = {
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = alliance
+		id = "BTK"
+		value = -350
+	}
+}
+SVI_eternal_war_preparing = {
+	allowed = { original_tag = SVI }
+
+	enable = {
+		has_war = no
+		has_government = democratic
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		value = 100
+	}
+	
+}
+SVI_trade_controller_st = {
+	allowed = { original_tag = SVI }
+
+	enable = {
+		has_government = democratic
+		has_completed_focus = SVI_controller_of_world_trade
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_market_trade_desire
+		value = 400
+	}
+}
+SVI_trade_desire_st = {
+	allowed = { original_tag = SVI }
+
+	enable = {
+		NOT = { has_completed_focus = SVI_controller_of_world_trade }
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_market_trade_desire
+		value = 100
+	}
+}
+
+SVI_less_weapon_purchases_more_for_construction = {
+	allowed = {
+		original_tag = SVI
+	}
+	enable = {
+		date < 2027.1.1
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_market_spend_factories
+		value = -60  # 80 % less factories
+	}
+	ai_strategy = {  # Don't even try buying infantry equipment too early
+		type = equipment_market_buying_threshold
+		id = infantry_equipment
+		value = -5000  # Absolute number of units
+	}
+}

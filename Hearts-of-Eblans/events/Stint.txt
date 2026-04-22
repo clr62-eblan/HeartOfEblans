@@ -763,7 +763,7 @@ country_event = {
 				GON = { is_in_faction = no }
 			}
 			GON = { 
-				create_faction = "Средиземноморская Ось"
+				create_faction_from_template = faction_template_miditerian
 				add_to_faction = PREV
 			}
 		}

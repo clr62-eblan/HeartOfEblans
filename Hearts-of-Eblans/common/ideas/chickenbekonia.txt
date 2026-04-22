@@ -812,21 +812,24 @@ ideas = {
 			}
 
 			cancel = {
-				NOT = {
+				AND = {
+					852 = {
+						is_core_of = CHB
+					}
+					736 = {
+						is_core_of = CHB
+					}
+					853 = {
+						is_core_of = CHB
+					}
+					102 = {
+						is_core_of = CHB
+					}
 					155 = {
-						is_controlled_by = CHB
-					}
-					974 = {
-						is_controlled_by = CHB
-					}
-					973 = {
-						is_controlled_by = CHB
-					}
-					154 = {
-						is_controlled_by = CHB
+						is_core_of = CHB
 					}
 					43 = {
-						is_controlled_by = CHB
+						is_core_of = CHB
 					}
 				}
 			}

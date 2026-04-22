@@ -116,7 +116,7 @@ focus_tree = {
 			add_stability = 0.05
 			custom_effect_tooltip = "low_parliament_popularity_increase"
 			hidden_effect = {
-			low_parliament_popularity_increase = yes
+				low_parliament_popularity_increase = yes
 			}
 		}
 	}

@@ -1390,6 +1390,13 @@ focus_tree = {
 
 				recruit_character = CHB_mazelov_fas
 			}
+
+			hidden_effect = {
+				add_ideas = CHB_hungary_problem
+				add_ideas = CHB_outdated_industry
+				add_ideas = CHB_military_bureaucracy
+				add_ideas = chb_kom_interests_idea
+			}
 		}
         prerequisite = { focus = chb_mention_problems }
         prerequisite = { focus = chb_voorushit_storonnikov }

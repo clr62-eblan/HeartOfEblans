@@ -7,10 +7,12 @@ bookmarks = {
 		default_country = "CHB"
 		default = yes
 		CHB={
-			history = ""
+			history = "CHB_HISTORY_TEXT"
 			ideology = fascism
 			ideas = {
 				CHB_hungary_problem
+				CHB_outdated_industry
+				CHB_military_bureaucracy
 			}
 			focuses = {
 				chb_internet_mobilisation
@@ -19,22 +21,21 @@ bookmarks = {
 			}
 		}
 		SVI={
-			history = ""
+			history = "SVI_HISTORY_TEXT"
 			ideology = democratic
 			ideas = {
 				SVI_peoples_duma_1
 				SVI_shadow_of_gosperevorot_1
 				SVI_buster_oposite
-				svinland_ru
 			}
 			focuses = {
-				SVI_support_of_retired_marshal
-				SVI_the_cult_of_one_svin
-				SVI_vigilium_2
+				SVI_tolko_blagodarya_presidentu
+				SVI_bustergrad_imperiya
+				SVI_monolitnaya_strana
 			}
 		}
 		DRE={
-			history = ""
+			history = "DRE_HISTORY_TEXT"
 			ideology = hypecratia
 			ideas = {
 				DRE_treaty_of_triannon_aat
@@ -48,7 +49,7 @@ bookmarks = {
 			}
 		}
 		GON={
-			history = ""
+			history = "GON_HISTORY_TEXT"
 			ideology = neutrality
 			ideas = {
 				GON_brain_drain
@@ -63,7 +64,7 @@ bookmarks = {
 			}
 		}
 		ARA={
-			history = ""
+			history = "ARA_HISTORY_TEXT"
 			ideology = fascism
 			ideas = {
 				ARA_gos_apparat_idea
@@ -79,7 +80,7 @@ bookmarks = {
 
 
 		PYA={
-			history = ""
+			history = "PYA_HISTORY_TEXT"
 			ideology = hypecratia
 			ideas = {
 				dva_disa
@@ -93,7 +94,7 @@ bookmarks = {
 			}
 		}
 		BTK={
-			history = ""
+			history = "BTK_HISTORY_TEXT"
 			ideology = fascism
 			ideas = {
 				slay_2023_king
@@ -107,7 +108,7 @@ bookmarks = {
 
 
 		"---"={
-			history = ""
+			history = "OTHERS_HISTORY_TEXT"
 		}
 		
 		"MPK"={

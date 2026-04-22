@@ -172,6 +172,30 @@ on_actions = {
 				}
 			}
 		} 
+		effect = { 
+			if = {
+				limit = {
+					ROOT = { tag = SVI }
+					FROM = { tag = KIS }
+				}
+				SVI = {
+					annex_country = {
+						target = KIS
+						transfer_troops = no
+					}
+					country_event = {
+						id = svin.53
+						days = 2
+					}
+				}
+				KIS = {
+					every_core_state = {
+						add_core_of = SVI
+						transfer_state_to = SVI
+					}
+				}
+			}
+		} 
 	}
 	
 	

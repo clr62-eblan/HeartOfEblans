@@ -21,6 +21,50 @@ debug_decisions = {
 			country_event = btk_squad.4
 		}
 	}
+    SVI_load_empire = {
+		priority = 32
+		icon = GFX_narezki_mbrff_decision_icon
+
+		allowed = { 
+			original_tag = SVI
+		}
+
+		available = {
+            original_tag = SVI
+		}
+
+		visible = {
+			original_tag = SVI
+		}
+
+		cost = 0
+
+		complete_effect = {
+			load_focus_tree = bus_empire_focus
+		}
+	}
+    SVI_load_com = {
+		priority = 32
+		icon = GFX_narezki_mbrff_decision_icon
+
+		allowed = { 
+			original_tag = SVI
+		}
+
+		available = {
+            original_tag = SVI
+		}
+
+		visible = {
+			original_tag = SVI
+		}
+
+		cost = 0
+
+		complete_effect = {
+			load_focus_tree = buscom_focus
+		}
+	}
     ZOL_form_empire_instantly = {
 		priority = 32
 		icon = GFX_narezki_mbrff_decision_icon

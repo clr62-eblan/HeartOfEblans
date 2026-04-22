@@ -87,6 +87,7 @@ SVI_kazna = {
 
 		visible = {
 			original_tag = SVI
+			NOT = { has_country_flag = SVI_destroyed_duma }
 		}
 
 		available = {
@@ -138,13 +139,6 @@ SVI_kazna = {
 	
 		available = {
 			check_variable = { arov_v_kazne > 499 }
-			custom_trigger_tooltip = { 
-				tooltip = need_parliament_support_70
-				if = {
-					limit = { NOT = { has_country_flag = SVI_destroyed_duma } }
-					check_variable = { deputatov_za > 69}
-				}
-			}
 		}
 		
 
@@ -195,13 +189,6 @@ SVI_kazna = {
 	
 		available = {
 			check_variable = { arov_v_kazne > 749 }
-			custom_trigger_tooltip = { 
-				tooltip = need_parliament_support_50
-				if = {
-					limit = { NOT = { has_country_flag = SVI_destroyed_duma } }
-					check_variable = { deputatov_za > 49}
-				}
-			}
 		}
 
 		visible = {
@@ -263,15 +250,8 @@ SVI_kazna = {
 		}
 	
 		available = {
-			has_army_size = { size > 5 }
+			has_army_size = { size > 9 }
 			check_variable = { arov_v_kazne > 599 }
-			custom_trigger_tooltip = { 
-				tooltip = need_parliament_support_75
-				if = {
-					limit = { NOT = { has_country_flag = SVI_destroyed_duma } }
-					check_variable = { deputatov_za > 74}
-				}
-			}
 		}
 
 		visible = {
@@ -320,13 +300,6 @@ SVI_kazna = {
 	
 		available = {
 			check_variable = { arov_v_kazne > 399 }
-			custom_trigger_tooltip = { 
-				tooltip = need_parliament_support_60
-				if = {
-					limit = { NOT = { has_country_flag = SVI_destroyed_duma } }
-					check_variable = { deputatov_za > 59}
-				}
-			}
 		}
 
 		visible = {
@@ -406,6 +379,40 @@ SVI_uncertain_future_cat = {
 		timeout_effect = {
 			country_event = { id = svin.15 }
 			set_country_flag = SVI_collapse_started
+		}
+	}
+}
+SVI_comm_revolution_cat = {
+	SVI_neminuemaya_revolutiya = {
+
+		priority = 2000
+
+		icon = GFX_decision_revolt
+
+		#allowed = { always = no }
+
+		visible = {
+			hidden_trigger = { has_completed_focus = SVI_za_imperatora }
+		}
+
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = 160
+
+		fire_only_once = yes
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		timeout_effect = {
+			custom_effect_tooltip = SVI_BUS_com_revo_start_tt
+			hidden_effect = {
+				country_event = { id = svin.56 }
+				set_country_flag = SVI_REVO_EMPIRE
+			}
 		}
 	}
 }
@@ -617,6 +624,151 @@ SVI_imminent_collapse_cat = {
 
 		timeout_effect = {
 			country_event = { id = svin.26 }
+		}
+	}
+}
+
+SVI_big_federation_unition = {
+	form_big_federation = {
+	
+		icon = generic_form_nation
+		picture = GFX_category_svi_federation_unite
+		
+		
+		fire_only_once = yes
+		cost = 25
+	
+		allowed = {
+			original_tag = SVI 
+		}
+	
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = SVI_svi_control	
+				# Iberia
+				controls_state = 812
+				controls_state = 13
+				controls_state = 811
+				controls_state = 12
+				controls_state = 191
+				controls_state = 813
+				controls_state = 208
+				controls_state = 209
+				controls_state = 195
+				controls_state = 244
+				controls_state = 263
+				controls_state = 246
+				controls_state = 210
+				controls_state = 810
+				controls_state = 1048
+				controls_state = 808
+				controls_state = 809
+				controls_state = 190
+			}
+			custom_trigger_tooltip = {
+				tooltip = SVI_jky_control	
+
+				controls_state = 189
+				controls_state = 815
+				controls_state = 11
+				controls_state = 814
+
+			}
+			custom_trigger_tooltip = {
+				tooltip = SVI_KUS_control	
+
+				controls_state = 247
+				controls_state = 264
+				controls_state = 216
+				controls_state = 242
+
+			}
+			custom_trigger_tooltip = {
+				tooltip = SVI_RAZ_control	
+				controls_state = 146
+				controls_state = 928
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 812
+				state = 13
+				state = 811
+				state = 12
+				state = 191
+				state = 813
+				state = 208
+				state = 209
+				state = 195
+				state = 244
+				state = 263
+				state = 246
+				state = 210
+				state = 810
+				state = 808
+				state = 809
+				state = 190
+				state = 189
+				state = 815
+				state = 11
+				state = 814
+				state = 242
+				state = 247
+				state = 264
+				state = 216
+				state = 146
+				state = 928
+				state = 1048
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	
+		visible = {
+			original_tag = SVI
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				812 = { add_core_of = ROOT }
+				13 = { add_core_of = ROOT }
+				811 = { add_core_of = ROOT }
+				12 = { add_core_of = ROOT }
+				191 = { add_core_of = ROOT }
+				813 = { add_core_of = ROOT }
+				208 = { add_core_of = ROOT }
+				209 = { add_core_of = ROOT }
+				195 = { add_core_of = ROOT }
+				244 = { add_core_of = ROOT }
+				263 = { add_core_of = ROOT }
+				246 = { add_core_of = ROOT }
+				210 = { add_core_of = ROOT }
+				810 = { add_core_of = ROOT }
+				808 = { add_core_of = ROOT }
+				809 = { add_core_of = ROOT }
+				190 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				815 = { add_core_of = ROOT }
+				11 = { add_core_of = ROOT }
+				814 = { add_core_of = ROOT }
+				242 = { add_core_of = ROOT }
+				247 = { add_core_of = ROOT }
+				264 = { add_core_of = ROOT }
+				216 = { add_core_of = ROOT }
+				146 = { add_core_of = ROOT }
+				928 = { add_core_of = ROOT }
+				1048 = { add_core_of = ROOT }
+			}
+
+			set_cosmetic_tag = SVI_BIG_FED
+
+			mark_focus_tree_layout_dirty = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
 		}
 	}
 }

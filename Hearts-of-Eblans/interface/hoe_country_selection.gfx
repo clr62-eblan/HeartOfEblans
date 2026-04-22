@@ -1,0 +1,71 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_country_selection_back"
+		texturefile = "gfx/interface/hoe_country_selection/country_selection_back.dds"
+	}
+	spriteType = {
+		name = "GFX_country_selection_panel"
+		texturefile = "gfx/interface/hoe_country_selection/country_selection_panel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_selection_select_country_button"
+		texturefile = "gfx/interface/hoe_country_selection/select_button.png"
+		animation = {
+			animationmaskfile = "gfx/interface/hoe_country_selection/select_button_mask.dds"
+			animationtexturefile = "gfx/interface/hoe_country_selection/select_button_animation_texture.png"
+			animationrotation = -90
+			animationlooping = yes
+			animationtime = 2
+			animationdelay = 0.0
+			animationblendmode = "normal"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.6 } 
+		}
+		effectFile = "gfx/FX/buttonstate_hover_animation_only.shader"
+		legacy_lazy_load = no
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_texticon_SVI_history"
+		texturefile = "gfx/interface/hoe_country_selection/borders/svinland.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_DRE_history"
+		texturefile = "gfx/interface/hoe_country_selection/borders/drekovia.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_CHB_history"
+		texturefile = "gfx/interface/hoe_country_selection/borders/chicken.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_GON_history"
+		texturefile = "gfx/interface/hoe_country_selection/borders/stint.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_PYA_history"
+		texturefile = "gfx/interface/hoe_country_selection/borders/pyatorka.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_ARA_history"
+		texturefile = "gfx/interface/hoe_country_selection/borders/aratoss.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_BTK_history"
+		texturefile = "gfx/interface/hoe_country_selection/borders/bratishkin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_NOPIC_history"
+		texturefile = "gfx/interface/hoe_country_selection/borders/nopic.png"
+		legacy_lazy_load = no
+	}
+}

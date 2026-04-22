@@ -8,7 +8,16 @@ state={
 	history={
 		owner = SVI
 		victory_points = {
-			6459 1 #Valmiera
+			222 1 #MAtieball
+		}
+		victory_points = {
+			310 1 #Segunat
+		}
+		victory_points = {
+			11222 1 #Ebengrad
+		}
+		victory_points = {
+			319 1 #Kovboysk
 		}
 		buildings = {
 			infrastructure = 3

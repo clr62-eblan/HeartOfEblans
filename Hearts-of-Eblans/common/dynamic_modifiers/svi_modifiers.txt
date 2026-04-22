@@ -10,4 +10,49 @@ SVI_svintogon_modifier = {
 	winter_attrition_factor = SVI_svintogon_winterattrition_factor
 	acclimatization_cold_climate_gain_factor = SVI_svintogon_coldacclimatize_factor
     supply_factor = SVI_svintogon_supply_factor
+	justify_war_goal_time = SVI_svintogon_justify_time
+	army_artillery_attack_factor = SVI_svintogon_artillery_attack
+	land_bunker_effectiveness_factor = SVI_svintogon_land_bunker_effectiveness
+	production_speed_bunker_factor = SVI_svintogon_production_speed_bunker
+}
+SVI_imperial_army_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_SVI_bus_imperial_army
+
+	neutrality_drift = 0.03
+	experience_gain_army_factor = SVI_imperial_experience_army
+	dig_in_speed_factor = SVI_imperial_dig_in_speed
+	training_time_factor = SVI_imperial_training_time
+	mobilization_speed = SVI_imperial_mobilization_speed
+	conscription_factor = SVI_imperial_conscription_factor
+	winter_attrition_factor = SVI_imperial_winterattrition_factor
+	equipment_capture_factor = SVI_imperial_capture
+	equipment_conversion_speed = SVI_imperial_conversion
+	production_lack_of_resource_penalty_factor = SVI_imperial_lack_of_resources
+	supply_combat_penalties_on_core_factor = SVI_imperial_supply_penalties_on_core
+	acclimatization_cold_climate_gain_factor = SVI_imperial_coldacclimatize_factor
+	initiative_factor = SVI_imperial_initiative
+	recon_factor_while_entrenched = SVI_imperial_recon_entrenched
+	modifier_army_sub_unit_long_range_patrol_support_defence_factor = SVI_imperial_long_range_patrol_defence
+	modifier_army_sub_unit_long_range_patrol_support_attact_factor = SVI_imperial_long_range_patrol_attack
+}
+
+SVI_trade_controller = {
+	enable = { always = yes }
+	icon = GFX_idea_can_wartime_prices_and_trade_board
+
+	trade_opinion_factor = SVI_trade_opinion
+	guarantee_cost = SVI_trade_guarantee_cost
+	embargo_cost_factor = SVI_trade_embargo_cost
+	embargo_threshold_factor = SVI_trade_embargo_threshold
+	production_lack_of_resource_penalty_factor = SVI_trade_production_lack_of_resource_penalty
+	weekly_convoys_war_support = SVI_trade_weekly_convoys_warsup
+}
+
+SVI_capital_of_the_imperors = {
+	enable = { always = yes }
+	icon = GFX_idea_vigilium
+
+	state_production_speed_buildings_factor = 0.25
+	war_support_factor = 0.05
 }

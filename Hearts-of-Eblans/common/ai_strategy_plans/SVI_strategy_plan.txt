@@ -1,0 +1,363 @@
+SVI_democratic_plan = {
+	name = "Svinland Democratic Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SVI
+	}
+	enable = {
+		has_country_flag = SVI_AI_RANDOM_DEMOCRATIC
+
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = {
+
+		#2023
+		#ARG_preparation_for_the_elections
+		SVI_extend_constitution_f
+		SVI_changed_democracy
+		SVI_stabilize_the_situation
+		SVI_svintogon
+		SVI_ukaz_ob_oborone
+
+		#2024
+		SVI_zevoevat_doverie_gorodov
+		SVI_media_freedom
+		SVI_nikakogo_raspada
+		SVI_economical_penetration
+		SVI_shtab_operatiy_za_rubeshom
+		SVI_take_jacklooney
+		
+		
+		#2025
+		SVI_peresmotr_zakonov
+		SVI_anticorruption_buro
+		SVI_peace_and_diplomacy
+		SVI_ethical_beurocracy
+		SVI_voennaya_academiya
+		SVI_reintegration_of_bustergrad	
+		SVI_employment_program
+
+		#2026
+		SVI_vrata_v_zhirogors
+		SVI_stimulate_free_trade
+		SVI_conquer_karelia
+		SVI_vostanovlenie_ekonomiki
+		SVI_tolko_blagodarya_presidentu
+
+		#2027
+		SVI_invest_in_bananabeach
+		SVI_razvedka_shveytsarskogo_kachestva
+		SVI_prepare_kotel_shabanova_plan
+		SVI_new_dumas_budget
+		SVI_otdel_balistic_metrologii
+		SVI_vigilium_1
+		SVI_vigilium_2
+
+		#2028
+		SVI_controller_of_world_trade
+		SVI_establish_trade_federation
+		SVI_expand_trade_convoys
+		SVI_take_baragozzer
+		SVI_perfecto_artillery
+		SVI_svin_tank_program
+
+		#2029
+		SVI_kussian_expansion
+		SVI_massive_resource_extraction
+		SVI_buy_suez
+		SVI_buy_gibraltar
+		SVI_pyatorka_drug_ili_vrag
+		SVI_reorganize_defense
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SVI_fascism_plan = {
+	name = "Svinland Fascist Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SVI
+	}
+	enable = {
+		has_country_flag = SVI_AI_RANDOM_FASCISM
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = {
+		#1936
+		#ARG_preparation_for_the_elections
+		SVI_pravitelstvo_v_otstavku
+		SVI_svintogon
+		SVI_fon_skirlovich
+		SVI_usilit_shandarmov
+		SVI_controlirovat_goroda
+
+		#1937
+		SVI_reyd_na_bustergrad
+		SVI_shtab_operatiy_za_rubeshom
+		SVI_take_jacklooney
+		SVI_nachnom_s_yaderki
+		SVI_frontovoe_opolchenie
+
+		#1938
+		SVI_tropicanskoe_proshloe
+		SVI_prepare_to_be_occupated
+		SVI_ukaz_ob_oborone
+		SVI_take_baragozzer
+		SVI_prepare_kotel_shabanova_plan
+		SVI_gotovnost_k_atake
+
+		#1939
+		SVI_silnee_vseh
+		SVI_proclamation_of_orden
+		SVI_demand_island
+		SVI_otdel_balistic_metrologii
+		SVI_kussian_expansion
+		SVI_ideological_reeducation
+		SVI_strana_odnogo_svina
+
+		#1940
+		SVI_nationalize_everything
+		SVI_monolitnaya_strana
+		SVI_nationalize_banks
+		SVI_massive_autobans
+		SVI_vrata_v_zhirogors
+		SVI_conquer_karelia
+
+		#1941
+		SVI_expand_navy
+		SVI_krepost_imeni_qwerty
+		SVI_reorganize_defense
+		SVI_pyatorka_drug_ili_vrag
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SVI_neutrality_plan = {
+	name = "Svinland Neutrality Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SVI
+	}
+	enable = {
+		has_country_flag = SVI_AI_RANDOM_NEUTRALITY
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = { #the commented numbers is the ai weight to keep my sanity somewhat intact
+		#1936
+		#ARG_preparation_for_the_elections
+		SVI_pravitelstvo_v_otstavku
+		SVI_duma_beret_verh
+		SVI_bustergrad_imperiya
+		SVI_svintogon
+		SVI_rashirenie_promishlennosti
+		SVI_shtab_operatiy_za_rubeshom
+		SVI_armiya_proffesionalov
+		SVI_take_jacklooney
+
+		#1937
+		SVI_you_need_to_call_me_boss #15
+		SVI_voyna_s_sosedyami #15
+		SVI_voennoe_poloshenie #15
+		SVI_tanki_na_ulitsah #15
+		SVI_pogromi_uregulirovani #10
+
+		#1938
+		SVI_vidvennut_armiyu #12
+		SVI_zashitim_imperiyu #10
+		
+		BUS_dolgosdannoe_spokoystvie
+		BUS_economicheskaya_stabilnost
+		BUS_ukrepit_reshim_imperatorshi
+		BUS_povisit_voen_budget
+		BUS_ogranichit_izbiratelnie_prava
+		BUS_dop_ucheniya
+		BUS_zastroyka
+		BUS_stroitelnie_gildii
+		BUS_zapretit_liberal_party
+		BUS_vosstanovit_slavu_rodinu
+		BUS_partiya_national_edinstva
+		BUS_vso_v_hod
+		BUS_stell_wall
+		BUS_stolitsa_imperatorov
+		BUS_set_autobanov
+		BUS_revive_great_flot
+		BUS_cold_front
+		BUS_fuck_RAZ
+		BUS_winter_war
+		BUS_zamorosit_zarubeshnie_aktivi
+		BUS_expand_imperial_academiyu_nauk
+		BUS_fuck_JKY
+		BUS_fuck_KUS
+		BUS_protivo_vozdushnaya_oborona
+		BUS_podpolnie_yaycheyki_soprotivleniya
+		BUS_rota_glubinnoy_razvedki
+		BUS_light_pehota
+		BUS_fuck_LAG
+		BUS_resource_extraction
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SVI_communism_plan = {
+	name = "Svinland Communism Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SVI
+	}
+	enable = {
+		has_country_flag = SVI_AI_RANDOM_COMMUNISM
+	}
+	abort = {
+		is_subject = yes 
+	}
+
+	ai_national_focuses = { #the commented numbers is the ai weight to keep my sanity somewhat intact
+		#1936
+		#ARG_preparation_for_the_elections
+		SVI_pravitelstvo_v_otstavku
+		SVI_duma_beret_verh
+		SVI_bustergrad_imperiya
+		SVI_svintogon
+		SVI_rashirenie_promishlennosti
+		SVI_shtab_operatiy_za_rubeshom
+		SVI_armiya_proffesionalov
+		SVI_take_jacklooney
+
+		#1937
+		SVI_you_need_to_call_me_boss #15
+		SVI_voyna_s_sosedyami #15
+		SVI_voennoe_poloshenie #15
+		SVI_tanki_na_ulitsah #15
+		SVI_pogromi_uregulirovani #10
+
+		#1938
+		SVI_rashirit_provsoyuzi
+		SVI_podpolnie_yaycheyki
+		SVI_cowboykekw
+		SVI_viva_la_revolution
+
+		BUS_communisticheskiy_triumph
+		BUS_podchinit_goroda
+		BUS_planovaya_economica
+		BUS_osvobodit_marshi
+		BUS_pioneriya
+		BUS_new_factories
+		BUS_revolutiya_v_skandinavii
+		BUS_oboronno_promishlenniy_complex
+		BUS_expand_oil_promishlennost
+		BUS_chicken_bekonskiy_perevorot
+		BUS_koloniya_sardiniya
+		BUS_colhozi
+		BUS_voennie_kommisariati
+		BUS_fan_materialism
+		BUS_den_znaniy
+		BUS_voenno_patrioticheskie_organizatsii
+		BUS_tankovaya_promka
+		BUS_stolichniy_institut_yadernoy_energetici
+		BUS_revolutiya_v_pyatopii
+		BUS_aviationnaya_promishlennost
+		BUS_mirniy_atom
+		BUS_radio_techs
+		BUS_rocket_techs
+		BUS_kusian_war
+		BUS_connect_sever_ug
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

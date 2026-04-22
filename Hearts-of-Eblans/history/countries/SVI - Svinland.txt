@@ -1,12 +1,14 @@
 capital = 195
 
+set_stability = 0.21
 oob = "SVI_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 
 add_ideas = {
 	SVI_buster_oposite
 	svinland_ru
+	SVI_economical_spad
 	SVI_peoples_duma_1
 	SVI_shadow_of_gosperevorot_1
 	divine_intellect
@@ -113,6 +115,12 @@ recruit_character = manul
 recruit_character = relanit
 recruit_character = evgeniyZryagoshin
 recruit_character = rofls
+recruit_character = SVI_tohs_demo
+recruit_character = SVI_scawanger
+recruit_character = SVI_duma
+recruit_character = SVI_bigpig
+recruit_character = SVI_apachana
+recruit_character = SVI_cowboykekw_com
 
 
 if = {
@@ -161,17 +169,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Антоша T2X2"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "t2x2.dds"
-	
-	ideology = liberalism
-	traits = {
-		el_presidente 
-	}
-}
-
-create_country_leader = {
 	name = "Антоша T2X"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "AntoshaT2x.dds"
@@ -183,9 +180,9 @@ create_country_leader = {
 }
 
 set_popularities = {
-	democratic = 58
-	fascism = 14
-	communism = 13
+	democratic = 43
+	fascism = 25
+	communism = 17
 	neutrality = 15
 }
 

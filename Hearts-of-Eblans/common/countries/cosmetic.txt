@@ -2,9 +2,25 @@ DRE_EMPIRE = {
     color = rgb { 101 21 110 }
     color_ui = rgb { 101 21 110}
 }
-SVI_BUSTER = {
-	color = rgb { 186 107 22 }
-	color_ui = rgb { 186 107 22 }
+SVI_BUS_EMPIRE = {
+	color = rgb { 112 58 0 }
+	color_ui = rgb { 112 58 0 }
+}
+SVI_BUS_BSSG = {
+	color = rgb { 166 31 31 }
+	color_ui = rgb { 166 31 31 }
+}
+SVI_BIG_FED = {
+	color = rgb { 19 29 92 }
+	color_ui = rgb { 19 29 92 }
+}
+SVI_BUS_SSSG = {
+	color = rgb { 166 31 31 }
+	color_ui = rgb { 166 31 31 }
+}
+SVI_BUS = {
+	color = rgb { 255 132 0 }
+	color_ui = rgb { 255 132 0 }
 }
 CHB_EBLAN = {
 	color = rgb { 51 51 51 }

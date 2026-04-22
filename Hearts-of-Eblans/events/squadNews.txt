@@ -342,9 +342,6 @@ news_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-		 play_song = "stariybog"
-		}
 	}
 }
 
@@ -707,4 +704,22 @@ news_event = {
 }
 
 
+
+#BUSTER ELECTED
+news_event = {
+	id = squad_news.37
+	title = squad_news.37.t
+	desc = squad_news.37.d
+	picture = GFX_news_event_SVI_bustergrad_elected_news
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = squad_news.37.a
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
 

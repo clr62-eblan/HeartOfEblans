@@ -309,6 +309,8 @@
 
  civilian_factory_use_modifier_tt: " $MODIFIER_CIVILIAN_FACTORY_USE$: §Y$RIGHT$§!"
  required_garrison_factor_modifier_tt: " $MODIFIER_REQUIRED_GARRISON_FACTOR$: $RIGHT|-=%2$"
+ embargo_cost_factor_tt: " $MODIFIER_EMBARGO_COST_FACTOR$: $RIGHT|-=%1$"
+ guarantee_cost_tt: " $MODIFIER_GUARANTEE_COST$: $RIGHT|-=%1$"
  CHB_com_intel_modifiers: "Отделение разведки"
 
  chicken.45.t: "Выступления на Севере"

@@ -391,7 +391,7 @@ characters = {
     }
 
 	Sti_shabani_heir ={ 
-        name = "Максильо Шабани де Лисий"
+        name = "Максильо Шабани де Лыстенко"
         portraits= {
             army = {
                 large = "GFX_portrait_shabani_heir"

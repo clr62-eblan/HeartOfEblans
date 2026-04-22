@@ -1,0 +1,3299 @@
+# CREATED BY CLR62 - Licensed under MIT License
+ 
+focus_tree = {
+	id = SVI_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = SVI
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 5000 y = 1100 }
+	focus = {
+		id = SVI_extend_constitution_f
+		mutually_exclusive = { focus = SVI_pravitelstvo_v_otstavku }
+		icon = GFX_focus_SWI_neutrality_on_the_move
+		cost = 5
+		x = 3
+		y = 0
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = SVI_changed_democracy
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+		cost = 7
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_extend_constitution_f }
+
+		available = {
+
+		}
+        relative_position_id = SVI_extend_constitution_f
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+            if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 75
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+
+			add_popularity = {
+    			ideology = democratic
+    			popularity = 0.05
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = SVI_economical_penetration
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = 3
+		y = 1
+        prerequisite = { focus = SVI_changed_democracy }
+
+		available = {
+
+		}
+        relative_position_id = SVI_changed_democracy
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 70
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_ideas = SVI_interventionism
+		}
+	}
+	focus = {
+		id = SVI_stimulate_free_trade
+		icon = GFX_focus_generic_democratic_europe
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = { focus = SVI_economical_penetration }
+
+		available = {
+
+		}
+        relative_position_id = SVI_economical_penetration
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 60
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_country_leader_trait = SVI_verkhovniy_torgash
+		}
+	}
+
+    focus = {
+		id = SVI_employment_program
+		icon = GFX_focus_generic_public_works
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = { focus = SVI_economical_penetration }
+
+		available = {
+
+		}
+        relative_position_id = SVI_economical_penetration
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 60
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			
+			add_timed_idea = { idea = SVI_employment_program_idea days = 365 }
+		}
+	}
+    focus = {
+		id = SVI_vigilium_1
+		icon = GFX_goal_SVI_vigilium
+		cost = 5
+		x = 0
+		y = 2
+        prerequisite = { focus = SVI_employment_program }
+
+		available = {
+
+		}
+        relative_position_id = SVI_employment_program
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_ideas = SVI_vigilium_1_idea
+		}
+	}
+    focus = {
+		id = SVI_vigilium_2
+		icon = GFX_goal_SVI_vigilium2
+		cost = 5
+		x = 0
+		y = 2
+        prerequisite = { focus = SVI_vigilium_1 }
+
+		available = {
+
+		}
+        relative_position_id = SVI_vigilium_1
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			swap_ideas = {
+				remove_idea = SVI_vigilium_1_idea
+				add_idea = SVI_vigilium_2_idea
+			}
+			
+			news_event = { id = squad_news.20 days = 2 }
+		}
+	}
+    focus = {
+		id = SVI_vostanovlenie_ekonomiki
+		icon = GFX_focus_generic_economic_recovery
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = { focus = SVI_employment_program }
+        prerequisite = { focus = SVI_stimulate_free_trade }
+
+		available = {
+
+		}
+        relative_position_id = SVI_employment_program
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 75
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			swap_ideas = {
+                remove_idea = SVI_economical_spad
+                add_idea = SVI_economical_spad_2
+            }
+		}
+	}
+    focus = {
+		id = SVI_new_dumas_budget
+		icon = GFX_focus_generic_currency_reforms
+		cost = 10
+		x = 0
+		y = 2
+        prerequisite = { focus = SVI_vostanovlenie_ekonomiki }
+
+		available = {
+
+		}
+        relative_position_id = SVI_vostanovlenie_ekonomiki
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 70
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			swap_ideas = {
+				remove_idea = SVI_peoples_duma_1
+				add_idea = SVI_peoples_duma_2
+			}
+		}
+	}
+    focus = {
+		id = SVI_educational_reform
+		icon = GFX_focus_generic_university_3
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = { focus = SVI_zevoevat_doverie_gorodov }
+        prerequisite = { focus = SVI_stimulate_free_trade }
+
+		available = {
+
+		}
+        relative_position_id = SVI_zevoevat_doverie_gorodov
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+            if = {
+			    limit = {
+				    amount_research_slots < 5
+			    }
+			    add_research_slot = 1
+		    }
+
+
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+		}
+	}
+
+	focus = {
+		id = SVI_stabilize_the_situation
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		x = -2
+		y = 1
+        prerequisite = { focus = SVI_changed_democracy }
+
+		available = {
+
+		}
+        relative_position_id = SVI_changed_democracy
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 100
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+            add_stability = 0.03
+			add_war_support = 0.03
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = SVI_zevoevat_doverie_gorodov
+		icon = GFX_goal_SVI_cities_doveria
+		cost = 10
+		x = 2
+		y = 1
+        prerequisite = { focus = SVI_stabilize_the_situation }
+
+		available = {
+
+		}
+        relative_position_id = SVI_stabilize_the_situation
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 75
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			country_event = {
+				id = svin.71
+				days = 2
+			}
+		}
+	}
+	focus = {
+		id = SVI_anticorruption_buro
+		icon = GFX_focus_ARG_crackdown_on_corruption
+		cost = 10
+		x = -2
+		y = 1
+        prerequisite = { focus = SVI_stabilize_the_situation }
+
+		available = {
+
+		}
+        relative_position_id = SVI_stabilize_the_situation
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 75
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			
+            add_ideas = SVI_anticorruption_buro_idea
+            custom_effect_tooltip = SVI_alowed_to_low_corruption_tt
+		}
+	}
+	focus = {
+		id = SVI_razvedka_shveytsarskogo_kachestva
+		icon = GFX_focus_SWI_embrace_rote_drei
+		cost = 10
+		x = 0
+		y = 2
+        prerequisite = { focus = SVI_anticorruption_buro }
+
+		available = {
+
+		}
+        relative_position_id = SVI_anticorruption_buro
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 30
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance" 
+				}
+ 				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = {
+						name = "Свинлендский Центр Слежения"
+						icon = "GFX_intelligence_agency_logo_usa" 
+					}
+				}
+			}
+			add_ideas = SVI_switzerland_rozvidka
+		}
+	}
+	
+	focus = {
+		id = SVI_peresmotr_zakonov
+		icon = GFX_focus_generic_court
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = { focus = SVI_zevoevat_doverie_gorodov }
+
+		available = {
+
+		}
+        relative_position_id = SVI_zevoevat_doverie_gorodov
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			custom_effect_tooltip = SVI_demo_conscription_upp_avaliable
+			add_ideas = extensive_conscription
+		}
+	}
+	focus = {
+		id = SVI_tolko_blagodarya_presidentu
+		icon = GFX_goal_SVI_symbol_of_stability
+		cost = 10
+		x = 2
+		y = 1
+        prerequisite = { focus = SVI_peresmotr_zakonov }
+        prerequisite = { focus = SVI_vostanovlenie_ekonomiki }
+
+		available = {
+
+		}
+        relative_position_id = SVI_peresmotr_zakonov
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+            custom_effect_tooltip = SVI_el_presidente_change
+
+            hidden_effect = {
+			    add_country_leader_trait = el_presidente_2
+			    remove_country_leader_trait = el_presidente
+            }
+		}
+	}
+	focus = {
+		id = SVI_invest_in_bananabeach
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_tolko_blagodarya_presidentu }
+
+		available = {
+
+		}
+        relative_position_id = SVI_tolko_blagodarya_presidentu
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			811 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			13 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+            #Сюда верфи
+		}
+	}
+	focus = {
+		id = SVI_media_freedom
+		icon = GFX_focus_SWE_radiotjanst
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = { focus = SVI_anticorruption_buro focus = SVI_zevoevat_doverie_gorodov }
+
+		available = {
+
+		}
+        relative_position_id = SVI_anticorruption_buro
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 75
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			if = {
+                limit = {
+                    OR = {
+                    has_idea = free_media
+                    has_idea = independent_media
+                    }
+                }
+                add_stability = 0.03
+                add_war_support = 0.03
+                add_political_power = -100
+            }
+            else = {
+                add_ideas = free_media
+            }
+		}
+	}
+	focus = {
+		id = SVI_nikakogo_raspada
+		icon = GFX_focus_BEL_v_for_victory
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = { focus = SVI_media_freedom focus = SVI_peresmotr_zakonov }
+
+		available = {
+
+		}
+        relative_position_id = SVI_media_freedom
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			remove_ideas = SVI_shadow_of_gosperevorot_2
+			set_country_flag = SVI_decay_stopped
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = SVI_peace_and_diplomacy
+		icon = GFX_focus_RAJ_to_shake_the_world
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = { focus = SVI_nikakogo_raspada }
+        prerequisite = { focus = SVI_peresmotr_zakonov }
+
+		available = {
+
+		}
+        relative_position_id = SVI_nikakogo_raspada
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 75
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_ideas = SVI_peace_and_diplomacy_idea
+		}
+	}
+	focus = {
+		id = SVI_ethical_beurocracy
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = { focus = SVI_nikakogo_raspada }
+        prerequisite = { focus = SVI_media_freedom }
+
+		available = {
+
+		}
+        relative_position_id = SVI_nikakogo_raspada
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 30
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_timed_idea = { idea = SVI_ethical_bureaucracy_idea_1 days = 720 }
+		}
+	}
+	focus = {
+		id = SVI_reintegration_of_bustergrad
+		icon = GFX_goal_svi_destroy_bustergrad
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_ethical_beurocracy }
+
+		available = {
+
+		}
+        relative_position_id = SVI_ethical_beurocracy
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 70
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			create_wargoal = {
+                target = BUS
+                type = annex_everything
+            }
+		}
+	}
+	focus = {
+		id = SVI_controller_of_world_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		x = 2
+		y = 1
+        prerequisite = { focus = SVI_peace_and_diplomacy }
+        prerequisite = { focus = SVI_new_dumas_budget }
+
+		available = {
+
+		}
+        relative_position_id = SVI_peace_and_diplomacy
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			
+			add_dynamic_modifier = {
+				modifier = SVI_trade_controller
+			}
+			add_to_variable = { SVI_trade_opinion = 0.3 tooltip = trade_opinion_factor_tt }
+			
+		}
+	}
+	focus = {
+		id = SVI_expand_trade_convoys
+		icon = GFX_focus_BRA_converted_carriers
+		cost = 10
+		x = 2
+		y = 1
+        prerequisite = { focus = SVI_controller_of_world_trade }
+
+		available = {
+
+		}
+        relative_position_id = SVI_controller_of_world_trade
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 70
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_ideas = SVI_rapid_convoy_production
+
+			custom_effect_tooltip = SVI_trade_controller_change_tt
+			add_to_variable = { SVI_trade_weekly_convoys_warsup = 0.005 tooltip = weekly_convoys_war_support_tt }
+		}
+	}
+	focus = {
+		id = SVI_contracti_s_bednimi_stranami
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = { focus = SVI_expand_trade_convoys }
+        prerequisite = { focus = SVI_buy_suez }
+
+		available = {
+
+		}
+        relative_position_id = SVI_expand_trade_convoys
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 30
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			
+
+			custom_effect_tooltip = SVI_trade_controller_change_tt
+			add_to_variable = { SVI_trade_embargo_cost = -0.25 tooltip = embargo_cost_factor_tt }
+			add_to_variable = { SVI_trade_embargo_threshold = -0.25 tooltip = embargo_threshold_factor_tt }
+		
+		}
+	}
+	focus = {
+		id = SVI_establish_trade_federation
+		icon = GFX_goal_SVI_trade_federation
+		cost = 10
+		x = -2
+		y = 1
+        prerequisite = { focus = SVI_controller_of_world_trade }
+
+		available = {
+
+		}
+        relative_position_id = SVI_controller_of_world_trade
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 70
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			create_faction_from_template = faction_template_tradefed
+            add_to_faction = SVI
+
+			custom_effect_tooltip = SVI_trade_controller_change_tt
+			add_to_variable = { SVI_trade_guarantee_cost = -0.5 tooltip = guarantee_cost_tt }
+		}
+	}
+	focus = {
+		id = SVI_buy_suez
+		icon = GFX_goal_SVI_buy_suez
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_controller_of_world_trade }
+
+		available = {
+
+		}
+        relative_position_id = SVI_controller_of_world_trade
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			PBU = {
+				country_event = { id = svin.43 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = SVI_massive_resource_extraction
+		icon = GFX_focus_GER_factories_for_resources
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = { focus = SVI_buy_suez focus = SVI_establish_trade_federation }
+
+		available = {
+
+		}
+        relative_position_id = SVI_buy_suez
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 60
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_resource = {
+                type = oil
+                amount = 4
+                state = 191
+            }
+			add_resource = {
+                type = steel
+                amount = 5
+                state = 263
+            }
+			add_resource = {
+                type = coal
+                amount = 3
+                state = 195
+            }
+
+			custom_effect_tooltip = SVI_trade_controller_change_tt
+			add_to_variable = { SVI_trade_production_lack_of_resource_penalty = -0.05 tooltip = production_lack_of_resource_penalty_factor_tt }
+		
+		}
+	}
+
+    focus = {
+		id = SVI_buy_gibraltar
+		icon = GFX_goal_SVI_buy_gibraltar
+		cost = 10
+		x = 0
+		y = 2
+        prerequisite = { focus = SVI_massive_resource_extraction focus = SVI_contracti_s_bednimi_stranami }
+
+		available = {
+
+		}
+        relative_position_id = SVI_buy_suez
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			GON = {
+				country_event = {
+					id = svin.81
+					days = 2
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = SVI_pravitelstvo_v_otstavku
+		mutually_exclusive = { focus = SVI_extend_constitution_f }
+		icon = GFX_focus_BEL_government_resigns
+		cost = 10
+		x = 10
+		y = 0
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_extend_constitution_f
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 30
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.08
+			}
+		}
+	}
+	focus = {
+		id = SVI_fon_skirlovich
+		icon = GFX_goal_SVI_zryagoshin
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_pravitelstvo_v_otstavku }
+		mutually_exclusive = { focus = SVI_duma_beret_verh }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_pravitelstvo_v_otstavku
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 75
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			set_politics = {
+    			ruling_party = fascism
+    			elections_allowed = no
+			}
+
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = SVI_economical_spad
+					add_idea = SVI_economica_v_eshovih_rukovitsah
+				}
+			}
+		}
+	}
+	focus = {
+		id = SVI_nachnom_s_yaderki
+		icon = GFX_focus_generic_nuclear_development
+		cost = 10
+		x = 3
+		y = 1
+        prerequisite = { focus = SVI_fon_skirlovich }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_fon_skirlovich
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 75
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.6
+			}
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			technology = atomic_research
+			}
+		}
+	}
+	focus = {
+		id = SVI_nationalize_banks
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = { focus = SVI_nachnom_s_yaderki }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_nachnom_s_yaderki
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SVI_demand_island
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = { focus = SVI_nachnom_s_yaderki }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_nachnom_s_yaderki
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			PYA = {
+				country_event = {
+					id = svin.5
+					days = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = SVI_massive_autobans
+		icon = GFX_focus_generic_road_investment
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = { focus = SVI_demand_island focus = SVI_nationalize_banks }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_demand_island
+
+		completion_reward = {
+			209 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			813 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			246 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			244 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SVI_expand_navy
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_massive_autobans}
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_massive_autobans
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 210 }
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 190 }
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SVI_usilit_shandarmov
+		icon = GFX_focus_POL_beck_ribbentrop
+		cost = 10
+		x = -2
+		y = 1
+        prerequisite = { focus = SVI_fon_skirlovich }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_fon_skirlovich
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 70
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_ideas = SVI_shandarmeriya
+		}
+	}
+	focus = {
+		id = SVI_controlirovat_goroda
+		icon = GFX_focus_RAJ_union_busting
+		cost = 10
+		x = 2
+		y = 1
+        prerequisite = { focus = SVI_usilit_shandarmov }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_usilit_shandarmov
+
+		completion_reward = {
+			remove_ideas = SVI_shadow_of_gosperevorot_1
+			set_country_flag = SVI_decay_stopped
+		}
+	}
+	focus = {
+		id = SVI_frontovoe_opolchenie
+		icon = GFX_focus_AUS_frontmiliz_focus
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_usilit_shandarmov }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_usilit_shandarmov
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 30
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_ideas = SVI_front_opolchenie
+		}
+	}
+	focus = {
+		id = SVI_tropicanskoe_proshloe
+		icon = GFX_goal_tropico_past
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_controlirovat_goroda focus = SVI_frontovoe_opolchenie }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_controlirovat_goroda
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 65
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			country_event = {
+				id = svin.80
+				days = 2
+			}
+		}
+	}
+	focus = {
+		id = SVI_gotovnost_k_atake
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		x = 2
+		y = 1
+        prerequisite = { focus = SVI_reyd_na_bustergrad }
+        prerequisite = { focus = SVI_frontovoe_opolchenie }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_reyd_na_bustergrad
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			IF = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = war_economy
+							has_idea = tot_economic_mobilisation
+						}
+					}
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+
+			add_ideas = SVI_fit_for_fight
+		}
+	}
+	focus = {
+		id = SVI_proclamation_of_orden
+		icon = GFX_goal_razvitie_arov
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_gotovnost_k_atake }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_gotovnost_k_atake
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			set_rule = {
+				can_create_factions = yes
+			}
+
+			remove_ideas = SVI_peoples_duma_1
+
+			set_cosmetic_tag = SVI_ORDER
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = SVI_monolitnaya_strana
+		icon = GFX_goal_decay_cancel
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = { focus = SVI_strana_odnogo_svina }
+        prerequisite = { focus = SVI_nationalize_everything }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_strana_odnogo_svina
+
+		completion_reward = {
+			add_ideas = SVI_new_citizenship_idea
+		}
+	}
+	focus = {
+		id = SVI_ideological_reeducation
+		icon = GFX_focus_POL_warsaw_main_station
+		cost = 10
+		x = -2
+		y = 1
+        prerequisite = { focus = SVI_gotovnost_k_atake }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_gotovnost_k_atake
+
+		completion_reward = {
+			add_ideas = SVI_opposition_camps
+		}
+	}
+	focus = {
+		id = SVI_silnee_vseh
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		cost = 10
+		x = 2
+		y = 1
+        prerequisite = { focus = SVI_gotovnost_k_atake }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_gotovnost_k_atake
+
+		completion_reward = {
+			add_ideas = SVI_world_is_not_for_the_weak_idea
+		}
+	}
+	focus = {
+		id = SVI_strana_odnogo_svina
+		icon = GFX_goal_leader_of_svins
+		cost = 10
+		x = 1
+		y = 1
+        prerequisite = { focus = SVI_ideological_reeducation }
+        prerequisite = { focus = SVI_proclamation_of_orden }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_ideological_reeducation
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 30
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_country_leader_trait = SVI_father_of_country
+		}
+	}
+	focus = {
+		id = SVI_nationalize_everything
+		icon = GFX_focus_RAJ_war_taxes
+		cost = 10
+		x = -1
+		y = 1
+        prerequisite = { focus = SVI_silnee_vseh focus = SVI_proclamation_of_orden }
+
+		bypass = {
+			has_idea = war_economy
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_silnee_vseh
+
+		completion_reward = {
+			add_ideas = war_economy
+		}
+	}
+	focus = {
+		id = SVI_reyd_na_bustergrad
+		icon = GFX_goal_svi_destroy_bustergrad
+		cost = 10
+		x = -2
+		y = 1
+        prerequisite = { focus = SVI_usilit_shandarmov }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_usilit_shandarmov
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			create_wargoal = {
+				target = BUS
+				type = annex_everything
+				expire = 300
+			}
+		}
+	}
+	focus = {
+		id = SVI_prepare_to_be_occupated
+		icon = GFX_focus_generic_surrender
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_reyd_na_bustergrad }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_reyd_na_bustergrad
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 80
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+
+
+	focus = {
+		id = SVI_svintogon
+		icon = GFX_focus_usa_build_the_pentagon
+		cost = 10
+		x = 30
+		y = 0
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_extend_constitution_f
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 50
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			add_dynamic_modifier = {
+				modifier = SVI_svintogon_modifier
+			}
+			add_to_variable = { SVI_svintogon_driftdef_factor = 0.1 tooltip = drift_defence_factor_tt }
+		}
+	}
+	focus = {
+		id = SVI_ukaz_ob_oborone
+		icon = GFX_focus_BEL_better_than_maginot
+		cost = 10
+		x = 3
+		y = 1
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_svintogon
+        prerequisite = { focus = SVI_svintogon }
+
+		completion_reward = {
+			add_command_power = 50
+			army_experience = 25
+
+			custom_effect_tooltip = SVI_svintogon_change_tt
+			add_to_variable = { SVI_svintogon_armydefense_factor = 0.05 tooltip = army_defence_factor_tt }
+			add_to_variable = { SVI_svintogon_trainingtime_factor = -0.1 tooltip = training_time_factor_tt }
+		}
+	}
+	focus = {
+		id = SVI_prepare_kotel_shabanova_plan
+		icon = GFX_focus_RAJ_a_private_military
+		cost = 10
+		x = 1
+		y = 1
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_ukaz_ob_oborone
+        prerequisite = { focus = SVI_ukaz_ob_oborone }
+
+		completion_reward = {
+			add_ideas = GON_kotel_shabanova
+		}
+	}
+	focus = {
+		id = SVI_vrata_v_zhirogors
+		icon = GFX_focus_SWE_hedgehog_defense
+		cost = 10
+		x = -1
+		y = 1
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_ukaz_ob_oborone
+        prerequisite = { focus = SVI_ukaz_ob_oborone }
+
+		completion_reward = {
+			add_ideas = SVI_vrata_v_zhirogorsk_idea
+		}
+	}
+	focus = {
+		id = SVI_krepost_imeni_qwerty
+		icon = GFX_focus_BEL_koningshooikt_wavre_line
+		cost = 10
+		x = 1
+		y = 1
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_vrata_v_zhirogors
+        prerequisite = { focus = SVI_vrata_v_zhirogors }
+        prerequisite = { focus = SVI_prepare_kotel_shabanova_plan }
+
+		completion_reward = {
+			IF = {
+				limit = {
+					208 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 126
+						}
+					}
+				}
+
+				208 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 126
+					}
+				}
+			}
+			IF = {
+				limit = {
+					208 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 104
+						}
+					}
+				}
+
+				208 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 104
+					}
+				}
+			}
+			IF = {
+				limit = {
+					209 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 9120
+						}
+					}
+				}
+
+				209 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 9120
+					}
+				}
+			}
+			IF = {
+				limit = {
+					209 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 9408
+						}
+					}
+				}
+
+				209 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 9408
+					}
+				}
+			}
+			IF = {
+				limit = {
+					209 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 11202
+						}
+					}
+				}
+
+				209 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 11202
+					}
+				}
+			}
+			IF = {
+				limit = {
+					209 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 6324
+						}
+					}
+				}
+
+				209 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 6324
+					}
+				}
+			}
+			IF = {
+				limit = {
+					209 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 11392
+						}
+					}
+				}
+
+				209 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 11392
+					}
+				}
+			}
+			IF = {
+				limit = {
+					210 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 6242
+						}
+					}
+				}
+
+				210 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 6242
+					}
+				}
+			}
+			IF = {
+				limit = {
+					210 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 9254
+						}
+					}
+				}
+
+				210 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 9254
+					}
+				}
+			}
+			IF = {
+				limit = {
+					210 = {
+						free_building_slots = {
+							building = bunker
+							size > 0
+							province = 9331
+						}
+					}
+				}
+
+				210 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 9331
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SVI_reorganize_defense
+		icon = GFX_focus_generic_advanced_military_studies
+		cost = 10
+		x = 0
+		y = 2
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_krepost_imeni_qwerty
+        prerequisite = { focus = SVI_krepost_imeni_qwerty }
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_svintogon_change_tt
+			add_to_variable = { SVI_svintogon_land_bunker_effectiveness = 0.05 tooltip = land_bunker_effectiveness_factor_tt }
+			add_to_variable = { SVI_svintogon_production_speed_bunker = 0.05 tooltip = production_speed_bunker_factor_tt }
+		}
+	}
+	focus = {
+		id = SVI_pyatorka_drug_ili_vrag
+		icon = GFX_goal_SVI_pyatorka_drug_abo_vrag
+		cost = 5
+		x = 1
+		y = 1
+
+		available = {
+			NOT = {
+				has_war_with = PYA
+			}
+			PYA = {
+				exists = yes
+				is_subject = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_krepost_imeni_qwerty
+        prerequisite = { focus = SVI_krepost_imeni_qwerty }
+
+		completion_reward = {
+			country_event = {
+				id = svin.90
+				days = 0
+			}
+		}
+	}
+	focus = {
+		id = SVI_shtab_operatiy_za_rubeshom
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10
+		x = -3
+		y = 1
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_svintogon
+        prerequisite = { focus = SVI_svintogon }
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_svintogon_change_tt
+			add_to_variable = { SVI_svintogon_justify_time = -0.1 tooltip = justify_war_goal_time_tt }
+		}
+	}
+	focus = {
+		id = SVI_voennaya_academiya
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		x = -1
+		y = 1
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_shtab_operatiy_za_rubeshom
+        prerequisite = { focus = SVI_shtab_operatiy_za_rubeshom }
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_svintogon_change_tt
+			add_to_variable = { SVI_svintogon_maxplanning_factor = -0.1 tooltip = max_planning_factor_tt }
+			add_to_variable = { SVI_svintogon_coldacclimatize_factor = 0.15 tooltip = acclimatization_cold_climate_gain_factor_tt }
+		}
+	}
+	focus = {
+		id = SVI_special_forces
+		icon = GFX_focus_eng_special_air_service
+		cost = 10
+		x = 0
+		y = 2
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_voennaya_academiya
+        prerequisite = { focus = SVI_voennaya_academiya }
+
+		completion_reward = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				add_doctrine_cost_reduction = {
+					name = SVI_specialists
+					cost_reduction = 0.25
+					uses = 2
+					category = cat_rangers_doctrine
+				}
+				add_tech_bonus = {
+					name = SVI_specialists
+					bonus = 1
+					uses = 1
+					category = rangers_tech_cat
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_doctrine_cost_reduction = {
+					name = SVI_specialists
+					cost_reduction = 0.25
+					uses = 2
+					category = cat_mountaineers_doctrine
+				}
+				add_tech_bonus = {
+					name = SVI_specialists
+					bonus = 1
+					uses = 1
+					category = mountaineers_tech
+				}
+			}
+			ELSE = {
+				add_tech_bonus = {
+					name = SVI_specialists
+					bonus = 1
+					uses = 1
+					category = mountaineers_tech
+				}
+			}
+		}
+	}
+	focus = {
+		id = SVI_otdel_balistic_metrologii
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		x = 1
+		y = 1
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_shtab_operatiy_za_rubeshom
+        prerequisite = { focus = SVI_shtab_operatiy_za_rubeshom }
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_svintogon_change_tt
+			add_to_variable = { SVI_svintogon_artillery_attack = 0.1 tooltip = army_artillery_attack_factor_tt }
+		}
+	}
+	focus = {
+		id = SVI_amazing_antitank
+		icon = GFX_focus_generic_anti_tank_guns
+		cost = 10
+		x = -1
+		y = 1
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_otdel_balistic_metrologii
+        prerequisite = { focus = SVI_otdel_balistic_metrologii }
+        prerequisite = { focus = SVI_voennaya_academiya }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SVI_anti_tank_guns
+				bonus = 1
+				uses = 2
+				category = cat_anti_tank	# optional 
+				# tecnology  = technology_id # optional
+			}
+			custom_effect_tooltip = BEL_anti_tank_guns_tt
+			hidden_effect = {
+				set_technology = {
+					SWE_bofors_antitank_gun = 1
+					popup = no
+				}
+			}
+		}
+	}
+	focus = {
+		id = SVI_perfecto_artillery
+		icon = GFX_focus_SWE_let_fly_all_guns
+		cost = 10
+		x = 0
+		y = 2
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_otdel_balistic_metrologii
+        prerequisite = { focus = SVI_otdel_balistic_metrologii }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SVI_artillery_bombardment
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = SVI_artillery_bombardment
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.3
+			}
+		}
+	}
+	focus = {
+		id = SVI_svin_tank_program
+		icon = GFX_focus_generic_tank_production
+		cost = 10
+		x = 0
+		y = 1
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_perfecto_artillery
+        prerequisite = { focus = SVI_perfecto_artillery }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SVI_svintus_tank_development
+				bonus = 0.5
+				uses = 3
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = SVI_take_jacklooney
+		icon = GFX_goal_SVI_jky_focus
+		cost = 10
+		x = 0
+		y = 2
+
+		prerequisite = { focus = SVI_svintogon}
+		prerequisite = { focus = SVI_shtab_operatiy_za_rubeshom }
+
+		available = {
+			has_war = no
+		}
+
+		bypass = {
+			JKY = {
+				exists = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_svintogon
+
+		completion_reward = {
+			create_wargoal = {
+				target = JKY
+				type = annex_everything
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = JKY
+				}
+				add_claim_by = SVI
+			}
+		}
+	}
+	focus = {
+		id = SVI_take_baragozzer
+		icon = GFX_focus_SWE_refuge_from_war
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = { focus = SVI_take_jacklooney}
+
+		available = {
+			has_war = no
+			BGZ = {
+				is_subject = no
+				exists = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_take_jacklooney
+
+		completion_reward = {
+			create_wargoal = {
+				target = BGZ
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = SVI_conquer_karelia
+		icon = GFX_focus_generic_invade_finland
+		cost = 10
+		x = -1
+		y = 1
+
+		prerequisite = { focus = SVI_take_jacklooney}
+
+		available = {
+			has_war = no
+			RAZ = {
+				exists = yes
+				is_subject = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_take_jacklooney
+
+		completion_reward = {
+			create_wargoal = {
+            	target = RAZ
+            	type = take_state_focus
+            	generator = { 146 928 }
+        	}
+		}
+	}
+	focus = {
+		id = SVI_kussian_expansion
+		icon = GFX_goal_SVI_kussian_war
+		cost = 10
+		x = 1
+		y = 1
+
+		prerequisite = { focus = SVI_take_jacklooney}
+
+		available = {
+			has_war = no
+			KUS = {
+				exists = yes
+				is_subject = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_take_jacklooney
+
+		completion_reward = {
+			create_wargoal = {
+            	target = KUS
+            	type = take_state_focus
+            	generator = { 247 264 216 242 }
+        	}
+		}
+	}
+
+
+	focus = {
+		id = SVI_duma_beret_verh
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 10
+		x = 9
+		y = 1
+        prerequisite = { focus = SVI_pravitelstvo_v_otstavku }
+		mutually_exclusive = { focus = SVI_fon_skirlovich }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_pravitelstvo_v_otstavku
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SVI_growing_public_dissent_mission
+				}
+				add_days_mission_timeout = {
+					mission = SVI_growing_public_dissent_mission
+					days = 100
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			country_event = {
+				id = svin.60
+				days = 2
+			}
+
+			swap_ideas = {
+				remove_idea = SVI_peoples_duma_1
+				add_idea = SVI_peoples_duma_2
+			}
+		}
+	}
+
+	focus = {
+		id = SVI_vibori_zaversheni
+		icon = GFX_goal_buster_wins
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_duma_beret_verh }
+
+		available = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_duma_beret_verh
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_vibori_zaversheni_tt
+		}
+	}
+	
+	focus = {
+		id = SVI_you_need_to_call_me_boss
+		icon = GFX_goal_otsos_bigpigu
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_bustergrad_imperiya }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_bustergrad_imperiya
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SVI_big_pig_president
+				add_idea = SVI_big_pig_president_2
+			}
+
+			hidden_effect = {
+				country_event = {
+					id = svin.63 
+					days = 7
+					random_days = 10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SVI_voyna_s_sosedyami
+		icon = GFX_goal_buster_expand
+		cost = 10
+		x = 0
+		y = 2
+        prerequisite = { focus = SVI_you_need_to_call_me_boss }
+        prerequisite = { focus = SVI_rashirenie_promishlennosti focus = SVI_armiya_proffesionalov }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_bustergrad_imperiya
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_voyna_s_sosedyami_tt
+			hidden_effect = {
+				country_event = { id =svin.46 days = 4 }
+			}
+		}
+	}
+
+	focus = {
+		id = SVI_bustergrad_imperiya
+		icon = GFX_goal_buster_empire
+		cost = 10
+		x = 0
+		y = 1
+        prerequisite = { focus = SVI_vibori_zaversheni }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_vibori_zaversheni
+
+		completion_reward = {
+			country_event = { id =svin.62 days = 1}
+		}
+	}
+
+	focus = {
+		id = SVI_rashirenie_promishlennosti
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		x = -2
+		y = 1
+        prerequisite = { focus = SVI_bustergrad_imperiya }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_bustergrad_imperiya
+
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				prioritize = { 810 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SVI_armiya_proffesionalov
+		icon = GFX_goal_generic_army_artillery
+		cost = 10
+		x = 2
+		y = 1
+        prerequisite = { focus = SVI_bustergrad_imperiya }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+        relative_position_id = SVI_bustergrad_imperiya
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_timed_idea = { idea = SVI_armiya_professionalov days = 270 }
+		}
+	}
+	
+
+
+	focus = {
+		id = SVI_massovie_pogromi
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 10
+		x = 22
+		y = 8
+
+		allow_branch = {
+			has_country_flag = SVI_BUS_POGROMI
+		}
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_BUS_POGROMI_STARTED
+		}
+	}
+	focus = {
+		id = SVI_voennoe_poloshenie
+		icon = GFX_focus_generic_total_war
+		cost = 10
+		x = -1
+		y = 1
+
+		prerequisite = { focus = SVI_massovie_pogromi }
+		relative_position_id = SVI_massovie_pogromi
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			country_event = { id = svin.47 days = 2 }
+		}
+	}
+	focus = {
+		id = SVI_tanki_na_ulitsah
+		icon = GFX_focus_generic_naval_invasion_tank
+		cost = 10
+		x = 1
+		y = 1
+
+		prerequisite = { focus = SVI_massovie_pogromi }
+		relative_position_id = SVI_massovie_pogromi
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			country_event = { id = svin.48 days = 2}
+		}
+	}
+	focus = {
+		id = SVI_pogromi_uregulirovani
+		icon = GFX_goal_generic_CAS
+		cost = 10
+		x = -1
+		y = 1
+
+		prerequisite = { focus = SVI_tanki_na_ulitsah }
+		prerequisite = { focus = SVI_voennoe_poloshenie }
+		relative_position_id = SVI_tanki_na_ulitsah
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			country_event = { id = svin.49 days = 2}
+		}
+	}
+
+	focus = {
+		id = SVI_strannie_personi #Iz kisson citi yopta
+		icon = GFX_focus_RAJ_a_policy_of_silence
+		cost = 10
+		x = 0
+		y = 1
+
+		allow_branch = {
+			has_country_flag = SVI_KIS_DRG
+		}
+		relative_position_id = SVI_pogromi_uregulirovani
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SVI_za_imperatora
+		icon = GFX_focus_GER_monarchy_compromise
+		cost = 10
+		x = -5
+		y = 1
+
+		prerequisite = { focus = SVI_strannie_personi }
+		relative_position_id = SVI_strannie_personi
+		mutually_exclusive = { focus = SVI_poddershat_revolutiyu }
+
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = SVI_need_comm_reveal
+				always = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+
+		}
+	}
+	#focus = {
+	#	id = SVI_dolgoshdannaya_expansiya
+	#	icon = SVI_pravitelstvo_v_otstavku
+	#	cost = 10
+	#	x = 0
+	#	y = 3
+#
+	#	prerequisite = { focus = SVI_za_imperatora }
+	#	relative_position_id = SVI_za_imperatora
+#
+	#	available = {
+	#		has_country_flag = SVI_BUS_REVOLUTION_START
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	focus = {
+		id = SVI_vidvennut_armiyu
+		icon = GFX_focus_generic_combined_arms
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = SVI_za_imperatora
+		prerequisite = { focus = SVI_za_imperatora }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			country_event = {
+				id = bus_emp.10
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = SVI_zashitim_imperiyu
+		icon = GFX_goal_generic_build_tank
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = SVI_za_imperatora
+		prerequisite = { focus = SVI_za_imperatora }
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			country_event = {
+				id = bus_emp.11
+				days = 1
+			}
+		}
+	}
+	#focus = {
+	#	id = SVI_hidden_factories
+	#	icon = GFX_goal_generic_construct_civ_factory
+	#	cost = 10
+	#	x = 2
+	#	y = 1
+	#	relative_position_id = SVI_zashitim_imperiyu
+	#	prerequisite = { focus = SVI_zashitim_imperiyu }
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = SVI_uskorennoye_proizvodstvo_orushiya
+	#	icon = GFX_goal_generic_air_production
+	#	cost = 10
+	#	x = -1
+	#	y = 1
+	#	relative_position_id = SVI_hidden_factories
+	#	prerequisite = { focus = SVI_hidden_factories }
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = SVI_develop_infrastructure
+	#	icon = GFX_goal_generic_construct_infrastructure
+	#	cost = 10
+	#	x = 1
+	#	y = 1
+	#	relative_position_id = SVI_hidden_factories
+	#	prerequisite = { focus = SVI_hidden_factories }
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = SVI_komitet_extrennogo_planirovaniya
+	#	icon = SVI_pravitelstvo_v_otstavku
+	#	cost = 10
+	#	x = -2
+	#	y = 1
+	#	relative_position_id = SVI_vidvennut_armiyu
+	#	prerequisite = { focus = SVI_vidvennut_armiyu }
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = SVI_resource_extraction
+	#	icon = GFX_focus_generic_resource_extraction
+	#	cost = 10
+	#	x = -1
+	#	y = 1
+	#	relative_position_id = SVI_komitet_extrennogo_planirovaniya
+	#	prerequisite = { focus = SVI_komitet_extrennogo_planirovaniya }
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = SVI_raspustit_dumu
+	#	icon = SVI_pravitelstvo_v_otstavku
+	#	cost = 10
+	#	x = 1
+	#	y = 1
+	#	relative_position_id = SVI_komitet_extrennogo_planirovaniya
+	#	prerequisite = { focus = SVI_komitet_extrennogo_planirovaniya }
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#		custom_effect_tooltip = disable_duma
+	#	}
+	#}
+
+
+	focus = {
+		id = SVI_poddershat_revolutiyu
+		icon = GFX_focus_generic_communist
+		cost = 10
+		x = 5
+		y = 1
+
+		prerequisite = { focus = SVI_strannie_personi }
+		relative_position_id = SVI_strannie_personi
+		mutually_exclusive = { focus = SVI_za_imperatora }
+
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = SVI_need_comm_reveal
+				always = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SVI_rashirit_provsoyuzi
+		icon = GFX_focus_generic_communist_industry
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = { focus = SVI_poddershat_revolutiyu }
+		relative_position_id = SVI_poddershat_revolutiyu
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			country_event = {
+				id = bus_com.11
+				days = 1
+			}
+		}
+	}
+	#focus = {
+	#	id = SVI_communism_s_chelovecheskim_lizom
+	#	icon = GFX_focus_ger_great_red_menace
+	#	cost = 10
+	#	x = 1
+	#	y = 1
+#
+	#	prerequisite = { focus = SVI_pyatiletka }
+	#	relative_position_id = SVI_pyatiletka
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	focus = {
+		id = SVI_viva_la_revolution
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = { focus = SVI_rashirit_provsoyuzi }
+		prerequisite = { focus = SVI_podpolnie_yaycheyki }
+		relative_position_id = SVI_rashirit_provsoyuzi
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			country_event = {
+				id = svin.57
+				days = 2
+			}
+		}
+	}
+	#focus = {
+	#	id = SVI_pyatiletka
+	#	icon = GFX_focus_GER_prioritize_the_four_year_plan
+	#	cost = 10
+	#	x = 1
+	#	y = 1
+#
+	#	prerequisite = { focus = SVI_viva_la_revolution }
+	#	relative_position_id = SVI_viva_la_revolution
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = SVI_special_brigadi
+	#	icon = GFX_focus_SOV_mobilization_plan
+	#	cost = 10
+	#	x = -1
+	#	y = 1
+#
+	#	prerequisite = { focus = SVI_viva_la_revolution }
+	#	relative_position_id = SVI_viva_la_revolution
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = SVI_voen_soglasheniya
+	#	icon = GFX_goal_generic_military_deal
+	#	cost = 10
+	#	x = -3
+	#	y = 1
+#
+	#	prerequisite = { focus = SVI_viva_la_revolution }
+	#	relative_position_id = SVI_viva_la_revolution
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = SVI_vragi_kapitalisma
+	#	icon = GFX_focus_generic_communism_anti_fascism
+	#	cost = 10
+	#	x = 3
+	#	y = 1
+#
+	#	prerequisite = { focus = SVI_viva_la_revolution }
+	#	relative_position_id = SVI_viva_la_revolution
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = SVI_polit_kommisari
+	#	icon = GFX_focus_generic_soviet_politics
+	#	cost = 10
+	#	x = -1
+	#	y = 1
+#
+	#	prerequisite = { focus = SVI_special_brigadi }
+	#	relative_position_id = SVI_special_brigadi
+#
+	#	available = {
+#
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 50
+	#	}
+#
+	#	completion_reward = {
+	#	}
+	#}
+	focus = {
+		id = SVI_podpolnie_yaycheyki
+		icon = GFX_focus_generic_radio_communication
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = { focus = SVI_poddershat_revolutiyu }
+		relative_position_id = SVI_poddershat_revolutiyu
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			country_event = {
+				id = bus_com.12
+				days = 1
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = SVI_drg_razbiti
+		icon = GFX_focus_PER_communist_afghanistan_intervention
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = { focus = SVI_strannie_personi}
+		relative_position_id = SVI_strannie_personi
+
+		available = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+		}
+	}
+	
+}

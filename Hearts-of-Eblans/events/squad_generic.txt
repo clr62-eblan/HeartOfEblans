@@ -207,3 +207,20 @@ country_event = {
 
 	
 }
+country_event = {	
+	id = sqgen.5
+	title = sqgen.5.t
+	desc = sqgen.5.d
+	picture = GFX_report_event_welcome_eblan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sqgen.5.a #yes
+		ai_chance = {
+			factor = 10
+		}
+			
+		
+	}
+}

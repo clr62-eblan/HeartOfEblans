@@ -4,6 +4,26 @@ on_actions = {
             BTK = {
                 country_event = { id = btk_squad.1 days = 7 }
             }
+            KUS = {
+                country_event = { id = sqgen.5 days = 0 }
+            }
+
+            SVI = {
+                random_list = {
+                    25 = {
+                        set_country_flag = SVI_AI_RANDOM_DEMOCRATIC
+                    }
+                    25 = {
+                        set_country_flag = SVI_AI_RANDOM_FASCISM
+                    }
+                    25 = {
+                        set_country_flag = SVI_AI_RANDOM_NEUTRALITY
+                    }
+                    25 = {
+                        set_country_flag = SVI_AI_RANDOM_COMMUNISM
+                    }
+                }
+            }
         }
     }
 }

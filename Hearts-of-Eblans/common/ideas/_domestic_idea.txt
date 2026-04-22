@@ -34,6 +34,21 @@ ideas = {
 			    factor = 20
 		    }
 
+            allowed_to_remove = {
+                if = {
+                    limit = {
+                        NOT = { original_tag = SVI }
+                    }
+                    always = yes
+                }
+                else_if = {
+                    limit = {
+                        original_tag = SVI
+                    }
+                    has_idea = SVI_anticorruption_buro_idea
+                }
+            }
+
             modifier = {
 				stability_factor = -0.02
 				research_speed_factor = -0.02

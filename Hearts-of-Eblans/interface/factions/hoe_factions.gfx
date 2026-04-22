@@ -10,4 +10,15 @@ spriteTypes = {
 		name = "GFX_faction_icon_enSquad_miniature"
 		texturefile = "gfx/interface/factions/faction_logos/faction_icon_ensquad_miniature.dds"
 	}
+
+	spriteType = { # TRADE FEDERATION
+	 	name = "GFX_faction_icon_tradefed"
+	 	texturefile = "gfx/interface/factions/faction_logos/faction_icon_tradefed.dds"
+	 	noOfFrames = 2
+	}
+
+    spriteType = {
+		name = "GFX_faction_icon_tradefed_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_icon_tradefed_miniature.dds"
+	}
 }

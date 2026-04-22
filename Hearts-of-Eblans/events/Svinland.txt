@@ -1,4 +1,6 @@
 add_namespace = svin
+add_namespace = bus_com
+add_namespace = bus_emp
 
 #Busters Civil war
 country_event = {
@@ -150,7 +152,7 @@ country_event = {
 		
 		hidden_effect = {
 			SVI = {
-				transfer_state = 145
+				transfer_state = 124
 			}
 		}
 	}
@@ -226,7 +228,7 @@ country_event = {
 	option = {
 		name = svin.7.b #no
 		ai_chance = {
-			factor = 60
+			factor = 10
 		}
 		add_timed_idea = { idea = SVI_nevipolnennie_usloviya_dumi days = 89 }
 	}
@@ -254,7 +256,7 @@ country_event = {
 	option = {
 		name = svin.7.b #no
 		ai_chance = {
-			factor = 60
+			factor = 10
 		}
 		add_timed_idea = { idea = SVI_nevipolnennie_usloviya_dumi days = 89 }
 	}
@@ -282,7 +284,7 @@ country_event = {
 	option = {
 		name = svin.7.b #no
 		ai_chance = {
-			factor = 60
+			factor = 10
 		}
 		add_timed_idea = { idea = SVI_nevipolnennie_usloviya_dumi days = 89 }
 	}
@@ -300,7 +302,7 @@ country_event = {
 	option = {
 		name = svin.7.a #yes
 		ai_chance = {
-			factor = 60
+			factor = 10
 		}
 		SVI = {
 			add_timed_idea = { idea = SVI_equipment_quality_improvement days = 59 }
@@ -338,7 +340,7 @@ country_event = {
 	option = {
 		name = svin.7.b #no
 		ai_chance = {
-			factor = 60
+			factor = 10
 		}
 		add_timed_idea = { idea = SVI_nevipolnennie_usloviya_dumi days = 89 }
 	}
@@ -366,7 +368,7 @@ country_event = {
 	option = {
 		name = svin.7.b #no
 		ai_chance = {
-			factor = 60
+			factor = 30
 		}
 		add_timed_idea = { idea = SVI_nevipolnennie_usloviya_dumi days = 89 }
 	}
@@ -525,12 +527,33 @@ country_event = {
 		}
 	}
 }
-#KIS DEM
+#KIS AND ELN DEM
 country_event = {
 	id = svin.18
-	title = svin.18.t
-	desc = svin.18.d
 	picture = GFX_report_event_spr_civil_war_faction_defeated
+
+	title = {
+    	text = svin.18.t.e
+    	trigger = {
+			SVI = {
+    	    	has_country_flag = SVI_ELN_created
+			}
+    	}
+	}
+	title = {
+    	text = svin.18.t
+	}
+	desc = {
+    	text = svin.18.d.e
+    	trigger = {
+			SVI = {
+    	    	has_country_flag = SVI_ELN_created
+			}
+    	}
+	}
+	desc = {
+    	text = svin.18.d
+	}
 
 	is_triggered_only = yes
 
@@ -556,6 +579,19 @@ country_event = {
 			}			
 			808 = {
 				set_demilitarized_zone = yes
+			}
+
+			if = {
+				limit = {
+					has_country_flag = SVI_ELN_created
+				}
+				every_state = {
+					limit = { 
+						is_core_of = ELN 
+						is_fully_controlled_by = SVI
+					}
+					set_demilitarized_zone = yes
+				}
 			}
 			
 		}
@@ -618,7 +654,19 @@ country_event = {
 country_event = {
 	id = svin.20
 	title = svin.20.t
-	desc = svin.20.d
+
+	desc = {
+    	text = svin.20.d.e
+    	trigger = {
+			SVI = {
+    	    	has_country_flag = SVI_BRV_created
+			}
+    	}
+	}
+	desc = {
+    	text = svin.20.d
+	}
+
 	picture = GFX_report_event_spr_civil_war_faction_defeated
 
 	is_triggered_only = yes
@@ -859,6 +907,31 @@ country_event = {
 				13 = {
 					set_demilitarized_zone = no
 				}
+
+				if = {
+					limit = {
+						has_country_flag = SVI_ELN_created
+					}
+					every_state = {
+						limit = { 
+							is_core_of = ELN 
+							is_fully_controlled_by = SVI
+						}
+						set_demilitarized_zone = no
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = SVI_BRV_created
+					}
+					every_state = {
+						limit = { 
+							is_core_of = BRV 
+							is_fully_controlled_by = SVI
+						}
+						set_demilitarized_zone = no
+					}
+				}
 			}
 
 			clr_country_flag = SVI_refendum
@@ -889,6 +962,28 @@ country_event = {
     			autonomy_state = autonomy_svinland_city
     			freedom_level = 0.4
 			}
+
+			if = {
+				limit = {
+					has_country_flag = SVI_ELN_created
+				}
+				release_autonomy = {
+    				target = ELN
+    				autonomy_state = autonomy_svinland_city
+    				freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = SVI_BRV_created
+				}
+				release_autonomy = {
+    				target = BRV
+    				autonomy_state = autonomy_svinland_city
+    				freedom_level = 0.4
+				}
+			}
+			
 
 
 			if = {
@@ -1085,6 +1180,8 @@ country_event = {
 		release_on_controlled = HYP
 		release_on_controlled = DIM
 		release_on_controlled = BUS
+		release_on_controlled = ELN
+		release_on_controlled = BRV
 	}
 }
 
@@ -1274,5 +1371,2080 @@ country_event = {
 		
 		add_political_power = 25
 		add_stability = -0.05
+	}
+}
+
+
+#Sueyz buying
+country_event = {
+	id = svin.43
+	title = svin.43.t
+	desc = svin.43.d
+	picture = GFX_report_event_generic_civil_war
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.43.a
+		ai_chance = {
+			factor = 70
+		}
+		SVI = {
+			country_event = { id = svin.44 days = 4 }
+		}
+		446 = {
+			transfer_state_to = SVI
+		}
+	}
+
+	#No
+	option = {
+		name = svin.43.b
+		ai_chance = {
+			factor = 30
+		}
+		SVI = {
+			country_event = { id = svin.45 days = 4 }
+		}
+	}
+}
+#Sueyz buying - Accepted
+country_event = {
+	id = svin.44
+	title = svin.44.t
+	desc = svin.44.d
+	picture = GFX_report_event_generic_civil_war
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.44.a
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+#Sueyz buying - NO
+country_event = {
+	id = svin.45
+	title = svin.45.t
+	desc = svin.45.d
+	picture = GFX_report_event_generic_civil_war
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.45.a
+		ai_chance = {
+			factor = 70
+		}
+		create_wargoal = {
+			target = PBY
+			type = annex_everything
+		}
+	}
+}
+#Vibori
+country_event = {
+	id = svin.60
+	title = svin.60.t
+	desc = svin.60.d
+	picture = GFX_report_event_SVI_vibori
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.60.a
+		ai_chance = {
+			factor = 70
+		}
+		retire_character = SVI_tohs_demo
+		add_country_leader_role = {
+			character = SVI_duma
+			country_leader={
+				ideology=liberalism
+				expire="2599.1.1"
+				id=-1
+			}
+			promote_leader = yes
+		}
+
+		add_stability = -0.05
+		add_war_support = -0.05
+
+		hidden_effect = {
+			country_event = {
+				id = svin.61
+				days = 10
+				random_days = 15
+			}
+		}
+	}
+}
+#Vibori ended
+country_event = {
+	id = svin.61
+	title = svin.61.t
+	desc = svin.61.d
+	picture = GFX_report_event_SVI_vibori_ended
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.61.a
+		ai_chance = {
+			factor = 70
+		}
+		set_cosmetic_tag = SVI_BUS
+
+		set_politics = {
+    		ruling_party = neutrality
+    		elections_allowed = no
+		}
+
+		add_popularity = {
+    		ideology = neutrality
+    		popularity = 0.1
+		}
+
+		hidden_effect = {
+			news_event = { id = squad_news.37 days = 2 }
+			set_party_name = {
+    			ideology = communism
+    			long_name = SVI_BUS_communism_party_long
+    			name = SVI_BUS_communism_party
+			}
+		}
+
+		#add_country_leader_role = {
+		#	character = SVI_scawanger
+		#	country_leader={
+		#		ideology=oligarchism
+		#		expire="2599.1.1"
+		#		id=-1
+		#	}
+		#	promote_leader = yes
+		#}
+		add_country_leader_role = {
+			character = SVI_bigpig
+			country_leader={
+				ideology=anarchism
+				expire="2599.1.1"
+				id=-1
+			}
+			promote_leader = yes
+		}
+
+		annex_country = {
+    		target = BUS
+    		transfer_troops = yes
+		}
+
+		#add_ideas = SVI_big_pig_president
+
+		remove_ideas = SVI_shadow_of_gosperevorot_1
+		set_country_flag = SVI_decay_stopped
+		complete_national_focus = {
+  			focus = SVI_vibori_zaversheni
+  			use_side_message = yes
+		}
+	}
+}
+#Buster empire
+country_event = {
+	id = svin.62
+	title = svin.62.t
+	desc = svin.62.d
+	picture = GFX_report_event_SVI_vibori_ended
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.62.a
+		ai_chance = {
+			factor = 70
+		}
+		set_cosmetic_tag = SVI_BUS_EMPIRE
+
+		add_country_leader_role = {
+			character = SVI_scawanger
+			country_leader={
+				ideology=oligarchism
+				expire="2599.1.1"
+				id=-1
+			}
+			promote_leader = yes
+		}
+
+		add_ideas = SVI_big_pig_president
+	}
+}
+#Pogromi nachalis
+country_event = {
+	id = svin.46
+	title = svin.46.t
+	desc = svin.46.d
+	picture = GFX_report_event_SVI_pogromi_most
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.46.a
+		ai_chance = {
+			factor = 70
+		}
+
+		add_popularity = {
+			ideology = communism
+    		popularity = 0.05
+		}
+		
+		damage_building = {
+  			type = infrastructure
+  			state = 812
+  			damage = 1
+		}
+		damage_building = {
+  			type = industrial_complex
+  			state = 812
+  			damage = 0.6
+		}
+		damage_building = {
+  			type = infrastructure
+  			state = 246
+  			damage = 1
+		}
+		damage_building = {
+  			type = infrastructure
+  			state = 195
+  			damage = 0.4
+		}
+		damage_building = {
+  			type = infrastructure
+  			state = 1048
+  			damage = 0.8
+		}
+		damage_building = {
+  			type = industrial_complex
+  			state = 808
+  			damage = 0.6
+		}
+		810 = {
+			manpower = -10000
+		}
+		208 = {
+			manpower = -4760
+		}
+
+		add_stability = -0.2
+		add_war_support = -0.2
+
+		set_country_flag = SVI_BUS_POGROMI
+
+		complete_national_focus = {
+  			focus = SVI_massovie_pogromi
+  			use_side_message = yes
+		}
+
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+#Voen poloshenie
+country_event = {
+	id = svin.47
+	title = svin.47.t
+	desc = svin.47.d
+	picture = GFX_report_event_SVI_pogromi_start
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.47.a
+		ai_chance = {
+			factor = 70
+		}
+		
+		add_ideas = partial_economic_mobilisation
+		add_war_support = 0.03
+		add_stability = 0.02
+	}
+}
+#Tanki na ulitsah
+country_event = {
+	id = svin.48
+	title = svin.48.t
+	desc = svin.48.d
+	picture = GFX_report_event_SVI_pogromi_start
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.48.a
+		ai_chance = {
+			factor = 70
+		}
+		
+		add_ideas = limited_exports
+		add_stability = 0.03
+
+		hidden_effect = {
+			damage_building = {
+  				type = infrastructure
+  				state = 263
+  				damage = 0.8
+			}
+			damage_building = {
+  				type = infrastructure
+  				state = 12
+  				damage = 0.8
+			}
+			damage_building = {
+  				type = infrastructure
+  				state = 1048
+  				damage = 1
+			}
+			damage_building = {
+  				type = arms_factory
+  				state = 1048
+  				damage = 1
+			}
+		}
+	}
+}
+
+#Pogromi podavleni
+country_event = {
+	id = svin.49
+	title = svin.49.t
+	desc = svin.49.d
+	picture = GFX_report_event_SVI_pogromi_start
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.49.a
+		ai_chance = {
+			factor = 70
+		}
+		
+		add_stability = 0.05
+		add_war_support = 0.05
+
+		add_popularity = {
+			ideology = neutrality
+    		popularity = 0.05
+		}
+
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+    			popularity = 0.03
+			}
+			country_event = {
+				id = svin.50
+				days = 5
+				random_days = 10
+			}
+		}
+	}
+}
+#strange persons
+country_event = {
+	id = svin.50
+	title = svin.50.t
+	desc = svin.50.d
+	picture = GFX_report_event_SVI_kisson_strangers
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.50.a
+		ai_chance = {
+			factor = 70
+		}
+		
+		add_political_power = -200
+
+		add_popularity = {
+			ideology = neutrality
+    		popularity = -0.02
+		}
+
+		set_country_flag = SVI_KIS_DRG
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = {
+  			focus = SVI_strannie_personi
+  			use_side_message = yes
+		}
+
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+    			popularity = 0.02
+			}
+			808 = {
+				set_demilitarized_zone = yes
+			}
+			809 = {
+				set_demilitarized_zone = yes
+			}
+			190 = {
+				set_demilitarized_zone = yes
+			}
+			country_event = {
+				id = svin.51
+				days = 5
+				random_days = 10
+			}
+		}
+	}
+}
+#DRG start
+country_event = {
+	id = svin.51
+	title = svin.51.t
+	desc = svin.51.d
+	picture = GFX_report_event_SVI_drg_start
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.51.a
+		ai_chance = {
+			factor = 70
+		}
+		
+		add_stability = -0.04
+		add_war_support = -0.05
+
+		custom_effect_tooltip = SVI_KIS_WAR_tt
+
+		hidden_effect = {
+			808 = {
+				set_demilitarized_zone = no
+			}
+			809 = {
+				set_demilitarized_zone = no
+			}
+			190 = {
+				set_demilitarized_zone = no
+			}
+			release_on_controlled = KIS
+			KIS = {
+				load_oob = "KIS_WAR"
+				declare_war_on = {
+                	target = SVI
+                	type = annex_everything
+            	}
+			}
+			country_event = {
+				id = svin.52
+				days = 3
+				random_days = 4
+			}
+		}		
+	}
+}
+#DRG start
+country_event = {
+	id = svin.52
+	title = svin.52.t
+	desc = svin.52.d
+	picture = GFX_report_event_SVI_drg_start
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.52.a
+		ai_chance = {
+			factor = 70
+		}
+		
+		add_stability = -0.02
+		add_war_support = 0.05
+
+		add_ideas = extensive_conscription
+		if = {
+			limit = {
+				NOT = { 
+					has_idea = war_economy
+				}
+				add_ideas = war_economy
+			}
+		}	
+	}
+}
+#Imperator mertv
+country_event = {
+	id = svin.63
+	title = svin.63.t
+	desc = svin.63.d
+	picture = GFX_report_event_SVI_imperator_mertv
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.63.a
+		ai_chance = {
+			factor = 70
+		}
+		
+		kill_country_leader = yes
+		add_country_leader_role = {
+			character = SVI_apachana
+			country_leader={
+				ideology=oligarchism
+				expire="2599.1.1"
+				id=-1
+			}
+			promote_leader = yes
+		}
+	}
+}
+#Valeriya beshit
+country_event = {
+	id = svin.64
+	title = svin.64.t
+	desc = svin.64.d
+	picture = GFX_report_event_SVI_Imperial_defeat
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SVI
+		has_war = yes
+		surrender_progress > 0.7
+		has_country_flag = SVI_AI_RANDOM_NEUTRALITY
+		has_government = neutrality
+	}
+
+	#Kok
+	option = {
+		name = svin.64.a
+		ai_chance = {
+			factor = 70
+		}
+		
+		retire_character = SVI_apachana
+		add_stability = -0.1
+		add_war_support = -0.05
+	}
+}
+#Entered Kisson
+country_event = {
+	id = svin.65
+	title = svin.65.t
+	desc = svin.65.d
+	picture = GFX_report_event_SVI_entered_kisson
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SVI
+		has_war_with = KIS
+		KIS = { surrender_progress > 0.15 }
+	}
+
+	#Kok
+	option = {
+		name = svin.65.a
+		ai_chance = {
+			factor = 70
+		}
+		
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+#Kisson defeat
+country_event = {
+	id = svin.53
+	title = svin.53.t
+	desc = svin.53.d
+	picture = GFX_report_event_SVI_drg_defeat
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#Kok
+	option = {
+		name = svin.53.a
+		ai_chance = {
+			factor = 70
+		}
+		complete_national_focus = {
+  			focus = SVI_drg_razbiti
+  			use_side_message = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = svin.54
+				days = 10
+				random_days = 10
+			}
+		}
+	}
+}
+
+#Revolution za Imperatora
+country_event = {
+	id = svin.56
+	title = svin.56.t
+	desc = svin.56.d
+	picture = GFX_report_event_SVI_revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#Kok
+	option = {
+		name = svin.56.a
+		ai_chance = {
+			factor = 70
+		}
+		if = {
+			limit = {
+				has_country_flag = SVI_BRV_created
+			}
+			SVI = {
+				start_civil_war = {
+					ruling_party = ROOT
+					ideology = communism
+					size = 0.3
+					capital = 195
+					states = { 195 208 244 263 146 928 }
+					keep_all_characters = yes
+					keep_political_leader = yes
+    				keep_political_party_members = yes
+					create_country_leader = {
+						name = "Ковбой КекВ"
+						desc = "POLITICS_PRINCE_PAUL_DESC"
+						picture = "GFX_portrait_cowboykekw_com"
+
+						ideology = anarchist_communism
+						traits = {
+							#
+						}
+					}
+					set_cosmetic_tag = SVI_BUS_BSSG
+				}
+				load_focus_tree = bus_empire_focus
+			}
+		}
+		else = {
+			SVI = {
+				start_civil_war = {
+					ruling_party = ROOT
+					ideology = communism
+					size = 0.3
+					capital = 195
+					states = { 195 208 244 263 813 }
+					keep_all_characters = yes
+					keep_political_leader = yes
+    				keep_political_party_members = yes
+					create_country_leader = {
+						name = "Ковбой КекВ"
+						desc = "POLITICS_PRINCE_PAUL_DESC"
+						picture = "GFX_portrait_cowboykekw_com"
+
+						ideology = anarchist_communism
+						traits = {
+							#
+						}
+					}
+					set_cosmetic_tag = SVI_BUS_BSSG
+				}
+				load_focus_tree = bus_empire_focus
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+    					modifier = SVI_svintogon_modifier
+    					scope = SVI
+					}
+				}
+				country_event = {
+					id = svin.70
+					days = 10
+					random_days = 15
+				}
+			}
+			add_ideas = SVI_economical_spad
+			add_ideas = SVI_peoples_duma_2
+			add_ideas = svinland_ru
+			add_ideas = SVI_big_pig_president_2
+
+			if = {
+				limit = {
+					has_country_flag = SVI_emp_vidv_army
+				}
+				add_timed_idea = { idea = SVI_civ_vidvarm days = 100 }
+			}
+			if = {
+				limit = {
+					has_country_flag = SVI_emp_zashitim_dershavu
+				}
+				add_timed_idea = { idea = SVI_civ_zashitim days = 100 }
+			}
+		}
+	}
+}
+#Revolution za Cowboya
+country_event = {
+	id = svin.57
+	title = svin.57.t
+	desc = svin.57.d
+	picture = GFX_report_event_SVI_revolution
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#buscom_focus
+	option = {
+		name = svin.57.a
+		ai_chance = {
+			factor = 70
+		}
+		if = {
+			limit = {
+				has_country_flag = SVI_ELN_created
+			}
+			SVI = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = ROOT
+					size = 0.3
+					capital = 1048
+					states = { 190 809 808 810 1048 815 189 11 814 }
+					keep_all_characters = yes
+					keep_political_leader = yes
+    				keep_political_party_members = yes
+					create_country_leader = {
+						name = "Валерия I"
+						desc = "POLITICS_PRINCE_PAUL_DESC"
+						picture = "GFX_portrait_apachana"
+
+						ideology = oligarhism
+						traits = {
+							#
+						}
+					}
+					set_cosmetic_tag = SVI_BUS_EMPIRE
+				}
+				load_focus_tree = buscom_focus
+				add_country_leader_role = {
+					character = SVI_cowboykekw_com
+					country_leader={
+						ideology=anarchist_communism
+						expire="2599.1.1"
+						id=-1
+					}
+					promote_leader = yes
+				}
+				set_cosmetic_tag = SVI_BUS_BSSG
+			}
+		}
+		else = {
+			SVI = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = ROOT
+					size = 0.3
+					capital = 1048
+					states = { 190 809 808 810 1048 210 }
+					keep_all_characters = yes
+					keep_political_leader = yes
+    				keep_political_party_members = yes
+					create_country_leader = {
+						name = "Валерия I"
+						desc = "POLITICS_PRINCE_PAUL_DESC"
+						picture = "GFX_portrait_apachana"
+
+						ideology = oligarhism
+						traits = {
+							#
+						}
+					}
+					set_cosmetic_tag = SVI_BUS_EMPIRE
+				}
+				load_focus_tree = buscom_focus
+				add_country_leader_role = {
+					character = SVI_cowboykekw_com
+					country_leader={
+						ideology=anarchist_communism
+						expire="2599.1.1"
+						id=-1
+					}
+					promote_leader = yes
+				}
+				set_cosmetic_tag = SVI_BUS_BSSG
+				
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+    					modifier = SVI_svintogon_modifier
+    					scope = SVI
+					}
+				}
+				country_event = {
+					id = svin.70
+					days = 10
+					random_days = 15
+				}
+			}
+
+			add_ideas = SVI_economical_spad
+			add_ideas = SVI_peoples_duma_2
+			add_ideas = svinland_ru
+
+			set_party_name = {
+    			ideology = communism
+   				long_name = SVI_BUS_BSSG_communism_party_long
+    			name = SVI_BUS_BSSG_communism_party
+			}
+
+			if = {
+				limit = {
+					has_country_flag = SVI_podpol_yaycheyki
+				}
+				add_timed_idea = { idea = SVI_civ_podpol days = 100 }
+			}
+			if = {
+				limit = {
+					has_country_flag = SVI_profsoyuzi_rashir
+				}
+				add_timed_idea = { idea = SVI_civ_profsoyuzi days = 100 }
+			}
+		}
+	}
+}
+
+#Kommunisti naydeni
+country_event = {
+	id = svin.54
+	title = svin.54.t
+	desc = svin.54.d
+	picture = GFX_report_event_SVI_communists_reveal
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#Kok
+	option = {
+		name = svin.54.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2000
+				has_country_flag = SVI_AI_RANDOM_NEUTRALITY
+			}
+		}
+		complete_national_focus = {
+  			focus = SVI_za_imperatora
+  			use_side_message = yes
+		}
+		activate_mission = SVI_neminuemaya_revolutiya
+	}
+	option = {
+		name = svin.54.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2000
+				has_country_flag = SVI_AI_RANDOM_COMMUNISM
+			}
+		}
+		complete_national_focus = {
+  			focus = SVI_poddershat_revolutiyu
+  			use_side_message = yes
+		}
+	}
+}
+
+#Elenmar
+country_event = {
+	id = svin.67
+	title = svin.67.t
+	desc = svin.67.d
+	picture = GFX_report_event_SVI_elenmar
+
+	
+	trigger = {
+		tag = SVI
+		OR = {
+			189 = {
+				is_owned_and_controlled_by = SVI
+			}
+			815 = {
+				is_owned_and_controlled_by = SVI
+			}
+			11 = {
+				is_owned_and_controlled_by = SVI
+			}
+			814 = {
+				is_owned_and_controlled_by = SVI
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	#Kok
+	option = {
+		name = svin.67.a
+		ai_chance = {
+			factor = 70
+		}
+		set_country_flag = SVI_ELN_created
+		189 = {
+			add_core_of = ELN
+			add_core_of = SVI
+		}
+		815 = {
+			add_core_of = ELN
+			add_core_of = SVI
+		}
+		11 = {
+			add_core_of = ELN
+			add_core_of = SVI
+		}
+		814 = {
+			add_core_of = ELN
+			add_core_of = SVI
+		}
+		784 = {
+			add_core_of = ELN
+			add_core_of = SVI
+		}
+	}
+}
+#Kozulki
+country_event = {
+	id = svin.68
+	title = svin.68.t
+	desc = svin.68.d
+	picture = GFX_report_event_SVI_drg_defeat
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#Kok
+	option = {
+		name = svin.68.a
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+#Braavos
+country_event = {
+	id = svin.69
+	title = svin.69.t
+	desc = svin.69.d
+	picture = GFX_report_event_SVI_braavos
+
+	trigger = {
+		tag = SVI
+		OR = {
+			146 = {
+				is_owned_and_controlled_by = SVI
+			}
+			928 = {
+				is_owned_and_controlled_by = SVI
+			}
+		}
+	}
+	fire_only_once = yes
+
+	#Kok
+	option = {
+		name = svin.69.a
+		ai_chance = {
+			factor = 70
+		}
+		set_country_flag = SVI_BRV_created
+		146 = {
+			add_core_of = BRV
+			add_core_of = SVI
+		}
+		928 = {
+			add_core_of = BRV
+			add_core_of = SVI
+		}
+	}
+}
+#Svintogon rospusk
+country_event = {
+	id = svin.70
+	title = svin.70.t
+	picture = GFX_report_event_ARG_coup_detat
+
+
+	desc = {
+    	text = svin.70.d.coms
+    	trigger = {
+			SVI = {
+    	    	has_cosmetic_tag = SVI_BUS_BSSG
+			}
+    	}
+	}
+	desc = {
+    	text = svin.70.d.imper
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#Kok
+	option = {
+		name = svin.70.a
+		ai_chance = {
+			factor = 70
+		}
+		remove_dynamic_modifier = { modifier = SVI_svintogon_modifier }
+	}
+}
+
+country_event = {
+	id = svin.90
+	title = svin.90.t
+	desc = svin.90.d
+	picture = GFX_report_event_SVI_pyatorka
+
+	is_triggered_only = yes
+
+	option = { #friend
+		name = svin.90.a
+		ai_chance = {
+			base = 6
+			modifier = {
+				factor = 10
+				has_government = ROOT
+			}
+		}
+
+		PYA = {
+			country_event = {
+				id = svin.91
+				hours = 6
+			}
+		}
+	}
+
+	option = { #foe
+		name = svin.90.b
+		ai_chance = {
+			base = 4
+			modifier = {
+				factor = 0.1
+				has_opinion = {
+					target = PYA
+					value < 0
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				980 = {
+					free_building_slots = {
+						building = bunker
+						size > 0
+						province = 9444
+					}
+				}
+			}
+
+			980 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9444
+				}
+			}
+			
+		}
+
+		IF = {
+			limit = {
+				980 = {
+					free_building_slots = {
+						building = bunker
+						size > 0
+						province = 9418
+					}
+				}
+			}
+
+			980 = {
+				add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 9418
+			}
+			}
+			
+		}
+
+		IF = {
+			limit = {
+				34 = {
+					free_building_slots = {
+						building = bunker
+						size > 0
+						province = 9536
+					}
+				}
+			}
+
+			34 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9536
+				}
+			}
+			
+		}
+
+		IF = {
+			limit = {
+				34 = {
+					free_building_slots = {
+						building = bunker
+						size > 0
+						province = 13081
+					}
+				}
+			}
+
+			34 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 13081
+				}
+			}
+			
+		}
+
+		IF = {
+			limit = {
+				6 = {
+					free_building_slots = {
+						building = bunker
+						size > 0
+						province = 6446
+					}
+				}
+			}
+
+			6 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6446
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				6 = {
+					free_building_slots = {
+						building = bunker
+						size > 0
+						province = 3576
+					}
+				}
+			}
+
+			6 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3576
+				}
+			}
+		}
+	}
+}
+
+country_event = { #To PYA: Svin hotchet drushit
+	id = svin.91
+	title = svin.91.t
+	desc = svin.91.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	option = { #sure!
+		name = svin.91.a
+		ai_chance = {
+			base = 6
+			modifier = {
+				factor = 10
+				has_government = ROOT
+			}
+		}
+
+		diplomatic_relation = { 
+			country = FROM 
+			relation = non_aggression_pact 
+			active = yes
+		}
+
+		IF = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+
+			add_equipment_subsidy = {
+				cic = 1500 
+				equipment_type = infantry_equipment
+				seller_tags = { FROM }
+			}
+
+			FROM = {
+				add_equipment_subsidy = {
+					cic = 1500 
+					equipment_type = infantry_equipment
+					seller_tags = { ROOT } 
+				}
+			}
+
+			hidden_effect = {
+				FROM = {
+					country_event = {
+						id = svin.92
+						hours = 6
+					}
+				}
+			}	
+		}
+	}
+
+	option = { #net
+		name = svin.91.b
+		ai_chance = {
+			base = 4
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+		}
+
+		FROM = {
+			country_event = {
+				id = svin.93
+				hours = 6
+			}
+		}
+	}
+}
+
+country_event = { #To SVI: 5opka soglasen
+	id = svin.92
+	title = svin.92.t
+	desc = svin.92.d
+	picture = GFX_report_event_SVI_pyatorka
+
+	is_triggered_only = yes
+
+	option = { #woop
+		name = svin.92.a
+		ai_chance = {
+			base = 6
+		}
+
+		event_option_tooltip = svin.91.a
+	}
+}
+
+country_event = { #To SVI: 5opka ne soglasen
+	id = svin.93
+	title = svin.93.t
+	desc = svin.93.d
+	picture = GFX_report_event_SVI_pyatorka
+
+	is_triggered_only = yes
+
+	option = { #darn
+		name = svin.93.a
+		ai_chance = {
+			base = 6
+		}
+		
+	}
+}
+
+country_event = { ## Pioneriya
+	id = bus_com.1
+	title = bus_com.1.t
+	desc = bus_com.1.d
+	picture = GFX_report_event_SVI_pioneri
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.1.a
+		add_ideas = pioneers
+	}
+}
+country_event = { ## Militarized Schools
+	id = bus_com.2
+	title = bus_com.2.t
+	desc = bus_com.2.d
+	picture = GFX_report_event_SVI_pioneri
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.4.a
+		swap_ideas = { remove_idea = pioneers add_idea = pioneers2 }
+	}
+}
+country_event = { ## Day of Knowledge
+	id = bus_com.3
+	title = bus_com.3.t
+	desc = bus_com.3.d
+	picture = GFX_report_event_SVI_pioneri
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.3.a
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = bus_com.4
+	title = bus_com.4.t
+	desc = bus_com.4.d
+	picture = GFX_report_event_SVI_revolution
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.4.a
+		set_cosmetic_tag = SVI_BUS_SSSG
+		hidden_effect = {
+			set_party_name = {
+    			ideology = communism
+   				long_name = SVI_BUS_SSSG_communism_party_long
+    			name = SVI_BUS_SSSG_communism_party
+			}
+		}
+	}
+}
+country_event = {
+	id = bus_com.5
+	title = bus_com.5.t
+	desc = bus_com.5.d
+	picture = GFX_report_event_SVI_bustergrad
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.5.a
+		808 = {
+			add_manpower = -30000
+		}
+		812 = {
+			add_manpower = -25000
+		}
+		811 = {
+			add_manpower = -6000
+		}
+		195 = {
+			add_manpower = -45000
+		}
+		add_stability = 0.1
+	}
+}
+country_event = {
+	id = bus_com.6
+	title = bus_com.6.t
+	desc = bus_com.6.d
+	picture = GFX_report_event_SVI_revolution
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.6.a
+		
+		SVI = {
+			puppet = {
+    			target = PREV
+    			end_wars = no
+			}
+			set_autonomy = {
+    			target = PREV
+    			autonomous_state = autonomy_colony
+    			end_wars = no
+    			end_civil_wars = no
+			}
+		}
+	}
+	option = { #
+		name = bus_com.6.b
+		
+		SVI = {
+			country_event = {
+				id = bus_com.7
+				days = 3
+			}
+		}
+	}
+}
+country_event = {
+	id = bus_com.7
+	title = bus_com.7.t
+	desc = bus_com.7.d
+	picture = GFX_report_event_SVI_revolution
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.7.a
+		
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+	option = { #
+		name = bus_com.7.b
+		
+		FROM = {
+			add_timed_idea = {
+				idea = SVI_com_influence_from_cowboy
+				days = 700
+			}
+		}
+	}
+}
+
+#Demand sardiniya
+country_event = {
+	id = bus_com.8
+	title = bus_com.8.t
+	desc = bus_com.8.d
+	picture = GFX_report_event_SVI_sardiniya
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.8.a
+		
+		114 = {
+			transfer_state_to = SVI
+		}
+		SVI = {
+			country_event = {
+				id = bus_com.10
+				days = 2
+			}
+		}
+	}
+	option = { #
+		name = bus_com.8.b
+		SVI = {
+			country_event = {
+				id = bus_com.9
+				days = 2
+			}
+		}
+		
+	}
+}
+#Demand sardiniya - OTKAZANO
+country_event = {
+	id = bus_com.9
+	title = bus_com.9.t
+	desc = bus_com.9.d
+	picture = GFX_report_event_SVI_sardiniya
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.9.a
+		
+		114 = {
+			add_claim_by = SVI
+		}
+
+		SVI = {
+			create_wargoal = {
+				target = PBU
+				type = annex_everything
+			}
+		}
+	}
+	option = { #
+		name = bus_com.9.b
+		
+		114 = {
+			add_claim_by = SVI
+		}
+		add_war_support = -0.05
+	}
+}
+#Demand sardiniya - DA
+country_event = {
+	id = bus_com.10
+	title = bus_com.10.t
+	desc = bus_com.10.d
+	picture = GFX_report_event_SVI_sardiniya
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.10.a
+		
+		114 = {
+			add_core_of = SVI
+		}
+	}
+}
+#Rashir profsouyz
+country_event = {
+	id = bus_com.11
+	title = bus_com.11.t
+	desc = bus_com.11.d
+	picture = GFX_report_event_SVI_revolution
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.11.a
+		
+		custom_effect_tooltip = SVI_bus_com_onciv_will_add_tt
+		custom_effect_tooltip = idea_desc|SVI_civ_profsoyuzi
+		set_country_flag = SVI_profsoyuzi_rashir
+	}
+}
+#Podpolnie yaycheyki
+country_event = {
+	id = bus_com.12
+	title = bus_com.12.t
+	desc = bus_com.12.d
+	picture = GFX_report_event_SVI_revolution
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_com.12.a
+		
+		custom_effect_tooltip = SVI_bus_com_onciv_will_add_tt
+		custom_effect_tooltip = idea_desc|SVI_civ_podpol
+		set_country_flag = SVI_podpol_yaycheyki
+	}
+}
+
+
+country_event = {
+	id = svin.58
+	title = svin.58.t
+	desc = svin.58.d
+	picture = GFX_report_event_SVI_Imperial_defeat
+
+	fire_only_once = yes
+
+	trigger = {
+		has_civil_war = yes
+		has_cosmetic_tag = SVI_BUS_BSSG
+		has_government = communism
+		any_enemy_country = {
+			limit = {
+				civilwar_target = ROOT
+			}
+			surrender_progress > 0.7
+		}
+	}
+
+	option = { #
+		name = svin.58.a
+		add_war_support = 0.05
+		add_stability = 0.05
+	}
+}
+#Poseshenie banana-beach
+country_event = {
+	id = svin.72
+	title = svin.72.t
+	desc = svin.72.d
+	picture = GFX_report_event_SVI_bananabeach
+
+	is_triggered_only = yes
+
+	option = { #
+		name = svin.72.a
+		add_command_power = 10
+		if = {
+			limit = {
+				has_active_mission = SVI_growing_public_dissent_mission
+			}
+			add_days_mission_timeout = {
+				mission = SVI_growing_public_dissent_mission
+				days = 25
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+		hidden_effect = {
+			country_event = {
+				id = svin.73
+				days = 7
+				random_days = 14
+			}
+		}
+	}
+}
+#Poseshenie kissona
+country_event = {
+	id = svin.73
+	title = svin.73.t
+	desc = svin.73.d
+	picture = GFX_report_event_SVI_kissoncity
+
+	is_triggered_only = yes
+
+	option = { #
+		name = svin.73.a
+		add_command_power = 10
+		if = {
+			limit = {
+				has_active_mission = SVI_growing_public_dissent_mission
+			}
+			add_days_mission_timeout = {
+				mission = SVI_growing_public_dissent_mission
+				days = 25
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+		hidden_effect = {
+			country_event = {
+				id = svin.74
+				days = 7
+				random_days = 14
+			}
+		}
+	}
+}
+#Poseshenie bustergrada
+country_event = {
+	id = svin.74
+	title = svin.74.t
+	desc = svin.74.d
+	picture = GFX_report_event_SVI_bustergrad
+
+	is_triggered_only = yes
+
+	option = { #
+		name = svin.74.a
+		add_command_power = 10
+		if = {
+			limit = {
+				has_active_mission = SVI_growing_public_dissent_mission
+			}
+			add_days_mission_timeout = {
+				mission = SVI_growing_public_dissent_mission
+				days = 25
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+		hidden_effect = {
+			country_event = {
+				id = svin.75
+				days = 7
+				random_days = 14
+			}
+		}
+	}
+}
+#Poseshenie Piecedec
+country_event = {
+	id = svin.75
+	title = svin.75.t
+	desc = svin.75.d
+	picture = GFX_report_event_SVI_peacedec
+
+	is_triggered_only = yes
+
+	option = { #
+		name = svin.75.a
+		add_command_power = 10
+		if = {
+			limit = {
+				has_active_mission = SVI_growing_public_dissent_mission
+			}
+			add_days_mission_timeout = {
+				mission = SVI_growing_public_dissent_mission
+				days = 25
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+		hidden_effect = {
+			country_event = {
+				id = svin.76
+				days = 7
+				random_days = 14
+			}
+		}
+	}
+}
+#Problema na hayperlupe
+country_event = {
+	id = svin.76
+	title = svin.76.t
+	desc = svin.76.d
+	picture = GFX_report_event_SVI_hyperlupa
+
+	is_triggered_only = yes
+
+	option = { #
+		name = svin.76.a
+		add_ideas = SVI_pdd_law
+	}
+	option = { #
+		name = svin.76.b
+	}
+}
+#Nachalo tourne
+country_event = {
+	id = svin.71
+	title = svin.71.t
+	desc = svin.71.d
+	picture = GFX_report_event_SVI_tour
+
+	is_triggered_only = yes
+
+	option = { #
+		name = svin.71.a
+		add_political_power = 50
+		hidden_effect = {
+			country_event = {
+				id = svin.72
+				days = 7
+				random_days = 14
+			}
+		}
+	}
+}
+
+
+#Tropicanskoe proshloe
+country_event = {
+	id = svin.80
+	title = svin.80.t
+	desc = svin.80.d
+	picture = GFX_report_event_SVI_tropico
+
+	is_triggered_only = yes
+
+	option = { #
+		name = svin.80.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+#Sueyz buying
+country_event = {
+	id = svin.81
+	title = svin.81.t
+	desc = svin.81.d
+	picture = GFX_report_event_generic_civil_war
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.81.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				SVI = {
+					has_same_ideology = yes
+					NOT = {
+						has_war_with = GON
+					}
+				}
+				factor = 50
+			}
+		}
+		SVI = {
+			add_timed_idea = { idea = SVI_plata_za_gibraltar days = 200 }
+			country_event = { id = svin.82 days = 4 }
+		}
+		118 = {
+			transfer_state_to = SVI
+		}
+	}
+
+	#No
+	option = {
+		name = svin.81.b
+		ai_chance = {
+			base = 20
+		}
+		SVI = {
+			country_event = { id = svin.83 days = 4 }
+		}
+	}
+}
+#Sueyz buying - Accepted
+country_event = {
+	id = svin.82
+	title = svin.82.t
+	desc = svin.82.d
+	picture = GFX_report_event_generic_civil_war
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.82.a
+		ai_chance = {
+			factor = 70
+		}
+		effect_tooltip = {
+			SVI = {
+				add_ideas = SVI_plata_za_gibraltar
+			}
+		}
+	}
+}
+#Sueyz buying - NO
+country_event = {
+	id = svin.83
+	title = svin.83.t
+	desc = svin.83.d
+	picture = GFX_report_event_generic_civil_war
+
+	is_triggered_only = yes
+
+	#Kok
+	option = {
+		name = svin.83.a
+		ai_chance = {
+			base = 70
+		}
+		create_wargoal = {
+			target = GON
+			type = annex_everything
+		}
+	}
+	#Kok
+	option = {
+		name = svin.83.b
+		ai_chance = {
+			base = 70
+			modifier = {
+				is_ai = yes
+				factor = 200
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bus_emp.1
+	title = bus_emp.1.t
+	desc = bus_emp.1.d
+	picture = GFX_report_event_SVI_bustergrad
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_emp.1.a
+		add_political_power = 150
+		add_stability = 0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+	}
+}
+country_event = {
+	id = bus_emp.2
+	title = bus_emp.2.t
+	desc = bus_emp.2.d
+	picture = GFX_report_event_SVI_bustergrad
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_emp.2.a
+		swap_ideas = {
+			
+			
+		}
+		remove_idea = SVI_economical_spad
+		add_timed_idea = { idea = SVI_vostanavlivaush_economica days = 650 }
+	}
+}
+country_event = {
+	id = bus_emp.3
+	title = bus_emp.3.t
+	desc = bus_emp.3.d
+	picture = GFX_report_event_SVI_bustergrad
+
+	is_triggered_only = yes
+
+	option = { #DA ZAMOROZIT
+		name = bus_emp.3.a
+		add_timed_idea = { idea = SVI_inostrannie_sredstva days = 500 }
+	}
+	option = { #NE NADO
+		name = bus_emp.3.b
+		add_stability = 0.02
+		add_political_power = 100
+	}
+}
+country_event = {
+	id = bus_emp.4
+	title = bus_emp.4.t
+	desc = bus_emp.4.d
+	picture = GFX_report_event_SVI_bustergrad
+
+	is_triggered_only = yes
+
+	option = {
+		name = bus_emp.4.a
+		custom_effect_tooltip = disable_duma
+		set_country_flag = SVI_destroyed_duma
+		remove_ideas = SVI_peoples_duma_weak
+	}
+}
+country_event = {
+	id = bus_emp.5
+	title = bus_emp.5.t
+	desc = bus_emp.5.d
+	picture = GFX_report_event_SVI_bustergrad
+
+	is_triggered_only = yes
+
+	option = {
+		name = bus_emp.5.a
+		hidden_effect = {
+			set_temp_variable = {
+				var = ban_ideology_var
+				value = party_popularity@democratic
+			}
+			multiply_temp_variable = {
+				var = ban_ideology_var
+				value = -1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = ban_ideology_var
+			}
+			multiply_temp_variable = {
+				var = ban_ideology_var
+				value = 0.66
+			}
+			set_country_flag = banned_democratic_flag				
+		}
+		remove_democratic_spirits_effect = yes 
+		custom_effect_tooltip = ban_democratic_party_tt
+	}
+}
+
+#Rashir profsouyz
+country_event = {
+	id = bus_emp.10
+	title = bus_emp.10.t
+	desc = bus_emp.10.d
+	picture = GFX_report_event_SVI_bustergrad
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_emp.10.a
+		
+		custom_effect_tooltip = SVI_bus_com_onciv_will_add_tt
+		custom_effect_tooltip = idea_desc|SVI_civ_zashitim
+		set_country_flag = SVI_emp_zashitim_dershavu
+	}
+}
+#Podpolnie yaycheyki
+country_event = {
+	id = bus_emp.11
+	title = bus_emp.11.t
+	desc = bus_emp.11.d
+	picture = GFX_report_event_SVI_bustergrad
+
+	is_triggered_only = yes
+
+	option = { #
+		name = bus_emp.11.a
+		
+		custom_effect_tooltip = SVI_bus_com_onciv_will_add_tt
+		custom_effect_tooltip = idea_desc|SVI_civ_vidvarm
+		set_country_flag = SVI_emp_vidv_army
 	}
 }

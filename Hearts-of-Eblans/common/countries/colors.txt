@@ -19,6 +19,10 @@ NWK = {
 	color = rgb { 160 230 49 }
 	color_ui = rgb { 160 230 49 }
 }
+ELN = {
+	color = rgb { 242 124 224 }
+	color_ui = rgb { 242 124 224 }
+}
 ASL = {
 	color = rgb { 227 104 223 }
 	color_ui = rgb { 227 104 223 }
@@ -144,16 +148,24 @@ BUS = {
 	color_ui = rgb { 252 157 3 }
 }
 PIE = {
-	color = rgb { 213 42 219 }
-	color_ui = rgb { 213 42 219 }
+	color = rgb { 115 255 64 }
+	color_ui = rgb { 115 255 64 }
 }
 SUT = {
 	color = rgb { 120 255 246 }
 	color_ui = rgb { 120 255 246 }
 }
 KIS = {
-	color = rgb { 223 255 158 }
-	color_ui = rgb { 223 255 158 }
+	color = rgb { 234 115 255 }
+	color_ui = rgb { 234 115 255 }
+}
+KZL = {
+	color = rgb { 250 174 97 }
+	color_ui = rgb { 250 174 97 }
+}
+BRV = {
+	color = rgb { 78 148 146 }
+	color_ui = rgb { 78 148 146 }
 }
 FLA = {
 	color = rgb { 71 25 115 }

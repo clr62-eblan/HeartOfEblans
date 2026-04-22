@@ -4,4 +4,145 @@ spriteTypes = {
         texturefile = "gfx/texticons/SVI_ar_texticon.dds"
         legacy_lazy_load = no
     }
+    SpriteType = {
+        name = "GFX_texticon_SVI_imperors_capital"
+        texturefile = "gfx/texticons/svi_imperors_capital_texticon.png"
+        legacy_lazy_load = no
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_vibori"
+        texturefile = "gfx/event_pictures/SVI/SVI_vibori.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_vibori_ended"
+        texturefile = "gfx/event_pictures/SVI/SVI_bigpig_win.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_pogromi_start"
+        texturefile = "gfx/event_pictures/SVI/SVI_pogromi_start.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_pogromi_most"
+        texturefile = "gfx/event_pictures/SVI/SVI_pogromi_most.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_imperator_mertv"
+        texturefile = "gfx/event_pictures/SVI/SVI_imperator_mertv.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_sardiniya"
+        texturefile = "gfx/event_pictures/SVI/SVI_sardiniya.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_kisson_strangers"
+        texturefile = "gfx/event_pictures/SVI/SVI_kisson_strangers.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_drg_start"
+        texturefile = "gfx/event_pictures/SVI/SVI_drg_start.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_Imperial_defeat"
+        texturefile = "gfx/event_pictures/SVI/SVI_Imperial_defeat.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_pyatorka"
+        texturefile = "gfx/event_pictures/SVI/SVI_pyatorka.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_entered_kisson"
+        texturefile = "gfx/event_pictures/SVI/SVI_entered_kisson.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_tropico"
+        texturefile = "gfx/event_pictures/SVI/SVI_tropico.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_drg_defeat"
+        texturefile = "gfx/event_pictures/SVI/SVI_drg_defeat.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_toha_big"
+        texturefile = "gfx/event_pictures/SVI/SVI_toha_big.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_bananabeach"
+        texturefile = "gfx/event_pictures/SVI/SVI_bananabeach.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_kissoncity"
+        texturefile = "gfx/event_pictures/SVI/SVI_kissoncity.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_bustergrad"
+        texturefile = "gfx/event_pictures/SVI/SVI_bustergrad.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_elenmar"
+        texturefile = "gfx/event_pictures/SVI/SVI_elenmar.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_braavos"
+        texturefile = "gfx/event_pictures/SVI/SVI_braavos.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_peacedec"
+        texturefile = "gfx/event_pictures/SVI/SVI_peacedec.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_hyperlupa"
+        texturefile = "gfx/event_pictures/SVI/SVI_hyperlupa.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_tour"
+        texturefile = "gfx/event_pictures/SVI/SVI_tour.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_communists_reveal"
+        texturefile = "gfx/event_pictures/SVI/SVI_communists_reveal.png"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_pioneri"
+        texturefile = "gfx/event_pictures/SVI/SVI_pioneri.png"
+    }
+    SpriteType = {
+        name = "GFX_news_event_SVI_bustergrad_elected_news"
+        texturefile = "gfx/event_pictures/SVI/SVI_bustergrad_elected_news.dds"
+    }
+    SpriteType = {
+        name = "GFX_report_event_SVI_revolution"
+        texturefile = "gfx/event_pictures/SVI/SVI_revolution.png"
+    }
+    SpriteType = {
+        name = "GFX_portrait_svin_democ"
+        texturefile = "gfx/leaders/SVI/t2x2.dds"
+    }
+    SpriteType = {
+        name = "GFX_portrait_scawanger"
+        texturefile = "gfx/leaders/SVI/scawanger.dds"
+    }
+    SpriteType = {
+        name = "GFX_portrait_svin_duma"
+        texturefile = "gfx/leaders/SVI/SVI_duma.dds"
+    }
+    SpriteType = {
+        name = "GFX_portrait_apachana"
+        texturefile = "gfx/leaders/SVI/apachana.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SVI_bigpig"
+        texturefile = "gfx/leaders/SVI/SVI_big_pig_small.png"
+    }
+    SpriteType = {
+        name = "GFX_idea_SVI_materialism"
+        texturefile = "gfx/leaders/SVI/SVI_materialism.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SVI_bus_imperial_army"
+        texturefile = "gfx/interface/ideas/bus_imperial_army.dds"
+    }
+    SpriteType = {
+        name = "GFX_portrait_cowboykekw_com"
+        texturefile = "gfx/leaders/SVI/SVI_cowboy_kekw_com.png"
+    }
 }

@@ -21,10 +21,29 @@ characters = {
 				large=GFX_portrait_bigpig
 			}
 		}
-		country_leader={
-			ideology=anarchism
-			expire="2599.1.1"
-			id=-1
+	}	
+	SVI_scawanger={
+		name="Андрей I"
+		portraits={
+			civilian={
+				large=GFX_portrait_scawanger
+			}
+		}
+	}	
+	SVI_cowboykekw_com={
+		name="Ковбой KekW"
+		portraits={
+			civilian={
+				large=GFX_portrait_cowboykekw_com
+			}
+		}
+	}	
+	SVI_apachana={
+		name="Валерия I"
+		portraits={
+			civilian={
+				large=GFX_portrait_apachana
+			}
 		}
 	}	
 	SVI_toha_tsar={
@@ -40,6 +59,30 @@ characters = {
 			id=-1
 			traits  = {
 				SVI_despot
+			}
+		}
+	}
+	SVI_tohs_demo={
+		name="Антон T2x2"
+		portraits={
+			civilian={
+				large=GFX_portrait_svin_democ
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="2599.1.1"
+			id=-1
+			traits  = {
+				el_presidente
+			}
+		}
+	}
+	SVI_duma={
+		name="Народная Дума Свинленда"
+		portraits={
+			civilian={
+				large=GFX_portrait_svin_duma
 			}
 		}
 	}

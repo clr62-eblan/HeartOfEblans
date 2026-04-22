@@ -1,0 +1,1005 @@
+# CREATED BY CLR62 - Licensed under MIT License
+ 
+focus_tree = {
+	id = bus_empire_focus
+	
+	country = {
+		factor = 0
+	}
+	default = no
+	
+	focus = {
+		id = BUS_dolgosdannoe_spokoystvie
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_timed_idea = { idea = SVI_dolgoshdannoe_spokoystvie days = 400 }
+		}
+		
+	}
+
+	focus = {
+		id = BUS_povisit_voen_budget
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		x = 2
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = BUS_dolgosdannoe_spokoystvie }
+		relative_position_id = BUS_dolgosdannoe_spokoystvie
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = SVI_imperial_army_modifier
+			}
+
+			add_tech_bonus = {
+				name = FIN_increase_military_budget
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+				category = motorized_equipment
+				category = support_tech
+				category = air_equipment
+				category = naval_equipment
+			}
+
+			random_core_state = {
+				prioritize = { 1048 }
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_podpolnie_yaycheyki_soprotivleniya
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_povisit_voen_budget }
+		relative_position_id = BUS_povisit_voen_budget
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_ideas = SVI_underground_resistance_cells
+			}
+			else = {
+				add_ideas = SVI_underground_resistance_cells_no_lar
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_protivo_vozdushnaya_oborona
+		icon = GFX_focus_generic_air_defense
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_povisit_voen_budget }
+		relative_position_id = BUS_povisit_voen_budget
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			195 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3151
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3151
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_dop_ucheniya
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_povisit_voen_budget }
+		relative_position_id = BUS_povisit_voen_budget
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 15
+
+			custom_effect_tooltip = SVI_imperial_army_modifier_will_be_modified_tt
+			add_to_variable = { SVI_imperial_experience_army = 0.05 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { SVI_imperial_dig_in_speed = 0.1 tooltip = dig_in_speed_factor_tt }
+			add_to_variable = { SVI_imperial_training_time = -0.1 tooltip = training_time_factor_tt }
+		}
+		
+	}
+	focus = {
+		id = BUS_vso_v_hod
+		icon = GFX_focus_FIN_salvaged_and_retooled
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_dop_ucheniya }
+		relative_position_id = BUS_dop_ucheniya
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_imperial_army_modifier_will_be_modified_tt
+			add_to_variable = { SVI_imperial_capture = 0.3 tooltip = equipment_capture_factor_tt }
+			add_to_variable = { SVI_imperial_conversion = 0.3 tooltip = equipment_conversion_speed_tt }
+			add_to_variable = { SVI_imperial_lack_of_resources = -0.1 tooltip = production_lack_of_resource_penalty_factor_tt }
+		}
+		
+	}
+	focus = {
+		id = BUS_rota_glubinnoy_razvedki
+		icon = GFX_focus_generic_cryptologic_bomb
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_vso_v_hod }
+		prerequisite = { focus = BUS_cold_front }
+		relative_position_id = BUS_vso_v_hod
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			custom_effect_tooltip = FIN_long_range_patrols_battalion_tt
+
+			hidden_effect = {
+				set_technology = {
+					long_range_patrol_support_tech = 1
+					popup = no
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_cold_front
+		icon = GFX_focus_SOV_the_road_of_life
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_dop_ucheniya }
+		relative_position_id = BUS_dop_ucheniya
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_imperial_army_modifier_will_be_modified_tt
+			add_to_variable = { SVI_imperial_mobilization_speed = 0.05 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { SVI_imperial_winterattrition_factor = -0.05 tooltip = winter_attrition_factor_tt }
+		}
+		
+	}
+	focus = {
+		id = BUS_winter_war
+		icon = GFX_focus_generic_winter_warfare
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_cold_front }
+		relative_position_id = BUS_cold_front
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			custom_effect_tooltip = SVI_imperial_army_modifier_will_be_modified_tt
+			add_to_variable = { SVI_imperial_supply_penalties_on_core = -0.15 tooltip = supply_combat_penalties_on_core_factor_tt }
+			add_to_variable = { SVI_imperial_winterattrition_factor = -0.1 tooltip = winter_attrition_factor_tt }
+			add_to_variable = { SVI_imperial_coldacclimatize_factor = 0.1 tooltip = acclimatization_cold_climate_gain_factor_tt }
+		}
+	}
+	focus = {
+		id = BUS_light_pehota
+		icon = GFX_goal_generic_secret_weapon
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_rota_glubinnoy_razvedki }
+		prerequisite = { focus = BUS_winter_war }
+		relative_position_id = BUS_winter_war
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = SVI_imperial_army_modifier_will_be_modified_tt
+			add_to_variable = { SVI_imperial_initiative = 0.03 tooltip = initiative_factor_tt }
+			add_to_variable = { SVI_imperial_recon_entrenched = 0.1 tooltip = recon_factor_while_entrenched_tt }
+			add_to_variable = { SVI_imperial_long_range_patrol_defence = 0.1 tooltip = modifier_army_sub_unit_long_range_patrol_support_defence_factor_tt }
+			add_to_variable = { SVI_imperial_long_range_patrol_attack = 0.1 tooltip = modifier_army_sub_unit_long_range_patrol_support_attact_factor_tt }
+		}
+	}
+
+
+
+
+
+	focus = {
+		id = BUS_ukrepit_reshim_imperatorshi
+		icon = GFX_goal_generic_forceful_treaty
+		x = -3
+		y = 2
+		cost = 10
+		relative_position_id = BUS_dolgosdannoe_spokoystvie
+		prerequisite = { focus = BUS_dolgosdannoe_spokoystvie }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = { id = bus_emp.1 days = 1 }
+		}
+		
+	}
+	focus = {
+		id = BUS_ogranichit_izbiratelnie_prava
+		icon = GFX_focus_usa_voter_registration_act
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_ukrepit_reshim_imperatorshi
+		prerequisite = { focus = BUS_ukrepit_reshim_imperatorshi }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		bypass = {
+			has_country_flag = SVI_destroyed_duma
+		}
+
+		completion_reward = {
+			country_event = {
+				id = bus_emp.4
+				days = 2
+			}
+		}
+	}
+	focus = {
+		id = BUS_zapretit_liberal_party
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_ukrepit_reshim_imperatorshi
+		prerequisite = { focus = BUS_ukrepit_reshim_imperatorshi }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = {
+				id = bus_emp.5
+				days = 2
+			}
+		}
+	}
+	focus = {
+		id = BUS_vosstanovit_slavu_rodinu
+		icon = GFX_focus_generic_hydroelectric_energy
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_zapretit_liberal_party
+		prerequisite = { focus = BUS_zapretit_liberal_party }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = SVI_vostanovit_slavu_rodini
+		}
+	}
+	focus = {
+		id = BUS_partiya_national_edinstva
+		icon = GFX_goal_generic_neutrality_focus
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_zapretit_liberal_party
+		prerequisite = { focus = BUS_zapretit_liberal_party focus = BUS_ogranichit_izbiratelnie_prava }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = BUS_stolitsa_imperatorov
+		icon = GFX_goal_buster_empire_2
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BUS_partiya_national_edinstva
+		prerequisite = { focus = BUS_partiya_national_edinstva }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			if = {
+				limit = {
+					1048 = {
+						is_capital = no
+					}
+				}
+				set_capital = {
+					state = 1048
+				}
+			}
+			1048 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 5
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				else_if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 4
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				else_if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				else_if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				else_if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_dynamic_modifier = {
+					modifier = SVI_capital_of_the_imperors
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUS_fuck_JKY
+		icon = GFX_goal_SVI_jky_focus
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_stolitsa_imperatorov
+		prerequisite = { focus = BUS_stolitsa_imperatorov }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		bypass = {
+			JKY = {
+				OR = {
+				exists = no
+				is_subject = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					JKY = {
+						exists = yes
+						is_subject = no
+					}
+				}
+				create_wargoal = {
+					target = JKY
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUS_fuck_RAZ
+		icon = GFX_focus_generic_invade_finland
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = BUS_stolitsa_imperatorov
+		prerequisite = { focus = BUS_stolitsa_imperatorov }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		bypass = {
+			RAZ = {
+				OR = {
+				exists = no
+				is_subject = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					RAZ = {
+						exists = yes
+						is_subject = no
+					}
+				}
+				create_wargoal = {
+					target = RAZ
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUS_fuck_LAG
+		icon = GFX_goal_DRE_lagoda_deal
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BUS_fuck_JKY
+		prerequisite = { focus = BUS_fuck_JKY }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		bypass = {
+			LAG = {
+				OR = {
+				exists = no
+				is_subject = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					LAG = {
+						exists = yes
+						is_subject = no
+					}
+				}
+				create_wargoal = {
+					target = LAG
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUS_fuck_KUS
+		icon = GFX_goal_SVI_kussian_war
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BUS_fuck_RAZ
+		prerequisite = { focus = BUS_fuck_RAZ }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		bypass = {
+			KUS = {
+				OR = {
+				exists = no
+				is_subject = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					KUS = {
+						exists = yes
+						is_subject = no
+					}
+				}
+				create_wargoal = {
+					target = KUS
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUS_stell_wall
+		icon = GFX_focus_generic_tank_assembly
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = BUS_partiya_national_edinstva
+		prerequisite = { focus = BUS_partiya_national_edinstva }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 1
+			}
+			add_tech_bonus = {
+				name = BUS_iron_wall_bonus
+				ahead_reduction = 1 # was 2
+				bonus = 1
+				uses = 2
+				technology = super_heavy_tank_chassis
+			}
+		}
+	}
+	focus = {
+		id = BUS_revive_great_flot
+		icon = GFX_focus_generic_navy_battleship2
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = BUS_partiya_national_edinstva
+		prerequisite = { focus = BUS_partiya_national_edinstva }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			navy_experience = 10
+			208 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			811 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			809 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+	focus = {
+		id = BUS_economicheskaya_stabilnost
+		icon = GFX_focus_RAJ_special_economic_zones
+		x = -6
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_dolgosdannoe_spokoystvie }
+		relative_position_id = BUS_dolgosdannoe_spokoystvie
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = {
+				id = bus_emp.2
+				days = 2
+			}
+		}
+		
+	}
+
+	focus = {
+		id = BUS_zastroyka
+		icon = GFX_focus_generic_modernize_industry
+		x = 6
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_dolgosdannoe_spokoystvie }
+		relative_position_id = BUS_dolgosdannoe_spokoystvie
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_stroitelnie_gildii
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_zastroyka }
+		relative_position_id = BUS_zastroyka
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = SVI_builders_guilds
+				days = 720
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_set_autobanov
+		icon = GFX_focus_generic_improve_roads
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_stroitelnie_gildii }
+		relative_position_id = BUS_stroitelnie_gildii
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			if = {
+				limit = {
+					810 = { #Niederbayern
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				810 = { 
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					809 = { #Oberbayern
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				809 = { 
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					808 = { #Upper Austria
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				808 = { 
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					811 = { #Lower Austria
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				811 = { 
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					810 = {
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+					210 = {
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				build_railway = {
+					path = { 6459 9275 3333 6242 9254 9331 }
+				}
+			}
+			if = {
+				limit = {
+					209 = {
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+					263 = {
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				build_railway = {
+					path = { 11097 95 3089 11109 }
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BUS_resource_extraction
+		icon = GFX_focus_generic_mining_industry
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_stroitelnie_gildii }
+		relative_position_id = BUS_stroitelnie_gildii
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 4
+				state = 263
+			}
+			add_resource = {
+				type = coil
+				amount = 3
+				state = 263
+			}
+			add_resource = {
+				type = tungsten
+				amount = 3
+				state = 813
+			}
+		}
+		
+	}
+
+
+	#focus = {
+	#	id = BUS_revaluate_ari
+	#	icon = GFX_focus_generic_welfare
+	#	x = -2
+	#	y = 1
+	#	cost = 10
+	#	prerequisite = { focus = BUS_zamorosit_zarubeshnie_aktivi }
+	#	relative_position_id = BUS_zamorosit_zarubeshnie_aktivi
+	#	search_filters = {  FOCUS_FILTER_RESEARCH }
+#
+	#	completion_reward = {
+	#		
+	#	}
+	#	
+	#}
+	focus = {
+		id = BUS_expand_imperial_academiyu_nauk
+		icon = GFX_focus_generic_improve_the_administration
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_zamorosit_zarubeshnie_aktivi }
+		relative_position_id = BUS_zamorosit_zarubeshnie_aktivi
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+		
+	}
+	focus = {
+		id = BUS_zamorosit_zarubeshnie_aktivi
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = BUS_economicheskaya_stabilnost }
+		relative_position_id = BUS_economicheskaya_stabilnost
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = {
+				id = bus_emp.3
+				days = 0
+			}
+		}
+		
+	}
+}

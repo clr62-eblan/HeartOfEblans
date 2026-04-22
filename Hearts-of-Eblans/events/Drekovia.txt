@@ -204,7 +204,7 @@ country_event = {
 			add_state_claim = 52
 			add_state_claim = 53
 			if = {
-				limit = { PREV = { NOT = { original_tag = BTK } } }
+				limit = { PREV = { OR = { NOT = { original_tag = BTK } NOT = { is_ally_with = BTK } } } }
 				create_wargoal = {
 					target = PREV
 					type = annex_everything

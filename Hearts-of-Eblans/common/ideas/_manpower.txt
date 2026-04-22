@@ -111,7 +111,7 @@ ideas = {
 					AND = {
 						original_tag = SVI
 						SVI = {
-							has_completed_focus = SVI_the_Duma_defense_act
+							has_completed_focus = SVI_peresmotr_zakonov
 						}
 					}
 				}

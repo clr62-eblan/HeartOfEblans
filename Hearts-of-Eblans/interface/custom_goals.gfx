@@ -35,6 +35,34 @@ spriteTypes = {
 	name = "GFX_goal_HAM_economy_block"
 	texturefile = "gfx/interface/goals/focus_HAM_economy_block.dds"	
 	}
+	SpriteType = {
+	name = "GFX_goal_SVI_cities_doveria"
+	texturefile = "gfx/interface/goals/SVI/cities_doverie.png"	
+	}
+	SpriteType = {
+	name = "GFX_goal_SVI_buy_suez"
+	texturefile = "gfx/interface/goals/SVI/buy_suez.png"	
+	}
+	SpriteType = {
+	name = "GFX_goal_SVI_chicken_com"
+	texturefile = "gfx/interface/goals/SVI/chicken_com.png"	
+	}
+	SpriteType = {
+	name = "GFX_goal_SVI_chicken_in_flames"
+	texturefile = "gfx/interface/goals/SVI/chicken_in_flames.png"	
+	}
+	SpriteType = {
+	name = "GFX_goal_SVI_trade_federation"
+	texturefile = "gfx/interface/goals/SVI/trade_federation.png"	
+	}
+	SpriteType = {
+	name = "GFX_goal_SVI_buy_gibraltar"
+	texturefile = "gfx/interface/goals/SVI/buy_gibraltar.png"	
+	}
+	SpriteType = {
+	name = "GFX_goal_SVI_pyatorka_drug_abo_vrag"
+	texturefile = "gfx/interface/goals/SVI/pyatorka_drug_abo_vrag.png"	
+	}
 
 	SpriteType = {
 	name = "GFX_goal_HAM_chb_provokation"
@@ -1083,6 +1111,34 @@ spriteTypes = {
 		name = "GFX_goal_dre_operations_under_chicken_flag"
 		texturefile = "gfx/interface/goals/drake_operations_under_chicken_flag.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_buster_wins"
+		texturefile = "gfx/interface/goals/SVI/buster_wins.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_buster_empire_2"
+		texturefile = "gfx/interface/goals/SVI/buster_empire.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SVI_razdva_in_flames"
+		texturefile = "gfx/interface/goals/SVI/razdva_in_flames.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SVI_fan_materialism"
+		texturefile = "gfx/interface/goals/SVI/fan_materialism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SVI_jky_focus"
+		texturefile = "gfx/interface/goals/SVI/jky_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SVI_kussian_war"
+		texturefile = "gfx/interface/goals/SVI/kussian_war.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_tropico_past"
+		texturefile = "gfx/interface/goals/SVI/tropico_past.png"
+	}
 	
 	SpriteType = {
 		name = "GFX_goal_dre_snr_and_hnr_help_2"
@@ -1536,6 +1592,10 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_otsos_bigpigu"
 	texturefile = "gfx/interface/goals/otsos_big_pigu.dds"
+	}
+	SpriteType = {
+	name = "GFX_goal_buster_expand"
+	texturefile = "gfx/interface/goals/SVI/buster_expand.png"
 	}
 
 	SpriteType = {
