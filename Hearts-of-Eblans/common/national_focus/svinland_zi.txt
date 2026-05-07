@@ -680,7 +680,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = SVI_shadow_of_gosperevorot_2
+			remove_ideas = SVI_shadow_of_gosperevorot_1
 			set_country_flag = SVI_decay_stopped
 			add_political_power = 150
 		}
@@ -1576,6 +1576,7 @@ focus_tree = {
 			}
 
 			remove_ideas = SVI_peoples_duma_1
+			set_country_flag = SVI_destroyed_duma
 
 			set_cosmetic_tag = SVI_ORDER
 			add_stability = 0.05
