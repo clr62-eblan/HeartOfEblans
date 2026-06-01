@@ -22,10 +22,4 @@
  CHB_foreign_investment_round_desc: "Открытие наших рынков для зарубежных инвесторов в обмен на технологии и твердую валюту."
  
  # MIO
- SMARTIKI_GROUP_organization: "SMARTIKI GROUP"
- SMARTIKI_GROUP_organization_desc: "Ведущий конгломерат Чикен-Беконии, специализирующийся на высокотехнологичном производстве и моторизации. Их лозунг: 'Смартики — это будущее!'"
- SMARTIKI_GROUP_initial_trait: "Наследие Смартиков"
- smartiki_advanced_suspension: "Улучшенная подвеска Смартиков"
- smartiki_advanced_suspension_desc: "Использование специальных демпферов 'Смарти-Софт' значительно повышает надежность нашей техники."
- smartiki_mass_production: "Массовое производство Смартиков"
- smartiki_mass_production_desc: "Оптимизация сборочных линий позволяет выпускать Смартики в промышленных масштабах при снижении затрат."
+

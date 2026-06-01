@@ -3511,12 +3511,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			decrease_taxes_law = yes
-			create_faction_from_template = faction_template_miditerian
 			hidden_effect = {
 				set_rule = {
 					can_create_factions = yes
 				}
 			}
+			create_faction_from_template = faction_template_miditerian
 		}
 	}
 

@@ -1,0 +1,29 @@
+# CREATED BY CLR62 - Licensed under MIT License
+ 
+focus_tree = {
+	id = hesus_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = HSU
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 200 y = 2200 }
+
+	focus = {
+		id = ham_second_hametova_term
+		icon = GFX_goal_HAM_second_term
+		x = 15
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+        }
+    }
+}
