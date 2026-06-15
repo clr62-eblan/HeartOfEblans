@@ -364,7 +364,7 @@ country_event = {
 		72 = {
 			transfer_state_to = DRE
 		}
-		1023 = {
+		1047 = {
 			transfer_state_to = DRE
 		}
 

@@ -3,8 +3,8 @@ state={
 	name="STATE_738"
 
 	history={
-		owner = SAS
-		add_core_of = sAS
+		owner = ZUS
+		add_core_of = ZUS
 		buildings = {
 			infrastructure = 1
 
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		4579 
+		4579 13400
 	}
 	manpower=36146
 	buildings_max_level_factor=1	

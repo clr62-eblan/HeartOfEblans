@@ -1,0 +1,4 @@
+NDefines.NGame.START_DATE = "2023.1.1.1"
+NDefines.NGame.END_DATE = "2040.1.1.1"
+
+NDefines.NDiplomacy.ENSION_TIME_SCALE_START_DATE = "2027.1.1.1"

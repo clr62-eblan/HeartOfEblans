@@ -34,7 +34,6 @@ country_event = {
 	}
 }
 
-# Модеры возвращаются на фронт (legacy - может вызываться другими способами)
 country_event = {
 	id = chb_politics.3
 	title = chb_politics.3.t

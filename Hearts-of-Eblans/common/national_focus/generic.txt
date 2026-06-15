@@ -61,7 +61,7 @@ focus_tree = {
 		id = new_motorization_effort
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = new_army_effort }
-		bypass = { has_tech = new_motorised_infantry }
+		bypass = { has_tech = motorised_infantry }
 		x = 1
 		y = 1
 		relative_position_id = new_army_effort
@@ -75,7 +75,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 3.0
-				technology = new_motorised_infantry
+				technology = motorised_infantry
 			}
 		}
 	}

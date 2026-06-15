@@ -138,7 +138,7 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_shield_medium"
-			position = { x = 33 y = 186 } #EAW modified x was 34 y was 188
+			position = { x = 33 y = 186 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}		
@@ -146,13 +146,6 @@ guiTypes = {
 		buttonType = {
 			name = "country"	
 			quadTextureSprite = "GFX_country_selection_entry"
-			position = { x=0 y =0 }
-			clicksound = click_checkbox
-		}	
-		
-		buttonType = {
-			name = "country_shine"
-			quadTextureSprite = "GFX_country_selection_entry_shine"
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
 		}	
@@ -176,25 +169,18 @@ guiTypes = {
 	
 		iconType = {
 			name = "country_flag"
-			quadTextureSprite ="GFX_flag_small2" #EAW modified was GFX_flag_small2
-			position = { x = 9 y = 8 } #EAW modified x was 9 y was 8
+			quadTextureSprite ="GFX_flag_small2"
+			position = { x = 9 y = 8 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "country"	
-			quadTextureSprite = "GFX_mini_country_selector" #EAW modified was GFX_mini_country_selector
+			quadTextureSprite = "GFX_mini_country_selector" 
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
-		}		
-
-		buttonType = {
-			name = "country_shine"
-			quadTextureSprite = "GFX_new_country_selection_mini_eaw" #EAW modified was GFX_minor_country_selector_shine
-			position = { x=0 y =0 }
-			clicksound = click_checkbox
-		}
+		}	
 	}
 	
 	### country entry
@@ -203,24 +189,33 @@ guiTypes = {
 	
 		iconType = {
 			name = "country_flag"
-			quadTextureSprite ="GFX_flag_small2" #EAW modified was GFX_flag_small2
-			position = { x = 9 y = 8 } #EAW modified x was 9 y was 8
+			quadTextureSprite ="GFX_flag_small2"
+			position = { x = 9 y = 8 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "country"	
-			quadTextureSprite = "GFX_mini_country_selector" #EAW modified was GFX_mini_country_selector
+			quadTextureSprite = "GFX_mini_country_selector" 
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
 		}		
-		
+	}
+
+	containerWindowType = {
+		name = "country_filter"
+		size = { width = 149 height = 33 }
+		alwaystransparent = yes
+
 		buttonType = {
-			name = "country_shine"
-			quadTextureSprite = "GFX_new_country_selection_mini_eaw" #EAW modified was GFX_mini_country_selector_shine
-			position = { x=0 y =0 }
-			clicksound = click_checkbox
+			name = "button"
+			quadTextureSprite = "GFX_country_filter_entry"
+			buttonText = "FILTER"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+			frame = 2
 		}
 	}
 
@@ -692,6 +687,13 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}	
 			
+			OverlappingElementsBoxType = {
+				name = "filters"
+				position = { x = 22 y = 321 }
+				size = { x = 1181 y = 32 }
+				format = center
+				spacing = 14.0
+			}
 		}
 			
 		containerWindowType = {

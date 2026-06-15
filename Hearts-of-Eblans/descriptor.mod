@@ -1,4 +1,4 @@
-version="1.4.1"
+version="1.4.1 P5"
 tags={
 	"National Focuses"
 	"Sound"
@@ -8,7 +8,7 @@ tags={
 	"Ideologies"
 	"Graphics"
 }
-name="Hearts of Eblans 1.4.1"
+name="Hearts of Eblans 1.4.1 P5"
 picture="thumbnail.png"
 replace_path="gfx/loadingscreens"
 replace_path="common/bookmarks"
@@ -51,5 +51,5 @@ replace_path="common/military_industrial_organization/policies"
 replace_path="history/units"
 replace_path="history/general"
 replace_path="common/raids"
-supported_version="1.18.*"
+supported_version="1.19.*"
 remote_file_id="3392330604"

@@ -91,7 +91,7 @@ form_DRE_EMPIRE_cat = {
 				state = 75
 				state = 74
 				state = 972
-				state = 1023
+				state = 1047
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -127,7 +127,7 @@ form_DRE_EMPIRE_cat = {
 				975= { add_core_of = ROOT }
 				976= { add_core_of = ROOT }
 				88= { add_core_of = ROOT }
-				1023= { add_core_of = ROOT }
+				1047= { add_core_of = ROOT }
 				
 
 				69= { add_core_of = ROOT }
@@ -218,19 +218,19 @@ drekovia_integrations_cat = {
 		available = {
 			controls_state = 88
 			controls_state = 72
-			controls_state = 1023
+			controls_state = 1047
 		}
 		visible = {
 			controls_state = 88
 			controls_state = 72
-			controls_state = 1023
+			controls_state = 1047
 		}
 		
 		highlight_states = {
 			highlight_state_targets = {
 				state = 88
 				state = 72
-				state = 1023
+				state = 1047
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -239,7 +239,7 @@ drekovia_integrations_cat = {
 		complete_effect = {
 			88 = { add_core_of = ROOT }
 			72 = { add_core_of = ROOT }
-			1023 = { add_core_of = ROOT }
+			1047 = { add_core_of = ROOT }
 		}
 
 		ai_will_do = {
